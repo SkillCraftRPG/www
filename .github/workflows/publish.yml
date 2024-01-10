@@ -1,0 +1,25 @@
+name: Deploy SkillCraftRPG Website
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    name: Build and Deploy SkillCraftRPG Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build and Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_WEBAPP_DEPLOYMENT_TOKEN_PRODUCTION }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/"
+          app_build_command: "yarn build production"
+          output_location: "dist"
