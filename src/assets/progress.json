@@ -26,25 +26,25 @@
               "key": "creation",
               "name": "Création de personnage",
               "value": 0,
-              "weight": null
+              "weight": 0.417
             },
             {
               "key": "races",
               "name": "Espèces et peuples",
               "value": 0,
-              "weight": null
+              "weight": 0.083
             },
             {
               "key": "progression",
               "name": "Progression de personnage",
               "value": 0,
-              "weight": null
+              "weight": 0.417
             },
             {
               "key": "specializations",
               "name": "Spécialisations",
               "value": 0,
-              "weight": null
+              "weight": 0.083
             }
           ],
           "weight": 0.1
@@ -57,25 +57,25 @@
               "key": "natures",
               "name": "Natures",
               "value": 0,
-              "weight": null
+              "weight": 0.2
             },
             {
               "key": "feats",
               "name": "Dons",
               "value": 0,
-              "weight": null
+              "weight": 0.3
             },
             {
               "key": "disabilities",
               "name": "Handicaps",
               "value": 0,
-              "weight": null
+              "weight": 0.3
             },
             {
               "key": "sections",
               "name": "Sections",
               "value": 0,
-              "weight": null
+              "weight": 0.2
             }
           ],
           "weight": 0.1
