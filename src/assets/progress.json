@@ -9,13 +9,13 @@
         {
           "key": "preface",
           "name": "Préface",
-          "value": 1,
+          "value": 0,
           "weight": 0.05
         },
         {
           "key": "introduction",
           "name": "Introduction",
-          "value": 1,
+          "value": 0,
           "weight": 0.05
         },
         {
@@ -25,13 +25,13 @@
             {
               "key": "creation",
               "name": "Création de personnage",
-              "value": 0.4,
+              "value": 0,
               "weight": 0.625
             },
             {
               "key": "progression",
               "name": "Progression de personnage",
-              "value": 1,
+              "value": 0,
               "weight": 0.375
             }
           ],
@@ -40,7 +40,7 @@
         {
           "key": "races",
           "name": "Espèces et peuples",
-          "value": 1,
+          "value": 0,
           "weight": 0.05
         },
         {
@@ -50,13 +50,13 @@
             {
               "key": "natures",
               "name": "Natures",
-              "value": 1,
+              "value": 0,
               "weight": 0.2
             },
             {
               "key": "feats",
               "name": "Dons",
-              "value": 0.43333333333333333333333333333333,
+              "value": 0,
               "weight": 0.3
             },
             {
@@ -68,7 +68,7 @@
             {
               "key": "sections",
               "name": "Sections",
-              "value": 1,
+              "value": 0,
               "weight": 0.2
             }
           ],
@@ -77,13 +77,13 @@
         {
           "key": "attributes",
           "name": "Attributs et compétences",
-          "value": 0.88,
+          "value": 0,
           "weight": 0.1
         },
         {
           "key": "talents",
           "name": "Talents",
-          "value": 0.37,
+          "value": 0,
           "weight": 0.1
         },
         {
@@ -95,7 +95,7 @@
         {
           "key": "specializations",
           "name": "Spécialisations",
-          "value": 1,
+          "value": 0,
           "weight": 0.05
         },
         {
@@ -119,5 +119,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-01-10T15:53:00Z"
+  "updatedOn": "2024-02-09T16:30:00Z"
 }
