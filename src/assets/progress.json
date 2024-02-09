@@ -26,53 +26,65 @@
               "key": "creation",
               "name": "Création de personnage",
               "value": 0,
-              "weight": 0.625
+              "weight": null
+            },
+            {
+              "key": "races",
+              "name": "Espèces et peuples",
+              "value": 0,
+              "weight": null
             },
             {
               "key": "progression",
               "name": "Progression de personnage",
               "value": 0,
-              "weight": 0.375
+              "weight": null
+            },
+            {
+              "key": "specializations",
+              "name": "Spécialisations",
+              "value": 0,
+              "weight": null
             }
           ],
           "weight": 0.1
         },
         {
-          "key": "races",
-          "name": "Espèces et peuples",
-          "value": 0,
-          "weight": 0.05
-        },
-        {
           "key": "background",
-          "name": "Personnalité et historique",
+          "name": "Personnalisation",
           "children": [
             {
               "key": "natures",
               "name": "Natures",
               "value": 0,
-              "weight": 0.2
+              "weight": null
             },
             {
               "key": "feats",
               "name": "Dons",
               "value": 0,
-              "weight": 0.3
+              "weight": null
             },
             {
               "key": "disabilities",
               "name": "Handicaps",
               "value": 0,
-              "weight": 0.3
+              "weight": null
             },
             {
               "key": "sections",
               "name": "Sections",
               "value": 0,
-              "weight": 0.2
+              "weight": null
             }
           ],
           "weight": 0.1
+        },
+        {
+          "key": "talents",
+          "name": "Talents",
+          "value": 0,
+          "weight": 0.2
         },
         {
           "key": "attributes",
@@ -81,22 +93,10 @@
           "weight": 0.1
         },
         {
-          "key": "talents",
-          "name": "Talents",
-          "value": 0,
-          "weight": 0.1
-        },
-        {
           "key": "equipment",
           "name": "Équipement",
-          "value": 0,
+          "value": 1,
           "weight": 0.1
-        },
-        {
-          "key": "specializations",
-          "name": "Spécialisations",
-          "value": 0,
-          "weight": 0.05
         },
         {
           "key": "adventure",
@@ -119,5 +119,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-02-09T16:30:00Z"
+  "updatedOn": "2024-02-09T21:50:00Z"
 }
