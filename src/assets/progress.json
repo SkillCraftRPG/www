@@ -113,7 +113,7 @@
         {
           "key": "magic",
           "name": "Magie",
-          "value": 0,
+          "value": 1,
           "weight": 0.1
         }
       ]
