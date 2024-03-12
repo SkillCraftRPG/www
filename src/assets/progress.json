@@ -56,13 +56,13 @@
             {
               "key": "natures",
               "name": "Natures",
-              "value": 0,
-              "weight": 0.2
+              "value": 1,
+              "weight": 0.1
             },
             {
               "key": "feats",
               "name": "Dons",
-              "value": 0,
+              "value": 0.825,
               "weight": 0.3
             },
             {
@@ -72,10 +72,22 @@
               "weight": 0.3
             },
             {
-              "key": "sections",
-              "name": "Sections",
+              "key": "traits",
+              "name": "Traits de personnalité",
               "value": 0,
-              "weight": 0.2
+              "weight": 0.1
+            },
+            {
+              "key": "ideals",
+              "name": "Idéaux",
+              "value": 0,
+              "weight": 0.1
+            },
+            {
+              "key": "flaws",
+              "name": "Défauts",
+              "value": 0,
+              "weight": 0.1
             }
           ],
           "weight": 0.1
@@ -119,5 +131,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-02-09T21:50:00Z"
+  "updatedOn": "2024-03-12T04:45:00Z"
 }
