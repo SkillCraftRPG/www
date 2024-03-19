@@ -21,32 +21,7 @@
         {
           "key": "characters",
           "name": "Personnages",
-          "children": [
-            {
-              "key": "creation",
-              "name": "Création de personnage",
-              "value": 0,
-              "weight": 0.417
-            },
-            {
-              "key": "races",
-              "name": "Espèces et peuples",
-              "value": 0,
-              "weight": 0.083
-            },
-            {
-              "key": "progression",
-              "name": "Progression de personnage",
-              "value": 0,
-              "weight": 0.417
-            },
-            {
-              "key": "specializations",
-              "name": "Spécialisations",
-              "value": 0,
-              "weight": 0.083
-            }
-          ],
+          "value": 1,
           "weight": 0.1
         },
         {
@@ -62,13 +37,13 @@
             {
               "key": "feats",
               "name": "Dons",
-              "value": 0.9,
+              "value": 1,
               "weight": 0.3
             },
             {
               "key": "disabilities",
               "name": "Handicaps",
-              "value": 0,
+              "value": 1,
               "weight": 0.3
             },
             {
@@ -131,5 +106,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-03-18T04:10:00Z"
+  "updatedOn": "2024-03-19T05:35:00Z"
 }
