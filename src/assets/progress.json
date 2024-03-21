@@ -70,7 +70,7 @@
         {
           "key": "talents",
           "name": "Talents",
-          "value": 0.7083,
+          "value": 0.6725,
           "weight": 0.2
         },
         {
@@ -94,7 +94,7 @@
         {
           "key": "combat",
           "name": "Combat",
-          "value": 0,
+          "value": 1,
           "weight": 0.1
         },
         {
@@ -106,5 +106,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-03-20T03:10:00Z"
+  "updatedOn": "2024-03-21T04:45:00Z"
 }
