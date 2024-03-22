@@ -70,7 +70,7 @@
         {
           "key": "talents",
           "name": "Talents",
-          "value": 0.6725,
+          "value": 0.9471,
           "weight": 0.2
         },
         {
@@ -106,5 +106,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-03-21T04:45:00Z"
+  "updatedOn": "2024-03-22T06:45:00Z"
 }
