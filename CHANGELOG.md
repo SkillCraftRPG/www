@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.1.0] - 2024-04-21
+
+### Added
+
+- Footer, navbar and not found page.
+
+### Changed
+
+- Completed Chapter 3.
+- Favicon.
+- Project structure.
+- Upgraded NPM packages.
+
+### Removed
+
+- Replaced yarn by NPM.
+
 ## [1.0.12] - 2024-03-22
 
 ### Changed
@@ -87,7 +104,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.0.12...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/SkillCraftRPG/www/compare/v1.0.12...v1.1.0
 [1.0.12]: https://github.com/SkillCraftRPG/www/compare/v1.0.11...v1.0.12
 [1.0.11]: https://github.com/SkillCraftRPG/www/compare/v1.0.10...v1.0.11
 [1.0.10]: https://github.com/SkillCraftRPG/www/compare/v1.0.9...v1.0.10
