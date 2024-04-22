@@ -5,106 +5,56 @@
     {
       "key": "game-engine",
       "name": "Moteur de jeu",
+      "value": 0.97
+    },
+    {
+      "key": "ungar-universe",
+      "name": "Univers d’Ungar",
       "children": [
         {
           "key": "preface",
           "name": "Préface",
-          "value": 1,
-          "weight": 0.05
+          "weight": 0.01,
+          "value": 0
         },
         {
-          "key": "introduction",
-          "name": "Introduction",
-          "value": 1,
-          "weight": 0.05
-        },
-        {
-          "key": "characters",
-          "name": "Personnages",
-          "value": 1,
-          "weight": 0.1
+          "key": "races-people",
+          "name": "Espèces et peuples",
+          "weight": 0.2,
+          "value": 0
         },
         {
           "key": "background",
-          "name": "Personnalisation",
-          "children": [
-            {
-              "key": "natures",
-              "name": "Natures",
-              "value": 1,
-              "weight": 0.1
-            },
-            {
-              "key": "feats",
-              "name": "Dons",
-              "value": 1,
-              "weight": 0.3
-            },
-            {
-              "key": "disabilities",
-              "name": "Handicaps",
-              "value": 1,
-              "weight": 0.3
-            },
-            {
-              "key": "traits",
-              "name": "Traits de personnalité",
-              "value": 0,
-              "weight": 0.1
-            },
-            {
-              "key": "ideals",
-              "name": "Idéaux",
-              "value": 0,
-              "weight": 0.1
-            },
-            {
-              "key": "flaws",
-              "name": "Défauts",
-              "value": 0,
-              "weight": 0.1
-            }
-          ],
-          "weight": 0.1
+          "name": "Historique",
+          "weight": 0.1,
+          "value": 0
         },
         {
           "key": "talents",
           "name": "Talents",
-          "value": 1,
-          "weight": 0.2
-        },
-        {
-          "key": "attributes",
-          "name": "Attributs et compétences",
-          "value": 1,
-          "weight": 0.1
+          "weight": 0.19,
+          "value": 0
         },
         {
           "key": "equipment",
           "name": "Équipement",
-          "value": 1,
-          "weight": 0.1
+          "weight": 0.1,
+          "value": 0
         },
         {
-          "key": "adventure",
-          "name": "Aventure",
-          "value": 1,
-          "weight": 0.1
-        },
-        {
-          "key": "combat",
-          "name": "Combat",
-          "value": 1,
-          "weight": 0.1
+          "key": "specializations",
+          "name": "Spécialisations",
+          "weight": 0.2,
+          "value": 0.08
         },
         {
           "key": "magic",
           "name": "Magie",
-          "value": 1,
-          "weight": 0.1
+          "weight": 0.2,
+          "value": 0
         }
       ]
     }
   ],
-  "updatedOn": "2024-04-22T01:00:00Z"
+  "updatedOn": "2024-04-22T05:00:00Z"
 }
