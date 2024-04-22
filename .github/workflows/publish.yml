@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Enable Corepack
-        run: corepack enable
-
       - name: Build and Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -29,5 +26,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
-          app_build_command: "yarn build"
+          app_build_command: "npm run build"
           output_location: "dist"

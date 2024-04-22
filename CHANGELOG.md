@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.1.0] - 2024-04-21
+
+### Added
+
+- Footer, navbar and not found page.
+
+### Changed
+
+- Completed Chapter 3.
+- Favicon.
+- Project structure.
+- Upgraded NPM packages.
+
+### Removed
+
+- Replaced yarn by NPM.
+
 ## [1.0.12] - 2024-03-22
 
 ### Changed
