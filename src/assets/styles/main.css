@@ -1,0 +1,15 @@
+@import "toasts.css";
+
+body {
+  position: relative;
+  min-height: calc(100svh);
+  padding-bottom: 60px;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+.invalid-feedback {
+  display: block;
+}

@@ -1,0 +1,57 @@
+{
+  "actions": {
+    "back": "Go back",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "close": "Close",
+    "create": "Create",
+    "delete": "Delete",
+    "refresh": "Refresh",
+    "save": "Save"
+  },
+  "brand": "SkillCraftRPG",
+  "by": "By",
+  "copyright": "© SkillCraftRPG {version} {year}.",
+  "count": "Count",
+  "description": "Description",
+  "displayName": "Display Name",
+  "loading": "Loading…",
+  "no": "No",
+  "notFound": {
+    "help": "The requested page could not be found.",
+    "lead": "Page Not Found",
+    "link": "Go to Home"
+  },
+  "pagination": {
+    "first": "First",
+    "label": "Pagination",
+    "last": "Last",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "search": "Search",
+  "sort": {
+    "isDescending": "Is descending",
+    "select": {
+      "label": "Sort",
+      "placeholder": "Select a sort"
+    }
+  },
+  "status": {
+    "createdOn": "Created on {date} by",
+    "updatedOn": "Last updated on {date} by"
+  },
+  "system": "System",
+  "toasts": {
+    "error": {
+      "message": "An unexpected error occurred. Please try again later or contact our support team.",
+      "title": "Error!"
+    },
+    "success": "Success!",
+    "warning": {
+      "signedOut": "You have been signed-out, please try sign-in to your account again.",
+      "title": "Warning!"
+    }
+  },
+  "yes": "Yes"
+}
