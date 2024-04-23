@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
-import { TarAvatar, parsingUtils } from "logitar-vue3-ui";
 import { arrayUtils, stringUtils } from "logitar-js";
 import { computed, watchEffect } from "vue";
-import { setLocale } from "@vee-validate/i18n";
+import { parsingUtils } from "logitar-vue3-ui";
 import { useI18n } from "vue-i18n";
 
 import locales from "@/resources/locales.json";
-import type { CurrentUser } from "@/types/account";
 import type { Locale } from "@/types/i18n";
-import { useAccountStore } from "@/stores/account";
 import { useI18nStore } from "@/stores/i18n";
 
 const { combineURL } = stringUtils;
@@ -20,7 +17,6 @@ type Hyperlink = {
   url: string;
 };
 
-const account = useAccountStore();
 const apiBaseUrl: string = import.meta.env.VITE_APP_API_BASE_URL ?? "";
 const environment = import.meta.env.MODE.toLowerCase();
 const i18n = useI18nStore();
@@ -46,12 +42,10 @@ const graphQLLinks = computed<Hyperlink[]>(() =>
       ]
     : [],
 );
-const user = computed<CurrentUser | undefined>(() => account.currentUser);
 
 watchEffect(() => {
   if (i18n.locale) {
     locale.value = i18n.locale.code;
-    setLocale(i18n.locale.code);
   } else {
     const currentLocale = locales.find(({ code }) => code === locale.value);
     if (!currentLocale) {
@@ -110,41 +104,6 @@ watchEffect(() => {
             </li>
             <li v-else-if="otherLocales.length === 1" class="nav-item">
               <a class="nav-link" href="#" @click.prevent="i18n.setLocale(otherLocales[0])">{{ otherLocales[0].nativeName }}</a>
-            </li>
-          </template>
-          <template v-if="user">
-            <li class="nav-item d-block d-lg-none">
-              <RouterLink class="nav-link" :to="{ name: 'Profile' }">
-                <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress" :size="24" :url="user.pictureUrl" />
-                {{ user.displayName }}
-              </RouterLink>
-            </li>
-            <li class="nav-item d-block d-lg-none">
-              <RouterLink class="nav-link" :to="{ name: 'SignOut' }">
-                <font-awesome-icon icon="fas fa-arrow-right-from-bracket" /> {{ t("users.signOut") }}
-              </RouterLink>
-            </li>
-            <li class="nav-item dropdown d-none d-lg-block">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress" :size="24" :url="user.pictureUrl" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <RouterLink class="dropdown-item" :to="{ name: 'Profile' }"><font-awesome-icon icon="fas fa-user" /> {{ user.displayName }}</RouterLink>
-                </li>
-                <li>
-                  <RouterLink class="dropdown-item" :to="{ name: 'SignOut' }">
-                    <font-awesome-icon icon="fas fa-arrow-right-from-bracket" /> {{ t("users.signOut") }}
-                  </RouterLink>
-                </li>
-              </ul>
-            </li>
-          </template>
-          <template v-else>
-            <li class="nav-item">
-              <RouterLink :to="{ name: 'SignIn' }" class="nav-link">
-                <font-awesome-icon icon="fas fa-arrow-right-to-bracket" /> {{ t("users.signIn.title") }}
-              </RouterLink>
             </li>
           </template>
         </ul>
