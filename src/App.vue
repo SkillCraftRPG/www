@@ -36,7 +36,6 @@ provide(handleErrorKey, handleError);
 
 <template>
   <AppNavbar />
-  <!-- TODO(fpion): is my-3 required? -->
   <RouterView class="my-3" />
   <AppFooter />
   <TarToaster :toasts="toasts.toasts" @hidden="toasts.remove" />

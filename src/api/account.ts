@@ -26,4 +26,4 @@ export async function signOut(): Promise<void> {
   users.signOut();
 }
 
-// TODO(fpion): remove todo management
+// TODO(fpion): remove account management
