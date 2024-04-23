@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 const year: number = new Date().getUTCFullYear();
 const version = import.meta.env.VITE_APP_VERSION;
-// <a href="https://www.flaticon.com/free-icons/player-versus-player" title="player versus player icons">Player versus player icons created by Freepik - Flaticon</a>
 </script>
 
 <template>
   <footer class="bg-dark">
     <div class="fluid">
       <RouterLink :to="{ name: 'Home' }" class="text-light">
-        <img src="@/assets/img/logo.png" alt="SkillCraftRPG Logo" height="32" /> © Logitar {{ version }} {{ year }}.
+        <img src="@/assets/img/logo.png" :alt="`${t('brand')} Logo`" height="32" /> {{ t("copyright", { version, year }) }}
       </RouterLink>
     </div>
   </footer>
