@@ -1,29 +1,17 @@
 import { createI18n } from "vue-i18n";
 
-import en from "./en";
 import fr from "./fr";
 
-type MessageSchema = typeof en;
+type MessageSchema = typeof fr;
 
-export default createI18n<[MessageSchema], "en" | "fr">({
+export default createI18n<[MessageSchema], "fr">({
   legacy: false,
-  locale: "en",
-  fallbackLocale: "en",
+  locale: "fr",
+  fallbackLocale: "fr",
   messages: {
-    en,
     fr,
   },
   datetimeFormats: {
-    en: {
-      medium: {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-      },
-    },
     fr: {
       medium: {
         year: "numeric",
@@ -36,22 +24,6 @@ export default createI18n<[MessageSchema], "en" | "fr">({
     },
   },
   numberFormats: {
-    en: {
-      currency: {
-        style: "currency",
-        currency: "CAD",
-        currencyDisplay: "narrowSymbol",
-        notation: "standard",
-      },
-      decimal: {
-        style: "decimal",
-        minimumFractionDigits: 2,
-      },
-      percent: {
-        style: "percent",
-        minimumFractionDigits: 3,
-      },
-    },
     fr: {
       currency: {
         style: "currency",
