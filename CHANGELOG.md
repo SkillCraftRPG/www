@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.2.0] - 2024-04-24
+
+### Changed
+
+- Alter the project to use Logitar Vue3 Template.
+- Worked on specializations.
+
 ## [1.1.1] - 2024-04-22
 
 ### Added
@@ -114,7 +121,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.1.1...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/SkillCraftRPG/www/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/SkillCraftRPG/www/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/SkillCraftRPG/www/compare/v1.0.12...v1.1.0
 [1.0.12]: https://github.com/SkillCraftRPG/www/compare/v1.0.11...v1.0.12

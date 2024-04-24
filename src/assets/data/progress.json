@@ -45,7 +45,7 @@
           "key": "specializations",
           "name": "Spécialisations",
           "weight": 0.2,
-          "value": 0.08
+          "value": 0.22
         },
         {
           "key": "magic",
@@ -56,5 +56,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-04-22T05:00:00Z"
+  "updatedOn": "2024-04-24T03:45:00Z"
 }
