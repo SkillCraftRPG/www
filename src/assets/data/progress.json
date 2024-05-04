@@ -14,47 +14,53 @@
         {
           "key": "preface",
           "name": "Préface",
-          "weight": 0.01,
+          "weight": 0.001,
           "value": 0
         },
         {
           "key": "races-people",
           "name": "Espèces et peuples",
-          "weight": 0.2,
+          "weight": 0.389,
           "value": 0
         },
         {
           "key": "background",
           "name": "Historique",
-          "weight": 0.1,
+          "weight": 0.05,
           "value": 0
         },
         {
           "key": "talents",
           "name": "Talents",
-          "weight": 0.19,
+          "weight": 0.01,
           "value": 0
         },
         {
           "key": "equipment",
           "name": "Équipement",
-          "weight": 0.1,
+          "weight": 0.04,
           "value": 0
         },
         {
           "key": "specializations",
           "name": "Spécialisations",
-          "weight": 0.2,
-          "value": 0.22
+          "weight": 0.38,
+          "value": 0.73
         },
         {
           "key": "magic",
           "name": "Magie",
-          "weight": 0.2,
+          "weight": 0.06,
+          "value": 0
+        },
+        {
+          "key": "magic",
+          "name": "Annexes",
+          "weight": 0.07,
           "value": 0
         }
       ]
     }
   ],
-  "updatedOn": "2024-04-24T03:45:00Z"
+  "updatedOn": "2024-05-04T06:15:00Z"
 }
