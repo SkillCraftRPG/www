@@ -1,35 +1,107 @@
 # Univers d’Ungar
 
-Total = 240 points
+Total = 1 + 292 + 40 + 8 + 27 + 285 + 45 + 52 = 750 points
 
 ## Préface
 
-10 ⇒ 1 %
+1 point
 
 ## Espèces et peuples
 
-Même taille que **Spécialisations** (48) ⇒ 20 %
+73 espèces & peuples × 4 = 292
+
+- Description
+- Nom, attributs et traits
+- Langues et noms
+- Vitesse, taille, poids et âge
 
 ## Historique
 
-24 ⇒ 10 %
+40 points
 
-- 10 castes (10 × 1)
-- 10 éducations (10 × 1)
-- 100 événements (100 × 0.04)
+- 10 castes
+- 10 éducations
+- 100 événements ÷ 5
 
 ## Talents
 
-1 par classe = 48 ⇒ 19 %
+1 point par talent = 8
+
+- Alchimie
+- Artillerie
+- Astrologie
+- Bricolage magique
+- Élémentarisme
+- Initiation magique
+- Renvoi des morts-vivants
+- Spiritualité
 
 ## Équipement
 
-24 points ⇒ 10 %
+9 × 3 = 27
+
+- Départ
+- Monnaie et dépenses
+- Revente
+- Armures et boucliers
+- Armes
+- Équipement d'aventurier
+- Vêtements et accessoires
+- Outils et trousses
+- Montures et véhicules
 
 ## Spécialisations
 
-8 classes × 3 tiers × 2 (chemin standard, chemins alternatifs) = 48 ⇒ 20 %
+57 spécialisations × 5 = 285
+
+- Nom et chemin
+- Description
+- Requis et talent obligatoire
+- Talents optionnels
+- Talent réservé
 
 ## Magie
 
-Même taille que **Spécialisations** (48) ⇒ 20 %
+9 × (4 tiers + 1 explication) = 45
+
+- Animisme (Esprits)
+- Animisme (Nature)
+- Astromancie
+- Divin
+- Élémentarisme (Air)
+- Élémentarisme (Eau)
+- Élémentarisme (Esprit)
+- Élémentarisme (Feu)
+- Élémentarisme (Terre)
+
+**Seulement listes de sorts!**
+
+## Annexes
+
+52 points
+
+- Animisme : domaines (8)
+- Astromancie (5)
+  - Tour de la Magie
+  - Rites & initiation
+  - 5 cercles du pentacle
+  - 7 maisons et philosophies
+  - Signes astrologiques
+- Cultes & religions (11)
+  - Arménien
+  - Balto-slave
+  - Celfique
+  - Grec/Romain
+  - Horde
+  - Indo-iranien
+  - La Lumière
+  - Nain
+  - Panthéon
+  - Scandinave
+  - Thrace
+- Divin : domaines (14)
+- Élémentarisme (5)
+  - Essence
+  - Effets des 4 tiers
+- Herboristerie, Apothicairerie et Toxicologie (5)
+- Manœuvres de combat (4)
