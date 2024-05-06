@@ -12,7 +12,7 @@ Total = 1 + 292 + 40 + 8 + 27 + 285 + 45 + 52 = 750 points
 
 - Description
 - Nom, attributs et traits
-- Langues et noms
+- Langues⚠️ et noms
 - Vitesse, taille, poids et âge
 
 ## Historique
@@ -21,7 +21,8 @@ Total = 1 + 292 + 40 + 8 + 27 + 285 + 45 + 52 = 750 points
 
 - 10 castes
 - 10 éducations
-- 100 événements ÷ 5
+- 100 événements ÷ 10
+- 10: Proactive Roleplaying
 
 ## Talents
 

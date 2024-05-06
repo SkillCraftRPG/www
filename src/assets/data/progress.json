@@ -15,7 +15,7 @@
           "key": "preface",
           "name": "Préface",
           "weight": 0.001,
-          "value": 0
+          "value": 1
         },
         {
           "key": "races-people",
@@ -27,7 +27,7 @@
           "key": "background",
           "name": "Historique",
           "weight": 0.05,
-          "value": 0
+          "value": 1
         },
         {
           "key": "talents",
@@ -45,7 +45,7 @@
           "key": "specializations",
           "name": "Spécialisations",
           "weight": 0.38,
-          "value": 0.73
+          "value": 0.7509
         },
         {
           "key": "magic",
