@@ -15,6 +15,18 @@ Total = 1 + 292 + 40 + 8 + 27 + 285 + 45 + 52 = 750 points
 - Langues⚠️ et noms
 - Vitesse, taille, poids et âge
 
+### Progression
+
+- Demi-elfe : 3/4
+- Demi-orque : 3/4
+- Elfe : 3/4
+- Gnome : 3/4
+- Humain : 4/4
+- Nain : 3/4
+- Petit-Gens : 3/4
+- Satyr : 2/4
+- Triton : 2/4
+
 ## Historique
 
 40 points
