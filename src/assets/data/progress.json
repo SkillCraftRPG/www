@@ -21,7 +21,7 @@
           "key": "races-people",
           "name": "Espèces et peuples",
           "weight": 0.389,
-          "value": 0.089
+          "value": 0.1684
         },
         {
           "key": "background",
@@ -33,7 +33,7 @@
           "key": "talents",
           "name": "Talents",
           "weight": 0.01,
-          "value": 0.5
+          "value": 0.625
         },
         {
           "key": "equipment",
@@ -62,5 +62,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-05-04T06:15:00Z"
+  "updatedOn": "2024-05-13T04:30:00Z"
 }
