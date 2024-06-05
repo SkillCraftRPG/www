@@ -5,7 +5,7 @@
     {
       "key": "game-engine",
       "name": "Moteur de jeu",
-      "value": 0.96
+      "value": 1
     },
     {
       "key": "ungar-universe",
@@ -39,13 +39,13 @@
           "key": "equipment",
           "name": "Équipement",
           "weight": 0.075,
-          "value": 0
+          "value": 1
         },
         {
           "key": "specializations",
           "name": "Spécialisations",
           "weight": 0.323,
-          "value": 0.9008
+          "value": 1
         },
         {
           "key": "magic",
@@ -62,5 +62,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-05-25T01:06:00Z"
+  "updatedOn": "2024-06-05T04:15:00Z"
 }
