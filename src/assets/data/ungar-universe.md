@@ -10,11 +10,25 @@ Total = 1 + 91 + 41 + 6 + 28 + 121 + 36 + 51 = 375 points
 
 1 (entête) + 18 espèces & peuples × 5 = 91
 
+- Attributs et traits
 - Description
-- Nom, attributs et traits
-- Langues et noms
+- Nom, langues et noms
 - Vitesse, taille, poids et âge
 - Description et alphabet de la langue
+
+### Langues
+
+- Aradoc
+- Areumain
+- Celfique
+- Dallois
+- Gormanche
+- Languedoïl : commun de l'Ouespéro, "lingua franca" car proche du Dallois (Anglo-Normand) et des langues latines
+- Nain des collines
+- Nain des montagnes
+- Norrois
+- Orrinique
+- Rénon
 
 ## Historique
 
