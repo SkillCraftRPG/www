@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.3.4] - 2024-06-24
+
+### Changed
+
+- Worked on species.
+
 ## [1.3.3] - 2024-06-06
 
 ### Changed
