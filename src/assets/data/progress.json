@@ -51,7 +51,7 @@
           "key": "magic",
           "name": "Magie",
           "weight": 0.096,
-          "value": 0
+          "value": 0.3056
         },
         {
           "key": "magic",
@@ -62,5 +62,5 @@
       ]
     }
   ],
-  "updatedOn": "2024-06-26T00:35:00Z"
+  "updatedOn": "2024-06-26T02:45:00Z"
 }
