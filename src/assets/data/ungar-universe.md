@@ -81,15 +81,11 @@ Total = 1 + 91 + 41 + 6 + 28 + 121 + 36 + 51 = 375 points
 
 ## Magie
 
-7 × (4 tiers + 1 explication) = 35 + 1 (entête) = 36
+Total = 36
 
-- Animisme (Nature)
-- Astromancie
-- Divin
-- Élémentarisme (Air)
-- Élémentarisme (Eau)
-- Élémentarisme (Feu)
-- Élémentarisme (Terre)
+- 1 entête
+- 11 descriptions (animisme, divin, 4 éléments, 5 cercles de magie)
+- 24 sorts (4 animisme, 4 divin, 8 élémentarisme, 8 astrologie)
 
 **Seulement listes de sorts!**
 
