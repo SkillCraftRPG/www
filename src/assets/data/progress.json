@@ -21,7 +21,7 @@
           "key": "races-people",
           "name": "Espèces et peuples",
           "weight": 0.243,
-          "value": 1
+          "value": 0.4286
         },
         {
           "key": "background",
@@ -51,7 +51,7 @@
           "key": "magic",
           "name": "Magie",
           "weight": 0.096,
-          "value": 0.3611
+          "value": 0.5833
         },
         {
           "key": "magic",
@@ -60,7 +60,12 @@
           "value": 0
         }
       ]
+    },
+    {
+      "key": "grimoire",
+      "name": "Grimoire",
+      "value": 0.01
     }
   ],
-  "updatedOn": "2024-06-27T04:00:00Z"
+  "updatedOn": "2024-07-03T05:15:00Z"
 }

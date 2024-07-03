@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.4.0] - 2024-07-03
+
+### Added
+
+- Grimoire progress tracking.
+
+### Changed
+
+- Worked on magic.
+- Rescoped species to Lasyuga's 1300AC campaign.
+
+### Fixed
+
+- Package vulnerabilities.
+
 ## [1.3.7] - 2024-06-27
 
 ### Changed
@@ -201,7 +216,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.3.7...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/SkillCraftRPG/www/compare/v1.3.7...v1.4.0
 [1.3.7]: https://github.com/SkillCraftRPG/www/compare/v1.3.6...v1.3.7
 [1.3.6]: https://github.com/SkillCraftRPG/www/compare/v1.3.5...v1.3.6
 [1.3.5]: https://github.com/SkillCraftRPG/www/compare/v1.3.4...v1.3.5
