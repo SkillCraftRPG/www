@@ -21,7 +21,7 @@
           "key": "races-people",
           "name": "Espèces et peuples",
           "weight": 0.243,
-          "value": 0.4286
+          "value": 0.7937
         },
         {
           "key": "background",
@@ -64,8 +64,8 @@
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0.01
+      "value": 0.02
     }
   ],
-  "updatedOn": "2024-07-03T05:15:00Z"
+  "updatedOn": "2024-07-08T04:00:00Z"
 }
