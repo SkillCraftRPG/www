@@ -111,7 +111,7 @@ Total = 36
   - Essence
   - Effets des 4 tiers
 - Herboristerie, Apothicairerie et Toxicologie (5)
-- Manœuvres de combat (4)
+- ✅ Manœuvres de combat (4)
 
 ### Éventuellement
 
@@ -119,3 +119,11 @@ Total = 36
 - Alchimie
 - Artillerie
 - Culte & religion de chaque peuple / espèce sans peuple, domaines divins résultants
+
+## Progression
+
+Magie = 58.33 %
+
+Différence = (100 % - 58.33 %) + 0 % = 41.67 %
+
+49.51 / 5.1 + 72.19 = 81.90 %
