@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.4.2] - 2024-07-17
+
+### Changed
+
+- Worked on species.
+- Completed magic.
+- Worked on annexes.
+
 ## [1.4.1] - 2024-07-08
 
 ### Changed
@@ -222,7 +230,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.4.1...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.4.2...HEAD
+[1.4.2]: https://github.com/SkillCraftRPG/www/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/SkillCraftRPG/www/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/SkillCraftRPG/www/compare/v1.3.7...v1.4.0
 [1.3.7]: https://github.com/SkillCraftRPG/www/compare/v1.3.6...v1.3.7
