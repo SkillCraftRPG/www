@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.4.4] - 2024-07-25
+
+### Changed
+
+- Completed core rules (D&D5E caveats).
+- Worked on annexes.
+
 ## [1.4.3] - 2024-07-23
 
 ### Changed
@@ -236,7 +243,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.4.3...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.4.4...HEAD
+[1.4.4]: https://github.com/SkillCraftRPG/www/compare/v1.4.3...v1.4.4
 [1.4.3]: https://github.com/SkillCraftRPG/www/compare/v1.4.2...v1.4.3
 [1.4.2]: https://github.com/SkillCraftRPG/www/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/SkillCraftRPG/www/compare/v1.4.0...v1.4.1

@@ -5,7 +5,7 @@
     {
       "key": "game-engine",
       "name": "Moteur de jeu",
-      "value": 0.72
+      "value": 1
     },
     {
       "key": "ungar-universe",
@@ -57,7 +57,7 @@
           "key": "magic",
           "name": "Annexes",
           "weight": 0.136,
-          "value": 0.0784
+          "value": 0.1503
         }
       ]
     },
@@ -67,5 +67,5 @@
       "value": 0.02
     }
   ],
-  "updatedOn": "2024-07-24T03:30:00Z"
+  "updatedOn": "2024-07-25T05:00:00Z"
 }
