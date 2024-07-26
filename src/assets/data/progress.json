@@ -57,15 +57,15 @@
           "key": "magic",
           "name": "Annexes",
           "weight": 0.136,
-          "value": 0.1503
+          "value": 0.2741
         }
       ]
     },
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0.02
+      "value": 0.09
     }
   ],
-  "updatedOn": "2024-07-25T05:00:00Z"
+  "updatedOn": "2024-07-26T03:45:00Z"
 }
