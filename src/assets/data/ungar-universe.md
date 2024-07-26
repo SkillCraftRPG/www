@@ -99,18 +99,18 @@ Total = 36
 51 points
 
 - Animisme : 4 domaines de la Nature (4)
-- Astromancie (5)
-  - Tour de la Magie
-  - Rites & initiation
-  - 5 cercles du pentacle
-  - 7 maisons et philosophies
-  - Signes astrologiques
+- 🚧 Astromancie (5)
+  - ✅ Tour de la Magie
+  - 🚧 Rites & initiation (-0.02)
+  - ✅ 5 cercles du pentacle
+  - ✅ 7 maisons et philosophies
+  - ✅ Signes astrologiques
 - Domaines divins (14)
 - Cultes & religions : 14 points (un point par peuple et par espèce sans peuple)
 - Élémentarisme (5)
   - Essence
   - Effets des 4 tiers
-- 🚧 Herboristerie, Apothicairerie et Toxicologie (3.67/5)
+- ✅ Herboristerie, Apothicairerie et Toxicologie (5)
 - ✅ Manœuvres de combat (4)
 
 ### Éventuellement
