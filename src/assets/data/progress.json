@@ -64,8 +64,18 @@
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0.32
+      "value": 0.5
+    },
+    {
+      "key": "expansions",
+      "name": "Extensions",
+      "value": 0
+    },
+    {
+      "key": "app",
+      "name": "Application Web",
+      "value": 0.024
     }
   ],
-  "updatedOn": "2024-07-27T01:45:00Z"
+  "updatedOn": "2024-08-01T06:45:00Z"
 }
