@@ -8,27 +8,12 @@ Total = 1 + 91 + 41 + 6 + 28 + 121 + 36 + 51 = 375 points
 
 ## Espèces et peuples
 
-1 (entête) + 18 espèces & peuples × 5 = 91
+1 (entête) + 18 espèces & peuples × 4 = 73
 
 - Attributs et traits
 - Description
 - Nom, langues et noms
 - Vitesse, taille, poids et âge
-- Description et alphabet de la langue
-
-### Langues
-
-- Aradoc
-- Areumain
-- Celfique
-- Dallois
-- Gormanche
-- Languedoïl : commun de l'Ouespéro, "lingua franca" car proche du Dallois (Anglo-Normand) et des langues latines
-- Nain des collines
-- Nain des montagnes
-- Norrois
-- Orrinique
-- Rénon
 
 ## Historique
 
@@ -96,21 +81,23 @@ Total = 36
 
 ## Annexes
 
-51 points
+Progression : 59.92 / 69
 
-- Animisme : 4 domaines de la Nature (4)
-- 🚧 Astromancie (5)
+- 🚧 Animisme : 4 domaines de la Nature (3.83/4)
+- ✅ Astromancie (5)
   - ✅ Tour de la Magie
-  - 🚧 Rites & initiation (-0.02)
+  - ✅ Rites & initiation
   - ✅ 5 cercles du pentacle
   - ✅ 7 maisons et philosophies
   - ✅ Signes astrologiques
-- Domaines divins (14)
-- Cultes & religions : 14 points (un point par peuple et par espèce sans peuple)
-- Élémentarisme (5)
-  - Essence
-  - Effets des 4 tiers
+- ✅ Domaines divins (14/14)
+- 🚧 Cultes & religions (5.08/14)
+- ✅ Élémentarisme (5/5)
+  - ✅ Entête
+  - ✅ Essence
+  - ✅ Effets des 3 tiers
 - ✅ Herboristerie, Apothicairerie et Toxicologie (5)
+- ✅ Langues & alphabets (18/18)
 - ✅ Manœuvres de combat (4)
 
 ### Éventuellement

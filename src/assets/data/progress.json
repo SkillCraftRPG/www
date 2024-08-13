@@ -54,28 +54,28 @@
           "value": 1
         },
         {
-          "key": "magic",
+          "key": "annexes",
           "name": "Annexes",
           "weight": 0.136,
-          "value": 0.2745
+          "value": 0.8684
         }
       ]
     },
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0.5
+      "value": 0.7476
     },
     {
       "key": "expansions",
       "name": "Extensions",
-      "value": 0
+      "value": 0.2161
     },
     {
       "key": "app",
       "name": "Application Web",
-      "value": 0.031
+      "value": 0.0419
     }
   ],
-  "updatedOn": "2024-08-03T18:30:00Z"
+  "updatedOn": "2024-08-13T04:45:00Z"
 }
