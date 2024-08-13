@@ -289,7 +289,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.2...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.3...HEAD
+[1.5.3]: https://github.com/SkillCraftRPG/www/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/SkillCraftRPG/www/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/SkillCraftRPG/www/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/SkillCraftRPG/www/compare/v1.4.6...v1.5.0
