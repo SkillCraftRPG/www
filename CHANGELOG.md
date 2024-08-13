@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.5.3] - 2024-08-13
+
+### Changed
+
+- Worked on annexes.
+- Worked on extensions.
+- Worked on grimoire.
+- Worked on Web application.
+
 ## [1.5.2] - 2024-08-03
 
 ### Changed
