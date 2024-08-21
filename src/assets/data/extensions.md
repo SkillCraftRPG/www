@@ -1,6 +1,6 @@
 # Extensions
 
-Progression = 78 / 361 = 0.2161
+Progression = 150 / 361 = 0.41551246537396121883656509695291
 
 ## Espèces et peuples
 

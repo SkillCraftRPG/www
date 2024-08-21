@@ -81,9 +81,7 @@ Total = 36
 
 ## Annexes
 
-Progression : 59.92 / 69
-
-- 🚧 Animisme : 4 domaines de la Nature (3.83/4)
+- ✅ Animisme : 4 domaines de la Nature (4/4)
 - ✅ Astromancie (5)
   - ✅ Tour de la Magie
   - ✅ Rites & initiation
@@ -91,7 +89,6 @@ Progression : 59.92 / 69
   - ✅ 7 maisons et philosophies
   - ✅ Signes astrologiques
 - ✅ Domaines divins (14/14)
-- 🚧 Cultes & religions (5.08/14)
 - ✅ Élémentarisme (5/5)
   - ✅ Entête
   - ✅ Essence

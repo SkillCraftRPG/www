@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.5.4] - 2024-08-20
+
+### Changed
+
+- Worked on extensions.
+- Worked on grimoire.
+- Completed universe.
+
 ## [1.5.3] - 2024-08-13
 
 ### Changed
@@ -289,7 +297,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.3...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.4...HEAD
+[1.5.4]: https://github.com/SkillCraftRPG/www/compare/v1.5.3...v1.5.4
 [1.5.3]: https://github.com/SkillCraftRPG/www/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/SkillCraftRPG/www/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/SkillCraftRPG/www/compare/v1.5.0...v1.5.1
