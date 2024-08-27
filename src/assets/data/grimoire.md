@@ -1,5 +1,3 @@
 # Grimoire
 
-Progression = 0 + 87 / 1 + 104 = 87 / 105 = 0.82857142857142857142857142857143
-
-🚧 Pouvoirs partagés
+Progression = 0 + 91 / 1 + 106 = 91 / 107 = 0.8505
