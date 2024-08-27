@@ -1,12 +1,14 @@
 # Extensions
 
-Progression = 150 / 361 = 0.41551246537396121883656509695291
+Progression = 203 / 330 = 0.6152
 
 ## Espèces et peuples
 
-13 × 2 (autres espèces et peuples) × 6 = 156 points
+20 (autres espèces et peuples) × 5 = 100 points
 
-Célestin, Dhampir, Elfe sombre, Gnome (forêt), Infernon, Minotaure, Petit-Gens (Gitsani), Petit-Gens (Lotusden), Petit-Gens (Stout), Salamandre, Sang-dragon, Sylphe, Triton
+## Équipements
+
+Armes à feu et explosifs = 25 points
 
 ## Spécialisations
 
@@ -21,7 +23,5 @@ Célestin, Dhampir, Elfe sombre, Gnome (forêt), Infernon, Minotaure, Petit-Gens
 ## Annexes
 
 - 🚧 Infusions magiques (similaire aux Manœuvres de combat)
-
-### ✅ Domaines d'animisme spirituel
-
-1 + 4 domaines × 6 = 25 points
+- 🚧 Invocations mystérieuses (Conjurateur)
+- ✅ Domaines d’animisme spirituel : 1 + 4 domaines × 6 = 25 points

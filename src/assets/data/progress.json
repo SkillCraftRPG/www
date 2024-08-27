@@ -15,12 +15,12 @@
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0.8286
+      "value": 0.8505
     },
     {
       "key": "expansions",
       "name": "Extensions",
-      "value": 0.4155
+      "value": 0.6152
     },
     {
       "key": "app",
@@ -28,5 +28,5 @@
       "value": 0.0419
     }
   ],
-  "updatedOn": "2024-08-21T03:45:00Z"
+  "updatedOn": "2024-08-27T06:20:00Z"
 }
