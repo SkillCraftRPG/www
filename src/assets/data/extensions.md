@@ -1,10 +1,10 @@
 # Extensions
 
-Progression = 203 / 330 = 0.6152
+Progression = 257 / 330 = 0.7788
 
 ## Espèces et peuples
 
-20 (autres espèces et peuples) × 5 = 100 points
+12 (autres espèces et peuples) × 5 = 60 points
 
 ## Équipements
 
@@ -22,6 +22,6 @@ Armes à feu et explosifs = 25 points
 
 ## Annexes
 
-- 🚧 Infusions magiques (similaire aux Manœuvres de combat)
-- 🚧 Invocations mystérieuses (Conjurateur)
+- 🚧 Infusions magiques (similaire aux Manœuvres de combat) : 6/16
+- 🚧 Invocations mystérieuses (Conjurateur) : 7/24
 - ✅ Domaines d’animisme spirituel : 1 + 4 domaines × 6 = 25 points
