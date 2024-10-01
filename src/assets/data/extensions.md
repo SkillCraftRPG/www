@@ -1,6 +1,6 @@
 # Extensions
 
-Progression = 257 / 330 = 0.7788
+Progression = 272.857 / 330 = 0.8268
 
 ## Espèces et peuples
 
@@ -22,6 +22,6 @@ Armes à feu et explosifs = 25 points
 
 ## Annexes
 
-- 🚧 Infusions magiques (similaire aux Manœuvres de combat) : 6/16
-- 🚧 Invocations mystérieuses (Conjurateur) : 7/24
+- 🚧 Infusions magiques (similaire aux Manœuvres de combat) : 7/16
+- 🚧 Invocations mystérieuses (Conjurateur) : 18.857/24
 - ✅ Domaines d’animisme spirituel : 1 + 4 domaines × 6 = 25 points
