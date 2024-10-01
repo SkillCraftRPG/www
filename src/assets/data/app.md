@@ -12,17 +12,187 @@ Progression : 3.5/5
 
 ## Worlds
 
-Progression : 0.6875/5
+Progression : 0.75/5
 
-- Backend (0.25/2.5)
-  - ✅Create (0.25/0.25)
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
   - ❌Comment
+  - ❌Delete
   - ❌Document
   - ❌Permissions
   - ❌Publication
   - ❌Trash
   - ❌View
-  - 🚧Delete (0.125/0.25)
-  - 🚧Preview (0.1875/0.25)
-  - 🚧Update (0.125/0.25)
+- Frontend (0/2.5)
+
+## Aspects
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Castes
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Customizations
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Educations
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Languages
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Lineages
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Parties
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Personalities
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Talents
+
+Progression : 0.75/5
+
+- Backend (0.75/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Comment
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Publication
+  - ❌Trash
+  - ❌View
+- Frontend (0/2.5)
+
+## Characters
+
+Progression : 0/5
+
+- Backend (0/2.5)
+  - ❌Comment
+  - ❌Create
+  - ❌Delete
+  - ❌Document
+  - ❌Permissions
+  - ❌Preview
+  - ❌Publication
+  - ❌Trash
+  - ❌Update
+  - ❌View
 - Frontend (0/2.5)
