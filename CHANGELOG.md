@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.5.8] - 2024-10-03
+
+### Changed
+
+- Worked on extensions.
+- Restarted Grimoire progress to rebalance spells.
+
 ## [1.5.7] - 2024-10-01
 
 ### Changed
@@ -317,7 +324,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.7...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.5.8...HEAD
+[1.5.8]: https://github.com/SkillCraftRPG/www/compare/v1.5.7...v1.5.8
 [1.5.7]: https://github.com/SkillCraftRPG/www/compare/v1.5.6...v1.5.7
 [1.5.6]: https://github.com/SkillCraftRPG/www/compare/v1.5.5...v1.5.6
 [1.5.5]: https://github.com/SkillCraftRPG/www/compare/v1.5.4...v1.5.5
