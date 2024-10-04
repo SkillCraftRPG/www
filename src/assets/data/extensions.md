@@ -1,6 +1,6 @@
 # Extensions
 
-Progression = 296 / 330 = 0.8970
+Progression = 322 / 330 = 0.9769
 
 ## Espèces et peuples
 
