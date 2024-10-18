@@ -20,7 +20,7 @@
     {
       "key": "grimoire",
       "name": "Grimoire",
-      "value": 0
+      "value": 0.14
     },
     {
       "key": "app",
@@ -28,5 +28,5 @@
       "value": 0.11
     }
   ],
-  "updatedOn": "2024-10-11T21:00:00Z"
+  "updatedOn": "2024-10-15T21:00:00Z"
 }
