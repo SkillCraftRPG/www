@@ -3,21 +3,6 @@
   "name": "SkillCraftRPG",
   "children": [
     {
-      "key": "game-engine",
-      "name": "Moteur de jeu",
-      "value": 1
-    },
-    {
-      "key": "ungar-universe",
-      "name": "Univers d’Ungar",
-      "value": 1
-    },
-    {
-      "key": "expansions",
-      "name": "Extensions",
-      "value": 1
-    },
-    {
       "key": "grimoire",
       "name": "Grimoire",
       "value": 0.14
@@ -28,5 +13,5 @@
       "value": 0.11
     }
   ],
-  "updatedOn": "2024-10-15T21:00:00Z"
+  "updatedOn": "2024-10-18T15:00:00Z"
 }

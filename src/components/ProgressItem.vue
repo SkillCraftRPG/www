@@ -2,6 +2,7 @@
 import { TarAvatar, TarProgress, parsingUtils, type ProgressVariant } from "logitar-vue3-ui";
 import { computed } from "vue";
 
+import DownloadList from "./DownloadList.vue";
 import type { ProgressItem } from "@/types";
 
 const dateFormatter = new Intl.DateTimeFormat("fr-CA", { dateStyle: "full", timeStyle: "short" });
@@ -69,17 +70,8 @@ const variant = computed<ProgressVariant>(() => {
     <h4 v-else-if="parsedLevel === 3">{{ item.name ?? item.key }}</h4>
     <h5 v-else-if="parsedLevel === 4">{{ item.name ?? item.key }}</h5>
     <h6 v-else>{{ item.name ?? item.key }}</h6>
-    <TarProgress
-      v-if="parsedLevel > 0"
-      :class="classes"
-      :animated="value > 0"
-      :label="`${value.toFixed(2)} %`"
-      min="0"
-      max="100"
-      striped
-      :value="value"
-      :variant="variant"
-    />
+    <DownloadList v-if="parsedLevel <= 0" />
+    <TarProgress v-else :class="classes" :animated="value > 0" :label="`${value.toFixed(2)} %`" min="0" max="100" striped :value="value" :variant="variant" />
     <template v-if="parsedLevel < maximumLevel">
       <ProgressItem v-for="child in item.children" :key="child.key" :item="child" :level="parsedLevel + 1" />
     </template>
