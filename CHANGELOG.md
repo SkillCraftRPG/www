@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.6.1] - 2024-10-21
+
+### Added
+
+- Started working on Ultima Ignis.
+
 ## [1.6.0] - 2024-10-18
 
 ### Added
@@ -348,7 +354,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.6.0...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.6.1...HEAD
+[1.6.1]: https://github.com/SkillCraftRPG/www/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/SkillCraftRPG/www/compare/v1.5.11...v1.6.0
 [1.5.11]: https://github.com/SkillCraftRPG/www/compare/v1.5.10...v1.5.11
 [1.5.10]: https://github.com/SkillCraftRPG/www/compare/v1.5.9...v1.5.10

@@ -3,6 +3,24 @@
   "name": "SkillCraftRPG",
   "children": [
     {
+      "key": "ultima-ignis",
+      "name": "Ultima Ignis",
+      "children": [
+        {
+          "key": "lineages",
+          "name": "Espèces & peuples",
+          "weight": 0.5,
+          "value": 0.74
+        },
+        {
+          "key": "linguistics",
+          "name": "Langues & alphabets",
+          "weight": 0.5,
+          "value": 0.54
+        }
+      ]
+    },
+    {
       "key": "grimoire",
       "name": "Grimoire",
       "value": 0.14
@@ -13,5 +31,5 @@
       "value": 0.11
     }
   ],
-  "updatedOn": "2024-10-18T15:00:00Z"
+  "updatedOn": "2024-10-21T05:00:00Z"
 }
