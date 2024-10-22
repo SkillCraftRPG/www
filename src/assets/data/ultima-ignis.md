@@ -1,120 +1,76 @@
 # Ultima Ignis
 
-## Espèces & Peuples
+## Espèces & peuples
 
-Progression : 37 / 50 = 0.74
+Progression : 20 / 20 = 1
 
-- (✅) Ashtavrin
-- (✅) Célestin
-- (✅) Demi-Elfe
-- (✅) Demi-Orque
-- (✅) Dhampir
-- (✅) Elfe
-  - ( ) Elfe sombre (ougriens & ob-ougriens)
-  - (✅) Elfe des mers
-  - (✅) Elfe lunaire
-  - (✅) Haut-Elfe
-  - (🚧) Elfe cramoisi
-  - (🚧) Elfe sylvain
-- (✅) Gnome
-  - ( ) [Svirfneblin](https://dnd5e.wikidot.com/lineage:deep-gnome) ⇔ [Spriggan](https://en.wikipedia.org/wiki/Spriggan)
-  - (✅) Chalite
-  - (🚧) Angolite
-- (✅) Harsème
+- (✅) Célestins
+- (✅) Demi-Elfes
+- (✅) Demi-Orques
+- (✅) Dhampirs
+- (✅) Elfes
+  - (✅) Elfes sylvains
+  - (✅) Haut-Elfes
 - (✅) Humain
-  - (✅) Arasien
+  - (✅) Arasiens
   - (✅) Dallois
-  - (✅) Gormand
-  - (✅) Norrien
-  - (✅) Onérien
-  - (✅) Orrin
+  - (✅) Gormands
+  - (✅) Norriens
+  - (✅) Onériens
   - (✅) Vaillançais
-  - (🚧) Altanais
-  - (🚧) Svite
-  - (🚧) Voloques
-- (✅) Infernon
-- (✅) Minotaure
-- (✅) Nain
-  - ( ) [Duergar](https://dnd5e.wikidot.com/lineage:duergar)
-  - (✅) Nain blanc
-  - (✅) Nain brun
-  - (✅) Nain gris
+- (✅) Infernons
+- (✅) Nains
+  - (✅) Nains gris
 - (✅) Petit-Gens
   - (✅) Gitsani
-  - (✅) Savákti
-- (✅) Salamandre
-- (✅) Sang-dragon
-- (✅) Sarne
-- (✅) Satyre
-- (✅) Skami
-- (✅) Sylphe
-- (✅) Triton
-- (✅) Vodyanoi
-- ( ) [Fir Bolg](https://en.wikipedia.org/wiki/Fir_Bolg) ⇔ [Firbolg](https://dnd5e.wikidot.com/lineage:firbolg)
-- ( ) [Goliath](https://dnd5e.wikidot.com/lineage:goliath)
-- ( ) [Nemediens](https://en.wikipedia.org/wiki/Nemed)
-- ( ) [Samoyèdes](https://en.wikipedia.org/wiki/Samoyedic_languages) ⇔ [Kodan](https://wiki.guildwars2.com/wiki/Kodan)
+- (✅) Sang-dragons
 
-### Extensions
+### Eastern Kingdoms
 
-- Bharat
-  - [Halfling: Lotusden](https://dnd5e.wikidot.com/lineage:halfling#toc6) : [Yakshas](https://en.wikipedia.org/wiki/Yaksha)
-  - [Halfling: Stout](https://dnd5e.wikidot.com/lineage:halfling#toc2) : [Indo-Aryens](https://en.wikipedia.org/wiki/Indo-Aryan_peoples) ou [Népali](https://en.wikipedia.org/wiki/Nepali_language)
-  - Nains des Himalayas : [Harappéens](https://en.wikipedia.org/wiki/Indus_Valley_Civilisation)
-- Khemia
-  - ( ) Khémite
+- ( ) Altanais
+- ( ) Ashtavrin
+- ( ) Elfes des mers
+- ( ) Nains bruns
+- ( ) Orrins
+- ( ) Satyres
+- ( ) Savákti
+- ( ) Voloques
 
-## Langues & Alphabets
+### Élémentaires
 
-Progression : 27 / 50 = 0.54
+- ( ) Gnomes
+  - ( ) Angolites
+  - ( ) Chalites
+- ( ) Salamandres
+- ( ) Sylphes
+- ( ) Tritons
 
-- (📝) Ashtavrin
-- (✅) Célestin
-- (✅) Demi-Elfe
-- (✅) Demi-Orque
-- (✅) Dhampir
-- (✅) Elfe
-  - ( ) Elfe sombre (ougriens & ob-ougriens)
-  - (✅) Elfe des mers
-  - (✅) Elfe lunaire
-  - (🚧) Elfe cramoisi
-  - (🚧) Elfe sylvain
-  - (✅) Haut-Elfe
-- (✅) Gnome
-  - ( ) [Svirfneblin](https://dnd5e.wikidot.com/lineage:deep-gnome) ⇔ [Spriggan](https://en.wikipedia.org/wiki/Spriggan)
-  - (✅) Chalite
-  - (🚧) Angolite
-- (📝) Harsème
-- (✅) Humain
-  - (✅) Arasien
-  - (✅) Dallois
-  - (✅) Gormand
-  - (✅) Vaillançais
-  - (✅) Voloques
-  - (📝) Altanais
-  - (📝) Norrien
-  - (📝) Onérien
-  - (📝) Orrin
-  - (🚧) Svite
-- (✅) Infernon
-- (✅) Minotaure
-- (✅) Nain
-  - ( ) [Duergar](https://dnd5e.wikidot.com/lineage:duergar)
-  - (🚧) Nain blanc
-  - (🚧) Nain brun
-  - (🚧) Nain gris
-- (✅) Petit-Gens
-  - (✅) Gitsani
-  - (✅) Savákti
-- (✅) Salamandre
-- (✅) Sang-dragon
-- (✅) Sarne
-- (✅) Satyre
-- (✅) Skami
-- (🚧) Sylphe
-- (🚧) Triton
-- (🚧) Vodyanoi
-- ( ) [Fir Bolg](https://en.wikipedia.org/wiki/Fir_Bolg) ⇔ [Firbolg](https://dnd5e.wikidot.com/lineage:firbolg)
-- ( ) [Goliath](https://dnd5e.wikidot.com/lineage:goliath)
-- ( ) [Nemediens](https://en.wikipedia.org/wiki/Nemed)
-- ( ) [Samoyèdes](https://en.wikipedia.org/wiki/Samoyedic_languages) ⇔ [Kodan](https://wiki.guildwars2.com/wiki/Kodan)
+### Griffe
+
+- ( ) Duergar
+- ( ) Elfes cramoisis
+- ( ) Elfes sombres
+- ( ) Spriggan
+
+### Hommes-animaux
+
+- ( ) Minotaures
+- ( ) Harsèmes
+- ( ) Sarnes
+- ( ) Skamis
+- ( ) Vodyanoy
+
+### Lebor Gabála Érenn
+
+- ( ) Cessair
+- ( ) Fomorians
+- ( ) Partholón
+- ( ) Nemed
+- ( ) Fir Bolg
+- ( ) Tuatha Dé Danann
+
+### Northern Kingdoms
+
+- ( ) Elfes lunaires
+- ( ) Nains blancs
+- ( ) Svites
