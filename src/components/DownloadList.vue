@@ -28,6 +28,12 @@ const downloads = ref<Download[]>([
     picture: "https://skillcraftrpg.blob.core.windows.net/books/ungar-ultima-ignis.jpg",
     url: "https://skillcraftrpg.blob.core.windows.net/books/Ungar_Ultima_Ignis_v0.7.0.pdf",
   },
+  {
+    id: "grimoire",
+    name: "Grimoire",
+    picture: "https://skillcraftrpg.blob.core.windows.net/books/grimoire.jpg",
+    url: "https://skillcraftrpg.blob.core.windows.net/books/Grimoire_v0.7.0.pdf",
+  },
 ]);
 </script>
 

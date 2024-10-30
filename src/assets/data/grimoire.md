@@ -1,3 +1,3 @@
 # Grimoire
 
-Progression = 21 / 150 = 14 %
+Progression = 26 / 150 = 17.33 %
