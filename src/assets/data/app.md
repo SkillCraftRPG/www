@@ -79,7 +79,7 @@ Progression : 1.875/5
 
 ## Educations
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -88,13 +88,17 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Personalities
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -103,9 +107,13 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Aspects
 
@@ -124,7 +132,7 @@ Progression : 1.875/5
 
 ## Customizations
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -133,12 +141,35 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Languages
 
+Progression : 2.5/5
+
+- Backend (1.25/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
+- Frontend (1.25/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
+
+## Talents
+
 Progression : 1.875/5
 
 - Backend (1.25/2.5)
@@ -150,20 +181,6 @@ Progression : 1.875/5
   - ❌View
 - Frontend (0.625/2.5)
   - ✅Create
-  - 🚧Preview
-
-## Talents
-
-Progression : 1.25/5
-
-- Backend (1.25/2.5)
-  - ✅Create
-  - ✅Preview
-  - ✅Update
-  - ❌Delete
-  - ❌Trash
-  - ❌View
-- Frontend (0/2.5)
   - 🚧Preview
 
 ## Powers
@@ -181,7 +198,7 @@ Progression : 0/5
 
 ## Items
 
-Progression : 1.25/5
+Progression : 1.875/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -190,7 +207,8 @@ Progression : 1.25/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0/2.5)
+- Frontend (0.625/2.5)
+  - ✅Create
   - 🚧Preview
 
 ## Characters (gamemaster)
