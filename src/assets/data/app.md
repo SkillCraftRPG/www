@@ -12,7 +12,7 @@ Progression : 3.5/5
 
 ## Worlds
 
-Progression : 0.75/5
+Progression : 2/5
 
 - Backend (0.75/2.5)
   - ✅Create
@@ -25,8 +25,13 @@ Progression : 0.75/5
   - ❌Publication
   - ❌Trash
   - ❌View
-- Frontend (0/2.5)
-  - 🚧Preview
+- Frontend (1.25/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Membership
 
@@ -36,7 +41,7 @@ Progression : 0/5
 
 ## Parties
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -45,13 +50,17 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Lineages
 
-Progression : 1.25/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -60,11 +69,17 @@ Progression : 1.25/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0/2.5)
+- Frontend (1.25/2.5)
+  - ✅Create
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Castes
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -73,9 +88,13 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Educations
 
@@ -117,7 +136,7 @@ Progression : 2.5/5
 
 ## Aspects
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -126,9 +145,13 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Customizations
 
@@ -170,7 +193,7 @@ Progression : 2.5/5
 
 ## Talents
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -179,9 +202,13 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Powers
 
@@ -198,7 +225,7 @@ Progression : 0/5
 
 ## Items
 
-Progression : 1.875/5
+Progression : 2.5/5
 
 - Backend (1.25/2.5)
   - ✅Create
@@ -207,21 +234,25 @@ Progression : 1.875/5
   - ❌Delete
   - ❌Trash
   - ❌View
-- Frontend (0.625/2.5)
+- Frontend (1.25/2.5)
   - ✅Create
-  - 🚧Preview
+  - ✅Preview
+  - ✅Update
+  - ❌Delete
+  - ❌Trash
+  - ❌View
 
 ## Characters (gamemaster)
 
-Progression : 0.625/5
+Progression : 0.833/5
 
-- Backend (0.625/2.5)
+- Backend (0.833/2.5)
   - ✅Create
+  - ✅Preview
   - ❌Delete
   - ❌Trash
   - ❌Update
   - ❌View
-  - 🚧Preview (50%)
 - Frontend (0/2.5)
 
 ## Specializations

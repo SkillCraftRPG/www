@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.6.6] - 2024-11-20
+
+### Changed
+
+- Worked on application.
+
 ## [1.6.5] - 2024-11-02
 
 ### Changed
@@ -382,9 +388,10 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.6.5...HEAD
-[1.6.4]: https://github.com/SkillCraftRPG/www/compare/v1.6.4...v1.6.5
-[1.6.3]: https://github.com/SkillCraftRPG/www/compare/v1.6.3...v1.6.4
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.6.6...HEAD
+[1.6.6]: https://github.com/SkillCraftRPG/www/compare/v1.6.5...v1.6.6
+[1.6.5]: https://github.com/SkillCraftRPG/www/compare/v1.6.4...v1.6.5
+[1.6.4]: https://github.com/SkillCraftRPG/www/compare/v1.6.3...v1.6.4
 [1.6.3]: https://github.com/SkillCraftRPG/www/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/SkillCraftRPG/www/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/SkillCraftRPG/www/compare/v1.6.0...v1.6.1
