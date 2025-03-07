@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing yet.
 
+## [1.7.0] - 2025-03-07
+
+### Added
+
+- Tracking progress on v8.
+
+### Fixed
+
+- Audit vulnerabilities.
+
 ## [1.6.7] - 2025-01-17
 
 ### Changed
@@ -394,7 +404,8 @@ Nothing yet.
 
 - Created a progress website.
 
-[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.6.7...HEAD
+[unreleased]: https://github.com/SkillCraftRPG/www/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/SkillCraftRPG/www/compare/v1.6.7...v1.7.0
 [1.6.7]: https://github.com/SkillCraftRPG/www/compare/v1.6.6...v1.6.7
 [1.6.6]: https://github.com/SkillCraftRPG/www/compare/v1.6.5...v1.6.6
 [1.6.5]: https://github.com/SkillCraftRPG/www/compare/v1.6.4...v1.6.5

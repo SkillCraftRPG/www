@@ -8,10 +8,84 @@
       "value": 0.4
     },
     {
+      "key": "v8",
+      "name": "SkillCraft v0.8",
+      "children": [
+        {
+          "key": "personnages",
+          "name": "Personnages",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "attributs-competences",
+          "name": "Attributs et compétences",
+          "value": 0.3636,
+          "weight": 0.1,
+          "description": [
+            "✅ attributs: score et augmentation, modificateur, statistiques (4/4)",
+            "✅ compétences: formation, rang (3/3)",
+            "✅tests: système 2d10, Faire 20, Faire 10, degré de difficulté, test opposé, avantage et désavantage, jets de sauvegarde, test passif, test de groupe (10/10)",
+            "✅ espérance et damnation: momentum, dépense (3/3)",
+            "les 7 (5) attributs, leur statistique (7 → 10) et leurs compétences (20); (0/35)",
+            "total: 20/55"
+          ]
+        },
+        {
+          "key": "talents",
+          "name": "Talents",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "equipement",
+          "name": "Équipement",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "aventure",
+          "name": "Aventure",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "combat",
+          "name": "Combat",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "magie",
+          "name": "Magie",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "especes-ethnies",
+          "name": "Espèces & ethnies",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "historique",
+          "name": "Historique",
+          "value": 0,
+          "weight": 0.1
+        },
+        {
+          "key": "specialisations",
+          "name": "Spécialisations",
+          "value": 0,
+          "weight": 0.1
+        }
+      ]
+    },
+    {
       "key": "app",
       "name": "Application Web",
       "value": 0.32833
     }
   ],
-  "updatedOn": "2025-01-17T21:30:00Z"
+  "updatedOn": "2025-03-07T05:35:00Z"
 }
