@@ -330,5 +330,42 @@
         "DisplayName": "Contenu HTML"
       }
     ]
+  },
+  {
+    "Id": "358d57e4-f432-42b8-a4cc-8a9a1724d8a3",
+    "IsInvariant": false,
+    "UniqueName": "Script",
+    "Fields": [
+      {
+        "Id": "f9b0e9c2-c8fc-49a7-a431-531b78fef1ae",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "999fabd9-0b14-4b31-abe4-60d72800ab9d",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "197cb8b1-4686-4aa1-89c0-bff94a38d2ab",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
   }
 ]
