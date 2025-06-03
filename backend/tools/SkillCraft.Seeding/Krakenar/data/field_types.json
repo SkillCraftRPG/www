@@ -24,5 +24,14 @@
     "RichText": {
       "ContentType": "text/html"
     }
+  },
+  {
+    "Id": "5d84c64e-c313-4c78-9136-3a9ba71c4a72",
+    "UniqueName": "Attribute",
+    "DisplayName": "Attribut",
+    "RelatedContent": {
+      "ContentTypeId": "8023dfd1-24d6-4a55-b405-c19fa0096d20",
+      "IsMultiple": false
+    }
   }
 ]

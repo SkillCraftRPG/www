@@ -36,5 +36,54 @@
         "DisplayName": "Contenu HTML"
       }
     ]
+  },
+  {
+    "Id": "28a3a292-74f7-4b6e-bea1-1da07356c886",
+    "IsInvariant": false,
+    "UniqueName": "Skill",
+    "DisplayName": "Compétence",
+    "Fields": [
+      {
+        "Id": "e0fa312e-6993-4e56-aa4f-da70439ba925",
+        "FieldType": "Attribute",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Attribute",
+        "DisplayName": "Attribut",
+        "Placeholder": "Sélectionnez un attribut"
+      },
+      {
+        "Id": "5e13f623-7503-4c14-a410-69e6be335153",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "a467c416-b511-46d9-ae91-fb067d6f8701",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "90dd6243-16fa-4dea-a483-fa8ba9cc4ef9",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
   }
 ]
