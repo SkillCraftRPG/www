@@ -1,4 +1,5 @@
 ﻿using Krakenar.Contracts.Realms;
+using Krakenar.Core;
 using MediatR;
 using SkillCraft.Seeding.Krakenar.Payloads;
 
@@ -11,11 +12,13 @@ internal class SeedRealmsTask : SeedingTask
 
 internal class SeedRealmsTaskHandler : INotificationHandler<SeedRealmsTask>
 {
+  private readonly SeedingApplicationContext _applicationContext;
   private readonly ILogger<SeedRealmsTaskHandler> _logger;
   private readonly IRealmService _realmService;
 
-  public SeedRealmsTaskHandler(ILogger<SeedRealmsTaskHandler> logger, IRealmService realmService)
+  public SeedRealmsTaskHandler(IApplicationContext applicationContext, ILogger<SeedRealmsTaskHandler> logger, IRealmService realmService)
   {
+    _applicationContext = (SeedingApplicationContext)applicationContext;
     _logger = logger;
     _realmService = realmService;
   }
@@ -29,18 +32,9 @@ internal class SeedRealmsTaskHandler : INotificationHandler<SeedRealmsTask>
       foreach (RealmPayload payload in payloads)
       {
         CreateOrReplaceRealmResult result = await _realmService.CreateOrReplaceAsync(payload, payload.Id, version: null, cancellationToken);
-        if (result.Realm is null)
-        {
-          throw new InvalidOperationException($"'RealmService.CreateOrReplaceAsync' returned null for realm 'Id={payload.Id}'.");
-        }
-        else if (result.Created)
-        {
-          _logger.LogInformation("The realm '{Realm}' was replaced.", result.Realm.DisplayName ?? result.Realm.UniqueSlug);
-        }
-        else
-        {
-          _logger.LogInformation("The realm '{Realm}' was replaced.", result.Realm.DisplayName ?? result.Realm.UniqueSlug);
-        }
+        Realm realm = result.Realm ?? throw new InvalidOperationException($"'RealmService.CreateOrReplaceAsync' returned null for realm 'Id={payload.Id}'.");
+        _logger.LogInformation("The realm '{Realm}' was '{Action}'.", realm.DisplayName ?? realm.UniqueSlug, result.Created ? "created" : "replaced");
+        _applicationContext.Realm ??= realm;
       }
     }
   }
