@@ -335,6 +335,7 @@
     "Id": "358d57e4-f432-42b8-a4cc-8a9a1724d8a3",
     "IsInvariant": false,
     "UniqueName": "Script",
+    "DisplayName": "Alphabet",
     "Fields": [
       {
         "Id": "f9b0e9c2-c8fc-49a7-a431-531b78fef1ae",
@@ -365,6 +366,65 @@
         "IsUnique": false,
         "UniqueName": "HtmlContents",
         "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "efa6e720-18bd-4f97-b470-0f419857a4c7",
+    "IsInvariant": false,
+    "UniqueName": "Language",
+    "DisplayName": "Langue",
+    "Fields": [
+      {
+        "Id": "44a00f35-1b1e-4312-9e80-8f53da054ad2",
+        "FieldType": "Script",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Script",
+        "DisplayName": "Alphabet",
+        "Placeholder": "Sélectionnez un alphabet"
+      },
+      {
+        "Id": "ab547057-72a9-45bf-89b1-23d38102a873",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "784ccb93-6546-4ae5-abc6-d0d462c55ce1",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "0bf74a2d-a096-45a8-93d8-ba59905c270a",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      },
+      {
+        "Id": "f230702d-ab11-4e8f-af1e-b3af0946384b",
+        "FieldType": "TypicalSpeakers",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "TypicalSpeakers",
+        "DisplayName": "Locuteurs typiques"
       }
     ]
   }

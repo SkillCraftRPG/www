@@ -103,5 +103,22 @@
       "MaximumValue": 12,
       "Step": 2
     }
+  },
+  {
+    "Id": "ebc57597-8008-481d-8207-e445c9e3f36a",
+    "UniqueName": "Script",
+    "DisplayName": "Alphabet",
+    "RelatedContent": {
+      "ContentTypeId": "358d57e4-f432-42b8-a4cc-8a9a1724d8a3",
+      "IsMultiple": false
+    }
+  },
+  {
+    "Id": "9f41cb5c-d820-430c-98ad-0aeb4359b7a9",
+    "UniqueName": "TypicalSpeakers",
+    "DisplayName": "Locuteurs typiques",
+    "String": {
+      "MaximumLength": 255
+    }
   }
 ]
