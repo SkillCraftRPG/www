@@ -66,5 +66,22 @@
       "ContentTypeId": "9d178fef-d33d-47ff-9a9c-b5b4ca196aaa",
       "IsMultiple": false
     }
+  },
+  {
+    "Id": "68772d19-be11-4aa4-a01c-f9797193149f",
+    "UniqueName": "CustomizationKind",
+    "DisplayName": "Type de personnalisation",
+    "Select": {
+      "Options": [
+        {
+          "Text": "Don",
+          "Value": "Gift"
+        },
+        {
+          "Text": "Handicap",
+          "Value": "Disability"
+        }
+      ]
+    }
   }
 ]

@@ -164,5 +164,54 @@
         "DisplayName": "Contenu HTML"
       }
     ]
+  },
+  {
+    "Id": "7f4ad4eb-4b72-4da1-8a86-371dddb438ab",
+    "IsInvariant": false,
+    "UniqueName": "Customization",
+    "DisplayName": "Personnalisation",
+    "Fields": [
+      {
+        "Id": "53db1d09-69d3-4cc9-9109-6ef168159594",
+        "FieldType": "CustomizationKind",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "CustomizationKind",
+        "DisplayName": "Type de personnalisation",
+        "Placeholder": "Sélectionnez un type de personnalisation"
+      },
+      {
+        "Id": "e63731a3-23f1-4662-9ad9-0bbbd0f6816a",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "b85a5f1d-0e03-448f-a1ce-e037008e5dff",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "55ba85e4-c515-4be4-9774-006ade792d10",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
   }
 ]
