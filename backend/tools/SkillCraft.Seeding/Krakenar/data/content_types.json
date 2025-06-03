@@ -213,5 +213,122 @@
         "DisplayName": "Contenu HTML"
       }
     ]
+  },
+  {
+    "Id": "c0a64f8e-36f5-4c3c-8614-1c635defdeca",
+    "IsInvariant": false,
+    "UniqueName": "Caste",
+    "Fields": [
+      {
+        "Id": "10123390-77b7-4647-9d99-ce5104cfb478",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "45ceda4f-a938-4869-b241-2a95b17d2e69",
+        "FieldType": "Roll",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "WealthRoll",
+        "DisplayName": "Richesse initiale (jet)"
+      },
+      {
+        "Id": "10f07afb-64e3-4713-907e-966053b147fd",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "a86eb0ff-abb7-4b2b-9e5c-deffd4327d04",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "63e00c29-64c5-4072-a874-94210ec6ae6f",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "55e883fc-70fa-4366-a04f-4b69dbebbd1b",
+    "IsInvariant": false,
+    "UniqueName": "Education",
+    "DisplayName": "Éducation",
+    "Fields": [
+      {
+        "Id": "96bc2855-23bf-465e-b4d2-1e59be38c48d",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "ee9e90b0-f5ed-4916-aa47-ec43c8f40319",
+        "FieldType": "WealthMultiplier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "WealthMultiplier",
+        "DisplayName": "Richesse initiale (multiplicateur)"
+      },
+      {
+        "Id": "98ac93aa-3461-4e03-a965-3f709fd5663e",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "92fa8088-f0f0-4c67-8a1b-43bef44be76d",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "3e9f42dc-8dd7-4feb-a122-869f828673c5",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
   }
 ]
