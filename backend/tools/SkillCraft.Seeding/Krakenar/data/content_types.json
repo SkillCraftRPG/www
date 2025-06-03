@@ -1,0 +1,40 @@
+﻿[
+  {
+    "Id": "8023dfd1-24d6-4a55-b405-c19fa0096d20",
+    "IsInvariant": false,
+    "UniqueName": "Attribute",
+    "DisplayName": "Attribut",
+    "Fields": [
+      {
+        "Id": "b265b172-48e4-47be-8284-fe01834bf233",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "50b04797-2e52-477a-90b9-d00cb7a33a88",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "e025d010-d998-4566-80b7-530e1e9410b0",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  }
+]
