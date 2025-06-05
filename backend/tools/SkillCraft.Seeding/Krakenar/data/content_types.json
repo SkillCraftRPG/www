@@ -36,5 +36,396 @@
         "DisplayName": "Contenu HTML"
       }
     ]
+  },
+  {
+    "Id": "28a3a292-74f7-4b6e-bea1-1da07356c886",
+    "IsInvariant": false,
+    "UniqueName": "Skill",
+    "DisplayName": "Compétence",
+    "Fields": [
+      {
+        "Id": "e0fa312e-6993-4e56-aa4f-da70439ba925",
+        "FieldType": "Attribute",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Attribute",
+        "DisplayName": "Attribut",
+        "Placeholder": "Sélectionnez un attribut"
+      },
+      {
+        "Id": "5e13f623-7503-4c14-a410-69e6be335153",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "a467c416-b511-46d9-ae91-fb067d6f8701",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "90dd6243-16fa-4dea-a483-fa8ba9cc4ef9",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "9d178fef-d33d-47ff-9a9c-b5b4ca196aaa",
+    "IsInvariant": false,
+    "UniqueName": "Talent",
+    "Fields": [
+      {
+        "Id": "54580b91-9a93-4539-bdd5-5bde70a6edfb",
+        "FieldType": "TalentTier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Tier",
+        "DisplayName": "Tiers"
+      },
+      {
+        "Id": "92d8a9f3-7b00-4cdd-8a0b-a389a22f73bd",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "AllowMultiplePurchases",
+        "DisplayName": "Achats multiples"
+      },
+      {
+        "Id": "c2cce8a8-4550-4b5e-9bcd-3872b6380012",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "8db92f13-0899-42bb-9d73-92b29d5035db",
+        "FieldType": "Talent",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "RequiredTalent",
+        "DisplayName": "Talent requis",
+        "Placeholder": "Sélectionnez un talent"
+      },
+      {
+        "Id": "e6044b08-ee16-4b68-857e-826b3097ff55",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "54842ce6-a253-4fcb-9ab3-5fae94a517b4",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "be556b54-9394-44f2-b735-861b658101a6",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "7f4ad4eb-4b72-4da1-8a86-371dddb438ab",
+    "IsInvariant": false,
+    "UniqueName": "Customization",
+    "DisplayName": "Personnalisation",
+    "Fields": [
+      {
+        "Id": "53db1d09-69d3-4cc9-9109-6ef168159594",
+        "FieldType": "CustomizationKind",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "CustomizationKind",
+        "DisplayName": "Type de personnalisation",
+        "Placeholder": "Sélectionnez un type de personnalisation"
+      },
+      {
+        "Id": "e63731a3-23f1-4662-9ad9-0bbbd0f6816a",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "b85a5f1d-0e03-448f-a1ce-e037008e5dff",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "55ba85e4-c515-4be4-9774-006ade792d10",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "c0a64f8e-36f5-4c3c-8614-1c635defdeca",
+    "IsInvariant": false,
+    "UniqueName": "Caste",
+    "Fields": [
+      {
+        "Id": "10123390-77b7-4647-9d99-ce5104cfb478",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "45ceda4f-a938-4869-b241-2a95b17d2e69",
+        "FieldType": "Roll",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "WealthRoll",
+        "DisplayName": "Richesse initiale (jet)"
+      },
+      {
+        "Id": "10f07afb-64e3-4713-907e-966053b147fd",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "a86eb0ff-abb7-4b2b-9e5c-deffd4327d04",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "63e00c29-64c5-4072-a874-94210ec6ae6f",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "55e883fc-70fa-4366-a04f-4b69dbebbd1b",
+    "IsInvariant": false,
+    "UniqueName": "Education",
+    "DisplayName": "Éducation",
+    "Fields": [
+      {
+        "Id": "96bc2855-23bf-465e-b4d2-1e59be38c48d",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "ee9e90b0-f5ed-4916-aa47-ec43c8f40319",
+        "FieldType": "WealthMultiplier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "WealthMultiplier",
+        "DisplayName": "Richesse initiale (multiplicateur)"
+      },
+      {
+        "Id": "98ac93aa-3461-4e03-a965-3f709fd5663e",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "92fa8088-f0f0-4c67-8a1b-43bef44be76d",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "3e9f42dc-8dd7-4feb-a122-869f828673c5",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "358d57e4-f432-42b8-a4cc-8a9a1724d8a3",
+    "IsInvariant": false,
+    "UniqueName": "Script",
+    "DisplayName": "Alphabet",
+    "Fields": [
+      {
+        "Id": "f9b0e9c2-c8fc-49a7-a431-531b78fef1ae",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "999fabd9-0b14-4b31-abe4-60d72800ab9d",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "197cb8b1-4686-4aa1-89c0-bff94a38d2ab",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
+    "Id": "efa6e720-18bd-4f97-b470-0f419857a4c7",
+    "IsInvariant": false,
+    "UniqueName": "Language",
+    "DisplayName": "Langue",
+    "Fields": [
+      {
+        "Id": "44a00f35-1b1e-4312-9e80-8f53da054ad2",
+        "FieldType": "Script",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Script",
+        "DisplayName": "Alphabet",
+        "Placeholder": "Sélectionnez un alphabet"
+      },
+      {
+        "Id": "ab547057-72a9-45bf-89b1-23d38102a873",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "784ccb93-6546-4ae5-abc6-d0d462c55ce1",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "0bf74a2d-a096-45a8-93d8-ba59905c270a",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      },
+      {
+        "Id": "f230702d-ab11-4e8f-af1e-b3af0946384b",
+        "FieldType": "TypicalSpeakers",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "TypicalSpeakers",
+        "DisplayName": "Locuteurs typiques"
+      }
+    ]
   }
 ]
