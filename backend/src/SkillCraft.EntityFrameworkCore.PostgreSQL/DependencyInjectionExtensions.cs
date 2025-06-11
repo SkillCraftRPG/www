@@ -22,6 +22,6 @@ public static class DependencyInjectionExtensions
   {
     return services
       .AddKrakenarEntityFrameworkCorePostgreSQL(connectionString)
-      .AddDbContext<GameContext>(options => options.UseNpgsql(connectionString, options => options.MigrationsAssembly("SkillCraft.EntityFrameworkCore.PostgreSQL")));
+      .AddDbContext<RuleContext>(options => options.UseNpgsql(connectionString, options => options.MigrationsAssembly("SkillCraft.EntityFrameworkCore.PostgreSQL")));
   }
 }

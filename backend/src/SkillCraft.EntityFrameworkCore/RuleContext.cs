@@ -1,12 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SkillCraft.EntityFrameworkCore.Entities.Rules;
 
 namespace SkillCraft.EntityFrameworkCore;
 
-public sealed class GameContext : DbContext
+public sealed class RuleContext : DbContext
 {
-  public GameContext(DbContextOptions<GameContext> options) : base(options)
+  public RuleContext(DbContextOptions<RuleContext> options) : base(options)
   {
   }
+
+  internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
