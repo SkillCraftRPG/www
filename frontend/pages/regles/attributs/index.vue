@@ -1,10 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Attributs</h1>
-    <ul>
-      <li><NuxtLink to="/">Accueil</NuxtLink></li>
-      <li><NuxtLink to="/regles">Règles</NuxtLink></li>
-    </ul>
+    <AppBreadcrumb active="Attributs" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
       congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
