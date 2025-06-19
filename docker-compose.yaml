@@ -40,6 +40,18 @@ services:
     ports:
       - 8088:8080
 
+  skillcraft_frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: skillcraft_frontend
+    container_name: SkillCraft_frontend
+    depends_on:
+      - skillcraft_backend
+    restart: unless-stopped
+    ports:
+      - 18088:80
+
 volumes:
   mongodata:
   postgres_data:
