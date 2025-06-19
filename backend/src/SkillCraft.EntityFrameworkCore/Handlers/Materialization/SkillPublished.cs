@@ -2,6 +2,7 @@
 using Krakenar.Core.Contents.Events;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using SkillCraft.EntityFrameworkCore.Entities.Rules;
 
 namespace SkillCraft.EntityFrameworkCore.Handlers.Materialization;
@@ -10,10 +11,12 @@ internal record SkillPublished(ContentLocalePublished Event, ContentLocale Invar
 
 internal class SkillPublishedHandler : INotificationHandler<SkillPublished>
 {
+  private readonly ILogger<SkillPublishedHandler> _logger;
   private readonly RuleContext _rules;
 
-  public SkillPublishedHandler(RuleContext rules)
+  public SkillPublishedHandler(ILogger<SkillPublishedHandler> logger, RuleContext rules)
   {
+    _logger = logger;
     _rules = rules;
   }
 
@@ -33,7 +36,26 @@ internal class SkillPublishedHandler : INotificationHandler<SkillPublished>
       skill.Update(@event);
     }
 
-    // TODO(fpion): SetAttribute
+    IReadOnlyCollection<Guid>? attributeIds = @event.Invariant.TryGetRelatedContentValue(Fields.Skills.Attribute);
+    if (attributeIds is not null)
+    {
+      if (attributeIds.Count < 1)
+      {
+        _logger.LogWarning("Invalid attribute field value for content 'Id={StreamId}', there was no related content.", streamId);
+      }
+      else if (attributeIds.Count > 1)
+      {
+        _logger.LogWarning("Invalid attribute field value for content 'Id={StreamId}', there were {Count} related contents.", streamId, attributeIds.Count);
+      }
+      else
+      {
+        AttributeEntity? attribute = await _rules.Attributes.SingleOrDefaultAsync(x => x.Id == attributeIds.Single(), cancellationToken);
+        if (attribute is not null)
+        {
+          skill.SetAttribute(attribute);
+        }
+      }
+    }
 
     await _rules.SaveChangesAsync(cancellationToken);
   }
