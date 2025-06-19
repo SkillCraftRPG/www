@@ -59,6 +59,9 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
       case EntityKind.Skill:
         await _mediator.Publish(new SkillPublished(@event, content.PublishedInvariant, locale), cancellationToken);
         break;
+      case EntityKind.Talent:
+        await _mediator.Publish(new TalentPublished(@event, content.PublishedInvariant, locale), cancellationToken);
+        break;
     }
 
     _logger.LogInformation("Event '{EventType} (Id={Id})' handled successfully.", @event.GetType(), @event.Id);
@@ -79,6 +82,9 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
         break;
       case EntityKind.Skill:
         await _mediator.Publish(new SkillUnpublished(@event), cancellationToken);
+        break;
+      case EntityKind.Talent:
+        await _mediator.Publish(new TalentUnpublished(@event), cancellationToken);
         break;
     }
 

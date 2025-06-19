@@ -35,7 +35,8 @@ internal class AttributeEntity : AggregateEntity
     base.Update(published.Event);
 
     ContentLocale locale = published.Locale;
-    Slug = locale.FindStringValue(Fields.Attributes.Slug);
+
+    Slug = locale.FindStringValue(Fields.Attributes.Slug).ToLowerInvariant();
 
     if (!Enum.TryParse(locale.UniqueName.Value, out GameAttribute value))
     {

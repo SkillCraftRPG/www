@@ -19,7 +19,9 @@ internal class SkillEntity : AggregateEntity
 
   public AttributeEntity? Attribute { get; private set; }
   public int? AttributeId { get; private set; }
-  public Guid? AttributeUid { get; private set; }
+  public Guid? AttributeUid { get; set; }
+
+  public List<TalentEntity> Talents { get; private set; } = [];
 
   public SkillEntity(SkillPublished published) : base(published.Event)
   {
@@ -44,7 +46,8 @@ internal class SkillEntity : AggregateEntity
     base.Update(published.Event);
 
     ContentLocale locale = published.Locale;
-    Slug = locale.FindStringValue(Fields.Skills.Slug);
+
+    Slug = locale.FindStringValue(Fields.Skills.Slug).ToLowerInvariant();
 
     if (!Enum.TryParse(locale.UniqueName.Value, out GameSkill value))
     {
