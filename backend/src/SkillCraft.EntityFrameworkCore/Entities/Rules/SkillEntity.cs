@@ -5,46 +5,55 @@ using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggrega
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
 
-internal class AttributeEntity : AggregateEntity
+internal class SkillEntity : AggregateEntity
 {
-  public int AttributeId { get; private set; }
+  public int SkillId { get; private set; }
   public Guid Id { get; private set; }
 
   public string Slug { get; private set; } = string.Empty;
-  public GameAttribute Value { get; private set; }
+  public GameSkill Value { get; private set; }
 
   public string Name { get; private set; } = string.Empty;
   public string? Summary { get; private set; }
   public string? Description { get; private set; }
 
-  public List<SkillEntity> Skills { get; private set; } = [];
+  public AttributeEntity? Attribute { get; private set; }
+  public int? AttributeId { get; private set; }
+  public Guid? AttributeUid { get; private set; }
 
-  public AttributeEntity(AttributePublished published) : base(published.Event)
+  public SkillEntity(SkillPublished published) : base(published.Event)
   {
     Id = new ContentId(published.Event.StreamId).EntityId;
 
     Update(published);
   }
 
-  private AttributeEntity() : base()
+  private SkillEntity() : base()
   {
   }
 
-  public void Update(AttributePublished published)
+  public void SetAttribute(AttributeEntity? attribute)
+  {
+    Attribute = attribute;
+    AttributeId = attribute?.AttributeId;
+    AttributeUid = attribute?.Id;
+  }
+
+  public void Update(SkillPublished published)
   {
     base.Update(published.Event);
 
     ContentLocale locale = published.Locale;
-    Slug = locale.FindStringValue(Fields.Attributes.Slug);
+    Slug = locale.FindStringValue(Fields.Skills.Slug);
 
-    if (!Enum.TryParse(locale.UniqueName.Value, out GameAttribute value))
+    if (!Enum.TryParse(locale.UniqueName.Value, out GameSkill value))
     {
       throw new ArgumentException($"The value '{locale.UniqueName.Value}' is not a valid game attribute.", nameof(published));
     }
     Value = value;
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Attributes.Summary);
-    Description = locale.TryGetStringValue(Fields.Attributes.Description);
+    Summary = locale.TryGetStringValue(Fields.Skills.Summary);
+    Description = locale.TryGetStringValue(Fields.Skills.Description);
   }
 }

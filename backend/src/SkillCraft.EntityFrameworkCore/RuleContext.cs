@@ -12,6 +12,7 @@ public sealed class RuleContext : DbContext
   }
 
   internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
+  internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
