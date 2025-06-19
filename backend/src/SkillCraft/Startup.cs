@@ -51,7 +51,7 @@ internal class Startup : StartupBase
         services.AddSkillCraftEntityFrameworkCorePostgreSQL(_configuration);
         healthChecks.AddDbContextCheck<EventContext>();
         healthChecks.AddDbContextCheck<KrakenarContext>();
-        healthChecks.AddDbContextCheck<GameContext>();
+        healthChecks.AddDbContextCheck<RuleContext>();
         break;
       default:
         throw new DatabaseProviderNotSupportedException(databaseSettings.Provider);

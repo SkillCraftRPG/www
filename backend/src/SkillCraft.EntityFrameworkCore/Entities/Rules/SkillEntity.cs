@@ -1,0 +1,59 @@
+﻿using Krakenar.Core.Contents;
+using SkillCraft.Core;
+using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
+
+namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
+
+internal class SkillEntity : AggregateEntity
+{
+  public int SkillId { get; private set; }
+  public Guid Id { get; private set; }
+
+  public string Slug { get; private set; } = string.Empty;
+  public GameSkill Value { get; private set; }
+
+  public string Name { get; private set; } = string.Empty;
+  public string? Summary { get; private set; }
+  public string? Description { get; private set; }
+
+  public AttributeEntity? Attribute { get; private set; }
+  public int? AttributeId { get; private set; }
+  public Guid? AttributeUid { get; private set; }
+
+  public SkillEntity(SkillPublished published) : base(published.Event)
+  {
+    Id = new ContentId(published.Event.StreamId).EntityId;
+
+    Update(published);
+  }
+
+  private SkillEntity() : base()
+  {
+  }
+
+  public void SetAttribute(AttributeEntity? attribute)
+  {
+    Attribute = attribute;
+    AttributeId = attribute?.AttributeId;
+    AttributeUid = attribute?.Id;
+  }
+
+  public void Update(SkillPublished published)
+  {
+    base.Update(published.Event);
+
+    ContentLocale locale = published.Locale;
+    Slug = locale.FindStringValue(Fields.Skills.Slug);
+
+    if (!Enum.TryParse(locale.UniqueName.Value, out GameSkill value))
+    {
+      throw new ArgumentException($"The value '{locale.UniqueName.Value}' is not a valid game attribute.", nameof(published));
+    }
+    Value = value;
+
+    Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
+    Summary = locale.TryGetStringValue(Fields.Skills.Summary);
+    Description = locale.TryGetStringValue(Fields.Skills.Description);
+  }
+}

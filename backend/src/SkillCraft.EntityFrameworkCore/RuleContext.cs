@@ -1,0 +1,21 @@
+﻿using Microsoft.EntityFrameworkCore;
+using SkillCraft.EntityFrameworkCore.Entities.Rules;
+
+namespace SkillCraft.EntityFrameworkCore;
+
+public sealed class RuleContext : DbContext
+{
+  public const string Schema = "Rules";
+
+  public RuleContext(DbContextOptions<RuleContext> options) : base(options)
+  {
+  }
+
+  internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
+  internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
+
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+  }
+}
