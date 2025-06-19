@@ -2,5 +2,5 @@
 
 public enum EntityKind
 {
-  Talent
+  Attribute
 }

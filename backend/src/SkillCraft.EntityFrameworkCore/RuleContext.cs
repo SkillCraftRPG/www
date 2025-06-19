@@ -5,11 +5,13 @@ namespace SkillCraft.EntityFrameworkCore;
 
 public sealed class RuleContext : DbContext
 {
+  public const string Schema = "Rules";
+
   public RuleContext(DbContextOptions<RuleContext> options) : base(options)
   {
   }
 
-  internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
+  internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

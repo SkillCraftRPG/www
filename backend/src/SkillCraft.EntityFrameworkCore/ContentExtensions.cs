@@ -5,18 +5,21 @@ namespace SkillCraft.EntityFrameworkCore;
 
 internal static class ContentExtensions
 {
-  public static bool GetBooleanValue(this ContentLocale locale, Guid field, bool defaultValue = false)
+  public static string FindStringValue(this ContentLocale locale, Guid id)
   {
-    return locale.FieldValues.TryGetValue(field, out FieldValue? value) ? bool.Parse(value.Value) : defaultValue;
+    return TryGetStringValue(locale, id) ?? throw new InvalidOperationException($"The field value 'Id={id}' was not found.");
+  }
+  public static string GetStringValue(this ContentLocale locale, Guid id, string defaultValue = "")
+  {
+    return TryGetStringValue(locale, id) ?? defaultValue;
+  }
+  public static string? TryGetStringValue(this ContentLocale locale, Guid id)
+  {
+    return TryGetFieldValue(locale, id)?.Value;
   }
 
-  public static int GetInt32Value(this ContentLocale locale, Guid field, int defaultValue = 0)
+  private static FieldValue? TryGetFieldValue(this ContentLocale locale, Guid id)
   {
-    return locale.FieldValues.TryGetValue(field, out FieldValue? value) ? int.Parse(value.Value) : defaultValue;
-  }
-
-  public static string GetStringValue(this ContentLocale locale, Guid field, string defaultValue = "")
-  {
-    return locale.FieldValues.TryGetValue(field, out FieldValue? value) ? value.Value : defaultValue;
+    return locale.FieldValues.TryGetValue(id, out FieldValue? value) ? value : null;
   }
 }

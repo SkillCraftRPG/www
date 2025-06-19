@@ -8,7 +8,7 @@ using Logitar.EventSourcing;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SkillCraft.EntityFrameworkCore.Handlers.Talents;
+using SkillCraft.EntityFrameworkCore.Handlers.Attributes;
 
 namespace SkillCraft.EntityFrameworkCore.Handlers;
 
@@ -53,8 +53,8 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
 
     switch (context.Kind)
     {
-      case EntityKind.Talent:
-        await _mediator.Publish(new TalentPublished(@event, content.PublishedInvariant, locale), cancellationToken);
+      case EntityKind.Attribute:
+        await _mediator.Publish(new AttributePublished(@event, content.PublishedInvariant, locale), cancellationToken);
         break;
     }
 
@@ -71,8 +71,8 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
 
     switch (context.Kind)
     {
-      case EntityKind.Talent:
-        await _mediator.Publish(new TalentUnpublished(@event), cancellationToken);
+      case EntityKind.Attribute:
+        await _mediator.Publish(new AttributeUnpublished(@event), cancellationToken);
         break;
     }
 
