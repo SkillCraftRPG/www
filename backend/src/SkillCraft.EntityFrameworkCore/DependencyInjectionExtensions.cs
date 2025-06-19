@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core;
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational;
+using Krakenar.Infrastructure.Commands;
 using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.EntityFrameworkCore.Handlers;
 
@@ -13,7 +14,8 @@ public static class DependencyInjectionExtensions
     return services
       .AddEventHandlers()
       .AddKrakenarEntityFrameworkCoreRelational()
-      .AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+      .AddMediatR(config => config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()))
+      .AddScoped<ICommandHandler<MigrateDatabase>, MigrateSkillCraftDatabaseCommandHandler>();
   }
 
   private static IServiceCollection AddEventHandlers(this IServiceCollection services)
