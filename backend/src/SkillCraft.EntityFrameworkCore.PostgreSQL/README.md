@@ -19,7 +19,7 @@ dotnet ef migrations add <YOUR_MIGRATION_NAME> --context RuleContext --project s
 To remove the latest unapplied migration, execute the following command.
 
 ```sh
-dotnet ef migrations remove --context RuleContext --project src/SkillCraft.EntityFrameworkCore.PostgreSQL --startup-project src/SkillCraft
+dotnet ef migrations remove --context RuleContext --project src/SkillCraft.EntityFrameworkCore.PostgreSQL --startup-project src/SkillCraft --output-dir Migrations/Rules
 ```
 
 ### Generate a script
@@ -27,5 +27,5 @@ dotnet ef migrations remove --context RuleContext --project src/SkillCraft.Entit
 To generate a script, execute the following command. Do not forget to provide a source migration name!
 
 ```sh
-dotnet ef migrations script <SOURCE_MIGRATION> --context RuleContext --project src/SkillCraft.EntityFrameworkCore.PostgreSQL --startup-project src/SkillCraft
+dotnet ef migrations script <SOURCE_MIGRATION> --context RuleContext --project src/SkillCraft.EntityFrameworkCore.PostgreSQL --startup-project src/SkillCraft --output-dir Scripts/Rules
 ```
