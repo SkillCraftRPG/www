@@ -8,7 +8,7 @@ using Logitar.EventSourcing;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SkillCraft.EntityFrameworkCore.Handlers.Attributes;
+using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 
 namespace SkillCraft.EntityFrameworkCore.Handlers;
 

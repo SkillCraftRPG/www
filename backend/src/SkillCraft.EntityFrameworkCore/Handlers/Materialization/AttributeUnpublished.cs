@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace SkillCraft.EntityFrameworkCore.Handlers.Attributes;
+namespace SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 
 internal record AttributeUnpublished(ContentLocaleUnpublished Event) : INotification;
 

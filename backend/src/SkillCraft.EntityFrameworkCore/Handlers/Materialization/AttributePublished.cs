@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using SkillCraft.EntityFrameworkCore.Entities.Rules;
 
-namespace SkillCraft.EntityFrameworkCore.Handlers.Attributes;
+namespace SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 
 internal record AttributePublished(ContentLocalePublished Event, ContentLocale Invariant, ContentLocale Locale) : INotification;
 

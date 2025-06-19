@@ -1,6 +1,6 @@
 ﻿using Krakenar.Core.Contents;
 using SkillCraft.Core;
-using SkillCraft.EntityFrameworkCore.Handlers.Attributes;
+using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
