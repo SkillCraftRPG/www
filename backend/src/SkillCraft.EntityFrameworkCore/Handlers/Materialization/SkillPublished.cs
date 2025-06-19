@@ -49,8 +49,13 @@ internal class SkillPublishedHandler : INotificationHandler<SkillPublished>
       }
       else
       {
-        AttributeEntity? attribute = await _rules.Attributes.SingleOrDefaultAsync(x => x.Id == attributeIds.Single(), cancellationToken);
-        if (attribute is not null)
+        Guid attributeId = attributeIds.Single();
+        AttributeEntity? attribute = await _rules.Attributes.SingleOrDefaultAsync(x => x.Id == attributeId, cancellationToken);
+        if (attribute is null)
+        {
+          skill.AttributeUid = attributeId;
+        }
+        else
         {
           skill.SetAttribute(attribute);
         }
