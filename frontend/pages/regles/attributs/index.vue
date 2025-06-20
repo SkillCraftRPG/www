@@ -6,9 +6,18 @@
     <p>La valeur d’un attribut varie généralement entre -5 et +5, mais certaines conditions peuvent amener cette valeur en-dehors de ces bornes.</p>
     <p>Le système SkillCraft utilise <strong>5 attributs</strong> :</p>
     <ul>
-      <li>2 attributs physiques, qui bénéficieront davantage aux personnages actifs.</li>
-      <li>2 attributs mentaux, qui bénéficieront davantage aux personnages intellectuels.</li>
-      <li>Un attribut universel dont tous les personnages bénéficient.</li>
+      <li>
+        <font-awesome-icon :icon="categories[0].icon" />
+        2 attributs physiques, qui bénéficieront davantage aux personnages actifs.
+      </li>
+      <li>
+        <font-awesome-icon :icon="categories[1].icon" />
+        2 attributs mentaux, qui bénéficieront davantage aux personnages intellectuels.
+      </li>
+      <li>
+        <font-awesome-icon :icon="categories[2].icon" />
+        Un attribut universel dont tous les personnages bénéficient.
+      </li>
     </ul>
     <table v-if="attributes.length" class="table table-striped">
       <thead>
@@ -22,7 +31,7 @@
           <td>
             <NuxtLink :to="`/regles/attributs/${categorized.attribute.slug}`">{{ categorized.attribute.name }}</NuxtLink>
             <br />
-            <!-- TODO(fpion): icon -->
+            <font-awesome-icon class="me-1" :icon="categorized.category.icon" />
             <i>{{ categorized.category.text }}</i>
           </td>
           <td>
@@ -51,9 +60,9 @@ type CategorizedAttribute = {
 };
 
 const categories = [
-  { icon: "", text: "Physique" },
-  { icon: "", text: "Mental" },
-  { icon: "", text: "Universel" },
+  { icon: "fas fa-dumbbell", text: "Physique" },
+  { icon: "fas fa-brain", text: "Mental" },
+  { icon: "fas fa-heart", text: "Universel" },
 ];
 const config = useRuntimeConfig();
 const title: string = "Attributs";

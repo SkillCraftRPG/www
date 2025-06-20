@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   modules: ["usebootstrap"],
-  css: ["~/assets/styles/main.css"],
+  css: ["@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
   app: {
     head: {
       htmlAttrs: {
