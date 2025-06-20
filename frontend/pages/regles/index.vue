@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main class="container">
     <h1>Règles</h1>
     <AppBreadcrumb active="Règles" />
     <p>
@@ -16,5 +16,5 @@
       <li><NuxtLink to="/regles/competences">Compétences</NuxtLink></li>
       <li><NuxtLink to="/regles/talents">Talents</NuxtLink></li>
     </ul>
-  </div>
+  </main>
 </template>

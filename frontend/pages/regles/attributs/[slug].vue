@@ -1,17 +1,5 @@
-<script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
-
-const route = useRoute();
-
-const parent = computed<Breadcrumb[]>(() => [{ text: "Attributs", to: "/regles/attributs" }]);
-const title = computed<string>(() => {
-  const slug: string = route.params.slug.toString();
-  return slug[0].toUpperCase() + slug.substring(1);
-});
-</script>
-
 <template>
-  <div class="container">
+  <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
@@ -23,5 +11,17 @@ const title = computed<string>(() => {
       mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
       eleifend eget, pellentesque eget justo.
     </p>
-  </div>
+  </main>
 </template>
+
+<script setup lang="ts">
+import type { Breadcrumb } from "~/types/components";
+
+const route = useRoute();
+
+const parent = computed<Breadcrumb[]>(() => [{ text: "Attributs", to: "/regles/attributs" }]);
+const title = computed<string>(() => {
+  const slug: string = route.params.slug.toString();
+  return slug[0].toUpperCase() + slug.substring(1);
+});
+</script>

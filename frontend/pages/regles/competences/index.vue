@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main class="container">
     <h1>Compétences</h1>
     <AppBreadcrumb active="Compétences" />
     <p>
@@ -11,5 +11,5 @@
       mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
       eleifend eget, pellentesque eget justo.
     </p>
-  </div>
+  </main>
 </template>
