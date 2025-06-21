@@ -1,27 +1,51 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
-      congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
-      tristique, sed ullamcorper urna pharetra. Nunc neque mi, posuere id porttitor quis, ultricies vitae enim. Nam eu tellus urna. Morbi pulvinar turpis et
-      sapien consectetur, sed posuere nunc tincidunt. Cras a diam consequat, euismod tortor hendrerit, accumsan mi. Cras blandit odio ut sapien vulputate, a
-      lobortis tortor imperdiet. Vestibulum sit amet justo nec nibh egestas varius. Aenean quis neque venenatis purus blandit tincidunt. Nulla fermentum nisl ac
-      mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
-      eleifend eget, pellentesque eget justo.
-    </p>
+    <template v-if="title">
+      <h1>{{ title }}</h1>
+      <AppBreadcrumb :active="title" :parent="parent" />
+    </template>
+    <div v-if="html" v-html="html"></div>
+    <template v-if="skill">
+      <h2 class="h3">Attribut</h2>
+      <template v-if="attribute">
+        <p>La valeur de l’attribut ci-dessous est ajoutée aux tests de cette compétence.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <AttributeCard :attribute="attribute" />
+          </div>
+        </div>
+      </template>
+      <p v-else>
+        <!-- TODO(fpion): explanation test -->
+        {{ "[…]" }}
+      </p>
+    </template>
   </main>
 </template>
 
 <script setup lang="ts">
+import { marked } from "marked";
+
+import type { Attribute, Skill } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
 
+const config = useRuntimeConfig();
 const route = useRoute();
 
-const parent = computed<Breadcrumb[]>(() => [{ text: "Compétences", to: "/regles/competences" }]);
-const title = computed<string>(() => {
-  const slug: string = route.params.slug.toString();
-  return slug[0].toUpperCase() + slug.substring(1);
+const { data } = await useFetch(`/api/skills/${route.params.slug}`, {
+  baseURL: config.public.apiBaseUrl,
+  cache: "no-cache",
 });
+
+const skill = computed<Skill | undefined>(() => data.value as Skill | undefined);
+const attribute = computed<Attribute | undefined>(() => skill.value?.attribute ?? undefined);
+const html = computed<string | undefined>(() => (skill.value?.description ? (marked.parse(skill.value.description) as string) : undefined));
+const parent = computed<Breadcrumb[]>(() => [{ text: "Compétences", to: "/regles/competences" }]);
+const title = computed<string | undefined>(() => skill.value?.name);
+
+useSeoMeta({
+  title,
+  description: skill.value?.summary,
+});
+useLinks();
 </script>

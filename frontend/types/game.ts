@@ -25,11 +25,43 @@ export type Attribute = Aggregate & {
   name: string;
   summary?: string | null;
   description?: string | null;
+  skills: Skill[];
 };
 
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
 
+export type GameSkill =
+  | "Acrobatics"
+  | "Athletics"
+  | "Crafting"
+  | "Deception"
+  | "Diplomacy"
+  | "Discipline"
+  | "Insight"
+  | "Investigation"
+  | "Knowledge"
+  | "Linguistics"
+  | "Medicine"
+  | "Melee"
+  | "Occultism"
+  | "Orientation"
+  | "Perception"
+  | "Performance"
+  | "Resistance"
+  | "Stealth"
+  | "Survival"
+  | "Thievery";
+
 export type SearchResults<T> = {
   items: T[];
   total: number;
+};
+
+export type Skill = Aggregate & {
+  slug: string;
+  value: GameSkill;
+  name: string;
+  summary?: string | null;
+  description?: string | null;
+  attribute?: Attribute | null;
 };

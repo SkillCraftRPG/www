@@ -7,40 +7,23 @@
     <p>Le système SkillCraft utilise <strong>5 attributs</strong> :</p>
     <ul>
       <li>
-        <font-awesome-icon :icon="categories[0].icon" />
+        <font-awesome-icon icon="fas fa-dumbbell" />
         2 attributs physiques, qui bénéficieront davantage aux personnages actifs.
       </li>
       <li>
-        <font-awesome-icon :icon="categories[1].icon" />
+        <font-awesome-icon icon="fas fa-brain" />
         2 attributs mentaux, qui bénéficieront davantage aux personnages intellectuels.
       </li>
       <li>
-        <font-awesome-icon :icon="categories[2].icon" />
+        <font-awesome-icon icon="fas fa-heart" />
         Un attribut universel dont tous les personnages bénéficient.
       </li>
     </ul>
-    <table v-if="attributes.length" class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Attribut</th>
-          <th scope="col">Résumé</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="categorized in attributes" :key="categorized.attribute.id">
-          <td>
-            <NuxtLink :to="`/regles/attributs/${categorized.attribute.slug}`">{{ categorized.attribute.name }}</NuxtLink>
-            <br />
-            <font-awesome-icon class="me-1" :icon="categorized.category.icon" />
-            <i>{{ categorized.category.text }}</i>
-          </td>
-          <td>
-            <span v-if="categorized.attribute.summary">{{ categorized.attribute.summary }}</span>
-            <span v-else class="text-muted">{{ "—" }}</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div v-for="attribute in attributes" :key="attribute.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-fifth mb-4">
+        <AttributeDetailCard :attribute="attribute" class="d-flex flex-column h-100" />
+      </div>
+    </div>
   </main>
 </template>
 
@@ -49,31 +32,21 @@ import { arrayUtils } from "logitar-js";
 
 import type { Attribute, SearchResults } from "~/types/game";
 
-type Category = {
-  icon: string;
-  text: string;
-};
-type CategorizedAttribute = {
-  attribute: Attribute;
-  category: Category;
-  sort: string;
+type SortableAttribute = Attribute & {
+  order: string;
 };
 
-const categories = [
-  { icon: "fas fa-dumbbell", text: "Physique" },
-  { icon: "fas fa-brain", text: "Mental" },
-  { icon: "fas fa-heart", text: "Universel" },
-];
 const config = useRuntimeConfig();
 const title: string = "Attributs";
 const { orderBy } = arrayUtils;
 
 const { data } = await useFetch("/api/attributes", {
   baseURL: config.public.apiBaseUrl,
+  cache: "no-cache",
   server: false,
 });
 
-const attributes = computed<CategorizedAttribute[]>(() => {
+const attributes = computed<SortableAttribute[]>(() => {
   const results = data.value as SearchResults<Attribute>;
   if (!results) {
     return [];
@@ -91,12 +64,12 @@ const attributes = computed<CategorizedAttribute[]>(() => {
           index = 1;
       }
       return {
-        attribute,
-        category: categories[index],
-        sort: [index, attribute.name].join("_"),
+        ...attribute,
+        skills: orderBy(attribute.skills, "name"),
+        order: [index, attribute.name].join("_"),
       };
     }),
-    "sort",
+    "order",
   );
 });
 
@@ -107,3 +80,12 @@ useSeoMeta({
 });
 useLinks();
 </script>
+
+<style scoped>
+@media (min-width: 1200px) {
+  .col-fifth {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+</style>
