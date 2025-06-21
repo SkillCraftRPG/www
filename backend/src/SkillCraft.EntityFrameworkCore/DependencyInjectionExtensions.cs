@@ -31,6 +31,7 @@ public static class DependencyInjectionExtensions
   private static IServiceCollection AddRuleQueriers(this IServiceCollection services)
   {
     return services
-      .AddScoped<IAttributeQuerier, AttributeQuerier>();
+      .AddScoped<IAttributeQuerier, AttributeQuerier>()
+      .AddScoped<ISkillQuerier, SkillQuerier>();
   }
 }

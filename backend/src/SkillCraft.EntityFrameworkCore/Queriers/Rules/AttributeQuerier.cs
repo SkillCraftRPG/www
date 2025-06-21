@@ -22,6 +22,7 @@ internal class AttributeQuerier : IAttributeQuerier
   public async Task<IReadOnlyCollection<AttributeModel>> ListAsync(CancellationToken cancellationToken)
   {
     AttributeEntity[] attributes = await _attributes.AsNoTracking()
+      .Include(x => x.Skills)
       .OrderBy(x => x.Name)
       .ToArrayAsync(cancellationToken);
 
@@ -32,7 +33,9 @@ internal class AttributeQuerier : IAttributeQuerier
   {
     slug = slug.Trim().ToLowerInvariant();
 
-    AttributeEntity? attribute = await _attributes.AsNoTracking().SingleOrDefaultAsync(x => x.Slug == slug, cancellationToken);
+    AttributeEntity? attribute = await _attributes.AsNoTracking()
+      .Include(x => x.Skills)
+      .SingleOrDefaultAsync(x => x.Slug == slug, cancellationToken);
 
     return attribute is null ? null : await MapAsync(attribute, cancellationToken);
   }

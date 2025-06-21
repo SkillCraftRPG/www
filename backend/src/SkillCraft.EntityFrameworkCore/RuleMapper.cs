@@ -25,7 +25,8 @@ internal class RuleMapper
     }
   }
 
-  public AttributeModel ToAttribute(AttributeEntity source)
+  public AttributeModel ToAttribute(AttributeEntity source) => ToAttribute(source, skill: null);
+  public AttributeModel ToAttribute(AttributeEntity source, SkillModel? skill)
   {
     AttributeModel destination = new()
     {
@@ -36,6 +37,45 @@ internal class RuleMapper
       Summary = source.Summary,
       Description = source.Description
     };
+
+    if (skill is not null)
+    {
+      destination.Skills.Add(skill);
+    }
+    else
+    {
+      foreach (SkillEntity entity in source.Skills)
+      {
+        destination.Skills.Add(ToSkill(entity, destination));
+      }
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public SkillModel ToSkill(SkillEntity source) => ToSkill(source, attribute: null);
+  public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)
+  {
+    SkillModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Value = source.Value,
+      Name = source.Name,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    if (attribute is not null)
+    {
+      destination.Attribute = attribute;
+    }
+    else if (source.Attribute is not null)
+    {
+      destination.Attribute = ToAttribute(source.Attribute, destination);
+    }
 
     MapAggregate(source, destination);
 
