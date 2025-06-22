@@ -1,7 +1,7 @@
 <template>
   <main class="container">
-    <h1>Compétences</h1>
-    <AppBreadcrumb active="Compétences" />
+    <h1>{{ title }}</h1>
+    <AppBreadcrumb :active="title" />
     <!-- TODO(fpion): explanation text -->
     <p>{{ "[…]" }}</p>
     <div class="row">

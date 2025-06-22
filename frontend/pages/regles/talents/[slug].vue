@@ -1,27 +1,62 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
-      congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
-      tristique, sed ullamcorper urna pharetra. Nunc neque mi, posuere id porttitor quis, ultricies vitae enim. Nam eu tellus urna. Morbi pulvinar turpis et
-      sapien consectetur, sed posuere nunc tincidunt. Cras a diam consequat, euismod tortor hendrerit, accumsan mi. Cras blandit odio ut sapien vulputate, a
-      lobortis tortor imperdiet. Vestibulum sit amet justo nec nibh egestas varius. Aenean quis neque venenatis purus blandit tincidunt. Nulla fermentum nisl ac
-      mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
-      eleifend eget, pellentesque eget justo.
-    </p>
+    <template v-if="title">
+      <h1>{{ title }}</h1>
+      <AppBreadcrumb :active="title" :parent="parent" />
+    </template>
+    <table v-if="talent" class="table table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Achats multiples</th>
+          <td>
+            <AllowMultiplePurchases :talent="talent" />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Talent requis</th>
+          <td>
+            <NuxtLink v-if="talent.requiredTalent" :to="`/regles/talents/${talent.requiredTalent.slug}`">{{ talent.requiredTalent.name }}</NuxtLink>
+            <span v-else class="text-muted">{{ "—" }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div v-if="html" v-html="html"></div>
+    <template v-if="skill">
+      <h2 class="h3">Compétence</h2>
+      <p>
+        <!-- TODO(fpion): explanation text -->
+        {{ "[…]" }}
+      </p>
+      <SkillCard clickable :skill="skill" />
+    </template>
+    <!-- TODO(fpion): TalentTree -->
   </main>
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import { marked } from "marked";
 
+import type { Breadcrumb } from "~/types/components";
+import type { Skill, Talent } from "~/types/game";
+
+const config = useRuntimeConfig();
 const route = useRoute();
 
-const parent = computed<Breadcrumb[]>(() => [{ text: "Talents", to: "/regles/talents" }]);
-const title = computed<string>(() => {
-  const slug: string = route.params.slug.toString();
-  return slug[0].toUpperCase() + slug.substring(1);
+const { data } = await useFetch(`/api/talents/${route.params.slug}`, {
+  baseURL: config.public.apiBaseUrl,
+  cache: "no-cache",
 });
+
+const talent = computed<Talent | undefined>(() => data.value as Talent | undefined);
+const html = computed<string | undefined>(() => (talent.value?.description ? (marked.parse(talent.value.description) as string) : undefined));
+const parent = computed<Breadcrumb[]>(() => [{ text: "Talents", to: "/regles/talents" }]);
+const skill = computed<Skill | undefined>(() => talent.value?.skill ?? undefined);
+const title = computed<string | undefined>(() => talent.value?.name);
+
+useSeoMeta({
+  title,
+  description: talent.value?.summary,
+});
+useLinks();
 </script>
