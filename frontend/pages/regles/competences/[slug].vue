@@ -16,7 +16,7 @@
         </div>
       </template>
       <p v-else>
-        <!-- TODO(fpion): explanation test -->
+        <!-- TODO(fpion): explanation text -->
         {{ "[…]" }}
       </p>
     </template>

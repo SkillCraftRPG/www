@@ -5,10 +5,10 @@
         <template v-if="isClickable">{{ skill.name }}</template>
         <NuxtLink v-else :to="`/regles/competences/${skill.slug}`">{{ skill.name }}</NuxtLink>
       </h2>
-      <h3 v-if="attribute" class="card-subtitle h6 mb-2 text-body-secondary">
-        <template v-if="isClickable">{{ attribute.name }}</template>
+      <h3 v-if="!isNoAttribute" class="card-subtitle h6 mb-2 text-body-secondary">
+        <i v-if="!attribute">Variable</i>
+        <template v-else-if="isClickable">{{ attribute.name }}</template>
         <NuxtLink v-else :to="`/regles/attributs/${attribute.slug}`">{{ attribute.name }}</NuxtLink>
-        <!-- TODO(fpion): "N/A" or other text in list (Skills Page) -->
       </h3>
       <p v-if="skill.summary" class="card-text">{{ skill.summary }}</p>
     </div>
@@ -26,6 +26,7 @@ const { parseBoolean } = parsingUtils;
 const props = withDefaults(
   defineProps<{
     clickable?: boolean | string;
+    noAttribute?: boolean | string;
     skill: Skill;
   }>(),
   {
@@ -35,6 +36,7 @@ const props = withDefaults(
 
 const attribute = computed<Attribute | undefined>(() => props.skill.attribute ?? undefined);
 const isClickable = computed<boolean>(() => parseBoolean(props.clickable) ?? false);
+const isNoAttribute = computed<boolean>(() => parseBoolean(props.noAttribute) ?? false);
 
 function navigate(): void {
   if (isClickable.value) {
