@@ -5,7 +5,16 @@
       <AppBreadcrumb :active="title" :parent="parent" />
     </template>
     <div v-if="html" v-html="html"></div>
-    <!-- TODO(fpion): Statistics -->
+    <template v-if="statistics.length">
+      <h2 class="h3">Statistiques</h2>
+      <!-- TODO(fpion): explanation text -->
+      <p>{{ "[…]" }}</p>
+      <div class="row">
+        <div v-for="statistic in statistics" :key="statistic.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <StatisticCard class="d-flex flex-column h-100" clickable no-attribute :statistic="statistic" />
+        </div>
+      </div>
+    </template>
     <template v-if="skills.length">
       <h2 class="h3">Compétences</h2>
       <p>La valeur de cet attribut est ajoutée aux tests des compétences ci-dessous.</p>
@@ -22,7 +31,7 @@
 import { arrayUtils } from "logitar-js";
 import { marked } from "marked";
 
-import type { Attribute, Skill } from "~/types/game";
+import type { Attribute, Skill, Statistic } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
 
 const config = useRuntimeConfig();
@@ -38,6 +47,7 @@ const attribute = computed<Attribute | undefined>(() => data.value as Attribute 
 const html = computed<string | undefined>(() => (attribute.value?.description ? (marked.parse(attribute.value.description) as string) : undefined));
 const parent = computed<Breadcrumb[]>(() => [{ text: "Attributs", to: "/regles/attributs" }]);
 const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "name") : []));
+const statistics = computed<Statistic[]>(() => (attribute.value?.statistics ? orderBy(attribute.value.statistics, "name") : []));
 const title = computed<string | undefined>(() => attribute.value?.name);
 
 useSeoMeta({

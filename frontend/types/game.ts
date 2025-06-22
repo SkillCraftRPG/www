@@ -26,6 +26,7 @@ export type Attribute = Aggregate & {
   summary?: string | null;
   description?: string | null;
   skills: Skill[];
+  statistics: Statistic[];
 };
 
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
@@ -52,6 +53,8 @@ export type GameSkill =
   | "Survival"
   | "Thievery";
 
+export type GameStatistic = "Vitality";
+
 export type SearchResults<T> = {
   items: T[];
   total: number;
@@ -60,6 +63,15 @@ export type SearchResults<T> = {
 export type Skill = Aggregate & {
   slug: string;
   value: GameSkill;
+  name: string;
+  summary?: string | null;
+  description?: string | null;
+  attribute?: Attribute | null;
+};
+
+export type Statistic = Aggregate & {
+  slug: string;
+  value: GameStatistic;
   name: string;
   summary?: string | null;
   description?: string | null;
