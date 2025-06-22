@@ -65,3 +65,15 @@ export type Skill = Aggregate & {
   description?: string | null;
   attribute?: Attribute | null;
 };
+
+export type Talent = Aggregate & {
+  slug: string;
+  tier: number;
+  name: string;
+  summary?: string | null;
+  description?: string | null;
+  allowMultiplePurchases: boolean;
+  skill?: Skill | null;
+  requiredTalent?: Talent | null;
+  requiringTalents: Talent[];
+};

@@ -1,4 +1,5 @@
 ﻿using Krakenar.Core.Contents;
+using Logitar.EventSourcing;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
@@ -36,6 +37,20 @@ internal class TalentEntity : AggregateEntity
 
   private TalentEntity() : base()
   {
+  }
+
+  public override IReadOnlyCollection<ActorId> GetActorIds()
+  {
+    List<ActorId> actorIds = new(base.GetActorIds());
+    if (Skill is not null)
+    {
+      actorIds.AddRange(Skill.GetActorIds());
+    }
+    if (RequiredTalent is not null)
+    {
+      actorIds.AddRange(RequiredTalent.GetActorIds());
+    }
+    return actorIds;
   }
 
   public void SetRequiredTalent(TalentEntity? requiredTalent)
