@@ -50,6 +50,44 @@ internal class RuleMapper
       }
     }
 
+    foreach (StatisticEntity statistic in source.Statistics)
+    {
+      destination.Statistics.Add(ToStatistic(statistic, destination));
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+  public AttributeModel ToAttribute(AttributeEntity source, StatisticModel? statistic)
+  {
+    AttributeModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Value = source.Value,
+      Name = source.Name,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    foreach (SkillEntity skill in source.Skills)
+    {
+      destination.Skills.Add(ToSkill(skill, destination));
+    }
+
+    if (statistic is not null)
+    {
+      destination.Statistics.Add(statistic);
+    }
+    else
+    {
+      foreach (StatisticEntity entity in source.Statistics)
+      {
+        destination.Statistics.Add(ToStatistic(entity, destination));
+      }
+    }
+
     MapAggregate(source, destination);
 
     return destination;
@@ -59,6 +97,33 @@ internal class RuleMapper
   public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)
   {
     SkillModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Value = source.Value,
+      Name = source.Name,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    if (attribute is not null)
+    {
+      destination.Attribute = attribute;
+    }
+    else if (source.Attribute is not null)
+    {
+      destination.Attribute = ToAttribute(source.Attribute, destination);
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public StatisticModel ToStatistic(StatisticEntity source) => ToStatistic(source, attribute: null);
+  public StatisticModel ToStatistic(StatisticEntity source, AttributeModel? attribute)
+  {
+    StatisticModel destination = new()
     {
       Id = source.Id,
       Slug = source.Slug,

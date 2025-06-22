@@ -38,6 +38,55 @@
     ]
   },
   {
+    "Id": "ef9ede2d-4cc8-4b8d-8baf-1f4464131506",
+    "IsInvariant": false,
+    "UniqueName": "Statistic",
+    "DisplayName": "Statistique",
+    "Fields": [
+      {
+        "Id": "7d6f4e4b-7c89-41d4-a04b-5123b9d5f8a6",
+        "FieldType": "Attribute",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": false,
+        "UniqueName": "Attribute",
+        "DisplayName": "Attribut",
+        "Placeholder": "Sélectionnez un attribut"
+      },
+      {
+        "Id": "fdeedcf5-9af3-4655-aa12-73def4a762dc",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": true,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias"
+      },
+      {
+        "Id": "d5347182-8ebd-423d-8940-32719c0ca5a2",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)"
+      },
+      {
+        "Id": "30b91c4e-41ad-4e9a-bbd2-e2c98e0abdf0",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContents",
+        "DisplayName": "Contenu HTML"
+      }
+    ]
+  },
+  {
     "Id": "28a3a292-74f7-4b6e-bea1-1da07356c886",
     "IsInvariant": false,
     "UniqueName": "Skill",

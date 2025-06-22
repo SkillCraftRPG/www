@@ -23,6 +23,7 @@ internal class AttributeQuerier : IAttributeQuerier
   {
     AttributeEntity[] attributes = await _attributes.AsNoTracking()
       .Include(x => x.Skills)
+      .Include(x => x.Statistics)
       .OrderBy(x => x.Name)
       .ToArrayAsync(cancellationToken);
 
@@ -35,6 +36,7 @@ internal class AttributeQuerier : IAttributeQuerier
 
     AttributeEntity? attribute = await _attributes.AsNoTracking()
       .Include(x => x.Skills)
+      .Include(x => x.Statistics)
       .SingleOrDefaultAsync(x => x.Slug == slug, cancellationToken);
 
     return attribute is null ? null : await MapAsync(attribute, cancellationToken);
