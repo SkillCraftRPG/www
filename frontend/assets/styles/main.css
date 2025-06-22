@@ -1,0 +1,26 @@
+body {
+  position: relative;
+  min-height: calc(100svh);
+  padding-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.clickable:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.invalid-feedback {
+  display: block;
+}

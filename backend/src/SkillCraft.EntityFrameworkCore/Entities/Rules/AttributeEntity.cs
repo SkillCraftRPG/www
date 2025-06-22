@@ -1,4 +1,5 @@
 ﻿using Krakenar.Core.Contents;
+using Logitar.EventSourcing;
 using SkillCraft.Core;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
@@ -28,6 +29,20 @@ internal class AttributeEntity : AggregateEntity
 
   private AttributeEntity() : base()
   {
+  }
+
+  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipSkills: false);
+  public IReadOnlyCollection<ActorId> GetActorIds(bool skipSkills)
+  {
+    List<ActorId> actorIds = new(base.GetActorIds());
+    if (!skipSkills)
+    {
+      foreach (SkillEntity skill in Skills)
+      {
+        actorIds.AddRange(skill.GetActorIds(skipAttribute: true));
+      }
+    }
+    return actorIds.AsReadOnly();
   }
 
   public void Update(AttributePublished published)

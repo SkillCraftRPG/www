@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <main class="container">
     <h1>Règles</h1>
-    <ul>
-      <li><NuxtLink to="/">Accueil</NuxtLink></li>
-    </ul>
+    <AppBreadcrumb active="Règles" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
       congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
@@ -18,5 +16,5 @@
       <li><NuxtLink to="/regles/competences">Compétences</NuxtLink></li>
       <li><NuxtLink to="/regles/talents">Talents</NuxtLink></li>
     </ul>
-  </div>
+  </main>
 </template>

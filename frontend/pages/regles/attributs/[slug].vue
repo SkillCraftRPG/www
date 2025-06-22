@@ -1,23 +1,48 @@
-<script setup lang="ts">
-const route = useRoute();
-</script>
-
 <template>
-  <div>
-    <h1>{{ route.params.slug }}</h1>
-    <ul>
-      <li><NuxtLink to="/">Accueil</NuxtLink></li>
-      <li><NuxtLink to="/regles">Règles</NuxtLink></li>
-      <li><NuxtLink to="/regles/attributs">Attributs</NuxtLink></li>
-    </ul>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
-      congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
-      tristique, sed ullamcorper urna pharetra. Nunc neque mi, posuere id porttitor quis, ultricies vitae enim. Nam eu tellus urna. Morbi pulvinar turpis et
-      sapien consectetur, sed posuere nunc tincidunt. Cras a diam consequat, euismod tortor hendrerit, accumsan mi. Cras blandit odio ut sapien vulputate, a
-      lobortis tortor imperdiet. Vestibulum sit amet justo nec nibh egestas varius. Aenean quis neque venenatis purus blandit tincidunt. Nulla fermentum nisl ac
-      mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
-      eleifend eget, pellentesque eget justo.
-    </p>
-  </div>
+  <main class="container">
+    <template v-if="title">
+      <h1>{{ title }}</h1>
+      <AppBreadcrumb :active="title" :parent="parent" />
+    </template>
+    <div v-if="html" v-html="html"></div>
+    <!-- TODO(fpion): Statistics -->
+    <template v-if="skills.length">
+      <h2 class="h3">Compétences</h2>
+      <p>La valeur de cet attribut est ajoutée aux tests des compétences ci-dessous.</p>
+      <div class="row">
+        <div v-for="skill in skills" :key="skill.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <SkillCard class="d-flex flex-column h-100" clickable no-attribute :skill="skill" />
+        </div>
+      </div>
+    </template>
+  </main>
 </template>
+
+<script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+import { marked } from "marked";
+
+import type { Attribute, Skill } from "~/types/game";
+import type { Breadcrumb } from "~/types/components";
+
+const config = useRuntimeConfig();
+const route = useRoute();
+const { orderBy } = arrayUtils;
+
+const { data } = await useFetch(`/api/attributes/${route.params.slug}`, {
+  baseURL: config.public.apiBaseUrl,
+  cache: "no-cache",
+});
+
+const attribute = computed<Attribute | undefined>(() => data.value as Attribute | undefined);
+const html = computed<string | undefined>(() => (attribute.value?.description ? (marked.parse(attribute.value.description) as string) : undefined));
+const parent = computed<Breadcrumb[]>(() => [{ text: "Attributs", to: "/regles/attributs" }]);
+const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "name") : []));
+const title = computed<string | undefined>(() => attribute.value?.name);
+
+useSeoMeta({
+  title,
+  description: attribute.value?.summary,
+});
+useLinks();
+</script>

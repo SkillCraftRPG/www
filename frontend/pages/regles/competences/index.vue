@@ -1,18 +1,33 @@
 <template>
-  <div>
+  <main class="container">
     <h1>Compétences</h1>
-    <ul>
-      <li><NuxtLink to="/">Accueil</NuxtLink></li>
-      <li><NuxtLink to="/regles">Règles</NuxtLink></li>
-    </ul>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
-      congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
-      tristique, sed ullamcorper urna pharetra. Nunc neque mi, posuere id porttitor quis, ultricies vitae enim. Nam eu tellus urna. Morbi pulvinar turpis et
-      sapien consectetur, sed posuere nunc tincidunt. Cras a diam consequat, euismod tortor hendrerit, accumsan mi. Cras blandit odio ut sapien vulputate, a
-      lobortis tortor imperdiet. Vestibulum sit amet justo nec nibh egestas varius. Aenean quis neque venenatis purus blandit tincidunt. Nulla fermentum nisl ac
-      mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
-      eleifend eget, pellentesque eget justo.
-    </p>
-  </div>
+    <AppBreadcrumb active="Compétences" />
+    <!-- TODO(fpion): explanation text -->
+    <p>{{ "[…]" }}</p>
+    <div class="row">
+      <div v-for="skill in skills" :key="skill.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <SkillCard class="d-flex flex-column h-100" :skill="skill" />
+      </div>
+    </div>
+  </main>
 </template>
+
+<script setup lang="ts">
+import type { SearchResults, Skill } from "~/types/game";
+
+const config = useRuntimeConfig();
+const title: string = "Compétences";
+
+const { data } = await useFetch("/api/skills", {
+  baseURL: config.public.apiBaseUrl,
+  cache: "no-cache",
+  server: false,
+});
+const skills = computed<Skill[]>(() => (data.value as SearchResults<Skill>)?.items ?? []);
+
+useSeoMeta({
+  title,
+  description: "Découvrez comment les compétences traduisent les savoir-faire, aptitudes et expertises de vos héros.",
+});
+useLinks();
+</script>

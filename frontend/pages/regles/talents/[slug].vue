@@ -1,15 +1,7 @@
-<script setup lang="ts">
-const route = useRoute();
-</script>
-
 <template>
-  <div>
-    <h1>{{ route.params.slug }}</h1>
-    <ul>
-      <li><NuxtLink to="/">Accueil</NuxtLink></li>
-      <li><NuxtLink to="/regles">Règles</NuxtLink></li>
-      <li><NuxtLink to="/regles/talents">Talents</NuxtLink></li>
-    </ul>
+  <main class="container">
+    <h1>{{ title }}</h1>
+    <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum congue urna, a elementum ex maximus ut. Sed suscipit aliquet nisl, eget molestie lorem
       congue vel. Mauris congue, lectus sit amet venenatis ultrices, dui libero tempus lacus, sed suscipit elit dolor id felis. Nulla imperdiet justo a nibh
@@ -19,5 +11,17 @@ const route = useRoute();
       mauris hendrerit, ut dignissim odio varius. In at velit eros. Aliquam dapibus metus pretium felis condimentum rutrum. Donec sapien risus, rutrum a
       eleifend eget, pellentesque eget justo.
     </p>
-  </div>
+  </main>
 </template>
+
+<script setup lang="ts">
+import type { Breadcrumb } from "~/types/components";
+
+const route = useRoute();
+
+const parent = computed<Breadcrumb[]>(() => [{ text: "Talents", to: "/regles/talents" }]);
+const title = computed<string>(() => {
+  const slug: string = route.params.slug.toString();
+  return slug[0].toUpperCase() + slug.substring(1);
+});
+</script>
