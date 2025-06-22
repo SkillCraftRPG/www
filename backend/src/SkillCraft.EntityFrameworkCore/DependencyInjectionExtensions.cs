@@ -32,6 +32,7 @@ public static class DependencyInjectionExtensions
   {
     return services
       .AddScoped<IAttributeQuerier, AttributeQuerier>()
-      .AddScoped<ISkillQuerier, SkillQuerier>();
+      .AddScoped<ISkillQuerier, SkillQuerier>()
+      .AddScoped<ITalentQuerier, TalentQuerier>();
   }
 }
