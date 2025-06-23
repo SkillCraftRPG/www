@@ -5,20 +5,14 @@
       <AppBreadcrumb :active="title" :parent="parent" />
     </template>
     <div v-if="html" v-html="html"></div>
-    <template v-if="statistic">
+    <template v-if="attribute">
       <h2 class="h3">Attribut</h2>
-      <template v-if="attribute">
-        <p>La valeur de l’attribut ci-dessous est ajoutée aux tests de cette compétence.</p>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <AttributeCard :attribute="attribute" />
-          </div>
+      <p>L’attribut suivant influence la valeur de cette statistique.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <AttributeCard :attribute="attribute" />
         </div>
-      </template>
-      <p v-else>
-        <!-- TODO(fpion): explanation text -->
-        {{ "[…]" }}
-      </p>
+      </div>
     </template>
   </main>
 </template>

@@ -53,7 +53,7 @@ export type GameSkill =
   | "Survival"
   | "Thievery";
 
-export type GameStatistic = "Vitality";
+export type GameStatistic = "Dodge" | "Encumbrance" | "Initiative" | "Learning" | "Power" | "Precision" | "Stamina" | "Stratagem" | "Strength" | "Vitality";
 
 export type SearchResults<T> = {
   items: T[];

@@ -2,7 +2,14 @@
 
 public enum GameStatistic
 {
-  // TODO(fpion): complete, 2/10
+  Dodge,
+  Initiative,
+  Learning,
+  Load,
+  Power,
+  Precision,
   Stamina,
+  Stratagem,
+  Strength,
   Vitality
 }
