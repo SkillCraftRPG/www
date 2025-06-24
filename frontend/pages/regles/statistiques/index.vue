@@ -5,7 +5,7 @@
     <p>Les statistiques sont d’autres nombres qui déterminent et influencent les capacités, forces et faiblesses des personnages et créatures.</p>
     <p>
       Les statistiques sont le résultat d’un calcul mathématique. Chaque statistique est gouvernée par un <NuxtLink to="/regles/attributs">attribut</NuxtLink>,
-      et certaines statistiques progressent avec le niveau.
+      et certaines statistiques progressent avec le <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink>.
     </p>
     <p>Le système SkillCraft utilise <strong>10 statistiques</strong>.</p>
     <div class="row">

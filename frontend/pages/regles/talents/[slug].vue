@@ -9,7 +9,7 @@
         <tr>
           <th scope="row">Achats multiples</th>
           <td>
-            <AllowMultiplePurchases :talent="talent" />
+            <TalentAllowMultiplePurchases :talent="talent" />
           </td>
         </tr>
         <tr>
