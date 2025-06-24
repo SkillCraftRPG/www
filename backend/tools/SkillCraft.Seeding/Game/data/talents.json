@@ -481,7 +481,7 @@
     "Name": "Costaud",
     "Summary": "Octroie une vitesse de nage et d’escalade égale à la marche. Supprime les pénalités en combat avec des armes non légères.",
     "Description": "Le personnage acquiert une vitesse de nage et d’escalade égale à sa vitesse de marche.\n\nÉgalement, il n’est pas pénalisé lorsqu’il combat en maniant plusieurs armes n’étant pas légères.",
-    "Notes": "\uD83D\uDD17\n- todo: meta description\n- todo: Advantage on Constitution saving throws against exhaustion due to forced marches while traveling."
+    "Notes": "\uD83D\uDD17"
   },
   {
     "Id": "98f622d6-5a9f-4d31-9f31-3b8d77288647",
