@@ -16,8 +16,8 @@
         </div>
       </template>
       <p v-else>
-        <!-- TODO(fpion): explanation text -->
-        {{ "[…]" }}
+        Cette compétence n’est associée à aucun <NuxtLink to="/regles/attributs">attribut</NuxtLink>. Lorsqu’un test est effectué, l’attribut est sélectionné en
+        fonction du contexte du test.
       </p>
     </template>
   </main>

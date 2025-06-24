@@ -41,7 +41,7 @@ internal class SkillEntity : AggregateEntity
     List<ActorId> actorIds = new(base.GetActorIds());
     if (!skipAttribute && Attribute is not null)
     {
-      actorIds.AddRange(Attribute.GetActorIds(skipSkills: true));
+      actorIds.AddRange(Attribute.GetActorIds(skipSkills: true, skipStatistics: false));
     }
     return actorIds.AsReadOnly();
   }

@@ -4,6 +4,10 @@
     <AppBreadcrumb :active="title" />
     <p>Les attributs quantifient les forces et faiblesses des personnages et créatures. Ils influencent également les chances de réussite de leurs actions.</p>
     <p>La valeur d’un attribut varie généralement entre -5 et +5, mais certaines conditions peuvent amener cette valeur en-dehors de ces bornes.</p>
+    <p>
+      Les attributs influencent les <NuxtLink to="/regles/statistiques">statistiques</NuxtLink> ainsi que les
+      <NuxtLink to="/regles/competences">compétences</NuxtLink>.
+    </p>
     <p>Le système SkillCraft utilise <strong>5 attributs</strong> :</p>
     <ul>
       <li>
@@ -80,12 +84,3 @@ useSeoMeta({
 });
 useLinks();
 </script>
-
-<style scoped>
-@media (min-width: 1200px) {
-  .col-fifth {
-    flex: 0 0 auto;
-    width: 20%;
-  }
-}
-</style>

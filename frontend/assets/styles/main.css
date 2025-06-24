@@ -21,6 +21,13 @@ button:disabled {
   cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+  .col-fifth {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
 .invalid-feedback {
   display: block;
 }

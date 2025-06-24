@@ -19,6 +19,7 @@ internal class AttributeEntity : AggregateEntity
   public string? Description { get; private set; }
 
   public List<SkillEntity> Skills { get; private set; } = [];
+  public List<StatisticEntity> Statistics { get; private set; } = [];
 
   public AttributeEntity(AttributePublished published) : base(published.Event)
   {
@@ -31,8 +32,8 @@ internal class AttributeEntity : AggregateEntity
   {
   }
 
-  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipSkills: false);
-  public IReadOnlyCollection<ActorId> GetActorIds(bool skipSkills)
+  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipSkills: false, skipStatistics: false);
+  public IReadOnlyCollection<ActorId> GetActorIds(bool skipSkills, bool skipStatistics)
   {
     List<ActorId> actorIds = new(base.GetActorIds());
     if (!skipSkills)
@@ -40,6 +41,13 @@ internal class AttributeEntity : AggregateEntity
       foreach (SkillEntity skill in Skills)
       {
         actorIds.AddRange(skill.GetActorIds(skipAttribute: true));
+      }
+    }
+    if (!skipStatistics)
+    {
+      foreach (StatisticEntity statistic in Statistics)
+      {
+        actorIds.AddRange(statistic.GetActorIds(skipAttribute: true));
       }
     }
     return actorIds.AsReadOnly();

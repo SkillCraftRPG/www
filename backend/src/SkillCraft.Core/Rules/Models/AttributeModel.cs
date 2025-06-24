@@ -12,4 +12,5 @@ public class AttributeModel : Aggregate
   public string? Description { get; set; }
 
   public List<SkillModel> Skills { get; set; } = [];
+  public List<StatisticModel> Statistics { get; set; } = [];
 }

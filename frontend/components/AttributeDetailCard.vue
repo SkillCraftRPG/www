@@ -8,7 +8,14 @@
         <AttributeCategory :attribute="attribute" />
       </h3>
       <p v-if="attribute.summary" class="card-text">{{ attribute.summary }}</p>
-      <!-- TODO(fpion): Statistics -->
+      <template v-if="statistics.length">
+        <h3 class="h5">Statistiques</h3>
+        <ul>
+          <li v-for="statistic in statistics" :key="statistic.id">
+            <NuxtLink :to="`/regles/statistiques/${statistic.slug}`">{{ statistic.name }}</NuxtLink>
+          </li>
+        </ul>
+      </template>
       <template v-if="skills.length">
         <h3 class="h5">Compétences</h3>
         <ul>
@@ -24,7 +31,7 @@
 <script lang="ts" setup>
 import { arrayUtils } from "logitar-js";
 
-import type { Attribute, Skill } from "~/types/game";
+import type { Attribute, Skill, Statistic } from "~/types/game";
 
 const { orderBy } = arrayUtils;
 
@@ -33,4 +40,5 @@ const props = defineProps<{
 }>();
 
 const skills = computed<Skill[]>(() => orderBy(props.attribute.skills, "name"));
+const statistics = computed<Statistic[]>(() => orderBy(props.attribute.statistics, "name"));
 </script>
