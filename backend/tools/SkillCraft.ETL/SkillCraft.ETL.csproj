@@ -1,9 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-SkillCraft.ETL-65c36efa-fd1e-4dfa-8360-7895e879d14d</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -15,20 +16,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Krakenar.EntityFrameworkCore.Relational" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkillCraft.Infrastructure\SkillCraft.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\SkillCraft.EntityFrameworkCore.PostgreSQL\SkillCraft.EntityFrameworkCore.PostgreSQL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="System.Reflection" />
+    <Using Include="System.Text" />
+    <Using Include="System.Text.Encodings.Web" />
     <Using Include="System.Text.Json" />
+    <Using Include="System.Text.Json.Serialization" />
   </ItemGroup>
-
-  <ItemGroup>
-    <InternalsVisibleTo Include="SkillCraft.ETL" />
-  </ItemGroup>
-
 </Project>
