@@ -33,7 +33,7 @@
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
             <td>
-              <AllowMultiplePurchases :talent="talent" />
+              <TalentAllowMultiplePurchases :talent="talent" />
             </td>
             <td>
               <template v-if="talent.summary">{{ talent.summary }}</template>

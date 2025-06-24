@@ -5,20 +5,41 @@
     <p>Au cinéma comme dans la littérature, l’attention du public est centrée sur un ou plusieurs héros ou héroïnes.</p>
     <p>Dans le jeu de rôle, ce sont les personnages des joueurs qui sont les protagonistes de l’histoire.</p>
     <p>Leurs paroles et leurs actions donnent vie à l’intrigue racontée par le maître de jeu.</p>
-    <!-- TODO(fpion): tiles -->
-    <ul>
-      <li>
-        <NuxtLink to="/regles/personnages/creation">Création de personnage</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/regles/personnages/progression">Progression de personnage</NuxtLink>
-      </li>
-    </ul>
+    <div class="row">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <AppCard class="d-flex flex-column h-100" clickable :text="item.description" :title="item.title" @click="navigate(item.path)" />
+      </div>
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
+const router = useRouter();
 const title: string = "Personnages";
+
+type MenuItem = {
+  path: string;
+  title: string;
+  description: string;
+};
+const items: MenuItem[] = [
+  {
+    path: "/regles/personnages/creation",
+    title: "Création",
+    description:
+      "Créez un personnage unique grâce à des étapes guidées, en définissant son apparence, sa personnalité, son histoire et ses caractéristiques initiales.",
+  },
+  {
+    path: "/regles/personnages/progression",
+    title: "Progression",
+    description:
+      "Découvrez la progression des personnages, guidée par l’expérience, le niveau et le tiers, qui permettent d’améliorer et d’acquérir des capacités.",
+  },
+];
+
+function navigate(to: string): void {
+  router.push(to);
+}
 
 useSeoMeta({
   title,

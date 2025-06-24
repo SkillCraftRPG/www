@@ -1,5 +1,5 @@
 <template>
-  <span> <font-awesome-icon :icon="icon" /> {{ text }} </span>
+  <span><font-awesome-icon :icon="icon" /> {{ text }}</span>
 </template>
 
 <script lang="ts" setup>
