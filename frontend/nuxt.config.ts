@@ -23,3 +23,5 @@ export default defineNuxtConfig({
     },
   },
 });
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // TODO(fpion): remove before going to production
