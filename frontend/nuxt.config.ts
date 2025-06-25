@@ -18,8 +18,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "https://localhost:7212",
-      baseUrl: "https://www.skillcraftrpg.ca",
+      apiBaseUrl: "https://localhost:7212", // TODO(fpion): inject from env var
+      baseUrl: "https://www.skillcraftrpg.ca", // TODO(fpion): inject from env var
     },
   },
 });

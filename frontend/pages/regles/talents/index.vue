@@ -5,11 +5,8 @@
       <AppBreadcrumb :active="title" />
       <p>
         Une des facettes de la <NuxtLink to="/regles/personnages/progression">progression</NuxtLink> de personnage se matérialise par des talents, des capacités
-        acquises au fil de ses aventures.
-      </p>
-      <p>
-        Deux personnages suivant un parcours similaire peuvent totalement différer dans leurs choix de talents, ce qui permet au joueur de personnaliser son
-        personnage en fonction de ses préférences.
+        acquises au fil de ses aventures. Deux personnages suivant un parcours similaire peuvent totalement différer dans leurs choix de talents, ce qui permet
+        au joueur de personnaliser son personnage en fonction de ses préférences.
       </p>
       <h2 class="h3">Points de talent</h2>
       <p>

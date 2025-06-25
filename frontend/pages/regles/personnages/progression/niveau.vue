@@ -12,8 +12,8 @@
     <p>Lorsque le niveau du personnage augmente, ses capacités augmentent également.</p>
     <ul>
       <li>
-        Lorsqu’il atteint un niveau impair (ex.: 1, 3, 5, etc.), il gagne un point d’attribut. Il peut le dépenser afin d’augmenter la valeur d’un
-        <NuxtLink to="/regles/attributs">attribut</NuxtLink> de 1.
+        Lorsqu’il atteint un niveau impair (ex.: 1, 3, 5, etc.), il obtient <strong>1 point d’attribut</strong>. Il peut le dépenser afin d’augmenter la valeur
+        d’un <NuxtLink to="/regles/attributs">attribut</NuxtLink> de 1.
       </li>
       <li>
         Les <NuxtLink to="/regles/statistiques">statistiques</NuxtLink> suivantes augmentent :
@@ -21,12 +21,12 @@
         <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink>.
       </li>
       <li>
-        Ses points de compétence augmentent afin de refléter sa nouvelle valeur d’Apprentissage. Il peut dépenser ces points afin d’augmenter le rang de ses
-        <NuxtLink to="/regles/competences">compétences</NuxtLink>.
+        Ses <strong>points de compétence</strong> augmentent afin de refléter sa nouvelle valeur d’Apprentissage. Il peut dépenser ces points afin d’augmenter
+        le rang de ses <NuxtLink to="/regles/competences">compétences</NuxtLink>.
       </li>
       <li>
         Il reçoit <strong>4 points de talent</strong>. Il peut dépenser ceux-ci afin d'acquérir de nouveaux <NuxtLink to="/regles/talents">talents</NuxtLink> ou
-        pouvoirs.
+        <NuxtLink to="/regles/pouvoirs">pouvoirs</NuxtLink>.
       </li>
     </ul>
   </main>
