@@ -56,6 +56,7 @@ internal class EtlWorker : BackgroundService
     Language language = languages.Single();
 
     List<Attribute> attributes = [];
+    List<Customization> customizations = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
     List<Talent> talents = [];
@@ -99,6 +100,11 @@ internal class EtlWorker : BackgroundService
         Talent talent = ParseTalent(content, locale);
         talents.Add(talent);
       }
+      else if (contentTypeId == ContentTypes.Customization)
+      {
+        Customization customization = ParseCustomization(content, locale);
+        customizations.Add(customization);
+      }
     }
 
     Directory.CreateDirectory("output");
@@ -109,6 +115,12 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Serialized {Count} attributes to file '{Path}'.", attributes.Count, "output/attributes.json");
+    await File.WriteAllTextAsync(
+      "output/customizations.json",
+      JsonSerializer.Serialize(customizations.OrderBy(x => x.Name), _serializerOptions),
+      _encoding,
+      cancellationToken);
+    _logger.LogInformation("Serialized {Count} customizations to file '{Path}'.", customizations.Count, "output/customizations.json");
     await File.WriteAllTextAsync(
       "output/skills.json",
       JsonSerializer.Serialize(skills.OrderBy(x => x.Name), _serializerOptions),
@@ -154,6 +166,39 @@ internal class EtlWorker : BackgroundService
     }
 
     return attribute;
+  }
+
+  private static Customization ParseCustomization(Content content, ContentLocale locale)
+  {
+    Customization customization = new()
+    {
+      Id = content.EntityId,
+      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
+      Notes = locale.Description?.Value?.CleanTrim()
+    };
+
+    if (content.Invariant.FieldValues.TryGetValue(Customizations.Kind, out FieldValue? value))
+    {
+      IReadOnlyCollection<string> values = JsonSerializer.Deserialize<IReadOnlyCollection<string>>(value.Value) ?? [];
+      if (values.Count == 1)
+      {
+        customization.Kind = Enum.Parse<CustomizationKind>(values.Single());
+      }
+    }
+
+    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
+    {
+      if (fieldValue.Key == Customizations.Summary)
+      {
+        customization.Summary = fieldValue.Value.Value;
+      }
+      else if (fieldValue.Key == Customizations.Description)
+      {
+        customization.Description = fieldValue.Value.Value;
+      }
+    }
+
+    return customization;
   }
 
   private static Skill ParseSkill(Content content, ContentLocale locale)
