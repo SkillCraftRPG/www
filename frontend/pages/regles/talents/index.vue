@@ -134,9 +134,8 @@ const talents = computed<SortableTablent[]>(() => {
   );
 });
 
-useSeoMeta({
+useSeo({
   title,
   description: "Découvrez les talents : des capacités uniques qui enrichissent les personnages et façonnent leur style de jeu.",
 });
-useLinks();
 </script>

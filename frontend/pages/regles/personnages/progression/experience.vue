@@ -93,9 +93,8 @@ const parent = computed<Breadcrumb[]>(() => [
   { text: "Progression", to: "/regles/personnages/progression" },
 ]);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Découvrez les différentes façons de gagner de l’Expérience dans SkillCraft et d’améliorer votre personnage au fil de ses aventures.",
 });
-useLinks();
 </script>

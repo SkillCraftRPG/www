@@ -8,7 +8,7 @@
     <p>Le système SkillCraft utilise <strong>3 mesures</strong> de progression :</p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <AppCard class="d-flex flex-column h-100" clickable :text="item.description" :title="item.title" @click="navigate(item.path)" />
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
   </main>
@@ -17,7 +17,6 @@
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
 
-const router = useRouter();
 const title: string = "Progression de personnage";
 
 type MenuItem = {
@@ -46,14 +45,9 @@ const items: MenuItem[] = [
 
 const parent = computed<Breadcrumb[]>(() => [{ text: "Personnages", to: "/regles/personnages" }]);
 
-function navigate(to: string): void {
-  router.push(to);
-}
-
-useSeoMeta({
+useSeo({
   title,
   description:
     "Découvrez la progression des personnages, guidée par l’expérience, le niveau et le tiers, qui permettent d’améliorer et d’acquérir des capacités.",
 });
-useLinks();
 </script>

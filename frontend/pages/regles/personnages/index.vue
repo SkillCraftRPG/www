@@ -7,14 +7,13 @@
     <p>Leurs paroles et leurs actions donnent vie à l’intrigue racontée par le maître de jeu.</p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
-        <AppCard class="d-flex flex-column h-100" clickable :text="item.description" :title="item.title" @click="navigate(item.path)" />
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-const router = useRouter();
 const title: string = "Personnages";
 
 type MenuItem = {
@@ -37,13 +36,8 @@ const items: MenuItem[] = [
   },
 ];
 
-function navigate(to: string): void {
-  router.push(to);
-}
-
-useSeoMeta({
+useSeo({
   title,
   description: "Découvrez le fonctionnement des personnages dans le jeu, véritables héros de l’histoire, et explorez les règles de création et de progression.",
 });
-useLinks();
 </script>

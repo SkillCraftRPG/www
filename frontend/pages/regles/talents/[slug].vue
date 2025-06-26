@@ -28,7 +28,7 @@
         L’acquisition de ce talent forme le personnage pour la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous et augmente de +1 le rang de
         cette compétence.
       </p>
-      <SkillCard clickable :skill="skill" />
+      <SkillCard :skill="skill" />
     </template>
     <!-- TODO(fpion): TalentTree -->
   </main>
@@ -54,9 +54,8 @@ const parent = computed<Breadcrumb[]>(() => [{ text: "Talents", to: "/regles/tal
 const skill = computed<Skill | undefined>(() => talent.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => talent.value?.name);
 
-useSeoMeta({
-  title,
+useSeo({
+  title: title.value,
   description: talent.value?.summary,
 });
-useLinks();
 </script>

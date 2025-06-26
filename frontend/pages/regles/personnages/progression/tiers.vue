@@ -35,9 +35,8 @@ const parent = computed<Breadcrumb[]>(() => [
   { text: "Progression", to: "/regles/personnages/progression" },
 ]);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Les tiers de personnage marquent des étapes clés de progression et fixent les limites des talents, compétences et pouvoirs accessibles.",
 });
-useLinks();
 </script>

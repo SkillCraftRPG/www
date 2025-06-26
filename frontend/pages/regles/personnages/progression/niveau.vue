@@ -42,9 +42,8 @@ const parent = computed<Breadcrumb[]>(() => [
   { text: "Progression", to: "/regles/personnages/progression" },
 ]);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Le niveau reflète la progression globale du personnage et améliore ses attributs, statistiques, compétences, talents et pouvoirs.",
 });
-useLinks();
 </script>

@@ -1,11 +1,5 @@
 <template>
-  <NuxtLink :to="`/regles/dons-handicaps/${customization.slug}`" class="card clickable">
-    <div class="card-body">
-      <div class="card-title h5">{{ customization.name }}</div>
-      <h3 class="card-subtitle h6 mb-2 text-body-secondary">{{ kind }}</h3>
-      <div v-if="customization.summary" class="card-text">{{ customization.summary }}</div>
-    </div>
-  </NuxtLink>
+  <LinkCard :subtitle="kind" :text="customization.summary" :title="customization.name" :to="`/regles/dons-handicaps/${customization.slug}`" />
 </template>
 
 <script setup lang="ts">

@@ -1,17 +1,11 @@
 <template>
-  <AppCard clickable :text="attribute.summary ?? undefined" :title="attribute.name" @click="navigate" />
+  <LinkCard :text="attribute.summary" :title="attribute.name" :to="`/regles/attributs/${attribute.slug}`" />
 </template>
 
 <script lang="ts" setup>
 import type { Attribute } from "~/types/game";
 
-const router = useRouter();
-
-const props = defineProps<{
+defineProps<{
   attribute: Attribute;
 }>();
-
-function navigate(): void {
-  router.push(`/regles/attributs/${props.attribute.slug}`);
-}
 </script>

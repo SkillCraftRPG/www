@@ -14,6 +14,7 @@
     <ul>
       <li><NuxtLink to="/regles/attributs">Attributs</NuxtLink></li>
       <li><NuxtLink to="/regles/competences">Compétences</NuxtLink></li>
+      <li><NuxtLink to="/regles/dons-handicaps">Dons & Handicaps</NuxtLink></li>
       <li><NuxtLink to="/regles/personnages">Personnages</NuxtLink></li>
       <li><NuxtLink to="/regles/statistiques">Statistiques</NuxtLink></li>
       <li><NuxtLink to="/regles/talents">Talents</NuxtLink></li>
