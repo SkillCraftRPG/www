@@ -18,10 +18,10 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "https://localhost:7212", // TODO(fpion): inject from env var
+      apiBaseUrl: "http://localhost:8088", // TODO(fpion): inject from env var
       baseUrl: "https://www.skillcraftrpg.ca", // TODO(fpion): inject from env var
     },
   },
 });
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // TODO(fpion): remove before going to production
+// process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // TODO(fpion): remove before going to production
