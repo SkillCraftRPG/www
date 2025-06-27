@@ -29,9 +29,8 @@ const { data } = await useFetch("/api/statistics", {
 });
 const statistics = computed<Statistic[]>(() => (data.value as SearchResults<Statistic>)?.items ?? []);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Découvrez les statistiques : des valeurs essentielles qui traduisent la vitalité, l’énergie et d’autres aspects clés des personnages en jeu.",
 });
-useLinks();
 </script>

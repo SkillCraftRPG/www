@@ -25,9 +25,8 @@ const { data } = await useFetch("/api/skills", {
 });
 const skills = computed<Skill[]>(() => (data.value as SearchResults<Skill>)?.items ?? []);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Découvrez comment les compétences traduisent les savoir-faire, aptitudes et expertises de vos héros.",
 });
-useLinks();
 </script>

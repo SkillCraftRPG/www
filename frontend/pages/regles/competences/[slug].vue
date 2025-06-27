@@ -43,9 +43,8 @@ const html = computed<string | undefined>(() => (skill.value?.description ? (mar
 const parent = computed<Breadcrumb[]>(() => [{ text: "Compétences", to: "/regles/competences" }]);
 const title = computed<string | undefined>(() => skill.value?.name);
 
-useSeoMeta({
-  title,
+useSeo({
+  title: title.value,
   description: skill.value?.summary,
 });
-useLinks();
 </script>

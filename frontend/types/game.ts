@@ -29,6 +29,16 @@ export type Attribute = Aggregate & {
   statistics: Statistic[];
 };
 
+export type Customization = Aggregate & {
+  slug: string;
+  kind: CustomizationKind;
+  name: string;
+  summary?: string | null;
+  description?: string | null;
+};
+
+export type CustomizationKind = "Disability" | "Gift";
+
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
 
 export type GameSkill =

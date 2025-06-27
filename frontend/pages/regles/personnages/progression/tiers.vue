@@ -11,8 +11,11 @@
     <ul>
       <li>Le rang maximal de ses <NuxtLink to="/regles/competences">compétences</NuxtLink> est limité par son tiers.</li>
       <li>Il ne peut acquérir des <NuxtLink to="/regles/talents">talents</NuxtLink> dont le tiers est supérieur au sien.</li>
-      <li>De la même manière, il ne peut acquérir des pouvoirs dont le tiers est supérieur au sien.</li>
-      <li>Il ne peut se spécialiser si le tiers de la spécialisation convoitée est plus élevé de deux tiers ou plus que le sien.</li>
+      <li>De la même manière, il ne peut acquérir des <NuxtLink to="/regles/pouvoirs">pouvoirs</NuxtLink> dont le tiers est supérieur au sien.</li>
+      <li>
+        Il ne peut se spécialiser si le tiers de la <NuxtLink to="/regles/specialisations">spécialisation</NuxtLink> convoitée est plus élevé de deux tiers ou
+        plus que le sien.
+      </li>
     </ul>
     <h2 class="h3">Augmentation</h2>
     <p>
@@ -32,9 +35,8 @@ const parent = computed<Breadcrumb[]>(() => [
   { text: "Progression", to: "/regles/personnages/progression" },
 ]);
 
-useSeoMeta({
+useSeo({
   title,
   description: "Les tiers de personnage marquent des étapes clés de progression et fixent les limites des talents, compétences et pouvoirs accessibles.",
 });
-useLinks();
 </script>

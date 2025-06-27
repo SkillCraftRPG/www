@@ -47,6 +47,20 @@ internal static class ContentExtensions
     return string.IsNullOrWhiteSpace(json) ? null : JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(json);
   }
 
+  public static IReadOnlyCollection<string> FindSelectValue(this ContentLocale locale, Guid id)
+  {
+    return TryGetSelectValue(locale, id) ?? throw new InvalidOperationException($"The field value 'Id={id}' was not found.");
+  }
+  public static IReadOnlyCollection<string> GetSelectValue(this ContentLocale locale, Guid id)
+  {
+    return TryGetSelectValue(locale, id) ?? [];
+  }
+  public static IReadOnlyCollection<string>? TryGetSelectValue(this ContentLocale locale, Guid id)
+  {
+    string? json = TryGetFieldValue(locale, id)?.Value;
+    return string.IsNullOrWhiteSpace(json) ? null : JsonSerializer.Deserialize<IReadOnlyCollection<string>>(json);
+  }
+
   public static string FindStringValue(this ContentLocale locale, Guid id)
   {
     return TryGetStringValue(locale, id) ?? throw new InvalidOperationException($"The field value 'Id={id}' was not found.");

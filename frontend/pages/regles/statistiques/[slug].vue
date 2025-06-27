@@ -37,9 +37,8 @@ const html = computed<string | undefined>(() => (statistic.value?.description ? 
 const parent = computed<Breadcrumb[]>(() => [{ text: "Statistiques", to: "/regles/statistiques" }]);
 const title = computed<string | undefined>(() => statistic.value?.name);
 
-useSeoMeta({
-  title,
+useSeo({
+  title: title.value,
   description: statistic.value?.summary,
 });
-useLinks();
 </script>

@@ -77,10 +77,9 @@ const attributes = computed<SortableAttribute[]>(() => {
   );
 });
 
-useSeoMeta({
+useSeo({
   title,
   description:
     "Découvrez le fonctionnement des attributs de personnage : des caractéristiques clés qui définissent les forces, faiblesses et compétences de vos héros.",
 });
-useLinks();
 </script>

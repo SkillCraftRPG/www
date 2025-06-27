@@ -93,6 +93,23 @@ internal class RuleMapper
     return destination;
   }
 
+  public CustomizationModel ToCustomization(CustomizationEntity source)
+  {
+    CustomizationModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Kind = source.Kind,
+      Name = source.Name,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
   public SkillModel ToSkill(SkillEntity source) => ToSkill(source, attribute: null);
   public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)
   {
