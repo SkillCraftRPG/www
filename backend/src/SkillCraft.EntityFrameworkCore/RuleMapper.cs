@@ -109,6 +109,15 @@ internal class RuleMapper
     {
       destination.Skill = ToSkill(source.Skill);
     }
+    if (source.Feature is not null)
+    {
+      string[] lines = source.Feature.Split('\n');
+      destination.Feature = new FeatureModel
+      {
+        Name = lines.First(),
+        Description = string.Join('\n', lines.Skip(1))
+      };
+    }
 
     MapAggregate(source, destination);
 

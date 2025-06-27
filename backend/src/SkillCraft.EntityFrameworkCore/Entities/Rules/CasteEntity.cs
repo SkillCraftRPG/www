@@ -22,6 +22,8 @@ internal class CasteEntity : AggregateEntity
 
   public string? WealthRoll { get; private set; }
 
+  public string? Feature { get; private set; }
+
   public CasteEntity(CastePublished published) : base(published.Event)
   {
     Id = new ContentId(published.Event.StreamId).EntityId;
@@ -64,5 +66,7 @@ internal class CasteEntity : AggregateEntity
     Description = locale.TryGetStringValue(Fields.Castes.Description);
 
     WealthRoll = invariant.FindStringValue(Fields.Castes.WealthRoll);
+
+    Feature = locale.TryGetStringValue(Fields.Castes.Feature);
   }
 }

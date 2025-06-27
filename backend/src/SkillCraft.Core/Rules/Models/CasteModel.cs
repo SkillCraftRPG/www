@@ -12,4 +12,6 @@ public class CasteModel : Aggregate
 
   public SkillModel? Skill { get; set; }
   public string? WealthRoll { get; set; }
+
+  public FeatureModel? Feature { get; set; }
 }
