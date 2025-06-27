@@ -3,6 +3,7 @@
 public enum EntityKind
 {
   Attribute,
+  Caste,
   Customization,
   Skill,
   Statistic,
