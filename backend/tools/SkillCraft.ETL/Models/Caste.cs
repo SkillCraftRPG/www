@@ -11,6 +11,8 @@ internal class Caste
   public Guid? SkillId { get; set; }
   public string? WealthRoll { get; set; }
 
+  public string? Feature { get; set; }
+
   public string? Notes { get; set; }
 
   public override bool Equals(object? obj) => obj is Caste caste && caste.Id == Id;

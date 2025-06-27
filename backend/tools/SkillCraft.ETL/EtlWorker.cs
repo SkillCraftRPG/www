@@ -215,6 +215,10 @@ internal class EtlWorker : BackgroundService
       {
         caste.Description = fieldValue.Value.Value;
       }
+      else if (fieldValue.Key == Castes.Feature)
+      {
+        caste.Feature = fieldValue.Value.Value;
+      }
     }
 
     return caste;

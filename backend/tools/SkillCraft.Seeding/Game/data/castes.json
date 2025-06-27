@@ -1,0 +1,102 @@
+﻿[
+  {
+    "Id": "f64bbe7b-9549-4ab0-b5eb-0bf530ece004",
+    "Name": "Amuseur",
+    "Summary": "L’amuseur parcourt le monde avec ses talents artistiques, offrant spectacles et récits tout en tissant des liens et récoltant de précieuses informations.",
+    "Description": "Adepte d’art, de poésie, de cirque ou de théâtre, l’amuseur ère de villages en cités afin d’offrir ses performances.\n\nBien plus qu’un simple gagne-pain, cela lui permet de former un réseau de contacts et de recueillir toutes sortes d’informations.",
+    "SkillId": "355d38c6-e750-4bea-ba83-1f48ca7b7f08",
+    "WealthRoll": "8d6",
+    "Feature": "\uD83D\uDEA7Protégé\n- Par le prestige de sa famille et sa participation à des événements de l’aristocratie, le personnage est connu de la noblesse locale.\n- Il peut demander gîte et couvert membres de la noblesse.\n- En échange, ceux-ci peuvent lui demander une ou plusieurs faveurs immédiates, futures ou encore invoquer le droit de surprise, c’est-à-dire une faveur d’un quelconque ordre de grandeur lorsque l’occasion de présenter.\n\n\uD83D\uDEA7Vagabond\n- Aucun village ni aucune ville n’est un meilleur domicile pour le personnage que la route.\n- Qu’il soit nomade par choix ou par obligation, ses tests de Survie afin de trouver de l’eau, de la nourriture ou un abri se voient conférer l’avantage lorsqu’il se trouve à proximité d’une route maintenue.",
+    "Notes": null
+  },
+  {
+    "Id": "c016168a-a6ea-4436-a7e9-ea0243771310",
+    "Name": "Artisan",
+    "Summary": "Maîtrisant un procédé de transformation, l’artisan excelle dans son domaine : boulangerie, forge, orfèvrerie, tissage ou autre métier spécialisé.",
+    "Description": "L’artisan est un expert d’un procédé de transformation des matières brutes.\n\nIl peut être un boulanger, un forgeron, un orfèvre, un tisserand ou pratiquer tout genre de profession œuvrant dans la transformation des matières brutes.",
+    "SkillId": "b7db5e1d-1170-48af-9ac9-4953c2068f96",
+    "WealthRoll": "8d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "4e30b3d9-5d53-4b9e-9147-f7fab6af6529",
+    "Name": "Bohème",
+    "Summary": "Le bohème erre sans foyer ni métier stable, survivant par la mendicité ou la ruse, souvent rejeté par une société dont il dépend mais qu’il ne comprend pas.",
+    "Description": "Le bohème ne possède aucun domicile fixe ni occupation permanente.\n\nIl doit sa survie à la bonté des autres lorsqu’il mendie ou aux crimes qu’il perpètre dans les centres urbains.\n\nIl est incapable de s’intégrer à la société dont laquelle il dépend afin de survivre, il est donc fréquemment rejeté par celle-ci.",
+    "SkillId": "b1b5247e-cce9-472d-b81e-be8abf424278",
+    "WealthRoll": "6d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "749da9a6-1bfc-4c36-bb41-f3c1d5fd8fa1",
+    "Name": "Exilé",
+    "Summary": "L’exilé survit grâce à son instinct et à sa maîtrise des terres sauvages, hanté par son passé et animé par l’amertume ou le désir de vengeance.",
+    "Description": "Banni par son peuple ou par choix personnel, l’exilé a recours à son instinct de survie et à sa connaissance des milieux sauvages afin de survivre à son environnement.\n\nIl garde de mauvais souvenirs de son ancienne vie et prépare aigrement sa vengeance.",
+    "SkillId": "b9d6c435-c33d-464f-aecb-57ac104f681f",
+    "WealthRoll": "6d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "4ebae642-91cc-4aa5-8f59-32af2c376e3e",
+    "Name": "Guérisseur",
+    "Summary": "Le guérisseur soigne aussi bien les nobles que les paysans, usant de ses talents pour préserver la santé au sein des villes, des campagnes et des champs de bataille.",
+    "Description": "Le guérisseur est responsable du maintien et de l’amélioration de la santé de la communauté ou de la société pour laquelle il œuvre.\n\nSa clientèle est vaste : il doit soigner les citadins bourgeois, la haute noblesse, mais aussi les pauvres paysans, et parfois même les chasseurs en territoire sauvage et les soldats blessés sur un champ de bataille.",
+    "SkillId": "0778339e-53e2-4616-947c-602c8f366969",
+    "WealthRoll": "7d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "31480721-944a-4f1e-98c8-09a369487d3f",
+    "Name": "Marchand",
+    "Summary": "Le marchand, ambulant ou établi, vend des biens de qualité grâce à son sens du commerce, de l’analyse et sa capacité à bien communiquer avec autrui.",
+    "Description": "Propriétaire d’une boutique ou vendeur ambulant, le marchand est un des derniers maillons de la chaîne de production de sa société.\n\nSa profession requiert de sa part une excellente communication ainsi qu’un bon sens d’analyse afin de s’assurer de la qualité des produits vendus.",
+    "SkillId": "2f5f0ba1-7856-488d-ac58-09e929b3420b",
+    "WealthRoll": "8d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "35e2083d-aa5c-494b-beb4-970f9be38f3b",
+    "Name": "Milicien",
+    "Summary": "Le milicien protège les citoyens, applique les lois sur les terres de son seigneur, et peut aussi servir d’éclaireur ou de soldat au sein de l’armée.",
+    "Description": "Le milicien est responsable de protéger les citoyens sur les terres de son seigneur.\n\nIl possède les droits mais également la responsabilité de faire appliquer les lois.\n\nIl doit également parfois jouer le rôle d’éclaireur et de soldat au sein de l’armée de sa patrie.",
+    "SkillId": "9700e723-6564-449d-9426-b25e9d02cb5d",
+    "WealthRoll": "7d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "bb84ebe5-4dc8-4c61-ae3c-e2b21b54ec5c",
+    "Name": "Noble",
+    "Summary": "Responsable des terres et des lois, le noble gouverne avec autorité. Certains héritiers fuient ce lourd destin avant d’hériter des responsabilités familiales.",
+    "Description": "Riche propriétaire terrien ou lié par son sang à un seigneur, le noble est responsable de l’administration et de la gouvernance de terres.\n\nIl codifie les lois et tranche en cas de différents.\n\nL’ensemble de ses tâches est lourd de responsabilités et pousse parfois les héritiers nobles à quitter leur famille avant d’hériter de ces fonctions.",
+    "SkillId": "81f62acc-1d5c-40cf-99fe-9399160ce26b",
+    "WealthRoll": "9d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "fdb8c3f7-fb20-4841-b077-f359c2bc4f0a",
+    "Name": "Paysan",
+    "Summary": "Base de la hiérarchie sociale, les paysans accomplissent les tâches les plus pénibles, essentielles à la production. Leur vie exige force et endurance.",
+    "Description": "Les paysans représentent la base de la pyramide hiérarchique de leur société, bien que les plus nombreux.\n\nIls sont affectés aux tâches les moins louables mais les plus importantes au sein de la chaîne de production.\n \nMineurs, bûcherons, agriculteurs ou autres professionnels, leur mode de vie requiert une bonne forme physique et une tolérance exceptionnelle à l’effort.",
+    "SkillId": "fba76998-1a74-4dc4-91a1-f25e3e32026d",
+    "WealthRoll": "7d6",
+    "Feature": null,
+    "Notes": null
+  },
+  {
+    "Id": "bfcbbf12-445a-471e-8c27-11ff2e7bd1e6",
+    "Name": "Religieux",
+    "Summary": "Les religieux assurent le culte, traitent les phénomènes surnaturels et soutiennent la population depuis temples, sanctuaires ou autres lieux sacrés.",
+    "Description": "Les religieux sont responsables du culte et des traditions de leur société.\n\nIls ont également le mandat de traiter les événements surnaturels et de rassurer la population quant à ceux-ci.\n\nLes religieux œuvrent dans un temple, un sanctuaire, une église ou tout autre lieu de culte.\n\nIl peut compter sur l’aide d’autres fidèles impliqués comme lui mais doit également rendre de nombreux services à son culte.",
+    "SkillId": "a905fa3b-3f46-4535-8545-f68ba5d0a74a",
+    "WealthRoll": "9d6",
+    "Feature": null,
+    "Notes": null
+  }
+]
