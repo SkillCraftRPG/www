@@ -844,7 +844,7 @@
     "Name": "Expertise",
     "Summary": "Accorde un bonus permanent de 2 + Tiers aux tests d’une compétence sélectionnée. Ce talent peut être acquis une fois pour chaque compétence.",
     "Description": "Ce talent peut être acquis une fois pour chaque compétence.\n\nÀ l’acquisition de ce talent, le personnage sélectionne une compétence.\n\nIl se voit conférer un bonus permanent de 2 + Tiers aux tests de cette compétence.",
-    "Notes": "\uD83D\uDD17\nCe talent peut être acquis pour chaque compétence.\n\nÀ l’acquisition de ce talent, le personnage sélectionne une compétence.\n\nIl se voit conférer un bonus permanent aux tests de cette compétence égal à 2 additionné à son tiers de personnage."
+    "Notes": "\uD83D\uDD17"
   },
   {
     "Id": "4458d8e3-993f-46ab-be5b-74331176e22d",

@@ -93,6 +93,37 @@ internal class RuleMapper
     return destination;
   }
 
+  public CasteModel ToCaste(CasteEntity source)
+  {
+    CasteModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Summary = source.Summary,
+      Description = source.Description,
+      WealthRoll = source.WealthRoll
+    };
+
+    if (source.Skill is not null)
+    {
+      destination.Skill = ToSkill(source.Skill);
+    }
+    if (source.Feature is not null)
+    {
+      string[] lines = source.Feature.Split('\n');
+      destination.Feature = new FeatureModel
+      {
+        Name = lines.First(),
+        Description = string.Join('\n', lines.Skip(1))
+      };
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
   public CustomizationModel ToCustomization(CustomizationEntity source)
   {
     CustomizationModel destination = new()

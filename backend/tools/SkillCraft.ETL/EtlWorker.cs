@@ -56,6 +56,7 @@ internal class EtlWorker : BackgroundService
     Language language = languages.Single();
 
     List<Attribute> attributes = [];
+    List<Caste> castes = [];
     List<Customization> customizations = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
@@ -85,6 +86,16 @@ internal class EtlWorker : BackgroundService
         Attribute attribute = ParseAttribute(content, locale);
         attributes.Add(attribute);
       }
+      else if (contentTypeId == ContentTypes.Caste)
+      {
+        Caste caste = ParseCaste(content, locale);
+        castes.Add(caste);
+      }
+      else if (contentTypeId == ContentTypes.Customization)
+      {
+        Customization customization = ParseCustomization(content, locale);
+        customizations.Add(customization);
+      }
       else if (contentTypeId == ContentTypes.Skill)
       {
         Skill skill = ParseSkill(content, locale);
@@ -100,11 +111,6 @@ internal class EtlWorker : BackgroundService
         Talent talent = ParseTalent(content, locale);
         talents.Add(talent);
       }
-      else if (contentTypeId == ContentTypes.Customization)
-      {
-        Customization customization = ParseCustomization(content, locale);
-        customizations.Add(customization);
-      }
     }
 
     Directory.CreateDirectory("output");
@@ -115,6 +121,12 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Serialized {Count} attributes to file '{Path}'.", attributes.Count, "output/attributes.json");
+    await File.WriteAllTextAsync(
+      "output/castes.json",
+      JsonSerializer.Serialize(castes.OrderBy(x => x.Name), _serializerOptions),
+      _encoding,
+      cancellationToken);
+    _logger.LogInformation("Serialized {Count} castes to file '{Path}'.", castes.Count, "output/castes.json");
     await File.WriteAllTextAsync(
       "output/customizations.json",
       JsonSerializer.Serialize(customizations.OrderBy(x => x.Name), _serializerOptions),
@@ -166,6 +178,50 @@ internal class EtlWorker : BackgroundService
     }
 
     return attribute;
+  }
+
+  private static Caste ParseCaste(Content content, ContentLocale locale)
+  {
+    Caste caste = new()
+    {
+      Id = content.EntityId,
+      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
+      Notes = locale.Description?.Value?.CleanTrim()
+    };
+
+    foreach (KeyValuePair<Guid, FieldValue> fieldValue in content.Invariant.FieldValues)
+    {
+      if (fieldValue.Key == Castes.Skill)
+      {
+        IReadOnlyCollection<Guid> values = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
+        if (values.Count == 1)
+        {
+          caste.SkillId = values.Single();
+        }
+      }
+      else if (fieldValue.Key == Castes.WealthRoll)
+      {
+        caste.WealthRoll = fieldValue.Value.Value;
+      }
+    }
+
+    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
+    {
+      if (fieldValue.Key == Castes.Summary)
+      {
+        caste.Summary = fieldValue.Value.Value;
+      }
+      else if (fieldValue.Key == Castes.Description)
+      {
+        caste.Description = fieldValue.Value.Value;
+      }
+      else if (fieldValue.Key == Castes.Feature)
+      {
+        caste.Feature = fieldValue.Value.Value;
+      }
+    }
+
+    return caste;
   }
 
   private static Customization ParseCustomization(Content content, ContentLocale locale)
