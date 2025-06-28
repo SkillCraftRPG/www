@@ -16,7 +16,7 @@
 import type { Education, SearchResults } from "~/types/game";
 
 const config = useRuntimeConfig();
-const title: string = "Educations";
+const title: string = "Éducations";
 
 const { data } = await useFetch("/api/educations", {
   baseURL: config.public.apiBaseUrl,

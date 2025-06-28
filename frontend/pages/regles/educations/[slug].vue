@@ -45,7 +45,7 @@ const feature = computed<string | undefined>(() =>
   education.value?.feature?.description ? (marked.parse(education.value.feature.description) as string) : undefined,
 );
 const html = computed<string | undefined>(() => (education.value?.description ? (marked.parse(education.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Educations", to: "/regles/educations" }]);
+const parent = computed<Breadcrumb[]>(() => [{ text: "Éducations", to: "/regles/educations" }]);
 const skill = computed<Skill | undefined>(() => education.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => education.value?.name);
 
