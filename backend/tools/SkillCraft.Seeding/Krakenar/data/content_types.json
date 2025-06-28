@@ -387,6 +387,16 @@
         "IsUnique": false,
         "UniqueName": "HtmlContents",
         "DisplayName": "Contenu HTML"
+      },
+      {
+        "Id": "ad82f5a6-1cf1-4c2d-8bae-19902fadfb59",
+        "FieldType": "HtmlContents",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Feature",
+        "DisplayName": "Particularité"
       }
     ]
   },

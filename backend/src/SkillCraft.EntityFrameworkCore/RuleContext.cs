@@ -14,6 +14,7 @@ public sealed class RuleContext : DbContext
   internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
   internal DbSet<CasteEntity> Castes => Set<CasteEntity>();
   internal DbSet<CustomizationEntity> Customizations => Set<CustomizationEntity>();
+  internal DbSet<EducationEntity> Educations => Set<EducationEntity>();
   internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
   internal DbSet<StatisticEntity> Statistics => Set<StatisticEntity>();
   internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
