@@ -25,6 +25,9 @@ export function useSeo(meta?: SeoMeta): void {
   }
 
   useHead(() => ({
+    htmlAttrs: {
+      lang: locale,
+    },
     link: [
       {
         rel: "canonical",
