@@ -58,6 +58,7 @@ internal class EtlWorker : BackgroundService
     List<Attribute> attributes = [];
     List<Caste> castes = [];
     List<Customization> customizations = [];
+    List<Education> educations = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
     List<Talent> talents = [];
@@ -96,6 +97,11 @@ internal class EtlWorker : BackgroundService
         Customization customization = ParseCustomization(content, locale);
         customizations.Add(customization);
       }
+      else if (contentTypeId == ContentTypes.Education)
+      {
+        Education education = ParseEducation(content, locale);
+        educations.Add(education);
+      }
       else if (contentTypeId == ContentTypes.Skill)
       {
         Skill skill = ParseSkill(content, locale);
@@ -133,6 +139,12 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Serialized {Count} customizations to file '{Path}'.", customizations.Count, "output/customizations.json");
+    await File.WriteAllTextAsync(
+      "output/educations.json",
+      JsonSerializer.Serialize(educations.OrderBy(x => x.Name), _serializerOptions),
+      _encoding,
+      cancellationToken);
+    _logger.LogInformation("Serialized {Count} educations to file '{Path}'.", educations.Count, "output/educations.json");
     await File.WriteAllTextAsync(
       "output/skills.json",
       JsonSerializer.Serialize(skills.OrderBy(x => x.Name), _serializerOptions),
@@ -255,6 +267,50 @@ internal class EtlWorker : BackgroundService
     }
 
     return customization;
+  }
+
+  private static Education ParseEducation(Content content, ContentLocale locale)
+  {
+    Education education = new()
+    {
+      Id = content.EntityId,
+      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
+      Notes = locale.Description?.Value?.CleanTrim()
+    };
+
+    foreach (KeyValuePair<Guid, FieldValue> fieldValue in content.Invariant.FieldValues)
+    {
+      if (fieldValue.Key == Educations.Skill)
+      {
+        IReadOnlyCollection<Guid> values = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
+        if (values.Count == 1)
+        {
+          education.SkillId = values.Single();
+        }
+      }
+      else if (fieldValue.Key == Educations.WealthMultiplier && int.TryParse(fieldValue.Value.Value, out int wealthMultiplier))
+      {
+        education.WealthMultiplier = wealthMultiplier;
+      }
+    }
+
+    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
+    {
+      if (fieldValue.Key == Educations.Summary)
+      {
+        education.Summary = fieldValue.Value.Value;
+      }
+      else if (fieldValue.Key == Educations.Description)
+      {
+        education.Description = fieldValue.Value.Value;
+      }
+      else if (fieldValue.Key == Educations.Feature)
+      {
+        education.Feature = fieldValue.Value.Value;
+      }
+    }
+
+    return education;
   }
 
   private static Skill ParseSkill(Content content, ContentLocale locale)

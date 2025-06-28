@@ -34,6 +34,7 @@ public static class DependencyInjectionExtensions
       .AddScoped<IAttributeQuerier, AttributeQuerier>()
       .AddScoped<ICasteQuerier, CasteQuerier>()
       .AddScoped<ICustomizationQuerier, CustomizationQuerier>()
+      .AddScoped<IEducationQuerier, EducationQuerier>()
       .AddScoped<ISkillQuerier, SkillQuerier>()
       .AddScoped<IStatisticQuerier, StatisticQuerier>()
       .AddScoped<ITalentQuerier, TalentQuerier>();

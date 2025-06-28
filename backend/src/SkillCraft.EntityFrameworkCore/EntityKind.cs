@@ -5,6 +5,7 @@ public enum EntityKind
   Attribute,
   Caste,
   Customization,
+  Education,
   Skill,
   Statistic,
   Talent

@@ -62,6 +62,9 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
       case EntityKind.Customization:
         await _mediator.Publish(new CustomizationPublished(@event, content.PublishedInvariant, locale), cancellationToken);
         break;
+      case EntityKind.Education:
+        await _mediator.Publish(new EducationPublished(@event, content.PublishedInvariant, locale), cancellationToken);
+        break;
       case EntityKind.Skill:
         await _mediator.Publish(new SkillPublished(@event, content.PublishedInvariant, locale), cancellationToken);
         break;
@@ -94,6 +97,9 @@ internal class RuleContentEvents : IEventHandler<ContentLocalePublished>, IEvent
         break;
       case EntityKind.Customization:
         await _mediator.Publish(new CustomizationUnpublished(@event), cancellationToken);
+        break;
+      case EntityKind.Education:
+        await _mediator.Publish(new EducationUnpublished(@event), cancellationToken);
         break;
       case EntityKind.Skill:
         await _mediator.Publish(new SkillUnpublished(@event), cancellationToken);

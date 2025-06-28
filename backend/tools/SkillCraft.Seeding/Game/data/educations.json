@@ -1,0 +1,102 @@
+﻿[
+  {
+    "Id": "a2c07e83-1bf3-4c42-8104-1c7110ad55e6",
+    "Name": "Apprenti à l’étranger",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "L’éducation du personnage a été effectuée à l’étranger, dans une région différente de sa terre natale.\n\nIl y a appris une nouvelle langue ainsi que l’importance de s’ouvrir aux autres cultures différentes de la sienne.",
+    "SkillId": "7d82f1e8-ce50-49d0-83ec-90b1fafd2e90",
+    "WealthMultiplier": 8,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "02d3e495-4b9b-4048-ba75-6238f27571b7",
+    "Name": "Apprenti d’un maître",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Le personnage a tout appris d’un maître partageant un art ou une profession avec lui.\n\nCe maître lui a enseigné les subtilités qui permettront au personnage d’être éventuellement reconnu comme un maître lui aussi.\n\nCet apprentissage a été effectué dans l’ordre et la discipline, sous la direction du maître.",
+    "SkillId": "22aeec90-9f7b-4af5-a5fe-c472219cb2c5",
+    "WealthMultiplier": 12,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "35580011-c284-4246-985a-cba217aa9758",
+    "Name": "Champs de bataille",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Le personnage est un enfant de la guerre, un fugitif d’un conflit ayant affecté les civils.\n\nSon enfance est maigre de moments heureux et aisés, ce a fait de lui une personne endurcie dotée d’une personnalité pragmatique.",
+    "SkillId": "2b70f27a-ea0b-4ff9-95f8-417e0702a76b",
+    "WealthMultiplier": 4,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "1727b658-f00f-486a-8a2d-428c80d4493e",
+    "Name": "Classique",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Peu peuvent se vanter d’avoir reçu une éducation traditionnelle comme celle du personnage.\n\nIl a suivi un parcours scolaire conforme et sans dérogation ayant mené à une instruction de haute qualité.\n\nMalgré son manque d’expériences personnelles, son grand savoir lui permet de se débrouiller même dans les situations les plus difficiles.",
+    "SkillId": "9e220721-a8a5-4d61-9392-0a23c839dc65",
+    "WealthMultiplier": 12,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "4ccfc662-8ae1-49fa-a166-4d55431f9685",
+    "Name": "Dans la rue",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Élevé dans la rue, le personnage est peut-être issu d’une famille de sans-abris.\n\nIl peut également avoir été élevé par d’autres clochards, n’ayant jamais connu ses parents.\n\nRecruté par un cirque ambulant ou esquivant les situations malencontreuses par ses prouesses physiques, ses mouvements sont prompts et souples.",
+    "SkillId": "9205293f-9bbf-42b1-be0d-68fb1aa616b3",
+    "WealthMultiplier": 4,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "e0abcba6-4e58-4db1-ba7b-83c856cbfc0c",
+    "Name": "Entreprise familiale",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Depuis sa tendre enfance, le personnage participe à l’activité principale de sa famille.\n\nPeu instruit, il a cependant développé une bonne intuition lui permettant de mener à bien ses tâches.\n\nPar la division du travail et la coopération avec sa fratrie, il a appris à collaborer et à partager.",
+    "SkillId": "1aeb5404-958f-4dcb-95b5-0566f24d265e",
+    "WealthMultiplier": 10,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "f6a2e70d-b89a-48a8-b88f-9046508d4f10",
+    "Name": "Judicieux",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Peu importe le mode de vie dans lequel il a été élevé, le personnage prend des décisions sensées et éclairées au moment opportun.\n\nIl saisit les opportunités et on lui demande souvent conseil.\n\nIl sait mettre en exécution des plans complexes et trier les informations pertinentes.",
+    "SkillId": "008a4f8d-a643-4379-9c9d-233be81772ed",
+    "WealthMultiplier": 10,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "d02097e9-0dd3-4f56-97d1-b17823200df6",
+    "Name": "Mentor vénérable",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Le personnage a été confié à un vieux sage, par exemple ses grands-parents ou aux moines d’un sanctuaire.\n\nIl aura développé un tempérament serein pendant son enfance.\n\nSon mentor lui aura également enseigné à prendre le temps d’observer son environnement et à porter attention aux détails afin de poser des conclusions rationnelles.",
+    "SkillId": "de9de04d-5bf7-4532-9c7b-102c61b44e52",
+    "WealthMultiplier": 8,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "d4ff928d-c525-4e76-b328-e44d61e72a47",
+    "Name": "Rebelle",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Malgré les efforts de ses parents à tenter d’élever un enfant calme et discipliné, le personnage désirait voler de ses propres ailes et faire ses expériences.\n\nIl a pu se soustraire à la surveillance de ses parents en camouflant ses méfaits par le mensonge, dupant ses parents ou les adultes qui l’ont pris la main dans le sac.",
+    "SkillId": "0aa11881-5115-41d0-9357-2e2027114014",
+    "WealthMultiplier": 6,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  },
+  {
+    "Id": "a261a7a1-30b9-4630-9328-6ab2afc92501",
+    "Name": "Sous contrainte",
+    "Summary": "\uD83D\uDEA7",
+    "Description": "Le personnage a vécu sous une supervision étroite au sein d’une famille stricte.\n\nIl s’est conformé aux demandes de ses parents et a coopéré lorsqu’il le jugeait nécessaire.\n\nIl a appris à dissimuler ses erreurs et fautes de parcours, et mène une double-vie dont ses parents n’en savent rien.",
+    "SkillId": "4fdbc7d3-88d1-448e-b202-b8f1c1baac6e",
+    "WealthMultiplier": 6,
+    "Feature": "\uD83D\uDEA7",
+    "Notes": null
+  }
+]
