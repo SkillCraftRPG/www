@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
     </template>
-    <div v-if="html" v-html="html"></div>
+    <div v-if="html" v-html="html" class="mb-3"></div>
     <template v-if="attribute">
       <h2 class="h3">Attribut</h2>
       <p>L’attribut suivant influence la valeur de cette statistique.</p>

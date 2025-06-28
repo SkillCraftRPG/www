@@ -28,7 +28,7 @@
         L’acquisition de ce talent forme le personnage pour la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous et augmente de +1 le rang de
         cette compétence.
       </p>
-      <SkillCard :skill="skill" />
+      <SkillCard class="mb-4" :skill="skill" />
     </template>
     <!-- TODO(fpion): TalentTree -->
   </main>
