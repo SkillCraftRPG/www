@@ -54,6 +54,16 @@ export type Feature = {
   description?: string | null;
 };
 
+export type Education = Aggregate & {
+  slug: string;
+  name: string;
+  summary?: string | null;
+  description?: string | null;
+  skill?: Skill | null;
+  wealthMultiplier?: number | null;
+  feature?: Feature | null;
+};
+
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
 
 export type GameSkill =

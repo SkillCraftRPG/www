@@ -2,10 +2,8 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" />
-    <p>
-      <!-- TODO(fpion): redact -->
-      […]
-    </p>
+    <!-- TODO(fpion): explanation text -->
+    <p>{{ "[…]" }}</p>
   </main>
 </template>
 

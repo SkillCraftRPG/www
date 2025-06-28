@@ -2,10 +2,8 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" />
-    <p>
-      <!-- TODO(fpion): redact -->
-      […]
-    </p>
+    <!-- TODO(fpion): explanation text -->
+    <p>{{ "[…]" }}</p>
     <div class="row">
       <div v-for="caste in castes" :key="caste.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <CasteCard class="d-flex flex-column h-100" :caste="caste" />
