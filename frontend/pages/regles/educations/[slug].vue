@@ -15,8 +15,10 @@
     <div v-if="html" v-html="html"></div>
     <template v-if="skill">
       <h2 class="h3">Compétence</h2>
-      <!-- TODO(fpion): explanation text -->
-      <p>{{ "[…]" }}</p>
+      <p>
+        Cette <NuxtLink to="/regles/competences">compétence</NuxtLink> est fondamentale aux personnages ayant reçu cette éducation. Au moment de sa
+        <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, il doit être formé pour celle-ci.
+      </p>
       <SkillCard class="mb-4" :skill="skill" />
     </template>
     <template v-if="feature">
@@ -45,7 +47,7 @@ const feature = computed<string | undefined>(() =>
   education.value?.feature?.description ? (marked.parse(education.value.feature.description) as string) : undefined,
 );
 const html = computed<string | undefined>(() => (education.value?.description ? (marked.parse(education.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Educations", to: "/regles/educations" }]);
+const parent = computed<Breadcrumb[]>(() => [{ text: "Éducations", to: "/regles/educations" }]);
 const skill = computed<Skill | undefined>(() => education.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => education.value?.name);
 

@@ -6,9 +6,6 @@ export default defineNuxtConfig({
   css: ["@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
   app: {
     head: {
-      htmlAttrs: {
-        lang: "fr",
-      },
       link: [
         { rel: "icon", href: "/favicon.ico" },
         { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
@@ -19,7 +16,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBaseUrl: "http://localhost:8088", // TODO(fpion): inject from env var
-      baseUrl: "https://www.skillcraftrpg.ca", // TODO(fpion): inject from env var
+      baseUrl: "http://localhost:3000", // TODO(fpion): inject from env var
     },
   },
 });

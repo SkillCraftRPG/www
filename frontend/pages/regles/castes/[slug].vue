@@ -15,8 +15,10 @@
     <div v-if="html" v-html="html"></div>
     <template v-if="skill">
       <h2 class="h3">Compétence</h2>
-      <!-- TODO(fpion): explanation text -->
-      <p>{{ "[…]" }}</p>
+      <p>
+        Cette <NuxtLink to="/regles/competences">compétence</NuxtLink> est fondamentale aux personnages de cette caste. Au moment de sa
+        <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, il doit être formé pour celle-ci.
+      </p>
       <SkillCard class="mb-4" :skill="skill" />
     </template>
     <template v-if="feature">
@@ -41,7 +43,17 @@ const { data } = await useFetch(`/api/castes/${route.params.slug}`, {
 });
 
 const caste = computed<Caste | undefined>(() => data.value as Caste | undefined);
-const average = computed<number | undefined>(() => 0); // TODO(fpion): implement
+const average = computed<number | undefined>(() => {
+  const wealthRoll = caste.value?.wealthRoll ?? "";
+  const parts: string[] = wealthRoll.split("d");
+  const dice: number = Number(parts[0]);
+  const sides: number = Number(parts[1]);
+  if (isNaN(dice) || isNaN(sides) || dice <= 0 || sides <= 0) {
+    return undefined;
+  }
+  const average: number = (sides + 1) / 2;
+  return Math.floor(dice * average);
+});
 const feature = computed<string | undefined>(() => (caste.value?.feature?.description ? (marked.parse(caste.value.feature.description) as string) : undefined));
 const html = computed<string | undefined>(() => (caste.value?.description ? (marked.parse(caste.value.description) as string) : undefined));
 const parent = computed<Breadcrumb[]>(() => [{ text: "Castes", to: "/regles/castes" }]);
