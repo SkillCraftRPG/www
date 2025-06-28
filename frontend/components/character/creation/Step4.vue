@@ -6,7 +6,6 @@
       Votre personnage se voit attributer <NuxtLink to="/regles/talents">12 points de talent</NuxtLink>. Dépensez ces points en respectant les contraintes
       suivantes :
     </p>
-    <!-- TODO(fpion): à cette étape, un joueur ne sait pas comment "former un personnage pour une compétence". -->
     <ul>
       <li>Votre personnage doit être formé pour la compétence associée à sa caste.</li>
       <li>Votre personnage doit être formé pour la compétence associée à son éducation.</li>
@@ -19,6 +18,7 @@
         <font-awesome-icon icon="fas fa-lightbulb" /> N’oubliez pas que l’ascendance de votre personnage lui confère un talent gratuit ou plusieurs rabais.
       </li>
     </ul>
+    <!-- TODO(fpion): à cette étape, un joueur ne sait pas comment "former un personnage pour une compétence". -->
     <!-- TODO(fpion): résumer chaque talent de compétence pour effectuer des suggestions au joueur -->
   </section>
 </template>
