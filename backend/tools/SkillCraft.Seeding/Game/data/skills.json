@@ -5,7 +5,7 @@
     "Value": "Acrobatics",
     "Name": "Acrobaties",
     "Summary": "Acrobaties mesure la capacité du personnage à maîtriser son corps dans le mouvement, que ce soit pour conserver son équilibre, effectuer des figures complexes ou se dégager physiquement de situations contraignantes.",
-    "Description": "La compétence **Acrobaties** permet au personnage de conserver son équilibre sur des surfaces instables, d’amortir une chute, de se contorsionner pour se libérer de liens ou d’exécuter des manœuvres acrobatiques.",
+    "Description": "La compétence **Acrobaties** permet au personnage de :\n\n- amortir une chute\n- conserver son équilibre sur des surfaces instables\n- exécuter des manœuvres acrobatiques\n- se contorsionner pour se libérer de liens",
     "Notes": null
   },
   {
@@ -14,7 +14,7 @@
     "Value": "Crafting",
     "Name": "Artisanat",
     "Summary": "Artisanat mesure l’aptitude du personnage à créer, réparer ou démonter des objets à l’aide d’outils, allant de l’improvisation brute à la fabrication complexe.",
-    "Description": "La compétence **Artisanat** permet au personnage de fabriquer ou réparer grossièrement un objet, de concevoir ou restaurer un objet complexe à l’aide des outils et matériaux appropriés, ou encore de démanteler un objet pour en récupérer les composantes utiles.",
+    "Description": "La compétence **Artisanat** permet au personnage de :\n\n- concevoir ou fabriquer un objet\n- démanteler un objet pour en récupérer les composantes utiles\n- réparer ou restorer un objet\n\nCes actions nécessitent les outils, matériaux et tables de travail appropriés.",
     "Notes": null
   },
   {
@@ -23,7 +23,7 @@
     "Value": "Athletics",
     "Name": "Athlétisme",
     "Summary": "Athlétisme mesure la capacité physique générale du personnage à se déplacer dans des environnements exigeants, notamment par l’escalade, la nage ou les sauts.",
-    "Description": "La compétence **Athlétisme** permet au personnage d’escalader des surfaces avec ou sans prises, de nager ou de se maintenir à la surface de l’eau, et d’effectuer des sauts en longueur ou en hauteur.",
+    "Description": "La compétence **Athlétisme** permet au personnage de \n\n- effectuer des sauts en longueur et en hauteur\n- escalader des surfaces avec ou sans prises\n- nager ou se maintenir à la surface de l’eau",
     "Notes": null
   },
   {
@@ -41,7 +41,7 @@
     "Value": "Diplomacy",
     "Name": "Diplomatie",
     "Summary": "Diplomatie mesure l’aptitude du personnage à interagir avec finesse dans des contextes sociaux, à inspirer la confiance ou la sympathie, et à tirer parti des échanges verbaux.",
-    "Description": "La compétence **Diplomatie** permet au personnage de se fondre dans une foule sans attirer l’attention, de remonter le moral d’un allié, d’influencer l’attitude d’autrui par le tact, les mots justes ou une étiquette appropriée, et d’obtenir des informations précises en interagissant habilement avec les bonnes personnes.",
+    "Description": "La compétence **Diplomatie** permet au personnage de :\n\n- influencer l’attitude d’autrui par le tact, les mots justes ou une étiquette appropriée\n- obtenir des informations précises en interagissant habilement avec les bonnes personnes\n- se fondre dans une foule sans attirer l’attention",
     "Notes": null
   },
   {
@@ -50,7 +50,7 @@
     "Value": "Discipline",
     "Name": "Discipline",
     "Summary": "Discipline mesure la stabilité mentale et émotionnelle du personnage face au stress, à la douleur ou aux interférences surnaturelles.",
-    "Description": "La compétence **Discipline** permet au personnage de conserver son sang-froid dans une situation difficile, de maintenir un Pouvoir actif malgré les perturbations, de rester en position malgré une blessure ou un environnement hostile, et de résister à certaines formes d’influence surnaturelle.",
+    "Description": "La compétence **Discipline** permet au personnage de :\n\n- conserver son sang-froid dans une situation difficile\n- maintenir un Pouvoir actif malgré les perturbations\n- rester en position malgré une blessure ou un environnement hostile\n- résister à certaines formes d’influence surnaturelle",
     "Notes": null
   },
   {
@@ -59,7 +59,7 @@
     "Value": "Stealth",
     "Name": "Furtivité",
     "Summary": "Furtivité permet au personnage d’éviter la détection, que ce soit par la dissimulation visuelle, le déplacement silencieux, le camouflage ou des gestes discrets limitant les traces laissées.",
-    "Description": "La compétence **Furtivité** permet au personnage de se dissimuler dans l’ombre ou au sein d’une foule, de se camoufler dans un environnement, de se déplacer silencieusement en terrain dégagé ou encombré, et de manipuler discrètement de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer sans être vu. Elle permet également de minimiser les traces laissées lors d’un déplacement.",
+    "Description": "La compétence **Furtivité** permet au personnage de :\n\n- manipuler discrètement de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer sans être vu\n- minimiser les traces laissées lors d’un déplacement\n- se camoufler dans un environnement\n- se dissimuler dans l’ombre ou au sein d’une foule\n- se déplacer silencieusement en terrain dégagé ou encombré",
     "Notes": null
   },
   {
@@ -68,7 +68,7 @@
     "Value": "Insight",
     "Name": "Intuition",
     "Summary": "Intuition reflète la capacité du personnage à percevoir l’intention derrière les mots, à lire les émotions, et à reconnaître les tentatives de manipulation ou de dissimulation.",
-    "Description": "La compétence **Intuition** permet au personnage de déchiffrer le langage corporel, de percevoir les intentions réelles d’une créature, de détecter une tentative de manipulation — qu’elle soit dirigée contre lui ou non —, et de déterminer si quelqu’un ment ou tente de l’influencer.",
+    "Description": "La compétence **Intuition** permet au personnage de :\n\n- déchiffrer le langage corporel\n- détecter une tentative de manipulation, qu’elle soit dirigée contre lui ou non\n- déterminer si quelqu’un ment ou tente de l’influencer\n- percevoir les intentions réelles d’une créature\n- utiliser son intelligence émotionnelle, c’est-à-dire percevoir, comprendre, exprimer et gérer les émotions",
     "Notes": null
   },
   {
@@ -77,7 +77,7 @@
     "Value": "Investigation",
     "Name": "Investigation",
     "Summary": "Investigation reflète la capacité d’analyse logique et d’observation du personnage pour tirer des déductions concrètes à partir d’indices ou d’informations fragmentaires.",
-    "Description": "La compétence **Investigation** permet au personnage d’estimer la valeur d’un objet, de tirer des conclusions simples à partir d’indices, d’analyser un mécanisme complexe, d’évaluer les coûts de fabrication et de revente, de détecter les incohérences ou de reconstituer une scène à partir de détails observés.",
+    "Description": "La compétence **Investigation** permet au personnage de :\n\n- analyser un mécanisme complexe tel un piège\n- détecter les incohérences \n- estimer la valeur d’un objet\n- reconstituer une scène à partir de fines observations\n- tirer des conclusions simples à partir d’indices\n- évaluer les coûts de fabrication et de revente d’un objet",
     "Notes": null
   },
   {
@@ -86,7 +86,7 @@
     "Value": "Linguistics",
     "Name": "Linguistique",
     "Summary": "Linguistique évalue l’aptitude du personnage à comprendre, manipuler ou produire des messages écrits ou symboliques, dans sa langue ou dans d’autres.",
-    "Description": "La compétence **Linguistique** permet au personnage de comprendre ou produire un document, qu’il soit simple ou complexe, de décrypter une langue inconnue, d’interpréter un message non verbal ou de falsifier un texte. Elle inclut aussi la lecture de schémas comme des cartes ou des interfaces.",
+    "Description": "La compétence **Linguistique** permet au personnage de :\n\n- comprendre ou produire un document écrit, qu’il soit simple ou complexe\n- décrypter un texte\n- falsifier un texte\n- interpréter un message non verbal\n- lire des schémas, comme des cartes ou des interfaces\n- tenter de comprendre un texte rédigé dans une langue inconnue",
     "Notes": null
   },
   {
@@ -95,7 +95,7 @@
     "Value": "Medicine",
     "Name": "Médecine",
     "Summary": "Médecine mesure la connaissance et l’habileté du personnage à soigner les blessures, diagnostiquer des afflictions et appliquer des traitements adaptés.",
-    "Description": "La compétence **Médecine** permet au personnage de stabiliser un allié mourant, d’appliquer les premiers soins, de diagnostiquer une maladie, un poison ou une blessure, et de déterminer ou préparer le traitement approprié.",
+    "Description": "La compétence **Médecine** permet au personnage de :\n\n- appliquer les premiers soins\n- diagnostiquer une maladie, un poison ou une blessure\n- déterminer ou préparer le traitement approprié\n- stabiliser un allié mourant",
     "Notes": null
   },
   {
@@ -104,7 +104,7 @@
     "Value": "Melee",
     "Name": "Mêlée",
     "Summary": "Mêlée mesure l’habileté du personnage à combattre au corps à corps, que ce soit pour frapper, bloquer ou repousser un adversaire en combat rapproché.",
-    "Description": "La compétence **Mêlée** permet au personnage d’effectuer une attaque avec une arme de corps à corps, de tenter de contrer une manœuvre adverse ou de réaliser une bousculade pour repousser ou déséquilibrer un ennemi.",
+    "Description": "La compétence **Mêlée** permet au personnage de :\n\n- effectuer une attaque en maniant une arme de corps à corps\n- réaliser une bousculade pour repousser ou déséquilibrer un ennemi\n- tenter de contrer une manœuvre adverse",
     "Notes": null
   },
   {
@@ -113,7 +113,7 @@
     "Value": "Occultism",
     "Name": "Occultisme",
     "Summary": "Occultisme représente la compréhension intuitive ou expérimentale des phénomènes surnaturels, ainsi que la capacité à interagir consciemment avec eux.",
-    "Description": "La compétence **Occultisme** permet au personnage d’identifier la nature surnaturelle d’un effet, d’activer ou de manipuler un objet magique, de s’adapter à un artefact, de faire des liens entre des effets magiques connus, ou encore de canaliser un Pouvoir ou une capacité surnaturelle.",
+    "Description": "La compétence **Occultisme** permet au personnage de\n\n- activer ou de manipuler un objet magique\n- canaliser un Pouvoir ou utiliser une capacité surnaturelle\n- faire des liens entre des effets magiques connus\n- identifier la nature surnaturelle d’un effet\n- s’adapter à un artefact",
     "Notes": null
   },
   {
@@ -122,7 +122,7 @@
     "Value": "Orientation",
     "Name": "Orientation",
     "Summary": "Orientation mesure la capacité du personnage à viser, à se repérer dans l’espace et à réagir aux trajectoires ou déplacements, qu’il s’agisse de lancer un projectile, de naviguer ou de manœuvrer un véhicule.",
-    "Description": "La compétence **Orientation** permet au personnage d’effectuer une attaque avec une arme à distance, de lancer un objet vers une cible approximative ou précise, de suivre une carte ou un plan, de conduire un véhicule ou d’exécuter une manœuvre en réponse à un danger.",
+    "Description": "La compétence **Orientation** permet au personnage de :\n\n- conduire un véhicule\n- effectuer une attaque avec une arme à distance\n- exécuter une manœuvre en réponse à un danger\n- lancer un objet vers une cible approximative ou précise\n- suivre une carte ou un plan",
     "Notes": null
   },
   {
@@ -131,7 +131,7 @@
     "Value": "Perception",
     "Name": "Perception",
     "Summary": "Perception représente l’acuité sensorielle du personnage, sa capacité à remarquer les détails, les sons subtils ou les éléments dissimulés dans son environnement.",
-    "Description": "La compétence **Perception** permet au personnage de repérer une créature dissimulée ou furtive, de déceler un piège ou un passage secret, et de capter des sons faibles comme une conversation chuchotée ou lointaine.",
+    "Description": "La compétence **Perception** permet au personnage de :\n\n- capter des sons faibles comme une conversation chuchotée ou lointaine\n- déceler un piège ou un passage secret\n- repérer une créature dissimulée, furtive ou discrète",
     "Notes": null
   },
   {
@@ -140,7 +140,7 @@
     "Value": "Performance",
     "Name": "Représentation",
     "Summary": "Représentation reflète la capacité du personnage à captiver, émouvoir ou influencer par la performance artistique, l’intensité expressive ou la mise en scène.",
-    "Description": "La compétence **Représentation** permet au personnage de distraire ou captiver un auditoire, de faire diversion ou d’inspirer la peur, de provoquer pour détourner l’attention, d’exprimer ses émotions ou de se produire dans une discipline artistique comme la poésie, la danse, la musique ou le théâtre.",
+    "Description": "La compétence **Représentation** permet au personnage de :\n\n- distraire ou captiver un auditoire\n- faire diversion\n- inspirer la peur\n- provoquer pour détourner l’attention\n- se produire dans une discipline artistique comme la poésie, la danse, la musique ou le théâtre",
     "Notes": null
   },
   {
@@ -149,7 +149,7 @@
     "Value": "Resistance",
     "Name": "Résistance",
     "Summary": "Résistance reflète la robustesse physique du personnage face à la douleur, aux blessures et aux chocs traumatiques.",
-    "Description": "La compétence **Résistance** permet au personnage de ne pas s’effondrer sous un important choc physique, de rester debout après avoir subi de lourds dégâts ou de résister aux effets directs d’un impact violent.",
+    "Description": "La compétence **Résistance** permet au personnage de :\n\n- ne pas s’effondrer sous un important choc physique\n- rester debout après avoir subi de lourds dégâts\n- résister aux effets directs d’un impact violent",
     "Notes": null
   },
   {
@@ -158,7 +158,7 @@
     "Value": "Thievery",
     "Name": "Roublardise",
     "Summary": "Roublardise reflète l’habileté manuelle du personnage à interagir avec précision, ruse ou subtilité avec des mécanismes, dispositifs piégés ou objets délicats.",
-    "Description": "La compétence **Roublardise** permet au personnage de nouer ou dénouer un nœud simple ou complexe, de manipuler avec précision de petits objets, d’activer ou de saboter un mécanisme, de crocheter une serrure ou de désamorcer un piège.",
+    "Description": "La compétence **Roublardise** permet au personnage de :\n\n- activer un mécanisme\n- crocheter une serrure\n- désamorcer un piège\n- manipuler avec précision de petits objets\n- nouer ou dénouer un nœud simple ou complexe\n- saboter un mécanisme",
     "Notes": null
   },
   {
@@ -167,7 +167,7 @@
     "Value": "Survival",
     "Name": "Survie",
     "Summary": "Survie évalue les connaissances et réflexes du personnage face à la nature : orientation, pistage, protection contre les éléments, et gestion des animaux.",
-    "Description": "La compétence **Survie** permet au personnage de s’orienter et de se déplacer sans se perdre en pleine nature, de trouver abri et nourriture, de prédire le climat, d’éviter les dangers naturels, de suivre une piste, et d’interagir avec des animaux sauvages ou dressés.",
+    "Description": "La compétence **Survie** permet au personnage de :\n\n- interagir avec des animaux sauvages ou dressés\n- prédire le climat\n- suivre une piste\n- s’orienter et de se déplacer sans se perdre en pleine nature\n- trouver un abri et de la nourriture\n- éviter les dangers naturels",
     "Notes": null
   },
   {
@@ -176,7 +176,7 @@
     "Value": "Deception",
     "Name": "Tromperie",
     "Summary": "Tromperie mesure la capacité du personnage à induire les autres en erreur par des mensonges, des déguisements ou des manipulations verbales subtiles.",
-    "Description": "La compétence **Tromperie** permet au personnage de se faire passer pour quelqu’un d’autre, de mentir de façon crédible ou non, de manipuler sans contredire la vérité directement, d’utiliser un déguisement convaincant ou d’imiter une autre espèce ou un autre genre avec vraisemblance.",
+    "Description": "La compétence **Tromperie** permet au personnage de :\n\n- imiter une créature d’une autre espèce ou d’un autre genre avec vraisemblance\n- manipuler sans contredire la vérité directement\n- mentir de façon crédible ou non\n- se faire passer pour autrui\n- utiliser un déguisement convaincant",
     "Notes": null
   }
 ]
