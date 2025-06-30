@@ -38,14 +38,15 @@ internal class CustomizationEntity : AggregateEntity
     Slug = locale.FindStringValue(Fields.Customizations.Slug).ToLowerInvariant();
 
     IReadOnlyCollection<string> kinds = invariant.FindSelectValue(Fields.Customizations.Kind);
-    if (kinds.Count == 1)
+    if (kinds.Count < 1)
     {
-      Kind = Enum.Parse<CustomizationKind>(kinds.Single());
+      throw new InvalidOperationException($"Multiple kind values ({kinds.Count}) were provided for customization 'Id={Id}'.");
     }
-    else
+    else if (kinds.Count > 1)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new InvalidOperationException($"No kind value was provided for customization 'Id={Id}'.");
     }
+    Kind = Enum.Parse<CustomizationKind>(kinds.Single());
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
     Summary = locale.TryGetStringValue(Fields.Customizations.Summary);
