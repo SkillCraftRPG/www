@@ -57,7 +57,7 @@
       <h2 class="h3">Achats multiples</h2>
       <p>
         Sauf indication contraire, un talent ne peut être acquis qu’une seule fois. Seuls les talents portant la mention
-        <strong>Achats multiples</strong> peuvent être acquis plusieurs fois. Chaque acquisition doit satisfaire les conditions indiquées ci-dessus.
+        <i>Achats multiples</i> peuvent être acquis plusieurs fois. Chaque acquisition doit satisfaire les conditions indiquées ci-dessus.
       </p>
       <p>S’il possède un ou plusieurs rabais sur ce talent, alors chaque acquisition bénéficie du rabais.</p>
     </main>
