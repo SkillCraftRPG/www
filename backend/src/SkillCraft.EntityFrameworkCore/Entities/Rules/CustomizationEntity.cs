@@ -40,11 +40,11 @@ internal class CustomizationEntity : AggregateEntity
     IReadOnlyCollection<string> kinds = invariant.FindSelectValue(Fields.Customizations.Kind);
     if (kinds.Count < 1)
     {
-      throw new InvalidOperationException($"Multiple kind values ({kinds.Count}) were provided for customization 'Id={Id}'.");
+      throw new InvalidOperationException($"No kind value was provided for customization 'Id={Id}'.");
     }
     else if (kinds.Count > 1)
     {
-      throw new InvalidOperationException($"No kind value was provided for customization 'Id={Id}'.");
+      throw new InvalidOperationException($"Multiple kind values ({kinds.Count}) were provided for customization 'Id={Id}'.");
     }
     Kind = Enum.Parse<CustomizationKind>(kinds.Single());
 
