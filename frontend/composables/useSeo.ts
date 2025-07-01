@@ -1,5 +1,7 @@
 import { useHead, useRoute, useRuntimeConfig } from "nuxt/app";
 
+import { brand } from "~/types/constants";
+
 type SeoMeta = {
   title?: string | null;
   description?: string | null;
@@ -13,6 +15,7 @@ export function useSeo(meta?: SeoMeta): void {
 
   if (meta) {
     useSeoMeta({
+      robots: "noindex",
       title: meta.title ?? undefined,
       description: meta.description ?? undefined,
       ogTitle: meta.title ?? undefined,
@@ -20,7 +23,7 @@ export function useSeo(meta?: SeoMeta): void {
       ogImage: undefined, // TODO(fpion): OpenGraph Image
       ogUrl: href,
       ogLocale: locale,
-      ogSiteName: "SkillCraft", // TODO(fpion): duplication with app.vue
+      ogSiteName: brand,
     });
   }
 

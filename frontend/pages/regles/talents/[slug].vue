@@ -22,12 +22,13 @@
       </tbody>
     </table>
     <div v-if="html" v-html="html"></div>
-    <template v-if="skill">
+    <template v-if="talent && skill">
       <h2 class="h3">Compétence</h2>
-      <p>
-        L’acquisition de ce talent forme le personnage pour la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous et augmente de +1 le rang de
-        cette compétence.
+      <p v-if="talent.name === skill.name">
+        L’acquisition de ce talent forme le personnage pour la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous. Elle augmente également de
+        +1 le rang de cette compétence.
       </p>
+      <p v-else>L’acquisition de ce talent augmente de +1 le rang de la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous.</p>
       <SkillCard class="mb-4" :skill="skill" />
     </template>
     <!-- TODO(fpion): TalentTree -->

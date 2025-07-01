@@ -15,10 +15,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "http://localhost:8088", // TODO(fpion): inject from env var
-      baseUrl: "http://localhost:3000", // TODO(fpion): inject from env var
+      apiBaseUrl: process.env.API_BASE_URL || "http://localhost:8088",
+      baseUrl: process.env.BASE_URL || "http://localhost:3000",
     },
   },
 });
-
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // TODO(fpion): remove before going to production
