@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Logitar.EventSourcing;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using SkillCraft.Infrastructure.Data;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
@@ -59,14 +60,14 @@ internal class CasteEntity : AggregateEntity
     ContentLocale invariant = published.Invariant;
     ContentLocale locale = published.Locale;
 
-    Slug = locale.FindStringValue(Fields.Castes.Slug).ToLowerInvariant();
+    Slug = locale.FindStringValue(Castes.Slug).ToLowerInvariant();
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Castes.Summary);
-    Description = locale.TryGetStringValue(Fields.Castes.Description);
+    Summary = locale.TryGetStringValue(Castes.Summary);
+    Description = locale.TryGetStringValue(Castes.Description);
 
-    WealthRoll = invariant.FindStringValue(Fields.Castes.WealthRoll);
+    WealthRoll = invariant.FindStringValue(Castes.WealthRoll);
 
-    Feature = locale.TryGetStringValue(Fields.Castes.Feature);
+    Feature = locale.TryGetStringValue(Castes.Feature);
   }
 }

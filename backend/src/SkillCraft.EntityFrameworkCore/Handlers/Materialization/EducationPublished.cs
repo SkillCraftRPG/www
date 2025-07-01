@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using SkillCraft.EntityFrameworkCore.Entities.Rules;
+using SkillCraft.Infrastructure.Data;
 
 namespace SkillCraft.EntityFrameworkCore.Handlers.Materialization;
 
@@ -36,7 +37,7 @@ internal class EducationPublishedHandler : INotificationHandler<EducationPublish
       education.Update(@event);
     }
 
-    IReadOnlyCollection<Guid>? skillIds = @event.Invariant.TryGetRelatedContentValue(Fields.Educations.Skill);
+    IReadOnlyCollection<Guid>? skillIds = @event.Invariant.TryGetRelatedContentValue(Educations.Skill);
     if (skillIds is not null)
     {
       if (skillIds.Count < 1)

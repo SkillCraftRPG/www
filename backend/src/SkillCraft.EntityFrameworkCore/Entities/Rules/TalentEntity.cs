@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Logitar.EventSourcing;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using SkillCraft.Infrastructure.Data;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
@@ -74,13 +75,13 @@ internal class TalentEntity : AggregateEntity
     ContentLocale invariant = published.Invariant;
     ContentLocale locale = published.Locale;
 
-    Slug = locale.FindStringValue(Fields.Talents.Slug).ToLowerInvariant();
-    Tier = (int)invariant.FindNumberValue(Fields.Talents.Tier);
+    Slug = locale.FindStringValue(Talents.Slug).ToLowerInvariant();
+    Tier = (int)invariant.FindNumberValue(Talents.Tier);
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Talents.Summary);
-    Description = locale.TryGetStringValue(Fields.Talents.Description);
+    Summary = locale.TryGetStringValue(Talents.Summary);
+    Description = locale.TryGetStringValue(Talents.Description);
 
-    AllowMultiplePurchases = invariant.GetBooleanValue(Fields.Talents.AllowMultiplePurchases);
+    AllowMultiplePurchases = invariant.GetBooleanValue(Talents.AllowMultiplePurchases);
   }
 }

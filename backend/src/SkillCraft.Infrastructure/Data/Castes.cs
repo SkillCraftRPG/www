@@ -1,7 +1,9 @@
-﻿namespace SkillCraft.EntityFrameworkCore.Fields;
+﻿namespace SkillCraft.Infrastructure.Data;
 
-internal static class Castes
+public static class Castes
 {
+  public static readonly Guid ContentType = Guid.Parse("c0a64f8e-36f5-4c3c-8614-1c635defdeca");
+
   public static readonly Guid Description = Guid.Parse("63e00c29-64c5-4072-a874-94210ec6ae6f");
   public static readonly Guid Feature = Guid.Parse("b1fb43a1-2f4f-4122-8406-18e9637a123a");
   public static readonly Guid Skill = Guid.Parse("10123390-77b7-4647-9d99-ce5104cfb478");
