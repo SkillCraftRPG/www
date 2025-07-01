@@ -1,3 +1,5 @@
+import pkg from "./package.json";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
@@ -17,6 +19,7 @@ export default defineNuxtConfig({
     public: {
       apiBaseUrl: "http://localhost:8088",
       baseUrl: "http://localhost:3000",
+      version: pkg.version,
     },
   },
 });

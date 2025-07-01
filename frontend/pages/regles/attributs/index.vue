@@ -23,11 +23,7 @@
         Un attribut universel dont tous les personnages bénéficient.
       </li>
     </ul>
-    <div class="row">
-      <div v-for="attribute in attributes" :key="attribute.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-fifth mb-4">
-        <AttributeDetailCard :attribute="attribute" class="d-flex flex-column h-100" />
-      </div>
-    </div>
+    <AttributeList v-if="attributes.length" :items="attributes" />
   </main>
 </template>
 

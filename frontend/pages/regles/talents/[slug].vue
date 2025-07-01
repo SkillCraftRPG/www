@@ -7,6 +7,10 @@
     <table v-if="talent" class="table table-striped">
       <tbody>
         <tr>
+          <th scope="row">Tiers</th>
+          <td>{{ talent.tier }}</td>
+        </tr>
+        <tr>
           <th scope="row">Achats multiples</th>
           <td>
             <TalentAllowMultiplePurchases :talent="talent" />

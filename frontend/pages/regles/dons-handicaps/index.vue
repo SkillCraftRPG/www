@@ -15,11 +15,7 @@
       <li>Joueurs intermédiaires : entre 1 et 2 dons</li>
       <li>Joueurs expérimentés : maximum 3 dons</li>
     </ul>
-    <div class="row">
-      <div v-for="customization in customizations" :key="customization.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <CustomizationCard :customization="customization" class="d-flex flex-column h-100" />
-      </div>
-    </div>
+    <CustomizationList v-if="customizations.length" :items="customizations" />
   </main>
 </template>
 

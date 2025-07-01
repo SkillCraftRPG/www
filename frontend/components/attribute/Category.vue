@@ -1,8 +1,8 @@
 <template>
-  <span><font-awesome-icon :icon="icon" /> {{ text }}</span>
+  <span class="category"><font-awesome-icon :icon="icon" />&nbsp;{{ text }}</span>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import type { Attribute } from "~/types/game";
 
 const props = defineProps<{
@@ -32,3 +32,9 @@ const text = computed<string>(() => {
   return "Universel";
 });
 </script>
+
+<style scoped>
+.category {
+  white-space: nowrap;
+}
+</style>

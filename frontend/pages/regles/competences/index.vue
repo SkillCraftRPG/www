@@ -50,12 +50,10 @@
         </tr>
       </tbody>
     </table>
-    <h2 class="h3">Liste des compétences</h2>
-    <div class="row">
-      <div v-for="skill in skills" :key="skill.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <SkillCard class="d-flex flex-column h-100" :skill="skill" />
-      </div>
-    </div>
+    <template v-if="skills.length">
+      <h2 class="h3">Liste des compétences</h2>
+      <SkillList :items="skills" />
+    </template>
   </main>
 </template>
 

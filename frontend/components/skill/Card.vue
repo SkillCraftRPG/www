@@ -14,6 +14,5 @@ const props = defineProps<{
   skill: Skill;
 }>();
 
-const isNoAttribute = computed<boolean>(() => parseBoolean(props.noAttribute) ?? false);
-const subtitle = computed<string | undefined>(() => (isNoAttribute.value ? undefined : (props.skill.attribute?.name ?? "Variable")));
+const subtitle = computed<string | undefined>(() => (parseBoolean(props.noAttribute) ? undefined : (props.skill.attribute?.name ?? "Variable")));
 </script>

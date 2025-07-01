@@ -8,11 +8,7 @@
       Chaque éducation définit une <NuxtLink to="/regles/competences">compétence</NuxtLink> pour laquelle le personnage est formé, un multiplicateur permettant
       de déterminer sa richesse de départ, ainsi qu'une particularité qui lui est propre.
     </p>
-    <div class="row">
-      <div v-for="education in educations" :key="education.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <EducationCard class="d-flex flex-column h-100" :education="education" />
-      </div>
-    </div>
+    <EducationList v-if="educations.length" :items="educations" />
   </main>
 </template>
 

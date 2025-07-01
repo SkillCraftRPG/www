@@ -6,7 +6,7 @@
         <a href="#intro">Introduction</a>
       </li>
       <li>
-        <a href="#step-1">Étape 1 — Lignée</a>
+        <a href="#step-1">Étape 1 — Ascendance</a>
       </li>
       <li>
         <a href="#step-2">Étape 2 — Personnalisation</a>

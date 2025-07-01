@@ -1,11 +1,57 @@
 // For Nuxt 3
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faArrowUp, faBrain, faCheck, faDumbbell, faHeart, faLightbulb, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUp,
+  faBook,
+  faBrain,
+  faChartSimple,
+  faCheck,
+  faCodeBranch,
+  faDumbbell,
+  faGraduationCap,
+  faGrip,
+  faHandFist,
+  faHeart,
+  faIdCard,
+  faKitchenSet,
+  faLandmark,
+  faLightbulb,
+  faList,
+  faMagnifyingGlassChart,
+  faPaw,
+  faScrewdriverWrench,
+  faTimes,
+  faWandSparkles,
+  faWheelchair,
+} from "@fortawesome/free-solid-svg-icons";
 
 config.autoAddCss = false;
 
-library.add(faArrowUp, faBrain, faCheck, faDumbbell, faHeart, faLightbulb, faTimes);
+library.add(
+  faArrowUp,
+  faBook,
+  faBrain,
+  faChartSimple,
+  faCheck,
+  faCodeBranch,
+  faDumbbell,
+  faGraduationCap,
+  faGrip,
+  faHandFist,
+  faHeart,
+  faIdCard,
+  faKitchenSet,
+  faLandmark,
+  faLightbulb,
+  faList,
+  faMagnifyingGlassChart,
+  faPaw,
+  faScrewdriverWrench,
+  faTimes,
+  faWandSparkles,
+  faWheelchair,
+);
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("font-awesome-icon", FontAwesomeIcon);
