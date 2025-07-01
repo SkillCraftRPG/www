@@ -15,7 +15,7 @@
       <li>Joueurs intermédiaires : entre 1 et 2 dons</li>
       <li>Joueurs expérimentés : maximum 3 dons</li>
     </ul>
-    <CustomizationList :items="customizations" />
+    <CustomizationList v-if="customizations.length" :items="customizations" />
   </main>
 </template>
 

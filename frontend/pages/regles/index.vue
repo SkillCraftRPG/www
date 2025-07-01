@@ -9,7 +9,9 @@
     </p>
     <div class="d-flex flex-column justify-content-center align-items-center">
       <div class="grid">
-        <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile"><font-awesome-icon :icon="tile.icon" /> {{ tile.text }}</NuxtLink>
+        <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
+          <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
+        </NuxtLink>
       </div>
     </div>
   </main>
@@ -17,6 +19,8 @@
 
 <script setup lang="ts">
 import type { RouteLocationAsPathGeneric, RouteLocationAsRelativeGeneric } from "vue-router";
+
+import { Icons } from "~/types/constants";
 
 type Tile = {
   icon: string;
@@ -41,7 +45,7 @@ const tiles: Tile[] = [
     to: "/regles/statistiques",
   },
   {
-    icon: "fas fa-kitchen-set",
+    icon: Icons.skill,
     text: "Compétences",
     to: "/regles/competences",
   },
@@ -66,7 +70,7 @@ const tiles: Tile[] = [
     to: "/regles/educations",
   },
   {
-    icon: "fas fa-code-branch",
+    icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
   },

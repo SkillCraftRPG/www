@@ -50,8 +50,10 @@
         </tr>
       </tbody>
     </table>
-    <h2 v-if="skills.length" class="h3">Liste des compétences</h2>
-    <SkillList :items="skills" />
+    <template v-if="skills.length">
+      <h2 class="h3">Liste des compétences</h2>
+      <SkillList :items="skills" />
+    </template>
   </main>
 </template>
 

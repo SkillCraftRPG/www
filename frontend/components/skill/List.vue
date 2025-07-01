@@ -2,7 +2,14 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 mb-4">
-        <AttributeSelect :attributes="attributes" label="Filtrer par attribut" :model-value="attribute?.id" placeholder="Tous" @selected="attribute = $event" />
+        <AttributeSelect
+          :attributes="attributes"
+          label="Filtrer par attribut"
+          :model-value="attribute?.id"
+          placeholder="Tous"
+          variable
+          @selected="attribute = $event"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 mb-4">
         <ListMode v-model="mode" />
@@ -43,7 +50,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Actor, Attribute, Skill } from "~/types/game";
+import type { Attribute, Skill } from "~/types/game";
 import type { ListMode } from "~/types/components";
 
 const { orderBy } = arrayUtils;
@@ -71,28 +78,6 @@ watch(
     items.forEach((skill) => {
       if (skill.attribute) {
         map.set(skill.attribute.id, skill.attribute);
-      } else {
-        const id: string = "00000000-0000-0000-0000-000000000000";
-        const system: Actor = {
-          type: "System",
-          id,
-          isDeleted: false,
-          displayName: "Système",
-        };
-        const now: string = new Date().toISOString();
-        map.set(id, {
-          id,
-          version: 0,
-          createdBy: system,
-          createdOn: now,
-          updatedBy: system,
-          updatedOn: now,
-          slug: "",
-          value: "Health",
-          name: "Variable",
-          skills: [],
-          statistics: [],
-        });
       }
     });
     attributes.value = orderBy([...map.values()], "name");

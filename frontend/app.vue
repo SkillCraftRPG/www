@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { brand } from "./types/constants";
+import { Brand as brand } from "./types/constants";
 
 useHead({
   titleTemplate: (chunk) => (chunk ? `${chunk} %separator %brand` : "%brand"),

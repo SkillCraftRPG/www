@@ -8,7 +8,7 @@
       Chaque caste définit une <NuxtLink to="/regles/competences">compétence</NuxtLink> pour laquelle le personnage est formé, un jet de dés permettant de
       déterminer sa richesse de départ, ainsi qu'une particularité qui lui est propre.
     </p>
-    <CasteList :items="castes" />
+    <CasteList v-if="castes.length" :items="castes" />
   </main>
 </template>
 
