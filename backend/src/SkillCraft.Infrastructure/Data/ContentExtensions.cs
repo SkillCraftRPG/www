@@ -1,9 +1,9 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Fields;
 
-namespace SkillCraft.EntityFrameworkCore;
+namespace SkillCraft.Infrastructure.Data;
 
-internal static class ContentExtensions
+public static class ContentExtensions
 {
   public static bool FindBooleanValue(this ContentLocale locale, Guid id)
   {

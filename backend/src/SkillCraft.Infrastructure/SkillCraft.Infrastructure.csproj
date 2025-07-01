@@ -22,4 +22,8 @@
     <ProjectReference Include="..\SkillCraft.Core\SkillCraft.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="System.Text.Json" />
+  </ItemGroup>
+
 </Project>

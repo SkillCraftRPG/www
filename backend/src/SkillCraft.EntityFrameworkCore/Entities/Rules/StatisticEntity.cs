@@ -2,6 +2,7 @@
 using Logitar.EventSourcing;
 using SkillCraft.Core;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using SkillCraft.Infrastructure.Data;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
@@ -57,7 +58,7 @@ internal class StatisticEntity : AggregateEntity
 
     ContentLocale locale = published.Locale;
 
-    Slug = locale.FindStringValue(Fields.Statistics.Slug).ToLowerInvariant();
+    Slug = locale.FindStringValue(Statistics.Slug).ToLowerInvariant();
 
     if (!Enum.TryParse(locale.UniqueName.Value, out GameStatistic value))
     {
@@ -66,7 +67,7 @@ internal class StatisticEntity : AggregateEntity
     Value = value;
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Statistics.Summary);
-    Description = locale.TryGetStringValue(Fields.Statistics.Description);
+    Summary = locale.TryGetStringValue(Statistics.Summary);
+    Description = locale.TryGetStringValue(Statistics.Description);
   }
 }

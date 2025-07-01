@@ -1,7 +1,9 @@
-﻿namespace SkillCraft.EntityFrameworkCore.Fields;
+﻿namespace SkillCraft.Infrastructure.Data;
 
-internal static class Talents
+public static class Talents
 {
+  public static readonly Guid ContentTypeId = Guid.Parse("9d178fef-d33d-47ff-9a9c-b5b4ca196aaa");
+
   public static readonly Guid AllowMultiplePurchases = Guid.Parse("92d8a9f3-7b00-4cdd-8a0b-a389a22f73bd");
   public static readonly Guid Description = Guid.Parse("be556b54-9394-44f2-b735-861b658101a6");
   public static readonly Guid RequiredTalent = Guid.Parse("8db92f13-0899-42bb-9d73-92b29d5035db");

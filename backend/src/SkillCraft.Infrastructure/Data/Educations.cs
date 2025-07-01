@@ -1,7 +1,9 @@
-﻿namespace SkillCraft.EntityFrameworkCore.Fields;
+﻿namespace SkillCraft.Infrastructure.Data;
 
-internal static class Educations
+public static class Educations
 {
+  public static readonly Guid ContentTypeId = Guid.Parse("55e883fc-70fa-4366-a04f-4b69dbebbd1b");
+
   public static readonly Guid Description = Guid.Parse("3e9f42dc-8dd7-4feb-a122-869f828673c5");
   public static readonly Guid Feature = Guid.Parse("ad82f5a6-1cf1-4c2d-8bae-19902fadfb59");
   public static readonly Guid Skill = Guid.Parse("96bc2855-23bf-465e-b4d2-1e59be38c48d");

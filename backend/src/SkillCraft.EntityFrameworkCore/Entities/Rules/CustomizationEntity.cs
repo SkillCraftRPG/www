@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using SkillCraft.Core;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using SkillCraft.Infrastructure.Data;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
@@ -35,9 +36,9 @@ internal class CustomizationEntity : AggregateEntity
     ContentLocale invariant = published.Invariant;
     ContentLocale locale = published.Locale;
 
-    Slug = locale.FindStringValue(Fields.Customizations.Slug).ToLowerInvariant();
+    Slug = locale.FindStringValue(Customizations.Slug).ToLowerInvariant();
 
-    IReadOnlyCollection<string> kinds = invariant.FindSelectValue(Fields.Customizations.Kind);
+    IReadOnlyCollection<string> kinds = invariant.FindSelectValue(Customizations.Kind);
     if (kinds.Count < 1)
     {
       throw new InvalidOperationException($"No kind value was provided for customization 'Id={Id}'.");
@@ -49,7 +50,7 @@ internal class CustomizationEntity : AggregateEntity
     Kind = Enum.Parse<CustomizationKind>(kinds.Single());
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Customizations.Summary);
-    Description = locale.TryGetStringValue(Fields.Customizations.Description);
+    Summary = locale.TryGetStringValue(Customizations.Summary);
+    Description = locale.TryGetStringValue(Customizations.Description);
   }
 }

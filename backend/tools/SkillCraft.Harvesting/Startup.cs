@@ -5,7 +5,7 @@ using SkillCraft.EntityFrameworkCore;
 using SkillCraft.EntityFrameworkCore.PostgreSQL;
 using SkillCraft.Infrastructure;
 
-namespace SkillCraft.ETL;
+namespace SkillCraft.Harvesting;
 
 internal class Startup
 {

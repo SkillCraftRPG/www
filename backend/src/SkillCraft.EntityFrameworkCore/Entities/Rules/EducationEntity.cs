@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Logitar.EventSourcing;
 using SkillCraft.EntityFrameworkCore.Handlers.Materialization;
+using SkillCraft.Infrastructure.Data;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.EntityFrameworkCore.Entities.Rules;
@@ -59,14 +60,14 @@ internal class EducationEntity : AggregateEntity
     ContentLocale invariant = published.Invariant;
     ContentLocale locale = published.Locale;
 
-    Slug = locale.FindStringValue(Fields.Educations.Slug).ToLowerInvariant();
+    Slug = locale.FindStringValue(Educations.Slug).ToLowerInvariant();
 
     Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-    Summary = locale.TryGetStringValue(Fields.Educations.Summary);
-    Description = locale.TryGetStringValue(Fields.Educations.Description);
+    Summary = locale.TryGetStringValue(Educations.Summary);
+    Description = locale.TryGetStringValue(Educations.Description);
 
-    WealthMultiplier = (int)invariant.FindNumberValue(Fields.Educations.WealthMultiplier);
+    WealthMultiplier = (int)invariant.FindNumberValue(Educations.WealthMultiplier);
 
-    Feature = locale.TryGetStringValue(Fields.Educations.Feature);
+    Feature = locale.TryGetStringValue(Educations.Feature);
   }
 }

@@ -27,8 +27,4 @@
     <Using Include="System.Text.Json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <InternalsVisibleTo Include="SkillCraft.ETL" />
-  </ItemGroup>
-
 </Project>

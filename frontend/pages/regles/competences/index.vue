@@ -16,8 +16,8 @@
     <p>Lorsqu’il est formé pour une compétence, il ne subit pas de pénalité au rang de celle-ci.</p>
     <h2 class="h3">Rang</h2>
     <p>
-      Le rang d’une compétence est similaire au <NuxtLink to="/regles/personnages/progression/niveau.vue">niveau</NuxtLink> d’un personnage. Il est ajouté aux
-      tests de cette compétence. Seulement la moitié du rang est ajoutée si le personnage n’est pas formé pour cette compétence.
+      Le rang d’une compétence est similaire au <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> d’un personnage. Il est ajouté aux tests
+      de cette compétence. Seulement la moitié du rang est ajoutée si le personnage n’est pas formé pour cette compétence.
     </p>
     <p>
       Un personnage possède un nombre de points de compétence égal à son <NuxtLink to="/regles/statistiques/apprentissage">Apprentissage</NuxtLink>. Il peut

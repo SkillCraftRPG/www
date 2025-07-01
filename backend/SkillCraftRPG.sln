@@ -28,7 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{02EA681E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Seeding", "tools\SkillCraft.Seeding\SkillCraft.Seeding.csproj", "{71E5F012-5009-4EE6-88F0-193AE2026787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.ETL", "tools\SkillCraft.ETL\SkillCraft.ETL.csproj", "{86E69D44-2B24-42CC-AE1E-9E302B510564}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Harvesting", "tools\SkillCraft.Harvesting\SkillCraft.Harvesting.csproj", "{86E69D44-2B24-42CC-AE1E-9E302B510564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
