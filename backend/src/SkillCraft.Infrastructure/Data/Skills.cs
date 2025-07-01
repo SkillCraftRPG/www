@@ -2,7 +2,7 @@
 
 public static class Skills
 {
-  public static readonly Guid ContentType = Guid.Parse("28a3a292-74f7-4b6e-bea1-1da07356c886");
+  public static readonly Guid ContentTypeId = Guid.Parse("28a3a292-74f7-4b6e-bea1-1da07356c886");
 
   public static readonly Guid Attribute = Guid.Parse("e0fa312e-6993-4e56-aa4f-da70439ba925");
   public static readonly Guid Description = Guid.Parse("90dd6243-16fa-4dea-a483-fa8ba9cc4ef9");

@@ -1,18 +1,25 @@
 ﻿using Krakenar.Core.Contents;
-using Krakenar.Core.Fields;
 using Krakenar.Core.Localization;
-using Logitar;
 using Logitar.EventSourcing;
-using SkillCraft.Core;
-using SkillCraft.EntityFrameworkCore.Fields;
-using SkillCraft.ETL.Constants;
+using SkillCraft.EntityFrameworkCore;
 using SkillCraft.ETL.Models;
+using SkillCraft.Infrastructure.Data;
 using Attribute = SkillCraft.ETL.Models.Attribute;
 
 namespace SkillCraft.ETL;
 
 internal class EtlWorker : BackgroundService
 {
+  private static readonly IReadOnlyDictionary<Guid, EntityKind> _entityKinds = new Dictionary<Guid, EntityKind>
+  {
+    [Attributes.ContentTypeId] = EntityKind.Attribute,
+    [Castes.ContentTypeId] = EntityKind.Caste,
+    [Customizations.ContentTypeId] = EntityKind.Customization,
+    [Educations.ContentTypeId] = EntityKind.Education,
+    [Skills.ContentTypeId] = EntityKind.Skill,
+    [Statistics.ContentTypeId] = EntityKind.Statistic,
+    [Talents.ContentTypeId] = EntityKind.Talent
+  }.AsReadOnly();
   private static readonly Encoding _encoding = Encoding.UTF8;
   private static readonly Guid _realmId = Guid.Parse("cdc7f23d-6338-4c5d-81fe-dcc1bbfd8b05");
 
@@ -78,44 +85,48 @@ internal class EtlWorker : BackgroundService
       if (locale is null)
       {
         _logger.LogWarning("Default locale not found for content 'Id={ContentId}'.", content.Id);
-        return;
+        continue;
       }
 
       Guid contentTypeId = content.ContentTypeId.EntityId;
-      if (contentTypeId == ContentTypes.Attribute)
+      if (!_entityKinds.TryGetValue(contentTypeId, out EntityKind kind))
       {
-        Attribute attribute = ParseAttribute(content, locale);
-        attributes.Add(attribute);
+        continue;
       }
-      else if (contentTypeId == ContentTypes.Caste)
+
+      _logger.LogInformation("Extracting {Kind} from content {Content}...", kind, content);
+      switch (kind)
       {
-        Caste caste = ParseCaste(content, locale);
-        castes.Add(caste);
-      }
-      else if (contentTypeId == ContentTypes.Customization)
-      {
-        Customization customization = ParseCustomization(content, locale);
-        customizations.Add(customization);
-      }
-      else if (contentTypeId == ContentTypes.Education)
-      {
-        Education education = ParseEducation(content, locale);
-        educations.Add(education);
-      }
-      else if (contentTypeId == ContentTypes.Skill)
-      {
-        Skill skill = ParseSkill(content, locale);
-        skills.Add(skill);
-      }
-      else if (contentTypeId == ContentTypes.Statistic)
-      {
-        Statistic statistic = ParseStatistic(content, locale);
-        statistics.Add(statistic);
-      }
-      else if (contentTypeId == ContentTypes.Talent)
-      {
-        Talent talent = ParseTalent(content, locale);
-        talents.Add(talent);
+        case EntityKind.Attribute:
+          Attribute attribute = Attribute.Extract(content, locale);
+          attributes.Add(attribute);
+          break;
+        case EntityKind.Caste:
+          Caste caste = Caste.Extract(content, locale);
+          castes.Add(caste);
+          break;
+        case EntityKind.Customization:
+          Customization customization = Customization.Extract(content, locale);
+          customizations.Add(customization);
+          break;
+        case EntityKind.Education:
+          Education education = Education.Extract(content, locale);
+          educations.Add(education);
+          break;
+        case EntityKind.Skill:
+          Skill skill = Skill.Extract(content, locale);
+          skills.Add(skill);
+          break;
+        case EntityKind.Statistic:
+          Statistic statistic = Statistic.Extract(content, locale);
+          statistics.Add(statistic);
+          break;
+        case EntityKind.Talent:
+          Talent talent = Talent.Extract(content, locale);
+          talents.Add(talent);
+          break;
+        default:
+          throw new NotSupportedException($"The entity kind '{kind}' is not supported.");
       }
     }
 
@@ -165,271 +176,5 @@ internal class EtlWorker : BackgroundService
     _logger.LogInformation("Serialized {Count} talents to file '{Path}'.", talents.Count, "output/talents.json");
 
     _hostApplicationLifetime.StopApplication();
-  }
-
-  private static Attribute ParseAttribute(Content content, ContentLocale locale)
-  {
-    Attribute attribute = new()
-    {
-      Id = content.EntityId,
-      Value = Enum.Parse<GameAttribute>(locale.UniqueName.Value),
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Attributes.Summary)
-      {
-        attribute.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Attributes.Description)
-      {
-        attribute.Description = fieldValue.Value.Value;
-      }
-    }
-
-    return attribute;
-  }
-
-  private static Caste ParseCaste(Content content, ContentLocale locale)
-  {
-    Caste caste = new()
-    {
-      Id = content.EntityId,
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in content.Invariant.FieldValues)
-    {
-      if (fieldValue.Key == Castes.Skill)
-      {
-        IReadOnlyCollection<Guid> values = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
-        if (values.Count == 1)
-        {
-          caste.SkillId = values.Single();
-        }
-      }
-      else if (fieldValue.Key == Castes.WealthRoll)
-      {
-        caste.WealthRoll = fieldValue.Value.Value;
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Castes.Summary)
-      {
-        caste.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Castes.Description)
-      {
-        caste.Description = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Castes.Feature)
-      {
-        caste.Feature = fieldValue.Value.Value;
-      }
-    }
-
-    return caste;
-  }
-
-  private static Customization ParseCustomization(Content content, ContentLocale locale)
-  {
-    Customization customization = new()
-    {
-      Id = content.EntityId,
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    if (content.Invariant.FieldValues.TryGetValue(Customizations.Kind, out FieldValue? value))
-    {
-      IReadOnlyCollection<string> values = JsonSerializer.Deserialize<IReadOnlyCollection<string>>(value.Value) ?? [];
-      if (values.Count == 1)
-      {
-        customization.Kind = Enum.Parse<CustomizationKind>(values.Single());
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Customizations.Summary)
-      {
-        customization.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Customizations.Description)
-      {
-        customization.Description = fieldValue.Value.Value;
-      }
-    }
-
-    return customization;
-  }
-
-  private static Education ParseEducation(Content content, ContentLocale locale)
-  {
-    Education education = new()
-    {
-      Id = content.EntityId,
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in content.Invariant.FieldValues)
-    {
-      if (fieldValue.Key == Educations.Skill)
-      {
-        IReadOnlyCollection<Guid> values = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
-        if (values.Count == 1)
-        {
-          education.SkillId = values.Single();
-        }
-      }
-      else if (fieldValue.Key == Educations.WealthMultiplier && int.TryParse(fieldValue.Value.Value, out int wealthMultiplier))
-      {
-        education.WealthMultiplier = wealthMultiplier;
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Educations.Summary)
-      {
-        education.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Educations.Description)
-      {
-        education.Description = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Educations.Feature)
-      {
-        education.Feature = fieldValue.Value.Value;
-      }
-    }
-
-    return education;
-  }
-
-  private static Skill ParseSkill(Content content, ContentLocale locale)
-  {
-    Skill skill = new()
-    {
-      Id = content.EntityId,
-      Value = Enum.Parse<GameSkill>(locale.UniqueName.Value),
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    if (content.Invariant.FieldValues.TryGetValue(Skills.Attribute, out FieldValue? value))
-    {
-      IReadOnlyCollection<Guid> contentIds = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(value.Value) ?? [];
-      if (contentIds.Count == 1)
-      {
-        skill.AttributeId = contentIds.Single();
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Skills.Summary)
-      {
-        skill.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Skills.Description)
-      {
-        skill.Description = fieldValue.Value.Value;
-      }
-    }
-
-    return skill;
-  }
-
-  private static Statistic ParseStatistic(Content content, ContentLocale locale)
-  {
-    Statistic statistic = new()
-    {
-      Id = content.EntityId,
-      Value = Enum.Parse<GameStatistic>(locale.UniqueName.Value),
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    if (content.Invariant.FieldValues.TryGetValue(Statistics.Attribute, out FieldValue? value))
-    {
-      IReadOnlyCollection<Guid> attributeIds = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(value.Value) ?? [];
-      if (attributeIds.Count == 1)
-      {
-        statistic.AttributeId = attributeIds.Single();
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Statistics.Summary)
-      {
-        statistic.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Statistics.Description)
-      {
-        statistic.Description = fieldValue.Value.Value;
-      }
-    }
-
-    return statistic;
-  }
-
-  private static Talent ParseTalent(Content content, ContentLocale locale)
-  {
-    Talent talent = new()
-    {
-      Id = content.EntityId,
-      Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Notes = locale.Description?.Value?.CleanTrim()
-    };
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in content.Invariant.FieldValues)
-    {
-      if (fieldValue.Key == Talents.AllowMultiplePurchases)
-      {
-        talent.AllowMultiplePurchases = bool.Parse(fieldValue.Value.Value);
-      }
-      else if (fieldValue.Key == Talents.RequiredTalent)
-      {
-        IReadOnlyCollection<Guid> requiredTalentIds = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
-        if (requiredTalentIds.Count == 1)
-        {
-          talent.RequiredTalentId = requiredTalentIds.Single();
-        }
-      }
-      else if (fieldValue.Key == Talents.Skill)
-      {
-        IReadOnlyCollection<Guid> skillIds = JsonSerializer.Deserialize<IReadOnlyCollection<Guid>>(fieldValue.Value.Value) ?? [];
-        if (skillIds.Count == 1)
-        {
-          talent.SkillId = skillIds.Single();
-        }
-      }
-      else if (fieldValue.Key == Talents.Tier)
-      {
-        talent.Tier = int.Parse(fieldValue.Value.Value);
-      }
-    }
-
-    foreach (KeyValuePair<Guid, FieldValue> fieldValue in locale.FieldValues)
-    {
-      if (fieldValue.Key == Talents.Summary)
-      {
-        talent.Summary = fieldValue.Value.Value;
-      }
-      else if (fieldValue.Key == Talents.Description)
-      {
-        talent.Description = fieldValue.Value.Value;
-      }
-    }
-
-    return talent;
   }
 }

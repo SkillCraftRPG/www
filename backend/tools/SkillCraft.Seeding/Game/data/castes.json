@@ -1,6 +1,7 @@
 ﻿[
   {
     "Id": "f64bbe7b-9549-4ab0-b5eb-0bf530ece004",
+    "Slug": "amuseur",
     "Name": "Amuseur",
     "Summary": "L’amuseur parcourt le monde avec ses talents artistiques, offrant spectacles et récits tout en tissant des liens et récoltant de précieuses informations.",
     "Description": "Adepte d’art, de poésie, de cirque ou de théâtre, l’amuseur ère de villages en cités afin d’offrir ses performances.\n\nBien plus qu’un simple gagne-pain, cela lui permet de former un réseau de contacts et de recueillir toutes sortes d’informations.",
@@ -11,6 +12,7 @@
   },
   {
     "Id": "c016168a-a6ea-4436-a7e9-ea0243771310",
+    "Slug": "artisan",
     "Name": "Artisan",
     "Summary": "Maîtrisant un procédé de transformation, l’artisan excelle dans son domaine : boulangerie, forge, orfèvrerie, tissage ou autre métier spécialisé.",
     "Description": "L’artisan est un expert d’un procédé de transformation des matières brutes.\n\nIl peut être un boulanger, un forgeron, un orfèvre, un tisserand ou pratiquer tout genre de profession œuvrant dans la transformation des matières brutes.",
@@ -21,6 +23,7 @@
   },
   {
     "Id": "4e30b3d9-5d53-4b9e-9147-f7fab6af6529",
+    "Slug": "boheme",
     "Name": "Bohème",
     "Summary": "Le bohème erre sans foyer ni métier stable, survivant par la mendicité ou la ruse, souvent rejeté par une société dont il dépend mais qu’il ne comprend pas.",
     "Description": "Le bohème ne possède aucun domicile fixe ni occupation permanente.\n\nIl doit sa survie à la bonté des autres lorsqu’il mendie ou aux crimes qu’il perpètre dans les centres urbains.\n\nIl est incapable de s’intégrer à la société dont laquelle il dépend afin de survivre, il est donc fréquemment rejeté par celle-ci.",
@@ -31,6 +34,7 @@
   },
   {
     "Id": "749da9a6-1bfc-4c36-bb41-f3c1d5fd8fa1",
+    "Slug": "exile",
     "Name": "Exilé",
     "Summary": "L’exilé survit grâce à son instinct et à sa maîtrise des terres sauvages, hanté par son passé et animé par l’amertume ou le désir de vengeance.",
     "Description": "Banni par son peuple ou par choix personnel, l’exilé a recours à son instinct de survie et à sa connaissance des milieux sauvages afin de survivre à son environnement.\n\nIl garde de mauvais souvenirs de son ancienne vie et prépare aigrement sa vengeance.",
@@ -41,6 +45,7 @@
   },
   {
     "Id": "4ebae642-91cc-4aa5-8f59-32af2c376e3e",
+    "Slug": "guerisseur",
     "Name": "Guérisseur",
     "Summary": "Le guérisseur soigne aussi bien les nobles que les paysans, usant de ses talents pour préserver la santé au sein des villes, des campagnes et des champs de bataille.",
     "Description": "Le guérisseur est responsable du maintien et de l’amélioration de la santé de la communauté ou de la société pour laquelle il œuvre.\n\nSa clientèle est vaste : il doit soigner les citadins bourgeois, la haute noblesse, mais aussi les pauvres paysans, et parfois même les chasseurs en territoire sauvage et les soldats blessés sur un champ de bataille.",
@@ -51,6 +56,7 @@
   },
   {
     "Id": "31480721-944a-4f1e-98c8-09a369487d3f",
+    "Slug": "marchand",
     "Name": "Marchand",
     "Summary": "Le marchand, ambulant ou établi, vend des biens de qualité grâce à son sens du commerce, de l’analyse et sa capacité à bien communiquer avec autrui.",
     "Description": "Propriétaire d’une boutique ou vendeur ambulant, le marchand est un des derniers maillons de la chaîne de production de sa société.\n\nSa profession requiert de sa part une excellente communication ainsi qu’un bon sens d’analyse afin de s’assurer de la qualité des produits vendus.",
@@ -61,6 +67,7 @@
   },
   {
     "Id": "35e2083d-aa5c-494b-beb4-970f9be38f3b",
+    "Slug": "milicien",
     "Name": "Milicien",
     "Summary": "Le milicien protège les citoyens, applique les lois sur les terres de son seigneur, et peut aussi servir d’éclaireur ou de soldat au sein de l’armée.",
     "Description": "Le milicien est responsable de protéger les citoyens sur les terres de son seigneur.\n\nIl possède les droits mais également la responsabilité de faire appliquer les lois.\n\nIl doit également parfois jouer le rôle d’éclaireur et de soldat au sein de l’armée de sa patrie.",
@@ -71,6 +78,7 @@
   },
   {
     "Id": "bb84ebe5-4dc8-4c61-ae3c-e2b21b54ec5c",
+    "Slug": "noble",
     "Name": "Noble",
     "Summary": "Responsable des terres et des lois, le noble gouverne avec autorité. Certains héritiers fuient ce lourd destin avant d’hériter des responsabilités familiales.",
     "Description": "Riche propriétaire terrien ou lié par son sang à un seigneur, le noble est responsable de l’administration et de la gouvernance de terres.\n\nIl codifie les lois et tranche en cas de différents.\n\nL’ensemble de ses tâches est lourd de responsabilités et pousse parfois les héritiers nobles à quitter leur famille avant d’hériter de ces fonctions.",
@@ -81,6 +89,7 @@
   },
   {
     "Id": "fdb8c3f7-fb20-4841-b077-f359c2bc4f0a",
+    "Slug": "paysan",
     "Name": "Paysan",
     "Summary": "Base de la hiérarchie sociale, les paysans accomplissent les tâches les plus pénibles, essentielles à la production. Leur vie exige force et endurance.",
     "Description": "Les paysans représentent la base de la pyramide hiérarchique de leur société, bien que les plus nombreux.\n\nIls sont affectés aux tâches les moins louables mais les plus importantes au sein de la chaîne de production.\n \nMineurs, bûcherons, agriculteurs ou autres professionnels, leur mode de vie requiert une bonne forme physique et une tolérance exceptionnelle à l’effort.",
@@ -91,6 +100,7 @@
   },
   {
     "Id": "bfcbbf12-445a-471e-8c27-11ff2e7bd1e6",
+    "Slug": "religieux",
     "Name": "Religieux",
     "Summary": "Les religieux assurent le culte, traitent les phénomènes surnaturels et soutiennent la population depuis temples, sanctuaires ou autres lieux sacrés.",
     "Description": "Les religieux sont responsables du culte et des traditions de leur société.\n\nIls ont également le mandat de traiter les événements surnaturels et de rassurer la population quant à ceux-ci.\n\nLes religieux œuvrent dans un temple, un sanctuaire, une église ou tout autre lieu de culte.\n\nIl peut compter sur l’aide d’autres fidèles impliqués comme lui mais doit également rendre de nombreux services à son culte.",
