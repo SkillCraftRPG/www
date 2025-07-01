@@ -1,5 +1,6 @@
 <template>
   <main class="container">
-    <NuxtWelcome />
+    <h1 class="text-center">SkillCraft</h1>
+    <Downloads />
   </main>
 </template>
