@@ -8,11 +8,7 @@
       et certaines statistiques progressent avec le <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink>.
     </p>
     <p>Le système SkillCraft utilise <strong>10 statistiques</strong>.</p>
-    <div class="row">
-      <div v-for="statistic in statistics" :key="statistic.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <StatisticCard class="d-flex flex-column h-100" :statistic="statistic" />
-      </div>
-    </div>
+    <StatisticList :items="statistics" />
   </main>
 </template>
 

@@ -9,3 +9,5 @@ export type Download = {
   picture: string;
   url: string;
 };
+
+export type ListMode = "grid" | "list";
