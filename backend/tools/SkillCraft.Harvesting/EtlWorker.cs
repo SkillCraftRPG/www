@@ -94,7 +94,6 @@ internal class EtlWorker : BackgroundService
         continue;
       }
 
-      _logger.LogInformation("Extracting {Kind} from content {Content}...", kind, content);
       switch (kind)
       {
         case EntityKind.Attribute:
