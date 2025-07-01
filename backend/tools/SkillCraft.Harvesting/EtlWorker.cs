@@ -136,43 +136,43 @@ internal class EtlWorker : BackgroundService
       JsonSerializer.Serialize(attributes.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} attributes to file '{Path}'.", attributes.Count, "output/attributes.json");
+    _logger.LogInformation("Harvested {Count} attributes to file '{Path}'.", attributes.Count, "output/attributes.json");
     await File.WriteAllTextAsync(
       "output/castes.json",
       JsonSerializer.Serialize(castes.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} castes to file '{Path}'.", castes.Count, "output/castes.json");
+    _logger.LogInformation("Harvested {Count} castes to file '{Path}'.", castes.Count, "output/castes.json");
     await File.WriteAllTextAsync(
       "output/customizations.json",
       JsonSerializer.Serialize(customizations.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} customizations to file '{Path}'.", customizations.Count, "output/customizations.json");
+    _logger.LogInformation("Harvested {Count} customizations to file '{Path}'.", customizations.Count, "output/customizations.json");
     await File.WriteAllTextAsync(
       "output/educations.json",
       JsonSerializer.Serialize(educations.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} educations to file '{Path}'.", educations.Count, "output/educations.json");
+    _logger.LogInformation("Harvested {Count} educations to file '{Path}'.", educations.Count, "output/educations.json");
     await File.WriteAllTextAsync(
       "output/skills.json",
       JsonSerializer.Serialize(skills.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} skills to file '{Path}'.", skills.Count, "output/skills.json");
+    _logger.LogInformation("Harvested {Count} skills to file '{Path}'.", skills.Count, "output/skills.json");
     await File.WriteAllTextAsync(
       "output/statistics.json",
       JsonSerializer.Serialize(statistics.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} statistics to file '{Path}'.", statistics.Count, "output/statistics.json");
+    _logger.LogInformation("Harvested {Count} statistics to file '{Path}'.", statistics.Count, "output/statistics.json");
     await File.WriteAllTextAsync(
       "output/talents.json",
       JsonSerializer.Serialize(talents.OrderBy(x => x.Name), _serializerOptions),
       _encoding,
       cancellationToken);
-    _logger.LogInformation("Serialized {Count} talents to file '{Path}'.", talents.Count, "output/talents.json");
+    _logger.LogInformation("Harvested {Count} talents to file '{Path}'.", talents.Count, "output/talents.json");
 
     _hostApplicationLifetime.StopApplication();
   }
