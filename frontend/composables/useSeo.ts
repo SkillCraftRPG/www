@@ -13,6 +13,7 @@ export function useSeo(meta?: SeoMeta): void {
 
   if (meta) {
     useSeoMeta({
+      robots: "noindex",
       title: meta.title ?? undefined,
       description: meta.description ?? undefined,
       ogTitle: meta.title ?? undefined,
