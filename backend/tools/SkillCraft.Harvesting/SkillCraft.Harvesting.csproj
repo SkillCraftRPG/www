@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-SkillCraft.ETL-65c36efa-fd1e-4dfa-8360-7895e879d14d</UserSecretsId>
+    <UserSecretsId>dotnet-SkillCraft.Harvesting-65c36efa-fd1e-4dfa-8360-7895e879d14d</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -2,11 +2,11 @@
 using Krakenar.Core.Localization;
 using Logitar.EventSourcing;
 using SkillCraft.EntityFrameworkCore;
-using SkillCraft.ETL.Models;
+using SkillCraft.Harvesting.Models;
 using SkillCraft.Infrastructure.Data;
-using Attribute = SkillCraft.ETL.Models.Attribute;
+using Attribute = SkillCraft.Harvesting.Models.Attribute;
 
-namespace SkillCraft.ETL;
+namespace SkillCraft.Harvesting;
 
 internal class EtlWorker : BackgroundService
 {

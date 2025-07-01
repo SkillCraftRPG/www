@@ -8,7 +8,7 @@ using Logitar.EventSourcing;
 using ConfigurationDto = Krakenar.Contracts.Configurations.Configuration;
 using RealmDto = Krakenar.Contracts.Realms.Realm;
 
-namespace SkillCraft.ETL;
+namespace SkillCraft.Harvesting;
 
 internal record EtlApplicationContext : IApplicationContext
 {

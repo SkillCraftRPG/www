@@ -3,14 +3,13 @@ using Logitar;
 using SkillCraft.Core;
 using SkillCraft.Infrastructure.Data;
 
-namespace SkillCraft.ETL.Models;
+namespace SkillCraft.Harvesting.Models;
 
-internal class Skill
+internal class Customization
 {
   public Guid Id { get; set; }
-  public GameSkill Value { get; set; }
 
-  public Guid? AttributeId { get; set; }
+  public CustomizationKind Kind { get; set; }
 
   public string Slug { get; set; } = string.Empty;
   public string Name { get; set; } = string.Empty;
@@ -19,23 +18,22 @@ internal class Skill
 
   public string? Notes { get; set; }
 
-  public static Skill Extract(Content content, ContentLocale locale)
+  public static Customization Extract(Content content, ContentLocale locale)
   {
-    Skill skill = new()
+    Customization customization = new()
     {
       Id = content.EntityId,
-      Value = Enum.Parse<GameSkill>(locale.UniqueName.Value),
-      AttributeId = content.Invariant.TryGetRelatedContentValue(Skills.Attribute)?.Single(),
-      Slug = locale.FindStringValue(Skills.Slug),
+      Kind = Enum.Parse<CustomizationKind>(content.Invariant.FindSelectValue(Customizations.Kind).Single()),
+      Slug = locale.FindStringValue(Customizations.Slug),
       Name = locale.DisplayName?.Value ?? locale.UniqueName.Value,
-      Summary = locale.TryGetStringValue(Skills.Summary),
-      Description = locale.TryGetStringValue(Skills.Description),
+      Summary = locale.TryGetStringValue(Customizations.Summary),
+      Description = locale.TryGetStringValue(Customizations.Description),
       Notes = locale.Description?.Value?.CleanTrim()
     };
-    return skill;
+    return customization;
   }
 
-  public override bool Equals(object? obj) => obj is Skill skill && skill.Id == Id;
+  public override bool Equals(object? obj) => obj is Attribute attribute && attribute.Id == Id;
   public override int GetHashCode() => Id.GetHashCode();
   public override string ToString() => $"{Name} | {GetType()} (Id={Id})";
 }

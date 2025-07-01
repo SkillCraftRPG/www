@@ -1,4 +1,4 @@
-﻿namespace SkillCraft.ETL;
+﻿namespace SkillCraft.Harvesting;
 
 internal static class Program
 {

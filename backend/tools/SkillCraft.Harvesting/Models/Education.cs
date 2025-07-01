@@ -2,7 +2,7 @@
 using Logitar;
 using SkillCraft.Infrastructure.Data;
 
-namespace SkillCraft.ETL.Models;
+namespace SkillCraft.Harvesting.Models;
 
 internal class Education
 {
