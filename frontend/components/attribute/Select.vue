@@ -14,25 +14,19 @@
 import { TarSelect, type SelectOption } from "logitar-vue3-ui";
 import { arrayUtils, parsingUtils } from "logitar-js";
 
-import type { Actor, Attribute, GameAttribute } from "~/types/game";
+import type { Attribute, GameAttribute } from "~/types/game";
+import { System } from "~/types/constants";
 
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;
 
-const variableId: string = "00000000-0000-0000-0000-000000000000";
-const system: Actor = {
-  type: "System",
-  id: variableId,
-  isDeleted: false,
-  displayName: "System",
-};
 const now: string = new Date().toISOString();
 const variableAttribute: Attribute = {
-  id: variableId,
+  id: "variable",
   version: 0,
-  createdBy: system,
+  createdBy: System,
   createdOn: now,
-  updatedBy: system,
+  updatedBy: System,
   updatedOn: now,
   slug: "",
   value: "" as GameAttribute,

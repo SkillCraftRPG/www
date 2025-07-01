@@ -12,14 +12,41 @@
 
 <script setup lang="ts">
 import { TarSelect, type SelectOption } from "logitar-vue3-ui";
-import { arrayUtils } from "logitar-js";
+import { arrayUtils, parsingUtils } from "logitar-js";
 
-import type { Skill } from "~/types/game";
+import type { GameSkill, Skill } from "~/types/game";
+import { System } from "~/types/constants";
 
 const { orderBy } = arrayUtils;
+const { parseBoolean } = parsingUtils;
+
+const now: string = new Date().toISOString();
+const anySkill: Skill = {
+  id: "any",
+  version: 0,
+  createdBy: System,
+  createdOn: now,
+  updatedBy: System,
+  updatedOn: now,
+  slug: "",
+  value: "" as GameSkill,
+  name: "N’importe laquelle",
+};
+const noneSkill: Skill = {
+  id: "none",
+  version: 0,
+  createdBy: System,
+  createdOn: now,
+  updatedBy: System,
+  updatedOn: now,
+  slug: "",
+  value: "" as GameSkill,
+  name: "Aucune",
+};
 
 const props = withDefaults(
   defineProps<{
+    extended?: boolean | string;
     floating?: boolean | string;
     id?: string;
     label?: string;
@@ -36,12 +63,16 @@ const props = withDefaults(
   },
 );
 
-const options = computed<SelectOption[]>(() =>
-  orderBy(
+const options = computed<SelectOption[]>(() => {
+  const options: SelectOption[] = orderBy(
     props.skills.map(({ id, name }) => ({ text: name, value: id })),
     "text",
-  ),
-);
+  );
+  if (parseBoolean(props.extended)) {
+    options.splice(0, 0, { text: noneSkill.name, value: noneSkill.id }, { text: anySkill.name, value: anySkill.id });
+  }
+  return options;
+});
 
 const emit = defineEmits<{
   (e: "selected", value?: Skill): void;
@@ -51,7 +82,14 @@ const emit = defineEmits<{
 function onModelValueUpdate(value?: string): void {
   emit("update:model-value", value);
 
-  const skill: Skill | undefined = props.skills.find(({ id }) => id === value);
+  let skill: Skill | undefined = undefined;
+  if (value === anySkill.id) {
+    skill = anySkill;
+  } else if (value === noneSkill.id) {
+    skill = noneSkill;
+  } else if (value) {
+    skill = props.skills.find(({ id }) => id === value);
+  }
   emit("selected", skill);
 }
 </script>

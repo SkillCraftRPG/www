@@ -5,7 +5,7 @@
         <YesNoSelect id="allow-multiple-purchases" label="Achats multiples" placeholder="Tous" v-model="allowMultiplePurchases" />
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <SkillSelect label="Filtrer par compétence" :model-value="skill?.id" placeholder="Tous" :skills="skills" @selected="skill = $event" />
+        <SkillSelect extended label="Filtrer par compétence" :model-value="skill?.id" placeholder="Tous" :skills="skills" @selected="skill = $event" />
       </div>
       <div class="col-sm-12 col-lg-4 mb-4">
         <ListMode v-model="mode" />
@@ -83,8 +83,18 @@ const groups = computed<TalentGroup[]>(() => {
     if (typeof allowMultiplePurchases.value === "boolean" && allowMultiplePurchases.value !== talent.allowMultiplePurchases) {
       return;
     }
-    if (typeof skill.value !== "undefined" && skill.value.id !== talent.skill?.id) {
-      return;
+    if (typeof skill.value !== "undefined") {
+      if (skill.value.id === "any") {
+        if (!talent.skill) {
+          return;
+        }
+      } else if (skill.value.id === "none") {
+        if (talent.skill) {
+          return;
+        }
+      } else if (skill.value.id !== talent.skill?.id) {
+        return;
+      }
     }
     const talents: Talent[] | undefined = map.get(talent.tier);
     if (talents) {

@@ -3,6 +3,7 @@ import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faArrowUp,
+  faBook,
   faBrain,
   faChartSimple,
   faCheck,
@@ -29,6 +30,7 @@ config.autoAddCss = false;
 
 library.add(
   faArrowUp,
+  faBook,
   faBrain,
   faChartSimple,
   faCheck,

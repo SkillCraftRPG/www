@@ -66,7 +66,7 @@ const mode = ref<ListMode>("grid");
 const skills = computed<Skill[]>(() => {
   let skills: Skill[] = [...props.items];
   if (attribute.value) {
-    skills = skills.filter((skill) => (attribute.value?.name === "Variable" ? !skill.attribute : skill.attribute?.id === attribute.value?.id));
+    skills = skills.filter((skill) => (attribute.value?.id === "variable" ? !skill.attribute : skill.attribute?.id === attribute.value?.id));
   }
   return skills;
 });
