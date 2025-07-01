@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex justify-content-end">
     <div class="btn-group" role="group" aria-label="Mode">
-      <TarButton :disabled="modelValue === 'grid'" icon="fas fa-grip" :outline="modelValue !== 'grid'" @click="setMode('grid')" />
-      <TarButton :disabled="modelValue === 'list'" icon="fas fa-list" :outline="modelValue !== 'list'" @click="setMode('list')" />
+      <TarButton :disabled="modelValue === 'grid'" icon="fas fa-grip" :outline="modelValue !== 'grid'" variant="secondary" @click="setMode('grid')" />
+      <TarButton :disabled="modelValue === 'list'" icon="fas fa-list" :outline="modelValue !== 'list'" variant="secondary" @click="setMode('list')" />
     </div>
   </div>
 </template>
