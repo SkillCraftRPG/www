@@ -9,4 +9,5 @@ internal static class SeedingSerializer
   }
 
   public static T? Deserialize<T>(string json) => JsonSerializer.Deserialize<T>(json, _serializerOptions);
+  public static string Serialize<T>(T value) => JsonSerializer.Serialize(value, _serializerOptions);
 }
