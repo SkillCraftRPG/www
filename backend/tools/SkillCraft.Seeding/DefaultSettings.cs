@@ -1,6 +1,6 @@
 ﻿using Krakenar.Core;
 
-namespace SkillCraft.Settings;
+namespace SkillCraft.Seeding;
 
 internal record DefaultSettings
 {

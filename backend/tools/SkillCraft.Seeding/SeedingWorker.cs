@@ -3,6 +3,7 @@ using Krakenar.Core;
 using Krakenar.Core.Users;
 using Logitar.EventSourcing;
 using MediatR;
+using SkillCraft.Seeding.Game.Tasks;
 using SkillCraft.Seeding.Krakenar.Tasks;
 using UserDto = Krakenar.Contracts.Users.User;
 
@@ -10,10 +11,10 @@ namespace SkillCraft.Seeding;
 
 internal class SeedingWorker : BackgroundService
 {
-  private const string DefaultUniqueName = "admin";
   private const string GenericErrorMessage = "An unhanded exception occurred.";
 
   private readonly SeedingApplicationContext _applicationContext;
+  private readonly IConfiguration _configuration;
   private readonly IHostApplicationLifetime _hostApplicationLifetime;
   private readonly ILogger<SeedingWorker> _logger;
   private readonly IServiceProvider _serviceProvider;
@@ -25,11 +26,13 @@ internal class SeedingWorker : BackgroundService
 
   public SeedingWorker(
     IApplicationContext applicationContext,
+    IConfiguration configuration,
     IHostApplicationLifetime hostApplicationLifetime,
     ILogger<SeedingWorker> logger,
     IServiceProvider serviceProvider)
   {
     _applicationContext = (SeedingApplicationContext)applicationContext;
+    _configuration = configuration;
     _hostApplicationLifetime = hostApplicationLifetime;
     _logger = logger;
     _serviceProvider = serviceProvider;
@@ -45,16 +48,29 @@ internal class SeedingWorker : BackgroundService
 
     try
     {
-      IUserService userService = scope.ServiceProvider.GetRequiredService<IUserService>();
-      UserDto user = await userService.ReadAsync(id: null, DefaultUniqueName, customIdentifier: null, cancellationToken)
-        ?? throw new InvalidOperationException($"The user 'UniqueName={DefaultUniqueName}' was not found.");
-      _applicationContext.ActorId = new ActorId(new UserId(user.Id).Value);
+      DefaultSettings defaults = DefaultSettings.Initialize(_configuration);
 
       // NOTE(fpion): the order of these tasks matter.
+      await ExecuteAsync(new MigrateDatabaseTask(), cancellationToken);
+      await ExecuteAsync(new InitializeConfigurationTask(defaults), cancellationToken);
+
+      IUserService userService = scope.ServiceProvider.GetRequiredService<IUserService>();
+      UserDto user = await userService.ReadAsync(id: null, defaults.UniqueName, customIdentifier: null, cancellationToken)
+        ?? throw new InvalidOperationException($"The user 'UniqueName={defaults.UniqueName}' was not found.");
+      _applicationContext.ActorId = new ActorId(new UserId(user.Id).Value);
+
       await ExecuteAsync(new SeedRealmsTask(), cancellationToken);
       await ExecuteAsync(new SeedContentTypesTask(), cancellationToken);
       await ExecuteAsync(new SeedFieldTypesTask(), cancellationToken);
       await ExecuteAsync(new SeedContentTypesTask(fieldDefinitions: true), cancellationToken);
+
+      await ExecuteAsync(new SeedAttributesTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedStatisticsTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedSkillsTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedCustomizationsTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedCastesTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedEducationsTask(defaults.Locale), cancellationToken);
+      await ExecuteAsync(new SeedTalentsTask(defaults.Locale), cancellationToken);
     }
     catch (Exception exception)
     {
