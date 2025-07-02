@@ -69,7 +69,7 @@ const methods: Method[] = [
   {
     name: "Exploration",
     description:
-      "Le maître de jeu octroie de l’Expérience lorsque les personnages découvrent de nouveaux lieux, résolvent des énigmes, surmontent des obstacles, cartographient des zones dangereuses ou complètent des zones inexplorées.",
+      "Le maître de jeu octroie de l’Expérience lorsque les personnages découvrent de nouveaux lieux, résolvent des énigmes, surmontent des obstacles, complètent des zones dangereuses ou cartographient des régions inexplorées.",
   },
   {
     name: "Jalons",

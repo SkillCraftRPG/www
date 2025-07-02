@@ -17,7 +17,7 @@
         appartiennent à la même <a href="#">catégorie de taille</a>, sauf indication contraire du maître de jeu.
       </li>
       <li>
-        <strong>Poids (kilogrammes).</strong> Le poids de votre personnage est seulement utilisée lorsqu’il est soulevé ou transporté par une autre créature.
+        <strong>Poids (kilogrammes).</strong> Le poids de votre personnage est seulement utilisé lorsqu’il est soulevé ou transporté par une autre créature.
       </li>
       <li><strong>Âge (années).</strong> L’âge de votre personnage est purement descriptif et n’a aucun effet sur ses capacités.</li>
     </ol>

@@ -16,7 +16,7 @@
     <p>
       <font-awesome-icon icon="fas fa-lightbulb" /> Suite aux étapes précédentes, votre personnage sera formé pour au moins 6 compétences. Le rang de chacune de
       ces compétences sera de 1 grâce aux talents acquis. À cette étape, votre personnage se verra attribuer au moins 5 points de compétence. Attribuez un point
-      aux compétences que vous que vous désirez prioriser afin de maximiser leur rang à 2.
+      aux compétences que vous désirez prioriser afin de maximiser leur rang à 2.
     </p>
   </section>
 </template>
