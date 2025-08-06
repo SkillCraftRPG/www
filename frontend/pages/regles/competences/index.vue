@@ -8,8 +8,10 @@
     </p>
     <p>
       La plupart des compétences sont associées à un <NuxtLink to="/regles/attributs">attribut</NuxtLink>. L’attribut d’autres compétences varie en fonction de
-      la situation. Cet attribut intervient en ajoutant un bonus ou une pénalité au <strong>test</strong> d’une compétence.
+      la situation. Cet attribut intervient en ajoutant un bonus ou une pénalité au test d’une compétence.
     </p>
+    <!-- TODO(fpion): Tests -->
+    <!-- TODO(fpion): Espérance et Damnation -->
     <h2 class="h3">Formation</h2>
     <p>Le personnage est formé pour une compétence lorsqu’il acquiert le <NuxtLink to="/regles/talents">talent</NuxtLink> portant le même nom que celle-ci.</p>
     <p>Un personnage formé pour une compétence maîtrise les aptitudes et savoir-faire, contrairement à une créature qui n’est pas formée.</p>
