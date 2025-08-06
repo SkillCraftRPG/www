@@ -10,8 +10,11 @@
       La plupart des compétences sont associées à un <NuxtLink to="/regles/attributs">attribut</NuxtLink>. L’attribut d’autres compétences varie en fonction de
       la situation. Cet attribut intervient en ajoutant un bonus ou une pénalité au test d’une compétence.
     </p>
-    <!-- TODO(fpion): Tests -->
-    <!-- TODO(fpion): Espérance et Damnation -->
+    <div class="row">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
     <h2 class="h3">Formation</h2>
     <p>Le personnage est formé pour une compétence lorsqu’il acquiert le <NuxtLink to="/regles/talents">talent</NuxtLink> portant le même nom que celle-ci.</p>
     <p>Un personnage formé pour une compétence maîtrise les aptitudes et savoir-faire, contrairement à une créature qui n’est pas formée.</p>
@@ -27,11 +30,11 @@
     </p>
     <p>Le rang maximal des compétences d’un personnage est défini par son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>.</p>
     <!-- TODO(fpion): +1 au rang lorsque achat talent de compétence -->
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Tiers du personnage</th>
-          <th scope="col">Rang maximal</th>
+          <th scope="col" class="w-50">Tiers du personnage</th>
+          <th scope="col" class="w-50">Rang maximal</th>
         </tr>
       </thead>
       <tbody>
@@ -66,6 +69,24 @@ import type { SearchResults, Skill } from "~/types/game";
 const config = useRuntimeConfig();
 const title: string = "Compétences";
 
+type MenuItem = {
+  path: string;
+  title: string;
+  description: string;
+};
+const items: MenuItem[] = [
+  {
+    path: "/regles/competences/tests",
+    title: "Tests",
+    description: "Un test permet de déterminer si une action intentée est une réussite ou un échec. Les tests sont au cœur du système de résolution.",
+  },
+  {
+    path: "/regles/competences/esperance-damnation",
+    title: "Espérance et Damnation",
+    description: "Des ressources permettant aux joueurs et au maître de jeu d’influencer l’histoire en leur faveur.",
+  },
+];
+
 const { data } = await useFetch("/api/skills", {
   baseURL: config.public.apiBaseUrl,
   cache: "no-cache",
@@ -77,11 +98,4 @@ useSeo({
   title,
   description: "Découvrez comment les compétences traduisent les savoir-faire, aptitudes et expertises de vos héros.",
 });
-
-/* TODO(fpion):
-
- * Espérance et Damnation
- * - Momentum
- * - Dépense d’Espérance et de Momentum
- */
 </script>

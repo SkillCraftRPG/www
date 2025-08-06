@@ -25,7 +25,7 @@
         le rang de ses <NuxtLink to="/regles/competences">compétences</NuxtLink>.
       </li>
       <li>
-        Il reçoit <strong>1 point de talent</strong>. Il peut dépenser celui-ci afin d'acquérir un nouveau <NuxtLink to="/regles/talents">talent</NuxtLink> ou
+        Il reçoit <strong>1 point de talent</strong>. Il peut dépenser celui-ci afin d’acquérir un nouveau <NuxtLink to="/regles/talents">talent</NuxtLink> ou
         <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink>.
       </li>
     </ul>

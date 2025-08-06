@@ -26,7 +26,7 @@
     </ul>
     <p>
       Lorsque vous <i>faites 20</i>, vous ne bénéficiez d’aucune conséquence positive ou négative. Vous ne générez pas non plus de
-      <strong>points d’Espérance ni de Damnation</strong>.
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance ni de Damnation</NuxtLink>.
     </p>
   </main>
 </template>

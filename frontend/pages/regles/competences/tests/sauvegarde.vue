@@ -7,7 +7,10 @@
       situation.
     </p>
     <p>Les jets de sauvegarde sont généralement plus avantageux que les tests opposés, puisqu’ils ne sont pas affectés par les mêmes contraintes.</p>
-    <p>Les jets de sauvegarde n’octroient jamais de conséquences négatives ou positives, ni de <strong>points d’Espérance ni de Damnation</strong>.</p>
+    <p>
+      Les jets de sauvegarde n’octroient jamais de conséquence négative ou positive, ni de
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance ni de Damnation</NuxtLink>.
+    </p>
   </main>
 </template>
 

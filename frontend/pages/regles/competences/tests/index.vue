@@ -37,7 +37,7 @@ const items: MenuItem[] = [
     description: "Le système de résolution d’actions utilisant jet de dés, attributs et compétences.",
   },
   {
-    path: "/regles/competences/tests/avantage",
+    path: "/regles/competences/tests/avantage-desavantage",
     title: "Avantage et Désavantage",
     description: "L’effet de l’avantage et du désavantage sur le jet de dés, résolution en cas de cumul.",
   },

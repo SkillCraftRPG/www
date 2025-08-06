@@ -4,8 +4,9 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Un test de groupe survient lorsque l’ensemble des créatures ou personnages d’un groupe doit effectuer simultanément un même test.</p>
     <p>
-      De manière générale, les tests de groupe n’octroient pas de <strong>points d’Espérance ni de Damnation</strong>. Le maître de jeu peut toutefois octroyer
-      des conséquences positives ou négatives. La décision finale lui appartient.
+      De manière générale, les tests de groupe n’octroient pas de
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance ni de Damnation</NuxtLink>. Le maître de jeu peut toutefois octroyer des
+      conséquences positives ou négatives. La décision finale lui appartient.
     </p>
     <p>Le test de groupe peut être utilisé de différentes manières par un maître de jeu :</p>
     <ul>

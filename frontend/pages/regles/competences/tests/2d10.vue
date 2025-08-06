@@ -6,9 +6,43 @@
       Le résultat d’un <NuxtLink to="/regles/competences/tests">test</NuxtLink> est déterminé à l’aide d’un jet de 2d10 auquel on additionne une série de
       modificateurs.
     </p>
-    <h2 class="h3">Dés d’Espérance et de Damnation</h2>
+    <h2 class="h3">Table des matières</h2>
     <ul>
-      <li>Désignez un de ces dés comme <strong>dé d’Espérance</strong>, et l’autre comme <strong>dé de Damnation</strong>.</li>
+      <li>
+        <a href="#des">Dés d’Espérance et de Damnation</a>
+      </li>
+      <li>
+        <a href="#deroulement">Déroulement du test</a>
+        <ul>
+          <li>
+            <a href="#situation">Bonus et pénalités situationnels</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#resultat">Résultat du test</a>
+      </li>
+      <li>
+        <a href="#exemples">Exemples</a>
+        <ul>
+          <li>
+            <a href="#reussite-esperance">Réussite avec Espérance</a>
+          </li>
+          <li>
+            <a href="#reussite-damnation">Réussite avec Damnation</a>
+          </li>
+          <li>
+            <a href="#echec-esperance">Échec avec Espérance</a>
+          </li>
+          <li>
+            <a href="#echec-damnation">Échec avec Damnation</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="des" class="h3">Dés d’Espérance et de Damnation</h2>
+    <ul>
+      <li>Désignez un de ces dés comme dé d’Espérance, et l’autre comme dé de Damnation.</li>
       <li>
         <font-awesome-icon icon="fas fa-lightbulb" /> Si vous ne possédez qu’une paire de d10 (unité et dizaine), utilisez votre dé d’unité comme dé d’Espérance
         ainsi que votre dé de dizaine comme dé de Damnation.
@@ -27,7 +61,7 @@
         </ul>
       </li>
     </ul>
-    <h2 class="h3">Déroulement du test</h2>
+    <h2 id="deroulement" class="h3">Déroulement du test</h2>
     <ol>
       <li>Jetez vos dés d’Espérance et de Damnation.</li>
       <li>
@@ -56,7 +90,7 @@
         </ul>
       </li>
     </ol>
-    <h3 class="h5">Bonus et pénalités situationnels</h3>
+    <h3 id="situation" class="h5">Bonus et pénalités situationnels</h3>
     <p>
       Un bonus situationnel est octroyé par le maître de jeu au test d’une créature lorsque la situation ou le contexte lui est favorable. Par exemple, un
       personnage issue d’une famille riche pourrait se voir octroyer un bonus situationnel lorsqu’il tente de convaincre un noble de lui porter assistance.
@@ -65,16 +99,16 @@
       Au contraire, une pénalité situationnelle est infligée par le maître de jeu lorsque la situation ou le contexte est défavorable à une créature. Par
       exemple, une créature tentant d’escalader une paroi glissante pourra se voir affligée d’une pénalité situationnelle.
     </p>
-    <h2 class="h3">Résultat du test</h2>
-    <p>Le maître de jeu compare votre résultat avec un <strong>degré de difficulté</strong>.</p>
+    <h2 id="resultat" class="h3">Résultat du test</h2>
+    <p>Le maître de jeu compare votre résultat avec un <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink>.</p>
     <p>Si votre résultat est supérieur ou égal à cette valeur, l’action entreprise est réussie. Sinon, l’action est soldée par un échec.</p>
     <p>En combinant Espérance/Damnation et réussite/échec, un test peut se conclure par une des possibilités suivantes :</p>
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col"></th>
-          <th scope="col">Espérance</th>
-          <th scope="col">Damnation</th>
+          <th scope="col" class="w-10"></th>
+          <th scope="col" class="w-45">Espérance</th>
+          <th scope="col" class="w-45">Damnation</th>
         </tr>
       </thead>
       <tbody>
@@ -92,11 +126,12 @@
     </table>
     <p>Vous pouvez suggérer des conséquences à votre maître de jeu, mais la décision finale lui appartient.</p>
     <p>
-      Dans le feu de l’action, si votre maître de jeu n’arrive pas à trouver une conséquence, il peut vous donner un <strong>point d’Espérance</strong> en tant
-      que conséquence positive, et s’allouer un <strong>point de Damnation</strong> en tant que conséquence négative.
+      Dans le feu de l’action, si votre maître de jeu n’arrive pas à trouver une conséquence, il peut vous donner un
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance</NuxtLink> en tant que conséquence positive, et s’allouer un
+      <NuxtLink to="/regles/competences/esperance-damnation">point de Damnation</NuxtLink> en tant que conséquence négative.
     </p>
-    <h2 class="h3">Exemples</h2>
-    <h3 class="h5">Réussite avec Espérance</h3>
+    <h2 id="exemples" class="h3">Exemples</h2>
+    <h3 id="reussite-esperance" class="h5">Réussite avec Espérance</h3>
     <p>Vous tentez de trouver de l’eau potable, alors que vous êtes perdus en milieu sauvage.</p>
     <ul>
       <li>Vous obtenez 7 sur votre dé d’Espérance et 5 sur votre dé de Damnation.</li>
@@ -110,7 +145,7 @@
         faim de quelques heures (conséquence positive).
       </li>
     </ul>
-    <h3 class="h5">Réussite avec Damnation</h3>
+    <h3 id="reussite-damnation" class="h5">Réussite avec Damnation</h3>
     <p>Vous tentez de crocheter la serrure d’un coffre que vous savez rempli de pièces d’or.</p>
     <ul>
       <li>Vous obtenez 8 sur votre dé d’Espérance et 10 (0) sur votre dé de Damnation.</li>
@@ -124,7 +159,7 @@
         négative).
       </li>
     </ul>
-    <h3 class="h5">Échec avec Espérance</h3>
+    <h3 id="echec-esperance" class="h5">Échec avec Espérance</h3>
     <p>Vous tentez de nager dans des rapides.</p>
     <ul>
       <li>Vous obtenez 6 sur votre dé d’Espérance et 4 sur votre dé de Damnation.</li>
@@ -141,7 +176,7 @@
         (conséquence positive).
       </li>
     </ul>
-    <h3 class="h5">Échec avec Damnation</h3>
+    <h3 id="echec-damnation" class="h5">Échec avec Damnation</h3>
     <p>Vous tentez de négocier le prix de nourriture dans un pays étranger, utilisant votre connaissance des prix dans votre pays.</p>
     <ul>
       <li>Vous obtenez 1 sur votre dé d’Espérance et 3 sur votre dé de Damnation.</li>

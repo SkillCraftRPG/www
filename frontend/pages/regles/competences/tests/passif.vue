@@ -7,7 +7,10 @@
       effectuer un test passif.
     </p>
     <p>Il remplace alors les <NuxtLink to="/regles/competences/tests/2d10">dés d’Espérance et de Damnation</NuxtLink> par la moyenne, soit 10.</p>
-    <p>Les tests passifs n’octroient jamais de conséquences négatives ou positives, ni de <strong>points d’Espérance ni de Damnation</strong>.</p>
+    <p>
+      Les tests passifs n’octroient jamais de conséquences négatives ou positives, ni de
+      <NuxtLink to="/regles/competences/esperance-damnation">points d’Espérance ni de Damnation</NuxtLink>.
+    </p>
     <h2 class="h3">Exemples</h2>
     <ul>
       <li>

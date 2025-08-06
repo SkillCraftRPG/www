@@ -21,12 +21,12 @@
     <p>
       La table ci-dessous présente le seuil d’expérience requise afin de progresser à un niveau supérieur, ainsi que l’expérience totale pour chaque niveau.
     </p>
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Niveau</th>
-          <th scope="col">Expérience requise</th>
-          <th scope="col">Expérience totale</th>
+          <th scope="col" class="w-20">Niveau</th>
+          <th scope="col" class="w-40">Expérience requise</th>
+          <th scope="col" class="w-40">Expérience totale</th>
         </tr>
       </thead>
       <tbody>

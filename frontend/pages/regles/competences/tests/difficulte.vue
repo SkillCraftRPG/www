@@ -12,16 +12,16 @@
       neutralité et l’impartialité.
     </p>
     <p>
-      Lorsque la situation est favorable au personnage entreprenant l’action, le maître de jeu peut réduire le degré de difficulté ou conférer un bonus
-      situationnel à celui-ci. Inversement, il peut augmenter le degré de difficulté ou infliger une pénalité situationnelle au personnage lorsque la situation
-      est défavorable à ce personnage.
+      Lorsque la situation est favorable au personnage entreprenant l’action, le maître de jeu peut réduire le degré de difficulté ou conférer un
+      <NuxtLink to="/regles/competences/tests/2d10">bonus situationnel</NuxtLink> à celui-ci. Inversement, il peut augmenter le degré de difficulté ou infliger
+      une <NuxtLink to="/regles/competences/tests/2d10">pénalité situationnelle</NuxtLink> au personnage lorsque la situation est défavorable à ce personnage.
     </p>
     <p>Voici une table stipulant les degrés de difficulté correspondant à la difficulté qualitative estimée par le maître de jeu :</p>
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Difficulté qualitative</th>
-          <th scope="col">Degré de difficulté</th>
+          <th scope="col" class="w-50">Difficulté qualitative</th>
+          <th scope="col" class="w-50">Degré de difficulté</th>
         </tr>
       </thead>
       <tbody>

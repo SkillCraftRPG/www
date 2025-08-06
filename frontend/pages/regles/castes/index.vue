@@ -6,7 +6,7 @@
     <p>Le joueur assigne une caste à son personnage au moment de sa <NuxtLink to="/regles/personnages/creation">création</NuxtLink>.</p>
     <p>
       Chaque caste définit une <NuxtLink to="/regles/competences">compétence</NuxtLink> pour laquelle le personnage est formé, un jet de dés permettant de
-      déterminer sa richesse de départ, ainsi qu'une particularité qui lui est propre.
+      déterminer sa richesse de départ, ainsi qu’une particularité qui lui est propre.
     </p>
     <CasteList v-if="castes.length" :items="castes" />
   </main>

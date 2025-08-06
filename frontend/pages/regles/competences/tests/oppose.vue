@@ -4,12 +4,13 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Lorsque deux créatures ou personnages effectuent un test l’un contre l’autre, il s’agit d’un test opposé.</p>
     <p>
-      Le <NuxtLink to="/regles/competences/tests/degre-difficulte">degré de difficulté</NuxtLink> est remplacé par le résultat du
+      Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> est remplacé par le résultat du
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> de la cible.
     </p>
     <p>
-      De manière générale, les tests opposés n’octroient pas de <strong>points d’Espérance ni de Damnation</strong>. Le maître de jeu peut toutefois octroyer
-      des conséquences positives ou négatives. La décision finale lui appartient.
+      De manière générale, les tests opposés n’octroient pas de
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance ni de Damnation</NuxtLink>. Le maître de jeu peut toutefois octroyer des
+      conséquences positives ou négatives. La décision finale lui appartient.
     </p>
     <p>Certains tests opposés sont effectués avec la même <NuxtLink to="/regles/competences">compétence</NuxtLink> pour l’acteur et la cible, par exemple :</p>
     <ul>

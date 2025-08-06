@@ -15,13 +15,14 @@
         brusques (en véhicule, en navire, sur une monture, etc.), une météo violente, vous devez retenir votre souffle, etc.
       </li>
       <li>
-        <strong>Le résultat de votre test passif est suffisant.</strong> Le résultat de votre <strong>test passif</strong> doit être supérieur ou égal au
-        <strong>degré de difficulté</strong>.
+        <strong>Le résultat de votre test passif est suffisant.</strong> Le résultat de votre
+        <NuxtLink to="/regles/competences/tests/passif">test passif</NuxtLink> doit être supérieur ou égal au
+        <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink>.
       </li>
     </ul>
     <p>
       Lorsque vous <i>faites 10</i>, vous ne bénéficiez d’aucune conséquence positive ou négative. Vous ne générez pas non plus de
-      <strong>points d’Espérance ni de Damnation</strong>.
+      <NuxtLink to="/regles/competences/esperance-damnation">point d’Espérance ni de Damnation</NuxtLink>.
     </p>
   </main>
 </template>

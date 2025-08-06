@@ -13,11 +13,11 @@
       fois qu’il progresse à un <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> supérieur. Il peut dépenser ces points afin d’acquérir
       de nouveaux talents. Le coût en points d’un talent dépend de son tiers.
     </p>
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Tiers du talent</th>
-          <th scope="col">Coût en points</th>
+          <th scope="col" class="w-50">Tiers du talent</th>
+          <th scope="col" class="w-50">Coût en points</th>
         </tr>
       </thead>
       <tbody>

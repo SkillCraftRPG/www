@@ -10,11 +10,12 @@
     <p>
       L’action entreprise est une réussite (vous ne calculez pas le total du <NuxtLink to="/regles/competences/tests">test</NuxtLink>), peu importe vos
       bonus/pénalités (<NuxtLink to="/regles/attributs">attribut</NuxtLink>, <NuxtLink to="/regles/competences">compétence</NuxtLink> et situationnels) et le
-      <strong>degré de difficulté</strong>.
+      <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink>.
     </p>
     <p>
       En plus de réussir automatiquement, vous bénéficiez 2 conséquences positives. Votre maître de jeu peut également vous donner 2
-      <strong>points d’Espérance</strong>, ou une conséquence positive et un point d’Espérance. La décision finale lui appartient.
+      <NuxtLink to="/regles/competences/esperance-damnation">points d’Espérance</NuxtLink>, ou une conséquence positive et un point d’Espérance. La décision
+      finale lui appartient.
     </p>
     <h2 class="h3">Échec critique</h2>
     <p>
@@ -24,11 +25,12 @@
     <p>
       L’action intentée est un échec (vous ne calculez pas le total du <NuxtLink to="/regles/competences/tests">test</NuxtLink>), peu importe vos
       bonus/pénalités (<NuxtLink to="/regles/attributs">attribut</NuxtLink>, <NuxtLink to="/regles/competences">compétence</NuxtLink> et situationnels) et le
-      <strong>degré de difficulté</strong>.
+      <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink>.
     </p>
     <p>
       En plus d’échouer automatiquement, vous êtes affligés de 2 conséquences négatives. Votre maître de jeu peut également s’allouer 2
-      <strong>points de Damnation</strong>, ou vous infliger une conséquence négative et s’allouer un point de Damnation. La décision finale lui appartient.
+      <NuxtLink to="/regles/competences/esperance-damnation">points de Damnation</NuxtLink>, ou vous infliger une conséquence négative et s’allouer un point de
+      Damnation. La décision finale lui appartient.
     </p>
     <h2 class="h3">Attaque</h2>
     <p>
@@ -41,8 +43,8 @@
     <h2 class="h3"><font-awesome-icon icon="fas fa-triangle-exclamation" /> Attention</h2>
     <p>Lorsqu’une action est impossible à échouer ou à réussir, aucun <NuxtLink to="/regles/competences/tests">test</NuxtLink> n’est effectué.</p>
     <p>
-      Ainsi, l’obtention d’une réussite critique ne permet pas de réussir une action impossible à réussir, tout comme l’obtention d’un échec citique ne permet
-      pas de réussir une action impossible à échouer.
+      Ainsi, l’obtention d’une réussite critique ne permet pas de réussir une action impossible à réussir, tout comme l’obtention d’un échec critique n’impose
+      pas l’échec à une action impossible à échouer.
     </p>
   </main>
 </template>
