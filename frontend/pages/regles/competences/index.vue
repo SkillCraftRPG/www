@@ -80,18 +80,6 @@ useSeo({
 
 /* TODO(fpion):
 
- * Tests
- * - Système 2d10
- * - Faire 20
- * - Faire 10
- * - Degré de difficulté
- * - Bonus de circonstance ?
- * - Test opposé
- * - Avantage et désavantage
- * - Jets de sauvegarde
- * - Test passif
- * - Test de groupe
-
  * Espérance et Damnation
  * - Momentum
  * - Dépense d’Espérance et de Momentum
