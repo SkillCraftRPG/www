@@ -34,7 +34,7 @@
               <br v-if="index < attribute.skills.length - 1" />
             </template>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="attribute.summary">{{ attribute.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

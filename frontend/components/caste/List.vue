@@ -28,7 +28,7 @@
             <template v-if="caste.wealthRoll">{{ caste.wealthRoll }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="caste.summary">{{ caste.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

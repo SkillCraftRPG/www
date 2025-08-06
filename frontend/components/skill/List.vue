@@ -37,7 +37,7 @@
             <NuxtLink v-if="skill.attribute" :to="`/regles/attributs/${skill.attribute.slug}`">{{ skill.attribute.name }}</NuxtLink>
             <span v-else class="text-muted">Variable</span>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="skill.summary">{{ skill.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

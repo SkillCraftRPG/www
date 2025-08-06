@@ -30,7 +30,7 @@
             <NuxtLink v-if="statistic.attribute" :to="`/regles/attributs/${statistic.attribute.slug}`">{{ statistic.attribute.name }}</NuxtLink>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="statistic.summary">{{ statistic.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

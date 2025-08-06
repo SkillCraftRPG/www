@@ -44,7 +44,7 @@
               <NuxtLink v-if="talent.skill" :to="`/regles/competences/${talent.skill.slug}`">{{ talent.skill.name }}</NuxtLink>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
-            <td>
+            <td class="summary-col">
               <template v-if="talent.summary">{{ talent.summary }}</template>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
