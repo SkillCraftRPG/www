@@ -19,6 +19,7 @@
         Cette compétence n’est associée à aucun <NuxtLink to="/regles/attributs">attribut</NuxtLink>. Lorsqu’un test est effectué, l’attribut est sélectionné en
         fonction du contexte du test.
       </p>
+      <!-- TODO(fpion): talents -->
     </template>
   </main>
 </template>
