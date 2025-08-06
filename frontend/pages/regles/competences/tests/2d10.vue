@@ -30,8 +30,14 @@
     <h2 class="h3">Déroulement du test</h2>
     <ol>
       <li>Jetez vos dés d’Espérance et de Damnation.</li>
-      <li>Si les deux dés tombent sur la face 6, 7, 8, 9 ou 0 du dé, vous obtenez une <strong>réussite critique</strong>. Le test est terminé.</li>
-      <li>Si les deux dés tombent sur la face 1, 2, 3, 4 ou 5 du dé, vos obtenez un <strong>échec critique</strong>. Le test est terminé.</li>
+      <li>
+        Si les deux dés tombent sur la face 6, 7, 8, 9 ou 0 du dé, vous obtenez une
+        <NuxtLink to="/regles/competences/tests/critique">réussite critique</NuxtLink>. Le test est terminé.
+      </li>
+      <li>
+        Si les deux dés tombent sur la face 1, 2, 3, 4 ou 5 du dé, vos obtenez un <NuxtLink to="/regles/competences/tests/critique">échec critique</NuxtLink>.
+        Le test est terminé.
+      </li>
       <li>Sinon, ajoutez la valeur de l’<NuxtLink to="/regles/attributs">attribut</NuxtLink> associé au test.</li>
       <li>
         Ajoutez le rang de la <NuxtLink to="/regles/competences">compétence</NuxtLink> associée au test si votre personnage est formé pour cette compétence, ou
@@ -50,6 +56,15 @@
         </ul>
       </li>
     </ol>
+    <h3 class="h5">Bonus et pénalités situationnels</h3>
+    <p>
+      Un bonus situationnel est octroyé par le maître de jeu au test d’une créature lorsque la situation ou le contexte lui est favorable. Par exemple, un
+      personnage issue d’une famille riche pourrait se voir octroyer un bonus situationnel lorsqu’il tente de convaincre un noble de lui porter assistance.
+    </p>
+    <p>
+      Au contraire, une pénalité situationnelle est infligée par le maître de jeu lorsque la situation ou le contexte est défavorable à une créature. Par
+      exemple, une créature tentant d’escalader une paroi glissante pourra se voir affligée d’une pénalité situationnelle.
+    </p>
     <h2 class="h3">Résultat du test</h2>
     <p>Le maître de jeu compare votre résultat avec un <strong>degré de difficulté</strong>.</p>
     <p>Si votre résultat est supérieur ou égal à cette valeur, l’action entreprise est réussie. Sinon, l’action est soldée par un échec.</p>
@@ -137,8 +152,8 @@
       <li>Le maître de jeu ajoute un bonus de 2 au test puisque votre personnage a peu mangé dans les derniers jours et son ventre gargouille sans cesse.</li>
       <li>Vous obtenez donc <i>13 avec Damnation</i>, ce qui est inférieur au degré de difficulté de 15.</li>
       <li>
-        Votre personnage propose un prix dérisoire, qui est refusé par le marchand (échec). Il refuse ensuite de commercer avec vous pour le reste de la journée
-        à cause de votre prix dérisoire (conséquence négative).
+        Votre personnage propose un prix dérisoire, qui est refusé par le marchand (échec). Le marchand refuse ensuite de commercer avec vous pour le reste de
+        la journée à cause de votre prix dérisoire (conséquence négative).
       </li>
     </ul>
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">

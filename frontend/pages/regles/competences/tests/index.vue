@@ -12,7 +12,7 @@
       pouvez suggérer un attribut et/ou une compétence au maître de jeu lorsque vous effectuez un test, mais la décision finale lui appartient.
     </p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -36,25 +36,55 @@ const items: MenuItem[] = [
     title: "Système 2d10",
     description: "Le système de résolution d’actions utilisant jet de dés, attributs et compétences.",
   },
+  {
+    path: "/regles/competences/tests/avantage",
+    title: "Avantage et Désavantage",
+    description: "L’effet de l’avantage et du désavantage sur le jet de dés, résolution en cas de cumul.",
+  },
+  {
+    path: "/regles/competences/tests/critique",
+    title: "Critique",
+    description: "Fonctionnement et conséquences de la réussite critique et de l’échec critique.",
+  },
+  {
+    path: "/regles/competences/tests/difficulte",
+    title: "Degré de difficulté",
+    description: "Détermine si une action réussit ou échoue, proportionnel à la complexité.",
+  },
+  {
+    path: "/regles/competences/tests/faire-10",
+    title: "Faire 10",
+    description: "Réussir automatiquement une action sans menace ni distraction.",
+  },
+  {
+    path: "/regles/competences/tests/faire-20",
+    title: "Faire 20",
+    description: "Réussir automatiquement une action sans menace, distraction ni contrainte de temps ou matérielle.",
+  },
+  {
+    path: "/regles/competences/tests/oppose",
+    title: "Test opposé",
+    description: "Deux créatures s’affrontent, entrent en compétition.",
+  },
+  {
+    path: "/regles/competences/tests/passif",
+    title: "Test passif",
+    description: "Utilise une moyenne plutôt qu’un lancer de dé afin de ne pas éveiller les soupçons des joueurs.",
+  },
+  {
+    path: "/regles/competences/tests/groupe",
+    title: "Test de groupe",
+    description: "Tous les membres d’un groupe effectuent le même test.",
+  },
+  {
+    path: "/regles/competences/tests/sauvegarde",
+    title: "Jet de sauvegarde",
+    description: "Se soustraire ou minimiser les conséquences négatives d’un effet.",
+  },
 ];
 
 useSeo({
   title,
   description: "Un test détermine le succès ou l’échec d’une action. Il associe un attribut et une compétence choisis par le maître de jeu selon le contexte.",
 });
-
-/* TODO(fpion):
-
- * - Avantage et désavantage
- * - Réussite critique
- * - Échec critique
- * - Bonus/pénalité situationnels
- * - Degré de difficulté
- * - Faire 10
- * - Faire 20
- * - Test opposé
- * - Test passif
- * - Test de groupe
- * - Jet de sauvegarde
- */
 </script>
