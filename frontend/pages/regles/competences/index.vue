@@ -24,6 +24,7 @@
       dépenser un point afin d’augmenter de 1 le rang d’une compétence.
     </p>
     <p>Le rang maximal des compétences d’un personnage est défini par son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>.</p>
+    <!-- TODO(fpion): +1 au rang lorsque achat talent de compétence -->
     <table class="table table-striped">
       <thead>
         <tr>

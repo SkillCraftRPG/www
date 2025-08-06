@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Le niveau d’un personnage est une valeur progressant généralement de 0 à 20. Il augmente lorsque l’<NuxtLink
+      Le niveau d’un personnage est une valeur progressant généralement de 0 à 100. Il augmente lorsque l’<NuxtLink
         to="/regles/personnages/progression/experience"
         >expérience</NuxtLink
       >
@@ -12,8 +12,8 @@
     <p>Lorsque le niveau du personnage augmente, ses capacités augmentent également.</p>
     <ul>
       <li>
-        Lorsqu’il atteint un niveau impair (ex.: 1, 3, 5, etc.), il obtient <strong>1 point d’attribut</strong>. Il peut le dépenser afin d’augmenter la valeur
-        d’un <NuxtLink to="/regles/attributs">attribut</NuxtLink> de 1.
+        Lorsqu’il atteint le niveau 5 et à chaque tranche suivante de dix niveaux (5, 15, 25, 35, 45, 55, 65, 75, 85, 95), il obtient
+        <strong>1 point d’attribut</strong>. Il peut le dépenser afin d’augmenter la valeur d’un <NuxtLink to="/regles/attributs">attribut</NuxtLink> de 1.
       </li>
       <li>
         Les <NuxtLink to="/regles/statistiques">statistiques</NuxtLink> suivantes augmentent :
@@ -25,8 +25,8 @@
         le rang de ses <NuxtLink to="/regles/competences">compétences</NuxtLink>.
       </li>
       <li>
-        Il reçoit <strong>4 points de talent</strong>. Il peut dépenser ceux-ci afin d'acquérir de nouveaux <NuxtLink to="/regles/talents">talents</NuxtLink> ou
-        <NuxtLink to="/regles/pouvoirs">pouvoirs</NuxtLink>.
+        Il reçoit <strong>1 point de talent</strong>. Il peut dépenser celui-ci afin d'acquérir un nouveau <NuxtLink to="/regles/talents">talent</NuxtLink> ou
+        <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink>.
       </li>
     </ul>
   </main>

@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Le niveau le plus spécifique de progression est sans doute l’Expérience. Lorsqu’un personnage débute son aventure, il ne possède aucun point d’expérience.
+      La mesure la plus spécifique de progression est sans doute l’Expérience. Lorsqu’un personnage débute son aventure, il ne possède aucun point d’expérience.
       Il progresse en atteignant certains objectifs, et le maître de jeu lui octroie des points d’expérience. Lorsqu’un certain seuil est acquis, le
       <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> du personnage augmente.
     </p>

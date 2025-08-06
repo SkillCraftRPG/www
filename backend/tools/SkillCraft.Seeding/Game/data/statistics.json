@@ -6,7 +6,7 @@
     "Slug": "apprentissage",
     "Name": "Apprentissage",
     "Summary": "L’Apprentissage mesure la vivacité d’esprit d’un personnage et la vitesse à laquelle il acquiert des savoirs, reflétée par ses points de compétence.",
-    "Description": "L’**Apprentissage** représente la vitesse d’acquisition de savoirs et d’aptitudes du personnage, sa vivacité d’esprit.\n\nCela se traduit par le nombre de points de compétence disponibles.\n\nCette statistique n’est pas affectée par les bonus temporaires à l’Intellect.\n\nL’équation suivante calcule l’Apprentissage d’une créature :\n\n<code>\nApprentissage = 5 + Intellect + Niveau(2 + Intellect)\n<br />\nApprentissage<sub>minimum</sub> = 5 + Niveau\n</code>",
+    "Description": "L’**Apprentissage** représente la vitesse d’acquisition de savoirs et d’aptitudes du personnage, sa vivacité d’esprit.\n\nCela se traduit par le nombre de points de compétence disponibles.\n\nCette statistique n’est pas affectée par les bonus temporaires à l’Intellect.\n\nL’équation suivante calcule l’Apprentissage d’une créature :\n\n<code>Apprentissage = 5 + Intellect + (Niveau ÷ 5)(2 + Intellect)<br />Apprentissage<sub>minimum</sub> = 5 + (Niveau ÷ 5)</code>",
     "Notes": null
   },
   {
@@ -26,7 +26,7 @@
     "Slug": "energie",
     "Name": "Énergie",
     "Summary": "L’Énergie reflète la force mentale, l’ardeur et l’endurance d’un personnage, représentant ses capacités avant l’inconscience.",
-    "Description": "L’**Énergie** est une abstraction de la force mentale, de l’ardeur et de l’endurance d’un personnage. \n\nElle représente également la quantité de capacités qu’il peut utiliser avant de sombrer dans l’inconscience.\n\nL’équation suivante calcule l’Énergie d’une créature :\n\n<code>Énergie = (5 + Niveau)(5 + Santé)</code>",
+    "Description": "L’**Énergie** est une abstraction de la force mentale, de l’ardeur et de l’endurance d’un personnage. \n\nElle représente également la quantité de capacités qu’il peut utiliser avant de sombrer dans l’inconscience.\n\nL’équation suivante calcule l’Énergie d’une créature :\n\n<code>Énergie = (25 + Niveau)(5 + Santé) ÷ 5</code>",
     "Notes": null
   },
   {
@@ -36,7 +36,7 @@
     "Slug": "esquive",
     "Name": "Esquive",
     "Summary": "L’Esquive détermine la difficulté de toucher un personnage, réduisant les chances de réussite des attaques physiques ou surnaturelles.",
-    "Description": "L’**Esquive** détermine le résultat d’une attaque dirigée contre le personnage.\n\nPlus elle est élevée, moins sont grandes les chances de réussite de cette attaque, qu’elle soit physique ou surnaturelle.\n\nL’équation suivante calcule l’Esquive d’une créature :\n\n<code>Esquive = 10 + Adresse</code>",
+    "Description": "L’**Esquive** détermine le résultat d’une attaque dirigée contre le personnage.\n\nPlus elle est élevée, moins sont grandes les chances de réussite de cette attaque, qu’elle soit physique ou surnaturelle.\n\nL’équation suivante calcule l’Esquive d’une créature :\n\n<code>Esquive = 5 + (Adresse × 2)</code>",
     "Notes": null
   },
   {
@@ -46,7 +46,7 @@
     "Slug": "force",
     "Name": "Force",
     "Summary": "La Force traduit l’impact des attaques physiques de mêlée et s’ajoute aux points de dégâts infligés lorsqu’une attaque est réussie.",
-    "Description": "La **Force** représente l’impact des attaques physiques de mêlée du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Force d’une créature :\n\n\uD83D\uDEA7",
+    "Description": "La **Force** représente l’impact des attaques physiques de mêlée du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Force d’une créature :\n\n<code>Force = 5 + (Vigueur × 2)</code>",
     "Notes": null
   },
   {
@@ -66,7 +66,7 @@
     "Slug": "precision",
     "Name": "Précision",
     "Summary": "La Précision exprime l’impact des attaques physiques à distance et s’ajoute aux dégâts infligés lorsqu’une attaque de ce type réussit.",
-    "Description": "La **Précision** représente l’impact des attaques physiques à distance du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Précision d’une créature :\n\n\uD83D\uDEA7",
+    "Description": "La **Précision** représente l’impact des attaques physiques à distance du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Précision d’une créature :\n\n<code>Précision = 5 + (Adresse × 2)</code>",
     "Notes": null
   },
   {
@@ -76,7 +76,7 @@
     "Slug": "puissance",
     "Name": "Puissance",
     "Summary": "La Puissance représente l’impact des attaques surnaturelles et augmente les dégâts infligés lorsqu’une attaque de ce type réussit.",
-    "Description": "La **Puissance** représente l’impact des attaques surnaturelles du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Puissance d’une créature :\n\n\uD83D\uDEA7",
+    "Description": "La **Puissance** représente l’impact des attaques surnaturelles du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Puissance d’une créature :\n\n<code>Puissance = 5 + (Sens × 2)</code>",
     "Notes": null
   },
   {
@@ -86,7 +86,7 @@
     "Slug": "stratageme",
     "Name": "Stratagème",
     "Summary": "Le Stratagème définit l’impact des attaques physiques astucieuses et augmente les dégâts infligés lorsqu’une attaque de ce type réussit.",
-    "Description": "Le **Stratagème** représente l’impact des attaques physiques astucieuses du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule le Stratagème d’une créature :\n\n\uD83D\uDEA7",
+    "Description": "Le **Stratagème** représente l’impact des attaques physiques astucieuses du personnage.\n\nElle est ajoutée aux points de dégâts infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule le Stratagème d’une créature :\n\n<code>Stratagème = 5 + (Intellect × 2)</code>",
     "Notes": null
   },
   {
@@ -96,7 +96,7 @@
     "Slug": "vitalite",
     "Name": "Vitalité",
     "Summary": "La Vitalité reflète la force vitale et la constitution d’un personnage, indiquant les dégâts qu’il peut encaisser avant de tomber à l’agonie.",
-    "Description": "La **Vitalité** est une abstraction de la force vitale, de la forme physique et de la constitution d’un personnage.\n\nElle représente également la quantité de dégâts qu’une créature peut supporter avant de tomber à l’agonie.\n\nL’équation suivante calcule la Vitalité d’une créature :\n\n<code>Vitalité = (5 + Niveau)(5 + Santé)</code>",
+    "Description": "La **Vitalité** est une abstraction de la force vitale, de la forme physique et de la constitution d’un personnage.\n\nElle représente également la quantité de dégâts qu’une créature peut supporter avant de tomber à l’agonie.\n\nL’équation suivante calcule la Vitalité d’une créature :\n\n<code>Vitalité = (25 + Niveau)(5 + Santé) ÷ 5</code>",
     "Notes": null
   }
 ]
