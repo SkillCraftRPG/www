@@ -22,6 +22,7 @@ import {
   faPaw,
   faScrewdriverWrench,
   faTimes,
+  faTriangleExclamation,
   faWandSparkles,
   faWheelchair,
 } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +50,7 @@ library.add(
   faPaw,
   faScrewdriverWrench,
   faTimes,
+  faTriangleExclamation,
   faWandSparkles,
   faWheelchair,
 );

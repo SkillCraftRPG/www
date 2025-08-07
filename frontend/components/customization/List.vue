@@ -27,7 +27,7 @@
             <br />
             <span class="text-muted"><CustomizationKind :customization="customization" /></span>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="customization.summary">{{ customization.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

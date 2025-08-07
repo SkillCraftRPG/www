@@ -34,7 +34,7 @@ const items: MenuItem[] = [
     path: "/regles/personnages/progression/niveau",
     title: "Niveau",
     description:
-      "Une mesure plus générale, le niveau augmente lorsque l'expérience atteint un certain seuil. En montant de niveau, le personnage peut améliorer ses capacités ou en acquérir de nouvelles.",
+      "Une mesure plus générale, le niveau augmente lorsque l’expérience atteint un certain seuil. En montant de niveau, le personnage peut améliorer ses capacités ou en acquérir de nouvelles.",
   },
   {
     path: "/regles/personnages/progression/tiers",

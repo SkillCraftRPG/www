@@ -28,7 +28,7 @@
             <template v-if="education.wealthMultiplier">×{{ education.wealthMultiplier }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
-          <td>
+          <td class="summary-col">
             <template v-if="education.summary">{{ education.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

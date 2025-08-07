@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Le niveau le plus spécifique de progression est sans doute l’Expérience. Lorsqu’un personnage débute son aventure, il ne possède aucun point d’expérience.
+      La mesure la plus spécifique de progression est sans doute l’Expérience. Lorsqu’un personnage débute son aventure, il ne possède aucun point d’expérience.
       Il progresse en atteignant certains objectifs, et le maître de jeu lui octroie des points d’expérience. Lorsqu’un certain seuil est acquis, le
       <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> du personnage augmente.
     </p>
@@ -21,12 +21,12 @@
     <p>
       La table ci-dessous présente le seuil d’expérience requise afin de progresser à un niveau supérieur, ainsi que l’expérience totale pour chaque niveau.
     </p>
-    <table class="table table-striped">
+    <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Niveau</th>
-          <th scope="col">Expérience requise</th>
-          <th scope="col">Expérience totale</th>
+          <th scope="col" class="w-20">Niveau</th>
+          <th scope="col" class="w-40">Expérience requise</th>
+          <th scope="col" class="w-40">Expérience totale</th>
         </tr>
       </thead>
       <tbody>

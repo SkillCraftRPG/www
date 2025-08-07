@@ -6,7 +6,7 @@
     <p>Le joueur assigne une éducation à son personnage au moment de sa <NuxtLink to="/regles/personnages/creation">création</NuxtLink>.</p>
     <p>
       Chaque éducation définit une <NuxtLink to="/regles/competences">compétence</NuxtLink> pour laquelle le personnage est formé, un multiplicateur permettant
-      de déterminer sa richesse de départ, ainsi qu'une particularité qui lui est propre.
+      de déterminer sa richesse de départ, ainsi qu’une particularité qui lui est propre.
     </p>
     <EducationList v-if="educations.length" :items="educations" />
   </main>
