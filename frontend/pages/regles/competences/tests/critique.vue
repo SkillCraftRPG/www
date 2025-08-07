@@ -62,4 +62,11 @@ useSeo({
   title,
   description: "Découvrez les effets et conséquences des réussites critiques et échecs critiques dans le système SkillCraft.",
 });
+
+/* TODO(fpion): Talents
+ * /regles/talents/coup-critique
+ * /regles/talents/critique-accru
+ * /regles/talents/critique-superieur
+ * /regles/talents/critique-extraordinaire
+ */
 </script>
