@@ -28,8 +28,11 @@
       Un personnage possède un nombre de points de compétence égal à son <NuxtLink to="/regles/statistiques/apprentissage">Apprentissage</NuxtLink>. Il peut
       dépenser un point afin d’augmenter de 1 le rang d’une compétence.
     </p>
+    <p>
+      Lorsqu’un personnage acquiert un talent associé à une compétence, le rang de celle-ci augmente de 1. Si le rang maximal était atteint avant l’acquisition,
+      le personnage récupère un point de compétence qu’il peut dépenser afin d’augmenter le rang d’une aure compétence.
+    </p>
     <p>Le rang maximal des compétences d’un personnage est défini par son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>.</p>
-    <!-- TODO(fpion): +1 au rang lorsque achat talent de compétence -->
     <table class="table table-striped text-center">
       <thead>
         <tr>
