@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" />
     <p>Butins et trésors sont souvent les motivations des jeunes aventuriers intrépides.</p>
-    <p>Sur leur route, ils trouveront des objets de valeurs multiples et auront besoin d’un équipement adapté à leurs voyages.</p>
+    <p>Sur leur route, ils trouveront des objets de valeur multiple et auront besoin d’équipement adapté à leurs voyages.</p>
     <p>Armes et armures, objets magiques, marchandises et autres objets de valeur pourront être troqués ou achetés à différents endroits.</p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -25,19 +25,27 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/monnaie",
     title: "Système de monnaie",
-    description: "🚧",
+    description: "Systèmes monétaires, pièces de monnaie, valeurs et conversions.",
   },
   {
     path: "/regles/equipement/depart",
     title: "Équipement de départ",
-    description: "🚧",
+    description: "Déterminer la richesse de départ et sélectionner l’équipement de départ.",
+  },
+  {
+    path: "/regles/equipement/encombrement",
+    title: "Encombrement",
+    description: "Définit la limite de poids qu’une créature peut porter et les pénalités.",
+  },
+  {
+    path: "/regles/equipement/vente-reparation",
+    title: "Vente et réparation",
+    description: "Lignes directrices pour revendre, échanger et réparer l’équipement.",
   },
 ];
 
 /* TODO(fpion):
- * Entretien : vente et réparation d'équipement
- * Dépenses ❓
- * Encombrement ❓
+ * Dépenses
  * Armures
  * Boucliers
  * Armes

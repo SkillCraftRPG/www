@@ -51,7 +51,10 @@
       Utilisez les tables dans les autres sections afin d’acheter à votre personnage <strong>vêtements</strong>, <strong>contenants</strong>,
       <strong>armes</strong>, <strong>armures</strong>, <strong>boucliers</strong>, <strong>outils et ensembles</strong> et <strong>articles divers</strong>.
     </p>
-    <!-- TODO(fpion): surveiller encombrement -->
+    <p>
+      <font-awesome-icon icon="fas fa-lightbulb" /> Surveillez le poids de l’équipement que vous achetez. Assurez-vous de ne pas
+      <NuxtLink to="/regles/equipement/encombrement">encombrer</NuxtLink> votre personnage.
+    </p>
     <h2 class="h3" id="selections">Sélections</h2>
     <p>
       Au vu de la quantité et variété impressionnantes d’équipements disponibles, il peut être normal que vous ne sachiez pas quoi acheter à votre personnage.
@@ -127,12 +130,12 @@ function toSelectionItem(value: string): SelectionItem {
   const id: string = parts[0];
   const item: Item | undefined = items.value.get(id.toLowerCase());
   if (!item) {
-    throw new Error(`The item '${id}' was not found.'`);
+    throw new Error(`The item "${id}" was not found.`);
   }
 
   const quantity: number = (parts.length > 0 ? parseNumber(parts[1]) : undefined) ?? 1;
   if (quantity < 1) {
-    throw new Error(`The item '${id}' quantity must be greater than 0.`);
+    throw new Error(`The item "${id}" quantity must be greater than 0.`);
   }
 
   return { ...item, quantity };
