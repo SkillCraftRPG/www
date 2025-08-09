@@ -41,7 +41,7 @@ const items: MenuItem[] = [
   },
   {
     path: "/regles/competences/rang",
-    title: "Rang de compétence",
+    title: "Rang",
     description: "Fonctionnement et progression des rangs de compétence.",
   },
   {
