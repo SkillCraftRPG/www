@@ -35,16 +35,6 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/competences/tests",
-    title: "Tests",
-    description: "Un test permet de déterminer si une action intentée est une réussite ou un échec. Les tests sont au cœur du système de résolution.",
-  },
-  {
-    path: "/regles/competences/esperance-damnation",
-    title: "Espérance et Damnation",
-    description: "Des ressources permettant aux joueurs et au maître de jeu d’influencer l’histoire en leur faveur.",
-  },
-  {
     path: "/regles/competences/formation",
     title: "Formation",
     description: "Rôle et effets de la formation aux compétences.",
@@ -53,6 +43,16 @@ const items: MenuItem[] = [
     path: "/regles/competences/rang",
     title: "Rang de compétence",
     description: "Fonctionnement et progression des rangs de compétence.",
+  },
+  {
+    path: "/regles/competences/tests",
+    title: "Tests",
+    description: "Un test permet de déterminer si une action intentée est une réussite ou un échec. Les tests sont au cœur du système de résolution.",
+  },
+  {
+    path: "/regles/competences/esperance-damnation",
+    title: "Espérance et Damnation",
+    description: "Des ressources permettant aux joueurs et au maître de jeu d’influencer l’histoire en leur faveur.",
   },
 ];
 
