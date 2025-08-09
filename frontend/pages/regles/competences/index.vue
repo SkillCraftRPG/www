@@ -47,12 +47,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/competences/tests",
     title: "Tests",
-    description: "Un test permet de déterminer si une action intentée est une réussite ou un échec. Les tests sont au cœur du système de résolution.",
+    description: "Permet de déterminer si une action intentée est une réussite ou un échec.",
   },
   {
     path: "/regles/competences/esperance-damnation",
     title: "Espérance et Damnation",
-    description: "Des ressources permettant aux joueurs et au maître de jeu d’influencer l’histoire en leur faveur.",
+    description: "Permettent aux joueurs et au maître de jeu d’influencer l’histoire.",
   },
 ];
 
