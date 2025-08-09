@@ -29,10 +29,7 @@
     "weight": 8,
     "defense": 2,
     "resistance": 20,
-    "properties": [
-      "Bruyant",
-      "Rempart"
-    ],
+    "properties": ["Bruyant", "Rempart"],
     "description": "Grand bouclier conçu à l’origine afin de protéger les arbalétriers. Il couvre tout le corps de son porteur et peut se fixer au sol au moyen d’un pieu afin de servir de demi-abri. Il confère 2 points de Défense supplémentaires lorsqu’il est levé."
   }
 ]
