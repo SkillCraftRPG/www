@@ -1,3 +1,10 @@
+export type Armor = Item & {
+  category: string;
+  defense: number;
+  resistance: number;
+  properties: string[];
+};
+
 export type Container = Item & {
   volume: string;
   capacity: number;

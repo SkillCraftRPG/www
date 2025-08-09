@@ -42,11 +42,21 @@ const items: MenuItem[] = [
     title: "Vente et réparation",
     description: "Lignes directrices pour revendre, échanger et réparer l’équipement.",
   },
+  {
+    path: "/regles/equipement/depenses",
+    title: "Dépenses",
+    description: "Styles de vie, quotidiens et confort offert entre deux aventures.",
+  },
+  {
+    path: "/regles/equipement/armure",
+    title: "Armure",
+    description: "Protection portée par les aventuriers et hommes d’armes.",
+  },
 ];
 
 /* TODO(fpion):
- * Dépenses
- * Armures
+ * Défense
+ * Résistance
  * Boucliers
  * Armes
  * Équipement général : Articles, Contenants, Vêtements

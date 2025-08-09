@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      La fortune des aventuriers s’exprime de diverses manières : monnaie ou argent, pierres précieuses, œuvres d’art, ressources, propriétés, etc. La forme la
+      La fortune des aventuriers s’exprime de diverses manières : monnaie ou argent, pierres précieuses, œuvres d’art, ressources, immobiliers, etc. La forme la
       plus courante de richesse est la monnaie.
     </p>
     <h2 class="h3">Différents systèmes</h2>
