@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Tout personnage peut revêtir une armure. Néanmoins, une formation est nécessaire afin d’être protégé convenablement.</p>
-    <h2 class="h3">Formation</h2>
+    <h2 class="h3">Talents</h2>
     <p>
       Les talents suivants forment le personnage au port des armures d’une certaine <NuxtLink to="/regles/equipement/armure/categorie">catégorie</NuxtLink> :
     </p>

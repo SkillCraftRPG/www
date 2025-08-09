@@ -59,11 +59,48 @@
     <h2 id="talents" class="h3">Talents</h2>
     <p>Les talents suivants sont utiles aux utilisateurs de boucliers.</p>
     <h3 id="formation" class="h5">Formation</h3>
-    <!-- TODO(fpion): pénalité sans formation -->
     <p>
       Un personnage est <NuxtLink to="/regles/equipement/armure/formation">formé</NuxtLink> au port des boucliers de la même manière qu’il est formé au port des
       armures.
     </p>
+    <p>Lorsqu’un personnage porte un bouclier pour lequel il n’est pas formé, il subit les pénalités suivantes :</p>
+    <ul>
+      <li>
+        Pénalité (égale au nombre de points de Défense conférés par le bouclier) au <NuxtLink to="/regles/competences/tests">test</NuxtLink> des
+        <NuxtLink to="/regles/competences">compétences</NuxtLink> associées à l’<NuxtLink to="/regles/attributs/adresse">Adresse</NuxtLink>, à la
+        <NuxtLink to="/regles/attributs/vigueur">Vigueur</NuxtLink> et au surnaturel, notamment :
+        <ul>
+          <li>
+            <NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/artisanat">Artisanat</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/melee">Mêlée</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/orientation">Orientation</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/regles/competences/roublardise">Roublardise</NuxtLink>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <NuxtLink to="/regles/competences/tests/avantage-desavantage">Désavantage</NuxtLink> aux tests d’Occultisme afin de canaliser un
+        <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink> nécessitant la composante <strong>Somatique</strong>.
+      </li>
+    </ul>
     <p>Les talents suivants forment le personnage au port des boucliers d’une certaine catégorie :</p>
     <!-- TODO(fpion): talents -->
     <h3 id="capacites" class="h5">Capacités</h3>
