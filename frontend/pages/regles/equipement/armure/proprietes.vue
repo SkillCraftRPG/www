@@ -32,8 +32,8 @@
         <strong>Rempart.</strong> Lorsque le personnage doit effectuer un
         <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>,
         il peut remplacer son <NuxtLink to="/regles/competences">rang de compétence</NuxtLink> par la valeur de <strong>Défense</strong> de l’équipement. S’il
-        porte <NuxtLink to="/regles/equipement/armure/multiple">deux couches d’armure</NuxtLink> ou un <strong>bouclier</strong> conférant cette propriété,
-        alors les valeurs indiquées sont cumulées.
+        porte <NuxtLink to="/regles/equipement/armure/multiple">deux couches d’armure</NuxtLink> ou un
+        <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> conférant cette propriété, alors les valeurs indiquées sont cumulées.
       </li>
     </ul>
     <p>

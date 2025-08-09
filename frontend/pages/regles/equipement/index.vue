@@ -52,12 +52,16 @@ const items: MenuItem[] = [
     title: "Armure",
     description: "Protection portée par les aventuriers et hommes d’armes.",
   },
+  {
+    path: "/regles/equipement/boucliers",
+    title: "Boucliers",
+    description: "Catégories, propriétés, talents et particularités des boucliers.",
+  },
 ];
 
 /* TODO(fpion):
  * Défense
  * Résistance
- * Boucliers
  * Armes
  * Équipement général : Articles, Contenants, Vêtements
  * Marchandise : Bétail, Épices, Métaux, Nourriture, Repas, Textiles

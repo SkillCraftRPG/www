@@ -21,3 +21,10 @@ export type Item = {
 export type SelectionItem = Item & {
   quantity: number;
 };
+
+export type Shield = Item & {
+  category: string;
+  defense: number;
+  resistance: number;
+  properties: string[];
+};

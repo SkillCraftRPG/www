@@ -49,7 +49,8 @@
     </p>
     <p>
       Utilisez les tables dans les autres sections afin d’acheter à votre personnage <strong>vêtements</strong>, <strong>contenants</strong>,
-      <strong>armes</strong>, <strong>armures</strong>, <strong>boucliers</strong>, <strong>outils et ensembles</strong> et <strong>articles divers</strong>.
+      <strong>armes</strong>, <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>, <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink>,
+      <strong>outils et ensembles</strong> et <strong>articles divers</strong>.
     </p>
     <p>
       <font-awesome-icon icon="fas fa-lightbulb" /> Surveillez le poids de l’équipement que vous achetez. Assurez-vous de ne pas
@@ -69,8 +70,14 @@
         <font-awesome-icon icon="fas fa-triangle-exclamation" /> Si vous achetez des armes à distance, n’oubliez pas les munitions et les étuis à munitions.
         Ceux-ci ne sont pas inclus dans le prix et poids des armes à distance.
       </li>
-      <li>Si votre personnage est formé au port d’amure, achetez une <strong>armure</strong>.</li>
-      <li>Si votre personnage est formé à l’utilisation du bouclier et qu’il désire combattre avec un bouclier, achetez un <strong>bouclier</strong>.</li>
+      <li>
+        Si votre personnage est <NuxtLink to="/regles/equipement/armure/formation">formé au port d’amure</NuxtLink>, achetez une
+        <NuxtLink to="/regles/equipement/armure">armure</NuxtLink>.
+      </li>
+      <li>
+        Si votre personnage est formé à l’utilisation du <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> et qu’il désire combattre avec un
+        bouclier, achetez un bouclier.
+      </li>
     </ol>
     <p>Les prix et poids indiqués dans les tables ci-dessous sont pour une unité.</p>
     <h3 class="h5" id="selection-base">Sélection de base ({{ $n(baseTotal, "price") }} deniers)</h3>
