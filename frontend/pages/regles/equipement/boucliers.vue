@@ -60,8 +60,8 @@
     <p>Les talents suivants sont utiles aux utilisateurs de boucliers.</p>
     <h3 id="formation" class="h5">Formation</h3>
     <p>
-      Un personnage est <NuxtLink to="/regles/equipement/armure/formation">formé</NuxtLink> au port des boucliers de la même manière qu’il est formé au port des
-      armures.
+      Un personnage est formé au port des boucliers de la même manière qu’il est
+      <NuxtLink to="/regles/equipement/armure/formation">formé au port des armures</NuxtLink>.
     </p>
     <p>Lorsqu’un personnage porte un bouclier pour lequel il n’est pas formé, il subit les pénalités suivantes :</p>
     <ul>
