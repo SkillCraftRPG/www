@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Propriétés" :parent="parent" />
     <p>Les armures sont presque toutes dotées d’au moins une propriété.</p>
     <p>Ces propriétés sont décrites ci-dessous, et elles sont toutes compatibles entre elles.</p>
     <ul>

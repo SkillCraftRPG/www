@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Formation" :parent="parent" />
     <p>Tout personnage peut revêtir une armure. Néanmoins, une formation est nécessaire afin d’être protégé convenablement.</p>
     <h2 class="h3">Talents</h2>
     <p>
@@ -53,7 +53,7 @@ const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armure", to: "/regles/equipement/armure" },
 ];
-const title: string = "Formation";
+const title: string = "Formation au port d’armure";
 
 useSeo({
   title,

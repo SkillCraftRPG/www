@@ -9,71 +9,12 @@
       </div>
     </div>
     <h2 class="h3">Liste des armures</h2>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-15">Armure</th>
-          <th scope="col" class="w-15">Prix (deniers)</th>
-          <th scope="col" class="w-15">Poids (kg)</th>
-          <th scope="col" class="w-15">Défense</th>
-          <th scope="col" class="w-15">Résistance</th>
-          <th scope="col" class="w-25">Propriétés</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="6"><i>Armures légères</i></td>
-        </tr>
-        <tr v-for="armor in light" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-        <tr>
-          <td colspan="6"><i>Armures moyennes</i></td>
-        </tr>
-        <tr v-for="armor in medium" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-        <tr>
-          <td colspan="6"><i>Armures lourdes</i></td>
-        </tr>
-        <tr v-for="armor in heavy" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-      </tbody>
-    </table>
     <h3 class="h5">Armures légères</h3>
-    <ul>
-      <li v-for="armor in light" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemArmorList :items="light" />
     <h3 class="h5">Armures moyennes</h3>
-    <ul>
-      <li v-for="armor in medium" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemArmorList :items="medium" />
     <h3 class="h5">Armures lourdes</h3>
-    <ul>
-      <li v-for="armor in heavy" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemArmorList :items="heavy" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
@@ -105,6 +46,11 @@ const items: MenuItem[] = [
     description: "La formation nécessaire pour porter une armure et les pénalités sans.",
   },
   {
+    path: "/regles/equipement/armure/proprietes",
+    title: "Propriétés",
+    description: "Propriétés des armures et effets sur le porteur.",
+  },
+  {
     path: "/regles/equipement/armure/partielle",
     title: "Armure partielle",
     description: "Assembler, combiner et calculer la Défense des armures partielles.",
@@ -115,15 +61,11 @@ const items: MenuItem[] = [
     description: "Porter deux couches d’armure et combiner leurs effets.",
   },
   {
-    path: "/regles/equipement/armure/proprietes",
-    title: "Propriétés",
-    description: "Propriétés des armures et effets sur le porteur.",
-  },
-  {
     path: "/regles/equipement/armure/enfiler-retirer",
     title: "Enfiler ou retirer son armure",
     description: "Temps pour enfiler ou retirer une armure selon sa catégorie.",
   },
+  // TODO(fpion): Armures renforcées
 ];
 
 const heavy = computed<Armor[]>(() => armor.filter(({ category }) => category === "Heavy"));

@@ -41,6 +41,10 @@ button:disabled {
   width: 20% !important;
 }
 
+.w-30 {
+  width: 30% !important;
+}
+
 .w-33 {
   width: 33.33% !important;
 }

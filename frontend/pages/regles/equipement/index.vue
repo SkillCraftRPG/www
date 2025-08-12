@@ -48,6 +48,11 @@ const items: MenuItem[] = [
     description: "Styles de vie, quotidiens et confort offert entre deux aventures.",
   },
   {
+    path: "/regles/equipement/armes",
+    title: "Armes",
+    description: "🚧",
+  },
+  {
     path: "/regles/equipement/armure",
     title: "Armure",
     description: "Protection portée par les aventuriers et hommes d’armes.",
@@ -62,7 +67,6 @@ const items: MenuItem[] = [
 /* TODO(fpion):
  * Défense
  * Résistance
- * Armes
  * Équipement général : Articles, Contenants, Vêtements
  * Marchandise : Bétail, Épices, Métaux, Nourriture, Repas, Textiles
  * Outils : Artisanat et trousses, Ensembles à jouer, Instruments de musique

@@ -1,0 +1,83 @@
+<template>
+  <main class="container">
+    <h1>{{ title }}</h1>
+    <AppBreadcrumb :active="title" :parent="parent" />
+    <p>Les armes permettent aux aventuriers de se défendre contre une agression ou de tourner une situation à leur avantage.</p>
+    <div class="row">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
+    <h2 class="h3">Liste des armes</h2>
+    <h3 class="h5">Armes simples</h3>
+    <ItemWeaponList :items="simple" />
+    <h3 class="h5">Armes martiales</h3>
+    <ItemWeaponList :items="martial" />
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
+  </main>
+</template>
+
+<script setup lang="ts">
+import weapons from "~/assets/data/items/weapons.json";
+import type { Breadcrumb } from "~/types/components";
+import type { Weapon } from "~/types/items";
+
+const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
+const title: string = "Armes";
+
+type MenuItem = {
+  path: string;
+  title: string;
+  description: string;
+};
+const items: MenuItem[] = [
+  {
+    path: "/regles/equipement/armes/categorie",
+    title: "Catégories d’armes",
+    description: "Présentation des deux catégories d’armes et de leurs particularités.",
+  },
+  {
+    path: "/regles/equipement/armes/formation",
+    title: "Formation",
+    description: "La formation nécessaire pour manier une arme et les pénalités sans.",
+  },
+  {
+    path: "/regles/equipement/armes/proprietes",
+    title: "Propriétés",
+    description: "Propriétés des armes et effets sur le maniement.",
+  },
+  {
+    path: "/regles/equipement/armes/improvisees",
+    title: "Armes improvisées",
+    description: "Règles pour l’usage et les dégâts des armes improvisées.",
+  },
+  {
+    path: "/regles/equipement/armes/argent",
+    title: "Plaquage d’argent",
+    description: "Plaquage en argent pour armes contre créatures résistantes.",
+  },
+  {
+    path: "/regles/equipement/armes/attaque",
+    title: "Attaque",
+    description: "Bonus au test d’attaque selon la taille de l’arme.",
+  },
+  // TODO(fpion): Munitions
+  // TODO(fpion): Armes à feu et explosifs
+  // TODO(fpion): Armes affûtées
+];
+
+const simple = computed<Weapon[]>(() => weapons.filter(({ category }) => category === "Simple"));
+const martial = computed<Weapon[]>(() => weapons.filter(({ category }) => category === "Martiale"));
+
+function scrollToTop(): void {
+  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+}
+
+useSeo({
+  title,
+  description: "Découvrez le fonctionnement des armes, qui permettent aux aventuriers de se défendre et à leurs adversaires de les assaillir.",
+});
+</script>

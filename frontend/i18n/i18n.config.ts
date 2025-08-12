@@ -1,6 +1,11 @@
 export default defineI18nConfig(() => ({
   numberFormats: {
     fr: {
+      attack: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      },
       defense: {
         style: "decimal",
         minimumFractionDigits: 0,

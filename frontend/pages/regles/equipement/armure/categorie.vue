@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Catégories" :parent="parent" />
     <p>Les armures sont réparties en trois catégories :</p>
     <ul>
       <li><strong>Légères.</strong> Des protections minces au poids léger qui ne restreignent pratiquement pas.</li>

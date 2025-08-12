@@ -107,71 +107,12 @@
     <p>Les talents suivants confèrent au personnage une ou plusieurs capacités lorsqu’il porte un bouclier :</p>
     <!-- TODO(fpion): talents -->
     <h2 id="liste" class="h3">Liste des boucliers</h2>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-15">Bouclier</th>
-          <th scope="col" class="w-15">Prix (deniers)</th>
-          <th scope="col" class="w-15">Poids (kg)</th>
-          <th scope="col" class="w-15">Défense</th>
-          <th scope="col" class="w-15">Résistance</th>
-          <th scope="col" class="w-25">Propriétés</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="6"><i>Boucliers légers</i></td>
-        </tr>
-        <tr v-for="armor in light" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-        <tr>
-          <td colspan="6"><i>Boucliers moyens</i></td>
-        </tr>
-        <tr v-for="armor in medium" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-        <tr>
-          <td colspan="6"><i>Boucliers lourds</i></td>
-        </tr>
-        <tr v-for="armor in heavy" :key="armor.id">
-          <td>{{ armor.name }}</td>
-          <td>{{ $n(armor.price, "price") }}</td>
-          <td>{{ $n(armor.weight, "weight") }}</td>
-          <td>{{ $n(armor.defense, "defense") }}</td>
-          <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
-        </tr>
-      </tbody>
-    </table>
     <h3 id="legers" class="h5">Boucliers légers</h3>
-    <ul>
-      <li v-for="armor in light" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemShieldList :items="light" />
     <h3 id="moyens" class="h5">Boucliers moyens</h3>
-    <ul>
-      <li v-for="armor in medium" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemShieldList :items="medium" />
     <h3 id="lourds" class="h5">Boucliers lourds</h3>
-    <ul>
-      <li v-for="armor in heavy" :key="armor.id">
-        <strong>{{ armor.name }}.</strong> {{ armor.description }}
-      </li>
-    </ul>
+    <ItemShieldList :items="heavy" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
