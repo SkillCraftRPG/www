@@ -12,5 +12,4 @@ public class SkillModel : Aggregate
   public string? Description { get; set; }
 
   public AttributeModel? Attribute { get; set; }
-  public List<TalentModel> Talents { get; set; } = [];
 }

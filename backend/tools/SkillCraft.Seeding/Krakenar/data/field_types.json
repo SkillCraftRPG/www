@@ -26,25 +26,6 @@
     }
   },
   {
-    "Id": "5d84c64e-c313-4c78-9136-3a9ba71c4a72",
-    "UniqueName": "Attribute",
-    "DisplayName": "Attribut",
-    "RelatedContent": {
-      "ContentTypeId": "8023dfd1-24d6-4a55-b405-c19fa0096d20",
-      "IsMultiple": false
-    }
-  },
-  {
-    "Id": "b583f15e-36a7-4ee6-8d08-0dd5f54fba14",
-    "UniqueName": "TalentTier",
-    "DisplayName": "Tiers de talent",
-    "Number": {
-      "MinimumValue": 0,
-      "MaximumValue": 3,
-      "Step": 1
-    }
-  },
-  {
     "Id": "d0d70982-9569-4a66-a8f3-19f85b5589c7",
     "UniqueName": "Boolean",
     "DisplayName": "Booléen",
@@ -56,14 +37,6 @@
     "DisplayName": "Compétence",
     "RelatedContent": {
       "ContentTypeId": "28a3a292-74f7-4b6e-bea1-1da07356c886",
-      "IsMultiple": false
-    }
-  },
-  {
-    "Id": "8f66c0ae-7caf-480f-a8a8-56a552b108bf",
-    "UniqueName": "Talent",
-    "RelatedContent": {
-      "ContentTypeId": "9d178fef-d33d-47ff-9a9c-b5b4ca196aaa",
       "IsMultiple": false
     }
   },
