@@ -1,0 +1,66 @@
+[
+  {
+    "id": "aiguille",
+    "name": "Aiguille",
+    "description": "Une fine aiguille en métal soufflée dans une sarbacane. Les aiguilles se rangent dans un petit étui en cuir protégeant le personnage des pointes.",
+    "price": 0.02,
+    "weight": 0.01,
+    "weapon": "Sarbacane",
+    "container": {
+      "id": "etui-a-aiguilles",
+      "name": "Étui à aiguilles",
+      "description": "",
+      "price": 0.5,
+      "weight": 0.5,
+      "capacity": 50
+    }
+  },
+  {
+    "id": "carreau",
+    "name": "Carreau",
+    "description": "Similaire à une flèche, mais plus court, il possède un fer plus fort et pesant, mais n’est doté que de deux pennes au lieu de trois. Celles-ci sont en cuir ou en parchemin. Son étui est en cuir et ressemble fortement à un carquois plus court, mais fermé.",
+    "price": 0.05,
+    "weight": 0.03,
+    "weapon": "Arbalètes",
+    "container": {
+      "id": "etui-a-carreaux",
+      "name": "Étui à carreaux",
+      "description": "",
+      "price": 1,
+      "weight": 0.5,
+      "capacity": 20
+    }
+  },
+  {
+    "id": "fleche",
+    "name": "Flèche",
+    "description": "Le projectile par excellence pour les archers. Il est doté d’un fer pointu, d’une tige de bois et de trois pennes réalisées à l’aide de plumes. Le carquois est un étui cylindrique en cuir pouvant contenir des flèches donc une des extrémités est ouverte.",
+    "price": 0.05,
+    "weight": 0.02,
+    "weapon": "Arcs",
+    "container": {
+      "id": "carquois",
+      "name": "Carquois",
+      "description": "",
+      "price": 1,
+      "weight": 0.5,
+      "capacity": 20
+    }
+  },
+  {
+    "id": "plomb",
+    "name": "Plomb",
+    "description": "Similaire à un caillou, il s’agit d’une petit boule grossière faite en plomb. Les plombs sont rangés dans un sac de tissu.",
+    "price": 0.01,
+    "weight": 0.03,
+    "weapon": "Fronde",
+    "container": {
+      "id": "sac-a-plombs",
+      "name": "Sac à plombs",
+      "description": "",
+      "price": 0.2,
+      "weight": 0.2,
+      "capacity": 20
+    }
+  }
+]

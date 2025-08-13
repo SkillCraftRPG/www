@@ -1,0 +1,476 @@
+[
+  {
+    "id": "baton",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Bâton",
+    "price": 0.2,
+    "weight": 2,
+    "damage": "1d6 contondant",
+    "properties": [],
+    "versatile": "1d8",
+    "description": "Un simple bâton en bois ou en métal pouvant être manié à une ou deux mains."
+  },
+  {
+    "id": "dague",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Dague",
+    "price": 2,
+    "weight": 0.5,
+    "damage": "1d4 perçant",
+    "properties": ["Finesse", "Légère"],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "description": "Couteau de combat très pointu, avec un ou deux côtés tranchants."
+  },
+  {
+    "id": "faucille",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Faucille",
+    "price": 1,
+    "weight": 1,
+    "damage": "1d4 tranchant",
+    "properties": ["Légère"],
+    "description": "À l’origine utilisée pour couper les tiges de céréales, il s’agit d’une version miniature de la faux."
+  },
+  {
+    "id": "grande-masse",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Grande masse",
+    "price": 0.2,
+    "weight": 5,
+    "damage": "1d8 contondant",
+    "properties": ["Deux mains"],
+    "description": "Une lourde masse rudimentaire tenue à deux mains."
+  },
+  {
+    "id": "hache-a-main",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Hache à main",
+    "price": 5,
+    "weight": 1,
+    "damage": "1d6 tranchant",
+    "properties": ["Légère"],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "description": "Une version courte et balancée d’une hache de bûcheron."
+  },
+  {
+    "id": "javelot",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Javelot",
+    "price": 0.5,
+    "weight": 1,
+    "damage": "1d6 perçant",
+    "properties": [],
+    "thrown": {
+      "normal": 6,
+      "long": 24
+    },
+    "description": "Une version raccourcie d’une lance, munie d’un corps de bois et d’une pointe en métal."
+  },
+  {
+    "id": "lance",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Lance",
+    "price": 1,
+    "weight": 1.5,
+    "damage": "1d6 perçant",
+    "properties": [],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "versatile": "1d8",
+    "description": "Longue arme composée d’une pointe offensive en pierre, métal ou bois durci, et d’une longue hampe (manche en bois)."
+  },
+  {
+    "id": "marteau-leger",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Marteau léger",
+    "price": 2,
+    "weight": 1,
+    "damage": "1d4 contondant",
+    "properties": ["Légère"],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "description": "Une version adaptée au combat d’un marteau traditionnellement utilisé afin d’enfoncer des pieux."
+  },
+  {
+    "id": "masse",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Masse",
+    "price": 0.1,
+    "weight": 1,
+    "damage": "1d4 contondant",
+    "properties": ["Légère"],
+    "description": "Arme rudimentaire et préhistorique, moins dangereuse que les armes contondantes similaires."
+  },
+  {
+    "id": "massue",
+    "category": "Simple",
+    "range": "Melee",
+    "name": "Massue",
+    "price": 5,
+    "weight": 2,
+    "damage": "1d6 contondant",
+    "properties": [],
+    "description": "Arme de guerre composée d’un manche renforcé et d’un poids lourd à l’extrémité de la poignée."
+  },
+  {
+    "id": "arbalete-legere",
+    "category": "Simple",
+    "range": "Ranged",
+    "name": "Arbalète légère",
+    "price": 25,
+    "weight": 2.5,
+    "damage": "1d8 perçant",
+    "properties": ["Chargement", "Deux mains"],
+    "ammunition": {
+      "normal": 16,
+      "long": 64
+    },
+    "description": "Arc monté sur un fût léger, pouvant lancer des carreaux avec puissance et précision au détriment de sa vitesse de tir."
+  },
+  {
+    "id": "arc-court",
+    "category": "Simple",
+    "range": "Ranged",
+    "name": "Arc court",
+    "price": 25,
+    "weight": 1,
+    "damage": "1d6 perçant",
+    "properties": ["Deux mains"],
+    "ammunition": {
+      "normal": 16,
+      "long": 64
+    },
+    "description": "Un arc facile à manier pouvant tirer des flèches à une distance raisonnable."
+  },
+  {
+    "id": "dard",
+    "category": "Simple",
+    "range": "Ranged",
+    "name": "Dard",
+    "price": 0.05,
+    "weight": 0.1,
+    "damage": "1d4 perçant",
+    "properties": ["Finesse"],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "description": "Un projectile aérodynamique ressemblant à une flèche de courte longueur, lancé à la main."
+  },
+  {
+    "id": "fronde",
+    "category": "Simple",
+    "range": "Ranged",
+    "name": "Fronde",
+    "price": 0.1,
+    "weight": 0,
+    "damage": "1d4 contondant",
+    "properties": [],
+    "ammunition": {
+      "normal": 6,
+      "long": 24
+    },
+    "description": "Arme rudimentaire servant à lancer des cailloux ou des poids avec force, utilisée par les bergers afin de défendre leurs troupeaux."
+  },
+  {
+    "id": "cimeterre",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Cimeterre",
+    "price": 25,
+    "weight": 1.5,
+    "damage": "1d6 tranchant",
+    "properties": ["Finesse", "Légère"],
+    "description": "Courte épée dont la lame est courbée, et plus large vers la pointe que vers la garde."
+  },
+  {
+    "id": "coutille",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Coutille",
+    "price": 20,
+    "weight": 3,
+    "damage": "1d10 tranchant",
+    "properties": ["Allonge", "Deux mains", "Lourde"],
+    "description": "Arme d’hast munie d’un très long manche se terminant par une lame tranchante."
+  },
+  {
+    "id": "epee-courte",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Épée courte",
+    "price": 10,
+    "weight": 1,
+    "damage": "1d6 perçant",
+    "properties": ["Finesse", "Légère"],
+    "description": "Petite épée légère utilisée pour pointer, dans les sports d’escrime et à la guerre."
+  },
+  {
+    "id": "epee-longue",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Épée longue",
+    "price": 15,
+    "weight": 1.5,
+    "damage": "1d8 tranchant",
+    "properties": [],
+    "versatile": "1d10",
+    "description": "Épée pouvant être maniée à deux mains, munie d’une arme tranchante, d’une garde et d’un pommeau (contrepoids)."
+  },
+  {
+    "id": "espadon",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Espadon",
+    "price": 50,
+    "weight": 3,
+    "damage": "2d6 tranchant",
+    "properties": ["Deux mains", "Lourde"],
+    "description": "Lourde épée maniée à deux mains, aussi appelée « grande épée », utilisée pour contrer les armes d’hast."
+  },
+  {
+    "id": "fleau-d-armes",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Fléau d’armes",
+    "price": 10,
+    "weight": 1,
+    "damage": "1d8 contondant",
+    "properties": [],
+    "description": "Arme munie d’un manche en bois au bout duquel est accrochée au moyen d’une chaîne une boule métallique épineuse."
+  },
+  {
+    "id": "fouet",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Fouet",
+    "price": 2,
+    "weight": 1.5,
+    "damage": "1d4 tranchant",
+    "properties": ["Allonge", "Finesse"],
+    "description": "Arme flexible permettant de flageller un ennemi en s’y tenant loin."
+  },
+  {
+    "id": "grande-hache",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Grande hache",
+    "price": 30,
+    "weight": 3.5,
+    "damage": "1d12 tranchant",
+    "properties": ["Deux mains", "Lourde"],
+    "description": "Une hache de guerre de taille supérieure, maniée à deux mains."
+  },
+  {
+    "id": "hache-de-guerre",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Hache de guerre",
+    "price": 10,
+    "weight": 2,
+    "damage": "1d8 tranchant",
+    "properties": [],
+    "versatile": "1d10",
+    "description": "Hache conçue spécialement pour le combat pouvant être tenue à une ou deux mains."
+  },
+  {
+    "id": "hallebarde",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Hallebarde",
+    "price": 20,
+    "weight": 3,
+    "damage": "1d10 tranchant",
+    "properties": ["Allonge", "Deux mains", "Lourde"],
+    "description": "Arme d’hast maniée à deux mains portant une tête de hache, une pique et parfois un crochet."
+  },
+  {
+    "id": "lance-de-cavalerie",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Lance de cavalerie",
+    "price": 10,
+    "weight": 3,
+    "damage": "1d12 perçant",
+    "properties": ["Allonge", "Deux mains"],
+    "special": "Le test d’attaque du personnage se voit affligé du désavantage s’il est effectué contre une créature située dans une case adjacente. Également, la lance doit être maniée à deux mains si le personnage n’est pas sur une monture.",
+    "description": "Une longue lance utilisée par un combattant monté à une certaine distance, parfois utilisée lors de joutes équestres."
+  },
+  {
+    "id": "marteau-de-guerre",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Marteau de guerre",
+    "price": 15,
+    "weight": 1,
+    "damage": "1d8 contondant",
+    "properties": [],
+    "versatile": "1d10",
+    "description": "Un long marteau adapté à la guerre pouvant être manié à une ou deux mains."
+  },
+  {
+    "id": "masse-d-armes",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Masse d’armes",
+    "price": 10,
+    "weight": 5,
+    "damage": "2d6 contondant",
+    "properties": ["Deux mains", "Lourde"],
+    "description": "Une lourde version de la massue maniée à deux mains."
+  },
+  {
+    "id": "morgenstern",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Morgenstern",
+    "price": 15,
+    "weight": 2,
+    "damage": "1d8 perçant",
+    "properties": [],
+    "description": "Similaire au fléau, cette arme est munie d’un manche. Son extrémité renforcée est dotée de pointes acérées."
+  },
+  {
+    "id": "pioche-de-guerre",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Pioche de guerre",
+    "price": 5,
+    "weight": 1,
+    "damage": "1d8 perçant",
+    "properties": [],
+    "description": "Version adaptée à la guerre de la pioche utilisée par les mineurs afin de briser le minerai."
+  },
+  {
+    "id": "pique",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Pique",
+    "price": 5,
+    "weight": 9,
+    "damage": "1d10 perçant",
+    "properties": ["Allonge", "Deux mains", "Lourde"],
+    "description": "Arme d’hast munie d’un très long manche se terminant par une longue pointe renforcée."
+  },
+  {
+    "id": "rapiere",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Rapière",
+    "price": 25,
+    "weight": 1,
+    "damage": "1d8 perçant",
+    "properties": ["Finesse"],
+    "description": "Épée légère utilisée pour pointer, dans les sports d’escrime comme au combat, d’apparence élégante."
+  },
+  {
+    "id": "trident",
+    "category": "Martiale",
+    "range": "Melee",
+    "name": "Trident",
+    "price": 5,
+    "weight": 2,
+    "damage": "1d6 perçant",
+    "properties": [],
+    "thrown": {
+      "normal": 4,
+      "long": 12
+    },
+    "versatile": "1d8",
+    "description": "Arme munie d’un manche au bout duquel sont fixées trois pointes acérées."
+  },
+  {
+    "id": "arbalete-de-poing",
+    "category": "Martiale",
+    "range": "Ranged",
+    "name": "Arbalète de poing",
+    "price": 75,
+    "weight": 1.5,
+    "damage": "1d6 perçant",
+    "properties": ["Chargement", "Légère"],
+    "ammunition": {
+      "normal": 6,
+      "long": 24
+    },
+    "description": "Version miniature de l’arbalète se maniant bien à une seule main."
+  },
+  {
+    "id": "arbalete-lourde",
+    "category": "Martiale",
+    "range": "Ranged",
+    "name": "Arbalète lourde",
+    "price": 50,
+    "weight": 9,
+    "damage": "1d10 perçant",
+    "properties": ["Chargement", "Deux mains", "Lourde"],
+    "ammunition": {
+      "normal": 20,
+      "long": 80
+    },
+    "description": "Une arbalète offrant une puissance dévastatrice et une portée supérieure."
+  },
+  {
+    "id": "arc-long",
+    "category": "Martiale",
+    "range": "Ranged",
+    "name": "Arc long",
+    "price": 50,
+    "weight": 1,
+    "damage": "1d8 perçant",
+    "properties": ["Deux mains", "Lourde"],
+    "ammunition": {
+      "normal": 30,
+      "long": 120
+    },
+    "description": "Version allongée de l’arc court, offrant une portée largement supérieure."
+  },
+  {
+    "id": "filet",
+    "category": "Martiale",
+    "range": "Ranged",
+    "name": "Filet",
+    "price": 1,
+    "weight": 1.5,
+    "properties": [],
+    "special": "Le filet n’inflige aucun point de dégâts, mais il restreint une créature de grande taille ou moindre. Les créatures sans forme ne sont pas affectées par le filet. Le filet est doté d’une valeur de Défense de 10, et il détruit s’il reçoit 5 points de dégâts tranchants ou plus.",
+    "thrown": {
+      "normal": 1,
+      "long": 3
+    },
+    "description": "Le filet a pour but de neutraliser et de restreindre l’adversaire plutôt que de le blesser ou le tuer."
+  },
+  {
+    "id": "sarbacane",
+    "category": "Martiale",
+    "range": "Ranged",
+    "name": "Sarbacane",
+    "price": 10,
+    "weight": 0.5,
+    "damage": "1 perçant",
+    "properties": ["Chargement"],
+    "ammunition": {
+      "normal": 5,
+      "long": 20
+    },
+    "description": "Long tube pouvant être utilisé afin de tirer une aiguille à courte portée en soufflant dans une de ses extrémités."
+  }
+]

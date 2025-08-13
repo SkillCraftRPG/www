@@ -992,7 +992,7 @@
     "Slug": "formation-martiale",
     "Name": "Formation martiale",
     "Summary": "Formé aux armes martiales de mêlée, aux armures moyennes et aux boucliers moyens.",
-    "Description": "Forme le personnage au maniement des armes martiales de mêlée.\n\nIl est également formé au port des armures moyennes et à l’utilisation des boucliers moyens.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est formé au maniement des armes martiales de mêlée.\n- Il est formé au port des armures moyennes et à l’utilisation des boucliers moyens.\n- Lorsqu’il dégaine ou rengaine une arme, il peut en faire de même avec un bouclier en action libre.",
     "Notes": "\uD83D\uDD17"
   },
   {
@@ -1795,7 +1795,7 @@
     "RequiredTalentId": "33783c5e-e48b-4d14-b773-a0d75a7b63af",
     "Slug": "resilience",
     "Name": "Résilience",
-    "Summary": "Permet de réduire les dégâts ou la durée d’un effet surnaturel si la barrière mentale échoue, par un jet de Discipline.\n..",
+    "Summary": "Permet de réduire les dégâts ou la durée d’un effet surnaturel si la barrière mentale échoue, par un jet de Discipline.",
     "Description": "Lorsque le personnage utilise sa barrière mentale et que celle-ci échoue à le protéger, il peut tenter un jet de sauvegarde de Discipline de degré de difficulté égal au nombre de points d’Énergie dépensés afin de canaliser la capacité, ou 20 si la capacité surnaturelle n’a pas de dépense associée.\n\nEn cas de réussite, il réduit de moitié les points de dégâts reçus, ou la durée de l’effet si celui-ci n’inflige aucun point de dégâts.\n\nIl peut utiliser cette capacité même si la capacité surnaturelle initiale ne lui imposait pas un jet de sauvegarde ou si elle n’était pas une attaque.",
     "Notes": "\uD83D\uDD17"
   },
