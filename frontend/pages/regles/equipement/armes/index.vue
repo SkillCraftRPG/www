@@ -13,6 +13,7 @@
     <ItemWeaponList :items="simple" />
     <h3 class="h5">Armes martiales</h3>
     <ItemWeaponList :items="martial" />
+    <ItemAmmunitionList :items="ammunition" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
@@ -20,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import ammunition from "~/assets/data/items/ammunition.json";
 import weapons from "~/assets/data/items/weapons.json";
 import type { Breadcrumb } from "~/types/components";
 import type { Weapon } from "~/types/items";
@@ -63,7 +65,6 @@ const items: MenuItem[] = [
     title: "Attaque",
     description: "Bonus au test d’attaque selon la taille de l’arme.",
   },
-  // TODO(fpion): Munitions
   // TODO(fpion): Armes à feu et explosifs
   // TODO(fpion): Armes affûtées
 ];

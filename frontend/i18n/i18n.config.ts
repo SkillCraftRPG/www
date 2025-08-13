@@ -6,6 +6,11 @@ export default defineI18nConfig(() => ({
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
       },
+      capacity: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      },
       defense: {
         style: "decimal",
         minimumFractionDigits: 0,

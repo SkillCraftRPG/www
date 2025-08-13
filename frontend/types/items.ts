@@ -1,3 +1,8 @@
+export type Ammunition = Item & {
+  weapon: string;
+  container: Container;
+};
+
 export type Armor = Item & {
   category: string;
   defense: number;
@@ -6,7 +11,7 @@ export type Armor = Item & {
 };
 
 export type Container = Item & {
-  volume: string;
+  volume?: string;
   capacity: number;
 };
 

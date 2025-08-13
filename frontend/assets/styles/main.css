@@ -61,6 +61,10 @@ button:disabled {
   width: 80% !important;
 }
 
+.w-eighth {
+  width: 12.5% !important;
+}
+
 @media (min-width: 1200px) {
   .col-fifth {
     flex: 0 0 auto;
