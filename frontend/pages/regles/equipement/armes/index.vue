@@ -67,6 +67,7 @@ const items: MenuItem[] = [
   },
   // TODO(fpion): Armes à feu et explosifs
   // TODO(fpion): Armes affûtées
+  // TODO(fpion): Armes brisées
 ];
 
 const simple = computed<Weapon[]>(() => weapons.filter(({ category }) => category === "Simple"));
