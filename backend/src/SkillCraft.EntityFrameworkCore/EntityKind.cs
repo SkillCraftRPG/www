@@ -4,7 +4,6 @@ public enum EntityKind
 {
   Attribute,
   Caste,
-  Education,
   Skill,
   Statistic
 }

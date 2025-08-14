@@ -124,37 +124,6 @@ internal class RuleMapper
     return destination;
   }
 
-  public EducationModel ToEducation(EducationEntity source)
-  {
-    EducationModel destination = new()
-    {
-      Id = source.Id,
-      Slug = source.Slug,
-      Name = source.Name,
-      Summary = source.Summary,
-      Description = source.Description,
-      WealthMultiplier = source.WealthMultiplier
-    };
-
-    if (source.Skill is not null)
-    {
-      destination.Skill = ToSkill(source.Skill);
-    }
-    if (source.Feature is not null)
-    {
-      string[] lines = source.Feature.Split('\n');
-      destination.Feature = new FeatureModel
-      {
-        Name = lines.First(),
-        Description = string.Join('\n', lines.Skip(1))
-      };
-    }
-
-    MapAggregate(source, destination);
-
-    return destination;
-  }
-
   public SkillModel ToSkill(SkillEntity source) => ToSkill(source, attribute: null);
   public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)
   {
