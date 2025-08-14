@@ -21,7 +21,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "http://localhost:8088",
       baseUrl: "http://localhost:3000",
       version: pkg.version,
     },

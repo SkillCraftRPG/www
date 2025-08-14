@@ -72,7 +72,7 @@
         l’attaque est affligé du
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>.
       </li>
-      <li>Si la distance est supérieure à la seconde (et plus grande) des deux portées, le test de l'attaque échoue automatiquement.</li>
+      <li>Si la distance est supérieure à la seconde (et plus grande) des deux portées, le test de l’attaque échoue automatiquement.</li>
     </ul>
   </main>
 </template>

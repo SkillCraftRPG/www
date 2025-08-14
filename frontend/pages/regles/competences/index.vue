@@ -23,10 +23,13 @@
 </template>
 
 <script setup lang="ts">
-import type { SearchResults, Skill } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Skill } from "~/types/game";
+import { getSkills } from "~/services/skills";
+
 const title: string = "Compétences";
+const { orderBy } = arrayUtils;
 
 type MenuItem = {
   path: string;
@@ -56,12 +59,7 @@ const items: MenuItem[] = [
   },
 ];
 
-const { data } = await useFetch("/api/skills", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-const skills = computed<Skill[]>(() => (data.value as SearchResults<Skill>)?.items ?? []);
+const skills = ref<Skill[]>(orderBy(getSkills({ attribute: true }), "slug"));
 
 useSeo({
   title,

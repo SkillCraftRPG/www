@@ -13,18 +13,14 @@ import { marked } from "marked";
 
 import type { Breadcrumb } from "~/types/components";
 import type { Customization } from "~/types/game";
+import { getCustomization } from "~/services/customizations";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Dons & Handicaps", to: "/regles/dons-handicaps" }];
 const route = useRoute();
 
-const { data } = await useFetch(`/api/customizations/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const customization = ref<Customization | undefined>(getCustomization(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
 
-const customization = computed<Customization | undefined>(() => data.value as Customization | undefined);
 const html = computed<string | undefined>(() => (customization.value?.description ? (marked.parse(customization.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Dons & Handicaps", to: "/regles/dons-handicaps" }]);
 const title = computed<string | undefined>(() => customization.value?.name);
 
 useSeo({

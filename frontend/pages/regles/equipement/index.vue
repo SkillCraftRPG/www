@@ -50,7 +50,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/armes",
     title: "Armes",
-    description: "🚧",
+    description: "Objets offensifs ou défensif utilisés par les personnages et créatures.",
   },
   {
     path: "/regles/equipement/armure",

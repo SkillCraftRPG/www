@@ -67,17 +67,15 @@
 </template>
 
 <script setup lang="ts">
-import type { SearchResults, Talent } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Talent } from "~/types/game";
+import { getTalents } from "~/services/talents";
+
 const title: string = "Talents";
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/talents", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-const talents = computed<Talent[]>(() => (data.value as SearchResults<Talent>)?.items ?? []);
+const talents = ref<Talent[]>(orderBy(getTalents({ requiredTalent: true, skill: true }), "slug"));
 
 useSeo({
   title,

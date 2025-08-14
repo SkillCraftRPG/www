@@ -19,29 +19,47 @@
         Cette compétence n’est associée à aucun <NuxtLink to="/regles/attributs">attribut</NuxtLink>. Lorsqu’un test est effectué, l’attribut est sélectionné en
         fonction du contexte du test.
       </p>
-      <!-- TODO(fpion): talents -->
+    </template>
+    <template v-if="talents.length">
+      <h2 class="h3">Talents</h2>
+      <p>
+        L’acquisition des <NuxtLink to="/regles/talents">talents</NuxtLink> ci-dessous <NuxtLink to="/regles/competences/formation">forme</NuxtLink> le
+        personnage pour cette compétence et augmente de 1 le <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de cette compétence.
+      </p>
+      <div class="row">
+        <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <TalentCard class="d-flex flex-column h-100" :talent="talent" />
+        </div>
+      </div>
     </template>
   </main>
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
 import { marked } from "marked";
 
-import type { Attribute, Skill } from "~/types/game";
+import type { Attribute, Skill, Talent } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
+import { getSkill } from "~/services/skills";
+import { getTalents } from "~/services/talents";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
 const route = useRoute();
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch(`/api/skills/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const skill = ref<Skill | undefined>(getSkill(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { attribute: true }));
 
-const skill = computed<Skill | undefined>(() => data.value as Skill | undefined);
 const attribute = computed<Attribute | undefined>(() => skill.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (skill.value?.description ? (marked.parse(skill.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Compétences", to: "/regles/competences" }]);
+const talents = computed<Talent[]>(() => {
+  return orderBy(
+    getTalents({ requiredTalent: true, skill: true })
+      .filter((talent) => talent.skill && talent.skill.id === skill.value?.id)
+      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  );
+});
 const title = computed<string | undefined>(() => skill.value?.name);
 
 useSeo({

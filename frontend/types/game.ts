@@ -19,32 +19,42 @@ export type Aggregate = {
   updatedOn: string;
 };
 
-export type Attribute = Aggregate & {
+export type Attribute = {
+  id: string;
   slug: string;
   value: GameAttribute;
+  category?: AttributeCategory | null;
   name: string;
   summary?: string | null;
   description?: string | null;
-  skills: Skill[];
+  notes?: string | null;
   statistics: Statistic[];
+  skills: Skill[];
 };
 
-export type Caste = Aggregate & {
+export type AttributeCategory = "Mental" | "Physical";
+
+export type Caste = {
+  id: string;
   slug: string;
   name: string;
-  summary?: string | null;
-  description?: string | null;
+  skillId: string;
   skill?: Skill | null;
-  wealthRoll?: string | null;
+  wealthRoll: string;
+  summary?: string | null;
+  description?: string | null;
   feature?: Feature | null;
+  notes?: string | null;
 };
 
-export type Customization = Aggregate & {
-  slug: string;
+export type Customization = {
+  id: string;
   kind: CustomizationKind;
+  slug: string;
   name: string;
   summary?: string | null;
   description?: string | null;
+  notes?: string | null;
 };
 
 export type CustomizationKind = "Disability" | "Gift";
@@ -54,14 +64,17 @@ export type Feature = {
   description?: string | null;
 };
 
-export type Education = Aggregate & {
+export type Education = {
+  id: string;
   slug: string;
   name: string;
+  skillId: string;
+  skill?: Skill | null;
+  wealthMultiplier: number;
   summary?: string | null;
   description?: string | null;
-  skill?: Skill | null;
-  wealthMultiplier?: number | null;
   feature?: Feature | null;
+  notes?: string | null;
 };
 
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
@@ -95,32 +108,42 @@ export type SearchResults<T> = {
   total: number;
 };
 
-export type Skill = Aggregate & {
+export type Skill = {
+  id: string;
   slug: string;
   value: GameSkill;
   name: string;
+  attributeId?: string | null;
+  attribute?: Attribute | null;
   summary?: string | null;
   description?: string | null;
-  attribute?: Attribute | null;
+  notes?: string | null;
 };
 
-export type Statistic = Aggregate & {
+export type Statistic = {
+  id: string;
   slug: string;
   value: GameStatistic;
   name: string;
+  attributeId: string;
+  attribute?: Attribute | null;
   summary?: string | null;
   description?: string | null;
-  attribute?: Attribute | null;
+  notes?: string | null;
 };
 
-export type Talent = Aggregate & {
-  slug: string;
+export type Talent = {
+  id: string;
   tier: number;
+  slug: string;
   name: string;
-  summary?: string | null;
-  description?: string | null;
   allowMultiplePurchases: boolean;
+  skillId?: string | null;
   skill?: Skill | null;
+  requiredTalentId?: string | null;
   requiredTalent?: Talent | null;
   requiringTalents: Talent[];
+  summary?: string | null;
+  description?: string | null;
+  notes?: string | null;
 };

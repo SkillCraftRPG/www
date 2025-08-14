@@ -13,17 +13,15 @@
 </template>
 
 <script setup lang="ts">
-import type { SearchResults, Statistic } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Statistic } from "~/types/game";
+import { getStatistics } from "~/services/statistics";
+
 const title: string = "Statistiques";
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/statistics", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-const statistics = computed<Statistic[]>(() => (data.value as SearchResults<Statistic>)?.items ?? []);
+const statistics = ref<Statistic[]>(orderBy(getStatistics({ attribute: true }), "slug"));
 
 useSeo({
   title,

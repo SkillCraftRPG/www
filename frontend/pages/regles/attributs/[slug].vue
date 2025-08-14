@@ -32,21 +32,19 @@ import { marked } from "marked";
 
 import type { Attribute, Skill, Statistic } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
+import { getAttribute } from "~/services/attributes";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Attributs", to: "/regles/attributs" }];
 const route = useRoute();
 const { orderBy } = arrayUtils;
 
-const { data } = await useFetch(`/api/attributes/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const attribute = ref<Attribute | undefined>(
+  getAttribute(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { statistics: true, skills: true }),
+);
 
-const attribute = computed<Attribute | undefined>(() => data.value as Attribute | undefined);
 const html = computed<string | undefined>(() => (attribute.value?.description ? (marked.parse(attribute.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Attributs", to: "/regles/attributs" }]);
-const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "name") : []));
-const statistics = computed<Statistic[]>(() => (attribute.value?.statistics ? orderBy(attribute.value.statistics, "name") : []));
+const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "slug") : []));
+const statistics = computed<Statistic[]>(() => (attribute.value?.statistics ? orderBy(attribute.value.statistics, "slug") : []));
 const title = computed<string | undefined>(() => attribute.value?.name);
 
 useSeo({

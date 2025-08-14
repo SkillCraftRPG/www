@@ -22,19 +22,15 @@ import { marked } from "marked";
 
 import type { Attribute, Statistic } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
+import { getStatistic } from "~/services/statistics";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Statistiques", to: "/regles/statistiques" }];
 const route = useRoute();
 
-const { data } = await useFetch(`/api/statistics/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const statistic = ref<Statistic | undefined>(getStatistic(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { attribute: true }));
 
-const statistic = computed<Statistic | undefined>(() => data.value as Statistic | undefined);
 const attribute = computed<Attribute | undefined>(() => statistic.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (statistic.value?.description ? (marked.parse(statistic.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Statistiques", to: "/regles/statistiques" }]);
 const title = computed<string | undefined>(() => statistic.value?.name);
 
 useSeo({
