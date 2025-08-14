@@ -14,7 +14,6 @@ internal class EtlWorker : BackgroundService
   {
     [Attributes.ContentTypeId] = EntityKind.Attribute,
     [Castes.ContentTypeId] = EntityKind.Caste,
-    [Customizations.ContentTypeId] = EntityKind.Customization,
     [Educations.ContentTypeId] = EntityKind.Education,
     [Skills.ContentTypeId] = EntityKind.Skill,
     [Statistics.ContentTypeId] = EntityKind.Statistic
@@ -63,7 +62,6 @@ internal class EtlWorker : BackgroundService
 
     List<Attribute> attributes = [];
     List<Caste> castes = [];
-    List<Customization> customizations = [];
     List<Education> educations = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
@@ -102,10 +100,6 @@ internal class EtlWorker : BackgroundService
           Caste caste = Caste.Extract(content, locale);
           castes.Add(caste);
           break;
-        case EntityKind.Customization:
-          Customization customization = Customization.Extract(content, locale);
-          customizations.Add(customization);
-          break;
         case EntityKind.Education:
           Education education = Education.Extract(content, locale);
           educations.Add(education);
@@ -137,12 +131,6 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Harvested {Count} castes to file '{Path}'.", castes.Count, "output/castes.json");
-    await File.WriteAllTextAsync(
-      "output/customizations.json",
-      JsonSerializer.Serialize(customizations.OrderBy(x => x.Name), _serializerOptions),
-      _encoding,
-      cancellationToken);
-    _logger.LogInformation("Harvested {Count} customizations to file '{Path}'.", customizations.Count, "output/customizations.json");
     await File.WriteAllTextAsync(
       "output/educations.json",
       JsonSerializer.Serialize(educations.OrderBy(x => x.Name), _serializerOptions),

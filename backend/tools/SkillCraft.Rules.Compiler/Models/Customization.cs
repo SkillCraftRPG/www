@@ -2,19 +2,16 @@
 
 namespace SkillCraft.Rules.Compiler.Models;
 
-internal class AttributeModel
+internal class Customization
 {
   [JsonPropertyName("id")]
   public Guid Id { get; set; }
 
+  [JsonPropertyName("kind")]
+  public CustomizationKind Kind { get; set; }
+
   [JsonPropertyName("slug")]
   public string Slug { get; set; } = string.Empty;
-
-  [JsonPropertyName("value")]
-  public GameAttribute Value { get; set; }
-
-  [JsonPropertyName("category")]
-  public AttributeCategory? Category { get; set; }
 
   [JsonPropertyName("name")]
   public string Name { get; set; } = string.Empty;
@@ -28,7 +25,7 @@ internal class AttributeModel
   [JsonPropertyName("notes")]
   public string? Notes { get; set; }
 
-  public override bool Equals(object? obj) => obj is AttributeModel attribute && attribute.Id == Id;
+  public override bool Equals(object? obj) => obj is Customization customization && customization.Id == Id;
   public override int GetHashCode() => Id.GetHashCode();
   public override string ToString() => $"{Name} | {GetType()} (Id={Id})";
 }

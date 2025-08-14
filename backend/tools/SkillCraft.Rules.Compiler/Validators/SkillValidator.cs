@@ -8,7 +8,6 @@ internal class SkillValidator : AbstractValidator<SkillPayload>
   public SkillValidator()
   {
     RuleFor(x => x.Id).NotEmpty();
-
     RuleFor(x => x.Slug).Slug();
     RuleFor(x => x.Value).IsInEnum();
     RuleFor(x => x.Name).Name();

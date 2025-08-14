@@ -41,23 +41,6 @@
     }
   },
   {
-    "Id": "68772d19-be11-4aa4-a01c-f9797193149f",
-    "UniqueName": "CustomizationKind",
-    "DisplayName": "Type de personnalisation",
-    "Select": {
-      "Options": [
-        {
-          "Text": "Don",
-          "Value": "Gift"
-        },
-        {
-          "Text": "Handicap",
-          "Value": "Disability"
-        }
-      ]
-    }
-  },
-  {
     "Id": "9e4fa3f8-fb64-4ccb-935c-d11012926c0f",
     "UniqueName": "Roll",
     "DisplayName": "Jet de dés",

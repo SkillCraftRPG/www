@@ -1,4 +1,5 @@
 ﻿using CsvHelper.Configuration.Attributes;
+using SkillCraft.Core;
 
 namespace SkillCraft.Rules.Compiler.Models;
 

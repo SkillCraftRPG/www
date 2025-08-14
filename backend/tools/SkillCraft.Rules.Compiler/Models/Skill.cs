@@ -1,4 +1,6 @@
-﻿namespace SkillCraft.Rules.Compiler.Models;
+﻿using SkillCraft.Core;
+
+namespace SkillCraft.Rules.Compiler.Models;
 
 internal class Skill
 {
