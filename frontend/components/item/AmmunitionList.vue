@@ -25,7 +25,7 @@
           <td>{{ item.name }}</td>
           <td>{{ $n(item.price, "price") }}</td>
           <td>{{ $n(item.weight, "weight") }}</td>
-          <td>{{ item.weapon }}</td>
+          <td>{{ item.weapons }}</td>
           <td>{{ item.container.name }}</td>
           <td>{{ $n(item.container.price, "price") }}</td>
           <td>{{ $n(item.container.weight, "weight") }}</td>
@@ -35,7 +35,7 @@
     </table>
     <h4 class="h6">Descriptions</h4>
     <ul>
-      <li v-for="item in items" :key="item.id">
+      <li v-for="item in allItems" :key="item.id">
         <strong>{{ item.name }}.</strong> {{ item.description }}
       </li>
     </ul>
@@ -43,9 +43,19 @@
 </template>
 
 <script setup lang="ts">
-import type { Ammunition } from "~/types/items";
+import { arrayUtils } from "logitar-js";
 
-defineProps<{
+import type { Ammunition, Item } from "~/types/items";
+
+const { orderBy } = arrayUtils;
+
+const props = defineProps<{
   items: Ammunition[];
 }>();
+
+const allItems = computed<Item[]>(() => {
+  const items: Item[] = [...props.items];
+  props.items.forEach((ammunition) => items.push(ammunition.container));
+  return orderBy(items, "slug");
+});
 </script>

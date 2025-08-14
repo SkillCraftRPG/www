@@ -1,5 +1,7 @@
+import type { DamageType } from "./game";
+
 export type Ammunition = Item & {
-  weapon: string;
+  weapons: string;
   container: Container;
 };
 
@@ -17,15 +19,11 @@ export type Container = Item & {
 
 export type Item = {
   id: string;
+  slug: string;
   name: string;
   price: number;
   weight: number;
   description: string;
-};
-
-export type Range = {
-  normal: number;
-  long: number;
 };
 
 export type SelectionItem = Item & {
@@ -40,13 +38,26 @@ export type Shield = Item & {
 };
 
 export type Weapon = Item & {
-  category: string;
-  range: string;
-  damage?: string;
-  properties: string[];
-  ammunition?: Range;
-  reload?: number;
-  special?: string;
-  thrown?: Range;
-  versatile?: string;
+  category: WeaponCategory;
+  damage?: WeaponDamage | null;
+  ammunition?: WeaponRange | null;
+  reload?: number | null;
+  special?: string | null;
+  thrown?: WeaponRange | null;
+  properties: WeaponProperty[];
+};
+
+export type WeaponCategory = "Simple" | "Martial";
+
+export type WeaponDamage = {
+  roll: string;
+  versatile?: string | null;
+  type: DamageType;
+};
+
+export type WeaponProperty = "Heavy" | "Finesse" | "Light" | "Loading" | "Reach" | "TwoHanded";
+
+export type WeaponRange = {
+  standard: number;
+  long: number;
 };
