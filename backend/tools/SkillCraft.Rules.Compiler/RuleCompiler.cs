@@ -37,6 +37,7 @@ public class RuleCompiler : BackgroundService
       await ExecuteAsync(new CompileAttributes(), cancellationToken);
       await ExecuteAsync(new CompileSkills(), cancellationToken);
       await ExecuteAsync(new CompileCustomizations(), cancellationToken);
+      await ExecuteAsync(new CompileEducations(), cancellationToken);
       await ExecuteAsync(new CompileTalents(), cancellationToken);
     }
     catch (Exception exception)
