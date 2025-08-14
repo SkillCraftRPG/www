@@ -26,12 +26,6 @@
     }
   },
   {
-    "Id": "d0d70982-9569-4a66-a8f3-19f85b5589c7",
-    "UniqueName": "Boolean",
-    "DisplayName": "Booléen",
-    "Boolean": {}
-  },
-  {
     "Id": "258bd50a-4e94-405a-9fb5-a78014b0e572",
     "UniqueName": "Skill",
     "DisplayName": "Compétence",
@@ -48,16 +42,6 @@
       "MinimumLength": 3,
       "MaximumLength": 6,
       "Pattern": "^([1-9][0-9]?)d([1-9][0-9]{0,2})$"
-    }
-  },
-  {
-    "Id": "711e8b80-3fc9-448a-9b72-9c1f2d6aade3",
-    "UniqueName": "WealthMultiplier",
-    "DisplayName": "Multiplicateur de richesse",
-    "Number": {
-      "MinimumValue": 4,
-      "MaximumValue": 12,
-      "Step": 2
     }
   },
   {
