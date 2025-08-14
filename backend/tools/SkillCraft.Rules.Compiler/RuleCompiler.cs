@@ -35,6 +35,7 @@ public class RuleCompiler : BackgroundService
     {
       // NOTE(fpion): the order of these tasks matter.
       await ExecuteAsync(new CompileAttributes(), cancellationToken);
+      await ExecuteAsync(new CompileStatistics(), cancellationToken);
       await ExecuteAsync(new CompileSkills(), cancellationToken);
       await ExecuteAsync(new CompileCustomizations(), cancellationToken);
       await ExecuteAsync(new CompileCastes(), cancellationToken);
