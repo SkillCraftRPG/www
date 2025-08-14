@@ -76,18 +76,15 @@ internal class CompileEducationsHandler : ICommandHandler<CompileEducations>
         Notes = payload.Notes?.CleanTrim()
       };
 
-      if (!string.IsNullOrWhiteSpace(payload.Skill))
+      Skill? skill = Find(payload.Skill, skillsById, skillsBySlug);
+      if (skill is null)
       {
-        Skill? skill = Find(payload.Skill, skillsById, skillsBySlug);
-        if (skill is null)
-        {
-          _logger.LogWarning("Skill for education 'Id={Id}, Name={Name}' was not found: {IdOrSlug}", education.Id, education.Name, payload.Skill);
-          continue;
-        }
-        else
-        {
-          education.SkillId = skill.Id;
-        }
+        _logger.LogWarning("Skill for education 'Id={Id}, Name={Name}' was not found: {IdOrSlug}", education.Id, education.Name, payload.Skill);
+        continue;
+      }
+      else
+      {
+        education.SkillId = skill.Id;
       }
 
       educations.Add(education);
