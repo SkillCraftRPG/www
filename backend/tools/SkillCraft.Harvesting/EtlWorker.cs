@@ -13,7 +13,6 @@ internal class EtlWorker : BackgroundService
   private static readonly IReadOnlyDictionary<Guid, EntityKind> _entityKinds = new Dictionary<Guid, EntityKind>
   {
     [Attributes.ContentTypeId] = EntityKind.Attribute,
-    [Castes.ContentTypeId] = EntityKind.Caste,
     [Skills.ContentTypeId] = EntityKind.Skill,
     [Statistics.ContentTypeId] = EntityKind.Statistic
   }.AsReadOnly();
@@ -60,7 +59,6 @@ internal class EtlWorker : BackgroundService
     Language language = languages.Single();
 
     List<Attribute> attributes = [];
-    List<Caste> castes = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
 
@@ -94,10 +92,6 @@ internal class EtlWorker : BackgroundService
           Attribute attribute = Attribute.Extract(content, locale);
           attributes.Add(attribute);
           break;
-        case EntityKind.Caste:
-          Caste caste = Caste.Extract(content, locale);
-          castes.Add(caste);
-          break;
         case EntityKind.Skill:
           Skill skill = Skill.Extract(content, locale);
           skills.Add(skill);
@@ -119,12 +113,6 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Harvested {Count} attributes to file '{Path}'.", attributes.Count, "output/attributes.json");
-    await File.WriteAllTextAsync(
-      "output/castes.json",
-      JsonSerializer.Serialize(castes.OrderBy(x => x.Name), _serializerOptions),
-      _encoding,
-      cancellationToken);
-    _logger.LogInformation("Harvested {Count} castes to file '{Path}'.", castes.Count, "output/castes.json");
     await File.WriteAllTextAsync(
       "output/skills.json",
       JsonSerializer.Serialize(skills.OrderBy(x => x.Name), _serializerOptions),

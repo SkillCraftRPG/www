@@ -26,25 +26,6 @@
     }
   },
   {
-    "Id": "258bd50a-4e94-405a-9fb5-a78014b0e572",
-    "UniqueName": "Skill",
-    "DisplayName": "Compétence",
-    "RelatedContent": {
-      "ContentTypeId": "28a3a292-74f7-4b6e-bea1-1da07356c886",
-      "IsMultiple": false
-    }
-  },
-  {
-    "Id": "9e4fa3f8-fb64-4ccb-935c-d11012926c0f",
-    "UniqueName": "Roll",
-    "DisplayName": "Jet de dés",
-    "String": {
-      "MinimumLength": 3,
-      "MaximumLength": 6,
-      "Pattern": "^([1-9][0-9]?)d([1-9][0-9]{0,2})$"
-    }
-  },
-  {
     "Id": "ebc57597-8008-481d-8207-e445c9e3f36a",
     "UniqueName": "Script",
     "DisplayName": "Alphabet",
