@@ -18,6 +18,7 @@ internal class Startup
 
     services.AddTransient<ICommandBus, CommandBus>();
     services.AddTransient<ICommandHandler<CompileAttributes>, CompileAttributesHandler>();
+    services.AddTransient<ICommandHandler<CompileCastes>, CompileCastesHandler>();
     services.AddTransient<ICommandHandler<CompileCustomizations>, CompileCustomizationsHandler>();
     services.AddTransient<ICommandHandler<CompileEducations>, CompileEducationsHandler>();
     services.AddTransient<ICommandHandler<CompileSkills>, CompileSkillsHandler>();

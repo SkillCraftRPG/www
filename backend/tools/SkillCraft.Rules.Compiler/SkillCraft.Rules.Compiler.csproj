@@ -17,7 +17,9 @@
 
   <ItemGroup>
     <None Remove="data\input\attributes.csv" />
+    <None Remove="data\input\castes.csv" />
     <None Remove="data\input\customizations.csv" />
+    <None Remove="data\input\educations.csv" />
     <None Remove="data\input\skills.csv" />
     <None Remove="data\input\talents.csv" />
   </ItemGroup>
@@ -26,7 +28,13 @@
     <Content Include="data\input\attributes.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="data\input\castes.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="data\input\customizations.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\educations.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\skills.csv">
@@ -56,5 +64,6 @@
     <Using Include="System.Text.Encodings.Web" />
     <Using Include="System.Text.Json" />
     <Using Include="System.Text.Json.Serialization" />
+    <Using Include="System.Text.RegularExpressions" />
   </ItemGroup>
 </Project>

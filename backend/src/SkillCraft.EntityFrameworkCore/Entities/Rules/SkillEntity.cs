@@ -23,8 +23,6 @@ internal class SkillEntity : AggregateEntity
   public int? AttributeId { get; private set; }
   public Guid? AttributeUid { get; set; }
 
-  public List<CasteEntity> Castes { get; private set; } = [];
-
   public SkillEntity(SkillPublished published) : base(published.Event)
   {
     Id = new ContentId(published.Event.StreamId).EntityId;
