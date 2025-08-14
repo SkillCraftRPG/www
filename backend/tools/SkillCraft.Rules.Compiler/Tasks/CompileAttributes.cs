@@ -63,8 +63,8 @@ internal class CompileAttributesHandler : ICommandHandler<CompileAttributes>
         Category = payload.Category,
         Name = payload.Name.Trim(),
         Summary = payload.Summary.Trim(),
-        Description = payload.Description.Trim(),
-        Notes = payload.Notes?.CleanTrim()
+        Description = payload.Description.Trim().Replace("\\n", "\n"),
+        Notes = payload.Notes?.CleanTrim()?.Replace("\\n", "\n")
       };
 
       attributes.Add(attribute);

@@ -14,7 +14,7 @@ internal class Talent
   [JsonPropertyName("name")]
   public string Name { get; set; } = string.Empty;
 
-  [JsonPropertyName("allow_multiple_purchases")]
+  [JsonPropertyName("allowMultiplePurchases")]
   public bool AllowMultiplePurchases { get; set; }
 
   [JsonPropertyName("skillId")]
