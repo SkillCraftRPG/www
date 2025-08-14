@@ -61,9 +61,9 @@ const mode = ref<ListMode>("grid");
 const attributes = computed<Attribute[]>(() => props.items);
 
 function sortSkills(attribute: Attribute): Skill[] {
-  return orderBy(attribute.skills, "name");
+  return orderBy(attribute.skills, "slug");
 }
 function sortStatistics(attribute: Attribute): Statistic[] {
-  return orderBy(attribute.statistics, "name");
+  return orderBy(attribute.statistics, "slug");
 }
 </script>

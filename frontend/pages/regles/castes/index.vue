@@ -14,17 +14,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Caste, SearchResults } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Caste } from "~/types/game";
+import { getCastes } from "~/services/castes";
+
 const title: string = "Castes";
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/castes", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-const castes = computed<Caste[]>(() => (data.value as SearchResults<Caste>)?.items ?? []);
+const castes = ref<Caste[]>(orderBy(getCastes({ skill: true }), "slug"));
 
 useSeo({
   title,

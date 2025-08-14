@@ -14,17 +14,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Education, SearchResults } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Education } from "~/types/game";
+import { getEducations } from "~/services/educations";
+
 const title: string = "Éducations";
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/educations", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-const educations = computed<Education[]>(() => (data.value as SearchResults<Education>)?.items ?? []);
+const educations = ref<Education[]>(orderBy(getEducations({ skill: true }), "slug"));
 
 useSeo({
   title,

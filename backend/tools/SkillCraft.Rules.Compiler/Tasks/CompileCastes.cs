@@ -67,13 +67,13 @@ internal class CompileCastesHandler : ICommandHandler<CompileCastes>
         Name = payload.Name.Trim(),
         WealthRoll = payload.WealthRoll,
         Summary = payload.Summary.Trim(),
-        Description = payload.Description.Trim(),
+        Description = payload.Description.Trim().Replace("\\n", "\n"),
         Feature = new Feature
         {
           Name = payload.FeatureName.Trim(),
-          Description = payload.FeatureDescription.Trim()
+          Description = payload.FeatureDescription.Trim().Replace("\\n", "\n")
         },
-        Notes = payload.Notes?.CleanTrim()
+        Notes = payload.Notes?.CleanTrim()?.Replace("\\n", "\n")
       };
 
       Skill? skill = Find(payload.Skill, skillsById, skillsBySlug);

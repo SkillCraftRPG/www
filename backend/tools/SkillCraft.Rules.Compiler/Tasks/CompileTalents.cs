@@ -68,8 +68,8 @@ internal class CompileTalentsHandler : ICommandHandler<CompileTalents>
         Name = payload.Name.Trim(),
         AllowMultiplePurchases = payload.AllowMultiplePurchases,
         Summary = payload.Summary.Trim(),
-        Description = payload.Description.Trim(),
-        Notes = payload.Notes?.CleanTrim()
+        Description = payload.Description.Trim().Replace("\\n", "\n"),
+        Notes = payload.Notes?.CleanTrim()?.Replace("\\n", "\n")
       };
 
       if (!string.IsNullOrWhiteSpace(payload.Skill))

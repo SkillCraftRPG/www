@@ -20,18 +20,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Customization, SearchResults } from "~/types/game";
+import { arrayUtils } from "logitar-js";
 
-const config = useRuntimeConfig();
+import type { Customization } from "~/types/game";
+import { getCustomizations } from "~/services/customizations";
+
 const title: string = "Dons & Handicaps";
+const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/customizations", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-
-const customizations = computed<Customization[]>(() => (data.value as SearchResults<Customization>)?.items ?? []);
+const customizations = ref<Customization[]>(orderBy(getCustomizations(), "slug"));
 
 useSeo({
   title,

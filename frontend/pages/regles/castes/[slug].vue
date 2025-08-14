@@ -32,18 +32,15 @@
 <script setup lang="ts">
 import { marked } from "marked";
 
-import type { Caste, Skill } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
+import type { Caste, Skill } from "~/types/game";
+import { getCaste } from "~/services/castes";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Castes", to: "/regles/castes" }];
 const route = useRoute();
 
-const { data } = await useFetch(`/api/castes/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const caste = ref<Caste | undefined>(getCaste(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { skill: true }));
 
-const caste = computed<Caste | undefined>(() => data.value as Caste | undefined);
 const average = computed<number | undefined>(() => {
   const wealthRoll = caste.value?.wealthRoll ?? "";
   const parts: string[] = wealthRoll.split("d");
@@ -57,7 +54,6 @@ const average = computed<number | undefined>(() => {
 });
 const feature = computed<string | undefined>(() => (caste.value?.feature?.description ? (marked.parse(caste.value.feature.description) as string) : undefined));
 const html = computed<string | undefined>(() => (caste.value?.description ? (marked.parse(caste.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Castes", to: "/regles/castes" }]);
 const skill = computed<Skill | undefined>(() => caste.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => caste.value?.name);
 

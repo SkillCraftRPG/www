@@ -33,7 +33,10 @@
         <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous. Elle augmente également de +1 le
         <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de cette compétence.
       </p>
-      <p v-else>L’acquisition de ce talent augmente de +1 le rang de la <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous.</p>
+      <p v-else>
+        L’acquisition de ce talent augmente de 1 le <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de la
+        <NuxtLink to="/regles/competences">compétence</NuxtLink> ci-dessous.
+      </p>
       <SkillCard class="mb-4" :skill="skill" />
     </template>
     <!-- TODO(fpion): TalentTree -->
@@ -45,18 +48,16 @@ import { marked } from "marked";
 
 import type { Breadcrumb } from "~/types/components";
 import type { Skill, Talent } from "~/types/game";
+import { getTalent } from "~/services/talents";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Talents", to: "/regles/talents" }];
 const route = useRoute();
 
-const { data } = await useFetch(`/api/talents/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const talent = ref<Talent | undefined>(
+  getTalent(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { requiredTalent: true, skill: true }),
+);
 
-const talent = computed<Talent | undefined>(() => data.value as Talent | undefined);
 const html = computed<string | undefined>(() => (talent.value?.description ? (marked.parse(talent.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Talents", to: "/regles/talents" }]);
 const skill = computed<Skill | undefined>(() => talent.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => talent.value?.name);
 

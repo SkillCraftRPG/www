@@ -32,23 +32,19 @@
 <script setup lang="ts">
 import { marked } from "marked";
 
-import type { Education, Skill } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
+import type { Education, Skill } from "~/types/game";
+import { getEducation } from "~/services/educations";
 
-const config = useRuntimeConfig();
+const parent: Breadcrumb[] = [{ text: "Éducations", to: "/regles/educations" }];
 const route = useRoute();
 
-const { data } = await useFetch(`/api/educations/${route.params.slug}`, {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-});
+const education = ref<Education | undefined>(getEducation(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { skill: true }));
 
-const education = computed<Education | undefined>(() => data.value as Education | undefined);
 const feature = computed<string | undefined>(() =>
   education.value?.feature?.description ? (marked.parse(education.value.feature.description) as string) : undefined,
 );
 const html = computed<string | undefined>(() => (education.value?.description ? (marked.parse(education.value.description) as string) : undefined));
-const parent = computed<Breadcrumb[]>(() => [{ text: "Éducations", to: "/regles/educations" }]);
 const skill = computed<Skill | undefined>(() => education.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => education.value?.name);
 

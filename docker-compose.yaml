@@ -1,57 +1,11 @@
 name: skillcraft
 services:
-  skillcraft_mongo:
-    image: mongo
-    container_name: SkillCraft_mongo
-    restart: unless-stopped
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: skillcraft
-      MONGO_INITDB_ROOT_PASSWORD: VqzNTMrxK2sk4ewF
-    ports:
-      - 27038:27017
-    volumes:
-      - mongodata:/data/db
-
-  skillcraft_postgres:
-    image: postgres
-    container_name: SkillCraft_postgres
-    restart: unless-stopped
-    environment:
-      POSTGRES_PASSWORD: eZjnpK54C8EGfaAF
-    ports:
-      - 1438:5432
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-  skillcraft_backend:
-    build:
-      context: ./backend
-      dockerfile: /src/SkillCraft/Dockerfile
-    image: skillcraft_backend
-    container_name: SkillCraft_backend
-    depends_on:
-      - skillcraft_mongo
-      - skillcraft_postgres
-    restart: unless-stopped
-    environment:
-      ASPNETCORE_Environment: Development
-      MONGOCONNSTR_SkillCraft: mongodb://skillcraft:VqzNTMrxK2sk4ewF@skillcraft_mongo:27017/
-      POSTGRESQLCONNSTR_SkillCraft: User ID=postgres;Password=eZjnpK54C8EGfaAF;Host=skillcraft_postgres;Port=5432;Database=skillcraft;
-    ports:
-      - 8088:8080
-
   skillcraft_frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     image: skillcraft_frontend
     container_name: SkillCraft_frontend
-    depends_on:
-      - skillcraft_backend
     restart: unless-stopped
     ports:
       - 18088:80
-
-volumes:
-  mongodata:
-  postgres_data:

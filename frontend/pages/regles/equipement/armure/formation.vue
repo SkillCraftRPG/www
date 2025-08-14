@@ -7,6 +7,11 @@
     <p>
       Les talents suivants forment le personnage au port des armures d’une certaine <NuxtLink to="/regles/equipement/armure/categorie">catégorie</NuxtLink> :
     </p>
+    <div class="row">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <TalentCard class="d-flex flex-column h-100" :talent="talent" />
+      </div>
+    </div>
     <h2 class="h3">Pénalités</h2>
     <p>Si une créature porte une armure pour laquelle elle n’est pas formée, elle se voit affligée des pénalités suivantes :</p>
     <ul>
@@ -47,23 +52,31 @@
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+
 import type { Breadcrumb } from "~/types/components";
+import type { Talent } from "~/types/game";
+import { getTalents } from "~/services/talents";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armure", to: "/regles/equipement/armure" },
 ];
+const slugs: Set<string> = new Set(["cuirasse", "formation-martiale", "melee", "orientation"]);
 const title: string = "Formation au port d’armure";
+const { orderBy } = arrayUtils;
+
+const talents = computed<Talent[]>(() =>
+  orderBy(
+    getTalents({ requiredTalent: true, skill: true })
+      .filter(({ slug }) => slugs.has(slug))
+      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
 
 useSeo({
   title,
   description: "Découvrez l’importance de la formation au port d’armure et les pénalités encourues sans compétence adéquate.",
 });
-
-/* TODO(fpion): Talents
- * /regles/talents/orientation
- * /regles/talents/melee
- * /regles/talents/formation-martiale
- * /regles/talents/cuirasse
- */
 </script>

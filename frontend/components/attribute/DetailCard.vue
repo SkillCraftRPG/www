@@ -39,6 +39,6 @@ const props = defineProps<{
   attribute: Attribute;
 }>();
 
-const skills = computed<Skill[]>(() => orderBy(props.attribute.skills, "name"));
-const statistics = computed<Statistic[]>(() => orderBy(props.attribute.statistics, "name"));
+const skills = computed<Skill[]>(() => orderBy(props.attribute.skills, "slug"));
+const statistics = computed<Statistic[]>(() => orderBy(props.attribute.statistics, "slug"));
 </script>

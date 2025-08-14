@@ -39,6 +39,11 @@
     </p>
     <p>L’obtention d’une réussite critique ne signifie pas que vous infligez des <strong>points de dégâts</strong> supplémentaires, sauf lorsque indiqué.</p>
     <p>Les talents suivants augmentent vos chances d’obtenir une réussite critique lorsque vous effectuez une attaque :</p>
+    <div class="row">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <TalentCard class="d-flex flex-column h-100" :talent="talent" />
+      </div>
+    </div>
     <h2 class="h3"><font-awesome-icon icon="fas fa-triangle-exclamation" /> Attention</h2>
     <p>Lorsqu’une action est impossible à échouer ou à réussir, aucun <NuxtLink to="/regles/competences/tests">test</NuxtLink> n’est effectué.</p>
     <p>
@@ -49,23 +54,31 @@
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+
 import type { Breadcrumb } from "~/types/components";
+import type { Talent } from "~/types/game";
+import { getTalents } from "~/services/talents";
 
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },
   { text: "Tests", to: "/regles/competences/tests" },
 ];
+const slugs: Set<string> = new Set(["coup-critique", "critique-accru", "critique-superieur", "critique-extraordinaire"]);
 const title: string = "Critique";
+const { orderBy } = arrayUtils;
 
 useSeo({
   title,
   description: "Découvrez les effets et conséquences des réussites critiques et échecs critiques dans le système SkillCraft.",
 });
 
-/* TODO(fpion): Talents
- * /regles/talents/coup-critique
- * /regles/talents/critique-accru
- * /regles/talents/critique-superieur
- * /regles/talents/critique-extraordinaire
- */
+const talents = computed<Talent[]>(() =>
+  orderBy(
+    getTalents({ requiredTalent: true })
+      .filter(({ slug }) => slugs.has(slug))
+      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
 </script>

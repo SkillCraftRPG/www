@@ -62,8 +62,8 @@ internal class CompileCustomizationsHandler : ICommandHandler<CompileCustomizati
         Slug = slug,
         Name = payload.Name.Trim(),
         Summary = payload.Summary.Trim(),
-        Description = payload.Description.Trim(),
-        Notes = payload.Notes?.CleanTrim()
+        Description = payload.Description.Trim().Replace("\\n", "\n"),
+        Notes = payload.Notes?.CleanTrim()?.Replace("\\n", "\n")
       };
 
       customizations.Add(customization);

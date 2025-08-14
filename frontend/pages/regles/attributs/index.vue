@@ -30,48 +30,30 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Attribute, SearchResults } from "~/types/game";
+import type { Attribute } from "~/types/game";
+import { getAttributes } from "~/services/attributes";
 
-type SortableAttribute = Attribute & {
-  order: string;
-};
-
-const config = useRuntimeConfig();
 const title: string = "Attributs";
 const { orderBy } = arrayUtils;
 
-const { data } = await useFetch("/api/attributes", {
-  baseURL: config.public.apiBaseUrl,
-  cache: "no-cache",
-  server: false,
-});
-
-const attributes = computed<SortableAttribute[]>(() => {
-  const results = data.value as SearchResults<Attribute>;
-  if (!results) {
-    return [];
-  }
-  return orderBy(
-    results.items.map((attribute) => {
-      let index: number = 2;
-      switch (attribute.value) {
-        case "Dexterity":
-        case "Vigor":
-          index = 0;
+const attributes = computed<Attribute[]>(() =>
+  orderBy(
+    getAttributes({ statistics: true, skills: true }).map((attribute) => {
+      let sort: string = "2";
+      switch (attribute.category) {
+        case "Physical":
+          sort = "0";
           break;
-        case "Intellect":
-        case "Senses":
-          index = 1;
+        case "Mental":
+          sort = "1";
+          break;
       }
-      return {
-        ...attribute,
-        skills: orderBy(attribute.skills, "name"),
-        order: [index, attribute.name].join("_"),
-      };
+      sort = `${sort}_${attribute.slug}`;
+      return { ...attribute, sort };
     }),
-    "order",
-  );
-});
+    "sort",
+  ),
+);
 
 useSeo({
   title,
