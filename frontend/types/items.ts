@@ -32,10 +32,17 @@ export type SelectionItem = Item & {
 
 export type Shield = Item & {
   category: string;
-  defense: number;
+  defense: ShieldDefense;
   resistance: number;
-  properties: string[];
+  properties: ShieldProperty[];
 };
+
+export type ShieldDefense = {
+  standard: number;
+  raised?: number | null;
+};
+
+export type ShieldProperty = "Bulwark" | "Noisy";
 
 export type Weapon = Item & {
   category: WeaponCategory;

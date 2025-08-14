@@ -21,6 +21,8 @@
     <None Remove="data\input\customizations.csv" />
     <None Remove="data\input\educations.csv" />
     <None Remove="data\input\items\ammunition.csv" />
+    <None Remove="data\input\items\armor.csv" />
+    <None Remove="data\input\items\shields.csv" />
     <None Remove="data\input\items\weapons.csv" />
     <None Remove="data\input\skills.csv" />
     <None Remove="data\input\statistics.csv" />
@@ -41,6 +43,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\items\ammunition.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\items\armor.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\items\shields.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\items\weapons.csv">
