@@ -1,5 +1,6 @@
 ﻿using SkillCraft.Rules.Compiler.Commands;
 using SkillCraft.Rules.Compiler.Tasks;
+using SkillCraft.Rules.Compiler.Tasks.Items;
 
 namespace SkillCraft.Rules.Compiler;
 
@@ -24,5 +25,6 @@ internal class Startup
     services.AddTransient<ICommandHandler<CompileSkills>, CompileSkillsHandler>();
     services.AddTransient<ICommandHandler<CompileStatistics>, CompileStatisticsHandler>();
     services.AddTransient<ICommandHandler<CompileTalents>, CompileTalentsHandler>();
+    services.AddTransient<ICommandHandler<CompileWeapons>, CompileWeaponsHandler>();
   }
 }

@@ -20,6 +20,7 @@
     <None Remove="data\input\castes.csv" />
     <None Remove="data\input\customizations.csv" />
     <None Remove="data\input\educations.csv" />
+    <None Remove="data\input\items\weapons.csv" />
     <None Remove="data\input\skills.csv" />
     <None Remove="data\input\statistics.csv" />
     <None Remove="data\input\talents.csv" />
@@ -36,6 +37,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\educations.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\items\weapons.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\skills.csv">
