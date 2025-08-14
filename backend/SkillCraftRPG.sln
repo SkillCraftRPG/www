@@ -14,21 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Core", "src\SkillCraft.Core\SkillCraft.Core.csproj", "{B1141D44-20EB-4769-AA7E-3F1F5FDEBC02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Infrastructure", "src\SkillCraft.Infrastructure\SkillCraft.Infrastructure.csproj", "{0C2BD8E5-A685-4860-A54D-436C6C77A61C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft", "src\SkillCraft\SkillCraft.csproj", "{F8D6D80D-64A4-44E1-8CC8-77D180F5551C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.EntityFrameworkCore", "src\SkillCraft.EntityFrameworkCore\SkillCraft.EntityFrameworkCore.csproj", "{1DF769BE-8D25-495C-BC32-EC99F182BB37}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.EntityFrameworkCore.PostgreSQL", "src\SkillCraft.EntityFrameworkCore.PostgreSQL\SkillCraft.EntityFrameworkCore.PostgreSQL.csproj", "{E5E73DB0-948F-4FE8-975A-D55AEC095B7F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.MongoDB", "src\SkillCraft.MongoDB\SkillCraft.MongoDB.csproj", "{A618F91F-355A-4A0A-9FEE-13D99AA653D8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Seeding", "tools\SkillCraft.Seeding\SkillCraft.Seeding.csproj", "{71E5F012-5009-4EE6-88F0-193AE2026787}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Harvesting", "tools\SkillCraft.Harvesting\SkillCraft.Harvesting.csproj", "{86E69D44-2B24-42CC-AE1E-9E302B510564}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Rules.Compiler", "tools\SkillCraft.Rules.Compiler\SkillCraft.Rules.Compiler.csproj", "{ECA10CEC-5CA2-4719-8F52-970BA11271E5}"
 EndProject
@@ -42,34 +28,6 @@ Global
 		{B1141D44-20EB-4769-AA7E-3F1F5FDEBC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1141D44-20EB-4769-AA7E-3F1F5FDEBC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1141D44-20EB-4769-AA7E-3F1F5FDEBC02}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C2BD8E5-A685-4860-A54D-436C6C77A61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C2BD8E5-A685-4860-A54D-436C6C77A61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C2BD8E5-A685-4860-A54D-436C6C77A61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C2BD8E5-A685-4860-A54D-436C6C77A61C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8D6D80D-64A4-44E1-8CC8-77D180F5551C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8D6D80D-64A4-44E1-8CC8-77D180F5551C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8D6D80D-64A4-44E1-8CC8-77D180F5551C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8D6D80D-64A4-44E1-8CC8-77D180F5551C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DF769BE-8D25-495C-BC32-EC99F182BB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DF769BE-8D25-495C-BC32-EC99F182BB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DF769BE-8D25-495C-BC32-EC99F182BB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DF769BE-8D25-495C-BC32-EC99F182BB37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5E73DB0-948F-4FE8-975A-D55AEC095B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5E73DB0-948F-4FE8-975A-D55AEC095B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5E73DB0-948F-4FE8-975A-D55AEC095B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5E73DB0-948F-4FE8-975A-D55AEC095B7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A618F91F-355A-4A0A-9FEE-13D99AA653D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A618F91F-355A-4A0A-9FEE-13D99AA653D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A618F91F-355A-4A0A-9FEE-13D99AA653D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A618F91F-355A-4A0A-9FEE-13D99AA653D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71E5F012-5009-4EE6-88F0-193AE2026787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71E5F012-5009-4EE6-88F0-193AE2026787}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71E5F012-5009-4EE6-88F0-193AE2026787}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71E5F012-5009-4EE6-88F0-193AE2026787}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86E69D44-2B24-42CC-AE1E-9E302B510564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86E69D44-2B24-42CC-AE1E-9E302B510564}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86E69D44-2B24-42CC-AE1E-9E302B510564}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86E69D44-2B24-42CC-AE1E-9E302B510564}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,8 +37,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{71E5F012-5009-4EE6-88F0-193AE2026787} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{86E69D44-2B24-42CC-AE1E-9E302B510564} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
