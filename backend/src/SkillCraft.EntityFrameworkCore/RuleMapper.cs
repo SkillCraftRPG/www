@@ -124,23 +124,6 @@ internal class RuleMapper
     return destination;
   }
 
-  public CustomizationModel ToCustomization(CustomizationEntity source)
-  {
-    CustomizationModel destination = new()
-    {
-      Id = source.Id,
-      Slug = source.Slug,
-      Kind = source.Kind,
-      Name = source.Name,
-      Summary = source.Summary,
-      Description = source.Description
-    };
-
-    MapAggregate(source, destination);
-
-    return destination;
-  }
-
   public EducationModel ToEducation(EducationEntity source)
   {
     EducationModel destination = new()

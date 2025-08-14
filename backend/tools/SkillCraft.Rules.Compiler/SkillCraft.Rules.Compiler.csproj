@@ -17,12 +17,16 @@
 
   <ItemGroup>
     <None Remove="data\input\attributes.csv" />
+    <None Remove="data\input\customizations.csv" />
     <None Remove="data\input\skills.csv" />
     <None Remove="data\input\talents.csv" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="data\input\attributes.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\customizations.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\skills.csv">
@@ -38,6 +42,10 @@
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="Logitar" Version="7.1.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SkillCraft.Core\SkillCraft.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
