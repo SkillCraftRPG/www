@@ -7,6 +7,5 @@ public enum EntityKind
   Customization,
   Education,
   Skill,
-  Statistic,
-  Talent
+  Statistic
 }

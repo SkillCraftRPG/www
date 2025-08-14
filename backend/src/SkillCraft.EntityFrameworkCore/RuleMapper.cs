@@ -226,33 +226,6 @@ internal class RuleMapper
     return destination;
   }
 
-  public TalentModel ToTalent(TalentEntity source)
-  {
-    TalentModel destination = new()
-    {
-      Id = source.Id,
-      Slug = source.Slug,
-      Tier = source.Tier,
-      Name = source.Name,
-      Summary = source.Summary,
-      Description = source.Description,
-      AllowMultiplePurchases = source.AllowMultiplePurchases
-    };
-
-    if (source.Skill is not null)
-    {
-      destination.Skill = ToSkill(source.Skill);
-    }
-    if (source.RequiredTalent is not null)
-    {
-      destination.RequiredTalent = ToTalent(source.RequiredTalent);
-    }
-
-    MapAggregate(source, destination);
-
-    return destination;
-  }
-
   private void MapAggregate(AggregateEntity source, AggregateModel destination)
   {
     destination.Version = source.Version;

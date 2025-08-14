@@ -25,7 +25,6 @@ internal class SkillEntity : AggregateEntity
 
   public List<CasteEntity> Castes { get; private set; } = [];
   public List<EducationEntity> Educations { get; private set; } = [];
-  public List<TalentEntity> Talents { get; private set; } = [];
 
   public SkillEntity(SkillPublished published) : base(published.Event)
   {

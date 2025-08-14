@@ -17,8 +17,7 @@ internal class EtlWorker : BackgroundService
     [Customizations.ContentTypeId] = EntityKind.Customization,
     [Educations.ContentTypeId] = EntityKind.Education,
     [Skills.ContentTypeId] = EntityKind.Skill,
-    [Statistics.ContentTypeId] = EntityKind.Statistic,
-    [Talents.ContentTypeId] = EntityKind.Talent
+    [Statistics.ContentTypeId] = EntityKind.Statistic
   }.AsReadOnly();
   private static readonly Encoding _encoding = Encoding.UTF8;
   private static readonly Guid _realmId = Guid.Parse("cdc7f23d-6338-4c5d-81fe-dcc1bbfd8b05");
@@ -68,7 +67,6 @@ internal class EtlWorker : BackgroundService
     List<Education> educations = [];
     List<Skill> skills = [];
     List<Statistic> statistics = [];
-    List<Talent> talents = [];
 
     IReadOnlyCollection<Content> contents = await repository.LoadAsync<Content>(isDeleted: false, cancellationToken);
     _logger.LogInformation("Retrieved {Contents} content(s) from the event store.", contents.Count);
@@ -120,10 +118,6 @@ internal class EtlWorker : BackgroundService
           Statistic statistic = Statistic.Extract(content, locale);
           statistics.Add(statistic);
           break;
-        case EntityKind.Talent:
-          Talent talent = Talent.Extract(content, locale);
-          talents.Add(talent);
-          break;
         default:
           throw new NotSupportedException($"The entity kind '{kind}' is not supported.");
       }
@@ -167,12 +161,6 @@ internal class EtlWorker : BackgroundService
       _encoding,
       cancellationToken);
     _logger.LogInformation("Harvested {Count} statistics to file '{Path}'.", statistics.Count, "output/statistics.json");
-    await File.WriteAllTextAsync(
-      "output/talents.json",
-      JsonSerializer.Serialize(talents.OrderBy(x => x.Name), _serializerOptions),
-      _encoding,
-      cancellationToken);
-    _logger.LogInformation("Harvested {Count} talents to file '{Path}'.", talents.Count, "output/talents.json");
 
     _hostApplicationLifetime.StopApplication();
   }

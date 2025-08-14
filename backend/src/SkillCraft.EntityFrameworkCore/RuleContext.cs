@@ -17,7 +17,6 @@ public sealed class RuleContext : DbContext
   internal DbSet<EducationEntity> Educations => Set<EducationEntity>();
   internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
   internal DbSet<StatisticEntity> Statistics => Set<StatisticEntity>();
-  internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
