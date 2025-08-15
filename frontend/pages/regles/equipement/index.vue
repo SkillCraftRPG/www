@@ -72,12 +72,16 @@ const items: MenuItem[] = [
     title: "Outils et trousses",
     description: "Outils d’artisan, trousses, ensembles à jouer et instruments de musique.",
   },
+  {
+    path: "/regles/equipement/marchandise",
+    title: "Marchandise",
+    description: "Bétail, épices, nourriture, métaux et textiles.",
+  },
 ];
 
 /* TODO(fpion):
  * Défense
  * Résistance
- * Marchandise : Bétail, Épices, Métaux, Nourriture, Repas, Textiles
  * Montures et véhicules : Bêtes, Accessoires, Véhicules, Navires
  * Services : Gîte et couvert, Professionnels, Occultes, Artisans et Marchands, Passage en navire
  */

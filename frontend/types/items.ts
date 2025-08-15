@@ -26,6 +26,12 @@ export type ContainerVolume = {
   unit: string;
 };
 
+export type Goods = Item & {
+  category: GoodsCategory;
+};
+
+export type GoodsCategory = "Cattle" | "Food" | "Metal" | "Spice" | "Textile";
+
 export type Item = {
   id: string;
   slug: string;

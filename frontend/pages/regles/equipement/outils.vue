@@ -6,7 +6,7 @@
     <h2 class="h3">Table des matières</h2>
     <ul>
       <li>
-        <a href="#artisanat-trousses">Outils d'artisanat et trousses</a>
+        <a href="#artisanat-trousses">Outils d’artisanat et trousses</a>
       </li>
       <li>
         <a href="#ensembles-jeu">Ensembles de jeu</a>
@@ -15,7 +15,7 @@
         <a href="#instruments-musique">Instruments de musique</a>
       </li>
     </ul>
-    <h2 id="artisanat-trousses" class="h3">Outils d'artisanat et trousses</h2>
+    <h2 id="artisanat-trousses" class="h3">Outils d’artisanat et trousses</h2>
     <p>🚧</p>
     <ItemList :items="crafting" />
     <h2 id="ensembles-jeu" class="h3">Ensembles de jeu</h2>

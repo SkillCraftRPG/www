@@ -3,6 +3,7 @@ import armorData from "~/assets/data/items/armor.json";
 import clothingData from "~/assets/data/items/clothing.json";
 import containersData from "~/assets/data/items/containers.json";
 import generalData from "~/assets/data/items/general.json";
+import goodsData from "~/assets/data/items/goods.json";
 import shieldsData from "~/assets/data/items/shields.json";
 import toolsData from "~/assets/data/items/tools.json";
 import weaponsData from "~/assets/data/items/weapons.json";
@@ -12,6 +13,8 @@ import type {
   Armor,
   ArmorCategory,
   ArmorProperty,
+  Goods,
+  GoodsCategory,
   Item,
   Shield,
   ShieldProperty,
@@ -44,6 +47,13 @@ export function getContainers(): Item[] {
 
 export function getGeneralItems(): Item[] {
   return generalData;
+}
+
+export function getGoodsItems(): Goods[] {
+  return goodsData.map((goods) => ({
+    ...goods,
+    category: goods.category as GoodsCategory,
+  }));
 }
 
 export function getShields(): Shield[] {
