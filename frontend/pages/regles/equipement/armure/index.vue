@@ -22,12 +22,15 @@
 </template>
 
 <script setup lang="ts">
-import armor from "~/assets/data/items/armor.json";
+import { arrayUtils } from "logitar-js";
+
 import type { Armor } from "~/types/items";
 import type { Breadcrumb } from "~/types/components";
+import { getArmor } from "~/services/items";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Armure";
+const { orderBy } = arrayUtils;
 
 type MenuItem = {
   path: string;
@@ -68,9 +71,30 @@ const items: MenuItem[] = [
   // TODO(fpion): Armures renforcées
 ];
 
-const heavy = computed<Armor[]>(() => armor.filter(({ category }) => category === "Heavy"));
-const light = computed<Armor[]>(() => armor.filter(({ category }) => category === "Light"));
-const medium = computed<Armor[]>(() => armor.filter(({ category }) => category === "Medium"));
+const heavy = computed<Armor[]>(() =>
+  orderBy(
+    getArmor()
+      .filter(({ category }) => category === "Heavy")
+      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    "sort",
+  ),
+);
+const light = computed<Armor[]>(() =>
+  orderBy(
+    getArmor()
+      .filter(({ category }) => category === "Light")
+      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    "sort",
+  ),
+);
+const medium = computed<Armor[]>(() =>
+  orderBy(
+    getArmor()
+      .filter(({ category }) => category === "Medium")
+      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    "sort",
+  ),
+);
 
 function scrollToTop(): void {
   window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);

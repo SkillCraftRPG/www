@@ -6,11 +6,15 @@ export type Ammunition = Item & {
 };
 
 export type Armor = Item & {
-  category: string;
+  category: ArmorCategory;
   defense: number;
   resistance: number;
-  properties: string[];
+  properties: ArmorProperty[];
 };
+
+export type ArmorCategory = "Light" | "Medium" | "Heavy";
+
+export type ArmorProperty = "Bulwark" | "Comfortable" | "Firm" | "Hybrid" | "Noisy" | "Quilted";
 
 export type Container = Item & {
   volume?: string;

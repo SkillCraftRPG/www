@@ -1,10 +1,9 @@
 ﻿using CsvHelper.Configuration.Attributes;
-using SkillCraft.Core;
 using SkillCraft.Core.Items;
 
 namespace SkillCraft.Rules.Compiler.Models.Items;
 
-internal class WeaponPayload
+internal class ArmorPayload
 {
   [Index(0)]
   [Name("id")]
@@ -12,7 +11,7 @@ internal class WeaponPayload
 
   [Index(1)]
   [Name("category")]
-  public WeaponCategory Category { get; set; }
+  public ArmorCategory Category { get; set; }
 
   [Index(2)]
   [Name("slug")]
@@ -31,46 +30,22 @@ internal class WeaponPayload
   public decimal Weight { get; set; }
 
   [Index(6)]
-  [Name("damage_roll")]
-  public string? DamageRoll { get; set; }
+  [Name("defense")]
+  public int Defense { get; set; }
 
   [Index(7)]
-  [Name("damage_type")]
-  public DamageType? DamageType { get; set; }
+  [Name("resistance")]
+  public int Resistance { get; set; }
 
   [Index(8)]
-  [Name("ammunition_standard")]
-  public int? AmmunitionStandard { get; set; }
-
-  [Index(9)]
-  [Name("ammunition_long")]
-  public int? AmmunitionLong { get; set; }
-
-  [Index(10)]
-  [Name("special")]
-  public string? Special { get; set; }
-
-  [Index(11)]
-  [Name("thrown_standard")]
-  public int? ThrownStandard { get; set; }
-
-  [Index(12)]
-  [Name("thrown_long")]
-  public int? ThrownLong { get; set; }
-
-  [Index(13)]
-  [Name("versatile")]
-  public string? Versatile { get; set; }
-
-  [Index(14)]
   [Name("properties")]
   public string? Properties { get; set; }
 
-  [Index(15)]
+  [Index(9)]
   [Name("description")]
   public string Description { get; set; } = string.Empty;
 
-  public override bool Equals(object? obj) => obj is WeaponPayload weapon && weapon.Id == Id;
+  public override bool Equals(object? obj) => obj is ArmorPayload armor && armor.Id == Id;
   public override int GetHashCode() => Id.GetHashCode();
   public override string ToString() => $"{Name} | {GetType()} (Id={Id})";
 }

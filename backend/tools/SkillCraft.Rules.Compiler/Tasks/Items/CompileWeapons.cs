@@ -4,7 +4,7 @@ using Logitar;
 using SkillCraft.Core.Items;
 using SkillCraft.Rules.Compiler.Commands;
 using SkillCraft.Rules.Compiler.Models.Items;
-using SkillCraft.Rules.Compiler.Validators;
+using SkillCraft.Rules.Compiler.Validators.Items;
 
 namespace SkillCraft.Rules.Compiler.Tasks.Items;
 

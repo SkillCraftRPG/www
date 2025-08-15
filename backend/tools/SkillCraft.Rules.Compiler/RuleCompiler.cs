@@ -43,6 +43,7 @@ public class RuleCompiler : BackgroundService
       await ExecuteAsync(new CompileEducations(), cancellationToken);
       await ExecuteAsync(new CompileTalents(), cancellationToken);
 
+      await ExecuteAsync(new CompileArmors(), cancellationToken);
       await ExecuteAsync(new CompileWeapons(), cancellationToken);
     }
     catch (Exception exception)

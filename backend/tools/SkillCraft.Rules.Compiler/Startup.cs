@@ -18,6 +18,7 @@ internal class Startup
     services.AddHostedService<RuleCompiler>();
 
     services.AddTransient<ICommandBus, CommandBus>();
+    services.AddTransient<ICommandHandler<CompileArmors>, CompileArmorsHandler>();
     services.AddTransient<ICommandHandler<CompileAttributes>, CompileAttributesHandler>();
     services.AddTransient<ICommandHandler<CompileCastes>, CompileCastesHandler>();
     services.AddTransient<ICommandHandler<CompileCustomizations>, CompileCustomizationsHandler>();
