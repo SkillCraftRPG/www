@@ -21,7 +21,7 @@
             <template v-if="shield.defense.raised"> ou {{ $n(shield.defense.raised, "defense") }} (levé) </template>
           </td>
           <td>{{ $n(shield.resistance, "resistance") }}</td>
-          <td>{{ formatProperties(shield) }}</td>
+          <td v-html="formatProperties(shield)"></td>
         </tr>
       </tbody>
     </table>
@@ -54,7 +54,7 @@ function formatProperties(shield: Shield): string {
     }
   });
   if (!properties.length) {
-    return "—";
+    return `<span class="text-muted">—</span>`;
   }
   return properties.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)).join(", ");
 }

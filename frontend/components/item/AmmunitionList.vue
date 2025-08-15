@@ -29,7 +29,10 @@
           <td>{{ item.container.name }}</td>
           <td>{{ $n(item.container.price, "price") }}</td>
           <td>{{ $n(item.container.weight, "weight") }}</td>
-          <td>{{ $n(item.container.capacity, "capacity") }}</td>
+          <td>
+            <template v-if="item.container.capacity">{{ $n(item.container.capacity, "capacity") }}</template>
+            <span v-else class="text-muted">{{ "—" }}</span>
+          </td>
         </tr>
       </tbody>
     </table>

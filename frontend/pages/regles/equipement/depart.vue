@@ -99,13 +99,11 @@
 <script setup lang="ts">
 import { arrayUtils, parsingUtils } from "logitar-js";
 
-import clothing from "~/assets/data/items/clothing.json";
-import containers from "~/assets/data/items/containers.json";
-import general from "~/assets/data/items/general.json";
 import selections from "~/assets/data/items/selections.json";
 import tools from "~/assets/data/items/tools.json";
 import type { Breadcrumb } from "~/types/components";
 import type { Item, SelectionItem } from "~/types/items";
+import { getClothingItems, getContainers, getGeneralItems } from "~/services/items";
 
 type CustomSelection = {
   key: string;
@@ -122,9 +120,9 @@ const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }]
 const title: string = "Équipement de départ";
 
 const items = ref<Map<string, Item>>(new Map());
-clothing.forEach((clothes) => items.value.set(clothes.id, clothes));
-containers.forEach((container) => items.value.set(container.id, container));
-general.forEach((item) => items.value.set(item.id, item));
+getClothingItems().forEach((clothes) => items.value.set(clothes.slug, clothes));
+getContainers().forEach((container) => items.value.set(container.slug, container));
+getGeneralItems().forEach((item) => items.value.set(item.slug, item));
 tools.forEach((tool) => items.value.set(tool.id, tool));
 
 const baseSelection = ref<SelectionItem[]>([]);
@@ -134,15 +132,15 @@ const baseTotal = computed<number>(() => baseSelection.value.reduce((sum, { quan
 
 function toSelectionItem(value: string): SelectionItem {
   const parts: string[] = value.split(":");
-  const id: string = parts[0];
-  const item: Item | undefined = items.value.get(id.toLowerCase());
+  const slug: string = parts[0];
+  const item: Item | undefined = items.value.get(slug.toLowerCase());
   if (!item) {
-    throw new Error(`The item "${id}" was not found.`);
+    throw new Error(`The item "${slug}" was not found.`);
   }
 
   const quantity: number = (parts.length > 0 ? parseNumber(parts[1]) : undefined) ?? 1;
   if (quantity < 1) {
-    throw new Error(`The item "${id}" quantity must be greater than 0.`);
+    throw new Error(`The item "${slug}" quantity must be greater than 0.`);
   }
 
   return { ...item, quantity };

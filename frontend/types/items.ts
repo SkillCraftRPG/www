@@ -17,8 +17,13 @@ export type ArmorCategory = "Light" | "Medium" | "Heavy";
 export type ArmorProperty = "Bulwark" | "Comfortable" | "Firm" | "Hybrid" | "Noisy" | "Quilted";
 
 export type Container = Item & {
-  volume?: string;
-  capacity: number;
+  volume?: ContainerVolume;
+  capacity?: number | null;
+};
+
+export type ContainerVolume = {
+  value: number;
+  unit: string;
 };
 
 export type Item = {

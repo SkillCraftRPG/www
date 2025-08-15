@@ -18,7 +18,7 @@
           <td>{{ $n(armor.weight, "weight") }}</td>
           <td>{{ $n(armor.defense, "defense") }}</td>
           <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ formatProperties(armor) }}</td>
+          <td v-html="formatProperties(armor)"></td>
         </tr>
       </tbody>
     </table>
@@ -63,7 +63,7 @@ function formatProperties(armor: Armor): string {
     }
   });
   if (!properties.length) {
-    return "—";
+    return `<span class="text-muted">—</span>`;
   }
   return properties.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)).join(", ");
 }

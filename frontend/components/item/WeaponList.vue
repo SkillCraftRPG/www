@@ -17,8 +17,8 @@
           <td>{{ $n(weapon.price, "price") }}</td>
           <td>{{ $n(weapon.weight, "weight") }}</td>
           <td>{{ formatAttack(weapon) }}</td>
-          <td>{{ formatDamage(weapon) }}</td>
-          <td>{{ formatProperties(weapon) }}</td>
+          <td v-html="formatDamage(weapon)"></td>
+          <td v-html="formatProperties(weapon)"></td>
         </tr>
       </tbody>
     </table>
@@ -72,7 +72,7 @@ function formatDamage(weapon: Weapon): string {
       return [weapon.damage.roll, type].join(" ").toLowerCase();
     }
   }
-  return "—";
+  return `<span class="text-muted">—</span>`;
 }
 
 function formatProperties(weapon: Weapon): string {
@@ -115,7 +115,7 @@ function formatProperties(weapon: Weapon): string {
     properties.push(`Versatile (${weapon.damage.versatile})`);
   }
   if (!properties.length) {
-    return "—";
+    return `<span class="text-muted">—</span>`;
   }
   return properties.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)).join(", ");
 }
