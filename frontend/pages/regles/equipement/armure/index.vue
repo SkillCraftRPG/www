@@ -71,27 +71,23 @@ const items: MenuItem[] = [
   // TODO(fpion): Armures renforcées
 ];
 
+const armor = ref<Armor[]>(getArmor());
+
 const heavy = computed<Armor[]>(() =>
   orderBy(
-    getArmor()
-      .filter(({ category }) => category === "Heavy")
-      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    armor.value.filter(({ category }) => category === "Heavy").map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
     "sort",
   ),
 );
 const light = computed<Armor[]>(() =>
   orderBy(
-    getArmor()
-      .filter(({ category }) => category === "Light")
-      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    armor.value.filter(({ category }) => category === "Light").map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
     "sort",
   ),
 );
 const medium = computed<Armor[]>(() =>
   orderBy(
-    getArmor()
-      .filter(({ category }) => category === "Medium")
-      .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
+    armor.value.filter(({ category }) => category === "Medium").map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
     "sort",
   ),
 );

@@ -100,10 +100,9 @@
 import { arrayUtils, parsingUtils } from "logitar-js";
 
 import selections from "~/assets/data/items/selections.json";
-import tools from "~/assets/data/items/tools.json";
 import type { Breadcrumb } from "~/types/components";
 import type { Item, SelectionItem } from "~/types/items";
-import { getClothingItems, getContainers, getGeneralItems } from "~/services/items";
+import { getClothingItems, getContainers, getGeneralItems, getTools } from "~/services/items";
 
 type CustomSelection = {
   key: string;
@@ -123,7 +122,7 @@ const items = ref<Map<string, Item>>(new Map());
 getClothingItems().forEach((clothes) => items.value.set(clothes.slug, clothes));
 getContainers().forEach((container) => items.value.set(container.slug, container));
 getGeneralItems().forEach((item) => items.value.set(item.slug, item));
-tools.forEach((tool) => items.value.set(tool.id, tool));
+getTools().forEach((tool) => items.value.set(tool.slug, tool));
 
 const baseSelection = ref<SelectionItem[]>([]);
 const customSelections = ref<CustomSelection[]>([]);

@@ -2,10 +2,10 @@
   <table class="table table-striped text-center">
     <thead>
       <tr>
-        <th scope="col" class="w-15">Nom</th>
+        <th scope="col" class="w-20">Nom</th>
         <th scope="col" class="w-10">Prix (deniers)</th>
         <th scope="col" class="w-10">Poids (kg)</th>
-        <th scope="col" class="w-65">Description</th>
+        <th scope="col" class="w-60">Description</th>
       </tr>
     </thead>
     <tbody>

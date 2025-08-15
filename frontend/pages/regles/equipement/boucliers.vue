@@ -142,15 +142,18 @@ const slugsFormation: Set<string> = new Set(["melee", "formation-martiale", "cui
 const title: string = "Boucliers";
 const { orderBy } = arrayUtils;
 
+const shields = ref<Shield[]>(getShields());
+const talents = ref<Talent[]>(getTalents({ requiredTalent: true, skill: true }));
+
 const heavy = computed<Shield[]>(() =>
   orderBy(
-    getShields().filter(({ category }) => category === "Heavy"),
+    shields.value.filter(({ category }) => category === "Heavy"),
     "slug",
   ),
 );
 const light = computed<Shield[]>(() =>
   orderBy(
-    getShields().filter(({ category }) => category === "Light"),
+    shields.value.filter(({ category }) => category === "Light"),
     "slug",
   ),
 );
@@ -163,17 +166,13 @@ const medium = computed<Shield[]>(() =>
 
 const talentsCapacity = computed<Talent[]>(() =>
   orderBy(
-    getTalents({ requiredTalent: true, skill: true })
-      .filter(({ slug }) => slugsCapacity.has(slug))
-      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    talents.value.filter(({ slug }) => slugsCapacity.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   ),
 );
 const talentsFormation = computed<Talent[]>(() =>
   orderBy(
-    getTalents({ requiredTalent: true, skill: true })
-      .filter(({ slug }) => slugsFormation.has(slug))
-      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    talents.value.filter(({ slug }) => slugsFormation.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   ),
 );

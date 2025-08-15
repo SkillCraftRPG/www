@@ -73,15 +73,17 @@ const items: MenuItem[] = [
 ];
 
 const ammunition = ref<Ammunition[]>(orderBy(getAmmunition(), "slug"));
+const weapons = ref<Weapon[]>(getWeapons());
+
 const simple = ref<Weapon[]>(
   orderBy(
-    getWeapons().filter(({ category }) => category === "Simple"),
+    weapons.value.filter(({ category }) => category === "Simple"),
     "slug",
   ),
 );
 const martial = ref<Weapon[]>(
   orderBy(
-    getWeapons().filter(({ category }) => category === "Martial"),
+    weapons.value.filter(({ category }) => category === "Martial"),
     "slug",
   ),
 );

@@ -4,9 +4,23 @@ import clothingData from "~/assets/data/items/clothing.json";
 import containersData from "~/assets/data/items/containers.json";
 import generalData from "~/assets/data/items/general.json";
 import shieldsData from "~/assets/data/items/shields.json";
+import toolsData from "~/assets/data/items/tools.json";
 import weaponsData from "~/assets/data/items/weapons.json";
 import type { DamageType } from "~/types/game";
-import type { Ammunition, Armor, ArmorCategory, ArmorProperty, Item, Shield, ShieldProperty, Weapon, WeaponCategory, WeaponProperty } from "~/types/items";
+import type {
+  Ammunition,
+  Armor,
+  ArmorCategory,
+  ArmorProperty,
+  Item,
+  Shield,
+  ShieldProperty,
+  Tool,
+  ToolCategory,
+  Weapon,
+  WeaponCategory,
+  WeaponProperty,
+} from "~/types/items";
 
 export function getAmmunition(): Ammunition[] {
   return ammunitionData;
@@ -36,6 +50,13 @@ export function getShields(): Shield[] {
   return shieldsData.map((shield) => ({
     ...shield,
     properties: shield.properties as ShieldProperty[],
+  }));
+}
+
+export function getTools(): Tool[] {
+  return toolsData.map((tool) => ({
+    ...tool,
+    category: tool.category as ToolCategory,
   }));
 }
 

@@ -53,6 +53,12 @@ export type ShieldDefense = {
 
 export type ShieldProperty = "Bulwark" | "Noisy";
 
+export type Tool = Item & {
+  category: ToolCategory;
+};
+
+export type ToolCategory = "Crafting" | "PlayingSet" | "MusicalInstrument";
+
 export type Weapon = Item & {
   category: WeaponCategory;
   damage?: WeaponDamage | null;
