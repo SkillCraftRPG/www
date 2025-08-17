@@ -77,12 +77,16 @@ const items: MenuItem[] = [
     title: "Marchandise",
     description: "Bétail, épices, nourriture, métaux et textiles.",
   },
+  {
+    path: "/regles/equipement/montures-vehicules",
+    title: "Montures et véhicules",
+    description: "Bêtes, accessoires, véhicules terrestres et navires.",
+  },
 ];
 
 /* TODO(fpion):
  * Défense
  * Résistance
- * Montures et véhicules : Bêtes, Accessoires, Véhicules, Navires
  * Services : Gîte et couvert, Professionnels, Occultes, Artisans et Marchands, Passage en navire
  */
 

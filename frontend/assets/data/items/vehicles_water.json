@@ -1,0 +1,134 @@
+[
+  {
+    "id": "36e91d81-c8a0-402c-9ae0-fb7c159ff3f5",
+    "slug": "canot",
+    "name": "Canot",
+    "price": 50,
+    "speed": 1.333,
+    "maintenance": {
+      "yearly": 3.5,
+      "monthly": 0.5,
+      "weekly": 0.1,
+      "daily": 0.02
+    },
+    "isHalfDay": true,
+    "distance": 40,
+    "cost": {
+      "operating": 0.5,
+      "minimum": 0.05
+    },
+    "passengers": 2,
+    "crew": "Il ne nécessite généralement pas d’équipage puisque les rameurs sont bien souvent ses passagers. On peut compter une rémunération de 0,4 denier par jour pour une paire de rameurs.",
+    "description": "Le canot est une petite embarcation nautique munie d’une ou deux paires de rames. Sa vitesse moyenne varie entre 3 et 4 nœuds. Certains canots plus dispendieux, fabriqués sur le long réduisant ainsi le nombre de personnes pouvant s’y asseoir, peut atteindre le double de cette vitesse."
+  },
+  {
+    "id": "168c8fe0-73e1-48f8-afdb-803a8d5bbdf6",
+    "slug": "drakkar",
+    "name": "Drakkar",
+    "price": 10000,
+    "speed": 3,
+    "maintenance": {
+      "yearly": 665,
+      "monthly": 100,
+      "weekly": 23,
+      "daily": 3.3
+    },
+    "isHalfDay": false,
+    "distance": 180,
+    "cost": {
+      "operating": 25,
+      "minimum": 0.5
+    },
+    "passengers": 20,
+    "crew": "Il ne nécessite généralement pas d’équipage puisque les rameurs sont bien souvent ses passagers, soit des guerriers. Néanmoins, on peut compter un équipage d’un capitaine et entre 40 et 80 rameurs, selon la longueur du navire. La rémunération de l’équipage varie donc entre 10 deniers par jour pour les navires les plus court et 20 deniers par jour pour les navires les plus longs.",
+    "description": "Le drakkar est un long navire originaire des pays du Nord. Il possède un mât, et est propulsé une voile et plusieurs paires de rameurs. Sa vitesse moyenne varie entre 5 et 10 nœuds, mais il peut atteindre dans les conditions idéales une vitesse de pointe de 15 nœuds."
+  },
+  {
+    "id": "07ccec3e-ef44-4718-97d1-a26f13b6e306",
+    "slug": "galere",
+    "name": "Galère",
+    "price": 30000,
+    "speed": 1.333,
+    "maintenance": {
+      "yearly": 2000,
+      "monthly": 300,
+      "weekly": 70,
+      "daily": 10
+    },
+    "isHalfDay": false,
+    "distance": 90,
+    "cost": {
+      "operating": 50,
+      "minimum": 1
+    },
+    "passengers": 40,
+    "crew": "Cet navire a besoin d’un grand équipage se composant d’un capitaine, un second et troisième (sous-capitaines), 4 spécialistes (intendant, cuisinier, charpentier et voilier) et une centaine de rameurs. La rémunération de l’équipage est d’environ 30 deniers par jour.",
+    "description": "La galère est un gros navire utilisé pour la guerre, le commerce et la piraterie. Bien qu’il soit muni d’un ou de deux mâts, il est principalement propulsé par des rameurs. Vu sa taille, il nécessite un équipage important. Sa vitesse moyenne varie entre de 3 et 4 nœuds. En formation, sa vitesse est d’environ 2 nœuds. Les rameurs sont capables de travailler en courtes rafales pour atteindre une vitesse de pointe de 7 nœuds."
+  },
+  {
+    "id": "821b017e-5472-4d29-aafa-21c7ffd2af10",
+    "slug": "navire-de-guerre",
+    "name": "Navire de guerre",
+    "price": 25000,
+    "speed": 0.833,
+    "maintenance": {
+      "yearly": 2000,
+      "monthly": 300,
+      "weekly": 70,
+      "daily": 10
+    },
+    "isHalfDay": false,
+    "distance": 52,
+    "cost": {
+      "operating": 50,
+      "minimum": 1
+    },
+    "passengers": 60,
+    "crew": "Cet navire a besoin d’un grand équipage se composant d’un capitaine un second et troisième (sous-capitaines) 4 spécialistes (intendant cuisinier charpentier et voilier) et une centaine de rameurs. La rémunération de l’équipage est d’environ 30 deniers par jour.",
+    "description": "Ce navire est conçu spécialement pour la guerre. Il excelle dans l’offense et sa coque est renforcée. Sa vitesse moyenne est légèrement supérieure à 2 nœuds. Il n’est pas conçu pour le confort mais il peut transporter une troupe en plus de l’important équipage requis afin de le manœuvrer."
+  },
+  {
+    "id": "f1035ca8-bbfb-4ed8-8587-505180a74bdb",
+    "slug": "quillard",
+    "name": "Quillard",
+    "price": 3000,
+    "speed": 1.333,
+    "maintenance": {
+      "yearly": 200,
+      "monthly": 30,
+      "weekly": 7,
+      "daily": 1
+    },
+    "isHalfDay": true,
+    "distance": 40,
+    "cost": {
+      "operating": 5,
+      "minimum": 0.1
+    },
+    "passengers": 5,
+    "crew": "L’équipage se compose d’un capitaine et d’une paire de rameurs. La rémunération de l’équipage est de 1,5 deniers par jour.",
+    "description": "Le quillard est un navire de taille moyenne peu profond. Il est conçu pour les eaux peu profondes, comme les rivières et les lacs. Il peut être doté d’un mât et d’une voile, mais il est généralement opéré par des rameurs et au moyen de poteaux enfoncés dans les fonds marins. Sa vitesse moyenne varie entre 2 et 5 nœuds et peut atteindre dans les conditions idéales une vitesse de pointe de 15 nœuds."
+  },
+  {
+    "id": "c06d3c5b-c1cf-4f11-82b4-41f03685a993",
+    "slug": "voilier",
+    "name": "Voilier",
+    "price": 10000,
+    "speed": 2,
+    "maintenance": {
+      "yearly": 665,
+      "monthly": 100,
+      "weekly": 23,
+      "daily": 3.3
+    },
+    "isHalfDay": false,
+    "distance": 120,
+    "cost": {
+      "operating": 25,
+      "minimum": 0.5
+    },
+    "passengers": 25,
+    "crew": "L’équipage se compose d’un capitaine, un second et troisième (sous-capitaines), 4 spécialistes (intendant, cuisinier, charpentier et voilier) et 8 marins. La rémunération de l’équipage est de 15 deniers par jour.",
+    "description": "Le voilier est un navire de taille moyenne doté de 2 mâts ou plus (généralement 3), sur lesquels sont attachés plusieurs voiles. Il excelle dans le transport de la marchandise et de personnes en nécessitant un équipage minimal, puisqu’il est entièrement propulsé par ses voiles. Sa vitesse moyenne varie entre 4 et 6 nœuds et peut atteindre dans les conditions idéales une vitesse de pointe de 12 nœuds."
+  }
+]

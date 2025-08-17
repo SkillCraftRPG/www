@@ -17,9 +17,9 @@
     <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col" class="w-33">Catégorie</th>
-          <th scope="col" class="w-33">Enfiler</th>
-          <th scope="col" class="w-33">Retirer</th>
+          <th scope="col" class="w-third">Catégorie</th>
+          <th scope="col" class="w-third">Enfiler</th>
+          <th scope="col" class="w-third">Retirer</th>
         </tr>
       </thead>
       <tbody>

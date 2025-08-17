@@ -110,6 +110,8 @@ export type SearchResults<T> = {
   total: number;
 };
 
+export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan" | "Colossal";
+
 export type Skill = {
   id: string;
   slug: string;

@@ -11,6 +11,11 @@ export default defineI18nConfig(() => ({
         minimumFractionDigits: 0,
         maximumFractionDigits: 1,
       },
+      decimal: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 3,
+      },
       defense: {
         style: "decimal",
         minimumFractionDigits: 0,
@@ -30,6 +35,11 @@ export default defineI18nConfig(() => ({
         style: "decimal",
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
+      },
+      ship_speed: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 3,
       },
       volume: {
         style: "decimal",

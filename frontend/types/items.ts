@@ -1,4 +1,4 @@
-import type { DamageType } from "./game";
+import type { DamageType, SizeCategory } from "./game";
 
 export type Ammunition = Item & {
   weapons: string;
@@ -41,6 +41,23 @@ export type Item = {
   description: string;
 };
 
+export type Mount = {
+  id: string;
+  slug: string;
+  name: string;
+  price: number;
+  vigor: number;
+  size: SizeCategory;
+  capacity: number;
+  speed: number;
+  description: string;
+};
+
+export type MountAccessory = Item & {
+  isPriceMultiplier: boolean;
+  isWeightMultiplier: boolean;
+};
+
 export type SelectionItem = Item & {
   quantity: number;
 };
@@ -58,6 +75,33 @@ export type ShieldDefense = {
 };
 
 export type ShieldProperty = "Bulwark" | "Noisy";
+
+export type Ship = {
+  id: string;
+  slug: string;
+  name: string;
+  price: number;
+  speed: number;
+  maintenance: ShipMaintenance;
+  isHalfDay: boolean;
+  distance: number;
+  cost: ShipPassageCost;
+  passengers: number;
+  crew: string;
+  description: string;
+};
+
+export type ShipMaintenance = {
+  yearly: number;
+  monthly: number;
+  weekly: number;
+  daily: number;
+};
+
+export type ShipPassageCost = {
+  operating: number;
+  minimum: number;
+};
 
 export type Tool = Item & {
   category: ToolCategory;
