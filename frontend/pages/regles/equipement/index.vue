@@ -82,12 +82,16 @@ const items: MenuItem[] = [
     title: "Montures et véhicules",
     description: "Bêtes, accessoires, véhicules terrestres et navires.",
   },
+  {
+    path: "/regles/equipement/services",
+    title: "Services",
+    description: "Gîte et couvert, occultes, artisans et marchands, passage en navire.",
+  },
 ];
 
 /* TODO(fpion):
  * Défense
  * Résistance
- * Services : Gîte et couvert, Professionnels, Occultes, Artisans et Marchands, Passage en navire
  */
 
 useSeo({

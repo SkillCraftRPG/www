@@ -1,5 +1,25 @@
 import type { DamageType, SizeCategory } from "./game";
 
+export type Accommodation = {
+  id: string;
+  name: string;
+  bed: AccommodationDetail;
+  board: AccommodationDetail;
+};
+
+export type AccommodationDetail = {
+  price: number;
+  description: string;
+};
+
+export type Alcohol = {
+  id: string;
+  name: string;
+  price: number;
+  quantity: Volume;
+  description: string;
+};
+
 export type Ammunition = Item & {
   weapons: string;
   container: Container;
@@ -17,13 +37,8 @@ export type ArmorCategory = "Light" | "Medium" | "Heavy";
 export type ArmorProperty = "Bulwark" | "Comfortable" | "Firm" | "Hybrid" | "Noisy" | "Quilted";
 
 export type Container = Item & {
-  volume?: ContainerVolume;
+  volume?: Volume;
   capacity?: number | null;
-};
-
-export type ContainerVolume = {
-  value: number;
-  unit: string;
 };
 
 export type Goods = Item & {
@@ -60,6 +75,11 @@ export type MountAccessory = Item & {
 
 export type SelectionItem = Item & {
   quantity: number;
+};
+
+export type Services = {
+  accommodation: Accommodation[];
+  alcohol: Alcohol[];
 };
 
 export type Shield = Item & {
@@ -108,6 +128,11 @@ export type Tool = Item & {
 };
 
 export type ToolCategory = "Crafting" | "PlayingSet" | "MusicalInstrument";
+
+export type Volume = {
+  value: number;
+  unit: string;
+};
 
 export type Weapon = Item & {
   category: WeaponCategory;
