@@ -62,7 +62,7 @@ internal class CompileMountsHandler : ICommandHandler<CompileMounts>
         Price = payload.Price,
         Vigor = payload.Vigor,
         Size = payload.Size,
-        Capacity = payload.Capacity,
+        Load = payload.Load,
         Speed = payload.Speed,
         Description = payload.Description.Trim().Replace("\\n", "\n")
       };

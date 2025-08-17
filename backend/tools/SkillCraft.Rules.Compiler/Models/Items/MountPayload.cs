@@ -30,8 +30,8 @@ internal class MountPayload
   public SizeCategory Size { get; set; }
 
   [Index(6)]
-  [Name("capacity")]
-  public int Capacity { get; set; }
+  [Name("load")]
+  public int? Load { get; set; }
 
   [Index(7)]
   [Name("speed")]

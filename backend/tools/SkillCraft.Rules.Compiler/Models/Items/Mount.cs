@@ -22,8 +22,8 @@ internal class Mount
   [JsonPropertyName("size")]
   public SizeCategory Size { get; set; }
 
-  [JsonPropertyName("capacity")]
-  public int Capacity { get; set; }
+  [JsonPropertyName("load")]
+  public int? Load { get; set; }
 
   [JsonPropertyName("speed")]
   public decimal Speed { get; set; }
