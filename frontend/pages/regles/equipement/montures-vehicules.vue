@@ -7,31 +7,34 @@
     <ul>
       <li>
         <a href="#betes">Bêtes</a>
-      </li>
-      <li>
-        <a href="#accessoires">Accessoires</a>
+        <ul>
+          <li>
+            <a href="#accessoires">Accessoires</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#vehicules">Véhicules</a>
       </li>
       <li>
         <a href="#navires">Navires</a>
+        <ul>
+          <li>
+            <a href="#equipage">Équipage</a>
+          </li>
+          <li>
+            <a href="#maintenance">Maintenance</a>
+          </li>
+        </ul>
       </li>
     </ul>
     <h2 id="betes" class="h3">Bêtes</h2>
-    <p class="text-danger">
-      La capacité d’une bête, en kilogrammes, est le multiple de son score de Vigueur par 5. Si sa taille est de catégorie supérieure à Moyenne, cette capacité
-      est également multipliée par un facteur (typiquement, ×2 pour Grande et ×4 pour Énorme). Une bête est assujettie aux mêmes règles d’encombrement que les
-      personnages.
-    </p>
-    <p class="text-danger">
-      La vitesse d’une bête est exprimée en lieues, soit la distance parcourue par un humain moyen en une heure pendant une durée continue et portant son
-      équipement. Cette distance est égale à 4,8 kilomètres. À l’exception de l’éléphant, l’utilisation d’une monture n’accélère pas la cadence de voyage sur
-      une journée complète. Le cheval de course et le cheval de guerre font aussi exception à cette règle puisqu’ils peuvent parcourir 9 lieues en 8 heures
-      lorsque nécessaire.
+    <p>
+      Les bêtes sont dotées d’une <NuxtLink to="/regles/statistiques/charge">Charge</NuxtLink>, comme toute créature. Elles sont assujetties aux mêmes règles
+      d’<NuxtLink to="/regles/equipement/encombrement">encombrement</NuxtLink> que toute autre créature.
     </p>
     <ItemMountList :items="mounts" />
-    <h2 id="accessoires" class="h3">Accessoires</h2>
+    <h3 id="accessoires" class="h5">Accessoires</h3>
     <p>🚧</p>
     <ItemMountAccessoryList :items="mountAccessories" />
     <h2 id="vehicules" class="h3">Véhicules</h2>

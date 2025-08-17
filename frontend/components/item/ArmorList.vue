@@ -39,32 +39,12 @@ defineProps<{
 }>();
 
 function formatProperties(armor: Armor): string {
-  const properties: string[] = [];
-  armor.properties.forEach((property) => {
-    switch (property) {
-      case "Bulwark":
-        properties.push("Rempart");
-        break;
-      case "Comfortable":
-        properties.push("Confortable");
-        break;
-      case "Firm":
-        properties.push("Ferme");
-        break;
-      case "Hybrid":
-        properties.push("Hybride");
-        break;
-      case "Noisy":
-        properties.push("Bruyante");
-        break;
-      case "Quilted":
-        properties.push("Matelassée");
-        break;
-    }
-  });
-  if (!properties.length) {
+  if (!armor.properties.length) {
     return `<span class="text-muted">—</span>`;
   }
-  return properties.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)).join(", ");
+  return armor.properties
+    .map((property) => $t(`armor.property.options.${property}`))
+    .sort((a, b) => (a > b ? 1 : a < b ? -1 : 0))
+    .join(", ");
 }
 </script>

@@ -42,20 +42,12 @@ defineProps<{
 }>();
 
 function formatProperties(shield: Shield): string {
-  const properties: string[] = [];
-  shield.properties.forEach((property) => {
-    switch (property) {
-      case "Bulwark":
-        properties.push("Rempart");
-        break;
-      case "Noisy":
-        properties.push("Bruyant");
-        break;
-    }
-  });
-  if (!properties.length) {
+  if (!shield.properties.length) {
     return `<span class="text-muted">—</span>`;
   }
-  return properties.sort((a, b) => (a > b ? 1 : a < b ? -1 : 0)).join(", ");
+  return shield.properties
+    .map((property) => $t(`armor.property.options.${property}`))
+    .sort((a, b) => (a > b ? 1 : a < b ? -1 : 0))
+    .join(", ");
 }
 </script>

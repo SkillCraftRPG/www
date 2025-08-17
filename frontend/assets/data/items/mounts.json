@@ -6,7 +6,7 @@
     "price": 8,
     "vigor": 2,
     "size": "Medium",
-    "capacity": 140,
+    "load": 140,
     "speed": 1,
     "description": "Mammifère à longueur oreilles et à l’échine saillante utilisé comme bête de somme."
   },
@@ -17,7 +17,7 @@
     "price": 50,
     "vigor": 3,
     "size": "Large",
-    "capacity": 160,
+    "load": null,
     "speed": 1,
     "description": "Monture et bête de somme dans les régions arides et désertiques."
   },
@@ -28,7 +28,7 @@
     "price": 75,
     "vigor": 3,
     "size": "Large",
-    "capacity": 160,
+    "load": null,
     "speed": 1,
     "description": "Plus dispendieux que le cheval de trait, ce type de cheval est plutôt adapté au voyage. Sa réaction première face au danger est la fuite, emportant avec lui son cavalier. Une fois par jour, il peut parcourir 2 lieues en une heure en alternant les allures (marche, trot, petit galop et galop), ce qui permet de réduire la distance de voyages ou d’esquiver certaines escarmouches."
   },
@@ -39,7 +39,7 @@
     "price": 400,
     "vigor": 4,
     "size": "Large",
-    "capacity": 180,
+    "load": null,
     "speed": 1,
     "description": "Le plus dispendieux des types de chevaux, ce cheval est néanmoins la meilleure option au combat. Sa réaction première face au danger est de rester en position. Tout comme le cheval de trait, il peut parcourir une plus grande distance une fois par jour. Il peut également charger et est formé au port de la barde, un ensemble de pièces d’armure désignées pour les chevaux."
   },
@@ -50,7 +50,7 @@
     "price": 50,
     "vigor": 4,
     "size": "Large",
-    "capacity": 180,
+    "load": null,
     "speed": 1,
     "description": "Le type de cheval le moins dispendieux. On l’utilise principalement pour le travail agricole et pour tirer des véhicules terrestres. Face au danger, il n’est pas d’une grande aide, sa réaction première étant de figer."
   },
@@ -61,7 +61,7 @@
     "price": 200,
     "vigor": 6,
     "size": "Huge",
-    "capacity": 440,
+    "load": null,
     "speed": 1.5,
     "description": "Un énorme mammifère exotique, originaire de contrées lointaines. Il est utilisé à la guerre pour sa taille intimidante."
   },
@@ -72,7 +72,7 @@
     "price": 25,
     "vigor": 1,
     "size": "Medium",
-    "capacity": 65,
+    "load": null,
     "speed": 1,
     "description": "Un loyal compagnon prisé pour ses sens aiguisés et sa polyvalence. Il peut être entraîné comme gardien, combattant et chasseur."
   },
@@ -83,7 +83,7 @@
     "price": 30,
     "vigor": 2,
     "size": "Medium",
-    "capacity": 75,
+    "load": null,
     "speed": 1,
     "description": "Un cheval de petite taille, adapté pour un cavalier de petite taille ou pour tirer un petit véhicule."
   }

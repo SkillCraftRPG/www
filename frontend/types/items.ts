@@ -48,7 +48,7 @@ export type Mount = {
   price: number;
   vigor: number;
   size: SizeCategory;
-  capacity: number;
+  load?: number | null;
   speed: number;
   description: string;
 };

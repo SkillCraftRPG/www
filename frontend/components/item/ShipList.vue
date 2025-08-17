@@ -12,7 +12,7 @@
       <tr v-for="item in items" :key="item.id">
         <td>{{ item.name }}</td>
         <td>{{ $n(item.price, "price") }}</td>
-        <td>{{ $n(item.speed, "ship_speed") }}</td>
+        <td>{{ $n(item.speed, "league") }}</td>
         <td>{{ item.description }}</td>
       </tr>
     </tbody>

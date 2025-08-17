@@ -17,7 +17,10 @@
           <td>{{ $n(weapon.price, "price") }}</td>
           <td>{{ $n(weapon.weight, "weight") }}</td>
           <td>{{ formatAttack(weapon) }}</td>
-          <td v-html="formatDamage(weapon)"></td>
+          <td>
+            <template v-if="weapon.damage">{{ formatDamage(weapon.damage) }}</template>
+            <span v-else class="text-muted">{{ "—" }}</span>
+          </td>
           <td v-html="formatProperties(weapon)"></td>
         </tr>
       </tbody>
@@ -28,7 +31,7 @@
         <strong>{{ weapon.name }}.</strong> {{ weapon.description }}
         <ul v-if="weapon.special">
           <li>
-            <strong><font-awesome-icon icon="fas fa-flag" /> Spéciale.</strong> {{ weapon.special }}
+            <strong><font-awesome-icon icon="fas fa-flag" /> {{ $t("weapon.property.options.Special") }}.</strong> {{ weapon.special }}
           </li>
         </ul>
       </li>
@@ -39,9 +42,9 @@
 <script setup lang="ts">
 import { stringUtils } from "logitar-js";
 
-import type { Weapon } from "~/types/items";
+import type { Weapon, WeaponDamage } from "~/types/items";
 
-const { isNullOrWhiteSpace, unaccent } = stringUtils;
+const { isNullOrWhiteSpace } = stringUtils;
 
 defineProps<{
   items: Weapon[];
@@ -49,70 +52,36 @@ defineProps<{
 
 function formatAttack(weapon: Weapon): string {
   let attack: number = 2;
-  const properties: string[] = weapon.properties.map((property) => unaccent(property.trim().toLowerCase()));
-  if (properties.includes("legere")) {
+  if (weapon.properties.includes("Light")) {
     attack = 1;
   } else if (!isNullOrWhiteSpace(weapon.damage?.versatile ?? "")) {
     attack = 3;
-  } else if (properties.includes("deux mains")) {
+  } else if (weapon.properties.includes("TwoHanded")) {
     attack = 4;
   }
   return $n(attack, "attack");
 }
 
-const damageTypes: Map<string, string> = new Map([
-  ["Bludgeoning", "Contondant"],
-  ["Piercing", "Perçant"],
-  ["Slashing", "Tranchant"],
-]);
-function formatDamage(weapon: Weapon): string {
-  if (weapon.damage) {
-    const type: string | undefined = damageTypes.get(weapon.damage.type);
-    if (type) {
-      return [weapon.damage.roll, type].join(" ").toLowerCase();
-    }
-  }
-  return `<span class="text-muted">—</span>`;
+function formatDamage(damage: WeaponDamage): string {
+  return [damage.roll, $t(`damage.type.options.${damage.type}`)].join(" ").toLowerCase();
 }
 
 function formatProperties(weapon: Weapon): string {
-  const properties: string[] = [];
-  weapon.properties.forEach((property) => {
-    switch (property) {
-      case "Finesse":
-        properties.push("Finesse");
-        break;
-      case "Heavy":
-        properties.push("Lourde");
-        break;
-      case "Light":
-        properties.push("Légère");
-        break;
-      case "Loading":
-        properties.push("Chargement");
-        break;
-      case "Reach":
-        properties.push("Allonge");
-        break;
-      case "TwoHanded":
-        properties.push("Deux mains");
-        break;
-    }
-  });
+  const properties: string[] = weapon.properties.map((property) => $t(`weapon.property.options.${property}`));
   if (weapon.ammunition) {
-    properties.push(`Munition (${weapon.ammunition.standard}/${weapon.ammunition.long})`);
+    properties.push([$t("weapon.property.options.Ammunition"), `(${weapon.ammunition.standard}/${weapon.ammunition.long})`].join(" "));
   }
   if (weapon.reload && weapon.reload > 1) {
-    properties.push(`Barillet (${weapon.reload})`);
+    properties.push([$t("weapon.property.options.Reload"), `(${weapon.reload})`].join(" "));
   }
   if (weapon.special) {
-    properties.push("Spéciale");
+    properties.push($t("weapon.property.options.Special"));
   }
   if (weapon.thrown) {
-    properties.push(`Jet (${weapon.thrown.standard}/${weapon.thrown.long})`);
+    properties.push([$t("weapon.property.options.Thrown"), `(${weapon.thrown.standard}/${weapon.thrown.long})`].join(" "));
   }
   if (weapon.damage?.versatile) {
-    properties.push(`Versatile (${weapon.damage.versatile})`);
+    properties.push([$t("weapon.property.options.Versatile"), `(${weapon.damage.versatile})`].join(" "));
   }
   if (!properties.length) {
     return `<span class="text-muted">—</span>`;

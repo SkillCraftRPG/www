@@ -7,8 +7,8 @@
           <th scope="col" class="w-sixth">Prix (deniers)</th>
           <th scope="col" class="w-sixth">Vigueur</th>
           <th scope="col" class="w-sixth">Taille</th>
-          <th scope="col" class="w-sixth">Capacité (kg)</th>
-          <th scope="col" class="w-sixth">Vitesse</th>
+          <th scope="col" class="w-sixth">Charge (kg)</th>
+          <th scope="col" class="w-sixth">Vitesse (lieues)</th>
         </tr>
       </thead>
       <tbody>
@@ -16,13 +16,13 @@
           <td>{{ item.name }}</td>
           <td>{{ $n(item.price, "price") }}</td>
           <td>{{ $n(item.vigor, "integer") }}</td>
-          <td>{{ formatSize(item) }}</td>
-          <td>{{ $n(item.capacity, "integer") }}</td>
-          <td>×{{ $n(item.speed, "decimal") }}</td>
+          <td>{{ $t(`size.category.options.${item.size}`) }}</td>
+          <td>{{ $n(calculateLoad(item), "integer") }}</td>
+          <td>{{ $n(item.speed, "league") }}</td>
         </tr>
       </tbody>
     </table>
-    <h3 class="h5">Descriptions</h3>
+    <h4 class="h6">Descriptions</h4>
     <ul>
       <li v-for="item in items" :key="item.id">
         <strong>{{ item.name }}.</strong> {{ item.description }}
@@ -38,7 +38,10 @@ defineProps<{
   items: Mount[];
 }>();
 
-function formatSize(mount: Mount): string {
-  return mount.size; // TODO(fpion): implement
+function calculateLoad(mount: Mount): number {
+  if (typeof mount.load === "number") {
+    return mount.load;
+  }
+  return (5 + mount.vigor) * 10 * getLoadMultiplier(mount.size);
 }
 </script>
