@@ -1,11 +1,11 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Enfiler ou retirer" :parent="parent" />
     <p>Enfiler ou retirer une pièce d’armure nécessite un certain temps en fonction de la catégorie de celle-ci.</p>
     <p>
       Pour enfiler toute son armure, le temps nécessaire est la somme du temps pour chaque
-      <NuxtLink to="/regles/equipement/armure/partielle">pièce d’armure</NuxtLink>.
+      <NuxtLink to="/regles/equipement/armures/partielles">pièce d’armure</NuxtLink>.
     </p>
     <p>
       C’est pourquoi certains aventuriers choisissent de dormir en armure, nuisant ainsi à leur <strong>sommeil</strong>, mais ils sont alors prêts à toute
@@ -45,7 +45,7 @@ import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
-  { text: "Armure", to: "/regles/equipement/armure" },
+  { text: "Armures", to: "/regles/equipement/armures" },
 ];
 const title: string = "Enfiler ou retirer son armure";
 

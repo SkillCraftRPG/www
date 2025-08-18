@@ -50,7 +50,7 @@
     <p>
       Utilisez les tables dans les autres sections afin d’acheter à votre personnage <NuxtLink to="/regles/equipement/general/vetements">vêtements</NuxtLink>,
       <NuxtLink to="/regles/equipement/general/contenants">contenants</NuxtLink>, <NuxtLink to="/regles/equipement/armes">armes</NuxtLink>,
-      <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>, <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink>,
+      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>, <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink>,
       <NuxtLink to="/regles/equipement/outils">outils et ensembles</NuxtLink> et <NuxtLink to="/regles/equipement/general">articles divers</NuxtLink>.
     </p>
     <p>
@@ -74,8 +74,8 @@
         des armes à distance.
       </li>
       <li>
-        Si votre personnage est <NuxtLink to="/regles/equipement/armure/formation">formé au port d’amure</NuxtLink>, achetez une
-        <NuxtLink to="/regles/equipement/armure">armure</NuxtLink>.
+        Si votre personnage est <NuxtLink to="/regles/equipement/armures/formation">formé au port d’amure</NuxtLink>, achetez une
+        <NuxtLink to="/regles/equipement/armures">armure</NuxtLink>.
       </li>
       <li>
         Si votre personnage est formé à l’utilisation du <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> et qu’il désire combattre avec un

@@ -9,8 +9,8 @@
     </p>
     <p>Une créature peut bénéficier de plusieurs boucliers à la fois, mais elle ne peut lever qu’un seul bouclier à la fois.</p>
     <p>
-      Les boucliers partagent les mêmes catégories et <NuxtLink to="/regles/equipement/armure/proprietes">propriétés</NuxtLink> que les
-      <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>.
+      Les boucliers partagent les mêmes catégories et <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink> que les
+      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>.
     </p>
     <h2 class="h3">Table des matières</h2>
     <ul>
@@ -64,7 +64,7 @@
     <h3 id="formation" class="h5">Formation</h3>
     <p>
       Un personnage est formé au port des boucliers de la même manière qu’il est
-      <NuxtLink to="/regles/equipement/armure/formation">formé au port des armures</NuxtLink>.
+      <NuxtLink to="/regles/equipement/armures/formation">formé au port des armures</NuxtLink>.
     </p>
     <p>Lorsqu’un personnage porte un bouclier pour lequel il n’est pas formé, il subit les pénalités suivantes :</p>
     <ul>

@@ -53,8 +53,8 @@ const items: MenuItem[] = [
     description: "Objets offensifs ou défensif utilisés par les personnages et créatures.",
   },
   {
-    path: "/regles/equipement/armure",
-    title: "Armure",
+    path: "/regles/equipement/armures",
+    title: "Armures",
     description: "Protection portée par les aventuriers et hommes d’armes.",
   },
   {

@@ -22,7 +22,7 @@
 import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
-const title: string = "Armure";
+const title: string = "Armures";
 
 type MenuItem = {
   path: string;
@@ -31,27 +31,27 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/equipement/armure/formation",
+    path: "/regles/equipement/armures/formation",
     title: "Formation",
     description: "La formation nécessaire pour porter une armure et les pénalités sans.",
   },
   {
-    path: "/regles/equipement/armure/proprietes",
+    path: "/regles/equipement/armures/proprietes",
     title: "Propriétés",
     description: "Propriétés des armures et effets sur le porteur.",
   },
   {
-    path: "/regles/equipement/armure/enfiler-retirer",
+    path: "/regles/equipement/armures/enfiler-retirer",
     title: "Enfiler ou retirer son armure",
     description: "Temps pour enfiler ou retirer une armure selon sa catégorie.",
   },
   {
-    path: "/regles/equipement/armure/partielle",
-    title: "Armure partielle",
+    path: "/regles/equipement/armures/partielles",
+    title: "Armures partielles",
     description: "Assembler, combiner et calculer la Défense des armures partielles.",
   },
   {
-    path: "/regles/equipement/armure/multiple",
+    path: "/regles/equipement/armures/multiples",
     title: "Armures multiples",
     description: "Porter deux couches d’armure et combiner leurs effets.",
   },
@@ -59,17 +59,17 @@ const items: MenuItem[] = [
 ];
 const list: MenuItem[] = [
   {
-    path: "/regles/equipement/armure/legeres",
+    path: "/regles/equipement/armures/legeres",
     title: "Armures légères",
     description: "Des protections minces au poids léger qui ne restreignent pratiquement pas.",
   },
   {
-    path: "/regles/equipement/armure/moyennes",
+    path: "/regles/equipement/armures/moyennes",
     title: "Armures moyennes",
     description: "Ces armures offrent le meilleur compromis entre protection et mobilité.",
   },
   {
-    path: "/regles/equipement/armure/lourdes",
+    path: "/regles/equipement/armures/lourdes",
     title: "Armures lourdes",
     description: "Ces armures offrent une protection maximale, au prix d’un poids élevé ou d’une mobilité réduite.",
   },

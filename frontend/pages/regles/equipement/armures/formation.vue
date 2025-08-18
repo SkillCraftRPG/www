@@ -58,7 +58,7 @@ import { getTalents } from "~/services/talents";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
-  { text: "Armure", to: "/regles/equipement/armure" },
+  { text: "Armures", to: "/regles/equipement/armures" },
 ];
 const slugs: Set<string> = new Set(["cuirasse", "formation-martiale", "melee", "orientation"]);
 const title: string = "Formation au port d’armure";

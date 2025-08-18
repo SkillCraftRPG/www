@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Légères" :parent="parent" />
     <p>🚧</p>
     <!--
       TODO(fpion): liens vers les sections utiles
@@ -23,15 +23,15 @@ import { getArmor } from "~/services/items";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
-  { text: "Armure", to: "/regles/equipement/armure" },
+  { text: "Armures", to: "/regles/equipement/armures" },
 ];
-const title: string = "Armures moyennes";
+const title: string = "Armures légères";
 const { orderBy } = arrayUtils;
 
 const armor = computed<Armor[]>(() =>
   orderBy(
     getArmor()
-      .filter(({ category }) => category === "Medium")
+      .filter(({ category }) => category === "Light")
       .map((armor) => ({ ...armor, sort: [armor.defense, armor.slug].join("_") })),
     "sort",
   ),

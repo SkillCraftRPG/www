@@ -32,13 +32,13 @@
         <strong>Rempart.</strong> Lorsque le personnage doit effectuer un
         <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>,
         il peut remplacer son <NuxtLink to="/regles/competences/rang">rang de compétence</NuxtLink> par la valeur de <strong>Défense</strong> de l’équipement.
-        S’il porte <NuxtLink to="/regles/equipement/armure/multiple">deux couches d’armure</NuxtLink> ou un
+        S’il porte <NuxtLink to="/regles/equipement/armures/multiples">deux couches d’armure</NuxtLink> ou un
         <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> conférant cette propriété, alors les valeurs indiquées sont cumulées.
       </li>
     </ul>
     <p>
       Afin de bénéficier des propriétés <strong>Ferme</strong>, <strong>Hybride</strong> et <strong>Matelassée</strong>, le personnage doit porter une
-      <NuxtLink to="/regles/equipement/armure/partielle">pièce d’armure</NuxtLink> conférant cette propriété sur chaque membre de son corps (tête, torse, deux
+      <NuxtLink to="/regles/equipement/armures/partielles">pièce d’armure</NuxtLink> conférant cette propriété sur chaque membre de son corps (tête, torse, deux
       bras ainsi que deux jambes). Ces pièces peuvent appartenir à un type ou à une catégorie d’armure différente.
     </p>
   </main>
@@ -49,7 +49,7 @@ import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
-  { text: "Armure", to: "/regles/equipement/armure" },
+  { text: "Armures", to: "/regles/equipement/armures" },
 ];
 const title: string = "Propriétés des armures";
 

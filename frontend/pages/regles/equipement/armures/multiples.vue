@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Multiples" :parent="parent" />
     <p>Un personnage possédant la formation appropriée peut porter deux armures simultanément.</p>
     <p>Il est impossible de porter deux couches d’armure appartenant à la même catégorie.</p>
     <p>
@@ -9,8 +9,8 @@
       <strong>points de Défense</strong>.
     </p>
     <p>
-      S’il porte deux armures <NuxtLink to="/regles/equipement/armure/partielle">complètes</NuxtLink>, alors il bénéficie des
-      <NuxtLink to="/regles/equipement/armure/proprietes">propriétés</NuxtLink> combinées des deux armures.
+      S’il porte deux armures <NuxtLink to="/regles/equipement/armures/partielles">complètes</NuxtLink>, alors il bénéficie des
+      <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink> combinées des deux armures.
     </p>
     <template v-if="talent">
       <p>Le talent suivant forme le personnage au port de deux couches d’armure :</p>
@@ -21,7 +21,7 @@
     <ul>
       <li>
         Un personnage porte deux couches d’armure sans être formé. Il est donc affligé des pénalités
-        <NuxtLink to="/regles/equipement/armure/formation">sans formation</NuxtLink>, même s’il est formé pour chaque armure individuellement.
+        <NuxtLink to="/regles/equipement/armures/formation">sans formation</NuxtLink>, même s’il est formé pour chaque armure individuellement.
       </li>
       <li>Un personnage ne peut porter un plastron sous une peau d’animal, car ces deux armes appartiennent à la même catégorie.</li>
       <li>
@@ -46,7 +46,7 @@ import { getTalent } from "~/services/talents";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
-  { text: "Armure", to: "/regles/equipement/armure" },
+  { text: "Armures", to: "/regles/equipement/armures" },
 ];
 const title: string = "Armures multiples";
 
