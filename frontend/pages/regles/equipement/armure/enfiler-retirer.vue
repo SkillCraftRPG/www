@@ -2,10 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>
-      Enfiler ou retirer une pièce d’armure nécessite un certain temps en fonction de la
-      <NuxtLink to="/regles/equipement/armure/categorie">catégorie</NuxtLink> de celle-ci.
-    </p>
+    <p>Enfiler ou retirer une pièce d’armure nécessite un certain temps en fonction de la catégorie de celle-ci.</p>
     <p>
       Pour enfiler toute son armure, le temps nécessaire est la somme du temps pour chaque
       <NuxtLink to="/regles/equipement/armure/partielle">pièce d’armure</NuxtLink>.

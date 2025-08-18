@@ -25,7 +25,7 @@
         </tr>
       </tbody>
     </table>
-    <h4 class="h6">Descriptions</h4>
+    <h2 class="h3">Descriptions</h2>
     <ul>
       <li v-for="weapon in items" :key="weapon.id">
         <strong>{{ weapon.name }}.</strong> {{ weapon.description }}

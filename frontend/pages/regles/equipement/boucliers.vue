@@ -3,11 +3,14 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Un bouclier est une protection tenue par une ou plusieurs mains.</p>
-    <p>De manière générale, il doit être dégainé de la même manière qu’une <strong>arme</strong>, et il peut être jeté au sol en action libre.</p>
+    <p>
+      De manière générale, il doit être dégainé de la même manière qu’une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink>, et il peut être jeté au sol
+      en action libre.
+    </p>
     <p>Une créature peut bénéficier de plusieurs boucliers à la fois, mais elle ne peut lever qu’un seul bouclier à la fois.</p>
     <p>
-      Les boucliers partagent les mêmes <NuxtLink to="/regles/equipement/armure/categorie">catégories</NuxtLink> et
-      <NuxtLink to="/regles/equipement/armure/proprietes">propriétés</NuxtLink> que les <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>.
+      Les boucliers partagent les mêmes catégories et <NuxtLink to="/regles/equipement/armure/proprietes">propriétés</NuxtLink> que les
+      <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>.
     </p>
     <h2 class="h3">Table des matières</h2>
     <ul>

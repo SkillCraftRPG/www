@@ -48,9 +48,10 @@
       n’en possède.
     </p>
     <p>
-      Utilisez les tables dans les autres sections afin d’acheter à votre personnage <strong>vêtements</strong>, <strong>contenants</strong>,
-      <strong>armes</strong>, <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>, <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink>,
-      <strong>outils et ensembles</strong> et <strong>articles divers</strong>.
+      Utilisez les tables dans les autres sections afin d’acheter à votre personnage <NuxtLink to="/regles/equipement/general/vetements">vêtements</NuxtLink>,
+      <NuxtLink to="/regles/equipement/general/contenants">contenants</NuxtLink>, <NuxtLink to="/regles/equipement/armes">armes</NuxtLink>,
+      <NuxtLink to="/regles/equipement/armure">armures</NuxtLink>, <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink>,
+      <NuxtLink to="/regles/equipement/outils">outils et ensembles</NuxtLink> et <NuxtLink to="/regles/equipement/general">articles divers</NuxtLink>.
     </p>
     <p>
       <font-awesome-icon icon="fas fa-lightbulb" /> Surveillez le poids de l’équipement que vous achetez. Assurez-vous de ne pas
@@ -65,10 +66,12 @@
       <li>Débutez avec la <a href="#selection-base">sélection de base</a>.</li>
       <li>Ajoutez ensuite une <a href="#selections-personnalisees">sélection personnalisée</a> en fonction de l’historique de votre personnage.</li>
       <li>
-        Si votre personnage est formé au maniement d’armes, achetez une ou plusieurs <strong>armes</strong>.
+        Si votre personnage est <NuxtLink to="/regles/equipement/armes/formation">formé au maniement d’armes</NuxtLink>, achetez une ou plusieurs
+        <NuxtLink to="/regles/equipement/armes">armes</NuxtLink>.
         <br />
-        <font-awesome-icon icon="fas fa-triangle-exclamation" /> Si vous achetez des armes à distance, n’oubliez pas les munitions et les étuis à munitions.
-        Ceux-ci ne sont pas inclus dans le prix et poids des armes à distance.
+        <font-awesome-icon icon="fas fa-triangle-exclamation" /> Si vous achetez des armes à distance, n’oubliez pas
+        <NuxtLink to="/regles/equipement/armes/munitions">les munitions et les étuis à munitions</NuxtLink>. Ceux-ci ne sont pas inclus dans le prix et poids
+        des armes à distance.
       </li>
       <li>
         Si votre personnage est <NuxtLink to="/regles/equipement/armure/formation">formé au port d’amure</NuxtLink>, achetez une

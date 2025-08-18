@@ -13,9 +13,7 @@
       Les armures achetées chez un marchand aux prix indiqués sont généralement vendues complètes. Les pièces d’armure peuvent faire partie d’un butin ou être
       la récompense d’une quête. Un personnage peut également assembler une armure un morceau à la fois.
     </p>
-    <p>
-      Il également possible de porter des morceaux de différents types et <NuxtLink to="/regles/equipement/armure/categorie">catégories</NuxtLink> d’armure.
-    </p>
+    <p>Il également possible de porter des morceaux de différents types et catégories d’armure.</p>
     <p>Lorsqu’une armure partielle est portée, elle offre moins de <strong>Défense</strong> qu’une armure complète.</p>
     <p>On calcule ce nombre de points de Défense par une règle de trois, en additionnant les types d’armures, puis on tronque le résultat final.</p>
     <h2 class="h3">Exemples</h2>

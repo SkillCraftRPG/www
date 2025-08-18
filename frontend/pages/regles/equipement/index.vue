@@ -65,7 +65,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/general",
     title: "Équipement général",
-    description: "Articles généraux, conteneurs et vêtements.",
+    description: "Articles généraux, contenants et vêtements.",
   },
   {
     path: "/regles/equipement/outils",

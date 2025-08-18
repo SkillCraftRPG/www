@@ -39,8 +39,7 @@
     <p>
       Afin de bénéficier des propriétés <strong>Ferme</strong>, <strong>Hybride</strong> et <strong>Matelassée</strong>, le personnage doit porter une
       <NuxtLink to="/regles/equipement/armure/partielle">pièce d’armure</NuxtLink> conférant cette propriété sur chaque membre de son corps (tête, torse, deux
-      bras ainsi que deux jambes). Ces pièces peuvent appartenir à un type ou à une
-      <NuxtLink to="/regles/equipement/armure/categorie">catégorie d’armure</NuxtLink> différente.
+      bras ainsi que deux jambes). Ces pièces peuvent appartenir à un type ou à une catégorie d’armure différente.
     </p>
   </main>
 </template>
