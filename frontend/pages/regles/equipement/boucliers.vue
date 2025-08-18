@@ -177,11 +177,6 @@ const talentsFormation = computed<Talent[]>(() =>
   ),
 );
 
-function scrollToTop(): void {
-  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-}
-
 useSeo({
   title,
   description: "Découvrez les catégories, propriétés, talents et particularités des boucliers, ainsi que leur prix, poids, défense et résistances.",

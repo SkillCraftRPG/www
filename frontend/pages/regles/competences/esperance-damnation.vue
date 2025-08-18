@@ -174,11 +174,6 @@ import type { Breadcrumb } from "~/types/components";
 const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
 const title: string = "Espérance et Damnation";
 
-function scrollToTop(): void {
-  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-}
-
 useSeo({
   title,
   description: "Découvrez comment l’Espérance et la Damnation influencent l’histoire, avec leurs règles d’acquisition, de dépense et la réserve de momentum.",

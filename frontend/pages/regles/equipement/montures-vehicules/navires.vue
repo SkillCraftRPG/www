@@ -2,45 +2,6 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
-    <h2 class="h3">Table des matières</h2>
-    <ul>
-      <li>
-        <a href="#betes">Bêtes</a>
-        <ul>
-          <li>
-            <a href="#accessoires">Accessoires</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#vehicules">Véhicules</a>
-      </li>
-      <li>
-        <a href="#navires">Navires</a>
-        <ul>
-          <li>
-            <a href="#equipage">Équipage</a>
-          </li>
-          <li>
-            <a href="#maintenance">Maintenance</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <h2 id="betes" class="h3">Bêtes</h2>
-    <p>
-      Les bêtes sont dotées d’une <NuxtLink to="/regles/statistiques/charge">Charge</NuxtLink>, comme toute créature. Elles sont assujetties aux mêmes règles
-      d’<NuxtLink to="/regles/equipement/encombrement">encombrement</NuxtLink> que toute autre créature.
-    </p>
-    <ItemMountList :items="mounts" />
-    <h3 id="accessoires" class="h5">Accessoires</h3>
-    <p>🚧</p>
-    <ItemMountAccessoryList :items="mountAccessories" />
-    <h2 id="vehicules" class="h3">Véhicules</h2>
-    <p>🚧</p>
-    <ItemList :items="vehicles" />
-    <h2 id="navires" class="h3">Navires</h2>
     <p>Le nœud est l’unité de mesure de la vitesse des navires maritimes. Il correspond à un mille nautique par heure, soit 1 852 mètres.</p>
     <p>
       Pour un navire, les conditions idéales sont un plein vent dans les voiles et un fort courant dans la même direction que le navire. Ces conditions idéales
@@ -84,22 +45,17 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/components";
-import type { Item, Mount, MountAccessory, Ship } from "~/types/items";
-import { getMountAccessories, getMounts, getShips, getVehicles } from "~/services/items";
+import type { Ship } from "~/types/items";
+import { getShips } from "~/services/items";
 
-const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
-const title: string = "Montures et véhicules";
+const parent: Breadcrumb[] = [
+  { text: "Équipement", to: "/regles/equipement" },
+  { text: "Montures et véhicules", to: "/regles/equipement/montures-vehicules" },
+];
+const title: string = "Navires";
 const { orderBy } = arrayUtils;
 
-const mountAccessories = ref<MountAccessory[]>(orderBy(getMountAccessories(), "slug"));
-const mounts = ref<Mount[]>(orderBy(getMounts(), "slug"));
 const ships = ref<Ship[]>(orderBy(getShips(), "slug"));
-const vehicles = ref<Item[]>(orderBy(getVehicles(), "slug"));
-
-function scrollToTop(): void {
-  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-}
 
 useSeo({
   title,

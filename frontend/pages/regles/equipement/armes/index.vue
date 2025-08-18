@@ -88,11 +88,6 @@ const martial = ref<Weapon[]>(
   ),
 );
 
-function scrollToTop(): void {
-  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-}
-
 useSeo({
   title,
   description: "Découvrez le fonctionnement des armes, qui permettent aux aventuriers de se défendre et à leurs adversaires de les assaillir.",
