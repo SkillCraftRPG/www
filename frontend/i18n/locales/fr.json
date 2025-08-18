@@ -1,0 +1,54 @@
+{
+  "armor": {
+    "property": {
+      "options": {
+        "Bulwark": "Rempart",
+        "Comfortable": "Confortable",
+        "Firm": "Ferme",
+        "Hybrid": "Hybride",
+        "Noisy": "Bruyante",
+        "Quilted": "Matelassée"
+      }
+    }
+  },
+  "damage": {
+    "type": {
+      "options": {
+        "Bludgeoning": "Contondant",
+        "Piercing": "Perçant",
+        "Slashing": "Tranchant"
+      }
+    }
+  },
+  "size": {
+    "category": {
+      "options": {
+        "Colossal": "Colossale",
+        "Diminutive": "Infime",
+        "Gargantuan": "Gigantesque",
+        "Huge": "Énorme",
+        "Large": "Grande",
+        "Medium": "Moyenne",
+        "Small": "Petite",
+        "Tiny": "Minuscule"
+      }
+    }
+  },
+  "weapon": {
+    "property": {
+      "options": {
+        "Ammunition": "Munition",
+        "Finesse": "Finesse",
+        "Heavy": "Lourde",
+        "Light": "Légère",
+        "Loading": "Chargement",
+        "Reach": "Allonge",
+        "Reload": "Barillet",
+        "Special": "Spéciale",
+        "Thrown": "Jet",
+        "TwoHanded": "Deux mains",
+        "Versatile": "Versatile"
+      }
+    }
+  }
+}

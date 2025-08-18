@@ -99,4 +99,3 @@ useSeo({
   description: "Découvrez les différents styles de vie, leurs coûts et avantages, pour loger et nourrir votre personnage en dehors de ses aventures.",
 });
 </script>
-La table ci-dessous indique le prix d’un style de vie par jour. Ce prix inclut le logement, la nourriture et

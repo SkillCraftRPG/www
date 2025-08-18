@@ -53,8 +53,8 @@ const items: MenuItem[] = [
     description: "Objets offensifs ou défensif utilisés par les personnages et créatures.",
   },
   {
-    path: "/regles/equipement/armure",
-    title: "Armure",
+    path: "/regles/equipement/armures",
+    title: "Armures",
     description: "Protection portée par les aventuriers et hommes d’armes.",
   },
   {
@@ -62,16 +62,36 @@ const items: MenuItem[] = [
     title: "Boucliers",
     description: "Catégories, propriétés, talents et particularités des boucliers.",
   },
+  {
+    path: "/regles/equipement/general",
+    title: "Équipement général",
+    description: "Articles généraux, contenants et vêtements.",
+  },
+  {
+    path: "/regles/equipement/outils",
+    title: "Outils et trousses",
+    description: "Outils d’artisan, trousses, ensembles à jouer et instruments de musique.",
+  },
+  {
+    path: "/regles/equipement/marchandise",
+    title: "Marchandise",
+    description: "Bétail, épices, nourriture, métaux et textiles.",
+  },
+  {
+    path: "/regles/equipement/montures-vehicules",
+    title: "Montures et véhicules",
+    description: "Bêtes, accessoires, véhicules terrestres et navires.",
+  },
+  {
+    path: "/regles/equipement/services",
+    title: "Services",
+    description: "Gîte et couvert, occultes, artisans et marchands, passage en navire.",
+  },
 ];
 
 /* TODO(fpion):
  * Défense
  * Résistance
- * Équipement général : Articles, Contenants, Vêtements
- * Marchandise : Bétail, Épices, Métaux, Nourriture, Repas, Textiles
- * Outils : Artisanat et trousses, Ensembles à jouer, Instruments de musique
- * Montures et véhicules : Bêtes, Accessoires, Véhicules, Navires
- * Services : Gîte et couvert, Professionnels, Occultes, Artisans et Marchands, Passage en navire
  */
 
 useSeo({

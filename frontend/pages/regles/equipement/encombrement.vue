@@ -35,37 +35,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Infime</td>
-          <td>×¼</td>
-        </tr>
-        <tr>
-          <td>Minuscule</td>
-          <td>×½</td>
-        </tr>
-        <tr>
-          <td>Petite</td>
-          <td>×1</td>
-        </tr>
-        <tr>
-          <td>Moyenne</td>
-          <td>×1</td>
-        </tr>
-        <tr>
-          <td>Grande</td>
-          <td>×2</td>
-        </tr>
-        <tr>
-          <td>Énorme</td>
-          <td>×3</td>
-        </tr>
-        <tr>
-          <td>Gigantesque</td>
-          <td>×4</td>
-        </tr>
-        <tr>
-          <td>Colossale</td>
-          <td>×8</td>
+        <tr v-for="(size, index) in sizes" :key="index">
+          <td>{{ size.text }}</td>
+          <td>{{ size.load }}</td>
         </tr>
       </tbody>
     </table>
@@ -73,10 +45,40 @@
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+
 import type { Breadcrumb } from "~/types/components";
+import type { SizeCategory } from "~/types/game";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Encombrement";
+const { orderBy } = arrayUtils;
+
+type Size = {
+  text: string;
+  load: string;
+};
+const sizes = computed<Size[]>(() => {
+  const options: Record<string, unknown> = $tm("size.category.options");
+  return orderBy(
+    Object.keys(options).map((size) => ({
+      text: $t(`size.category.options.${size}`),
+      load: getLoadMultiplier(size as SizeCategory),
+    })),
+    "load",
+  ).map(({ text, load }) => {
+    let formattedLoad: string = `×${load}`;
+    switch (load) {
+      case 0.25:
+        formattedLoad = "×¼";
+        break;
+      case 0.5:
+        formattedLoad = "×½";
+        break;
+    }
+    return { text, load: formattedLoad };
+  });
+});
 
 useSeo({
   title,

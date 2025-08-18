@@ -8,23 +8,25 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h2 class="h3">Liste des armes</h2>
-    <h3 class="h5">Armes simples</h3>
-    <ItemWeaponList :items="simple" />
-    <h3 class="h5">Armes martiales</h3>
-    <ItemWeaponList :items="martial" />
-    <ItemAmmunitionList :items="ammunition" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
+    <h2 class="h3">Catégories</h2>
+    <p>Les armes sont réparties en deux catégories :</p>
+    <div class="row">
+      <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
+    <h3 class="h5">🚧</h3>
+    <p>🚧</p>
+    <div class="row">
+      <div v-for="(item, index) in other" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import ammunition from "~/assets/data/items/ammunition.json";
-import weapons from "~/assets/data/items/weapons.json";
 import type { Breadcrumb } from "~/types/components";
-import type { Weapon } from "~/types/items";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Armes";
@@ -36,14 +38,14 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/equipement/armes/categorie",
-    title: "Catégories d’armes",
-    description: "Présentation des deux catégories d’armes et de leurs particularités.",
-  },
-  {
     path: "/regles/equipement/armes/formation",
     title: "Formation",
     description: "La formation nécessaire pour manier une arme et les pénalités sans.",
+  },
+  {
+    path: "/regles/equipement/armes/attaque",
+    title: "Attaque",
+    description: "Bonus au test d’attaque selon la taille de l’arme.",
   },
   {
     path: "/regles/equipement/armes/proprietes",
@@ -60,23 +62,29 @@ const items: MenuItem[] = [
     title: "Plaquage d’argent",
     description: "Plaquage en argent pour armes contre créatures résistantes.",
   },
-  {
-    path: "/regles/equipement/armes/attaque",
-    title: "Attaque",
-    description: "Bonus au test d’attaque selon la taille de l’arme.",
-  },
-  // TODO(fpion): Armes à feu et explosifs
   // TODO(fpion): Armes affûtées
   // TODO(fpion): Armes brisées
 ];
-
-const simple = computed<Weapon[]>(() => weapons.filter(({ category }) => category === "Simple"));
-const martial = computed<Weapon[]>(() => weapons.filter(({ category }) => category === "Martiale"));
-
-function scrollToTop(): void {
-  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-}
+const list: MenuItem[] = [
+  {
+    path: "/regles/equipement/armes/simples",
+    title: "Armes simples",
+    description: "Des armes rudimentaires et moins adaptées à la guerre, utilisées par les roturiers et soldats improvisés.",
+  },
+  {
+    path: "/regles/equipement/armes/martiales",
+    title: "Armes martiales",
+    description: "Des armes complexes, puissantes et solides, dédiées aux hommes d’armes.",
+  },
+];
+const other: MenuItem[] = [
+  {
+    path: "/regles/equipement/armes/munitions",
+    title: "Munitions",
+    description: "🚧",
+  },
+  // TODO(fpion): Armes à feu et explosifs
+];
 
 useSeo({
   title,

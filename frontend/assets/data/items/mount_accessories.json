@@ -1,0 +1,72 @@
+[
+  {
+    "id": "b644446a-893f-4df6-b7dd-785353441495",
+    "slug": "barde",
+    "name": "Barde",
+    "price": 4,
+    "isPriceMultiplier": true,
+    "weight": 2,
+    "isWeightMultiplier": true,
+    "description": "La barde est l’armure qu’une monture porte, typiquement un cheval. Son prix et son poids sont un facteur de l’armure équivalente pour les humanoïdes. Une monture portant une armure complète bénéficie des mêmes propriétés qu’un humanoïde. Elle se compose de différentes pièces\u00A0: le chanfrein, l’encolure, la croupe, le flançois, le plastron et le caparaçon. Le prix et le poids peuvent être supérieurs pour une monture exotique tel un éléphant."
+  },
+  {
+    "id": "d26cc864-5669-42a5-80af-4d481c5b681b",
+    "slug": "bride-et-mors",
+    "name": "Bride et mors",
+    "price": 2,
+    "isPriceMultiplier": false,
+    "weight": 0.5,
+    "isWeightMultiplier": false,
+    "description": "Le mors est un harnachement inséré dans la bouche d’une monture. La bride est un harnachement placé sur la tête d’une monture. Les rênes sont attachées à ces pièces et sont tenues par un cavalier. L’ensemble de cet équipement permet au cavalier de contrôler la vitesse et la direction de sa monture."
+  },
+  {
+    "id": "f42013af-ac11-4d7c-aaa8-0018597f46ab",
+    "slug": "sacoches",
+    "name": "Sacoches",
+    "price": 4,
+    "isPriceMultiplier": false,
+    "weight": 4,
+    "isWeightMultiplier": false,
+    "description": "Ces sacoches sont des contenants attachés à la selle d’une monture. Elles sont similaires à un sac à dos."
+  },
+  {
+    "id": "3af1d374-4a1c-4070-83f7-860b03f508a3",
+    "slug": "selle-a-bagages",
+    "name": "Selle à bagages",
+    "price": 5,
+    "isPriceMultiplier": false,
+    "weight": 7,
+    "isWeightMultiplier": false,
+    "description": "Cette selle de base sert à monter des objets sur une bête. Elle ne peut être utilisée par un cavalier. Elle est généralement destinée à l’âne et au mastiff."
+  },
+  {
+    "id": "21c4ed60-6936-4c72-82c9-ade3c8625a89",
+    "slug": "selle-exotique",
+    "name": "Selle exotique",
+    "price": 60,
+    "isPriceMultiplier": false,
+    "weight": 20,
+    "isWeightMultiplier": false,
+    "description": "Cette selle permet d’installer un cavalier sur une bête n’ayant pas le calibre ni la forme d’un cheval, par exemple un éléphant."
+  },
+  {
+    "id": "f177cb04-5a05-443b-a3d7-a9f451092fb0",
+    "slug": "selle-militaire",
+    "name": "Selle militaire",
+    "price": 20,
+    "isPriceMultiplier": false,
+    "weight": 15,
+    "isWeightMultiplier": false,
+    "description": "Cette selle permet d’installer un cavalier sur un cheval ou une bête bardée."
+  },
+  {
+    "id": "d95e7f2d-e4da-42a3-a1b1-68568b23781c",
+    "slug": "selle-personnelle",
+    "name": "Selle personnelle",
+    "price": 10,
+    "isPriceMultiplier": false,
+    "weight": 10,
+    "isWeightMultiplier": false,
+    "description": "Une selle standard permettant d’installer un cavalier sur une bête ayant le calibre et la forme d’un cheval."
+  }
+]

@@ -18,7 +18,7 @@
           <td>{{ $n(armor.weight, "weight") }}</td>
           <td>{{ $n(armor.defense, "defense") }}</td>
           <td>{{ $n(armor.resistance, "resistance") }}</td>
-          <td>{{ armor.properties.length ? armor.properties.join(", ") : "—" }}</td>
+          <td v-html="formatProperties(armor)"></td>
         </tr>
       </tbody>
     </table>
@@ -37,4 +37,14 @@ import type { Armor } from "~/types/items";
 defineProps<{
   items: Armor[];
 }>();
+
+function formatProperties(armor: Armor): string {
+  if (!armor.properties.length) {
+    return `<span class="text-muted">—</span>`;
+  }
+  return armor.properties
+    .map((property) => $t(`armor.property.options.${property}`))
+    .sort((a, b) => (a > b ? 1 : a < b ? -1 : 0))
+    .join(", ");
+}
 </script>

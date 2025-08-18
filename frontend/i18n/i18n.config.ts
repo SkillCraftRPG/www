@@ -9,7 +9,12 @@ export default defineI18nConfig(() => ({
       capacity: {
         style: "decimal",
         minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
+        maximumFractionDigits: 1,
+      },
+      decimal: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 3,
       },
       defense: {
         style: "decimal",
@@ -21,6 +26,11 @@ export default defineI18nConfig(() => ({
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
       },
+      league: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 3,
+      },
       price: {
         style: "decimal",
         minimumFractionDigits: 0,
@@ -30,6 +40,11 @@ export default defineI18nConfig(() => ({
         style: "decimal",
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
+      },
+      volume: {
+        style: "decimal",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2,
       },
       weight: {
         style: "decimal",

@@ -138,13 +138,6 @@ import type { Breadcrumb } from "~/types/components";
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Système de monnaie";
 
-type MenuItem = {
-  path: string;
-  title: string;
-  description: string;
-};
-const items: MenuItem[] = [];
-
 useSeo({
   title,
   description:

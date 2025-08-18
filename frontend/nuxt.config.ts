@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     defaultLocale: "fr",
-    locales: [{ code: "fr", name: "French" }],
+    locales: [{ code: "fr", name: "French", file: "fr.json" }],
   },
   runtimeConfig: {
     public: {

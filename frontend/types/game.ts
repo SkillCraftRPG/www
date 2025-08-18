@@ -59,6 +59,8 @@ export type Customization = {
 
 export type CustomizationKind = "Disability" | "Gift";
 
+export type DamageType = "Bludgeoning" | "Piercing" | "Slashing";
+
 export type Feature = {
   name: string;
   description?: string | null;
@@ -107,6 +109,8 @@ export type SearchResults<T> = {
   items: T[];
   total: number;
 };
+
+export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan" | "Colossal";
 
 export type Skill = {
   id: string;
