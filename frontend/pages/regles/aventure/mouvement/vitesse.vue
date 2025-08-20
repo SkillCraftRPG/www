@@ -14,13 +14,13 @@
     </p>
     <p>
       Cette vitesse ne considère ni le poids de l’équipement, ni le terrain accidenté. Les déplacements effectués à cette vitesse sont réalisables par courtes
-      rafales et grâce à l’adrénaline du moment. Pour des déplacements sur de longues distances et de longues durées, on utilise plutôt les
-      <NuxtLink to="/regles/aventure/mouvement/cadences">cadences</NuxtLink>.
+      rafales et grâce à l’adrénaline du moment. Pour des déplacements sur de longues distances et de longues durées, on utilise plutôt une
+      <NuxtLink to="/regles/aventure/mouvement/cadences">cadence</NuxtLink>.
     </p>
     <p>
       Une créature peut être dotée d’une vitesse par <NuxtLink to="/regles/aventure/mouvement/types">type de mouvement</NuxtLink>. Plusieurs situations peuvent
       influencer sa vitesse de déplacement, notamment le <NuxtLink to="/regles/aventure/mouvement/terrain-difficile">terrain difficile</NuxtLink> et le
-      <strong>déplacement furtif</strong>.
+      <NuxtLink to="/regles/aventure/mouvement/furtif">déplacement&nbsp;furtif</NuxtLink>.
     </p>
   </main>
 </template>

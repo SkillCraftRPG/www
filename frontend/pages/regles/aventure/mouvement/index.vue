@@ -38,8 +38,18 @@ const items: MenuItem[] = [
     description: "🚧",
   },
   {
+    path: "/regles/aventure/mouvement/types",
+    title: "Types de mouvement",
+    description: "🚧",
+  },
+  {
     path: "/regles/aventure/mouvement/terrain-difficile",
     title: "Terrain difficile",
+    description: "🚧",
+  },
+  {
+    path: "/regles/aventure/mouvement/furtif",
+    title: "Mouvement furtif",
     description: "🚧",
   },
 ];
@@ -48,4 +58,7 @@ useSeo({
   title,
   description: "🚧",
 });
+
+// TODO(fpion): fusionner voyage et cadences ?
+// TODO(fpion): se déplacer en étant vigilant
 </script>
