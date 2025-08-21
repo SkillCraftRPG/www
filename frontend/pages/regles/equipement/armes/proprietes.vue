@@ -14,7 +14,7 @@
         doive recharger l’arme.
       </li>
       <li>
-        <strong>Chargement.</strong> L’activité <i>Charger une arme</i> doit être utilisée afin d’installer une ou plusieurs munitions dans une arme possédant
+        <strong>Chargement.</strong> L’action <i>Charger une arme</i> doit être utilisée afin d’installer une ou plusieurs munitions dans une arme possédant
         cette propriété.
       </li>
       <li>
@@ -50,7 +50,7 @@
       </li>
       <li>
         <strong>Munition. </strong> Une arme à munition nécessite l’utilisation d’une munition afin de pouvoir être utilisée. Ces armes doivent être utilisées
-        par l’activité <i>Viser et tirer</i>.
+        par l’action <i>Viser et tirer</i>.
       </li>
       <li><strong>Spéciale.</strong> Ces armes sont gouvernées par des règles spéciales qui sont spécifiques à chaque arme.</li>
       <li>

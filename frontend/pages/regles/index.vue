@@ -89,6 +89,11 @@ const tiles: Tile[] = [
     text: "Équipement",
     to: "/regles/equipement",
   },
+  {
+    icon: "fas fa-person-hiking",
+    text: "Aventure",
+    to: "/regles/aventure",
+  },
 ];
 const title: string = "Règles";
 
