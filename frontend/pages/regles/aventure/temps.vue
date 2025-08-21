@@ -29,6 +29,6 @@ const title: string = "Temps";
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez le cycle de jeu et les différentes échelles de temps : secondes, minutes, heures et jours selon le contexte d’aventure.",
 });
 </script>

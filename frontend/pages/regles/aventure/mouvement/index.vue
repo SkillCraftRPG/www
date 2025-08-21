@@ -30,35 +30,38 @@ const items: MenuItem[] = [
   {
     path: "/regles/aventure/mouvement/vitesse",
     title: "Vitesse",
-    description: "🚧",
-  },
-  {
-    path: "/regles/aventure/mouvement/cadences",
-    title: "Cadences",
-    description: "🚧",
+    description: "Vitesse en combat : m/s, points de mouvement, distances et effets du terrain.",
   },
   {
     path: "/regles/aventure/mouvement/types",
     title: "Types de mouvement",
-    description: "🚧",
+    description: "Les divers types de mouvement : marche, vol, nage et plus.",
+  },
+  {
+    path: "/regles/aventure/mouvement/voyage",
+    title: "Voyage",
+    description: "Voyage en jeu : cadences, lieue, marche forcée et activités.",
+  },
+  {
+    path: "/regles/aventure/mouvement/furtif",
+    title: "Déplacement furtif",
+    description: "Règles du déplacement furtif : tests, vitesse réduite, points de mouvement et cadence.",
+  },
+  {
+    path: "/regles/aventure/mouvement/attentif",
+    title: "Déplacement attentif",
+    description: "Règles de l’état attentif : perception active ou passive et pénalités.",
   },
   {
     path: "/regles/aventure/mouvement/terrain-difficile",
     title: "Terrain difficile",
-    description: "🚧",
-  },
-  {
-    path: "/regles/aventure/mouvement/furtif",
-    title: "Mouvement furtif",
-    description: "🚧",
+    description: "Terrain difficile : déplacements ralentis, risques accrus et pénalités.",
   },
 ];
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les règles de déplacement des créatures : vitesse, cadence, types de mouvement, terrain difficile, furtivité et perception en voyage.",
 });
-
-// TODO(fpion): fusionner voyage et cadences ?
-// TODO(fpion): se déplacer en étant vigilant
 </script>

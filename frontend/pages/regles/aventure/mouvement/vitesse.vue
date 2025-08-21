@@ -15,7 +15,7 @@
     <p>
       Cette vitesse ne considère ni le poids de l’équipement, ni le terrain accidenté. Les déplacements effectués à cette vitesse sont réalisables par courtes
       rafales et grâce à l’adrénaline du moment. Pour des déplacements sur de longues distances et de longues durées, on utilise plutôt une
-      <NuxtLink to="/regles/aventure/mouvement/cadences">cadence</NuxtLink>.
+      <NuxtLink to="/regles/aventure/mouvement/voyage">cadence</NuxtLink>.
     </p>
     <p>
       Une créature peut être dotée d’une vitesse par <NuxtLink to="/regles/aventure/mouvement/types">type de mouvement</NuxtLink>. Plusieurs situations peuvent
@@ -36,6 +36,7 @@ const title: string = "Vitesse";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez la vitesse en combat : m/s, points de mouvement, influence de la taille/espèce, types de mouvement et effets du terrain ou de la furtivité.",
 });
 </script>

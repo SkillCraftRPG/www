@@ -2,7 +2,20 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Furtif" :parent="parent" />
-    <p>🚧</p>
+    <p>Une créature peut se faire furtive lorsqu’elle se déplace ou se tient dans une zone n’étant pas complètement dégagée.</p>
+    <p>
+      Elle doit effectuer un <NuxtLink to="/regles/competences/tests">test</NuxtLink> de <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>
+      {{ " " }} <NuxtLink to="/regles/competences/tests/oppose">opposé</NuxtLink> à un test de
+      <NuxtLink to="/regles/competences/perception">Perception</NuxtLink> contre toute créature pouvant détecter sa présence.
+    </p>
+    <p>Afin de se déplacer furtivement, une créature doit réduire de moitié sa vitesse.</p>
+    <ul>
+      <li>
+        En situation de combat ou de tour-par-tour, elle doit dépenser <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par
+        case traversée.
+      </li>
+      <li>En période de voyage, elle doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink>.</li>
+    </ul>
   </main>
 </template>
 
@@ -13,10 +26,11 @@ const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },
   { text: "Mouvement", to: "/regles/aventure/mouvement" },
 ];
-const title: string = "Mouvement furtif";
+const title: string = "Déplacement furtif";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les règles de déplacement furtif : test opposé Furtivité/Perception, vitesse réduite de moitié, points de mouvement et cadence lente en voyage.",
 });
 </script>

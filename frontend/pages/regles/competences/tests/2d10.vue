@@ -169,7 +169,7 @@
           >Athlétisme</NuxtLink
         >, soit 3 pour un rang de 7, puisque votre personnage n’est pas formé pour cette compétence.
       </li>
-      <li>Le maître de jeu inflige une pénalité de -2 au test puisque la température de l’eau est glaciale.</li>
+      <li>Le maître de jeu inflige une pénalité (-2) au test puisque la température de l’eau est glaciale.</li>
       <li>Vos obtenez donc <i>13 avec Espérance</i>, ce qui n’est pas suffisant face au degré de difficulté de 15.</li>
       <li>
         Votre personnage est emporté par le courant (échec), mais il réussit à s’agripper à la branche d’un arbre sur les berges, mettant fin à sa dérive

@@ -26,12 +26,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/aventure/temps",
     title: "Temps",
-    description: "🚧",
+    description: "Cycle de jeu et différentes périodes temporelles.",
   },
   {
     path: "/regles/aventure/mouvement",
     title: "Mouvement",
-    description: "🚧",
+    description: "Déplacements selon vitesse, terrain et furtivité, en combat ou en voyage.",
   },
 ];
 
@@ -45,6 +45,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les règles dirigeant les aventures : temps, mouvement, environnement, interactions sociales, repos et activités entre les aventures.",
 });
 </script>
