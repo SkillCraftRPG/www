@@ -7,7 +7,7 @@
     <p>Ces aventures éprouvantes exigeront d’eux qu’ils se reposent afin de maximiser leur potentiel.</p>
     <p>Enfin, ils pourront bénéficier de leurs expériences entres les aventures et faire fructifier leurs acquis.</p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -33,10 +33,14 @@ const items: MenuItem[] = [
     title: "Mouvement",
     description: "Déplacements selon vitesse, terrain et furtivité, en combat ou en voyage.",
   },
+  {
+    path: "/regles/aventure/environnement",
+    title: "Environnement",
+    description: "Règles d’environnement : chutes, vision, survie et objets.",
+  },
 ];
 
 /* TODO(fpion):
- * Environnement
  * Interaction sociale
  * Repos
  * Alcoolémie

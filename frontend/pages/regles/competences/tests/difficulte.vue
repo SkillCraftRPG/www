@@ -26,11 +26,11 @@
       </thead>
       <tbody>
         <tr>
-          <td>Très facile</td>
+          <td>Très faible</td>
           <td>5</td>
         </tr>
         <tr>
-          <td>Facile</td>
+          <td>Faible</td>
           <td>10</td>
         </tr>
         <tr>
@@ -38,11 +38,11 @@
           <td>15</td>
         </tr>
         <tr>
-          <td>Difficile</td>
+          <td>Élevée</td>
           <td>20</td>
         </tr>
         <tr>
-          <td>Très difficile</td>
+          <td>Très élevée</td>
           <td>25</td>
         </tr>
         <tr>
