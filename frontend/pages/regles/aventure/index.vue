@@ -43,10 +43,14 @@ const items: MenuItem[] = [
     title: "Interaction sociale",
     description: "Règles d’interaction sociale et attitudes des personnages.",
   },
+  {
+    path: "/regles/aventure/repos",
+    title: "Repos",
+    description: "Sommeil et halte, sources de repos et régénération.",
+  },
 ];
 
 /* TODO(fpion):
- * Repos
  * Alcoolémie
  * Entre les aventures
  */
