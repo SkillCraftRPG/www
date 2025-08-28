@@ -7,7 +7,7 @@
     <p>Ces aventures éprouvantes exigeront d’eux qu’ils se reposent afin de maximiser leur potentiel.</p>
     <p>Enfin, ils pourront bénéficier de leurs expériences entres les aventures et faire fructifier leurs acquis.</p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
