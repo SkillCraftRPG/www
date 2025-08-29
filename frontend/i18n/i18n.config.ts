@@ -31,6 +31,11 @@ export default defineI18nConfig(() => ({
         minimumFractionDigits: 0,
         maximumFractionDigits: 3,
       },
+      percentage: {
+        style: "percent",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 1,
+      },
       price: {
         style: "decimal",
         minimumFractionDigits: 0,

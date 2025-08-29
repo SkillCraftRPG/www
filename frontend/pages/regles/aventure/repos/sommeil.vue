@@ -15,12 +15,12 @@
     <h2 class="h3">Régénération</h2>
     <p>
       Lorsqu’un personnage complète une nuit de sommeil, il récupère tous ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> ainsi que
-      ⅐ (14,3 %) de sa <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> totale (minimum 1).
+      ⅐ ({{ $n(1 / 7, "percentage") }}) de sa <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> totale (minimum 1).
     </p>
     <p>Cette régénération n’est pas affectée si le sommeil est interrompu temporairement, en autant que les 8 heures de repos sont complétées.</p>
     <p>Cette régénération inclut toute heure de sommeil et de halte pendant la nuit.</p>
     <p>
-      S’il fait halte pendant le reste de la journée, il récupère une seconde fois ⅐ (14,3 %) de sa
+      S’il fait halte pendant le reste de la journée, il récupère une seconde fois ⅐ ({{ $n(1 / 7, "percentage") }}) de sa
       <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> totale (minimum 1).
     </p>
     <h2 class="h3">Bénéfices</h2>

@@ -11,6 +11,17 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
+    <h2 class="h3">Entre les aventures</h2>
+    <p>Entre deux aventures, le personnage se repose et prépare sa prochaine aventure.</p>
+    <p>
+      Il adopte un <NuxtLink to="/regles/equipement/depenses">style de vie</NuxtLink> et paie les coûts associés à celui-ci afin de survivre. Adopter un style
+      de vie ayant un coût élevé peut aider un personnage à se frayer un chemin parmi les hautes sphères de la société ou à attirer l’attention des autorités.
+    </p>
+    <p>
+      Il peut s’occuper en accomplissant diverses activités, notamment s’adonner à une profession, se remettre de blessures ayant mis sa vie en péril, effectuer
+      des recherches, s’entraîner ou tout simplement profiter de la vie en se reposant en toute sérénité.
+    </p>
+    <p>Certaines activités à but lucratif peuvent lui rapporter de l’argent ou d’autres faveurs matérielles, à la discrétion du maître de jeu.</p>
   </main>
 </template>
 
@@ -48,12 +59,12 @@ const items: MenuItem[] = [
     title: "Repos",
     description: "Sommeil et halte, sources de repos et régénération.",
   },
+  {
+    path: "/regles/aventure/alcoolemie",
+    title: "Alcoolémie",
+    description: "🚧",
+  },
 ];
-
-/* TODO(fpion):
- * Alcoolémie
- * Entre les aventures
- */
 
 useSeo({
   title,

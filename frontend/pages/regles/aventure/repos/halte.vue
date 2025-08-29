@@ -10,7 +10,10 @@
     </p>
     <p>L’action de <NuxtLink to="/regles/aventure/environnement/alimentation">manger</NuxtLink> n’est pas considérée comme une activité légère.</p>
     <h2 class="h3">Régénération</h2>
-    <p>Un personnage récupère ⅒ (10 %) de son <NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> totale (minimum 1) par heure passée à la halte.</p>
+    <p>
+      Un personnage récupère ⅒ ({{ $n(1 / 10, "percentage") }}) de son <NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> totale (minimum 1) par
+      heure passée à la halte.
+    </p>
     <p>S’il fait halte pendant plusieurs heures d’affilée, le calcul est effectué à la fin de la période, ce qui permet d’arrondir les points récupérés.</p>
     <p>Après avoir fait halte pendant 8 heures, cette régénération est réduite de moitié pour chaque heure additionnelle.</p>
     <p>
