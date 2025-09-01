@@ -2,9 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p class="text-danger">Dans le jeu, l’alcool est représenté par les boissons alcoolisées.</p>
-    <p class="text-danger">Celles-ci peuvent être ingérées par les personnages afin d’acquérir les effets de l’ébriété ou pour gagner un concours d’alcool.</p>
-    <p class="text-danger">L’ingestion d’alcool inflige des points d’alcoolémie au personnage et risque de le mettre en état d’ébriété.</p>
+    <p>
+      Un personnage peut ingérer une <NuxtLink to="/regles/equipement/services/gite-couvert">boisson alcoolisée</NuxtLink> par plaisir, pour gagner un concours,
+      pour augmenter ses capacités ou noyer ses émotions négatives.
+    </p>
     <h2 class="h3">Table des matières</h2>
     <ul>
       <li>
@@ -28,7 +29,16 @@
           <li>
             <a href="#coma">Coma éthylique</a>
           </li>
+          <li>
+            <a href="#vomir">Vomir</a>
+          </li>
+          <li>
+            <a href="#repos">Repos</a>
+          </li>
         </ul>
+      </li>
+      <li>
+        <a href="#gueule-bois">Gueule de bois</a>
       </li>
     </ul>
     <h2 id="points" class="h3">Points d’alcoolémie</h2>
@@ -71,8 +81,8 @@
     </div>
     <h2 class="h3">Ébriété</h2>
     <p>
-      Lorsqu’une créature ingère une boisson alcoolisée, elle risque de tomber en état d’ébriété. Si ses points d’alcoolémie sont supérieurs à son seuil de
-      tolérance, elle doit effectuer un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
+      Lorsqu’une créature ingère une boisson alcoolisée, elle risque de tomber en état d’<strong>ébriété</strong>. Si ses points d’alcoolémie sont supérieurs à
+      son seuil de tolérance, elle doit effectuer un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
       <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink>.
     </p>
     <p>
@@ -83,15 +93,14 @@
       <code>Difficulté = 10 + (((points d’alcoolémie - seuil de tolérance) × 5) ÷ 2)</code>
     </p>
     <p>
-      En cas de réussite, son état est inchangé. En cas d’échec, elle passe à la phase suivante d’ébriété. Lorsqu’une créature passe à une phase d’ébriété
-      supérieure, on note les points d’alcoolémie au moment du changement. Elle reste dans cette phase tant que ses points d’alcoolémie sont supérieurs ou égaux
+      En cas de réussite, son état est inchangé. En cas d’échec, elle passe à la phase suivante d’ébriété. Lorsqu’une créature passe à la phase suivante
+      d’ébriété, on note les points d’alcoolémie au moment du changement. Elle reste dans cette phase tant que ses points d’alcoolémie sont supérieurs ou égaux
       à ce nombre.
     </p>
     <p>
       Par exemple, si une créature passe à la première phase à 6 points d’alcoolémie et à la seconde phase à 8 points, alors elle reste à la phase 2 tant que
       ses points ne descendent pas à 7, et elle reste à la phase 1 tant que ses points ne descendent pas à 5.
     </p>
-    <p class="text-danger">Lorsque le personnage dort en état d’ébriété, sa régénération d’Énergie est réduite de moitié.</p>
     <h3 id="phase-1" class="h5">Phase 1</h3>
     <p>Une créature en phase 1 d’ébriété est affectée par les capacités et pénalités suivantes :</p>
     <ul>
@@ -153,6 +162,11 @@
         de <NuxtLink to="/regles/competences/tests/difficulte">difficulté faible</NuxtLink>. En cas d’échec, ses mouvements sont aléatoires, changeant de
         direction tous les 3 mètres.
       </li>
+      <li>
+        Si son <NuxtLink to="/regles/competences/tests/2d10">dé de Damnation</NuxtLink> était supérieur à son
+        <NuxtLink to="/regles/competences/tests/2d10">dé d’Espérance</NuxtLink> lorsqu’elle a échoué le
+        <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> contre cette phase, elle est affligée de la gueule de bois.
+      </li>
     </ul>
     <h3 id="phase-3" class="h5">Phase 3</h3>
     <p>Une créature en phase 3 d’ébriété est affectée par les pénalités suivantes :</p>
@@ -165,6 +179,7 @@
         <strong>Titubement.</strong> Ses mouvements sont aléatoires, changeant de direction tous les 3 mètres. Cette pénalité est automatique et sans
         <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink>.
       </li>
+      <li>Elle est automatiquement affligée de la gueule de bois.</li>
     </ul>
     <h3 id="coma" class="h5">Coma éthylique</h3>
     <p>
@@ -184,34 +199,35 @@
       Si une autre créature prend soin d’elle en lui donnant de l’eau, en l’empêchant de s’étouffer et en surveillant son état pendant cette heure, aucun jet
       n’est nécessaire. La créature survit automatiquement, mais reste inconsciente jusqu’à ce qu’elle retombe en phase 3 d’alcoolémie.
     </p>
-    <div class="text-danger">
-      <h2 class="h3">Vomir</h2>
-      <p>
-        Lorsque le personnage échoue le jet de sauvegarde, il peut vomir afin de conserver son état actuel et ainsi éviter de passer à la phase suivante.
-        <br />
-        Il reçoit un nombre de points de dégâts létaux égal à 1d6 par point d’alcoolémie en excès.
-        <br />
-        Par exemple, pour 4 points d’alcoolémie et un seuil de tolérance de 2 points, le personnage reçoit 2d6 points de dégâts létaux.
-        <br />
-        De plus, les pénalités infligées par l’ébriété durent jusqu’à ce que le personnage ait complété une nuit de sommeil.
-        <br />
-        Si le personnage vomit plus d’une fois avant d’avoir effectué une nuit complète de sommeil, alors il est affligé d’une gueule de bois d’une durée
-        minimale de 8 heures.
-      </p>
-    </div>
-    <div class="text-danger">
-      <h2 class="h3">Gueule de bois</h2>
-      <p>
-        Un personnage est affligé d’une gueule de bois lorsqu’il vomit plusieurs fois, qu’il tombe en coma éthylique ou qu’il passe à une phase d’ébriété en
-        échouant le second jet de sauvegarde.
-        <br />
-        Lorsqu’il n’est plus en état d’ébriété, il est affligé d’un niveau de Fatigue.
-        <br />
-        Il ne récupère aucun niveau de Fatigue lors de sa prochaine nuit de sommeil complétée.
-        <br />
-        Après deux nuits de sommeil complètes, il récupère ce niveau de fatigue et n’est plus affligé de la gueule de bois.
-      </p>
-    </div>
+    <h3 id="vomir" class="h5">Vomir</h3>
+    <p>
+      Lorsqu’une créature échoue le <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
+      <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> afin d’éviter de passer à la phase suivante d’ébriété, elle peut choisir de vomir pour
+      conserver son état actuel.
+    </p>
+    <p>Lorsqu’elle en fait ainsi, elle ne passe pas à la phase suivante d’ébriété, mais est automatiquement affligée de la gueule de bois.</p>
+    <p>Également, elle reçoit un nombre de d4 de points de dégâts létaux d’acide égal à la phase qu’elle évite (4d4 pour le coma éthylique).</p>
+    <h3 id="repos" class="h5">Repos</h3>
+    <p>
+      Une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink> en étant en état d’ébriété est considérée comme interrompue, peu importe sa
+      durée.
+    </p>
+    <p>
+      La régénération d’une créature est réduite de moitié si elle <NuxtLink to="/regles/aventure/repos">se repose</NuxtLink> en étant affligée de la gueule de
+      bois, ou si elle le sera prochainement.
+    </p>
+    <h2 id="gueule-bois" class="h3">Gueule de bois</h2>
+    <p>La gueule de bois est une condition causée par l’ébriété avancée. Elle débute quand une créature retombe sous la phase 1 d’ébriété.</p>
+    <p>
+      Cette condition dure un nombre d’heures égal au nombre maximal de points d’alcoolémie atteint depuis que ces points sont retombés à 0, divisé par deux.
+      Elle peut aussi être retirée par une capacité naturelle ou surnaturelle réduisant le <strong>niveau de Fatigue</strong>.
+    </p>
+    <p>
+      Une créature affligée par la gueule de bois voit sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink> réduite de moitié. Ses
+      <NuxtLink to="/regles/competences/tests">tests</NuxtLink> de <NuxtLink to="/regles/competences">compétence</NuxtLink> sont également affligés du
+      <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>. Ses tests d’attaque sont également affectés par cette pénalité, mais
+      ses <NuxtLink to="/regles/competences/tests/sauvegarde">jets de sauvegarde</NuxtLink> en sont exempts.
+    </p>
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
@@ -302,6 +318,6 @@ function calculatePoints(item: Alcohol): number {
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les règles d’alcoolémie, ébriété et gueule de bois, leurs effets sur vos personnages et les risques d’un coma éthylique.",
 });
 </script>

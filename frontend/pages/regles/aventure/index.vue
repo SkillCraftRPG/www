@@ -62,7 +62,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/aventure/alcoolemie",
     title: "Alcoolémie",
-    description: "🚧",
+    description: "Alcoolémie, ébriété et gueule de bois en jeu.",
   },
 ];
 

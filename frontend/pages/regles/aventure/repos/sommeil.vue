@@ -31,7 +31,10 @@
       <li>Il récupère les utilisations de certaines capacités.</li>
     </ul>
     <p>
-      Une nuit de sommeil peut être interrompue par un combat, de fortes intempéries l’obligeant à déplacer son campement, ou d’autres événements similaires.
+      Une nuit de sommeil peut être interrompue par un combat, de fortes intempéries l’obligeant à déplacer son campement, l’<NuxtLink
+        to="/regles/aventure/alcoolemie"
+        >ébriété</NuxtLink
+      >, ou d’autres événements similaires.
     </p>
   </main>
 </template>
