@@ -32,7 +32,7 @@
     </ul>
     <p>
       Une nuit de sommeil peut être interrompue par un combat, de fortes intempéries l’obligeant à déplacer son campement, l’<NuxtLink
-        to="/regles/aventure/alcoolemie"
+        to="/regles/aventure/environnement/alcoolemie"
         >ébriété</NuxtLink
       >, ou d’autres événements similaires.
     </p>

@@ -44,6 +44,11 @@ const items: MenuItem[] = [
     description: "Soif, faim et survie des personnages en jeu.",
   },
   {
+    path: "/regles/aventure/environnement/alcoolemie",
+    title: "Alcoolémie",
+    description: "Alcoolémie, ébriété et gueule de bois en jeu.",
+  },
+  {
     path: "/regles/aventure/environnement/objets",
     title: "Interaction avec les objets",
     description: "Règles pour cibler, briser et gérer la solidité des objets.",

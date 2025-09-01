@@ -59,11 +59,6 @@ const items: MenuItem[] = [
     title: "Repos",
     description: "Sommeil et halte, sources de repos et régénération.",
   },
-  {
-    path: "/regles/aventure/alcoolemie",
-    title: "Alcoolémie",
-    description: "Alcoolémie, ébriété et gueule de bois en jeu.",
-  },
 ];
 
 useSeo({

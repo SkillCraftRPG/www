@@ -241,7 +241,10 @@ import { getTalents } from "~/services/talents";
 import type { Breadcrumb } from "~/types/components";
 import type { Talent } from "~/types/game";
 
-const parent: Breadcrumb[] = [{ text: "Aventure", to: "/regles/aventure" }];
+const parent: Breadcrumb[] = [
+  { text: "Aventure", to: "/regles/aventure" },
+  { text: "Environnement", to: "/regles/aventure/environnement" },
+];
 const title: string = "Alcoolémie";
 const { orderBy } = arrayUtils;
 
