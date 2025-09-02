@@ -2,6 +2,13 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
+    <!--
+      TODO(fpion): liens vers les sections utiles
+      * Attaque
+      * Dégâts
+      * Formation
+      * Propriétés
+    -->
     <p>
       Les armes à feu sont une technologie avancée permettant de tirer des <NuxtLink to="/regles/equipement/armes/munitions">projectiles</NuxtLink> à grande
       vitesse grâce à une explosion produite avec de la poudre à canon.
