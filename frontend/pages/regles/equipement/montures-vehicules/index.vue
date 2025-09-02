@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>Montures et véhicules pour voyager, transporter des charges ou se préparer à la guerre.</p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
@@ -15,7 +15,7 @@
     </p>
     <ItemMountList :items="mounts" />
     <h3 id="accessoires" class="h5">Accessoires</h3>
-    <p>🚧</p>
+    <p>Des accessoires indispensables pour équiper, contrôler et transporter avec vos montures.</p>
     <ItemMountAccessoryList :items="mountAccessories" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
@@ -43,12 +43,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/montures-vehicules/terrestres",
     title: "Véhicules terrestres",
-    description: "🚧",
+    description: "Chars, chariots, charrettes et traîneaux pour transport et déplacements.",
   },
   {
     path: "/regles/equipement/montures-vehicules/navires",
     title: "Navires",
-    description: "🚧",
+    description: "Canots, drakkars, galères et voiliers : navires pour guerre, voyage et commerce",
   },
 ];
 
@@ -57,6 +57,6 @@ const mounts = ref<Mount[]>(orderBy(getMounts(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les montures, accessoires et véhicules : ânes, chevaux, éléphants, chars et selles pour le transport, le combat et l’aventure.",
 });
 </script>

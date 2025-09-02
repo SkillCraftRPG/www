@@ -16,7 +16,8 @@ export type Alcohol = {
   id: string;
   name: string;
   price: number;
-  quantity: Volume;
+  volume: number;
+  quantity?: string;
   description: string;
 };
 

@@ -10,26 +10,34 @@
     </p>
     <p>
       Si elle ne réussit pas à boire cette quantité, mais qu’elle en boit au moins la moitié, elle est affligée de la <strong>Soif</strong>. Sa
-      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <strong>nuit de sommeil</strong>. À la fin de la journée, elle est affligée
-      d’un niveau de Fatigue si elle échoue un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
-      <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
+      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À
+      la fin de la journée, elle est affligée d’un niveau de Fatigue si elle échoue un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
     </p>
     <p>
       Si elle ne réussit pas à boire la moitié du volume minimal d’eau, alors elle est affligée de la <strong>Sécheresse</strong> et échoue automatiquement le
       jet de sauvegarde décrit plus haut.
     </p>
     <h2 class="h3">Nourriture</h2>
-    <p>Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit manger au moins 1 kilogramme de nourriture par jour.</p>
+    <p>
+      Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit manger au moins 1 kilogramme de
+      <NuxtLink to="/regles/equipement/marchandise">nourriture</NuxtLink> par jour.
+    </p>
     <p>
       Si elle ne réussit pas à manger cette quantité, mais qu’elle en consomme au moins la moitié, elle est affligée de la <strong>Faim</strong>. Sa
-      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <strong>nuit de sommeil</strong>. À la fin de la journée, elle doit effectuer
-      un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
+      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À
+      la fin de la journée, elle doit effectuer un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
       <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
       Elle est affligée des pénalités suivantes en cas d’échec :
     </p>
     <ul>
-      <li>Sa <strong>régénération</strong> de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> devient nulle.</li>
-      <li>Sa <strong>régénération</strong> d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> est réduite de moitié.</li>
+      <li>
+        Sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink> de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> devient nulle.
+      </li>
+      <li>
+        Sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink> d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> est réduite de moitié.
+      </li>
       <li>
         Ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> maximum sont réduits de 2+1d4. Les points de Vitalité maximum perdus de
         cette façon sont récupérés après une nuit complète de sommeil, si la créature n’est plus affligée par la Soif, la Sécheresse, la Faim ou la Famine.

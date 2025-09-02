@@ -75,6 +75,6 @@ const ships = ref<Ship[]>(orderBy(getShips(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Calculez le prix d’un passage en navire selon la distance, les frais d’opération, le type d’embarcation et le nombre de passagers.",
 });
 </script>

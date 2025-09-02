@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Légères" :parent="parent" />
-    <p>🚧</p>
+    <p>Des armures souples offrant protection et confort sans sacrifier la mobilité.</p>
     <!--
       TODO(fpion): liens vers les sections utiles
       * Défense
@@ -39,6 +39,6 @@ const armor = computed<Armor[]>(() =>
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les armures légères comme la brigandine, le cuir et le cuir clouté, alliant protection basique, confort et liberté de mouvement.",
 });
 </script>

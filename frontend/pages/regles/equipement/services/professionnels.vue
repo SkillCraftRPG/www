@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Professionnels" :parent="parent" />
-    <p>🚧</p>
+    <p>Des services variés : transport, soins, mercenaires, palefreniers et messagers.</p>
     <table class="table table-striped text-center">
       <thead>
         <tr>
@@ -126,6 +126,7 @@ const title: string = "Services professionnels";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les services professionnels : transport en cabriolet, soins médicaux, mercenaires, écuries, toilettage, courrier et péages pour vos aventures.",
 });
 </script>

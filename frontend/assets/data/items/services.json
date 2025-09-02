@@ -78,50 +78,39 @@
       "id": "f70b1f5d-8146-4496-bf2a-6e5acf3e887d",
       "name": "Chope de cervoise",
       "price": 0.05,
-      "quantity": {
-        "value": 500,
-        "unit": "ml"
-      },
+      "volume": 16,
       "description": "Une dose d’un breuvage alcoolique commun obtenu à partir de céréales tel l’orge. Un mélange d’herbes et d’épices y est ajouté afin d’améliorer sa couleur, son goût et sa conservation."
     },
     {
       "id": "9dbff811-9fe0-4ecb-8cb6-9d079dbec882",
       "name": "Pichet de cervoise",
       "price": 0.15,
-      "quantity": {
-        "value": 2,
-        "unit": "L"
-      },
+      "volume": 64,
+      "quantity": "1,9 L",
       "description": "Quatre doses de cervoise au prix de trois."
     },
     {
       "id": "83d61b80-16ad-4dde-b403-5a518ee15679",
       "name": "Bouteille de piquette",
       "price": 0.25,
-      "quantity": {
-        "value": 750,
-        "unit": "ml"
-      },
+      "volume": 25,
+      "quantity": "750 ml",
       "description": "Un vin de piètre qualité au niveau d’alcool similaire à la cervoise, mais tout de même savoureux."
     },
     {
       "id": "0744b2f9-4616-4e31-b540-e3e0f2ff097a",
       "name": "Bouteille de vin commun",
       "price": 0.5,
-      "quantity": {
-        "value": 750,
-        "unit": "ml"
-      },
+      "volume": 25,
+      "quantity": "750 ml",
       "description": "Une bouteille de vin communément servi aux tablées modestes et confortables."
     },
     {
       "id": "63f4dccd-4fb3-47c8-b506-f53ba060aea4",
       "name": "Bouteille de vin de qualité",
       "price": 3,
-      "quantity": {
-        "value": 750,
-        "unit": "ml"
-      },
+      "volume": 25,
+      "quantity": "750 ml",
       "description": "Une bouteille de vin raffiné, portant une robe et des arômes distingués et exquis."
     }
   ]

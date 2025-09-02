@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Terrestres" :parent="parent" />
-    <p>🚧</p>
+    <p>Des véhicules terrestres variés pour transporter marchandises et voyageurs.</p>
     <ItemList :items="vehicles" />
   </main>
 </template>
@@ -25,6 +25,6 @@ const vehicles = ref<Item[]>(orderBy(getVehicles(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les véhicules terrestres : chars, chariots, charrettes, hippomobiles et traîneaux, utiles pour voyager ou transporter des biens.",
 });
 </script>

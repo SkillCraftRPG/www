@@ -22,7 +22,7 @@
     </p>
     <p>
       Par défaut, les armes improvisées infligent 1d4 points de dégâts. Les armes brisées et objets lancés ne possédant pas la propriété
-      <strong>Jet</strong> infligent toujours 1d4 points de dégâts.
+      <NuxtLink to="/regles/equipement/armes/proprietes">Jet</NuxtLink> infligent toujours 1d4 points de dégâts.
     </p>
     <p>
       La <NuxtLink to="/regles/statistiques/force">Force</NuxtLink> de la créature est ajoutée aux points de dégâts infligés en maniant une arme improvisée à

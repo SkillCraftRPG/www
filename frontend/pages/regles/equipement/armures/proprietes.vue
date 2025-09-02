@@ -12,8 +12,9 @@
         d’armure en étant dotée.
       </li>
       <li>
-        <strong>Confortable.</strong> Le personnage peut <strong>dormir</strong> en portant cette armure sans subir de pénalité à sa régénération. Cette
-        propriété ne s’applique plus du moment qu’il porte une pièce d’armure n’étant pas dotée de cette propriété.
+        <strong>Confortable.</strong> Le personnage peut <NuxtLink to="/regles/aventure/repos/sommeil">dormir</NuxtLink> en portant cette armure sans subir de
+        pénalité à sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink>. Cette propriété ne s’applique plus du moment qu’il porte une pièce d’armure
+        n’étant pas dotée de cette propriété.
       </li>
       <li>
         <strong>Ferme.</strong> La fabrication de cette armure confère au personnage la <strong>résistance</strong> aux

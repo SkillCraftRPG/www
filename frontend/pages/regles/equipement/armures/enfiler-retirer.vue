@@ -2,14 +2,16 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Enfiler ou retirer" :parent="parent" />
-    <p>Enfiler ou retirer une pièce d’armure nécessite un certain temps en fonction de la catégorie de celle-ci.</p>
+    <p>
+      Enfiler ou retirer une pièce d’armure nécessite un certain <NuxtLink to="/regles/aventure/temps">temps</NuxtLink> en fonction de la catégorie de celle-ci.
+    </p>
     <p>
       Pour enfiler toute son armure, le temps nécessaire est la somme du temps pour chaque
       <NuxtLink to="/regles/equipement/armures/partielles">pièce d’armure</NuxtLink>.
     </p>
     <p>
-      C’est pourquoi certains aventuriers choisissent de dormir en armure, nuisant ainsi à leur <strong>sommeil</strong>, mais ils sont alors prêts à toute
-      éventualité en cas d’escarmouche nocturne.
+      C’est pourquoi certains aventuriers choisissent de <NuxtLink to="/regles/aventure/repos/sommeil">dormir</NuxtLink> en armure, nuisant ainsi à leur
+      <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink>, mais ils sont alors prêts à toute éventualité en cas d’escarmouche nocturne.
     </p>
     <table class="table table-striped text-center">
       <thead>

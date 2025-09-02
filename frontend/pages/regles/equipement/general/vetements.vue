@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>Des vêtements adaptés à chaque occasion, du quotidien modeste aux tenues nobles.</p>
     <ItemList :items="clothing" />
   </main>
 </template>
@@ -25,6 +25,7 @@ const clothing = ref<Item[]>(orderBy(getClothingItems(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les vêtements : habits de nobles, robes liturgiques, costumes de soirée, tenues de voyage ou simples habits communs pour toutes les situations",
 });
 </script>
