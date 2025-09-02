@@ -3,13 +3,6 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Moyennes" :parent="parent" />
     <p>Des armures équilibrées offrant une bonne défense sans trop sacrifier la mobilité.</p>
-    <!--
-      TODO(fpion): liens vers les sections utiles
-      * Défense
-      * Formation
-      * Résistance
-      * Propriétés
-    -->
     <ItemArmorList :items="armor" />
   </main>
 </template>

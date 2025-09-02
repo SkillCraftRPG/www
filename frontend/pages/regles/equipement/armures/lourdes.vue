@@ -3,13 +3,6 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Lourdes" :parent="parent" />
     <p>Des armures imposantes offrant une protection maximale au prix de la mobilité.</p>
-    <!--
-      TODO(fpion): liens vers les sections utiles
-      * Défense
-      * Formation
-      * Résistance
-      * Propriétés
-    -->
     <ItemArmorList :items="armor" />
   </main>
 </template>

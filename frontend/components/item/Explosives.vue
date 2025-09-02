@@ -38,8 +38,9 @@
         </ul>
       </li>
       <li>
-        <strong>Bombe.</strong> La bombe est considérée comme une arme de <NuxtLink to="/regles/equipement/armes/proprietes">Jet (4/12)</NuxtLink>. Elle est
-        composée d’une chambre métallique et d’une mèche, et contient 250 grammes de poudre noire.
+        <strong>Bombe.</strong> La bombe est considérée comme une arme de <NuxtLink to="/regles/equipement/armes/proprietes">Jet (4/12)</NuxtLink> simple (+2 à
+        l’<NuxtLink to="/regles/equipement/armes/attaque">Attaque</NuxtLink>). Elle est composée d’une chambre métallique et d’une mèche, et contient 250
+        grammes de poudre noire.
         <ul>
           <li>
             Elle peut être allumée par une action <strong>Objet</strong>, puis lancée par une action <strong>Attaque</strong> en effectuant un
