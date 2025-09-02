@@ -24,7 +24,7 @@
       <li>
         <strong>Dispersion.</strong> L’arme disperse des projectiles dans un cône de longueur égale à sa portée. Toute créature touchée reçoit les points de
         dégâts. Un dé supplémentaire est ajouté aux points de dégâts reçus par une créature touchée se trouvant dans une case adjacente à celle de l’attaquant
-        (à bout portant).
+        (tir à bout portant).
       </li>
       <li>
         <strong>Finesse.</strong> Si le personnage a acquis le talent <NuxtLink to="/regles/talents/armes-de-finesse">Armes de finesse</NuxtLink>, il peut

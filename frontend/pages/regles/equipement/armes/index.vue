@@ -9,16 +9,9 @@
       </div>
     </div>
     <h2 class="h3">Catégories</h2>
-    <p>Les armes sont réparties en deux catégories :</p>
+    <p>Les armes sont réparties en deux catégories, incluant les armes à feu :</p>
     <div class="row">
-      <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
-      </div>
-    </div>
-    <h3 class="h5">🚧</h3>
-    <p>🚧</p>
-    <div class="row">
-      <div v-for="(item, index) in other" :key="index" class="col-xs-12 col-sm-6 mb-4">
+      <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -62,6 +55,11 @@ const items: MenuItem[] = [
     title: "Plaquage d’argent",
     description: "Plaquage en argent pour armes contre créatures résistantes.",
   },
+  {
+    path: "/regles/equipement/armes/munitions",
+    title: "Munitions",
+    description: "Munitions et contenants pour arcs, arbalètes, sarbacanes, frondes et armes à feu.",
+  },
   // TODO(fpion): Armes affûtées
   // TODO(fpion): Armes brisées
 ];
@@ -76,14 +74,11 @@ const list: MenuItem[] = [
     title: "Armes martiales",
     description: "Des armes complexes, puissantes et solides, dédiées aux hommes d’armes.",
   },
-];
-const other: MenuItem[] = [
   {
-    path: "/regles/equipement/armes/munitions",
-    title: "Munitions",
-    description: "Munitions et contenants pour arcs, arbalètes, sarbacanes et frondes.",
+    path: "/regles/equipement/armes/feu",
+    title: "Armes à feu",
+    description: "🚧",
   },
-  // TODO(fpion): Armes à feu et explosifs
 ];
 
 useSeo({
