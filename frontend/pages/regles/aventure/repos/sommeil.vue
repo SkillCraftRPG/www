@@ -30,12 +30,16 @@
       <li>Sa <strong>Fatigue</strong> descend d’un niveau.</li>
       <li>Il récupère les utilisations de certaines capacités.</li>
     </ul>
-    <p>
-      Une nuit de sommeil peut être interrompue par un combat, de fortes intempéries l’obligeant à déplacer son campement, l’<NuxtLink
-        to="/regles/aventure/environnement/alcoolemie"
-        >ébriété</NuxtLink
-      >, ou d’autres événements similaires.
-    </p>
+    <p>Voici quelques situations pouvant interrompre une nuit de sommeil :</p>
+    <ul>
+      <li>Un combat.</li>
+      <li>De fortes intempéries obligeant à déplacer son campement.</li>
+      <li>L’<NuxtLink to="/regles/aventure/environnement/alcoolemie">ébriété</NuxtLink>.</li>
+      <li>
+        Porter une <NuxtLink to="/regles/equipement/armures/partielles">pièce</NuxtLink> d’<NuxtLink to="/regles/equipement/armures">armure</NuxtLink> n’étant
+        pas dotée de la propriété <NuxtLink to="/regles/equipement/armures/proprietes">Confortable</NuxtLink>.
+      </li>
+    </ul>
   </main>
 </template>
 
