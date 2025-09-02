@@ -2,7 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>
+      Les marchandises sont les ressources et éléments utiles aux roturiers, paysans et ouvriers. Elles sont généralement troquées, mais les aventuriers peuvent
+      parfois les acheter en cas de besoin.
+    </p>
     <h2 class="h3">Table des matières</h2>
     <ul>
       <li>
@@ -27,13 +30,20 @@
       </li>
     </ul>
     <h2 id="betail" class="h3">Bétail</h2>
-    <p>🚧</p>
+    <p>
+      Cette animaux sont principalement utilisés pas les paysans. Ils ne sont pas aptes à être utilisés comme
+      <NuxtLink to="/regles/equipement/montures-vehicules">monture</NuxtLink>.
+    </p>
     <ItemList :items="cattle" />
     <h2 id="epices" class="h3">Épices</h2>
-    <p>🚧</p>
+    <p>Les épices étaient précieuses puisqu’elles conservent les aliments, masquent les goûts fades et affirment richesse et prestige social.</p>
     <ItemList :items="spices" />
     <h2 id="nourriture" class="h3">Nourriture</h2>
-    <p>🚧</p>
+    <p>
+      Vous trouverez ci-dessous des ingrédients utiles à la cuisine. La nourriture est requise à l’<NuxtLink to="/regles/aventure/environnement/alimentation"
+        >alimentation</NuxtLink
+      >.
+    </p>
     <ItemList :items="food" />
     <h3 id="repas" class="h5">Repas</h3>
     <p>
@@ -82,10 +92,15 @@
       </tbody>
     </table>
     <h2 id="metaux" class="h3">Métaux</h2>
-    <p>🚧</p>
+    <p>Ces ressources sont utiles aux forgerons, orfèvres et autres travailleurs de métallurgie.</p>
     <ItemList :items="metals" />
     <h2 id="textiles" class="h3">Textiles</h2>
-    <p>🚧</p>
+    <p>
+      Les textiles sont les ressources brutes des métiers de tissage, faisant la confection des
+      <NuxtLink to="/regles/equipement/general/vetements">vêtements</NuxtLink>,
+      <NuxtLink to="/regles/equipement/general/contenants">contenants en tissu</NuxtLink>, couvertures, toiles de
+      <NuxtLink to="/regles/equipement/montures-vehicules/navires">navire</NuxtLink>, etc.
+    </p>
     <ItemList :items="textiles" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
@@ -139,6 +154,6 @@ const textiles = computed<Goods[]>(() =>
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les marchandises : bétail, épices, nourriture, métaux et textiles, essentiels à la vie quotidienne et aux échanges.",
 });
 </script>

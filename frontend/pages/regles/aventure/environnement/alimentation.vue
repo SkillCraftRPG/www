@@ -20,7 +20,10 @@
       jet de sauvegarde décrit plus haut.
     </p>
     <h2 class="h3">Nourriture</h2>
-    <p>Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit manger au moins 1 kilogramme de nourriture par jour.</p>
+    <p>
+      Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit manger au moins 1 kilogramme de
+      <NuxtLink to="/regles/equipement/marchandise">nourriture</NuxtLink> par jour.
+    </p>
     <p>
       Si elle ne réussit pas à manger cette quantité, mais qu’elle en consomme au moins la moitié, elle est affligée de la <strong>Faim</strong>. Sa
       <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À

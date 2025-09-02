@@ -23,13 +23,13 @@ const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armes", to: "/regles/equipement/armes" },
 ];
-const title: string = "Armes martiales";
+const title: string = "Munitions";
 const { orderBy } = arrayUtils;
 
 const ammunition = ref<Ammunition[]>(orderBy(getAmmunition(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les munitions pour arcs, arbalètes, sarbacanes et frondes, ainsi que leurs contenants indispensables pour vos aventures.",
 });
 </script>

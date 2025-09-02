@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Moyennes" :parent="parent" />
-    <p>🚧</p>
+    <p>Des armures équilibrées offrant une bonne défense sans trop sacrifier la mobilité.</p>
     <!--
       TODO(fpion): liens vers les sections utiles
       * Défense
@@ -39,6 +39,7 @@ const armor = computed<Armor[]>(() =>
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les armures moyennes : peau, mailles, écailles, plastron et plates partielles, offrant un compromis entre protection et liberté de mouvement.",
 });
 </script>

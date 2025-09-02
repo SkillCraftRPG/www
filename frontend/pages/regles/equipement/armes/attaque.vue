@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’une arme est utilisée afin d’effectuer une attaque, cette arme confère un bonus au <NuxtLink to="/regles/competences/tests">test</NuxtLink> de
-      l’attaque. Ce bonus est indiqué dans la colonne <strong>Attaque</strong> de chaque arme.
+      l’attaque. Ce bonus est indiqué dans la colonne <i>Attaque</i> de chaque arme.
     </p>
     <p>Ce bonus n’est appliqué qu’au test des attaques effectuées en maniant cette arme. Une attaque bénéficie donc du bonus d’une seule arme à la fois.</p>
     <p>Ce bonus varie en fonction de la taille de l’arme.</p>

@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Simples" :parent="parent" />
-    <p>🚧</p>
+    <p>Des armes basiques accessibles à tous, du bâton à l’arbalète légère.</p>
     <!--
       TODO(fpion): liens vers les sections utiles
       * Attaque
@@ -37,6 +37,6 @@ const weapons = ref<Weapon[]>(
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les armes simples : dagues, lances, arcs, masses et autres équipements de base pour combattants débutants ou aventuriers modestes.",
 });
 </script>

@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Lourdes" :parent="parent" />
-    <p>🚧</p>
+    <p>Des armures imposantes offrant une protection maximale au prix de la mobilité.</p>
     <!--
       TODO(fpion): liens vers les sections utiles
       * Défense
@@ -39,6 +39,6 @@ const armor = computed<Armor[]>(() =>
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les armures lourdes : broigne, haubert, écailles et plate complète, conçues pour une défense optimale et une solidité inégalée.",
 });
 </script>

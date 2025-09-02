@@ -17,7 +17,12 @@
     </p>
     <ItemAccommodationServices :items="services.accommodation" />
     <h3 id="alcool" class="h5">Alcool</h3>
-    <p>🚧</p>
+    <p>
+      Alcools variés : cervoise, piquette et vins pour accompagner festins, tavernes et banquets. La consommation d’alcool peut causer l’<NuxtLink
+        to="/regles/aventure/environnement/alcoolemie"
+        >ébriété</NuxtLink
+      >.
+    </p>
     <ItemAlcoholList :items="services.alcohol" />
   </main>
 </template>
@@ -34,6 +39,7 @@ const title: string = "Gîte et couvert";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les auberges et tavernes d’Ouespéro : gîte, repas et alcools variés comme cervoise, piquette et vins, essentiels à la vie sociale et aux festins",
 });
 </script>

@@ -34,27 +34,27 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/services/gite-couvert",
     title: "Gîte et couvert",
-    description: "🚧",
+    description: "Auberges et tavernes d’Ouespéro : gîte, repas et alcools variés pour voyageurs et habitants.",
   },
   {
     path: "/regles/equipement/services/professionnels",
     title: "Services professionnels",
-    description: "🚧",
+    description: "Transport, soins, mercenaires, écuries et péages : services essentiels aux aventuriers.",
   },
   {
     path: "/regles/equipement/services/occultes",
     title: "Services occultes",
-    description: "🚧",
+    description: "Services occultes : guérisons, protections magiques, augures et résurrections.",
   },
   {
     path: "/regles/equipement/services/peuplements",
     title: "Peuplements",
-    description: "🚧",
+    description: "Villages, villes et cités : population, artisans et diversité urbaine.",
   },
   {
     path: "/regles/equipement/services/passage-navire",
     title: "Passage en navire",
-    description: "🚧",
+    description: "Tarifs et conditions de voyage maritime selon le type de navire et la distance parcourue.",
   },
 ];
 

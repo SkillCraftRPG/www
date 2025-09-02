@@ -132,6 +132,7 @@ const services = ref<OccultService[]>([
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les services occultes : augures, guérisons, protections et résurrections, rares et coûteux, proposés par temples et praticiens du mystique.",
 });
 </script>

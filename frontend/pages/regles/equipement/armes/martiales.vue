@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Martiales" :parent="parent" />
-    <p>🚧</p>
+    <p>Des armes puissantes et spécialisées pour guerriers aguerris et combattants d’élite.</p>
     <!--
       TODO(fpion): liens vers les sections utiles
       * Attaque
@@ -40,6 +40,7 @@ const weapons = ref<Weapon[]>(
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les armes martiales : épées longues, hallebardes, arbalètes lourdes et autres équipements avancés réservés aux combattants entraînés.",
 });
 </script>

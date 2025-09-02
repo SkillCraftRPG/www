@@ -10,8 +10,8 @@
         situées à 3 mètres ou moins de sa position.
       </li>
       <li>
-        <strong>Barillet.</strong> Le nombre de munitions indiquées sont chargées en même temps dans l’arme. Chaque munition peut être tirée avant qu’on ne
-        doive recharger l’arme.
+        <strong>Barillet.</strong> Le nombre de <NuxtLink to="/regles/equipement/armes/munitions">munitions</NuxtLink> indiquées sont chargées en même temps
+        dans l’arme. Chaque munition peut être tirée individuellement avant que l’arme ne doive être rechargée.
       </li>
       <li>
         <strong>Chargement.</strong> L’action <i>Charger une arme</i> doit être utilisée afin d’installer une ou plusieurs munitions dans une arme possédant

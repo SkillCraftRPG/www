@@ -107,6 +107,6 @@ const specialties = ref<Specialty[][]>(
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Villages, villes et cités en Ouespéro : découvrez la population, les artisans, les routes commerciales et la diversité des établissements.",
 });
 </script>

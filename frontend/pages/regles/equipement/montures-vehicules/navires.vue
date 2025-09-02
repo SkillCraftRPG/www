@@ -2,10 +2,13 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Le nœud est l’unité de mesure de la vitesse des navires maritimes. Il correspond à un mille nautique par heure, soit 1 852 mètres.</p>
+    <p>Des navires variés pour le commerce, la guerre, l’exploration ou le voyage.</p>
     <p>
-      Pour un navire, les conditions idéales sont un plein vent dans les voiles et un fort courant dans la même direction que le navire. Ces conditions idéales
-      permettent aux navires d’atteindre des vitesses largement supérieures à leur vitesse moyenne.
+      Le nœud est l’unité de mesure de la vitesse des navires maritimes. Il correspond à un mille nautique par heure. Le mille nautique équivaut à 1 852 mètres.
+    </p>
+    <p>
+      Les conditions idéales sont un plein vent dans les voiles et un fort courant dans la même direction que le navire. Ces conditions permettent aux navires
+      d’atteindre des vitesses largement supérieures à leur vitesse moyenne.
     </p>
     <ItemShipList :items="ships" />
     <h3 id="equipage" class="h5">Équipage</h3>
@@ -59,6 +62,6 @@ const ships = ref<Ship[]>(orderBy(getShips(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les navires : canots, drakkars, galères, voiliers et navires de guerre, avec leurs vitesses, équipages et coûts d’entretien.",
 });
 </script>

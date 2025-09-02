@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Général" :parent="parent" />
-    <p>🚧</p>
+    <p>Des articles pratiques et variés pour faciliter la vie quotidienne des aventuriers.</p>
     <div class="row">
       <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
@@ -36,12 +36,12 @@ const list: MenuItem[] = [
   {
     path: "/regles/equipement/general/contenants",
     title: "Contenants",
-    description: "🚧",
+    description: "Bourses, sacs, fioles et tonneaux : contenants pour stocker et transporter.",
   },
   {
     path: "/regles/equipement/general/vetements",
     title: "Vêtements",
-    description: "🚧",
+    description: "Vêtements pour roturiers, voyageurs, religieux ou nobles des grandes occasions",
   },
 ];
 
@@ -49,6 +49,6 @@ const items = ref<Item[]>(orderBy(getGeneralItems(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez l’équipement général : outils, lampes, cordes, rations et objets utiles pour le voyage, la survie et les situations imprévues.",
 });
 </script>

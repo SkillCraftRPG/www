@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>Des contenants variés pour transporter monnaie, vivres, outils et ressources.</p>
     <p>
       La colonne <i>Capacité</i> correspond à la masse maximale qu’un contenant peut supporter, en kilogrammes. Si son contenu excède cette capacité, le
       contenant brise.
@@ -29,6 +29,6 @@ const containers = ref<Item[]>(orderBy(getContainers(), "slug"));
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les contenants : bourses, sacs, tonneaux, fioles et coffres, essentiels pour stocker et transporter vos biens durant l’aventure.",
 });
 </script>

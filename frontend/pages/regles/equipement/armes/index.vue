@@ -81,7 +81,7 @@ const other: MenuItem[] = [
   {
     path: "/regles/equipement/armes/munitions",
     title: "Munitions",
-    description: "🚧",
+    description: "Munitions et contenants pour arcs, arbalètes, sarbacanes et frondes.",
   },
   // TODO(fpion): Armes à feu et explosifs
 ];
