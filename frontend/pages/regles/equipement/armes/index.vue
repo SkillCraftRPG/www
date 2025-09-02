@@ -77,7 +77,7 @@ const list: MenuItem[] = [
   {
     path: "/regles/equipement/armes/feu",
     title: "Armes à feu",
-    description: "🚧",
+    description: "Poudre noire, bombes, armes à feu et leur fonctionnement.",
   },
 ];
 

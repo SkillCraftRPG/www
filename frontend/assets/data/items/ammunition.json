@@ -60,7 +60,7 @@
     "price": 0.01,
     "weight": 0.03,
     "weapons": "Fronde",
-    "description": "Une fine aiguille en métal soufflée dans une sarbacane.",
+    "description": "Similaire à un caillou, il s’agit d’une petit boule grossière faite en plomb. Les plombs sont rangés dans un sac de tissu.",
     "container": {
       "id": "50888527-b9da-4ae9-b5b6-e00827e57e74",
       "slug": "sac-a-plombs",
