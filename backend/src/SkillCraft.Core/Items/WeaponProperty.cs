@@ -7,5 +7,6 @@ public enum WeaponProperty
   Light,
   Loading,
   Reach,
+  Scatter,
   TwoHanded
 }

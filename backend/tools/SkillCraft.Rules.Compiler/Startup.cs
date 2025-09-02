@@ -25,6 +25,7 @@ internal class Startup
     services.AddTransient<ICommandHandler<CompileContainers>, CompileContainersHandler>();
     services.AddTransient<ICommandHandler<CompileCustomizations>, CompileCustomizationsHandler>();
     services.AddTransient<ICommandHandler<CompileEducations>, CompileEducationsHandler>();
+    services.AddTransient<ICommandHandler<CompileFirearms>, CompileFirearmsHandler>();
     services.AddTransient<ICommandHandler<CompileGeneralItems>, CompileGeneralItemsHandler>();
     services.AddTransient<ICommandHandler<CompileGoods>, CompileGoodsHandler>();
     services.AddTransient<ICommandHandler<CompileMountAccessories>, CompileMountAccessoriesHandler>();

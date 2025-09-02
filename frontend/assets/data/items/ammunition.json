@@ -70,5 +70,77 @@
       "capacity": 20,
       "description": "Un sac de tissu dans lequel sont rangés les plombs."
     }
+  },
+  {
+    "id": "09b8a896-b0e9-4c43-8ea5-4f293ea5d219",
+    "slug": "balle",
+    "name": "Balle",
+    "price": 0.3,
+    "weight": 0.1,
+    "weapons": "Canon-boucle, lance de feu, mousquets, pistolets, poivrière",
+    "description": "Projectile sphérique en métal coulé, utilisé pour la majorité des armes à feu portatives.",
+    "container": {
+      "id": "de0d4c71-195b-4555-ba91-8fad79aa169f",
+      "slug": "etui-a-balles",
+      "name": "Étui à balles",
+      "price": 1,
+      "weight": 0.2,
+      "capacity": 24,
+      "description": "Petit boîtier en cuir rigide ou en métal, compartimenté pour ranger et protéger les balles."
+    }
+  },
+  {
+    "id": "189b645f-0a2b-4ee6-b5e5-48b718fe76be",
+    "slug": "chevrotine",
+    "name": "Chevrotine",
+    "price": 1.5,
+    "weight": 0.25,
+    "weapons": "Tromblon",
+    "description": "Ensemble de petits projectiles en plomb regroupés dans une charge unique, se dispersant à l’impact.",
+    "container": {
+      "id": "4f75cd11-28fc-4f84-81d5-b4b89359c781",
+      "slug": "sac-a-chevrotines",
+      "name": "Sac à chevrotines",
+      "price": 5,
+      "weight": 0.5,
+      "capacity": 10,
+      "description": "Un sac robuste en toile épaisse, permettant de transporter des charges de chevrotine en vrac."
+    }
+  },
+  {
+    "id": "23c235d4-4936-449f-9a4a-c1ed33aa5559",
+    "slug": "grenaille",
+    "name": "Grenaille",
+    "price": 0,
+    "weight": 0,
+    "weapons": "Dragon",
+    "description": "Charge composée de fines billes métalliques, provoquant un cône de dégâts à courte portée.",
+    "container": {
+      "id": "83dfc467-bb56-44eb-ae01-319e9f4d1d0f",
+      "slug": "sac-a-grenailles",
+      "name": "Sac à grenailles",
+      "price": 5,
+      "weight": 0.5,
+      "capacity": 10,
+      "description": "Poche de cuir épais, garnie d’un cordon, destinée à stocker les petites billes de grenaille."
+    }
+  },
+  {
+    "id": "fee00c70-4582-47e1-b48d-327ae931e1c1",
+    "slug": "obus",
+    "name": "Obus",
+    "price": 3,
+    "weight": 0.25,
+    "weapons": "Arquebuse, couleuvrine",
+    "description": "Projectile cylindrique plus lourd, conçu pour percer armures et structures lorsqu’il est tiré par une arme puissante.",
+    "container": {
+      "id": "a34e0691-c724-4d84-820d-d6dbb596e2e2",
+      "slug": "etui-a-obus",
+      "name": "Étui à obus",
+      "price": 10,
+      "weight": 1,
+      "capacity": 12,
+      "description": "Un étui renforcé, souvent en cuir épais avec cloisonnements internes, pour maintenir les obus en sécurité."
+    }
   }
 ]
