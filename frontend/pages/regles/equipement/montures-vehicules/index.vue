@@ -11,7 +11,8 @@
     <h2 class="h3">Bêtes</h2>
     <p>
       Les bêtes sont dotées d’une <NuxtLink to="/regles/statistiques/charge">Charge</NuxtLink>, comme toute créature. Elles sont assujetties aux mêmes règles
-      d’<NuxtLink to="/regles/equipement/encombrement">encombrement</NuxtLink> que toute autre créature.
+      d’<NuxtLink to="/regles/equipement/encombrement">encombrement</NuxtLink> que toute autre créature. Leurs
+      <NuxtLink to="/regles/aventure/mouvement/voyage">cadences de voyage</NuxtLink> sont également les mêmes que celles du commun des mortels.
     </p>
     <ItemMountList :items="mounts" />
     <h3 id="accessoires" class="h5">Accessoires</h3>
@@ -48,7 +49,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/equipement/montures-vehicules/navires",
     title: "Navires",
-    description: "Canots, drakkars, galères et voiliers : navires pour guerre, voyage et commerce",
+    description: "Canots, drakkars, galères et voiliers : navires pour guerre, voyage et commerce.",
   },
 ];
 

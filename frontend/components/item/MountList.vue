@@ -3,12 +3,11 @@
     <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col" class="w-sixth">Nom</th>
-          <th scope="col" class="w-sixth">Prix (deniers)</th>
-          <th scope="col" class="w-sixth">Vigueur</th>
-          <th scope="col" class="w-sixth">Taille</th>
-          <th scope="col" class="w-sixth">Charge (kg)</th>
-          <th scope="col" class="w-sixth">Vitesse (lieues)</th>
+          <th scope="col" class="w-20">Nom</th>
+          <th scope="col" class="w-20">Prix (deniers)</th>
+          <th scope="col" class="w-20">Vigueur</th>
+          <th scope="col" class="w-20">Taille</th>
+          <th scope="col" class="w-20">Charge (kg)</th>
         </tr>
       </thead>
       <tbody>
@@ -18,11 +17,10 @@
           <td>{{ $n(item.vigor, "integer") }}</td>
           <td>{{ $t(`size.category.options.${item.size}`) }}</td>
           <td>{{ $n(calculateLoad(item), "integer") }}</td>
-          <td>{{ $n(item.speed, "league") }}</td>
         </tr>
       </tbody>
     </table>
-    <h4 class="h6">Descriptions</h4>
+    <h3 class="h5">Descriptions</h3>
     <ul>
       <li v-for="item in items" :key="item.id">
         <strong>{{ item.name }}.</strong> {{ item.description }}

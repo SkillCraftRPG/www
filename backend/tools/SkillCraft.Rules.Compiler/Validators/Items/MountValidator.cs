@@ -16,6 +16,5 @@ internal class MountValidator : AbstractValidator<MountPayload>
     RuleFor(x => x.Vigor).GreaterThan(0);
     RuleFor(x => x.Size).IsInEnum();
     RuleFor(x => x.Load).GreaterThan(0);
-    RuleFor(x => x.Speed).GreaterThanOrEqualTo(1);
   }
 }

@@ -24,7 +24,7 @@
         case traversée.
       </li>
       <li>
-        En période de voyage, elle doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink>. Si la zone est très encombrée,
+        En période de voyage, elle doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence prudente</NuxtLink>. Si la zone est très encombrée,
         elle ne peut s’y <NuxtLink to="/regles/aventure/mouvement/furtif">déplacer furtivement</NuxtLink>. Sinon, elle peut s’y déplacer furtivement sans
         réduire davantage la distance parcourue.
       </li>
@@ -44,6 +44,6 @@ const title: string = "Terrain difficile";
 useSeo({
   title,
   description:
-    "Découvrez les règles du terrain difficile : vitesse réduite, risques de chute en courant, points de mouvement doublés et cadence lente en voyage.",
+    "Découvrez les règles du terrain difficile : vitesse réduite, risques de chute en courant, points de mouvement doublés et cadence prudente en voyage.",
 });
 </script>

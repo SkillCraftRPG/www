@@ -70,7 +70,7 @@
     </p>
     <p>
       Elle dépense <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par tranche de 1,5 mètres en situation de tour-par-tour,
-      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink> sur une longue période de
+      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence prudente</NuxtLink> sur une longue période de
       <NuxtLink to="/regles/aventure/temps">temps</NuxtLink>.
     </p>
     <h3 id="relever" class="h5">Se relever</h3>
@@ -90,7 +90,7 @@
     </p>
     <p>
       Elle dépense <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par tranche de 1,5 mètres en situation de tour-par-tour,
-      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink> sur une longue période de
+      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence prudente</NuxtLink> sur une longue période de
       <NuxtLink to="/regles/aventure/temps">temps</NuxtLink>.
     </p>
     <h2 id="natation" class="h3">Natation</h2>
@@ -105,7 +105,7 @@
     </p>
     <p>
       Elle dépense <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par tranche de 1,5 mètres en situation de tour-par-tour,
-      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink> sur une longue période de
+      et doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence prudente</NuxtLink> sur une longue période de
       <NuxtLink to="/regles/aventure/temps">temps</NuxtLink>.
     </p>
     <h2 id="sauter" class="h3">Sauter</h2>

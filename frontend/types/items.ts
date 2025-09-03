@@ -65,7 +65,6 @@ export type Mount = {
   vigor: number;
   size: SizeCategory;
   load?: number | null;
-  speed: number;
   description: string;
 };
 
