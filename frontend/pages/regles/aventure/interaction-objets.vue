@@ -179,10 +179,7 @@
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
 
-const parent: Breadcrumb[] = [
-  { text: "Aventure", to: "/regles/aventure" },
-  { text: "Environnement", to: "/regles/aventure/environnement" },
-];
+const parent: Breadcrumb[] = [{ text: "Aventure", to: "/regles/aventure" }];
 const title: string = "Interaction avec les objets";
 
 useSeo({
