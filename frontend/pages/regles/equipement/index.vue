@@ -89,13 +89,8 @@ const items: MenuItem[] = [
   },
 ];
 
-/* TODO(fpion):
- * Défense
- * Résistance
- */
-
 useSeo({
   title,
-  description: "", // TODO(fpion): implement
+  description: "Découvrez toutes les règles d’équipement : armes, armures, outils, services, montures, dépenses et marchandises pour vos aventures.",
 });
 </script>

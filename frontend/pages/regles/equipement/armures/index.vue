@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>L’armure est une protection physique, et parfois magique, portée par les aventuriers, les hommes d’armes ainsi que certaines créatures.</p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -40,11 +40,8 @@ const items: MenuItem[] = [
     title: "Propriétés",
     description: "Propriétés des armures et effets sur le porteur.",
   },
-  {
-    path: "/regles/equipement/armures/enfiler-retirer",
-    title: "Enfiler ou retirer son armure",
-    description: "Temps pour enfiler ou retirer une armure selon sa catégorie.",
-  },
+  // TODO(fpion): Défense
+  // TODO(fpion): Résistance
   {
     path: "/regles/equipement/armures/partielles",
     title: "Armures partielles",
@@ -56,6 +53,11 @@ const items: MenuItem[] = [
     description: "Porter deux couches d’armure et combiner leurs effets.",
   },
   // TODO(fpion): Armures renforcées
+  {
+    path: "/regles/equipement/armures/enfiler-retirer",
+    title: "Enfiler ou retirer son armure",
+    description: "Temps pour enfiler ou retirer une armure selon sa catégorie.",
+  },
 ];
 const list: MenuItem[] = [
   {
