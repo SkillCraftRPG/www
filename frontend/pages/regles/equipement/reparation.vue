@@ -14,9 +14,6 @@
       La réparation d’un équipement nécessite généralement des matériaux d’une valeur supérieure ou égale à ⅛ ({{ $n(1 / 8, "percentage") }}) du prix de vente
       de l’objet. Il coûtera généralement le double du prix pour faire réparer un objet auprès d’un artisan afin de payer son temps de travail et son expertise.
     </p>
-    <!-- TODO(fpion): temps -->
-    <!-- TODO(fpion): outils -->
-    <!-- TODO(fpion): atelier -->
     <p>
       Lorsqu’une <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> n’a pas perdu
       tous ses <NuxtLink to="/regles/equipement/resistance">points de Résistance</NuxtLink>, on effectue une règle de trois afin de calculer le coût de la
@@ -32,7 +29,12 @@
       maître de jeu.
     </p>
     <p>Certains équipements peuvent être brisés définitivement, à la discrétion du maître de jeu, et ne peuvent donc pas être réparés.</p>
-    <!-- TODO(fpion): trousse de réparation -->
+    <p>
+      La réparation d’un objet peut être longue et complexe. Elle nécessite de posséder les bons outils, d’être formé à leur utilisation, ainsi qu’un atelier de
+      travail. C’est la raison pourquoi certains aventuriers préfèrent réparer eux-même leur équipement en utilisant le
+      <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/artisanat">Artisanat</NuxtLink> de pair avec la
+      <NuxtLink to="/regles/equipement/outils">trousse de réparation</NuxtLink>.
+    </p>
   </main>
 </template>
 
