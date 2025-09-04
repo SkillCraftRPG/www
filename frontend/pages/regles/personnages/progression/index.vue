@@ -17,6 +17,7 @@
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
 
+const parent: Breadcrumb[] = [{ text: "Personnages", to: "/regles/personnages" }];
 const title: string = "Progression de personnage";
 
 type MenuItem = {
@@ -42,8 +43,6 @@ const items: MenuItem[] = [
     description: "La mesure la plus globale, elle augmente lorsque le personnage se spécialise. Le tiers limite la puissante maximale de ses capacités.",
   },
 ];
-
-const parent = computed<Breadcrumb[]>(() => [{ text: "Personnages", to: "/regles/personnages" }]);
 
 useSeo({
   title,

@@ -32,9 +32,8 @@
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
 
+const parent: Breadcrumb[] = [{ text: "Personnages", to: "/regles/personnages" }];
 const title: string = "Création de personnage";
-
-const parent = computed<Breadcrumb[]>(() => [{ text: "Personnages", to: "/regles/personnages" }]);
 
 useSeo({
   title,

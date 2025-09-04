@@ -21,30 +21,43 @@
     <p>
       La table ci-dessous présente le seuil d’expérience requise afin de progresser à un niveau supérieur, ainsi que l’expérience totale pour chaque niveau.
     </p>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-20">Niveau</th>
-          <th scope="col" class="w-40">Expérience requise</th>
-          <th scope="col" class="w-40">Expérience totale</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(total, index) in threshold" :key="index">
-          <td>{{ index }}</td>
-          <td>
-            <template v-if="index">{{ total - threshold[index - 1] }}</template>
-            <span v-else class="text-muted">{{ "—" }}</span>
-          </td>
-          <td>{{ total }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div v-for="(slice, index) in slices" :key="index" class="col">
+        <table class="table table-striped text-center">
+          <thead>
+            <tr>
+              <th scope="col" class="w-third">Niveau</th>
+              <th scope="col" class="w-third">Expérience requise</th>
+              <th scope="col" class="w-third">Expérience totale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="threshold in slice" :key="threshold.level">
+              <td>{{ threshold.level }}</td>
+              <td>
+                <template v-if="threshold.required">{{ threshold.required }}</template>
+                <span v-else class="text-muted">{{ "—" }}</span>
+              </td>
+              <td>{{ threshold.total }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
+
+const parent: Breadcrumb[] = [
+  { text: "Personnages", to: "/regles/personnages" },
+  { text: "Progression", to: "/regles/personnages/progression" },
+];
+const title: string = "Expérience";
 
 type Method = {
   name: string;
@@ -83,15 +96,27 @@ const methods: Method[] = [
   },
 ];
 
-const threshold: number[] = [
-  0, 100, 400, 1100, 2400, 4500, 7600, 11900, 17600, 24900, 34000, 45100, 58400, 74100, 92400, 113500, 137600, 164900, 195600, 229900, 268000,
-];
-const title: string = "Expérience";
+type Threshold = {
+  level: number;
+  required?: number;
+  total: number;
+};
+const thresholds = ref<Threshold[]>([]);
+for (let level = 0; level <= 100; level++) {
+  const threshold: Threshold = {
+    level,
+    total: 100 * Math.pow(level, 2),
+  };
+  if (level) {
+    threshold.required = threshold.total - thresholds.value[level - 1].total;
+  }
+  thresholds.value.push(threshold);
+}
 
-const parent = computed<Breadcrumb[]>(() => [
-  { text: "Personnages", to: "/regles/personnages" },
-  { text: "Progression", to: "/regles/personnages/progression" },
-]);
+const slices = computed<Threshold[][]>(() => {
+  const middle: number = Math.ceil(thresholds.value.length / 2);
+  return [thresholds.value.slice(0, middle), thresholds.value.slice(middle)];
+});
 
 useSeo({
   title,
