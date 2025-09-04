@@ -189,6 +189,15 @@
     "description": "Cette trousse contient des bandages, des baumes, des attelles, des pincettes et un couteau de précision. Elle contient 10 charges. Lorsque toutes les charges sont utilisées, la trousse doit être remplacée au complet par mesures d’hygiène."
   },
   {
+    "id": "61a03f28-68c4-4ac1-b8cb-73996172aaff",
+    "category": "Crafting",
+    "slug": "trousse-de-reparation",
+    "name": "Trousse de réparation",
+    "price": 25,
+    "weight": 2,
+    "description": "Cette trousse contient une variété de petits outils de réparation et de pièces en divers matériaux. Elle contient 10 charges. Elle peut être utilisée pour rafistoler des objets."
+  },
+  {
     "id": "e1cd27ae-7048-44d1-8060-97c7969ac9a5",
     "category": "Crafting",
     "slug": "trousse-d-empoisonneur",
