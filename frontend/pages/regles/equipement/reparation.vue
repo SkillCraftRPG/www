@@ -14,6 +14,9 @@
       La réparation d’un équipement nécessite généralement des matériaux d’une valeur supérieure ou égale à ⅛ ({{ $n(1 / 8, "percentage") }}) du prix de vente
       de l’objet. Il coûtera généralement le double du prix pour faire réparer un objet auprès d’un artisan afin de payer son temps de travail et son expertise.
     </p>
+    <!-- TODO(fpion): temps -->
+    <!-- TODO(fpion): outils -->
+    <!-- TODO(fpion): atelier -->
     <p>
       Lorsqu’une <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> n’a pas perdu
       tous ses <NuxtLink to="/regles/equipement/resistance">points de Résistance</NuxtLink>, on effectue une règle de trois afin de calculer le coût de la
