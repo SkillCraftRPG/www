@@ -128,7 +128,7 @@
     "skillId": null,
     "requiredTalentId": null,
     "summary": "Formé aux armes improvisées, il inflige 1d4 + Force en mêlée ou 1d4 + Précision à distance en attaquant avec un objet non conçu pour le combat.",
-    "description": "Forme le personnage au maniement des armes improvisées.\n\nIl inflige 1d4 + Force points de dégâts lorsqu’il effectue une attaque de mêlée en maniant une telle arme, ou 1d4 + Précision lorsqu’il effectue une attaque à distance.",
+    "description": "Forme le personnage au maniement des armes improvisées.\n\nÉgalement, lorsqu’il utilise une telle arme, le bonus à l’Attaque est toujours d’au moins 1, et le dé de dégâts est toujours au minimum 1d4.",
     "notes": "\uD83D\uDD17"
   },
   {
