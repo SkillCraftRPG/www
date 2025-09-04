@@ -14,8 +14,8 @@
     </p>
     <p>Les renforts ne sont pas cumulables. Si un objet déjà renforcé est renforcé à nouveau, le renfort le plus élevé prédomine.</p>
     <p>
-      Ces renforts sont permanents : ils peuvent donc être <NuxtLink to="/regles/equipement/vente-reparation">réparés</NuxtLink>. Ils peuvent également être
-      retirés afin d’en récupérer les matériaux.
+      Ces renforts sont permanents : ils peuvent donc être <NuxtLink to="/regles/equipement/reparation">réparés</NuxtLink>. Ils peuvent également être retirés
+      afin d’en récupérer les matériaux.
     </p>
     <p>
       Il est possible de renforcer une <NuxtLink to="/regles/equipement/armures/partielles">pièce d’armure</NuxtLink>. Cette action nécessite seulement 10

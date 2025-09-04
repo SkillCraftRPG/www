@@ -10,7 +10,7 @@
     <p>
       Lorsque cette valeur chute à 0, l’objet est brisé. Il ne confère plus ses <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink>, ni les
       bonus octroyés par exemple par ses <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink>. L’acte de
-      <NuxtLink to="/regles/equipement/vente-reparation">réparer</NuxtLink> l’objet restaure ces bonus.
+      <NuxtLink to="/regles/equipement/reparation">réparer</NuxtLink> l’objet restaure ces bonus.
     </p>
     <p>Si le personnage est protégé par un bouclier et une ou plusieurs armures, alors il utilise d’abord son bouclier pour parer un coup.</p>
     <p>

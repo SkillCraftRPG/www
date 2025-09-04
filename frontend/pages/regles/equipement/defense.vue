@@ -10,7 +10,7 @@
     <p>Ces points sont cumulables entre-eux, c’est-à-dire qu’un personnage peut bénéficier de bonus de points de Défense de plusieurs armures et boucliers.</p>
     <p>
       Lorsque l’objet est <NuxtLink to="/regles/equipement/resistance">brisé</NuxtLink>, alors il ne confère aucun bonus de Défense. L’acte de
-      <NuxtLink to="/regles/equipement/vente-reparation">réparer</NuxtLink> l’objet restaure le bonus. Toutefois, les pénalités sont toujours présentes.
+      <NuxtLink to="/regles/equipement/reparation">réparer</NuxtLink> l’objet restaure le bonus. Toutefois, les pénalités sont toujours présentes.
     </p>
     <p>
       Certaines situations ont un impact sur les points de Défense conférés, par exemple une
