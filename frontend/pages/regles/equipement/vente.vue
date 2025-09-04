@@ -1,19 +1,18 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
-    <p>L’équipement des personnages n’est pas éternel, et peut être brisé. Également, l’équipement de ses adversaires fait très souvent partie du butin.</p>
-    <h2 class="h3">Vente d’équipement</h2>
+    <AppBreadcrumb active="Vente" :parent="parent" />
     <p>
-      Au fil de ses aventures, les personnages acquerront probablement des trésors ou des objets qu’ils désireront vendre ou échanger contre d’autres biens. La
-      valeur de revente d’un objet varie en fonction de sa nature.
+      Au fil de ses aventures, les personnages acquerront probablement des trésors ou des objets qu’ils désireront vendre ou échanger contre d’autres biens.
     </p>
+    <p>Par exemple, l’équipement des adversaires vaincus fait très souvent partie du butin.</p>
+    <p>La valeur de revente d’un objet varie en fonction de sa nature.</p>
     <ul>
       <li>
         <NuxtLink to="/regles/equipement/armes">Armes</NuxtLink>, <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>,
         <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink> et <NuxtLink to="/regles/equipement/general">équipements</NuxtLink>. Lorsqu’en bonne
-        condition, ces objets peuvent être vendus pour la moitié de leur coût d’achat. Lorsqu’ils sont brisés ou en mauvais état, leur valeur de revente est
-        moindre, et souvent nulle.
+        condition, ces objets peuvent être vendus pour la moitié de leur prix d’achat. Lorsqu’ils sont brisés ou en mauvais état, leur valeur de revente est
+        moindre, avoisinant le quart de leur prix d’achat, et bien souvent nulle.
       </li>
       <li>
         <strong>Artefacts magiques.</strong> Les artefacts magiques ou uniques n’ont généralement pas de valeur fixe. À moins qu’ils soient fréquents et vendus
@@ -32,17 +31,6 @@
         enchère afin de réaliser un profit.
       </li>
     </ul>
-    <h2 class="h3">Réparation d’équipement</h2>
-    <p>La réparation d’un équipement est toujours moins onéreuse que l’achat d’un nouvel exemplaire.</p>
-    <p>
-      Le coût de réparation d’un équipement varie généralement entre 25 % et 50 % de son prix d’achat, en fonction de son état, des habiletés de l’artisan
-      effectuant la réparation et des ressources nécessaires.
-    </p>
-    <p>Certains équipements peuvent être brisés définitivement, à la discrétion du maître de jeu, et ne peuvent donc pas être réparés.</p>
-    <p>
-      On raconte que certains artisans partent à l’aventure et financent leurs expéditions en réparant puis en vendant les objets endommagés ou brisés qu’ils
-      trouvent pendant leur voyage.
-    </p>
   </main>
 </template>
 
@@ -50,10 +38,10 @@
 import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
-const title: string = "Vente et réparation d’équipement";
+const title: string = "Vente d’équipement";
 
 useSeo({
   title,
-  description: "Découvrez comment vendre, échanger ou réparer l’équipement et les trésors trouvés lors de vos aventures pour en tirer le meilleur profit.",
+  description: "Découvrez les règles de revente d’armes, armures, artefacts, marchandises et objets précieux, selon leur état, rareté et valeur marchande.",
 });
 </script>

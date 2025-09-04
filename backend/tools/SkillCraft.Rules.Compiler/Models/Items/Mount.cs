@@ -25,9 +25,6 @@ internal class Mount
   [JsonPropertyName("load")]
   public int? Load { get; set; }
 
-  [JsonPropertyName("speed")]
-  public decimal Speed { get; set; }
-
   [JsonPropertyName("description")]
   public string Description { get; set; } = string.Empty;
 

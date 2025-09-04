@@ -2,6 +2,7 @@ import ammunitionData from "~/assets/data/items/ammunition.json";
 import armorData from "~/assets/data/items/armor.json";
 import clothingData from "~/assets/data/items/clothing.json";
 import containersData from "~/assets/data/items/containers.json";
+import firearmsData from "~/assets/data/items/firearms.json";
 import generalData from "~/assets/data/items/general.json";
 import goodsData from "~/assets/data/items/goods.json";
 import landVehiclesData from "~/assets/data/items/vehicles_land.json";
@@ -50,6 +51,15 @@ export function getClothingItems(): Item[] {
 
 export function getContainers(): Item[] {
   return containersData;
+}
+
+export function getFirearms(): Weapon[] {
+  return firearmsData.map((firearm) => ({
+    ...firearm,
+    category: firearm.category as WeaponCategory,
+    damage: firearm.damage ? { ...firearm.damage, type: firearm.damage.type as DamageType } : undefined,
+    properties: firearm.properties as WeaponProperty[],
+  }));
 }
 
 export function getGeneralItems(): Item[] {

@@ -30,6 +30,7 @@ const ammunition = ref<Ammunition[]>(orderBy(getAmmunition(), "slug"));
 
 useSeo({
   title,
-  description: "Découvrez les munitions pour arcs, arbalètes, sarbacanes et frondes, ainsi que leurs contenants indispensables pour vos aventures.",
+  description:
+    "Découvrez les munitions pour arcs, arbalètes, sarbacanes, frondes et armes à feu, ainsi que leurs contenants indispensables pour vos aventures.",
 });
 </script>

@@ -16,7 +16,6 @@
       fait de dormir en portant son <NuxtLink to="/regles/equipement/armures">armure</NuxtLink>, ou encore la
       <NuxtLink to="/regles/aventure/environnement/alimentation">faim</NuxtLink>.
     </p>
-    <!-- TODO(fpion): c’est quoi les pénalités de dormir sans armure? Régénération x½ et ne récupère pas de Fatigue -->
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />

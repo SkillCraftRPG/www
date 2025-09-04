@@ -47,12 +47,17 @@ const items: MenuItem[] = [
   {
     path: "/regles/aventure/environnement",
     title: "Environnement",
-    description: "Règles d’environnement : chutes, vision, survie et objets.",
+    description: "Règles d’environnement : chutes, vision et survie.",
   },
   {
     path: "/regles/aventure/interaction-sociale",
     title: "Interaction sociale",
     description: "Règles d’interaction sociale et attitudes des personnages.",
+  },
+  {
+    path: "/regles/aventure/interaction-objets",
+    title: "Interaction avec les objets",
+    description: "Règles pour cibler, briser et gérer la solidité des objets.",
   },
   {
     path: "/regles/aventure/repos",
@@ -63,6 +68,7 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "Découvrez les règles dirigeant les aventures : temps, mouvement, environnement, interactions sociales, repos et activités entre les aventures.",
+  description:
+    "Découvrez les règles dirigeant les aventures : temps, mouvement, environnement, interactions sociales et objets, repos et activités entre les aventures.",
 });
 </script>

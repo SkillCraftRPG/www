@@ -21,7 +21,7 @@
       </li>
       <li>
         En période de voyage, son test passif subit une pénalité (-5) si elle se déplace à
-        <NuxtLink to="/regles/aventure/mouvement/voyage">cadence rapide</NuxtLink>.
+        <NuxtLink to="/regles/aventure/mouvement/voyage">cadence hâtive</NuxtLink>.
       </li>
     </ul>
   </main>

@@ -48,15 +48,10 @@ const items: MenuItem[] = [
     title: "Alcoolémie",
     description: "Alcoolémie, ébriété et gueule de bois en jeu.",
   },
-  {
-    path: "/regles/aventure/environnement/objets",
-    title: "Interaction avec les objets",
-    description: "Règles pour cibler, briser et gérer la solidité des objets.",
-  },
 ];
 
 useSeo({
   title,
-  description: "Découvrez les règles d’environnement : chutes, suffocation, vision, alimentation et interactions avec les objets durant l’aventure.",
+  description: "Découvrez les règles d’environnement : chutes, suffocation, vision et alimentation durant l’aventure.",
 });
 </script>

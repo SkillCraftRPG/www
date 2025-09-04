@@ -28,6 +28,9 @@ internal class Weapon
   [JsonPropertyName("ammunition")]
   public WeaponRange? Ammunition { get; set; }
 
+  [JsonPropertyName("reload")]
+  public int? Reload { get; set; }
+
   [JsonPropertyName("special")]
   public string? Special { get; set; }
 

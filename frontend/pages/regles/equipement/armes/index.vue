@@ -9,16 +9,9 @@
       </div>
     </div>
     <h2 class="h3">Catégories</h2>
-    <p>Les armes sont réparties en deux catégories :</p>
+    <p>Les armes sont réparties en deux catégories, simples et martiales, incluant les armes à feu :</p>
     <div class="row">
-      <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
-      </div>
-    </div>
-    <h3 class="h5">🚧</h3>
-    <p>🚧</p>
-    <div class="row">
-      <div v-for="(item, index) in other" :key="index" class="col-xs-12 col-sm-6 mb-4">
+      <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -58,32 +51,37 @@ const items: MenuItem[] = [
     description: "Règles pour l’usage et les dégâts des armes improvisées.",
   },
   {
+    path: "/regles/equipement/armes/affutage",
+    title: "Affûtage",
+    description: "Affûtez vos armes et gagnez un bonus temporaire de dégâts en combat.",
+  },
+  {
     path: "/regles/equipement/armes/argent",
     title: "Plaquage d’argent",
     description: "Plaquage en argent pour armes contre créatures résistantes.",
   },
-  // TODO(fpion): Armes affûtées
-  // TODO(fpion): Armes brisées
 ];
 const list: MenuItem[] = [
   {
     path: "/regles/equipement/armes/simples",
     title: "Armes simples",
-    description: "Des armes rudimentaires et moins adaptées à la guerre, utilisées par les roturiers et soldats improvisés.",
+    description: "Des armes rudimentaires et moins adaptées à la guerre, utilisées par les roturiers et miliciens.",
   },
   {
     path: "/regles/equipement/armes/martiales",
     title: "Armes martiales",
     description: "Des armes complexes, puissantes et solides, dédiées aux hommes d’armes.",
   },
-];
-const other: MenuItem[] = [
+  {
+    path: "/regles/equipement/armes/feu",
+    title: "Armes à feu",
+    description: "Poudre noire, bombes, armes à feu et leur fonctionnement.",
+  },
   {
     path: "/regles/equipement/armes/munitions",
     title: "Munitions",
-    description: "Munitions et contenants pour arcs, arbalètes, sarbacanes et frondes.",
+    description: "Munitions et contenants pour arcs, arbalètes, sarbacanes, frondes et armes à feu.",
   },
-  // TODO(fpion): Armes à feu et explosifs
 ];
 
 useSeo({

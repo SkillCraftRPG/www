@@ -12,9 +12,10 @@
         d’armure en étant dotée.
       </li>
       <li>
-        <strong>Confortable.</strong> Le personnage peut <NuxtLink to="/regles/aventure/repos/sommeil">dormir</NuxtLink> en portant cette armure sans subir de
-        pénalité à sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink>. Cette propriété ne s’applique plus du moment qu’il porte une pièce d’armure
-        n’étant pas dotée de cette propriété.
+        <strong>Confortable.</strong> Le personnage peut dormir en portant cette armure sans subir de pénalité à sa
+        <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink>. Cette propriété ne s’applique plus du moment qu’il porte une pièce d’armure n’étant pas
+        dotée de cette propriété. Une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink> effectuée en portant une pièce d’armure n’étant
+        pas dotée de cette propriété est considérée comme interrompue, peu importe sa durée.
       </li>
       <li>
         <strong>Ferme.</strong> La fabrication de cette armure confère au personnage la <strong>résistance</strong> aux
@@ -32,8 +33,9 @@
       <li>
         <strong>Rempart.</strong> Lorsque le personnage doit effectuer un
         <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>,
-        il peut remplacer son <NuxtLink to="/regles/competences/rang">rang de compétence</NuxtLink> par la valeur de <strong>Défense</strong> de l’équipement.
-        S’il porte <NuxtLink to="/regles/equipement/armures/multiples">deux couches d’armure</NuxtLink> ou un
+        il peut remplacer son <NuxtLink to="/regles/competences/rang">rang de compétence</NuxtLink> par la valeur de
+        <NuxtLink to="/regles/equipement/defense">Défense</NuxtLink> de l’équipement. S’il porte
+        <NuxtLink to="/regles/equipement/armures/multiples">deux couches d’armure</NuxtLink> ou un
         <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> conférant cette propriété, alors les valeurs indiquées sont cumulées.
       </li>
     </ul>

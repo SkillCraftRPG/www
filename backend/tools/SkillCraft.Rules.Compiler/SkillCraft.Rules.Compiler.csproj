@@ -24,6 +24,7 @@
     <None Remove="data\input\items\armor.csv" />
     <None Remove="data\input\items\clothing.csv" />
     <None Remove="data\input\items\containers.csv" />
+    <None Remove="data\input\items\firearms.csv" />
     <None Remove="data\input\items\general.csv" />
     <None Remove="data\input\items\goods.csv" />
     <None Remove="data\input\items\mounts.csv" />
@@ -61,6 +62,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\items\containers.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\input\items\firearms.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\input\items\general.csv">

@@ -10,7 +10,9 @@
     <p>Une créature peut bénéficier de plusieurs boucliers à la fois, mais elle ne peut lever qu’un seul bouclier à la fois.</p>
     <p>
       Les boucliers partagent les mêmes catégories et <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink> que les
-      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>.
+      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>. Ils sont également dotés d’une
+      <NuxtLink to="/regles/equipement/resistance">Résistance</NuxtLink> : ils peuvent donc être brisés et
+      <NuxtLink to="/regles/equipement/armures/renforcees">renforcés</NuxtLink>.
     </p>
     <h2 class="h3">Table des matières</h2>
     <ul>
@@ -56,8 +58,8 @@
     </p>
     <p>
       Les boucliers <strong>lourds</strong> peuvent être levés par une action. Lorsqu’une créature lève son bouclier, celui-ci lui confère des
-      <strong>points de Défense</strong> supplémentaires et elle peut bénéficier de la propriété <i>Rempart</i> du bouclier, mais sa vitesse de réduite de
-      moitié. Elle peut abaisser son bouclier en action libre afin d’annuler les bénéfices et pénalités associés.
+      <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink> supplémentaires et elle peut bénéficier de la propriété <i>Rempart</i> du bouclier,
+      mais sa vitesse de réduite de moitié. Elle peut abaisser son bouclier en action libre afin d’annuler les bénéfices et pénalités associés.
     </p>
     <h2 id="talents" class="h3">Talents</h2>
     <p>Les talents suivants sont utiles aux utilisateurs de boucliers.</p>

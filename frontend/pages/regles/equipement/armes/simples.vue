@@ -3,13 +3,6 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Simples" :parent="parent" />
     <p>Des armes basiques accessibles à tous, du bâton à l’arbalète légère.</p>
-    <!--
-      TODO(fpion): liens vers les sections utiles
-      * Attaque
-      * Dégâts
-      * Formation
-      * Propriétés
-    -->
     <ItemWeaponList :items="weapons" />
   </main>
 </template>

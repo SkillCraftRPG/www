@@ -63,7 +63,6 @@ internal class CompileMountsHandler : ICommandHandler<CompileMounts>
         Vigor = payload.Vigor,
         Size = payload.Size,
         Load = payload.Load,
-        Speed = payload.Speed,
         Description = payload.Description.Trim().Replace("\\n", "\n")
       };
 

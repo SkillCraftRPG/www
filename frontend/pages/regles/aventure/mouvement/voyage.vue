@@ -48,26 +48,26 @@
       </thead>
       <tbody>
         <tr>
-          <td>Lente</td>
-          <td>{{ $n(25, "integer") }} mètres</td>
-          <td>{{ $n(1.6, "decimal") }} km</td>
-          <td>{{ $n(12.5, "decimal") }} km</td>
+          <td>Prudente</td>
+          <td>{{ $n(50, "integer") }} mètres</td>
+          <td>{{ $n(3.2, "decimal") }} km</td>
+          <td>{{ $n(25, "decimal") }} km</td>
           <td>Permet de se <NuxtLink to="/regles/aventure/mouvement/furtif">déplacer furtivement</NuxtLink>.</td>
         </tr>
         <tr>
           <td>Normale</td>
-          <td>{{ $n(50, "integer") }} mètres</td>
-          <td>{{ $n(3.2, "decimal") }} km</td>
-          <td>{{ $n(25, "decimal") }} km</td>
+          <td>{{ $n(75, "integer") }} mètres</td>
+          <td>{{ $n(4.8, "decimal") }} km</td>
+          <td>{{ $n(37.5, "decimal") }} km</td>
           <td>
             <span class="text-muted">{{ "—" }}</span>
           </td>
         </tr>
         <tr>
-          <td>Rapide</td>
-          <td>{{ $n(75, "integer") }} mètres</td>
-          <td>{{ $n(4.8, "decimal") }} km</td>
-          <td>{{ $n(37.5, "decimal") }} km</td>
+          <td>Hâtive</td>
+          <td>{{ $n(100, "integer") }} mètres</td>
+          <td>{{ $n(6.4, "decimal") }} km</td>
+          <td>{{ $n(50, "decimal") }} km</td>
           <td>
             Pénalité (-5) aux <NuxtLink to="/regles/competences/tests/passif">tests passifs</NuxtLink> de
             <NuxtLink to="/regles/competences/perception">Perception</NuxtLink> en <NuxtLink to="/regles/aventure/mouvement/attentif">déplacement</NuxtLink>.
@@ -79,7 +79,7 @@
     <p>
       La lieue est une unité de mesure officialisée en Ouespéro. Elle correspond à la distance qu’un homme normal parcourt à pied en une heure à cadence
       normale, en tenant compte de son équipement et de l’état moyen des routes et sentiers. Cette distance est de
-      <strong>{{ $n(3218.68, "decimal") }} mètres</strong>, habituellement arrondie à <strong>{{ $n(3.2, "decimal") }} km</strong>.
+      <strong>{{ $n(4828, "integer") }} mètres</strong>, habituellement arrondie à <strong>{{ $n(4.8, "decimal") }} km</strong>.
     </p>
     <p>Les vitesses d’une créature n’influencent en aucun cas cette distance parcourue.</p>
     <h2 id="marche-forcee" class="h3">Marche forcée</h2>
@@ -174,8 +174,4 @@ useSeo({
   title,
   description: "Découvrez les règles du voyage : cadences, lieue, marche forcée, ordre de marche, horaires et activités possibles pour vos personnages.",
 });
-
-// TODO(fpion):
-// Il est possible de se déplacer plus rapidement à l’aide d’une monture ou d’un véhicule.
-// Une monture peut galoper pendant une heure afin de doubler sa vitesse, puis tomber en marche forcée pour chaque heure supplémentaire.
 </script>

@@ -1,0 +1,354 @@
+﻿[
+  {
+    "id": "928f00b1-a4de-4bf5-be38-d83c20a73830",
+    "category": "Martial",
+    "slug": "arquebuse",
+    "name": "Arquebuse",
+    "price": 1000,
+    "weight": 9,
+    "damage": {
+      "roll": "2d8",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 20,
+      "long": 60
+    },
+    "reload": null,
+    "special": "On peut mettre en place le tout par une action Objet. Lorsqu’elle est utilisée sans la voiturette, le test de l’attaque est affligé du désavantage et la créature l’utilisant est renversée au sol si elle est de taille moyenne ou inférieure.",
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un fusil à longueur double doté d’une paire de tourillons montés sur une voiturette à deux roues."
+  },
+  {
+    "id": "907c2675-2dcd-4342-9162-8ced48d7cb75",
+    "category": "Martial",
+    "slug": "canon-boucle",
+    "name": "Canon-boucle",
+    "price": 260,
+    "weight": 4,
+    "damage": {
+      "roll": "1d8",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 4,
+      "long": 8
+    },
+    "reload": null,
+    "special": "Confère un bonus (+2) à la Défense.",
+    "thrown": null,
+    "properties": ["Loading", "TwoHanded"],
+    "description": "Ce fusil est monté au centre d’un bouclier."
+  },
+  {
+    "id": "27f91e13-f3c4-4dd7-933b-29fe2913d36a",
+    "category": "Martial",
+    "slug": "couleuvrine",
+    "name": "Couleuvrine",
+    "price": 1000,
+    "weight": 20,
+    "damage": {
+      "roll": "2d10",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": null,
+    "special": "Si elle est utilisée sans être appuyée sur une surface solide tel un mur ou le sol, le test de l’attaque de la creature est affligé du désavantage si celle-ci est de taille moyenne ou inférieure.",
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Aussi connu sous le nom de canon à main, cette lourde arme à feu consiste en un long tube appuyé sur un support."
+  },
+  {
+    "id": "bf875f3e-19ae-428b-9f54-cc9a5e1f09f8",
+    "category": "Simple",
+    "slug": "dragon",
+    "name": "Dragon",
+    "price": 250,
+    "weight": 1.5,
+    "damage": {
+      "roll": "1d8",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 3,
+      "long": 0
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading", "Scatter"],
+    "description": "Ce pistolet projette des grenailles dans un cône. Il est principalement utilisé par la cavalerie."
+  },
+  {
+    "id": "e8d48629-e45f-40da-bf31-888f065488b6",
+    "category": "Simple",
+    "slug": "lance-de-feu",
+    "name": "Lance de feu",
+    "price": 25,
+    "weight": 2,
+    "damage": {
+      "roll": "1d8",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 12,
+      "long": 24
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading", "TwoHanded"],
+    "description": "Une des premières armes à feu inventées. Sa confection de fortune en fait une arme fragile."
+  },
+  {
+    "id": "585c45ee-1cb7-43e7-abdd-30b0bef3e510",
+    "category": "Martial",
+    "slug": "mousquet",
+    "name": "Mousquet",
+    "price": 500,
+    "weight": 5,
+    "damage": {
+      "roll": "1d12",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un lourd fusil à large calibre et à âme lisse s’appuyant sur l’épaule de son porteur."
+  },
+  {
+    "id": "fb02cf86-410f-4407-a06b-703150859a66",
+    "category": "Martial",
+    "slug": "mousquet-double",
+    "name": "Mousquet double",
+    "price": 550,
+    "weight": 8.5,
+    "damage": {
+      "roll": "1d12",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": 2,
+    "special": null,
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un mousquet doté d’un barillet double."
+  },
+  {
+    "id": "e5948205-68b6-4a04-bf98-4a92c0b22965",
+    "category": "Martial",
+    "slug": "mousquet-hache",
+    "name": "Mousquet-hache",
+    "price": 510,
+    "weight": 7,
+    "damage": {
+      "roll": "1d12",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": null,
+    "special": "La hache de guerre peut être utilisée au corps-à-corps.",
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un mousquet sur lequel est monté une hache de guerre."
+  },
+  {
+    "id": "c34949ee-274d-4717-a773-56fde26e2f55",
+    "category": "Martial",
+    "slug": "mousquet-lame",
+    "name": "Mousquet-lame",
+    "price": 525,
+    "weight": 6,
+    "damage": {
+      "roll": "1d12",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": null,
+    "special": "La rapière peut être utilisée au corps-à-corps.",
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un mousquet sur lequel est monté une lame de rapière."
+  },
+  {
+    "id": "4b6b9133-f520-4c2c-a7dc-8172b2030a7a",
+    "category": "Martial",
+    "slug": "mousquet-marteau",
+    "name": "Mousquet-marteau",
+    "price": 515,
+    "weight": 6,
+    "damage": {
+      "roll": "1d12",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 16,
+      "long": 48
+    },
+    "reload": null,
+    "special": "Le marteau de guerre peut être utilisé au corps-à-corps.",
+    "thrown": null,
+    "properties": ["Heavy", "Loading", "TwoHanded"],
+    "description": "Un mousquet sur lequel est monté un marteau de guerre."
+  },
+  {
+    "id": "f3bea508-7cdb-4d1c-ae36-75a2438f6932",
+    "category": "Martial",
+    "slug": "pistolet",
+    "name": "Pistolet",
+    "price": 250,
+    "weight": 1.5,
+    "damage": {
+      "roll": "1d10",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 12,
+      "long": 36
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading"],
+    "description": "Un simple fusil tenu à une main."
+  },
+  {
+    "id": "9b4fab29-09ac-45e4-b0c8-dfbd6cfe2585",
+    "category": "Martial",
+    "slug": "pistolet-de-poche",
+    "name": "Pistolet de poche",
+    "price": 450,
+    "weight": 0.5,
+    "damage": {
+      "roll": "1d6",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 4,
+      "long": 12
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Light", "Loading"],
+    "description": "Un petit pistolet dont le recul est suffisamment amorti afin de pouvoir être utilisé au combat à deux armes."
+  },
+  {
+    "id": "a2d9368d-e19e-4714-bd3f-7d97f44969ee",
+    "category": "Martial",
+    "slug": "pistolet-double",
+    "name": "Pistolet double",
+    "price": 350,
+    "weight": 3,
+    "damage": {
+      "roll": "1d10",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 10,
+      "long": 30
+    },
+    "reload": 2,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading"],
+    "description": "Un pistolet doté d’un barillet double."
+  },
+  {
+    "id": "f9188013-cad0-4310-8adb-df7267840f4c",
+    "category": "Martial",
+    "slug": "pistolet-dague",
+    "name": "Pistolet-dague",
+    "price": 455,
+    "weight": 1,
+    "damage": {
+      "roll": "1d6",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 4,
+      "long": 12
+    },
+    "reload": null,
+    "special": "La dague peut être utilisée au corps-à-corps.",
+    "thrown": null,
+    "properties": ["Light", "Loading"],
+    "description": "Un pistolet sur lequel est monté une dague."
+  },
+  {
+    "id": "6315bdc0-7954-4082-b32b-a058c3db60d3",
+    "category": "Martial",
+    "slug": "poivriere",
+    "name": "Poivrière",
+    "price": 450,
+    "weight": 2.5,
+    "damage": {
+      "roll": "1d10",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 8,
+      "long": 24
+    },
+    "reload": 6,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading"],
+    "description": "Un pistolet doté d’un barillet multiple pouvant contenir jusqu’à 6 balles."
+  },
+  {
+    "id": "451237a0-1e6b-4e46-9796-5d9c77d41401",
+    "category": "Martial",
+    "slug": "tromblon",
+    "name": "Tromblon",
+    "price": 450,
+    "weight": 3,
+    "damage": {
+      "roll": "1d8",
+      "versatile": null,
+      "type": "Piercing"
+    },
+    "ammunition": {
+      "standard": 6,
+      "long": 0
+    },
+    "reload": null,
+    "special": null,
+    "thrown": null,
+    "properties": ["Loading", "Scatter", "TwoHanded"],
+    "description": "Un fusil projetant des chevrotines dans un cône."
+  }
+]

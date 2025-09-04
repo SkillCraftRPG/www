@@ -3,13 +3,6 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Légères" :parent="parent" />
     <p>Des armures souples offrant protection et confort sans sacrifier la mobilité.</p>
-    <!--
-      TODO(fpion): liens vers les sections utiles
-      * Défense
-      * Formation
-      * Résistance
-      * Propriétés
-    -->
     <ItemArmorList :items="armor" />
   </main>
 </template>

@@ -128,7 +128,7 @@
     "skillId": null,
     "requiredTalentId": null,
     "summary": "Formé aux armes improvisées, il inflige 1d4 + Force en mêlée ou 1d4 + Précision à distance en attaquant avec un objet non conçu pour le combat.",
-    "description": "Forme le personnage au maniement des armes improvisées.\n\nIl inflige 1d4 + Force points de dégâts lorsqu’il effectue une attaque de mêlée en maniant une telle arme, ou 1d4 + Précision lorsqu’il effectue une attaque à distance.",
+    "description": "Forme le personnage au maniement des armes improvisées.\n\nÉgalement, lorsqu’il utilise une telle arme, le bonus à l’Attaque est toujours d’au moins 1, et le dé de dégâts est toujours au minimum 1d4.",
     "notes": "\uD83D\uDD17"
   },
   {
@@ -163,9 +163,9 @@
     "allowMultiplePurchases": false,
     "skillId": "b7db5e1d-1170-48af-9ac9-4953c2068f96",
     "requiredTalentId": null,
-    "summary": "\uD83D\uDEA7",
-    "description": "Le personnage est formé pour un nombre d’outils ou de trousses d’artisan égal à son rang d’Artisanat.\n\n\uD83D\uDEA7",
-    "notes": "\uD83D\uDD17\n\n\uD83D\uDEA7Également, en situation de combat, il peut réparer temporairement une pièce d’équipement telle une arme, un bouclier ou une armure. Par une action, il effectue un test d’Artisanat auquel il peut Faire 10 s’il le désire. Il n’a pas besoin de posséder les matériaux, les outils et l’atelier nécessaires à la réparation. À la fin du combat, la réparation brise, et l’objet doit être réparé normalement avant de pouvoir être réparé à nouveau par cette capacité."
+    "summary": "Un artisan peut réparer armes, armures, boucliers ou objets avec une trousse dédiée, en dépensant une charge et réussissant un test d’Artisanat.",
+    "description": "Le personnage est formé à l’utilisation d’un nombre d’outils ou de trousses d’artisan égal à son rang d’Artisanat.\n\nS’il est formé à l’utilisation de la trousse de réparation, il peut tenter de réparer un objet. Par une action, il peut utiliser une des dix charges de la trousse et effectue un test d’Artisanat.\n\n- Si l’objet est une armure ou un bouclier, le nombre de points de Résistance restauré est égal au résultat du test divisé par 5 (minimum 1).\n- Si l’objet est une arme, le degré de difficulté est égal au bonus à l’Attaque de l’arme multiplié par 5. L’arme est réparée en cas de réussite.\n- Sinon, la difficulté est moyenne. L’objet est réparé en cas de réussite.",
+    "notes": "\uD83D\uDD17"
   },
   {
     "id": "70a77dac-6215-48cd-898c-6ead9fb379c1",

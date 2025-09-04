@@ -34,10 +34,6 @@ internal class MountPayload
   public int? Load { get; set; }
 
   [Index(7)]
-  [Name("speed")]
-  public decimal Speed { get; set; }
-
-  [Index(8)]
   [Name("description")]
   public string Description { get; set; } = string.Empty;
 

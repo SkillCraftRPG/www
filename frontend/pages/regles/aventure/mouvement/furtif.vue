@@ -8,13 +8,13 @@
       {{ " " }} <NuxtLink to="/regles/competences/tests/oppose">opposé</NuxtLink> à un test de
       <NuxtLink to="/regles/competences/perception">Perception</NuxtLink> contre toute créature pouvant détecter sa présence.
     </p>
-    <p>Afin de se déplacer furtivement, une créature doit réduire de moitié sa vitesse.</p>
+    <p>Afin de se déplacer furtivement, une créature doit réduire sa vitesse.</p>
     <ul>
       <li>
         En situation de combat ou de tour-par-tour, elle doit dépenser <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par
         case traversée.
       </li>
-      <li>En période de voyage, elle doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence lente</NuxtLink>.</li>
+      <li>En période de voyage, elle doit adopter une <NuxtLink to="/regles/aventure/mouvement/voyage">cadence prudente</NuxtLink>.</li>
     </ul>
   </main>
 </template>
@@ -31,6 +31,6 @@ const title: string = "Déplacement furtif";
 useSeo({
   title,
   description:
-    "Découvrez les règles de déplacement furtif : test opposé Furtivité/Perception, vitesse réduite de moitié, points de mouvement et cadence lente en voyage.",
+    "Découvrez les règles de déplacement furtif : test opposé Furtivité/Perception, réduction de vitesse, points de mouvement et cadence prudente en voyage.",
 });
 </script>
