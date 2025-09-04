@@ -1148,7 +1148,7 @@
     "skillId": null,
     "requiredTalentId": "8eba57f8-a0f5-4e04-997f-6772bd4e5c24",
     "summary": "Confère +3 à l’Initiative et l’avantage aux tests d’Initiative du personnage.",
-    "description": "Confère un bonus permanent de +3 à l’Initiative du personnage.\n\nÉgalement, il se voit conférer l’avantage à ses tests d’Initiative.",
+    "description": "Confère un bonus permanent de +3 à l’Initiative du personnage.\n\nÉgalement, lorsqu’il effectue un test d’Initiative, il peut jeter 2d10 et conserver le résultat de son choix.",
     "notes": "\uD83D\uDD17"
   },
   {
