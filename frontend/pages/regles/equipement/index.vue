@@ -63,6 +63,12 @@ const items: MenuItem[] = [
     description: "Catégories, propriétés, talents et particularités des boucliers.",
   },
   {
+    path: "/regles/equipement/defense",
+    title: "Défense",
+    description: "Armures et boucliers ajoutent des points de Défense, sauf s’ils sont brisés.",
+  },
+  // TODO(fpion): Résistance
+  {
     path: "/regles/equipement/general",
     title: "Équipement général",
     description: "Articles généraux, contenants et vêtements.",

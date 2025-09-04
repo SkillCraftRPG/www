@@ -6,7 +6,7 @@
     <p>Il est impossible de porter deux couches d’armure appartenant à la même catégorie.</p>
     <p>
       Lorsqu’un personnage porte deux couches d’armure, les morceaux de l’armure appartenant à la catégorie la plus légère n’offrent que la moitié des
-      <strong>points de Défense</strong>.
+      <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink>.
     </p>
     <p>
       S’il porte deux armures <NuxtLink to="/regles/equipement/armures/partielles">complètes</NuxtLink>, alors il bénéficie des
