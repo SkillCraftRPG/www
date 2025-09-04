@@ -59,9 +59,11 @@ const items: MenuItem[] = [
     title: "Armures multiples",
     description: "Porter deux couches d’armure et combiner leurs effets.",
   },
-  // TODO(fpion): Armures renforcées
-  // Une armure ou un bouclier peut être fortifié par un artisan talentueux, ce qui ajoute des points de Résistance temporaires à l’équipement.
-  // Ce sont d’abord ces points de Résistance temporaires qui sont perdus lorsque l’armure ou le bouclier est percuté.
+  {
+    path: "/regles/equipement/armures/renforcees",
+    title: "Armures renforcées",
+    description: "Renforcez vos armures pour accroître leur Résistance grâce aux talents d’artisans.",
+  },
 ];
 const list: MenuItem[] = [
   {

@@ -4,10 +4,12 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Un personnage peut affûter une arme afin de lui conférer un bonus temporaire de points de dégâts.</p>
     <p>
-      Cet affûtage peut être effectué sur une arme non magique simple ou martiale. Les
-      <NuxtLink to="/regles/equipement/armes/improvisees">armes improvisées</NuxtLink> ne peuvent être affûtées. Il nécessite d’être formé avec les
-      <NuxtLink to="/regles/equipement/outils">outils de forgeron</NuxtLink> (arme en métal) ou les
-      <NuxtLink to="/regles/equipement/outils">outils de sculpteur sur bois</NuxtLink> (arme en bois), et de pouvoir utiliser ces outils.
+      Cet affûtage peut être effectué sur une arme non magique simple ou martiale, tant qu’elle n’est pas
+      <NuxtLink to="/regles/equipement/armes/improvisees">improvisée</NuxtLink> ni brisée.
+    </p>
+    <p>
+      L’affûtage nécessite d’être formé avec les <NuxtLink to="/regles/equipement/outils">outils de forgeron</NuxtLink> (arme en métal) ou les
+      <NuxtLink to="/regles/equipement/outils">outils de sculpteur sur bois</NuxtLink> (arme en bois), de posséder ces outils et de pouvoir les utiliser.
     </p>
     <p>
       L’affûtage s’effectue en <NuxtLink to="/regles/aventure/temps">une heure</NuxtLink>, et peut être effectué pendant une
@@ -22,7 +24,7 @@
     </p>
     <p>
       Il existe plusieurs niveaux d’affûtage. L’artisan sélectionne un niveau lorsqu’il affûte une arme. Voici les niveaux d’affûtage, le prix d’un affûtage
-      auprès d’un professionnel, ainsi que le talent requis afin de pouvoir l’affûtage de ce niveau.
+      auprès d’un professionnel, ainsi que le talent requis afin de pouvoir effectuer l’affûtage à ce niveau.
     </p>
     <table class="table table-striped text-center">
       <thead>
@@ -65,17 +67,17 @@ type Level = {
 const levels = ref<Level[]>([
   {
     level: 1,
-    price: 0,
+    price: 5,
     talent: talents.get("expertise-artisanale"),
   },
   {
     level: 2,
-    price: 0,
+    price: 15,
     talent: talents.get("maitre-artisan"),
   },
   {
-    level: 1,
-    price: 0,
+    level: 3,
+    price: 50,
     talent: talents.get("artisan-virtuose"),
   },
 ]);
