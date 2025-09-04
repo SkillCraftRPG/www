@@ -67,7 +67,11 @@ const items: MenuItem[] = [
     title: "Défense",
     description: "Armures et boucliers ajoutent des points de Défense, sauf s’ils sont brisés.",
   },
-  // TODO(fpion): Résistance
+  {
+    path: "/regles/equipement/resistance",
+    title: "Résistance",
+    description: "Chaque coup réduit la Résistance d’une armure ou d’un bouclier jusqu’au bris.",
+  },
   {
     path: "/regles/equipement/general",
     title: "Équipement général",

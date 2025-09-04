@@ -10,7 +10,8 @@
     <p>Une créature peut bénéficier de plusieurs boucliers à la fois, mais elle ne peut lever qu’un seul bouclier à la fois.</p>
     <p>
       Les boucliers partagent les mêmes catégories et <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink> que les
-      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>.
+      <NuxtLink to="/regles/equipement/armures">armures</NuxtLink>. Ils sont également dotés d’une
+      <NuxtLink to="/regles/equipement/resistance">Résistance</NuxtLink>, ils peuvent donc être brisés.
     </p>
     <h2 class="h3">Table des matières</h2>
     <ul>

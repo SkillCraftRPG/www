@@ -3,6 +3,10 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>L’armure est une protection physique, et parfois magique, portée par les aventuriers, les hommes d’armes ainsi que certaines créatures.</p>
+    <p>
+      Une armure confère des <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink> à son porteur lorsqu’elle n’est pas
+      <NuxtLink to="/regles/equipement/resistance">brisée</NuxtLink>.
+    </p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
@@ -56,6 +60,8 @@ const items: MenuItem[] = [
     description: "Porter deux couches d’armure et combiner leurs effets.",
   },
   // TODO(fpion): Armures renforcées
+  // Une armure ou un bouclier peut être fortifié par un artisan talentueux, ce qui ajoute des points de Résistance temporaires à l’équipement.
+  // Ce sont d’abord ces points de Résistance temporaires qui sont perdus lorsque l’armure ou le bouclier est percuté.
 ];
 const list: MenuItem[] = [
   {

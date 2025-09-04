@@ -56,4 +56,6 @@ useSeo({
   title,
   description: "Découvrez comment vendre, échanger ou réparer l’équipement et les trésors trouvés lors de vos aventures pour en tirer le meilleur profit.",
 });
+
+// TODO(fpion): diviser cette rubrique en deux, et fournir plus de détails.
 </script>

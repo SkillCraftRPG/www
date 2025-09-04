@@ -4,11 +4,14 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Un personnage portant un <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un
-      <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> en bon état se voit conférer un bonus à la <strong>Défense</strong>.
+      <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> en bon état se voit conférer un bonus à la <strong>Défense</strong>. Ce bonus est indiqué
+      dans la colonne <i>Défense</i> de chaque objet.
     </p>
     <p>Ces points sont cumulables entre-eux, c’est-à-dire qu’un personnage peut bénéficier de bonus de points de Défense de plusieurs armures et boucliers.</p>
-    <p>Si l’objet est <strong>brisé</strong>, alors il ne confère aucun bonus de Défense.</p>
-    <p>Ce bonus est indiqué dans la colonne <i>Défense</i> de chaque objet.</p>
+    <p>
+      Lorsque l’objet est <NuxtLink to="/regles/equipement/resistance">brisé</NuxtLink>, alors il ne confère aucun bonus de Défense. L’acte de
+      <NuxtLink to="/regles/equipement/vente-reparation">réparer</NuxtLink> l’objet restaure le bonus. Toutefois, les pénalités sont toujours présentes.
+    </p>
     <p>
       Certaines situations ont un impact sur les points de Défense conférés, par exemple une
       <NuxtLink to="/regles/equipement/armures/partielles">armure partielle</NuxtLink> ou des

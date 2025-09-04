@@ -99,7 +99,7 @@
       Les objets n’étant pas vivants, ils ne sont pas dotés de points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> ou d’<NuxtLink
         to="/regles/statistiques/energie"
         >Énergie</NuxtLink
-      >. Cependant, ils sont dotés de points de <strong>Résistance</strong> afin de les remplacer.
+      >. Cependant, ils sont dotés de points de Résistance afin de les remplacer. Ceux-ci fonctionnent de la même manière que la Vitalité d’une créature.
     </p>
     <p>
       Lorsque deux objets entrent en contact, c’est généralement l’objet le plus dur qui inflige des <strong>dégâts</strong> à l’autre. Par exemple, une épée
