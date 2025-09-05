@@ -14,7 +14,7 @@
     </p>
     <p>
       Une créature ayant acquis le talent <NuxtLink to="/regles/talents/observateur">Observateur</NuxtLink> n’est jamais surprise. Cela signifie qu’elle ne perd
-      jamais son premier tour, mais une autre créature peut tout de même être <strong>dissimulée</strong> à ses yeux.
+      jamais son premier tour, mais une autre créature peut tout de même être <NuxtLink to="/regles/combat/activites/cacher">dissimulée</NuxtLink> à ses yeux.
     </p>
     <p>Certaines capacités permettent de prendre avantage de la surprise d’une autre créature.</p>
   </main>

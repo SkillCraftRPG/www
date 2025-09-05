@@ -11,7 +11,9 @@
     <p>Une créature <NuxtLink to="/regles/combat/deroulement/surprise">surprise</NuxtLink> perd son premier tour.</p>
     <h2 class="h3">Actions</h2>
     <p>Pendant son tour, une créature peut utiliser jusqu’à 3 actions.</p>
-    <p>Les <strong>activités</strong> ont un coût variable en actions, illustré par un nombre de diamants « <font-awesome-icon icon="fas fa-gem" /> ».</p>
+    <p>
+      Les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> ont un coût variable en actions, illustré par un nombre de diamants « <IconAction /> ».
+    </p>
     <p>Une créature peut effectuer plusieurs fois la même activité, sauf indication contraire, tant qu’elle ne dépasse pas sa limite d’actions.</p>
     <p>À la fin de son tour, tout action inutilisée est perdue. Au début de son prochain tour, elle peut à nouveau utiliser jusqu’à 3 actions.</p>
     <h2 class="h3">Actions libres</h2>

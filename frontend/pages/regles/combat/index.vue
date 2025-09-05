@@ -31,6 +31,16 @@ const items: MenuItem[] = [
     title: "Déroulement",
     description: "Organisation d’un combat : rounds, initiative, tours et conditions spéciales.",
   },
+  {
+    path: "/regles/combat/activites",
+    title: "Activités",
+    description: "🚧",
+  },
+  {
+    path: "/regles/combat/conditions",
+    title: "Conditions",
+    description: "🚧",
+  },
 ];
 
 useSeo({
