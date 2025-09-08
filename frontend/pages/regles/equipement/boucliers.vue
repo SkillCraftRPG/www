@@ -103,7 +103,7 @@
       </li>
       <li>
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">Désavantage</NuxtLink> aux tests d’Occultisme afin de canaliser un
-        <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink> nécessitant la composante <strong>Somatique</strong>.
+        <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> nécessitant la composante <strong>Somatique</strong>.
       </li>
     </ul>
     <p>Les talents suivants forment le personnage au port des boucliers d’une certaine catégorie :</p>

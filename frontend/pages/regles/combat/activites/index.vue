@@ -48,4 +48,6 @@ useSeo({
   title,
   description: "🚧",
 });
+
+// TODO(fpion): Déplacement
 </script>

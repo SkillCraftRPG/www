@@ -108,6 +108,30 @@
     "summary": "Évaluer la situation ou une cible."
   },
   {
+    "id": "e39aa516-d64f-4809-8e9c-03f054a52310",
+    "path": "/regles/combat/activites/objet",
+    "name": "Objet",
+    "actions": {
+      "mandatory": 1,
+      "optional": 2,
+      "reaction": false
+    },
+    "threatening": "maybe",
+    "summary": "Utiliser ou activer un objet."
+  },
+  {
+    "id": "c66cebf1-8c81-44a5-80b9-2ced509e69d6",
+    "path": "/regles/combat/activites/pas-prudent",
+    "name": "Pas prudent",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Déplacement sans opportunité."
+  },
+  {
     "id": "d825c308-ebd1-4cc7-a636-a9f1ccfa08b7",
     "path": "/regles/combat/activites/cacher",
     "name": "Se cacher",

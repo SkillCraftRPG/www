@@ -37,9 +37,39 @@ const conditions: Condition[] = [
     description: "Cible immobilisée jusqu’à son évasion ou sa libération.",
   },
   {
+    path: "/regles/combat/conditions/apeure",
+    title: "Apeuré",
+    description: "Désavantage aux tests et restrictions de mouvement.",
+  },
+  {
+    path: "/regles/combat/conditions/assomme",
+    title: "Assommé",
+    description: "Incapable, échecs automatiques et faiblesse.",
+  },
+  {
+    path: "/regles/combat/conditions/assourdi",
+    title: "Assourdi",
+    description: "Échec des tests auditifs.",
+  },
+  {
     path: "/regles/combat/conditions/aveugle",
     title: "Aveuglé",
     description: "Échec des tests visuels et impacts sur les attaques.",
+  },
+  {
+    path: "/regles/combat/conditions/charme",
+    title: "Charmé",
+    description: "Contrainte du charmé et avantages du charmeur.",
+  },
+  {
+    path: "/regles/combat/conditions/empoisonne",
+    title: "Empoisonné",
+    description: "Désavantage aux tests actifs.",
+  },
+  {
+    path: "/regles/combat/conditions/etourdi",
+    title: "Étourdi",
+    description: "Ne peut utiliser sa réaction.",
   },
   {
     path: "/regles/combat/conditions/incapable",

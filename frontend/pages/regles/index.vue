@@ -76,8 +76,8 @@ const tiles: Tile[] = [
   },
   {
     icon: "fas fa-wand-sparkles",
-    text: "Pouvoirs",
-    to: "/regles/pouvoirs",
+    text: "Magie",
+    to: "/regles/magie",
   },
   {
     icon: "fas fa-landmark",

@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Vous canalisez un <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink>.</p>
+    <p>Vous canalisez un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>.</p>
     <p>
       Par une action, vous pouvez également commencer à canaliser un pouvoir. Lors de votre prochain
       <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, il vous coûtera une action en moins afin de compléter la canalisation. L’action est perdue

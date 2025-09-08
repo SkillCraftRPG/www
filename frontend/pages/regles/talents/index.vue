@@ -13,32 +13,7 @@
       fois qu’il progresse à un <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> supérieur. Il peut dépenser ces points afin d’acquérir
       de nouveaux talents. Le coût en points d’un talent dépend de son tiers.
     </p>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-50">Tiers du talent</th>
-          <th scope="col" class="w-50">Coût en points</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>0</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>5</td>
-        </tr>
-      </tbody>
-    </table>
+    <TalentCostTable />
     <h3 class="h5">Rabais</h3>
     <p>
       Lorsqu’un personnage bénéficie d’un rabais sur un talent, alors il pourra acquérir ce talent en dépensant 1 point de talent de moins que le nombre qui lui

@@ -4,7 +4,7 @@
     <AppBreadcrumb active="Occultes" :parent="parent" />
     <p>
       Il peut être rare et complexe, toutefois possible, de trouver des services d’occultisme, c’est-à-dire un temple ou un emplacement canalisant certains
-      <NuxtLink to="/regles/pouvoirs">pouvoirs</NuxtLink>.
+      <NuxtLink to="/regles/magie/pouvoirs">pouvoirs</NuxtLink>.
     </p>
     <p>
       Ces services sont rares, ils sont donc onéreux, et ceux les prodiguant peuvent exiger des services en échange plutôt qu’une simple
