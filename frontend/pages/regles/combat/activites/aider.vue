@@ -10,7 +10,8 @@
     </p>
     <p>
       Votre réaction n’est pas perdue si vous ne l’utilisez pas. Également, si vous l’utilisez pour autre chose, par exemple afin d’effectuer une
-      <strong>attaque d’opportunité</strong>, vous ne pouvez pas aider la créature. Évidemment, l’ensemble de l’œuvre doit être logique.
+      <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>, vous ne pouvez pas aider la créature. Évidemment, l’ensemble de
+      l’œuvre doit être logique.
     </p>
     <p>Si l’action entreprise par la créature aidée déclenche une attaque d’opportunité, alors l’action d’aider cette créature en déclenche également une.</p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à aider :</p>

@@ -2,7 +2,11 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Vous vous déplacez de 1,5 mètres dans n’importe quelle direction, sans déclencher d’<strong>attaque d’opportunité</strong>.</p>
+    <p>
+      Vous vous déplacez de 1,5 mètres dans n’importe quelle direction, sans déclencher d’<NuxtLink to="/regles/combat/attaque/opportunite"
+        >attaque d’opportunité</NuxtLink
+      >.
+    </p>
     <p>
       Vous ne pouvez effectuer un pas prudent que si votre <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> n’est réduite d’aucune manière,
       par exemple par le <NuxtLink to="/regles/aventure/mouvement/terrain-difficile">terrain difficile</NuxtLink>.

@@ -11,7 +11,7 @@
     </p>
     <p>
       Votre réaction n’est pas perdue si vous ne l’utilisez pas. Également, si vous l’utilisez pour autre chose, par exemple afin d’effectuer une
-      <strong>attaque d’opportunité</strong>, vous ne pouvez pas vous défendre.
+      <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>, vous ne pouvez pas vous défendre.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité vous défendre :</p>
     <div class="row">

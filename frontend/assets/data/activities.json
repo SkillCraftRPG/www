@@ -24,6 +24,18 @@
     "summary": "Aider à accomplir une action."
   },
   {
+    "id": "2a48a4c3-692b-4796-9707-0ae68b75bd8c",
+    "path": "/regles/combat/attaque/opportunite",
+    "name": "Attaque d’opportunité",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Effectuer une attaque en réaction."
+  },
+  {
     "id": "e26ae800-78ba-43aa-a3d9-b598ec19dfa2",
     "path": "/regles/combat/attaque",
     "name": "Attaquer",
@@ -33,7 +45,7 @@
       "reaction": false
     },
     "threatening": "maybe",
-    "summary": "Tenter de blesser un cible."
+    "summary": "Attaque à mêlée ou lancer une arme."
   },
   {
     "id": "c6798208-e3b5-48f9-a0e5-f32293c1eda0",
@@ -82,6 +94,18 @@
     },
     "threatening": false,
     "summary": "Bloquer les coups dirigés vers soi."
+  },
+  {
+    "id": "4dfe7b76-46e7-4449-a7d9-66b8b8be2058",
+    "path": "/regles/combat/activites/deplacement",
+    "name": "Déplacement",
+    "actions": {
+      "mandatory": 1,
+      "optional": 2,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Se déplacer, changer de position."
   },
   {
     "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
@@ -142,5 +166,29 @@
     },
     "threatening": false,
     "summary": "Se dissimuler de ses ennemis."
+  },
+  {
+    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "path": "/regles/combat/activites/echapper",
+    "name": "S’échapper",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Se libérer d’une contrainte."
+  },
+  {
+    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "path": "/regles/combat/activites/viser-tirer",
+    "name": "Viser et tirer",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Effectuer une attaque à distance."
   }
 ]

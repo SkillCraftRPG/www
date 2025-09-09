@@ -11,8 +11,8 @@
       </li>
       <li>Les activités marquées de « <IconReaction /> » nécessitent d’utiliser sa <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink>.</li>
       <li>
-        Les activités marquées de « <IconOpportunity /> » déclenchent une <strong>attaque d’opportunité</strong>. L’astérisque « * » indique que l’activité ne
-        déclenche pas toujours l’attaque d’opportunité.
+        Les activités marquées de « <IconOpportunity /> » déclenchent une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.
+        L’astérisque « * » indique que l’activité ne déclenche pas toujours l’attaque d’opportunité.
       </li>
     </ul>
     <h2 class="h3">Liste des activités</h2>
@@ -48,6 +48,4 @@ useSeo({
   title,
   description: "🚧",
 });
-
-// TODO(fpion): Déplacement
 </script>

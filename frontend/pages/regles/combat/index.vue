@@ -37,6 +37,11 @@ const items: MenuItem[] = [
     description: "🚧",
   },
   {
+    path: "/regles/combat/attaque",
+    title: "Attaque",
+    description: "🚧",
+  },
+  {
     path: "/regles/combat/conditions",
     title: "Conditions",
     description: "🚧",

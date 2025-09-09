@@ -77,9 +77,19 @@ const conditions: Condition[] = [
     description: "Ne peut effectuer aucune action, ni action libre ou réaction.",
   },
   {
+    path: "/regles/combat/conditions/inconscient",
+    title: "Inconscient",
+    description: "Incapable, échecs automatiques, faiblesse et récupération.",
+  },
+  {
     path: "/regles/combat/conditions/invisible",
     title: "Invisible",
     description: "Être dissimulé magiquement et impacts sur les attaques.",
+  },
+  {
+    path: "/regles/combat/conditions/paralyse",
+    title: "Paralysé",
+    description: "Incapable, échecs automatiques et faiblesse.",
   },
   {
     path: "/regles/combat/conditions/renverse",
@@ -92,4 +102,10 @@ useSeo({
   title,
   description: "🚧",
 });
+
+// TODO(fpion): agonisant
+// TODO(fpion): fatigue
+// TODO(fpion): mort
+// TODO(fpion): pétrifié
+// TODO(fpion): restreint
 </script>

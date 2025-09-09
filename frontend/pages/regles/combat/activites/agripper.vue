@@ -16,7 +16,7 @@
     </p>
     <p>
       À tout moment, vous pouvez <strong>lâcher</strong> la cible en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>. Une créature
-      agrippée peut tenter de se déprendre en <strong>s’échappant</strong>.
+      agrippée peut tenter de se déprendre en <NuxtLink to="/regles/combat/activites/echapper">s’échappant</NuxtLink>.
     </p>
     <p>
       Vous pouvez vous déplacer en traînant la cible avec vous. Cependant, votre <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> est

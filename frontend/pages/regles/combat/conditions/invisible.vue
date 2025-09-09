@@ -12,7 +12,8 @@
       se déplaçant.
     </p>
     <p>
-      Les <NuxtLink to="/regles/combat/attaque">attaques</NuxtLink> de la créature sont effectuées avec
+      La créature étant <NuxtLink to="/regles/combat/attaque/dissimulee">dissimulée</NuxtLink>, ses
+      <NuxtLink to="/regles/combat/attaque">attaques</NuxtLink> sont effectuées avec
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">avantage</NuxtLink>, et les attaques la prenant pour cible sont affligées du
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>.
     </p>

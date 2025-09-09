@@ -11,7 +11,7 @@
       <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.
     </p>
     <p>La majorité des personnages peuvent dormir pendant 6 heures et faire halte pendant 2 heures.</p>
-    <p>Un personnage est <strong>inconscient</strong> pendant qu’il dort.</p>
+    <p>Un personnage est <NuxtLink to="/regles/combat/conditions/inconscient">inconscient</NuxtLink> pendant qu’il dort.</p>
     <h2 class="h3">Régénération</h2>
     <p>
       Lorsqu’un personnage complète une nuit de sommeil, il récupère tous ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> ainsi que

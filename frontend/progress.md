@@ -4,18 +4,24 @@
 
 - Agripper
 - Aider
+- Attaque d’opportunité
 - Attaquer
 - Bousculer
-- Canaliser
+- Canaliser (1 action)
+- Canaliser (2 actions)
 - Chercher
+- Course
 - Défense
+- Déplacement
 - Indiquer
 - Jugement
 - Objet
 - Pas prudent
 - Se cacher
+- S’échapper
+- Viser et tirer
 
-Total : 12 / 30 (40.00 %)
+Total : 18 / 30 (60.00 %)
 
 ## Sections
 
@@ -36,7 +42,9 @@ Total : 12 / 30 (40.00 %)
   - Empoisonné
   - Étourdi
   - Incapable
+  - Inconscient
   - Invisible
+  - Paralysé
   - Renversé
 - Mouvement
   - Entête
@@ -51,5 +59,17 @@ Total : 12 / 30 (40.00 %)
   - Niveau
   - Canalisation
   - Dépense d’Énergie
+- Attaque
+  - Entête
+  - Multiples
+  - Esquive
+  - Défense
+  - Critique
+  - Dissimulée
+  - Mêlée
+  - Distance
+  - Opportunité
+  - Combat à deux armes
+  - Abri
 
-Total : 28 / 67 (41.79 %)
+Total : 41 / 68 (60.29 %)

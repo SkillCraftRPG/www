@@ -10,7 +10,7 @@
     <p>Ce nombre est obtenu en multipliant la base par le niveau canalisé. La base est déterminée par le tiers du pouvoir.</p>
     <p>
       Une créature peut dépenser un nombre de points d’Énergie supérieur à son nombre restant. Lorsqu’elle en fait ainsi, le pouvoir est canalisé, mais les
-      points d’Énergie de la créature chutent à 0 et elle tombe <strong>inconsciente</strong>.
+      points d’Énergie de la créature chutent à 0 et elle tombe <NuxtLink to="/regles/combat/conditions/inconscient">inconsciente</NuxtLink>.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants permettent de réduire cette dépense d’Énergie :</p>
     <div class="row">

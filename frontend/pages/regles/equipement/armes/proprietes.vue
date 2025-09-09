@@ -50,7 +50,7 @@
       </li>
       <li>
         <strong>Munition. </strong> Une arme à munition nécessite l’utilisation d’une munition afin de pouvoir être utilisée. Ces armes doivent être utilisées
-        par l’action <i>Viser et tirer</i>.
+        par l’action <NuxtLink to="/regles/combat/activites/viser-tirer">Viser et tirer</NuxtLink>.
       </li>
       <li><strong>Spéciale.</strong> Ces armes sont gouvernées par des règles spéciales qui sont spécifiques à chaque arme.</li>
       <li>

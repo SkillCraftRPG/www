@@ -4,7 +4,8 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Vous tentez de vous dissimuler de vos ennemis. Effectuez un <NuxtLink to="/regles/competences/tests">test</NuxtLink> de
-      <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>. Vous obtenez certains <strong>bénéfices</strong> lorsque vous êtes dissimulés.
+      <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>. Vous obtenez certains
+      <NuxtLink to="/regles/combat/attaque/dissimulee">bénéfices</NuxtLink> lorsque vous êtes dissimulés.
     </p>
     <p>
       Si une créature vous observe, vous n’êtes pas dissimulés à ses yeux. Si une créature vous voit aller vous cacher, par exemple derrière un arbre ou dans un

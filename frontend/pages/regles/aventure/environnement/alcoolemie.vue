@@ -183,8 +183,8 @@
     </ul>
     <h3 id="coma" class="h5">Coma éthylique</h3>
     <p>
-      Une créature en coma éthylique est <strong>inconsciente</strong> et sa vie est en danger. À la fin de chaque heure de coma éthylique, lancez vos
-      <NuxtLink to="/regles/competences/tests/2d10">dés d’Espérance et de Damnation</NuxtLink>.
+      Une créature en coma éthylique est <NuxtLink to="/regles/combat/conditions/inconscient">inconsciente</NuxtLink> et sa vie est en danger. À la fin de
+      chaque heure de coma éthylique, lancez vos <NuxtLink to="/regles/competences/tests/2d10">dés d’Espérance et de Damnation</NuxtLink>.
     </p>
     <ul>
       <li>

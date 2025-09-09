@@ -2,10 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Une créature agrippée est immobilisée, elle ne peut donc pas <strong>se déplacer</strong>.</p>
+    <p>Une créature agrippée est immobilisée, elle ne peut donc pas <NuxtLink to="/regles/combat/activites/deplacement">se déplacer</NuxtLink>.</p>
     <p>La condition prend fin lorsque survient l’une des situations suivantes :</p>
     <ul>
-      <li>La créature agrippée réussit à <strong>s’échapper</strong>.</li>
+      <li>La créature agrippée réussit à <NuxtLink to="/regles/combat/activites/echapper">s’échapper</NuxtLink>.</li>
       <li>La créature l’ayant agrippé la lâche, volontairement ou non, ou devient <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>.</li>
       <li>La créature agrippée est déplacée à l’extérieur de la portée de la créature l’agrippant par un effet quelconque.</li>
     </ul>

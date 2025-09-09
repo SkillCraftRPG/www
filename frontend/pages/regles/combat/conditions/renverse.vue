@@ -3,8 +3,9 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Une créature renversée ne peut <strong>se déplacer</strong> qu’en <NuxtLink to="/regles/aventure/mouvement/types">rampant</NuxtLink>. Elle met fin à la
-      condition en <NuxtLink to="/regles/aventure/mouvement/types">se relevant</NuxtLink>.
+      Une créature renversée ne peut <NuxtLink to="/regles/combat/activites/deplacement">se déplacer</NuxtLink> qu’en
+      <NuxtLink to="/regles/aventure/mouvement/types">rampant</NuxtLink>. Elle met fin à la condition en
+      <NuxtLink to="/regles/aventure/mouvement/types">se relevant</NuxtLink>.
     </p>
     <ul>
       <li>
@@ -12,7 +13,8 @@
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>.
       </li>
       <li>
-        Les <strong>attaques de mêlée</strong> dirigées contre cette créature se voient conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage"
+        Les <NuxtLink to="/regles/combat/attaque/melee">attaques de mêlée</NuxtLink> dirigées contre cette créature se voient conférer l’<NuxtLink
+          to="/regles/competences/tests/avantage-desavantage"
           >avantage</NuxtLink
         >.
       </li>

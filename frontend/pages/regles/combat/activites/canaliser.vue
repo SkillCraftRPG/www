@@ -7,8 +7,8 @@
       Par une action, vous pouvez également commencer à canaliser un pouvoir. Lors de votre prochain
       <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, il vous coûtera une action en moins afin de compléter la canalisation. L’action est perdue
       si vous ne terminez pas la canalisation lors de votre prochain tour, ou si vous canalisez un autre pouvoir entretemps. Vous n’avez pas besoin de vous
-      <strong>concentrer</strong> sur cette canalisation, et vous ne déclenchez une <strong>attaque d’opportunité</strong> qu’au moment où vous complétez la
-      canalisation.
+      <strong>concentrer</strong> sur cette canalisation, et vous ne déclenchez une
+      <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink> qu’au moment où vous complétez la canalisation.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à canaliser :</p>
     <div class="row">

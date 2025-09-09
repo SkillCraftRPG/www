@@ -14,8 +14,8 @@
     </p>
     <p>
       En plus de réussir automatiquement, vous bénéficiez 2 conséquences positives. Votre maître de jeu peut également vous donner 2
-      <NuxtLink to="/regles/competences/esperance-damnation">points d’Espérance</NuxtLink>, ou une conséquence positive et un point d’Espérance. La décision
-      finale lui appartient.
+      <NuxtLink to="/regles/competences/esperance-damnation">points d’Espérance</NuxtLink>, ou une conséquence positive et un point d’Espérance. Cette décision
+      lui appartient.
     </p>
     <h2 class="h3">Échec critique</h2>
     <p>
@@ -30,12 +30,13 @@
     <p>
       En plus d’échouer automatiquement, vous êtes affligés de 2 conséquences négatives. Votre maître de jeu peut également s’allouer 2
       <NuxtLink to="/regles/competences/esperance-damnation">points de Damnation</NuxtLink>, ou vous infliger une conséquence négative et s’allouer un point de
-      Damnation. La décision finale lui appartient.
+      Damnation. Cette décision lui appartient.
     </p>
     <h2 class="h3">Attaque</h2>
     <p>
-      Lorsque vous effectuez une <strong>Attaque</strong>, certains talents ou certaines capacités peuvent augmenter vos chances d’obtenir une réussite critique
-      ou réduire vos chances d’obtenir un échec critique. Certaines capacités ou conditions peuvent également réduire ces chances, voire les nullifier.
+      Lorsque vous effectuez une <NuxtLink to="/regles/combat/attaque">Attaque</NuxtLink>, certains talents ou certaines capacités peuvent augmenter vos chances
+      d’obtenir une réussite critique ou réduire vos chances d’obtenir un échec critique. Certaines capacités ou conditions peuvent également réduire ces
+      chances, voire les nullifier.
     </p>
     <p>L’obtention d’une réussite critique ne signifie pas que vous infligez des <strong>points de dégâts</strong> supplémentaires, sauf lorsque indiqué.</p>
     <p>Les talents suivants augmentent vos chances d’obtenir une réussite critique lorsque vous effectuez une attaque :</p>
