@@ -44,7 +44,7 @@ const conditions: Condition[] = [
   {
     path: "/regles/combat/conditions/assomme",
     title: "Assommé",
-    description: "Incapable, échecs automatiques et faiblesse.",
+    description: "Incapable, échecs automatiques et vulnérable.",
   },
   {
     path: "/regles/combat/conditions/assourdi",
@@ -79,7 +79,7 @@ const conditions: Condition[] = [
   {
     path: "/regles/combat/conditions/inconscient",
     title: "Inconscient",
-    description: "Incapable, échecs automatiques, faiblesse et récupération.",
+    description: "Incapable, échecs automatiques, vulnérable et récupération.",
   },
   {
     path: "/regles/combat/conditions/invisible",
@@ -89,12 +89,22 @@ const conditions: Condition[] = [
   {
     path: "/regles/combat/conditions/paralyse",
     title: "Paralysé",
-    description: "Incapable, échecs automatiques et faiblesse.",
+    description: "Incapable, échecs automatiques et vulnérable.",
+  },
+  {
+    path: "/regles/combat/conditions/petrifie",
+    title: "Pétrifié",
+    description: "Transformé en pierre, incapable et échecs automatiques.",
   },
   {
     path: "/regles/combat/conditions/renverse",
     title: "Renversé",
     description: "Déplacements limités et impacts sur les attaques.",
+  },
+  {
+    path: "/regles/combat/conditions/restreint",
+    title: "Restreint",
+    description: "Immobilisé, vulnérable et mobilité réduite.",
   },
 ];
 
@@ -106,6 +116,4 @@ useSeo({
 // TODO(fpion): agonisant
 // TODO(fpion): fatigue
 // TODO(fpion): mort
-// TODO(fpion): pétrifié
-// TODO(fpion): restreint
 </script>

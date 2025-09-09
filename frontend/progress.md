@@ -4,8 +4,10 @@
 
 - Agripper
 - Aider
+- Amortir sa chute
 - Attaque d’opportunité
 - Attaquer
+- Attraper
 - Bousculer
 - Canaliser (1 action)
 - Canaliser (2 actions)
@@ -21,7 +23,7 @@
 - S’échapper
 - Viser et tirer
 
-Total : 18 / 30 (60.00 %)
+Total : 20 / 30 (66.67 %)
 
 ## Sections
 
@@ -40,25 +42,20 @@ Total : 18 / 30 (60.00 %)
   - Aveuglé
   - Charmé
   - Empoisonné
-  - Étourdi
   - Incapable
   - Inconscient
   - Invisible
   - Paralysé
+  - Pétrifié
   - Renversé
+  - Restreint
+  - Étourdi
 - Mouvement
   - Entête
   - Terrain difficile
   - Être renversé
   - Déplacement aérien
   - Espace occupé
-- Magie
-  - Entête
-  - Pouvoirs
-  - Apprentissage
-  - Niveau
-  - Canalisation
-  - Dépense d’Énergie
 - Attaque
   - Entête
   - Multiples
@@ -71,5 +68,16 @@ Total : 18 / 30 (60.00 %)
   - Opportunité
   - Combat à deux armes
   - Abri
+- Magie
+  - Entête
+  - Pouvoirs
+  - Apprentissage
+  - Niveau
+  - Canalisation
+  - Dépense d’Énergie
+  - Rituel
+  - Incantation
 
-Total : 41 / 68 (60.29 %)
+Total : 45 / 68 (63.24 %)
+
+🎯 Objectif : 45

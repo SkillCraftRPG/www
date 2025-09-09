@@ -30,6 +30,11 @@ const items: MenuItem[] = [
     title: "Pouvoirs",
     description: "Regroupent sorts et capacités uniques, règles d’apprentissage et d’usage.",
   },
+  {
+    path: "/regles/magie/parametres",
+    title: "Paramètres",
+    description: "🚧",
+  },
 ];
 
 useSeo({

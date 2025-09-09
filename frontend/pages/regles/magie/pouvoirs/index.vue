@@ -6,7 +6,7 @@
     <p>Ils regroupent autant les sorts canalisés par les utilisateurs de magie que les capacités uniques de certaines espèces ou types de personnages.</p>
     <p>L’action d’utiliser un pouvoir est appelée <NuxtLink to="/regles/combat/activites/canaliser">Canaliser</NuxtLink>.</p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-lg-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -44,6 +44,11 @@ const items: MenuItem[] = [
     path: "/regles/magie/pouvoirs/energie",
     title: "Dépense d’Énergie",
     description: "Effet du tiers, niveau et talents sur la dépense d’Énergie.",
+  },
+  {
+    path: "/regles/magie/pouvoirs/rituel",
+    title: "Rituel",
+    description: "Canalisation en rituel, avec une dépense minime et réussite automatique.",
   },
 ];
 

@@ -24,6 +24,18 @@
     "summary": "Aider à accomplir une action."
   },
   {
+    "id": "a3a32274-480a-4ee2-9892-6d0689d1b05d",
+    "path": "/regles/combat/activites/amortir-chute",
+    "name": "Amortir sa chute",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Réduire l’impact d’une chute libre."
+  },
+  {
     "id": "2a48a4c3-692b-4796-9707-0ae68b75bd8c",
     "path": "/regles/combat/attaque/opportunite",
     "name": "Attaque d’opportunité",
@@ -46,6 +58,18 @@
     },
     "threatening": "maybe",
     "summary": "Attaque à mêlée ou lancer une arme."
+  },
+  {
+    "id": "aef5da37-bd95-4f7b-8af3-1f65d68a0a36",
+    "path": "/regles/combat/activites/attraper",
+    "name": "Attraper",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Attraper un objet ou une créature."
   },
   {
     "id": "c6798208-e3b5-48f9-a0e5-f32293c1eda0",
