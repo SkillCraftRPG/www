@@ -120,6 +120,18 @@
     "summary": "Bloquer les coups dirigés vers soi."
   },
   {
+    "id": "9ae103a2-4358-4d49-bfc0-d0bf8277e984",
+    "path": "/regles/combat/activites/demonter",
+    "name": "Démonter",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Descendre de sa monture."
+  },
+  {
     "id": "4dfe7b76-46e7-4449-a7d9-66b8b8be2058",
     "path": "/regles/combat/activites/deplacement",
     "name": "Déplacement",

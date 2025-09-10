@@ -14,6 +14,7 @@
 - Chercher
 - Course
 - Défense
+- Démonter
 - Déplacement
 - Indiquer
 - Jugement
@@ -23,7 +24,7 @@
 - S’échapper
 - Viser et tirer
 
-Total : 20 / 30 (66.67 %)
+Total : 21 / 30 (70.00 %)
 
 ## Sections
 
@@ -77,7 +78,10 @@ Total : 20 / 30 (66.67 %)
   - Dépense d’Énergie
   - Rituel
   - Incantation
+  - Composantes
+  - Durée
+  - Portée
 
-Total : 45 / 68 (63.24 %)
+Total : 48 / 68 (70.59 %)
 
-🎯 Objectif : 45
+🎯 Objectif : 48

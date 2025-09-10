@@ -25,7 +25,6 @@
         <BattleActivityCard :activity="activity" />
       </div>
     </div>
-    <!-- TODO(fpion): tableau des attaques d’opportunité ici ou dans la page d’attaque d’opportunité, https://www.d20srd.org/srd/combat/actionsInCombat.htm -->
   </main>
 </template>
 

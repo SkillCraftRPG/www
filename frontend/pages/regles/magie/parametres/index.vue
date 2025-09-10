@@ -28,10 +28,25 @@ const items: MenuItem[] = [
     title: "Incantation",
     description: "Durée d’incantation : actions, réactions ou incantation prolongée.",
   },
+  {
+    path: "/regles/magie/parametres/composantes",
+    title: "Composantes",
+    description: "Les composantes d’un pouvoir : Focus, Matériel, Somatique et Verbal.",
+  },
+  {
+    path: "/regles/magie/parametres/duree",
+    title: "Durée",
+    description: "Durée et concentration définissent la persistance des effets d’un pouvoir.",
+  },
+  {
+    path: "/regles/magie/parametres/portee",
+    title: "Portée",
+    description: "La portée définit quelles cibles un pouvoir peut affecter, selon sa distance.",
+  },
 ];
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les paramètres de magie : incantation, durée, composantes et portée, définissant la canalisation et les effets d’un pouvoir.",
 });
 </script>

@@ -33,7 +33,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/magie/parametres",
     title: "Paramètres",
-    description: "🚧",
+    description: "Les paramètres magiques définissent comment un pouvoir est lancé et agit.",
   },
 ];
 
