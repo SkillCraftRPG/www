@@ -44,7 +44,10 @@
           </li>
         </ul>
       </li>
-      <li>Incapacité à canaliser un <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink> nécessitant la composante <strong>Somatique</strong>.</li>
+      <li>
+        Incapacité à canaliser un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> nécessitant la composante
+        <NuxtLink to="/regles/magie/parametres/composantes">Somatique</NuxtLink>.
+      </li>
     </ul>
   </main>
 </template>

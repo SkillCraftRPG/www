@@ -11,7 +11,7 @@
       <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.
     </p>
     <p>La majorité des personnages peuvent dormir pendant 6 heures et faire halte pendant 2 heures.</p>
-    <p>Un personnage est <strong>inconscient</strong> pendant qu’il dort.</p>
+    <p>Un personnage est <NuxtLink to="/regles/combat/conditions/inconscient">inconscient</NuxtLink> pendant qu’il dort.</p>
     <h2 class="h3">Régénération</h2>
     <p>
       Lorsqu’un personnage complète une nuit de sommeil, il récupère tous ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> ainsi que
@@ -28,6 +28,10 @@
     <ul>
       <li>Il peut retirer une pénalité (-1) à un <NuxtLink to="/regles/attributs">attribut</NuxtLink>.</li>
       <li>Sa <strong>Fatigue</strong> descend d’un niveau.</li>
+      <li>
+        Ses <NuxtLink to="/regles/magie/alchimie">points d’intoxication</NuxtLink> descendent d’une valeur égale à son
+        <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> (minimum 1).
+      </li>
       <li>Il récupère les utilisations de certaines capacités.</li>
     </ul>
     <p>Voici quelques situations pouvant interrompre une nuit de sommeil :</p>

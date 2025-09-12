@@ -6,7 +6,7 @@
       Les <NuxtLink to="/regles/equipement/armures">armures</NuxtLink> et <NuxtLink to="/regles/equipement/boucliers">boucliers</NuxtLink> sont dotés d’une
       valeur de Résistance, indiquée dans la colonne <i>Résistance</i>.
     </p>
-    <p>Chaque fois qu’une armure ou un bouclier est <strong>percuté</strong>, cette valeur diminue de 1.</p>
+    <p>Chaque fois qu’une armure ou un bouclier est <NuxtLink to="/regles/combat/attaque/defense">percuté</NuxtLink>, cette valeur diminue de 1.</p>
     <p>
       Lorsque cette valeur chute à 0, l’objet est brisé. Il ne confère plus ses <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink>, ni les
       bonus octroyés par exemple par ses <NuxtLink to="/regles/equipement/armures/proprietes">propriétés</NuxtLink>. L’acte de

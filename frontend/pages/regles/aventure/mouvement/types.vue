@@ -43,7 +43,7 @@
         <a href="#monter">Monter / Démonter</a>
       </li>
       <li>
-        <a href="#vol">Vol</a>
+        <a href="#voler">Voler</a>
         <ul>
           <li>
             <a href="#levitation">Lévitation</a>
@@ -58,15 +58,16 @@
     <p>C’est le type de mouvement le plus répandu. Presque toute créature est dotée d’une vitesse pour ce type.</p>
     <h3 id="course" class="h5">Course</h3>
     <p>
-      Une créature court lorsqu’elle effectue plusieurs actions <strong>Déplacement</strong> au cours du même <strong>tour</strong>. Une créature se déplaçant
-      en courant ne peut se <NuxtLink to="/regles/aventure/mouvement/furtif">déplacer furtivement</NuxtLink>, elle subit une pénalité à la
+      Une créature court lorsqu’elle effectue plusieurs actions <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink> au cours du même
+      <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>. Une créature se déplaçant en courant ne peut se
+      <NuxtLink to="/regles/aventure/mouvement/furtif">déplacer furtivement</NuxtLink>, elle subit une pénalité à la
       <NuxtLink to="/regles/aventure/mouvement/attentif">perception</NuxtLink>, et peut subir une chute sur du
       <NuxtLink to="/regles/aventure/mouvement/terrain-difficile">terrain difficile</NuxtLink>. Une créature ne peut courir sur de longues périodes de temps.
     </p>
     <h3 id="ramper" class="h5">Ramper</h3>
     <p>
-      Lorsqu’une créature est <strong>renversée</strong> au sol, elle ne peut se déplacer qu’en rampant. Sa vitesse de marche est alors réduite de moitié. Les
-      créatures ne pouvant être renversées au sol ne sont pas affectées par cette réduction de vitesse.
+      Lorsqu’une créature est <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol, elle ne peut se déplacer qu’en rampant. Sa vitesse
+      de marche est alors réduite de moitié. Les créatures ne pouvant être renversées au sol ne sont pas affectées par cette réduction de vitesse.
     </p>
     <p>
       Elle dépense <NuxtLink to="/regles/aventure/mouvement/vitesse">2 points de mouvement</NuxtLink> par tranche de 1,5 mètres en situation de tour-par-tour,
@@ -75,14 +76,15 @@
     </p>
     <h3 id="relever" class="h5">Se relever</h3>
     <p>
-      Lorsqu’une créature est <strong>renversée</strong> au sol, elle peut se relever par l’action <strong>Déplacement</strong>. Il lui en coûte la moitié de
-      ses <NuxtLink to="/regles/aventure/mouvement/vitesse">points de mouvement</NuxtLink> lorsqu’elle en fait ainsi.
+      Lorsqu’une créature est <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol, elle peut se relever par l’action
+      <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink>. Il lui en coûte la moitié de ses
+      <NuxtLink to="/regles/aventure/mouvement/vitesse">points de mouvement</NuxtLink> lorsqu’elle en fait ainsi.
     </p>
     <h2 id="escalade" class="h3">Escalade</h2>
     <p>
       Ce type de mouvement permet de se déplacer sur une surface verticale ou très en pente. Un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink> par action
-      <strong>Déplacement</strong> est généralement requis, à la discrétion du maître de jeu.
+      <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink> est généralement requis, à la discrétion du maître de jeu.
     </p>
     <p>
       À moins d’être dotée d’une vitesse spécifique, la vitesse d’escalade d’une créature est égale à la moitié de sa vitesse de marche. Les insectes,
@@ -97,7 +99,7 @@
     <p>
       Ce type de mouvement permet de se déplacer dans une surface liquide, comme de l’eau ou un liquide à densité similaire. Un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink> par action
-      <strong>Déplacement</strong> est généralement requis, à la discrétion du maître de jeu.
+      <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink> est généralement requis, à la discrétion du maître de jeu.
     </p>
     <p>
       À moins d’être dotée d’une vitesse spécifique, la vitesse de nage d’une créature est égale à la moitié de sa vitesse de marche. Les créatures aquatiques
@@ -122,7 +124,7 @@
         Si elle atterit sur du <NuxtLink>terrain difficile</NuxtLink>, elle doit également réussir un test d’<NuxtLink to="/regles/competences/acrobaties"
           >Acrobaties</NuxtLink
         >
-        afin de ne pas tomber <strong>renversée</strong> au sol.
+        afin de ne pas tomber <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol.
       </li>
     </ul>
     <h3 id="saut-hauteur" class="h5">Saut en hauteur</h3>
@@ -142,19 +144,24 @@
     </ul>
     <h2 id="monter" class="h3">Monter / Démonter</h2>
     <p>
-      Une créature peut monter ou démonter sa monture par l’action <strong>Déplacement</strong>. Il lui en coûte la moitié de ses
-      <NuxtLink to="/regles/aventure/mouvement/vitesse">points de mouvement</NuxtLink> lorsqu’elle en fait ainsi.
+      Une créature peut monter ou démonter sa monture par l’action <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink>. Il lui en coûte
+      la moitié de ses <NuxtLink to="/regles/aventure/mouvement/vitesse">points de mouvement</NuxtLink> lorsqu’elle en fait ainsi.
     </p>
     <p>
-      Elle peut également démonter sa monture en se jetant au sol en <strong>action libre</strong>, mais elle tombe alors <strong>renversée</strong> au sol.
+      Elle peut également <NuxtLink to="/regles/combat/activites/demonter">démonter</NuxtLink> sa monture en
+      <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink>. Lorsqu’elle en fait ainsi, elle retombe sur ses jambes. Elle ne peut pas se déplacer
+      pendant cette réaction.
     </p>
-    <h2 id="vol" class="h3">Vol</h2>
+    <h2 id="voler" class="h3">Voler</h2>
     <p>Une créature dotée d’une vitesse de vol peut effectuer des déplacements aériens. Les créatures ailées sont généralement dotées d’une vitesse de vol.</p>
     <p>
-      Une fois par <strong>tour</strong>, elle doit effectuer l’action <strong>Déplacement</strong> afin de se maintenir dans les airs, même si elle reste sur
-      place.
+      Une fois par <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, elle doit effectuer l’action
+      <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink> afin de se maintenir dans les airs, même si elle reste sur place.
     </p>
-    <p>Si elle est <strong>renversée</strong> en plein vol ou qu’elle perd sa capacité à voler, elle tombe et subit une <strong>chute</strong>.</p>
+    <p>
+      Si elle est <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> en plein vol ou qu’elle perd sa capacité à voler, elle tombe et subit
+      une <NuxtLink to="/regles/aventure/environnement/chute">chute</NuxtLink>.
+    </p>
     <h3 id="levitation" class="h5">Lévitation</h3>
     <p>La capacité à léviter est rare et généralement magique.</p>
     <p>
@@ -162,8 +169,9 @@
       conscience, elle reste en position.
     </p>
     <p>
-      Si elle est <strong>renversée</strong> alors qu’elle lévite, elle ne perd pas d’altitude, mais elle perd tout de même l’équilibre et se voit affligée des
-      mêmes pénalités qu’une créature terrestre. Si elle perd sa capacité à léviter, elle tombe et subit une <strong>chute</strong>.
+      Si elle est <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> alors qu’elle lévite, elle ne perd pas d’altitude, mais elle perd tout
+      de même l’équilibre et se voit affligée des mêmes pénalités qu’une créature terrestre. Si elle perd sa capacité à léviter, elle tombe et subit une
+      <NuxtLink to="/regles/aventure/environnement/chute">chute</NuxtLink>.
     </p>
     <h2 id="creuser" class="h3">Creuser</h2>
     <p>Une créature dotée d’une vitesse de creusage peut se déplacer sous terre, dans des surfaces friables tel le sable, la terre, la boue ou la glace.</p>

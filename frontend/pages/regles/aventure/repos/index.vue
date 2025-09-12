@@ -8,8 +8,9 @@
     </p>
     <p>Il est évidemment impossible pour un aventurier de récupérer plus de points qu’il lui en manque.</p>
     <p>
-      Sa régénération peut être augmentée par certains effets, par exemple un <strong>remède</strong>, un <NuxtLink to="/regles/pouvoirs">pouvoir</NuxtLink>, ou
-      encore le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/meditation">Méditation</NuxtLink>.
+      Sa régénération peut être augmentée par certains effets, par exemple un <strong>remède</strong>, un
+      <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>, ou encore le <NuxtLink to="/regles/talents">talent</NuxtLink>
+      <NuxtLink to="/regles/talents/meditation">Méditation</NuxtLink>.
     </p>
     <p>
       Au contraire, certaines conditions peuvent réduire sa régénération, par exemple un niveau de stress élevé, un environnement particulièrement bruyant, le

@@ -4,8 +4,8 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Un personnage portant un <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un
-      <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> en bon état se voit conférer un bonus à la <strong>Défense</strong>. Ce bonus est indiqué
-      dans la colonne <i>Défense</i> de chaque objet.
+      <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> en bon état se voit conférer un bonus à la
+      <NuxtLink to="/regles/combat/attaque/defense">Défense</NuxtLink>. Ce bonus est indiqué dans la colonne <i>Défense</i> de chaque objet.
     </p>
     <p>Ces points sont cumulables entre-eux, c’est-à-dire qu’un personnage peut bénéficier de bonus de points de Défense de plusieurs armures et boucliers.</p>
     <p>

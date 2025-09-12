@@ -14,7 +14,7 @@
         tiers.
       </li>
       <li>Il ne peut acquérir des <NuxtLink to="/regles/talents">talents</NuxtLink> dont le tiers est supérieur au sien.</li>
-      <li>De la même manière, il ne peut acquérir des <NuxtLink to="/regles/pouvoirs">pouvoirs</NuxtLink> dont le tiers est supérieur au sien.</li>
+      <li>De la même manière, il ne peut acquérir des <NuxtLink to="/regles/magie/pouvoirs">pouvoirs</NuxtLink> dont le tiers est supérieur au sien.</li>
       <li>
         Il ne peut se spécialiser si le tiers de la <NuxtLink to="/regles/specialisations">spécialisation</NuxtLink> convoitée est plus élevé de deux tiers ou
         plus que le sien.

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "446db02a-baed-4c65-9a7c-855db902dac9",
+    "path": "/regles/combat/activites/agripper",
+    "name": "Agripper",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Agripper une cible pour l’immobiliser."
+  },
+  {
+    "id": "2ff3607b-867d-4c18-94a9-6e8ef13518db",
+    "path": "/regles/combat/activites/aider",
+    "name": "Aider",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": "maybe",
+    "summary": "Aider à accomplir une action."
+  },
+  {
+    "id": "a3a32274-480a-4ee2-9892-6d0689d1b05d",
+    "path": "/regles/combat/activites/amortir-chute",
+    "name": "Amortir sa chute",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Réduire l’impact d’une chute libre."
+  },
+  {
+    "id": "2a48a4c3-692b-4796-9707-0ae68b75bd8c",
+    "path": "/regles/combat/attaque/opportunite",
+    "name": "Attaque d’opportunité",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Effectuer une attaque en réaction."
+  },
+  {
+    "id": "e26ae800-78ba-43aa-a3d9-b598ec19dfa2",
+    "path": "/regles/combat/attaque",
+    "name": "Attaquer",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": "maybe",
+    "summary": "Attaque à mêlée ou lancer une arme."
+  },
+  {
+    "id": "aef5da37-bd95-4f7b-8af3-1f65d68a0a36",
+    "path": "/regles/combat/activites/attraper",
+    "name": "Attraper",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Attraper un objet ou une créature."
+  },
+  {
+    "id": "c6798208-e3b5-48f9-a0e5-f32293c1eda0",
+    "path": "/regles/combat/activites/bousculer",
+    "name": "Bousculer",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Renverser ou repousser une cible."
+  },
+  {
+    "id": "a8719091-28ce-4a20-8f43-88a60109b7a7",
+    "path": "/regles/combat/activites/canaliser",
+    "name": "Canaliser",
+    "actions": {
+      "mandatory": 1,
+      "optional": 1,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Canaliser un pouvoir."
+  },
+  {
+    "id": "0b4efa03-addd-4c63-b6da-a61a4e6b6ab8",
+    "path": "/regles/combat/activites/cesser-canaliser",
+    "name": "Cesser de canaliser",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Mettre fin à un pouvoir."
+  },
+  {
+    "id": "5b705d5b-45b8-4251-8e54-fae7be1f2cc7",
+    "path": "/regles/combat/activites/chargement",
+    "name": "Chargement",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Charger une munition dans une arme."
+  },
+  {
+    "id": "4db5e8cc-66ef-4905-9f28-d7b5eac86aaa",
+    "path": "/regles/combat/activites/chercher",
+    "name": "Chercher",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Détecter ce qui est caché."
+  },
+  {
+    "id": "866ef3b7-20ad-492d-a96f-1336adfff2f7",
+    "path": "/regles/combat/activites/concentration",
+    "name": "Concentration",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Maintenir un pouvoir actif."
+  },
+  {
+    "id": "c11e2177-3af9-4e8c-84f3-c46dc0791da9",
+    "path": "/regles/combat/activites/defense",
+    "name": "Défense",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Bloquer les coups dirigés vers soi."
+  },
+  {
+    "id": "9ae103a2-4358-4d49-bfc0-d0bf8277e984",
+    "path": "/regles/combat/activites/demonter",
+    "name": "Démonter",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": false,
+    "summary": "Descendre de sa monture."
+  },
+  {
+    "id": "4dfe7b76-46e7-4449-a7d9-66b8b8be2058",
+    "path": "/regles/combat/activites/deplacement",
+    "name": "Déplacement",
+    "actions": {
+      "mandatory": 1,
+      "optional": 2,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Se déplacer, changer de position."
+  },
+  {
+    "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
+    "path": "/regles/combat/activites/indiquer",
+    "name": "Indiquer",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Pointer une cible découverte."
+  },
+  {
+    "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
+    "path": "/regles/combat/activites/jugement",
+    "name": "Jugement",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Évaluer la situation ou une cible."
+  },
+  {
+    "id": "e05302a8-7818-4c89-be98-c805eec59677",
+    "path": "/regles/combat/activites/lacher",
+    "name": "Lâcher",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Lâcher un objet ou une créature."
+  },
+  {
+    "id": "e39aa516-d64f-4809-8e9c-03f054a52310",
+    "path": "/regles/combat/activites/objet",
+    "name": "Objet",
+    "actions": {
+      "mandatory": 1,
+      "optional": 2,
+      "reaction": false
+    },
+    "threatening": "maybe",
+    "summary": "Utiliser ou activer un objet."
+  },
+  {
+    "id": "322c5085-46f7-4921-83fa-02c6bfdd7f7e",
+    "path": "/regles/combat/activites/parler",
+    "name": "Parler",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Parler, crier, ou chuchoter."
+  },
+  {
+    "id": "c66cebf1-8c81-44a5-80b9-2ced509e69d6",
+    "path": "/regles/combat/activites/pas-prudent",
+    "name": "Pas prudent",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Déplacement sans opportunité."
+  },
+  {
+    "id": "69ab00d9-0ad4-4339-9682-d5965a338ad3",
+    "path": "/regles/combat/activites/preparer",
+    "name": "Préparer",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": "maybe",
+    "summary": "Réaction conditionnelle."
+  },
+  {
+    "id": "05697405-2b59-4e04-99b1-487b6b3e8140",
+    "path": "/regles/combat/activites/retarder",
+    "name": "Retarder",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Retarder à plus tard son tour."
+  },
+  {
+    "id": "d825c308-ebd1-4cc7-a636-a9f1ccfa08b7",
+    "path": "/regles/combat/activites/cacher",
+    "name": "Se cacher",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Se dissimuler de ses ennemis."
+  },
+  {
+    "id": "8f9aa526-aeea-4d71-9031-867e6876b753",
+    "path": "/regles/combat/activites/jeter-sol",
+    "name": "Se jeter au sol",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Tomber en position renversée."
+  },
+  {
+    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "path": "/regles/combat/activites/echapper",
+    "name": "S’échapper",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Se libérer d’une contrainte."
+  },
+  {
+    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "path": "/regles/combat/activites/viser-tirer",
+    "name": "Viser et tirer",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Effectuer une attaque à distance."
+  }
+]

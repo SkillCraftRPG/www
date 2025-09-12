@@ -2,15 +2,16 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Lorsqu’un personnage subit une chute, il reçoit des points de dégâts contondants létaux et tombe en position renversée.</p>
+    <p>
+      Lorsqu’un personnage subit une chute, il reçoit des points de dégâts contondants létaux et tombe en position
+      <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink>.
+    </p>
     <p>Ces points de dégâts sont de 1d6 par tranche de 1,5 mètres de hauteur.</p>
     <h2 class="h3">Amortir sa chute</h2>
     <p>
-      Il peut tenter d’amortir sa chute par un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink
-        to="/regles/competences/acrobaties"
-        >Acrobaties</NuxtLink
-      >
-      de <NuxtLink to="/regles/competences/tests/difficulte">difficulté moyenne</NuxtLink> afin de réduire l’impact de la chute.
+      Il peut tenter d’<NuxtLink to="/regles/combat/activites/amortir-chute">amortir sa chute</NuxtLink> par un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink> de
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté moyenne</NuxtLink> afin de réduire l’impact de la chute.
     </p>
     <ul>
       <li>Lorsqu’il réussit le test, les deux premiers dés de dégâts sont convertis en dégâts non létaux.</li>
