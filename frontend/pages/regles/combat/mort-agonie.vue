@@ -80,6 +80,9 @@
       retourner à la vie.
     </p>
     <p>Lorsqu’une créature est ressuscitée, elle est instantanément affligée de 5 niveaux de <strong>Fatigue</strong>.</p>
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 
@@ -95,4 +98,7 @@ useSeo({
 });
 
 // TODO(fpion): heal quand agonisant et instable, est-ce que ça stabilise? Ou pas comme dans Pokémon? Est-ce que ça stabilise sans heal?
+// TODO(fpion): talent Médecine, ça veut dire quoi être formé à l'utilisation de la trousse de premiers soins? Revoir le talent au complet!
+// TODO(fpion): Fatigue +1 quand tu tombes instable, pas quand tu tombes stable!
+// TODO(fpion): revoir Réanimation
 </script>
