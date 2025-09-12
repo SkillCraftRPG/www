@@ -19,7 +19,7 @@
         >.
       </li>
       <li>
-        Les <strong>attaques à distance</strong> dirigées contre cette créature sont affligées du
+        Les <NuxtLink to="/regles/combat/attaque/distance">attaques à distance</NuxtLink> dirigées contre cette créature sont affligées du
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>.
       </li>
     </ul>

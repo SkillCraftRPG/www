@@ -96,6 +96,30 @@
     "summary": "Canaliser un pouvoir."
   },
   {
+    "id": "0b4efa03-addd-4c63-b6da-a61a4e6b6ab8",
+    "path": "/regles/combat/activites/cesser-canaliser",
+    "name": "Cesser de canaliser",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Mettre fin à un pouvoir."
+  },
+  {
+    "id": "5b705d5b-45b8-4251-8e54-fae7be1f2cc7",
+    "path": "/regles/combat/activites/chargement",
+    "name": "Chargement",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Charger une munition dans une arme."
+  },
+  {
     "id": "4db5e8cc-66ef-4905-9f28-d7b5eac86aaa",
     "path": "/regles/combat/activites/chercher",
     "name": "Chercher",
@@ -106,6 +130,18 @@
     },
     "threatening": false,
     "summary": "Détecter ce qui est caché."
+  },
+  {
+    "id": "866ef3b7-20ad-492d-a96f-1336adfff2f7",
+    "path": "/regles/combat/activites/concentration",
+    "name": "Concentration",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Maintenir un pouvoir actif."
   },
   {
     "id": "c11e2177-3af9-4e8c-84f3-c46dc0791da9",
@@ -168,6 +204,18 @@
     "summary": "Évaluer la situation ou une cible."
   },
   {
+    "id": "e05302a8-7818-4c89-be98-c805eec59677",
+    "path": "/regles/combat/activites/lacher",
+    "name": "Lâcher",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Lâcher un objet ou une créature."
+  },
+  {
     "id": "e39aa516-d64f-4809-8e9c-03f054a52310",
     "path": "/regles/combat/activites/objet",
     "name": "Objet",
@@ -178,6 +226,18 @@
     },
     "threatening": "maybe",
     "summary": "Utiliser ou activer un objet."
+  },
+  {
+    "id": "322c5085-46f7-4921-83fa-02c6bfdd7f7e",
+    "path": "/regles/combat/activites/parler",
+    "name": "Parler",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Parler, crier, ou chuchoter."
   },
   {
     "id": "c66cebf1-8c81-44a5-80b9-2ced509e69d6",
@@ -192,6 +252,30 @@
     "summary": "Déplacement sans opportunité."
   },
   {
+    "id": "69ab00d9-0ad4-4339-9682-d5965a338ad3",
+    "path": "/regles/combat/activites/preparer",
+    "name": "Préparer",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": true
+    },
+    "threatening": "maybe",
+    "summary": "Réaction conditionnelle."
+  },
+  {
+    "id": "05697405-2b59-4e04-99b1-487b6b3e8140",
+    "path": "/regles/combat/activites/retarder",
+    "name": "Retarder",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Retarder à plus tard son tour."
+  },
+  {
     "id": "d825c308-ebd1-4cc7-a636-a9f1ccfa08b7",
     "path": "/regles/combat/activites/cacher",
     "name": "Se cacher",
@@ -202,6 +286,18 @@
     },
     "threatening": false,
     "summary": "Se dissimuler de ses ennemis."
+  },
+  {
+    "id": "8f9aa526-aeea-4d71-9031-867e6876b753",
+    "path": "/regles/combat/activites/jeter-sol",
+    "name": "Se jeter au sol",
+    "actions": {
+      "mandatory": 0,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Tomber en position renversée."
   },
   {
     "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",

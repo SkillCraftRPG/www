@@ -60,7 +60,10 @@
       Un personnage peut accumuler jusqu’à 3 points d’Espérance. Ces points sont conservés entre les séances de jeu : le joueur doit donc en garder trace sur sa
       fiche de personnage.
     </p>
-    <p>Cette limite ne peut pratiquement jamais être augmentée, mais elle peut être réduite sous certaines conditions.</p>
+    <p>
+      Cette limite ne peut pratiquement jamais être augmentée, mais elle peut être
+      <NuxtLink to="/regles/combat/mort-agonie">réduite sous certaines conditions</NuxtLink>.
+    </p>
     <p>Lorsque cette limite est atteinte et que le personnage génère un point d’Espérance, ce point est placé dans la <a href="#momentum">réserve</a>.</p>
     <h2 id="damnation" class="h3">Damnation</h2>
     <p>
@@ -107,8 +110,8 @@
     <table class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col" class="w-80">Effet</th>
-          <th scope="col" class="w-20">Points</th>
+          <th scope="col" class="w-75">Effet</th>
+          <th scope="col" class="w-25">Points</th>
         </tr>
       </thead>
       <tbody>

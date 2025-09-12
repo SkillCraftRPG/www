@@ -15,7 +15,7 @@
     <p>Les pouvoirs portant la mention <strong>Concentration</strong> nécessitent l’attention continue afin d’être maintenus.</p>
     <p>
       À chaque tour, la créature doit maintenir le pouvoir en effectuant l’<NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>{{ " "
-      }}<strong>Concentration</strong>.
+      }}<NuxtLink to="/regles/combat/activites/concentration">Concentration</NuxtLink>.
     </p>
     <p>
       Une créature ne peut se concentrer que sur un seul pouvoir à la fois. Si elle canalise un autre pouvoir nécessitant la concentration, le premier pouvoir

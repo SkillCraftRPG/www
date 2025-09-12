@@ -11,20 +11,28 @@
 - Bousculer
 - Canaliser (1 action)
 - Canaliser (2 actions)
+- Cesser de canaliser
+- Chargement
 - Chercher
+- Concentration
 - Course
 - Défense
 - Démonter
 - Déplacement
 - Indiquer
 - Jugement
+- Lâcher
 - Objet
+- Parler
 - Pas prudent
+- Préparer
+- Retarder
 - Se cacher
+- Se jeter au sol
 - S’échapper
 - Viser et tirer
 
-Total : 21 / 30 (70.00 %)
+Total : 29 / 30 (96.67 %)
 
 ## Sections
 
@@ -35,6 +43,9 @@ Total : 21 / 30 (70.00 %)
   - Pris au dépourvu
   - Surprise
   - Tour
+  - Mort et agonie
+  - Combat monté
+  - Sous l’eau
 - Conditions
   - Agrippé
   - Apeuré
@@ -69,6 +80,13 @@ Total : 21 / 30 (70.00 %)
   - Opportunité
   - Combat à deux armes
   - Abri
+- Dégâts
+  - Létalité
+  - Jet
+  - ❌ Types
+  - Efficacité
+  - Soins
+  - Temporaire
 - Magie
   - Entête
   - Pouvoirs
@@ -81,7 +99,15 @@ Total : 21 / 30 (70.00 %)
   - Composantes
   - Durée
   - Portée
+  - Cible
+  - Zones
+  - Jets de sauvegarde
+  - Attaque
+  - Combinaison
+  - Alchimie
+  - Concoctions
+  - Intoxication
 
-Total : 48 / 68 (70.59 %)
+Total : 64 / 68 (92.65 %)
 
-🎯 Objectif : 48
+🎯 Objectif : 66

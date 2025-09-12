@@ -9,7 +9,7 @@
     </p>
     <p>La magie concerne donc les capacités surnaturelles mystérieuses ou étranges des personnages.</p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -34,6 +34,16 @@ const items: MenuItem[] = [
     path: "/regles/magie/parametres",
     title: "Paramètres",
     description: "Les paramètres magiques définissent comment un pouvoir est lancé et agit.",
+  },
+  {
+    path: "/regles/magie/effets",
+    title: "Effets",
+    description: "Cibles, zones, jets de sauvegarde et combinaisons définissent les effets.",
+  },
+  {
+    path: "/regles/magie/alchimie",
+    title: "Alchimie",
+    description: "🚧",
   },
 ];
 

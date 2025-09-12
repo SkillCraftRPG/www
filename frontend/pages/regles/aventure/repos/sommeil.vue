@@ -28,6 +28,10 @@
     <ul>
       <li>Il peut retirer une pénalité (-1) à un <NuxtLink to="/regles/attributs">attribut</NuxtLink>.</li>
       <li>Sa <strong>Fatigue</strong> descend d’un niveau.</li>
+      <li>
+        Ses <NuxtLink to="/regles/magie/alchimie">points d’intoxication</NuxtLink> descendent d’une valeur égale à son
+        <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> (minimum 1).
+      </li>
       <li>Il récupère les utilisations de certaines capacités.</li>
     </ul>
     <p>Voici quelques situations pouvant interrompre une nuit de sommeil :</p>

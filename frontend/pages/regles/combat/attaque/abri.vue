@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Mêlée" :parent="parent" />
+    <AppBreadcrumb :active="title" :parent="parent" />
     <p>Une créature bénéficie d’un abri lorsqu’un obstacle se dresse entre elle et son attaquant.</p>
     <p>
       Afin de déterminer le type d’abri dont elle bénéficie, tracez une ligne imaginaire depuis l’attaquant jusqu’à chaque sommet de la ou des

@@ -5,7 +5,10 @@
     <p>Une créature inconsciente est <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink> : elle ne peut pas bouger ni parler.</p>
     <ul>
       <li>Elle n’est pas consciente de son environnement et de ce qui se déroule autour d’elle.</li>
-      <li>Elle <strong>lâche</strong> les objets qu’elle tient et s’effondre <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol.</li>
+      <li>
+        Elle <NuxtLink to="/regles/combat/activites/lacher">lâche</NuxtLink> les objets qu’elle tient et s’effondre
+        <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol.
+      </li>
       <li>
         Elle échoue automatiquement ses <NuxtLink to="/regles/competences/tests/sauvegarde">jets de sauvegarde</NuxtLink> d’<NuxtLink
           to="/regles/competences/athletisme"
@@ -20,7 +23,8 @@
         <NuxtLink to="/regles/competences/tests/critique">réussite critique</NuxtLink>.
       </li>
     </ul>
-    <p>
+    <p class="text-danger">
+      <!-- TODO(fpion): Vitalité -->
       Une créature inconsciente reprend généralement conscience lorsque ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> remontent
       au-delà de 0, après une heure de <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink> ou de
       <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.

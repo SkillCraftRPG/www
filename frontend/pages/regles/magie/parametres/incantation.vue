@@ -42,10 +42,13 @@
           </td>
           <td>
             La canalisation de certains pouvoirs nécessite plusieurs minutes, et parfois même plusieurs heures. Une créature doit maintenir sa
-            <strong>concentration</strong> pendant toute la durée de la canalisation. Si elle perd la concentration, la canalisation échoue. Aucune
-            <NuxtLink to="/regles/magie/pouvoirs/energie">dépense</NuxtLink> d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> n’est engendrée,
-            les <NuxtLink to="/regles/magie/parametres/composantes">composantes matérielles</NuxtLink> ne sont pas perdues, mais la créature doit recommencer la
-            canalisation depuis le début.
+            <NuxtLink to="/regles/combat/activites/concentration">concentration</NuxtLink> pendant toute la durée de la canalisation. Si elle perd la
+            concentration, la canalisation échoue. Aucune <NuxtLink to="/regles/magie/pouvoirs/energie">dépense</NuxtLink> d’<NuxtLink
+              to="/regles/statistiques/energie"
+              >Énergie</NuxtLink
+            >
+            n’est engendrée, les <NuxtLink to="/regles/magie/parametres/composantes">composantes matérielles</NuxtLink> ne sont pas perdues, mais la créature
+            doit recommencer la canalisation depuis le début.
           </td>
         </tr>
       </tbody>

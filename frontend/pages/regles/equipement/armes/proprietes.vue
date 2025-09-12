@@ -14,8 +14,8 @@
         dans l’arme. Chaque munition peut être tirée individuellement avant que l’arme ne doive être rechargée.
       </li>
       <li>
-        <strong>Chargement.</strong> L’action <i>Charger une arme</i> doit être utilisée afin d’installer une ou plusieurs munitions dans une arme possédant
-        cette propriété.
+        <strong>Chargement.</strong> L’action <NuxtLink to="/regles/combat/activites/chargement">Chargement</NuxtLink> doit être utilisée afin d’installer une
+        ou plusieurs munitions dans une arme possédant cette propriété.
       </li>
       <li>
         <strong>Deux mains.</strong> Lorsqu’une arme possède cette propriété, elle nécessite d’être maniée à deux mains. La créature ne peut utiliser un
@@ -64,7 +64,7 @@
       exemple <i>Jet (4/12)</i> ou <i>Munition (30/120)</i>.
     </p>
     <p>Ces portées représentent un nombre de cases sur la grille de combat. Chaque case possède généralement une arête de 1,5 mètres.</p>
-    <p>Lorsqu’une attaque à distance est effectuée, la distance entre l’attaquant et sa cible est comparée avec ces portées.</p>
+    <p>Lorsqu’une attaque à distance est effectuée, la distance entre l’attaquant et sa cible est comparée à ces portées.</p>
     <ul>
       <li>Si la distance est inférieure ou égale à la première (et plus petite) des deux portées, le test de l’attaque est effectué normalement.</li>
       <li>

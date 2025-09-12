@@ -20,7 +20,7 @@
     </p>
     <p>
       Vous pouvez vous déplacer en traînant la cible avec vous. Cependant, votre <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> est
-      réduite de moitié si la taille de la cible n’est pas d’au moins deux catégories inférieures à la votre.
+      réduite de moitié si la taille de la cible n’est pas d’au moins deux catégories inférieures à la vôtre.
     </p>
     <p>
       Une créature peut être agrippée par plusieurs créatures. Si vous tentez de traîner une cible agrippée par au moins une autre créature, effectuez un test

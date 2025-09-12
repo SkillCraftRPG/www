@@ -42,9 +42,29 @@ const items: MenuItem[] = [
     description: "🚧",
   },
   {
+    path: "/regles/combat/degats",
+    title: "Dégâts",
+    description: "🚧",
+  },
+  {
+    path: "/regles/combat/mort-agonie",
+    title: "Mort et agonie",
+    description: "🚧",
+  },
+  {
     path: "/regles/combat/conditions",
     title: "Conditions",
     description: "🚧",
+  },
+  {
+    path: "/regles/combat/monte",
+    title: "Combat monté",
+    description: "Règles du combat monté : contrôler sa monture, risques et actions clés.",
+  },
+  {
+    path: "/regles/combat/sous-eau",
+    title: "Combat sous l’eau",
+    description: "Règles du combat sous l’eau : armes valides, désavantages et résistances.",
   },
 ];
 

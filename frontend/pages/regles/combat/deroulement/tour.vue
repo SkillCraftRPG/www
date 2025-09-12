@@ -18,11 +18,12 @@
     <p>À la fin de son tour, tout action inutilisée est perdue. Au début de son prochain tour, elle peut à nouveau utiliser jusqu’à 3 actions.</p>
     <h2 class="h3">Actions libres</h2>
     <p>
-      Les actions libres ne coûtent aucun action, car leur temps d’exécution est instantané, où elles peuvent être effectuées en même temps qu’une autre action.
+      Les actions libres ne coûtent aucun action, car leur temps d’exécution est instantané, ou elles peuvent être effectuées en même temps qu’une autre action.
     </p>
     <p>
-      Une créature peut effectuer autant d’action libres pendant un round que la logique le permet. Par exemple, elle peut parler, mais son discours ne doit pas
-      durer plus de 6 secondes. En langue française, on peut exprimer approximativement 25 mots par round.
+      Pendant son tour, une créature peut effectuer autant d’action libres que la logique le permet. Par exemple, elle peut
+      <NuxtLink to="/regles/combat/activites/parler">parler</NuxtLink>, mais son discours ne doit pas durer plus de
+      <NuxtLink to="/regles/aventure/temps">6 secondes</NuxtLink>. En langue française, on peut exprimer approximativement 25 mots par round.
     </p>
     <h2 class="h3">Réaction</h2>
     <p>Une créature peut réagir à l’action d’une autre créature lorsque la situation le permet.</p>
