@@ -12,6 +12,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -30,6 +31,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -51,6 +53,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -72,6 +75,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Light"],
@@ -90,6 +94,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["TwoHanded"],
@@ -108,6 +113,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -129,6 +135,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 6,
@@ -150,6 +157,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -171,6 +179,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -192,6 +201,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Light"],
@@ -210,6 +220,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -231,6 +242,7 @@
       "standard": 16,
       "long": 64
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Loading", "TwoHanded"],
@@ -252,6 +264,7 @@
       "standard": 16,
       "long": 64
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["TwoHanded"],
@@ -273,6 +286,7 @@
       "standard": 6,
       "long": 24
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -291,6 +305,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Finesse", "Light"],
@@ -309,6 +324,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "Reach", "TwoHanded"],
@@ -327,6 +343,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Finesse", "Light"],
@@ -345,6 +362,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -363,6 +381,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "TwoHanded"],
@@ -377,6 +396,7 @@
     "weight": 1.5,
     "damage": null,
     "ammunition": null,
+    "reload": null,
     "special": "Le filet n’inflige aucun point de dégâts, mais il restreint une créature de grande taille ou moindre. Les créatures sans forme ne sont pas affectées par le filet. Le filet est doté d’une valeur de Défense de 10, et il détruit s’il reçoit 5 points de dégâts tranchants ou plus.",
     "thrown": {
       "standard": 1,
@@ -398,6 +418,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -416,6 +437,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Finesse", "Reach"],
@@ -434,6 +456,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "TwoHanded"],
@@ -452,6 +475,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -470,6 +494,7 @@
       "type": "Slashing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "Reach", "TwoHanded"],
@@ -488,7 +513,8 @@
       "type": "Piercing"
     },
     "ammunition": null,
-    "special": "Le test d’attaque du personnage se voit affligé du désavantage s’il est effectué contre une créature située dans une case adjacente. Également, la lance doit être maniée à deux mains si le personnage n’est pas sur une monture.",
+    "reload": null,
+    "special": "Le test d’attaque du personnage se voit affligé du désavantage s’il est effectué contre une créature située à 1,5 mètres ou moins de sa position. Également, la lance doit être maniée à deux mains si le personnage n’est pas sur une monture.",
     "thrown": null,
     "properties": ["Reach"],
     "description": "Une longue lance utilisée par un combattant monté à une certaine distance, parfois utilisée lors de joutes équestres."
@@ -506,6 +532,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -524,6 +551,7 @@
       "type": "Bludgeoning"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "TwoHanded"],
@@ -542,6 +570,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -560,6 +589,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": [],
@@ -578,6 +608,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "Reach", "TwoHanded"],
@@ -596,6 +627,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Finesse"],
@@ -614,6 +646,7 @@
       "type": "Piercing"
     },
     "ammunition": null,
+    "reload": null,
     "special": null,
     "thrown": {
       "standard": 4,
@@ -638,6 +671,7 @@
       "standard": 6,
       "long": 24
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Light", "Loading"],
@@ -659,6 +693,7 @@
       "standard": 20,
       "long": 80
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "Loading", "TwoHanded"],
@@ -680,6 +715,7 @@
       "standard": 30,
       "long": 120
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Heavy", "TwoHanded"],
@@ -701,6 +737,7 @@
       "standard": 5,
       "long": 20
     },
+    "reload": null,
     "special": null,
     "thrown": null,
     "properties": ["Loading"],

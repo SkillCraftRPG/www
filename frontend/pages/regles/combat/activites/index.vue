@@ -24,7 +24,7 @@
     <!-- TODO(fpion): filter by threatening -->
     <!-- TODO(fpion): grid vs table  -->
     <div class="row">
-      <div v-for="activity in sortedActivities" :key="activity.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="activity in activities" :key="activity.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <BattleActivityCard :activity="activity" />
       </div>
     </div>
@@ -42,13 +42,15 @@ const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];
 const title: string = "Activités";
 const { orderBy } = arrayUtils;
 
-const activities = ref<Activity[]>(getActivities());
+const allActivities = ref<Activity[]>(getActivities());
 
-const sortedActivities = computed<Activity[]>(() => orderBy(activities.value, "name"));
+const activities = computed<Activity[]>(() => orderBy(allActivities.value, "name"));
 
 useSeo({
   title,
   description:
     "Découvrez toutes les activités de combat possibles : attaquer, se défendre, se déplacer, canaliser un pouvoir, préparer une action et plus encore.",
 });
+
+// TODO(fpion): désarmer
 </script>

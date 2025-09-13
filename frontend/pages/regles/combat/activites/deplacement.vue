@@ -12,6 +12,19 @@
       Si vous quittez la <NuxtLink to="/regles/combat/attaque/melee">portée de mêlée</NuxtLink> d’une créature, alors votre déplacement déclenche une
       <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.
     </p>
+    <p>
+      Une fois par <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, pendant que vous vous déplacez, vous pouvez effectuer une interaction simple
+      avec un objet en action libre, par exemple :
+    </p>
+    <ul>
+      <li>Dégainer ou rengainer une arme.</li>
+      <li>Ouvrir ou fermer une porte.</li>
+      <li>Sortir ou ranger un objet dans votre sac.</li>
+      <li>Boire d’un récipient que vous tenez.</li>
+      <li>Éteindre votre torche.</li>
+      <li>Ramasser ou déposer un objet sur une table à proximité.</li>
+      <li>Lever ou baisser votre capuche.</li>
+    </ul>
   </main>
 </template>
 
@@ -28,6 +41,4 @@ useSeo({
   title,
   description: "🚧",
 });
-
-// TODO(fpion): free item interaction
 </script>
