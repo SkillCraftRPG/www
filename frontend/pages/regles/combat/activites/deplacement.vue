@@ -39,6 +39,6 @@ const title: string = "Déplacement";
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les règles de déplacement en combat : mouvements variés, interactions libres et risques d’attaques d’opportunité.",
 });
 </script>

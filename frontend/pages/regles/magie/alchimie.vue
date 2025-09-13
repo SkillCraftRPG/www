@@ -26,9 +26,15 @@
       Lorsque ses points d’intoxication sont supérieurs à ce seuil, elle est <NuxtLink to="/regles/combat/conditions/empoisonne">empoisonnée</NuxtLink>. Cet
       empoisonnement ne disparaît que lorsque les points d’intoxication diminuent à une valeur inférieure ou égale au seuil.
     </p>
-    <p class="text-danger">
-      Également, lorsqu’une créature gagne des points en étant empoisonnée à cause de l’intoxication, elle est affligée d’un
-      <NuxtLink to="/regles/combat/conditions/fatigue">niveau de Fatigue</NuxtLink>.
+    <p>
+      Lorsqu’elle ingère une concoction en étant intoxiquée, elle doit effectuer un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink>.
+      La difficulté est égale à 5 + 5 fois le nombre de points en excès. En cas d’échec, sa
+      <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink> augmente d’un niveau.
+    </p>
+    <p>
+      Par exemple, si elle ingère une concoction, qu’elle est intoxiquée, et que ses points d’intoxication augmentent à 7 pour un seuil de 5, alors la
+      difficulté est de 15.
     </p>
   </main>
 </template>
@@ -43,6 +49,4 @@ useSeo({
   title,
   description: "Découvrez l’art de l’alchimie : préparez des concoctions magiques, gérez l’intoxication et exploitez leurs effets positifs ou négatifs en jeu.",
 });
-
-// TODO(fpion): donner un jet de Résistance/Discipline contre la Fatigue
 </script>

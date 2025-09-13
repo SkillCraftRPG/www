@@ -12,6 +12,11 @@
       Vous pouvez lâcher un objet ou une créature en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>, ce qui vous permet de lâcher autant
       d’objets et de créatures que vous le désirez à tout moment.
     </p>
+    <p>
+      Si vous désirez changer d’arme sans effectuer l’action <NuxtLink to="/regles/combat/activites/objet">Objet</NuxtLink>, vous pouvez lâcher votre arme, et
+      en dégainer une autre en <NuxtLink to="/regles/combat/activites/deplacement">vous déplaçant</NuxtLink>. Évidemment, l’arme que vous lâchez tombe au sol,
+      elle n’est pas rengainée.
+    </p>
   </main>
 </template>
 
@@ -26,8 +31,6 @@ const title: string = "Lâcher";
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez l’action Lâcher : abandonner un objet ou libérer une créature, ses effets en combat et son interaction avec les déplacements.",
 });
-
-// TODO(fpion): dégainer + lâcher en action libre grâce à la Free Item Interaction
 </script>

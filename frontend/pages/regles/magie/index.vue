@@ -43,12 +43,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/magie/alchimie",
     title: "Alchimie",
-    description: "🚧",
+    description: "Préparation de concoctions mystiques, intoxication, seuils et effets.",
   },
 ];
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez l’art de la magie : pouvoirs, paramètres, effets et alchimie pour enrichir vos aventures.",
 });
 </script>
