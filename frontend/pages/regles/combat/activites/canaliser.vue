@@ -2,17 +2,20 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Vous canalisez un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>.</p>
+    <p>
+      Vous canalisez un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>. Cette action déclenche une
+      <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.
+    </p>
     <p>
       Par une action, vous pouvez également commencer à canaliser un pouvoir. Lors de votre prochain
       <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, il vous coûtera une action en moins afin de compléter la canalisation. L’action est perdue
       si vous ne terminez pas la canalisation lors de votre prochain tour, ou si vous canalisez un autre pouvoir entre-temps. Vous n’avez pas besoin de vous
-      <NuxtLink to="/regles/combat/activites/concentration">concentrer</NuxtLink> sur cette canalisation, et vous ne déclenchez une
-      <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink> qu’au moment où vous complétez la canalisation.
+      <NuxtLink to="/regles/combat/activites/concentration">concentrer</NuxtLink> sur cette canalisation, et vous ne déclenchez une attaque d’opportunité qu’au
+      moment où vous complétez la canalisation.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à canaliser :</p>
     <div class="row">
-      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <TalentCard class="d-flex flex-column h-100" :talent="talent" />
       </div>
     </div>
@@ -48,6 +51,4 @@ useSeo({
   description:
     "Découvrez comment canaliser un pouvoir : règles, actions requises et talents spéciaux pour améliorer puissance, précision, défense et optimisation magique.",
 });
-
-// TODO(fpion): magie-guerriere enlève l'attaque d'opportunité, pas le désavantage de canaliser en présence d'ennemis
 </script>

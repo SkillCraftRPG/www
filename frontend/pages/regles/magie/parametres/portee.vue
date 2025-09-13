@@ -6,8 +6,8 @@
     <p>Chaque cible doit se trouver dans une distance inférieure ou égale à la portée indiquée par le pouvoir.</p>
     <p>Il existe certaines portées spéciales :</p>
     <ul>
-      <li><strong>Toucher.</strong> La cible doit être touchée afin d’être affectée par le pouvoir.</li>
       <li><strong>Soi.</strong> Le pouvoir n’affecte que la créature qui le canalise.</li>
+      <li><strong>Toucher.</strong> La cible doit être touchée afin d’être affectée par le pouvoir.</li>
     </ul>
   </main>
 </template>

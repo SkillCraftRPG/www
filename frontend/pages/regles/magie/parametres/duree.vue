@@ -21,6 +21,14 @@
       Une créature ne peut se concentrer que sur un seul pouvoir à la fois. Si elle canalise un autre pouvoir nécessitant la concentration, le premier pouvoir
       prend immédiatement fin, laissant place à l’autre pouvoir.
     </p>
+    <p>Si une créature devient <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>, elle perd la concentration.</p>
+    <p>
+      Lorsqu’une créature est <NuxtLink to="/regles/combat/degats/letalite">blessée</NuxtLink>, elle doit effectuer un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
+      <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> afin de maintenir sa concentration. La
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté</NuxtLink> est égale à la valeur la plus élevée entre 15 et le nombre de
+      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> reçus divisé par deux. En cas d’échec, elle perd la concentration.
+    </p>
   </main>
 </template>
 

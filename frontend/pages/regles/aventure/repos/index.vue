@@ -17,6 +17,10 @@
       fait de dormir en portant son <NuxtLink to="/regles/equipement/armures">armure</NuxtLink>, ou encore la
       <NuxtLink to="/regles/aventure/environnement/alimentation">faim</NuxtLink>.
     </p>
+    <p>
+      Lorsqu’une créature se repose et qu’elle récupère des points d’Énergie, ses points de dégâts
+      <NuxtLink to="/regles/combat/degats/letalite">non létaux</NuxtLink> diminuent d’une valeur égale, sans jamais descendre en deçà de 0.
+    </p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
@@ -53,6 +57,4 @@ useSeo({
   title,
   description: "Découvrez les règles de sommeil et de halte, essentielles pour récupérer énergie, vitalité et réduire la fatigue des personnages.",
 });
-
-// TODO(fpion): effet du repos (sommeil/halte) sur les points de dégâts non létaux
 </script>

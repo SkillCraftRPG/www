@@ -14,7 +14,7 @@
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à utiliser un objet :</p>
     <div class="row">
-      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <TalentCard class="d-flex flex-column h-100" :talent="talent" />
       </div>
     </div>
