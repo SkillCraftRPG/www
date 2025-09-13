@@ -20,31 +20,22 @@
       </li>
     </ul>
     <h2 class="h3">Liste des activités</h2>
-    <!-- TODO(fpion): filter by category (1-2-3 actions, reaction, action libre) -->
-    <!-- TODO(fpion): filter by threatening -->
-    <!-- TODO(fpion): grid vs table  -->
-    <div class="row">
-      <div v-for="activity in activities" :key="activity.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <BattleActivityCard :activity="activity" />
-      </div>
-    </div>
+    <BattleActivityList :items="activities" />
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
-
 import type { Activity } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
 import { getActivities } from "~/services/battle";
 
 const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];
 const title: string = "Activités";
-const { orderBy } = arrayUtils;
 
-const allActivities = ref<Activity[]>(getActivities());
-
-const activities = computed<Activity[]>(() => orderBy(allActivities.value, "name"));
+const activities = ref<Activity[]>(getActivities());
 
 useSeo({
   title,

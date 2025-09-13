@@ -216,7 +216,7 @@
     "summary": "Pointer une cible découverte."
   },
   {
-    "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
+    "id": "dde9dd0f-8672-4b0f-bcfe-b6532be776ac",
     "path": "/regles/combat/activites/jugement",
     "name": "Jugement",
     "actions": {
@@ -348,7 +348,7 @@
     "summary": "Se libérer d’une contrainte."
   },
   {
-    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "id": "d7072174-019f-45d7-bf0e-c18f8be2bfb9",
     "path": "/regles/combat/activites/viser-tirer",
     "name": "Viser et tirer",
     "actions": {

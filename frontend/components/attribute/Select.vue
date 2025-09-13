@@ -15,19 +15,12 @@ import { TarSelect, type SelectOption } from "logitar-vue3-ui";
 import { arrayUtils, parsingUtils } from "logitar-js";
 
 import type { Attribute, GameAttribute } from "~/types/game";
-import { System } from "~/types/constants";
 
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;
 
-const now: string = new Date().toISOString();
 const variableAttribute: Attribute = {
   id: "variable",
-  version: 0,
-  createdBy: System,
-  createdOn: now,
-  updatedBy: System,
-  updatedOn: now,
   slug: "",
   value: "" as GameAttribute,
   name: "Variable",
