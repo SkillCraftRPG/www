@@ -3,6 +3,10 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Une créature incapable ne peut effectuer aucune <NuxtLink to="/regles/combat/deroulement/tour">action, ni action libre ou réaction</NuxtLink>.</p>
+    <p>
+      Lorsqu’elle devient incapable, elle perd sa <NuxtLink to="/regles/magie/parametres/duree">Concentration</NuxtLink> si elle maintenait un
+      <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> actif.
+    </p>
   </main>
 </template>
 

@@ -23,11 +23,17 @@
         <NuxtLink to="/regles/competences/tests/critique">réussite critique</NuxtLink>.
       </li>
     </ul>
-    <p class="text-danger">
-      <!-- TODO(fpion): Vitalité -->
-      Une créature inconsciente reprend généralement conscience lorsque ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> remontent
-      au-delà de 0, après une heure de <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink> ou de
+    <p>
+      Lorsqu’une créature est inconsciente parce que ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> sont de 0, elle reprend
+      conscience lorsque ceux-ci remontent au-delà de 0, généralement après une heure de <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink> ou de
       <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.
+    </p>
+    <p>
+      Lorsqu’une créature est inconsciente parce qu’elle cumule un nombre de points de dégâts
+      <NuxtLink to="/regles/combat/degats/letalite">non létaux</NuxtLink> supérieur ou égal à ses points de
+      <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink>, elle reprend conscience lorsque ses points de Vitalité sont supérieurs à ses points de
+      dégâts non létaux cumulés. Cette situation peut se produire lorsqu’elle est <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink>, ou lorsqu’elle
+      se <NuxtLink to="/regles/aventure/repos">repose</NuxtLink>.
     </p>
   </main>
 </template>
@@ -44,6 +50,6 @@ const title: string = "Inconscient";
 useSeo({
   title,
   description:
-    "Découvrez les effets de l’état inconscient : incapacité totale, échec automatique aux jets, avantage aux attaques reçues et coups critiques en mêlée.",
+    "Découvrez la condition inconscient : une créature incapable, inconsciente de son environnement et vulnérable aux attaques, jusqu’à régénération.",
 });
 </script>

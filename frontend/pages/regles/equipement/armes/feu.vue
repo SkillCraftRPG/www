@@ -74,7 +74,7 @@
       >. L’explosion inflige 9 + 1d6 points de dégâts de feu au personnage tenant l’arme.
     </p>
     <p>
-      Toute créature située dans une case adjacente à celle du personnage doit effectuer un
+      Toute créature située à 1,5 mètres ou moins du personnage doit effectuer un
       <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink> de
       <NuxtLink to="/regles/competences/tests/difficulte">difficulté moyenne</NuxtLink>. En cas d’échec, la créature reçoit également les points de dégâts.
     </p>

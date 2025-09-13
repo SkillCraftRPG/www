@@ -144,6 +144,18 @@
     "summary": "Maintenir un pouvoir actif."
   },
   {
+    "id": "8c6d1eec-2405-4176-99de-11544577cc5c",
+    "path": "/regles/combat/activites/coup-grace",
+    "name": "Coup de grâce",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Acheter une cible mourante."
+  },
+  {
     "id": "c11e2177-3af9-4e8c-84f3-c46dc0791da9",
     "path": "/regles/combat/activites/defense",
     "name": "Défense",
@@ -180,6 +192,18 @@
     "summary": "Se déplacer, changer de position."
   },
   {
+    "id": "dc54234c-7cee-4abc-b310-d847ad43e808",
+    "path": "/regles/combat/activites/desarmer",
+    "name": "Désarmer",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Forcer une cible à lâcher son arme."
+  },
+  {
     "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
     "path": "/regles/combat/activites/indiquer",
     "name": "Indiquer",
@@ -192,7 +216,7 @@
     "summary": "Pointer une cible découverte."
   },
   {
-    "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
+    "id": "dde9dd0f-8672-4b0f-bcfe-b6532be776ac",
     "path": "/regles/combat/activites/jugement",
     "name": "Jugement",
     "actions": {
@@ -300,6 +324,18 @@
     "summary": "Tomber en position renversée."
   },
   {
+    "id": "7dbc1b40-e351-443b-b8f2-bfc509cfc903",
+    "path": "/regles/combat/activites/stabiliser",
+    "name": "Stabiliser",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Stabiliser une créature mourante."
+  },
+  {
     "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
     "path": "/regles/combat/activites/echapper",
     "name": "S’échapper",
@@ -312,7 +348,7 @@
     "summary": "Se libérer d’une contrainte."
   },
   {
-    "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",
+    "id": "d7072174-019f-45d7-bf0e-c18f8be2bfb9",
     "path": "/regles/combat/activites/viser-tirer",
     "name": "Viser et tirer",
     "actions": {

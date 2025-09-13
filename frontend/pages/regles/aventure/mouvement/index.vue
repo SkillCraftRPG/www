@@ -69,7 +69,4 @@ useSeo({
   description:
     "Découvrez les règles de déplacement des créatures : vitesse, cadence, types de mouvement, terrain difficile, furtivité et perception en voyage.",
 });
-
-// TODO(fpion): retirer toute mention de "case adjacent(e)" des règles
-// TODO(fpion): free item interaction
 </script>

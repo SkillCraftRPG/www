@@ -9,13 +9,17 @@
     <p>Il est évidemment impossible pour un aventurier de récupérer plus de points qu’il lui en manque.</p>
     <p>
       Sa régénération peut être augmentée par certains effets, par exemple un <strong>remède</strong>, un
-      <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>, ou encore le <NuxtLink to="/regles/talents">talent</NuxtLink>
-      <NuxtLink to="/regles/talents/meditation">Méditation</NuxtLink>.
+      <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink>, ou encore le <NuxtLink to="/regles/talents">talent</NuxtLink>{{ " "
+      }}<NuxtLink to="/regles/talents/meditation">Méditation</NuxtLink>.
     </p>
     <p>
       Au contraire, certaines conditions peuvent réduire sa régénération, par exemple un niveau de stress élevé, un environnement particulièrement bruyant, le
       fait de dormir en portant son <NuxtLink to="/regles/equipement/armures">armure</NuxtLink>, ou encore la
       <NuxtLink to="/regles/aventure/environnement/alimentation">faim</NuxtLink>.
+    </p>
+    <p>
+      Lorsqu’une créature se repose et qu’elle récupère des points d’Énergie, ses points de dégâts
+      <NuxtLink to="/regles/combat/degats/letalite">non létaux</NuxtLink> diminuent d’une valeur égale, sans jamais descendre en deçà de 0.
     </p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">

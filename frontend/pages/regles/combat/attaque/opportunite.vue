@@ -22,6 +22,21 @@
         <TalentCard class="d-flex flex-column h-100" :talent="talent" />
       </div>
     </div>
+    <p>Voici une liste non exhaustive des activités pouvant déclencher une attaque d’opportunité :</p>
+    <ul>
+      <li><NuxtLink to="/regles/combat/activites/aider">Aider</NuxtLink> une créature à effectuer une action déclenchant une attaque d’opportunité.</li>
+      <li><NuxtLink to="/regles/combat/activites/viser-tirer">Attaquer à distance</NuxtLink>.</li>
+      <li><NuxtLink to="/regles/combat/activites/canaliser">Canaliser un pouvoir</NuxtLink>.</li>
+      <li><NuxtLink to="/regles/combat/activites/chargement">Charger une munition dans une arme</NuxtLink>.</li>
+      <li>Délivrer le <NuxtLink to="/regles/combat/activites/coup-grace">coup de grâce</NuxtLink>.</li>
+      <li><NuxtLink to="/regles/combat/activites/preparer">Préparer</NuxtLink> une action déclenchant une attaque d’opportunité.</li>
+      <li><NuxtLink to="/regles/combat/activites/deplacement">Se déplacer</NuxtLink>.</li>
+      <li><NuxtLink to="/regles/combat/activites/stabiliser">Stabiliser</NuxtLink> une créature agonisante.</li>
+      <li>
+        Utiliser un <NuxtLink to="/regles/combat/activites/objet">objet</NuxtLink> si des <NuxtLink to="/regles/combat/degats/soins">soins</NuxtLink> sont
+        encourus, ou si l’action requiert deux mains.
+      </li>
+    </ul>
   </main>
 </template>
 
@@ -51,8 +66,7 @@ const talents = computed<Talent[]>(() =>
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les règles des attaques d’opportunité, leurs déclencheurs, et les talents qui les améliorent pour surprendre vos adversaires en combat.",
 });
-
-// TODO(fpion): liste des activités (pouvant) déclencher une attaque d’opportunité
 </script>

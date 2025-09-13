@@ -34,27 +34,27 @@ const items: MenuItem[] = [
   {
     path: "/regles/combat/activites",
     title: "Activités",
-    description: "🚧",
+    description: "Toutes les activités de combat : attaques, défenses, mouvements, pouvoirs, réactions et actions spéciales.",
   },
   {
     path: "/regles/combat/attaque",
     title: "Attaque",
-    description: "🚧",
+    description: "Attaque : règles, mêlée, distance, défense, opportunité et talents liés aux coups portés.",
   },
   {
     path: "/regles/combat/degats",
     title: "Dégâts",
-    description: "🚧",
+    description: "Règles complètes sur les dégâts : létalité, jets, soins, types, efficacité et bonus.",
   },
   {
     path: "/regles/combat/mort-agonie",
     title: "Mort et agonie",
-    description: "🚧",
+    description: "Gérer l’agonie, la mort et la résurrection des créatures, options et conséquences.",
   },
   {
     path: "/regles/combat/conditions",
     title: "Conditions",
-    description: "🚧",
+    description: "États altérant les capacités des créatures, avec bénéfices et pénalités.",
   },
   {
     path: "/regles/combat/monte",
@@ -70,6 +70,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les règles complètes du combat : déroulement, attaques, dégâts, conditions, mort et agonie, combat monté et sous l’eau.",
 });
 </script>

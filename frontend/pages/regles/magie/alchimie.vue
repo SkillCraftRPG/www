@@ -18,16 +18,23 @@
     <h2 class="h3">Intoxication</h2>
     <p>Lorsqu’une créature ingère une concoction, elle reçoit un nombre de <strong>points d’intoxication</strong> égal à 1 + tiers de la concoction.</p>
     <p>
-      Lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>, les points d’intoxication d’une créature descendent
-      d’un nombre égal à son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> (minimum 1) jusqu’à atteindre 0.
+      Lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>, les points d’intoxication d’une créature diminuent d’un
+      nombre égal à son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> (minimum 1) jusqu’à atteindre 0.
     </p>
     <p>Une créature possède un seuil de tolérance à l’intoxication égal à 3 + <NuxtLink to="/regles/attributs/vigueur">Vigueur</NuxtLink> (minimum 0).</p>
     <p>
       Lorsque ses points d’intoxication sont supérieurs à ce seuil, elle est <NuxtLink to="/regles/combat/conditions/empoisonne">empoisonnée</NuxtLink>. Cet
-      empoisonnement ne disparaît que lorsque les points d’intoxication descendent à une valeur inférieure ou égale au seuil.
+      empoisonnement ne disparaît que lorsque les points d’intoxication diminuent à une valeur inférieure ou égale au seuil.
     </p>
     <p>
-      Également, lorsqu’une créature gagne des points en étant empoisonnée à cause de l’intoxication, elle est affligée d’un <strong>niveau de Fatigue</strong>.
+      Lorsqu’elle ingère une concoction en étant intoxiquée, elle doit effectuer un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink>.
+      La difficulté est égale à 5 + 5 fois le nombre de points en excès. En cas d’échec, sa
+      <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink> augmente d’un niveau.
+    </p>
+    <p>
+      Par exemple, si elle ingère une concoction, qu’elle est intoxiquée, et que ses points d’intoxication augmentent à 7 pour un seuil de 5, alors la
+      difficulté est de 15.
     </p>
   </main>
 </template>

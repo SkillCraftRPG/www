@@ -10,10 +10,10 @@
     </p>
     <p>
       Si elle ne réussit pas à boire cette quantité, mais qu’elle en boit au moins la moitié, elle est affligée de la <strong>Soif</strong>. Sa
-      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À
-      la fin de la journée, elle est affligée d’un niveau de Fatigue si elle échoue un
-      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de
-      <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
+      <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink> ne diminue pas d’un niveau lorsqu’elle complète une
+      <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À la fin de la journée, elle est affligée d’un niveau de Fatigue si elle échoue
+      un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
+      <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
     </p>
     <p>
       Si elle ne réussit pas à boire la moitié du volume minimal d’eau, alors elle est affligée de la <strong>Sécheresse</strong> et échoue automatiquement le
@@ -26,10 +26,10 @@
     </p>
     <p>
       Si elle ne réussit pas à manger cette quantité, mais qu’elle en consomme au moins la moitié, elle est affligée de la <strong>Faim</strong>. Sa
-      <strong>Fatigue</strong> ne descend pas d’un niveau lorsqu’elle complète une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À
-      la fin de la journée, elle doit effectuer un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
-      <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>.
-      Elle est affligée des pénalités suivantes en cas d’échec :
+      <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink> ne diminue pas d’un niveau lorsqu’elle complète une
+      <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>. À la fin de la journée, elle doit effectuer un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> de
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté élevée</NuxtLink>. Elle est affligée des pénalités suivantes en cas d’échec :
     </p>
     <ul>
       <li>

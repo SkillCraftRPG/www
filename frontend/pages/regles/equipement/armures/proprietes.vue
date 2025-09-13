@@ -24,11 +24,11 @@
       </li>
       <li>
         <strong>Hybride.</strong> Les multiples couches de matériaux différents composant cette armure confèrent au personnage la résistance aux dégâts
-        physiques perçants. Si son armure est magique, alors il est résistant à tout dégât perçant (physique et magique).
+        physiques perforants. Si son armure est magique, alors il est résistant à tout dégât perforant (physique et magique).
       </li>
       <li>
         <strong>Matelassée.</strong> La grande quantité de rembourrage constituant cette armure confère au personnage la résistance aux dégâts physiques
-        contondants. Si son armure est magique, alors il est résistant à tout dégât perçant (physique et magique).
+        contondants. Si son armure est magique, alors il est résistant à tout dégât perforant (physique et magique).
       </li>
       <li>
         <strong>Rempart.</strong> Lorsque le personnage doit effectuer un

@@ -10,7 +10,7 @@
     <p>
       Lorsqu’une créature porte un poids supérieur à cette limite, elle est encombrée. Sa
       <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse de déplacement</NuxtLink> subit une pénalité proportionnelle à l’excès de poids, sans toutefois
-      descendre en-deçà d’un point de mouvement.
+      diminuer en-deçà d’un point de mouvement.
     </p>
     <p>Afin de calculer cette pénalité :</p>
     <ol>

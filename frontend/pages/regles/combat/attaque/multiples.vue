@@ -8,7 +8,7 @@
     </p>
     <p>Par exemple, un personnage doté de deux bras et de deux jambes peut effectuer un attaque avec chacun de ses bras, ainsi qu’avec une de ses jambes.</p>
     <p>
-      Lorsqu’une créature effectue plusieurs attaques pendant le même tour, un pénalité cumulable (-5, -10, etc.) est infligée au
+      Lorsqu’une créature effectue plusieurs attaques pendant le même tour, un pénalité cumulative (-5, -10, etc.) est infligée au
       <NuxtLink to="/regles/competences/tests">test</NuxtLink>
       de chaque attaque à partir de la seconde.
     </p>

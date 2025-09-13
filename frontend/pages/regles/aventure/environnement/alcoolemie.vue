@@ -37,9 +37,6 @@
           </li>
         </ul>
       </li>
-      <li>
-        <a href="#gueule-bois">Gueule de bois</a>
-      </li>
     </ul>
     <h2 id="points" class="h3">Points d’alcoolémie</h2>
     <p>
@@ -99,7 +96,7 @@
     </p>
     <p>
       Par exemple, si une créature passe à la première phase à 6 points d’alcoolémie et à la seconde phase à 8 points, alors elle reste à la phase 2 tant que
-      ses points ne descendent pas à 7, et elle reste à la phase 1 tant que ses points ne descendent pas à 5.
+      ses points ne diminuent pas à 7, et elle reste à la phase 1 tant que ses points ne diminuent pas à 5.
     </p>
     <h3 id="phase-1" class="h5">Phase 1</h3>
     <p>Une créature en phase 1 d’ébriété est affectée par les capacités et pénalités suivantes :</p>
@@ -113,7 +110,10 @@
           >Énergie</NuxtLink
         >. Si elle échoue le test, elle reçoit un nombre égal de points de dégâts non létaux.
       </li>
-      <li>Avantage aux jets de sauvegarde de <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> contre la <strong>peur</strong>.</li>
+      <li>
+        Avantage aux jets de sauvegarde de <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> contre la
+        <NuxtLink to="/regles/combat/conditions/apeure">peur</NuxtLink>.
+      </li>
       <li>
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">Désavantage</NuxtLink> aux
         <NuxtLink to="/regles/competences/tests">tests</NuxtLink> d’<NuxtLink to="/regles/attributs/adresse">Adresse</NuxtLink> (<NuxtLink
@@ -149,7 +149,10 @@
             <NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink>, <NuxtLink to="/regles/competences/perception">Perception</NuxtLink> et
             <NuxtLink to="/regles/competences/survie">Survie</NuxtLink>).
           </li>
-          <li><NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> (sauf contre la <strong>peur</strong>).</li>
+          <li>
+            <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> (sauf contre la
+            <NuxtLink to="/regles/combat/conditions/apeure">peur</NuxtLink>).
+          </li>
           <li>
             <NuxtLink to="/regles/competences/diplomatie">Diplomatie</NuxtLink>, <NuxtLink to="/regles/competences/representation">Représentation</NuxtLink> et
             <NuxtLink to="/regles/competences/tromperie">Tromperie</NuxtLink>.
@@ -165,7 +168,8 @@
       <li>
         Si son <NuxtLink to="/regles/competences/tests/2d10">dé de Damnation</NuxtLink> était supérieur à son
         <NuxtLink to="/regles/competences/tests/2d10">dé d’Espérance</NuxtLink> lorsqu’elle a échoué le
-        <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> contre cette phase, elle est affligée de la gueule de bois.
+        <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> contre cette phase, elle est affligée de la
+        <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>.
       </li>
     </ul>
     <h3 id="phase-3" class="h5">Phase 3</h3>
@@ -173,13 +177,13 @@
     <ul>
       <li>
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">Désavantage</NuxtLink> à tous ses
-        <NuxtLink to="/regles/competences/tests">tests</NuxtLink> (incluant contre la <strong>peur</strong>).
+        <NuxtLink to="/regles/competences/tests">tests</NuxtLink> (incluant contre la <NuxtLink to="/regles/combat/conditions/apeure">peur</NuxtLink>).
       </li>
       <li>
         <strong>Titubement.</strong> Ses mouvements sont aléatoires, changeant de direction tous les 3 mètres. Cette pénalité est automatique et sans
         <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink>.
       </li>
-      <li>Elle est automatiquement affligée de la gueule de bois.</li>
+      <li>Elle est automatiquement affligée de la <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>.</li>
     </ul>
     <h3 id="coma" class="h5">Coma éthylique</h3>
     <p>
@@ -192,20 +196,27 @@
         subséquentes.
       </li>
       <li><strong>Réussite.</strong> La créature survit.</li>
-      <li><strong>Échec.</strong> La créature meurt.</li>
-      <li><NuxtLink to="/regles/competences/tests/critique">Échec critique.</NuxtLink> La créature meurt, et ses organes vitaux cèdent.</li>
+      <li><strong>Échec.</strong> La créature <NuxtLink to="/regles/combat/mort-agonie">meurt</NuxtLink>.</li>
+      <li>
+        <NuxtLink to="/regles/competences/tests/critique">Échec critique.</NuxtLink> La créature <NuxtLink to="/regles/combat/mort-agonie">meurt</NuxtLink>, et
+        ses fonctions vitales sont perdues.
+      </li>
     </ul>
     <p>
       Si une autre créature prend soin d’elle en lui donnant de l’eau, en l’empêchant de s’étouffer et en surveillant son état pendant cette heure, aucun jet
-      n’est nécessaire. La créature survit automatiquement, mais reste inconsciente jusqu’à ce qu’elle retombe en phase 3 d’alcoolémie.
+      n’est nécessaire. La créature survit automatiquement.
     </p>
+    <p>La créature reprend conscience lorsqu’elle retombe en phase 3 d’alcoolémie.</p>
     <h3 id="vomir" class="h5">Vomir</h3>
     <p>
       Lorsqu’une créature échoue le <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
       <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink> afin d’éviter de passer à la phase suivante d’ébriété, elle peut choisir de vomir pour
       conserver son état actuel.
     </p>
-    <p>Lorsqu’elle en fait ainsi, elle ne passe pas à la phase suivante d’ébriété, mais est automatiquement affligée de la gueule de bois.</p>
+    <p>
+      Lorsqu’elle en fait ainsi, elle ne passe pas à la phase suivante d’ébriété, mais est automatiquement affligée de la
+      <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>.
+    </p>
     <p>Également, elle reçoit un nombre de d4 de points de dégâts létaux d’acide égal à la phase qu’elle évite (4d4 pour le coma éthylique).</p>
     <h3 id="repos" class="h5">Repos</h3>
     <p>
@@ -213,20 +224,8 @@
       durée.
     </p>
     <p>
-      La régénération d’une créature est réduite de moitié si elle <NuxtLink to="/regles/aventure/repos">se repose</NuxtLink> en étant affligée de la gueule de
-      bois, ou si elle le sera prochainement.
-    </p>
-    <h2 id="gueule-bois" class="h3">Gueule de bois</h2>
-    <p>La gueule de bois est une condition causée par l’ébriété avancée. Elle débute quand une créature retombe sous la phase 1 d’ébriété.</p>
-    <p>
-      Cette condition dure un nombre d’heures égal au nombre maximal de points d’alcoolémie atteint depuis que ces points sont retombés à 0, divisé par deux.
-      Elle peut aussi être retirée par une capacité naturelle ou surnaturelle réduisant le <strong>niveau de Fatigue</strong>.
-    </p>
-    <p>
-      Une créature affligée par la gueule de bois voit sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink> réduite de moitié. Ses
-      <NuxtLink to="/regles/competences/tests">tests</NuxtLink> de <NuxtLink to="/regles/competences">compétence</NuxtLink> sont également affligés du
-      <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>. Ses tests d’attaque sont également affectés par cette pénalité, mais
-      ses <NuxtLink to="/regles/competences/tests/sauvegarde">jets de sauvegarde</NuxtLink> en sont exempts.
+      La régénération d’une créature est réduite de moitié si elle <NuxtLink to="/regles/aventure/repos">se repose</NuxtLink> en étant affligée de la
+      <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>, ou si elle en sera affligée prochainement.
     </p>
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
@@ -323,4 +322,6 @@ useSeo({
   title,
   description: "Découvrez les règles d’alcoolémie, ébriété et gueule de bois, leurs effets sur vos personnages et les risques d’un coma éthylique.",
 });
+
+// TODO(fpion): compléter les talents d'alcoolémie
 </script>

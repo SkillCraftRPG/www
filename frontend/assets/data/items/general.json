@@ -341,7 +341,7 @@
     "name": "Pierre à aiguiser",
     "price": 0.01,
     "weight": 0.5,
-    "description": "Pendant une halte, permet d’aiguiser une arme ou 5 munitions. La pierre ne sert ensuite plus à rien. L’aiguisage est de niveau 1 et est bon pour 5 attaques. L’arme ou les munitions doivent infliger des dégâts perçants ou tranchants."
+    "description": "Pendant une [halte](/regles/aventure/repos/halte), permet d’affûter une [arme](/regles/equipement/armes) ou 5 [munitions](/regles/equipement/armes/munitions). La pierre ne sert ensuite plus à rien. L’[affûtage](/regles/equipement/armes/affutage) est de niveau 1."
   },
   {
     "id": "9728fc65-30fa-4a9e-a3d9-70655c362869",

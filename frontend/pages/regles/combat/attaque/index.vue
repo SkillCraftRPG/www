@@ -3,6 +3,10 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
+      Lorsqu’une créature effectue une attaque, elle ne peut tenter de cibler une partie du corps de son adversaire. Elle souhaite blesser sa cible, mais à
+      moins de <NuxtLink to="/regles/combat/mort-agonie">délivrer le coup fatal</NuxtLink>, elle ne choisit pas où l’attaque touchera.
+    </p>
+    <p>
       Les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> <i>Attaquer</i> et
       <NuxtLink to="/regles/combat/activites/viser-tirer">Viser et tirer</NuxtLink> permettent à une créature d’effectuer une attaque.
     </p>
@@ -78,7 +82,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/combat/attaque/opportunite",
     title: "Attaque d’opportunité",
-    description: "🚧",
+    description: "Effectuer une attaque en réaction à un déclencheur, règles et talents améliorant cette capacité.",
   },
   {
     path: "/regles/combat/attaque/deux-armes",
@@ -94,8 +98,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les règles des attaques : mêlée, distance, opportunité, esquive et défense. Maîtrisez les coups et pénalités en combat.",
 });
-
-// TODO(fpion): attaquer directement une arme, un bouclier ou un objet tenu
 </script>
