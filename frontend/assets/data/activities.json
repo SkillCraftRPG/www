@@ -192,6 +192,18 @@
     "summary": "Se déplacer, changer de position."
   },
   {
+    "id": "dc54234c-7cee-4abc-b310-d847ad43e808",
+    "path": "/regles/combat/activites/desarmer",
+    "name": "Désarmer",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": false,
+    "summary": "Forcer une cible à lâcher son arme."
+  },
+  {
     "id": "37b13fcb-dc53-49c9-8fb2-bb690ad2b331",
     "path": "/regles/combat/activites/indiquer",
     "name": "Indiquer",

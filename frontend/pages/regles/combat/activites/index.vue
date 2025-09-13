@@ -51,6 +51,4 @@ useSeo({
   description:
     "Découvrez toutes les activités de combat possibles : attaquer, se défendre, se déplacer, canaliser un pouvoir, préparer une action et plus encore.",
 });
-
-// TODO(fpion): désarmer
 </script>
