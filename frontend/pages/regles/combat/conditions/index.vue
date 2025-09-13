@@ -9,7 +9,7 @@
     <p>Une condition dure jusqu’à ce qu’elle soit contrée ou jusqu’à la fin de l’effet l’ayant causée.</p>
     <p>
       Une créature peut être affectée simultanément par toutes les conditions. Si elle est affectée plusieurs fois par la même condition, les effets ne sont pas
-      cumulés, mais chaque effet possède sa propre durée.
+      cumulés (sauf pour la <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink>), mais chaque effet possède sa propre durée.
     </p>
     <div class="row">
       <div v-for="(condition, index) in conditions" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -31,6 +31,11 @@ type Condition = {
   description: string;
 };
 const conditions: Condition[] = [
+  {
+    path: "/regles/combat/conditions/agonisant",
+    title: "Agonisant",
+    description: "Inconscient et risque la mort si état instable.",
+  },
   {
     path: "/regles/combat/conditions/agrippe",
     title: "Agrippé",
@@ -72,6 +77,16 @@ const conditions: Condition[] = [
     description: "Ne peut utiliser sa réaction.",
   },
   {
+    path: "/regles/combat/conditions/fatigue",
+    title: "Fatigue",
+    description: "Niveaux cumulatifs, désavantage et pénalités.",
+  },
+  {
+    path: "/regles/combat/conditions/gueule-bois",
+    title: "Gueule de bois",
+    description: "Réduction de régénération et désavantage.",
+  },
+  {
     path: "/regles/combat/conditions/incapable",
     title: "Incapable",
     description: "Ne peut effectuer aucune action, ni action libre ou réaction.",
@@ -85,6 +100,11 @@ const conditions: Condition[] = [
     path: "/regles/combat/conditions/invisible",
     title: "Invisible",
     description: "Être dissimulé magiquement et impacts sur les attaques.",
+  },
+  {
+    path: "/regles/combat/conditions/mort",
+    title: "Mort",
+    description: "Décédé, perte de contrôle, ne peut être que ressuscité.",
   },
   {
     path: "/regles/combat/conditions/paralyse",
@@ -110,10 +130,6 @@ const conditions: Condition[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les conditions affectant les créatures : états négatifs ou bénéfiques, impacts sur les actions, mouvements, tests et résistances.",
 });
-
-// TODO(fpion): agonisant
-// TODO(fpion): fatigue
-// TODO(fpion): mort
 </script>

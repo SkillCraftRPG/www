@@ -26,7 +26,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/combat/degats/letalite",
     title: "Létalité",
-    description: "🚧",
+    description: "Distinguez dégâts létaux et non létaux, leurs effets sur Vitalité et inconscience.",
   },
   {
     path: "/regles/combat/degats/jet",
@@ -36,7 +36,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/combat/degats/types",
     title: "Types de dégâts",
-    description: "🚧",
+    description: "Liste complète des dégâts physiques et spéciaux, avec exemples d’effets et d’impacts.",
   },
   {
     path: "/regles/combat/degats/efficacite",
@@ -46,7 +46,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/combat/degats/soins",
     title: "Soins",
-    description: "🚧",
+    description: "Les soins restaurent la Vitalité et réduisent les dégâts létaux ou non létaux.",
   },
   {
     path: "/regles/combat/degats/temporaire",
@@ -57,6 +57,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez toutes les règles liées aux dégâts : létalité, jets, types, soins, efficacité et points temporaires pour enrichir vos combats.",
 });
 </script>

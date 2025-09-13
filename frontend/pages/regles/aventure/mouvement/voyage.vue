@@ -86,8 +86,8 @@
     <p>
       Une créature peut se déplacer pendant 8 heures par jour sans subir de pénalité. Pour chaque heure supplémentaire de déplacement, une créature tombe en
       situation de <strong>marche&nbsp;forcée</strong>. À la fin de chaque heure de marche forcée, une créature reçoit des
-      <strong>points de dégâts non létaux</strong> et doit effectuer un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
-      <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink>.
+      <NuxtLink to="/regles/combat/degats/letalite">points de dégâts non létaux</NuxtLink> et doit effectuer un
+      <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de <NuxtLink to="/regles/competences/resistance">Résistance</NuxtLink>.
     </p>
     <ul>
       <li>Les points de dégâts sont de 2d6 multipliés par heure de marche forcée : 2d6 pour la première heure, 4d6 pour la seconde, et ainsi de suite.</li>
@@ -95,7 +95,9 @@
         Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> du jet de sauvegarde est de 5 par heure de marche forcée,
         additionné de 5 : 10 pour la première heure, 15 pour la seconde, et ainsi de suite.
       </li>
-      <li>Si une créature échoue le jet de sauvegarde, elle est affligée d’<strong>un niveau de Fatigue</strong>.</li>
+      <li>
+        Si une créature échoue le jet de sauvegarde, elle est affligée d’<NuxtLink to="/regles/combat/conditions/fatigue">un niveau de Fatigue</NuxtLink>.
+      </li>
       <li>
         Une créature <NuxtLink to="/regles/equipement/encombrement">encombrée</NuxtLink> ou tirant un
         <NuxtLink to="/regles/equipement/montures-vehicules/terrestres">véhicule terrestre</NuxtLink> doit effectuer le jet de sauvegarde avec

@@ -144,6 +144,18 @@
     "summary": "Maintenir un pouvoir actif."
   },
   {
+    "id": "8c6d1eec-2405-4176-99de-11544577cc5c",
+    "path": "/regles/combat/activites/coup-grace",
+    "name": "Coup de grâce",
+    "actions": {
+      "mandatory": 2,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Acheter une cible mourante."
+  },
+  {
     "id": "c11e2177-3af9-4e8c-84f3-c46dc0791da9",
     "path": "/regles/combat/activites/defense",
     "name": "Défense",
@@ -298,6 +310,18 @@
     },
     "threatening": false,
     "summary": "Tomber en position renversée."
+  },
+  {
+    "id": "7dbc1b40-e351-443b-b8f2-bfc509cfc903",
+    "path": "/regles/combat/activites/stabiliser",
+    "name": "Stabiliser",
+    "actions": {
+      "mandatory": 1,
+      "optional": 0,
+      "reaction": false
+    },
+    "threatening": true,
+    "summary": "Stabiliser une créature mourante."
   },
   {
     "id": "6ecacb84-c6a6-4b1b-acde-8092a84e1c46",

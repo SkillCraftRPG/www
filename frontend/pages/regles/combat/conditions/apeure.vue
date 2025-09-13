@@ -2,7 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Une créature apeurée ne peut se déplacer volontairement en direction de la source de sa peur.</p>
+    <p>
+      Une créature apeurée ne peut <NuxtLink to="/regles/combat/activites/deplacement">se déplacer</NuxtLink> volontairement en direction de la source de sa
+      peur.
+    </p>
     <p>
       Également, ses <NuxtLink to="/regles/competences/tests">tests</NuxtLink> (à l’exception des
       <NuxtLink to="/regles/competences/tests/sauvegarde">jets de sauvegarde</NuxtLink>) sont affligés du

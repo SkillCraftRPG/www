@@ -10,7 +10,7 @@
     <p>
       La vitesse s’exprime en <strong>mètres par seconde (m/s)</strong> et en <strong>points de mouvement</strong>. Chaque point de mouvement correspond à une
       case traversée. Par exemple, une créature dotée d’une vitesse de 1,5 m/s et de 6 points de mouvement pourra traverser 6 cases pour chaque action
-      <strong>Déplacement</strong> effectuée.
+      <NuxtLink to="/regles/combat/activites/deplacement">Déplacement</NuxtLink> effectuée.
     </p>
     <p>
       Cette vitesse ne considère ni le poids de l’équipement, ni le terrain accidenté. Les déplacements effectués à cette vitesse sont réalisables par courtes

@@ -11,6 +11,10 @@
       </li>
       <li>Les activités marquées de « <IconReaction /> » nécessitent d’utiliser sa <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink>.</li>
       <li>
+        Les activités qui ne sont ni marquées d’une action, ni d’une réaction, peuvent être effectuées en
+        <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>.
+      </li>
+      <li>
         Les activités marquées de « <IconOpportunity /> » déclenchent une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.
         L’astérisque « * » indique que l’activité ne déclenche pas toujours l’attaque d’opportunité.
       </li>
@@ -44,9 +48,7 @@ const sortedActivities = computed<Activity[]>(() => orderBy(activities.value, "n
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez toutes les activités de combat possibles : attaquer, se défendre, se déplacer, canaliser un pouvoir, préparer une action et plus encore.",
 });
-
-// TODO(fpion): Coup de grâce
-// TODO(fpion): Stabiliser?
 </script>

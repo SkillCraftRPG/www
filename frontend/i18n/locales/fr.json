@@ -15,7 +15,7 @@
     "type": {
       "options": {
         "Bludgeoning": "Contondant",
-        "Piercing": "Perçant",
+        "Piercing": "Perforant",
         "Slashing": "Tranchant"
       }
     }

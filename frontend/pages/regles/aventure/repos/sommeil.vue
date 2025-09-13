@@ -3,7 +3,9 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Un personnage requiert généralement un minimum de 6 heures de sommeil par jour.</p>
-    <p>S’il ne dort pas suffisamment au cours d’une journée, il est affligé d’un <strong>niveau de Fatigue</strong>.</p>
+    <p>
+      S’il ne dort pas suffisamment au cours d’une journée, il est affligé d’un <NuxtLink to="/regles/combat/conditions/fatigue">niveau de Fatigue</NuxtLink>.
+    </p>
     <p>Un personnage ne peut bénéficier que d’une seule nuit complète par <NuxtLink to="/regles/aventure/temps">période de 24 heures</NuxtLink>.</p>
     <h2 class="h3">Durée</h2>
     <p>
@@ -27,9 +29,9 @@
     <p>Lorsqu’un personnage complète une nuit de sommeil sans interruption, il bénéficie des effets suivants :</p>
     <ul>
       <li>Il peut retirer une pénalité (-1) à un <NuxtLink to="/regles/attributs">attribut</NuxtLink>.</li>
-      <li>Sa <strong>Fatigue</strong> descend d’un niveau.</li>
+      <li>Sa <NuxtLink to="/regles/combat/conditions/fatigue">Fatigue</NuxtLink> diminue d’un niveau.</li>
       <li>
-        Ses <NuxtLink to="/regles/magie/alchimie">points d’intoxication</NuxtLink> descendent d’une valeur égale à son
+        Ses <NuxtLink to="/regles/magie/alchimie">points d’intoxication</NuxtLink> diminuent d’une valeur égale à son
         <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> (minimum 1).
       </li>
       <li>Il récupère les utilisations de certaines capacités.</li>
