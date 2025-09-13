@@ -1,10 +1,10 @@
 <template>
   <section>
     <h2 id="step-4" class="h3">Étape 4 — Talents</h2>
-    <p>Cette étape consiste à sélectionner les talents acquis par le personnage avant le début de son aventure.</p>
+    <p>Cette étape consiste à sélectionner les <NuxtLink to="/regles/talents">talents</NuxtLink> acquis par le personnage avant le début de son aventure.</p>
     <p>
-      Votre personnage se voit attributer <NuxtLink to="/regles/talents">12 points de talent</NuxtLink>. Dépensez ces points en respectant les contraintes
-      suivantes :
+      Votre personnage se voit attributer <NuxtLink to="/regles/talents/points">12 points de talent</NuxtLink>. Dépensez ces points en respectant les
+      contraintes suivantes :
     </p>
     <ul>
       <li>Votre personnage doit être <NuxtLink to="/regles/competences/formation">formé pour la compétence</NuxtLink> associée à sa caste.</li>

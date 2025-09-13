@@ -15,7 +15,7 @@
       Lorsqu’une créature dissimulée tente d’attaquer une cible qui n’est pas au courant de sa présence, son
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> se voit conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage"
         >avantage</NuxtLink
-      >. La position de l’attaquant est ensuite révélée, que l’attaque réussisse ou non, sauf si l’attaquant a appris le
+      >. La position de l’attaquant est ensuite révélée, que l’attaque réussisse ou non, sauf si l’attaquant a acquis le
       <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/maraudage">Maraudage</NuxtLink> et que l’attaque échoue.
     </p>
     <p>

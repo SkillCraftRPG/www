@@ -122,7 +122,7 @@ const activities = computed<Activity[]>(() => {
       return true;
     }),
     "name",
-  ); // TODO(fpion): filters
+  );
 });
 
 function hasActions(activity: Activity): boolean {

@@ -5,8 +5,7 @@
     <p>Un pouvoir se décline en plusieurs niveaux en fonction de son tiers.</p>
     <p>Une créature ne peut canaliser un pouvoir qu’au niveau de base.</p>
     <p>
-      Le
-      <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/magie-puissante">Magie puissante</NuxtLink> permet de lever cette
+      Le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/magie-puissante">Magie puissante</NuxtLink> permet de lever cette
       restriction.
     </p>
     <table class="table table-striped text-center">

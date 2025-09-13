@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Un personnage peut dépenser les <NuxtLink to="/regles/talents">points de talent</NuxtLink> obtenus à chaque
+      Un personnage peut dépenser les <NuxtLink to="/regles/talents/points">points de talent</NuxtLink> obtenus à chaque
       <NuxtLink to="/regles/personnages/progression/niveau">gain de niveau</NuxtLink> afin d’acquérir de nouveaux pouvoirs.
     </p>
     <p>Les pouvoirs sont regroupés par famille, et un talent est nécessaire afin d’acquérir les pouvoirs de cette famille.</p>
