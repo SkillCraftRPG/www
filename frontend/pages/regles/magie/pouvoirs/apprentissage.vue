@@ -3,12 +3,12 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Un personnage peut dépenser les <NuxtLink to="/regles/talents">points de talent</NuxtLink> obtenus à chaque
+      Un personnage peut dépenser les <NuxtLink to="/regles/talents/points">points de talent</NuxtLink> obtenus à chaque
       <NuxtLink to="/regles/personnages/progression/niveau">gain de niveau</NuxtLink> afin d’acquérir de nouveaux pouvoirs.
     </p>
     <p>Les pouvoirs sont regroupés par famille, et un talent est nécessaire afin d’acquérir les pouvoirs de cette famille.</p>
     <p>Les conditions, tiers et effets des rabais sont les mêmes que pour les talents.</p>
-    <p>Le nombre de points de talent à dépenser afin d’acquérir un pouvoir dépend de son tiers.</p>
+    <p>Le nombre de points de talent à dépenser afin d’acquérir un pouvoir varie en fonction de son tiers.</p>
     <TalentCostTable />
   </main>
 </template>

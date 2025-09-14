@@ -12,7 +12,7 @@
     </p>
     <ItemShipList :items="ships" />
     <h3 id="equipage" class="h5">Équipage</h3>
-    <p>L’équipage d’un navire dépend de sa taille et de sa méthode de propulsion.</p>
+    <p>La grosseur de l’équipage varie en fonction de la taille et de la méthode de propulsion du navire.</p>
     <ul>
       <li v-for="ship in ships" :key="ship.id">
         <strong>{{ ship.name }}.</strong> {{ ship.crew }}

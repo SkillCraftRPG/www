@@ -8,8 +8,8 @@
       <NuxtLink to="/regles/combat/attaque/dissimulee">bénéfices</NuxtLink> lorsque vous êtes dissimulés.
     </p>
     <p>
-      Si une créature vous observe, vous n’êtes pas dissimulés à ses yeux. Si une créature vous voit aller vous cacher, par exemple derrière un arbre ou dans un
-      placard, alors vous êtes dissimulés à ses yeux, mais elle connaît tout de même votre position.
+      Vous ne pouvez vous dissimuler d’une créature qui vous voit. Si une créature vous voit aller vous cacher, par exemple derrière un arbre ou dans un
+      placard, alors pouvez être dissimulés à ses yeux, mais elle connaît tout de même votre position. Faites preuve de logique dans votre suite d’actions.
     </p>
     <p>
       Lorsque vous êtes dissimulés, une créature peut vous <NuxtLink to="/regles/combat/activites/chercher">chercher</NuxtLink> activement. Une créature qui ne
@@ -17,17 +17,16 @@
       <NuxtLink to="/regles/competences/perception">Perception</NuxtLink> est supérieur au résultat de votre test de Furtivité.
     </p>
     <p>
-      Vous ne pouvez pas vous dissimuler en pleine <NuxtLink to="/regles/aventure/environnement/vision">clarté</NuxtLink>, dans une zone complètement dégagée.
-      Vous ne pouvez pas non plus vous y <NuxtLink to="/regles/aventure/mouvement/furtif">déplacer furtivement</NuxtLink>. Certains talents permettent
-      d’outrepasser ces restrictions. Faites preuve de logique dans votre suite d’actions.
+      Vous pouvez vous déplacer <NuxtLink to="/regles/aventure/mouvement/furtif">furtivement</NuxtLink> lorsque vous êtes dissimulés en réduisant votre
+      <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink>. Si vous ne réduisez pas votre vitesse, vous n’êtes plus dissimulés.
     </p>
     <p>
       Une créature <NuxtLink to="/regles/combat/conditions/invisible">invisible</NuxtLink> peut toujours tenter de se dissimuler. Elle doit se faire discrète
       même si elle est invisible, car des signes de son passage peuvent tout de même être perceptibles.
     </p>
     <p>
-      Votre position est révélée si vous êtes découverts, vous cessez de vous cacher, ou que vous attirez l’attention, par exemple en faisant du bruit, en
-      effectuant une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> ou toute autre action hostile.
+      Votre position est révélée si vous êtes découverts, vous cessez de vous cacher, ou que vous attirez l’attention, par exemple en faisant du bruit, en vous
+      déplaçant sans réduire votre vitesse, en effectuant une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> ou toute autre action hostile.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à vous cacher :</p>
     <div class="row">
@@ -67,6 +66,8 @@ useSeo({
   description: "Découvrez comment se dissimuler des ennemis grâce à la furtivité, l’embuscade ou la disparition, et éviter d’être repéré en combat.",
 });
 
-// TODO(fpion): Furtivité pourrait permettre de se cacher même dans le "open", alors que quelqu’un normalement doit être dans une zone légèrement obscurcie.
-// TODO(fpion): Maraudage semble entrer en conflit avec Déplacement furtif, pourrait permettre de se déplacer dans le "open".
+// TODO(fpion): Furtivité permet de se cacher d'une créature qui nous voit lorsqu'on est dans une zone légèrement obscurcie, mais pas à la clarté.
+// TODO(fpion): Maraudage permet de se déplacer sans réduire sa vitesse.
+// TODO(fpion): Embuscade pas certain pour la réaction Pas prudent lorsqu'il fait un test de Furtivité.
+// TODO(fpion): Disparition revoir mais ça devrait prendre la réaction.
 </script>

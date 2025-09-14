@@ -3,8 +3,9 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Le prix d’un passage de navire dépend de plusieurs facteurs : le <NuxtLink to="/regles/equipement/montures-vehicules">navire</NuxtLink> employé, le trajet
-      et le nombre de passagers. Le capitaine suit les étapes suivantes afin de fournir le prix d’un passage de navire.
+      Le prix d’un passage de navire varie en fonction de plusieurs facteurs : le
+      <NuxtLink to="/regles/equipement/montures-vehicules">navire</NuxtLink> employé, le trajet et le nombre de passagers. Le capitaine suit les étapes
+      suivantes afin de fournir le prix d’un passage de navire.
     </p>
     <ol>
       <li>

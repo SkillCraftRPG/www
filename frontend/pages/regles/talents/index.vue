@@ -4,40 +4,24 @@
     <AppBreadcrumb :active="title" />
     <p>
       Une des facettes de la <NuxtLink to="/regles/personnages/progression">progression</NuxtLink> de personnage se matérialise par des talents, des capacités
-      acquises au fil de ses aventures. Deux personnages suivant un parcours similaire peuvent totalement différer dans leurs choix de talents, ce qui permet au
-      joueur de personnaliser son personnage en fonction de ses préférences.
+      acquises au fil de ses aventures.
     </p>
-    <h2 class="h3">Points de talent</h2>
     <p>
-      Dès sa <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, un personnage reçoit 12 points de talent. Il obtient également 1 point à chaque
-      fois qu’il progresse à un <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> supérieur. Il peut dépenser ces points afin d’acquérir
-      de nouveaux talents. Le coût en points d’un talent dépend de son tiers.
+      Deux personnages suivant un parcours similaire peuvent totalement différer dans leurs choix de talents, ce qui permet au joueur de personnaliser son
+      personnage en fonction de ses préférences.
     </p>
-    <TalentCostTable />
-    <h3 class="h5">Rabais</h3>
-    <p>
-      Lorsqu’un personnage bénéficie d’un rabais sur un talent, alors il pourra acquérir ce talent en dépensant 1 point de talent de moins que le nombre qui lui
-      serait normalement nécessaire. Il peut bénéficier de plusieurs rabais sur un même talent, ce qui peut lui permettre d’acquérir un talent à très faible
-      coût ou gratuitement.
-    </p>
-    <h2 class="h3">Conditions d’acquisition</h2>
-    <p>Afin d’acquérir un talent, un personnage doit satisfaire les conditions suivantes.</p>
-    <ul>
-      <li>Son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> de personnage doit être supérieur ou égal au tiers du talent.</li>
-      <li>Si le talent requiert un autre talent, alors le personnage doit préalablement avoir acquis le talent requis.</li>
-      <li>Il doit dépenser les points de talent nécessaires.</li>
-      <li>Le personnage doit satisfaire toute condition additionnelle spécifiée par le talent.</li>
-    </ul>
-    <h2 class="h3">Achats multiples</h2>
-    <p>
-      Sauf indication contraire, un talent ne peut être acquis qu’une seule fois. Seuls les talents portant la mention
-      <i>Achats multiples</i> peuvent être acquis plusieurs fois. Chaque acquisition doit satisfaire les conditions indiquées ci-dessus.
-    </p>
-    <p>S’il possède un ou plusieurs rabais sur ce talent, alors chaque acquisition bénéficie du rabais.</p>
+    <div class="row">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
     <template v-if="talents.length">
       <h2 class="h3">Liste des talents</h2>
       <TalentList :items="talents" />
     </template>
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 
@@ -49,6 +33,24 @@ import { getTalents } from "~/services/talents";
 
 const title: string = "Talents";
 const { orderBy } = arrayUtils;
+
+type MenuItem = {
+  path: string;
+  title: string;
+  description: string;
+};
+const items: MenuItem[] = [
+  {
+    path: "/regles/talents/points",
+    title: "Points de talents",
+    description: "Coûts, progression et rabais pour acquérir de nouveaux talents.",
+  },
+  {
+    path: "/regles/talents/acquisition",
+    title: "Acquisition de talent",
+    description: "Conditions, prérequis, points requis et achats multiples avec rabais.",
+  },
+];
 
 const talents = ref<Talent[]>(orderBy(getTalents({ requiredTalent: true, skill: true }), "slug"));
 

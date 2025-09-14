@@ -7,8 +7,8 @@
       <NuxtLink to="/regles/competences">compétence</NuxtLink>.
     </p>
     <p>
-      Cette compétence dépend de la nature de l’attaque et de l’<NuxtLink to="/regles/equipement/armes">arme</NuxtLink> utilisée. Cette compétence est
-      généralement <NuxtLink to="/regles/competences/melee">Mêlée</NuxtLink> ou <NuxtLink to="/regles/competences/orientation">Orientation</NuxtLink>.
+      Cette compétence varie en fonction de la nature de l’attaque et de l’<NuxtLink to="/regles/equipement/armes">arme</NuxtLink> utilisée. Cette compétence
+      est généralement <NuxtLink to="/regles/competences/melee">Mêlée</NuxtLink> ou <NuxtLink to="/regles/competences/orientation">Orientation</NuxtLink>.
     </p>
     <p>
       Si le personnage est formé à manier cette arme, il ajoute le <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de cette compétence au test. Sinon,
