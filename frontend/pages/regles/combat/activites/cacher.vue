@@ -66,6 +66,8 @@ useSeo({
   description: "Découvrez comment se dissimuler des ennemis grâce à la furtivité, l’embuscade ou la disparition, et éviter d’être repéré en combat.",
 });
 
-// TODO(fpion): Furtivité pourrait permettre de se cacher même dans le "open", alors que quelqu’un normalement doit être dans une zone légèrement obscurcie.
-// TODO(fpion): Maraudage semble entrer en conflit avec Déplacement furtif, pourrait permettre de se déplacer dans le "open".
+// TODO(fpion): Furtivité permet de se cacher d'une créature qui nous voit lorsqu'on est dans une zone légèrement obscurcie, mais pas à la clarté.
+// TODO(fpion): Maraudage permet de se déplacer sans réduire sa vitesse.
+// TODO(fpion): Embuscade pas certain pour la réaction Pas prudent lorsqu'il fait un test de Furtivité.
+// TODO(fpion): Disparition revoir mais ça devrait prendre la réaction.
 </script>
