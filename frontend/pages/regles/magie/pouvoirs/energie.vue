@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Le nombre de points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> dépensés par la
-      <NuxtLink to="/regles/magie/pouvoirs/canalisation">canalisation</NuxtLink> d’un pouvoir dépend du tiers de celui-ci ainsi que du
+      <NuxtLink to="/regles/magie/pouvoirs/canalisation">canalisation</NuxtLink> d’un pouvoir varie en fonction du tiers du pouvoir ainsi que du
       <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau</NuxtLink> canalisé.
     </p>
     <p>Ce nombre est obtenu en multipliant la base par le niveau canalisé. La base est déterminée par le tiers du pouvoir.</p>

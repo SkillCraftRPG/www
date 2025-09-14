@@ -5,7 +5,7 @@
     <p>Dès sa <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, un personnage reçoit 12 points de talent.</p>
     <p>Il obtient également 1 point à chaque fois qu’il progresse à un <NuxtLink to="/regles/personnages/progression/niveau">niveau</NuxtLink> supérieur.</p>
     <p>Il peut dépenser ces points afin d’<NuxtLink to="/regles/talents/acquisition">acquérir</NuxtLink> de nouveaux talents.</p>
-    <p>Le coût en points d’un talent dépend de son tiers.</p>
+    <p>Le coût en points d’un talent varie en fonction de son tiers.</p>
     <TalentCostTable />
     <h2 class="h3">Rabais</h2>
     <p>

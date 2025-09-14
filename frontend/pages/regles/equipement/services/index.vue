@@ -7,9 +7,9 @@
       troc ou payé en argent.
     </p>
     <p>
-      Le prix d’un service dépend de la rareté de celui-ci dans la région, des risques et dangers associés ainsi que de la nature de celui-ci. Un service peut
-      représenter, par exemple, un cabriolet (taxi) entre deux emplacements, un coursier (messager), un péage, un passage de navire ou les services d’un
-      mercenaire. Les services de magie sont généralement rares et onéreux, et ne sont pas à l’abri des charlatans.
+      Le prix d’un service varie en fonction de la rareté de celui-ci dans la région, des risques et dangers associés ainsi que de la nature de celui-ci. Un
+      service peut représenter, par exemple, un cabriolet (taxi) entre deux emplacements, un coursier (messager), un péage, un passage de navire ou les services
+      d’un mercenaire. Les services de magie sont généralement rares et onéreux, et ne sont pas à l’abri des charlatans.
     </p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">

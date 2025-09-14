@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       L’<strong>Incantation</strong> correspond à la durée nécessaire afin de <NuxtLink to="/regles/magie/pouvoirs/canalisation">canaliser</NuxtLink> le
-      pouvoir. Cette durée dépend de la nature du pouvoir.
+      pouvoir. Cette durée varie en fonction de la nature du pouvoir.
     </p>
     <table class="table table-striped text-center">
       <thead>
