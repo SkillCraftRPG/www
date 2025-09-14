@@ -1,5 +1,43 @@
 name: skillcraft
 services:
+  skillcraft_mongo:
+    image: mongo
+    container_name: SkillCraft_mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: skillcraft
+      MONGO_INITDB_ROOT_PASSWORD: qn63ZrdDLNP2XHV4
+    ports:
+      - 27028:27017
+    volumes:
+      - mongodata:/data/db
+
+  skillcraft_mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: SkillCraft_mssql
+    restart: unless-stopped
+    user: root
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: yUEeMb4Rw6F3Aupr
+    ports:
+      - 1438:1433
+    volumes:
+      - mssql_backup:/var/opt/mssql/backup
+      - mssql_data:/var/opt/mssql/data
+      - mssql_log:/var/opt/mssql/log
+
+  skillcraft_postgres:
+    image: postgres
+    container_name: SkillCraft_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: JBWP9LYhjU6dmRMF
+    ports:
+      - 5438:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   skillcraft_frontend:
     build:
       context: ./frontend
@@ -9,3 +47,10 @@ services:
     restart: unless-stopped
     ports:
       - 18088:80
+
+volumes:
+  mongodata:
+  mssql_backup:
+  mssql_data:
+  mssql_log:
+  postgres_data:

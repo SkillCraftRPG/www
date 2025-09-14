@@ -18,6 +18,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{02EA681E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Rules.Compiler", "tools\SkillCraft.Rules.Compiler\SkillCraft.Rules.Compiler.csproj", "{ECA10CEC-5CA2-4719-8F52-970BA11271E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms", "src\SkillCraft.Cms\SkillCraft.Cms.csproj", "{3C5C2B4F-EA6E-468F-8760-C7417010D06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure", "src\SkillCraft.Cms.Infrastructure\SkillCraft.Cms.Infrastructure.csproj", "{EC62397F-607F-452E-82BA-C06A8C3A2637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.SqlServer", "src\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj", "{71D012C4-2528-4736-80B5-7643C7032975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.PostgreSQL", "src\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj", "{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +40,22 @@ Global
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5C2B4F-EA6E-468F-8760-C7417010D06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5C2B4F-EA6E-468F-8760-C7417010D06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5C2B4F-EA6E-468F-8760-C7417010D06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5C2B4F-EA6E-468F-8760-C7417010D06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
