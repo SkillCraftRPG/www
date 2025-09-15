@@ -19,7 +19,7 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
 
     builder.HasIndex(x => x.Id).IsUnique();
     builder.HasIndex(x => x.IsPublished);
-    builder.HasIndex(x => x.Slug);
+    builder.HasIndex(x => x.Slug); // TODO(fpion): should be unique
     builder.HasIndex(x => x.Name);
     builder.HasIndex(x => x.Tier);
     builder.HasIndex(x => x.AllowMultiplePurchases);

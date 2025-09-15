@@ -1,19 +1,20 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
+using Logitar.EventSourcing;
 using SkillCraft.Core;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
 
-internal class TalentEntity : AggregateEntity
+internal class TalentEntity : AggregateEntity // TODO(fpion): property order
 {
   public int TalentId { get; private set; }
   public Guid Id { get; private set; }
 
   public bool IsPublished { get; private set; }
 
-  public string Slug { get; set; } = string.Empty;
-  public string? Name { get; set; } = string.Empty;
+  public string Slug { get; set; } = string.Empty; // TODO(fpion): normalized?
+  public string? Name { get; set; }
 
   public int Tier { get; set; }
   public bool AllowMultiplePurchases { get; set; }
@@ -36,6 +37,16 @@ internal class TalentEntity : AggregateEntity
 
   private TalentEntity() : base()
   {
+  }
+
+  public override IReadOnlyCollection<ActorId> GetActorIds()
+  {
+    List<ActorId> actorIds = new(base.GetActorIds());
+    if (RequiredTalent is not null)
+    {
+      actorIds.AddRange(RequiredTalent.GetActorIds());
+    }
+    return actorIds;
   }
 
   public void Publish(ContentLocalePublished @event)

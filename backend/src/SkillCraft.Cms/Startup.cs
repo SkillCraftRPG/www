@@ -1,5 +1,4 @@
-﻿using Krakenar.Core;
-using Krakenar.EntityFrameworkCore.PostgreSQL;
+﻿using Krakenar.EntityFrameworkCore.PostgreSQL;
 using Krakenar.EntityFrameworkCore.Relational;
 using Krakenar.Infrastructure;
 using Krakenar.MongoDB;
@@ -7,6 +6,7 @@ using Krakenar.Web;
 using Krakenar.Web.Middlewares;
 using Krakenar.Web.Settings;
 using Logitar.EventSourcing.EntityFrameworkCore.Relational;
+using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Extensions;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.SqlServer;
@@ -29,7 +29,7 @@ internal class Startup : StartupBase
 
     services.AddApplicationInsightsTelemetry();
 
-    services.AddKrakenarCore();
+    services.AddSkillCraftCmsCore();
     services.AddSkillCraftCmsInfrastructure();
     services.AddKrakenarWeb(_configuration);
 

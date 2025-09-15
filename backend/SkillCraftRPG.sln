@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Seeding", "tools\SkillCraft.Cms.Seeding\SkillCraft.Cms.Seeding.csproj", "{9611E491-E17E-4932-BA63-AB3779C430ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Core", "src\SkillCraft.Cms.Core\SkillCraft.Cms.Core.csproj", "{8614253E-0B12-4A5F-8D93-044AC3A0DE0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{9611E491-E17E-4932-BA63-AB3779C430ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9611E491-E17E-4932-BA63-AB3779C430ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9611E491-E17E-4932-BA63-AB3779C430ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8614253E-0B12-4A5F-8D93-044AC3A0DE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8614253E-0B12-4A5F-8D93-044AC3A0DE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8614253E-0B12-4A5F-8D93-044AC3A0DE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8614253E-0B12-4A5F-8D93-044AC3A0DE0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
