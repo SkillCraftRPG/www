@@ -1,7 +1,6 @@
 ﻿using Krakenar.Core;
 using Krakenar.EntityFrameworkCore.PostgreSQL;
 using Krakenar.EntityFrameworkCore.Relational;
-using Krakenar.EntityFrameworkCore.SqlServer;
 using Krakenar.Infrastructure;
 using Krakenar.MongoDB;
 using Krakenar.Web;
@@ -9,6 +8,8 @@ using Krakenar.Web.Middlewares;
 using Krakenar.Web.Settings;
 using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using SkillCraft.Cms.Extensions;
+using SkillCraft.Cms.Infrastructure;
+using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Settings;
 
 namespace SkillCraft.Cms;
@@ -29,7 +30,7 @@ internal class Startup : StartupBase
     services.AddApplicationInsightsTelemetry();
 
     services.AddKrakenarCore();
-    services.AddKrakenarInfrastructure();
+    services.AddSkillCraftCmsInfrastructure();
     services.AddKrakenarWeb(_configuration);
 
     AdminSettings? adminSettings = services.Where(x => x.ServiceType.Equals(typeof(AdminSettings)) && x.ImplementationInstance is AdminSettings)
@@ -43,7 +44,6 @@ internal class Startup : StartupBase
     IHealthChecksBuilder healthChecks = services.AddHealthChecks();
     DatabaseSettings databaseSettings = DatabaseSettings.Initialize(_configuration);
     services.AddSingleton(databaseSettings);
-    services.AddKrakenarEntityFrameworkCoreRelational(databaseSettings.EnableLogging);
     switch (databaseSettings.Provider)
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
@@ -52,7 +52,7 @@ internal class Startup : StartupBase
         healthChecks.AddDbContextCheck<KrakenarContext>();
         break;
       case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddKrakenarEntityFrameworkCoreSqlServer(_configuration);
+        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
         healthChecks.AddDbContextCheck<EventContext>();
         healthChecks.AddDbContextCheck<KrakenarContext>();
         break;

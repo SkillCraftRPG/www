@@ -12,7 +12,8 @@
       <NuxtLink to="/regles/aventure/mouvement/terrain-difficile">terrain difficile</NuxtLink>.
     </p>
     <p>
-      Une créature ne peut arrêter son <strong>déplacement</strong> dans une case occupée par une autre créature, sauf si la taille des créatures le permet.
+      Une créature ne peut arrêter son <NuxtLink to="/regles/combat/activites/deplacement">déplacement</NuxtLink> dans une case occupée par une autre créature,
+      sauf si la taille des créatures le permet.
     </p>
     <p>
       Une créature ne peut également pas traverser une case occupée par une créature hostile, sauf si la différence entre leur taille est d’au moins deux

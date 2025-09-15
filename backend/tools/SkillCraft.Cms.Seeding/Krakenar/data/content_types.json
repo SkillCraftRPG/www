@@ -13,7 +13,7 @@
         "IsRequired": true,
         "IsIndexed": false,
         "IsUnique": false,
-        "UniqueName": "TalentTier",
+        "UniqueName": "Tier",
         "DisplayName": "Tiers",
         "Description": null,
         "Placeholder": null
