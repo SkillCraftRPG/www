@@ -38,12 +38,33 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  skillcraft_cms:
+    build:
+      context: ./backend
+      dockerfile: /src/SkillCraft.Cms/Dockerfile
+    image: skillcraft_cms
+    container_name: SkillCraft_cms
+    depends_on:
+      - skillcraft_mongo
+      - skillcraft_mssql
+      - skillcraft_postgres
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_Environment: Development
+      MONGOCONNSTR_Krakenar: mongodb://skillcraft:qn63ZrdDLNP2XHV4@skillcraft_mongo:27017/
+      POSTGRESQLCONNSTR_Krakenar: User ID=postgres;Password=JBWP9LYhjU6dmRMF;Host=skillcraft_postgres;Port=5432;Database=cms;
+      SQLCONNSTR_Krakenar: Server=skillcraft_mssql;Database=cms;User Id=SA;Password=yUEeMb4Rw6F3Aupr;Persist Security Info=False;Encrypt=False;
+    ports:
+      - 8888:8080
+
   skillcraft_frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     image: skillcraft_frontend
     container_name: SkillCraft_frontend
+    depends_on:
+      - skillcraft_cms
     restart: unless-stopped
     ports:
       - 18088:80

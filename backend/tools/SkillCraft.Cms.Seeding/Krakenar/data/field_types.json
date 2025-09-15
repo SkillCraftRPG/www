@@ -1,0 +1,143 @@
+﻿[
+  {
+    "Id": "70916d92-11ca-4505-8b5e-51c91c33c9e4",
+    "UniqueName": "Boolean",
+    "DisplayName": null,
+    "Description": null,
+    "Boolean": {}
+  },
+  {
+    "Id": "236d7923-356f-4a8f-8952-646b0f04bdb4",
+    "UniqueName": "HtmlContent",
+    "DisplayName": null,
+    "Description": null,
+    "RichText": {
+      "ContentType": "text/html",
+      "MinimumLength": null,
+      "MaximumLength": null
+    }
+  },
+  {
+    "Id": "00d98324-de42-4f14-83a9-f2a054056c04",
+    "UniqueName": "Skill",
+    "DisplayName": null,
+    "Description": null,
+    "Select": {
+      "IsMultiple": false,
+      "Options": [
+        {
+          "Text": "Acrobaties",
+          "Value": "Acrobatics"
+        },
+        {
+          "Text": "Athlétisme",
+          "Value": "Athletics"
+        },
+        {
+          "Text": "Artisanat",
+          "Value": "Crafting"
+        },
+        {
+          "Text": "Tromperie",
+          "Value": "Deception"
+        },
+        {
+          "Text": "Diplomatie",
+          "Value": "Diplomacy"
+        },
+        {
+          "Text": "Discipline",
+          "Value": "Discipline"
+        },
+        {
+          "Text": "Intuition",
+          "Value": "Insight"
+        },
+        {
+          "Text": "Investigation",
+          "Value": "Investigation"
+        },
+        {
+          "Text": "Connaissance",
+          "Value": "Knowledge"
+        },
+        {
+          "Text": "Linguistique",
+          "Value": "Linguistics"
+        },
+        {
+          "Text": "Médecine",
+          "Value": "Medicine"
+        },
+        {
+          "Text": "Mêlée",
+          "Value": "Melee"
+        },
+        {
+          "Text": "Occultisme",
+          "Value": "Occultism"
+        },
+        {
+          "Text": "Orientation",
+          "Value": "Orientation"
+        },
+        {
+          "Text": "Perception",
+          "Value": "Perception"
+        },
+        {
+          "Text": "Représentation",
+          "Value": "Performance"
+        },
+        {
+          "Text": "Résistance",
+          "Value": "Resistance"
+        },
+        {
+          "Text": "Furtivité",
+          "Value": "Stealth"
+        },
+        {
+          "Text": "Survie",
+          "Value": "Survival"
+        },
+        {
+          "Text": "Roublardise",
+          "Value": "Thievery"
+        }
+      ]
+    }
+  },
+  {
+    "Id": "c9cf3897-d14e-4ae7-ae32-2357c440b32a",
+    "UniqueName": "Summary",
+    "DisplayName": null,
+    "Description": null,
+    "RichText": {
+      "ContentType": "text/plain",
+      "MinimumLength": null,
+      "MaximumLength": 160
+    }
+  },
+  {
+    "Id": "9d840d69-9e3f-4c53-93df-2bc5c99e6ac3",
+    "UniqueName": "Talent",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
+      "IsMultiple": false
+    }
+  },
+  {
+    "Id": "c059d066-a9eb-4649-b9c4-7b3f59df87b4",
+    "UniqueName": "TalentTier",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 0,
+      "MaximumValue": 3,
+      "Step": 1
+    }
+  }
+]
