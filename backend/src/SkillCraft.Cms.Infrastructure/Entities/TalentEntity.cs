@@ -1,5 +1,6 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
+using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.EventSourcing;
 using SkillCraft.Core;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
@@ -13,7 +14,12 @@ internal class TalentEntity : AggregateEntity // TODO(fpion): property order
 
   public bool IsPublished { get; private set; }
 
-  public string Slug { get; set; } = string.Empty; // TODO(fpion): normalized?
+  public string Slug { get; set; } = string.Empty;
+  public string SlugNormalized
+  {
+    get => Helper.Normalize(Slug);
+    private set { }
+  }
   public string? Name { get; set; }
 
   public int Tier { get; set; }

@@ -2,13 +2,13 @@
 using Krakenar.Contracts.Search;
 using Krakenar.Core.Actors;
 using Krakenar.EntityFrameworkCore.Relational;
+using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.Data;
 using Logitar.EventSourcing;
 using Microsoft.EntityFrameworkCore;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
-using KrakenarDb = Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 
 namespace SkillCraft.Cms.Infrastructure.Queriers;
 
@@ -35,11 +35,11 @@ internal class TalentQuerier : ITalentQuerier
   }
   public async Task<Talent?> ReadAsync(string slug, CancellationToken cancellationToken)
   {
-    string slugNormalized = KrakenarDb.Helper.Normalize(slug);
+    string slugNormalized = Helper.Normalize(slug);
 
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.RequiredTalent)
-      .SingleOrDefaultAsync(x => x.Slug == slugNormalized, cancellationToken); // TODO(fpion): slug normalized
+      .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized, cancellationToken);
     // TODO(fpion): IsPublished and RequiredTalent.IsPublished
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
@@ -57,7 +57,7 @@ internal class TalentQuerier : ITalentQuerier
         .Select(slug => slug.Trim())
         .Distinct()
         .ToArray();
-      builder.Where(CmsDb.Talents.Slug, Operators.IsIn(slugs)); // TODO(fpion): case-sensitive?
+      builder.Where(CmsDb.Talents.Slug, Operators.IsIn(slugs)); // TODO(fpion): case-sensitive? YES =( ; test with PostgreSQL
     }
     if (payload.Tiers.Count > 0)
     {
@@ -67,7 +67,7 @@ internal class TalentQuerier : ITalentQuerier
     // TODO(fpion): HasSkill, HasNoSkill, HasExactSkill, Skills?
     if (payload.AllowMultiplePurchases.HasValue)
     {
-      builder.Where(CmsDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value));
+      builder.Where(CmsDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value)); // TODO(fpion): test with PostgreSQL
     }
     if (payload.RequiredTalentId.HasValue)
     {
