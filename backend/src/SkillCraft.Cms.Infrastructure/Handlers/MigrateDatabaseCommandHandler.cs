@@ -7,9 +7,9 @@ namespace SkillCraft.Cms.Infrastructure.Handlers;
 
 internal class MigrateDatabaseCommandHandler : Krakenar.EntityFrameworkCore.Relational.Handlers.MigrateDatabaseCommandHandler
 {
-  private readonly CmsContext _cmsContext;
+  private readonly RulesContext _cmsContext;
 
-  public MigrateDatabaseCommandHandler(CmsContext cmsContext, EventContext eventContext, KrakenarContext krakenarContext)
+  public MigrateDatabaseCommandHandler(RulesContext cmsContext, EventContext eventContext, KrakenarContext krakenarContext)
     : base(eventContext, krakenarContext)
   {
     _cmsContext = cmsContext;

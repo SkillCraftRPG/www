@@ -10,10 +10,10 @@ internal record UnpublishTalentCommand(ContentLocaleUnpublished Event) : IComman
 
 internal class UnpublishTalentCommandHandler : ICommandHandler<UnpublishTalentCommand, CommandResult>
 {
-  private readonly CmsContext _context;
+  private readonly RulesContext _context;
   private readonly ILogger<UnpublishTalentCommandHandler> _logger;
 
-  public UnpublishTalentCommandHandler(CmsContext context, ILogger<UnpublishTalentCommandHandler> logger)
+  public UnpublishTalentCommandHandler(RulesContext context, ILogger<UnpublishTalentCommandHandler> logger)
   {
     _context = context;
     _logger = logger;

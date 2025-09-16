@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
+using SkillCraft.Core;
 
 namespace SkillCraft.Cms.Infrastructure.Queriers;
 
@@ -18,7 +19,7 @@ internal class TalentQuerier : ITalentQuerier
   private readonly ISqlHelper _sqlHelper;
   private readonly DbSet<TalentEntity> _talents;
 
-  public TalentQuerier(IActorService actorService, CmsContext context, ISqlHelper sqlHelper)
+  public TalentQuerier(IActorService actorService, RulesContext context, ISqlHelper sqlHelper)
   {
     _actorService = actorService;
     _sqlHelper = sqlHelper;
@@ -29,8 +30,7 @@ internal class TalentQuerier : ITalentQuerier
   {
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.RequiredTalent)
-      .SingleOrDefaultAsync(x => x.Id == id, cancellationToken);
-    // TODO(fpion): IsPublished and RequiredTalent.IsPublished
+      .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
   public async Task<Talent?> ReadAsync(string slug, CancellationToken cancellationToken)
@@ -39,42 +39,57 @@ internal class TalentQuerier : ITalentQuerier
 
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.RequiredTalent)
-      .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized, cancellationToken);
-    // TODO(fpion): IsPublished and RequiredTalent.IsPublished
+      .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
 
   public async Task<SearchResults<Talent>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken)
   {
-    IQueryBuilder builder = _sqlHelper.Query(CmsDb.Talents.Table).SelectAll(CmsDb.Talents.Table)
-      .ApplyIdFilter(CmsDb.Talents.Id, payload.Ids);
-    // TODO(fpion): IsPublished and RequiredTalent.IsPublished
-    _sqlHelper.ApplyTextSearch(builder, payload.Search, CmsDb.Talents.Slug, CmsDb.Talents.Name, CmsDb.Talents.Summary);
+    IQueryBuilder builder = _sqlHelper.Query(RulesDb.Talents.Table).SelectAll(RulesDb.Talents.Table)
+      .ApplyIdFilter(RulesDb.Talents.Id, payload.Ids)
+      .Where(RulesDb.Talents.IsPublished, Operators.IsEqualTo(true));
+    _sqlHelper.ApplyTextSearch(builder, payload.Search, RulesDb.Talents.Slug, RulesDb.Talents.Name, RulesDb.Talents.Summary);
 
     if (payload.Slugs.Count > 0)
     {
-      string[] slugs = payload.Slugs.Where(slug => !string.IsNullOrWhiteSpace(slug))
-        .Select(slug => slug.Trim())
+      string[] normalizedSlugs = payload.Slugs.Where(slug => !string.IsNullOrWhiteSpace(slug))
+        .Select(Helper.Normalize)
         .Distinct()
         .ToArray();
-      builder.Where(CmsDb.Talents.Slug, Operators.IsIn(slugs)); // TODO(fpion): case-sensitive? YES =( ; test with PostgreSQL
+      builder.Where(RulesDb.Talents.SlugNormalized, Operators.IsIn(normalizedSlugs)); // TODO(fpion): test with PostgreSQL
     }
     if (payload.Tiers.Count > 0)
     {
       object[] tiers = payload.Tiers.Distinct().Select(tier => (object)tier).ToArray();
-      builder.Where(CmsDb.Talents.Tier, Operators.IsIn(tiers));
+      builder.Where(RulesDb.Talents.Tier, Operators.IsIn(tiers)); // TODO(fpion): test with PostgreSQL
     }
-    // TODO(fpion): HasSkill, HasNoSkill, HasExactSkill, Skills?
+    if (!string.IsNullOrWhiteSpace(payload.Skill))
+    {
+      string trimmed = payload.Skill.Trim();
+      if (Enum.TryParse(trimmed, ignoreCase: true, out GameSkill skill))
+      {
+        builder.Where(RulesDb.Talents.Skill, Operators.IsEqualTo(skill.ToString())); // TODO(fpion): test with PostgreSQL
+      }
+      else if (trimmed.Equals("any", StringComparison.InvariantCultureIgnoreCase))
+      {
+        builder.Where(RulesDb.Talents.Skill, Operators.IsNotNull()); // TODO(fpion): test with PostgreSQL
+      }
+      else if (trimmed.Equals("none", StringComparison.InvariantCultureIgnoreCase))
+      {
+        builder.Where(RulesDb.Talents.Skill, Operators.IsNull()); // TODO(fpion): test with PostgreSQL
+      }
+    }
     if (payload.AllowMultiplePurchases.HasValue)
     {
-      builder.Where(CmsDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value)); // TODO(fpion): test with PostgreSQL
     }
     if (payload.RequiredTalentId.HasValue)
     {
-      builder.Where(CmsDb.Talents.RequiredTalentUid, Operators.IsEqualTo(payload.RequiredTalentId.Value)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.RequiredTalentUid, Operators.IsEqualTo(payload.RequiredTalentId.Value)); // TODO(fpion): test with PostgreSQL
     }
 
-    IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking();
+    IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking()
+      .Include(x => x.RequiredTalent);
 
     long total = await query.LongCountAsync(cancellationToken);
 

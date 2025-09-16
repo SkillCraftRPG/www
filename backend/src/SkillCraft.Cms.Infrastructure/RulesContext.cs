@@ -3,11 +3,11 @@ using SkillCraft.Cms.Infrastructure.Entities;
 
 namespace SkillCraft.Cms.Infrastructure;
 
-public class CmsContext : DbContext
+public class RulesContext : DbContext
 {
-  public const string Schema = "Cms"; // TODO(fpion): do we want separate DBs? A schema?
+  public const string Schema = "Rules";
 
-  public CmsContext(DbContextOptions<CmsContext> options) : base(options)
+  public RulesContext(DbContextOptions<RulesContext> options) : base(options)
   {
   }
 

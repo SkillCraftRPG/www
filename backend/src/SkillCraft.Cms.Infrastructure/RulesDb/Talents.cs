@@ -1,11 +1,11 @@
 ﻿using Logitar.Data;
 using SkillCraft.Cms.Infrastructure.Entities;
 
-namespace SkillCraft.Cms.Infrastructure.CmsDb;
+namespace SkillCraft.Cms.Infrastructure.RulesDb;
 
 internal static class Talents
 {
-  public static readonly TableId Table = new(CmsContext.Schema, nameof(CmsContext.Talents), alias: null);
+  public static readonly TableId Table = new(RulesContext.Schema, nameof(RulesContext.Talents), alias: null);
 
   public static readonly ColumnId CreatedBy = new(nameof(TalentEntity.CreatedBy), Table);
   public static readonly ColumnId CreatedOn = new(nameof(TalentEntity.CreatedOn), Table);

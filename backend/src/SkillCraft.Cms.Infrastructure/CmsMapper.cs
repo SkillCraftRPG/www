@@ -30,16 +30,16 @@ internal class CmsMapper
     Talent destination = new()
     {
       Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
       Tier = source.Tier,
       AllowMultiplePurchases = source.AllowMultiplePurchases,
       Skill = source.Skill,
-      Slug = source.Slug,
-      Name = source.Name ?? string.Empty, // TODO(fpion): implement
       Summary = source.Summary,
       Description = source.Description
     };
 
-    if (source.RequiredTalent is not null)
+    if (source.RequiredTalent is not null && source.RequiredTalent.IsPublished)
     {
       destination.RequiredTalent = ToTalent(source.RequiredTalent);
     }

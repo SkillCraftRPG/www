@@ -7,7 +7,7 @@ using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggrega
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
 
-internal class TalentEntity : AggregateEntity // TODO(fpion): property order
+internal class TalentEntity : AggregateEntity
 {
   public int TalentId { get; private set; }
   public Guid Id { get; private set; }
@@ -20,7 +20,7 @@ internal class TalentEntity : AggregateEntity // TODO(fpion): property order
     get => Helper.Normalize(Slug);
     private set { }
   }
-  public string? Name { get; set; }
+  public string Name { get; set; } = string.Empty;
 
   public int Tier { get; set; }
   public bool AllowMultiplePurchases { get; set; }

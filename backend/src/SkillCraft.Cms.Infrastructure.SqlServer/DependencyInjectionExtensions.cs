@@ -19,6 +19,6 @@ public static class DependencyInjectionExtensions
 
     return services
       .AddKrakenarEntityFrameworkCoreSqlServer(connectionString)
-      .AddDbContext<CmsContext>(options => options.UseSqlServer(connectionString, options => options.MigrationsAssembly("SkillCraft.Cms.Infrastructure.SqlServer")));
+      .AddDbContext<RulesContext>(options => options.UseSqlServer(connectionString, options => options.MigrationsAssembly("SkillCraft.Cms.Infrastructure.SqlServer")));
   }
 }

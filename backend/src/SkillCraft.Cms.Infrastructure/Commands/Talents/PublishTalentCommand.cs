@@ -13,10 +13,10 @@ internal record PublishTalentCommand(ContentLocalePublished Event, ContentLocale
 
 internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentCommand, CommandResult>
 {
-  private readonly CmsContext _context;
+  private readonly RulesContext _context;
   private readonly ILogger<PublishTalentCommandHandler> _logger;
 
-  public PublishTalentCommandHandler(CmsContext context, ILogger<PublishTalentCommandHandler> logger)
+  public PublishTalentCommandHandler(RulesContext context, ILogger<PublishTalentCommandHandler> logger)
   {
     _context = context;
     _logger = logger;
@@ -37,7 +37,7 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     }
 
     talent.Slug = locale.UniqueName.Value;
-    talent.Name = locale.DisplayName?.Value;
+    talent.Name = ToName(locale.DisplayName?.Value ?? locale.UniqueName.Value);
 
     talent.Tier = (int)invariant.GetNumber(TalentType.Tier);
     talent.AllowMultiplePurchases = invariant.GetBoolean(TalentType.AllowMultiplePurchases);
@@ -95,4 +95,7 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
 
     return new CommandResult();
   }
+
+  private static string ToName(string slug) => string.Join(' ', slug.Split('-').Select(Capitalize));
+  private static string Capitalize(string value) => string.Concat(char.ToUpperInvariant(value.First()), value.Skip(1));
 }

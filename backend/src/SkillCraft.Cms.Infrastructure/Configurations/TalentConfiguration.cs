@@ -14,7 +14,7 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
   {
     base.Configure(builder);
 
-    builder.ToTable(CmsDb.Talents.Table.Table!, CmsDb.Talents.Table.Schema);
+    builder.ToTable(RulesDb.Talents.Table.Table!, RulesDb.Talents.Table.Schema);
     builder.HasKey(x => x.TalentId);
 
     builder.HasIndex(x => x.Id).IsUnique();

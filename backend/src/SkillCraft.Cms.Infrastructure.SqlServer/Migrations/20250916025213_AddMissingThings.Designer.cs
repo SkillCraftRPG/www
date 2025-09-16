@@ -11,8 +11,8 @@ using SkillCraft.Cms.Infrastructure;
 namespace SkillCraft.Cms.Infrastructure.SqlServer.Migrations
 {
     [DbContext(typeof(RulesContext))]
-    [Migration("20250915025014_CreateTalentTable")]
-    partial class CreateTalentTable
+    [Migration("20250916025213_AddMissingThings")]
+    partial class AddMissingThings
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,7 @@ namespace SkillCraft.Cms.Infrastructure.SqlServer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -69,6 +70,10 @@ namespace SkillCraft.Cms.Infrastructure.SqlServer.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("SlugNormalized")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("StreamId")
                         .IsRequired()
@@ -115,6 +120,9 @@ namespace SkillCraft.Cms.Infrastructure.SqlServer.Migrations
 
                     b.HasIndex("Slug");
 
+                    b.HasIndex("SlugNormalized")
+                        .IsUnique();
+
                     b.HasIndex("StreamId")
                         .IsUnique();
 
@@ -128,7 +136,7 @@ namespace SkillCraft.Cms.Infrastructure.SqlServer.Migrations
 
                     b.HasIndex("Version");
 
-                    b.ToTable("Talents", "Cms");
+                    b.ToTable("Talents", "Rules");
                 });
 
             modelBuilder.Entity("SkillCraft.Cms.Infrastructure.Entities.TalentEntity", b =>

@@ -16,7 +16,8 @@ public record SearchTalentsParameters : SearchParameters
   [FromQuery(Name = "multiple")]
   public bool? AllowMultiplePurchases { get; set; }
 
-  // TODO(fpion): HasSkill, HasNoSkill, HasExactSkill, Skills?
+  [FromQuery(Name = "skill")]
+  public string? Skill { get; set; }
 
   [FromQuery(Name = "required")]
   public Guid? RequiredTalentId { get; set; }
@@ -26,6 +27,7 @@ public record SearchTalentsParameters : SearchParameters
     SearchTalentsPayload payload = new()
     {
       AllowMultiplePurchases = AllowMultiplePurchases,
+      Skill = Skill,
       RequiredTalentId = RequiredTalentId
     };
     payload.Slugs.AddRange(Slugs);
