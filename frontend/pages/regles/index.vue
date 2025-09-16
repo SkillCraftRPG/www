@@ -44,7 +44,7 @@ const tiles: Tile[] = [
     icon: "fas fa-chart-simple",
     text: "Attributs",
     to: "/regles/attributs",
-    progress: 1 / 6,
+    progress: 1,
   },
   {
     icon: "fas fa-magnifying-glass-chart",
