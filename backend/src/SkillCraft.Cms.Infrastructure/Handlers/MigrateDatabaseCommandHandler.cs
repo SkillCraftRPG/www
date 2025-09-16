@@ -7,18 +7,18 @@ namespace SkillCraft.Cms.Infrastructure.Handlers;
 
 internal class MigrateDatabaseCommandHandler : Krakenar.EntityFrameworkCore.Relational.Handlers.MigrateDatabaseCommandHandler
 {
-  private readonly RulesContext _cmsContext;
+  private readonly RulesContext _rulesContext;
 
-  public MigrateDatabaseCommandHandler(RulesContext cmsContext, EventContext eventContext, KrakenarContext krakenarContext)
+  public MigrateDatabaseCommandHandler(RulesContext rulesContext, EventContext eventContext, KrakenarContext krakenarContext)
     : base(eventContext, krakenarContext)
   {
-    _cmsContext = cmsContext;
+    _rulesContext = rulesContext;
   }
 
   public override async Task HandleAsync(MigrateDatabase _, CancellationToken cancellationToken)
   {
     await base.HandleAsync(_, cancellationToken);
 
-    await _cmsContext.Database.MigrateAsync(cancellationToken);
+    await _rulesContext.Database.MigrateAsync(cancellationToken);
   }
 }

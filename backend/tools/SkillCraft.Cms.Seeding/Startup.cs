@@ -1,8 +1,9 @@
 ﻿using Krakenar.Core;
-using Krakenar.EntityFrameworkCore.PostgreSQL;
-using Krakenar.EntityFrameworkCore.Relational;
-using Krakenar.EntityFrameworkCore.SqlServer;
 using Krakenar.Infrastructure;
+using SkillCraft.Cms.Core;
+using SkillCraft.Cms.Infrastructure;
+using SkillCraft.Cms.Infrastructure.PostgreSQL;
+using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
 
 namespace SkillCraft.Cms.Seeding;
@@ -18,17 +19,16 @@ internal class Startup
 
   public void ConfigureServices(IServiceCollection services)
   {
-    services.AddKrakenarCore();
-    services.AddKrakenarInfrastructure();
-    services.AddKrakenarEntityFrameworkCoreRelational();
+    services.AddSkillCraftCmsCore();
+    services.AddSkillCraftCmsInfrastructure();
     DatabaseProvider databaseProvider = _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCoreSqlServer;
     switch (databaseProvider)
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
-        services.AddKrakenarEntityFrameworkCorePostgreSQL(_configuration);
+        services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
         break;
       case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddKrakenarEntityFrameworkCoreSqlServer(_configuration);
+        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
         break;
       default:
         throw new DatabaseProviderNotSupportedException(databaseProvider);

@@ -1,5 +1,4 @@
-﻿using Krakenar.EntityFrameworkCore.PostgreSQL;
-using Krakenar.EntityFrameworkCore.Relational;
+﻿using Krakenar.EntityFrameworkCore.Relational;
 using Krakenar.Infrastructure;
 using Krakenar.MongoDB;
 using Krakenar.Web;
@@ -9,6 +8,7 @@ using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Extensions;
 using SkillCraft.Cms.Infrastructure;
+using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Settings;
 
@@ -47,7 +47,7 @@ internal class Startup : StartupBase
     switch (databaseSettings.Provider)
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
-        services.AddKrakenarEntityFrameworkCorePostgreSQL(_configuration);
+        services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
         healthChecks.AddDbContextCheck<EventContext>();
         healthChecks.AddDbContextCheck<KrakenarContext>();
         break;

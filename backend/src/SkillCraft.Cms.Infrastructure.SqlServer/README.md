@@ -11,7 +11,7 @@ This project is setup to use migrations. All the commands below must be executed
 To create a new migration, execute the following command. Do not forget to provide a migration name!
 
 ```sh
-dotnet ef migrations add <YOUR_MIGRATION_NAME> --context CmsContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
+dotnet ef migrations add <YOUR_MIGRATION_NAME> --context RulesContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
 ```
 
 ### Remove a migration
@@ -19,7 +19,7 @@ dotnet ef migrations add <YOUR_MIGRATION_NAME> --context CmsContext --project sr
 To remove the latest unapplied migration, execute the following command.
 
 ```sh
-dotnet ef migrations remove --context CmsContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
+dotnet ef migrations remove --context RulesContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
 ```
 
 ### Generate a script
@@ -27,5 +27,5 @@ dotnet ef migrations remove --context CmsContext --project src/SkillCraft.Cms.In
 To generate a script, execute the following command. Do not forget to provide a source migration name!
 
 ```sh
-dotnet ef migrations script <SOURCE_MIGRATION> --context CmsContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
+dotnet ef migrations script <SOURCE_MIGRATION> --context RulesContext --project src/SkillCraft.Cms.Infrastructure.SqlServer --startup-project src/SkillCraft.Cms
 ```

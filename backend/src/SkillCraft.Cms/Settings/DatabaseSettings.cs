@@ -7,7 +7,7 @@ internal record DatabaseSettings
   public const string SectionKey = "Database";
 
   public bool ApplyMigrations { get; set; }
-  public DatabaseProvider Provider { get; set; } = DatabaseProvider.EntityFrameworkCoreSqlServer;
+  public DatabaseProvider Provider { get; set; } = DatabaseProvider.EntityFrameworkCorePostgreSQL;
 
   public static DatabaseSettings Initialize(IConfiguration configuration)
   {
