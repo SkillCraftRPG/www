@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Core;
 
-public enum GameSkill // TODO(fpion): Contracts NuGet
+public enum GameSkill
 {
   Acrobatics,
   Athletics,

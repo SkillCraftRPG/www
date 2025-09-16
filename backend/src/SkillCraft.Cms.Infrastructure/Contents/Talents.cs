@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Infrastructure.Contents;
 
-internal static class TalentType
+internal static class Talents
 {
   public static Guid ContentTypeId = Guid.Parse("0ea520cb-f612-48b2-af23-fb0b64a2e97c");
 

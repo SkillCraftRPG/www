@@ -7,9 +7,9 @@ using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggrega
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
 
-internal class AttributeEntity : AggregateEntity
+internal class StatisticEntity : AggregateEntity
 {
-  public int AttributeId { get; private set; }
+  public int StatisticId { get; private set; }
   public Guid Id { get; private set; }
 
   public bool IsPublished { get; private set; }
@@ -22,31 +22,30 @@ internal class AttributeEntity : AggregateEntity
   }
   public string Name { get; set; } = string.Empty;
 
-  public AttributeCategory? Category { get; set; }
-  public GameAttribute Value { get; set; }
+  public GameStatistic Value { get; set; }
+
+  public AttributeEntity? Attribute { get; private set; }
+  public int AttributeId { get; private set; }
+  public Guid AttributeUid { get; private set; }
 
   public string? Summary { get; set; }
   public string? Description { get; set; }
 
-  public List<StatisticEntity> Statistics { get; private set; } = [];
-  // TODO(fpion): Skills
-
-  public AttributeEntity(ContentLocalePublished @event) : base(@event)
+  public StatisticEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
 
     IsPublished = true;
   }
 
-  private AttributeEntity() : base()
+  private StatisticEntity() : base()
   {
   }
 
   public override IReadOnlyCollection<ActorId> GetActorIds()
   {
     List<ActorId> actorIds = new(base.GetActorIds());
-    // TODO(fpion): Statistics
-    // TODO(fpion): Skills
+    // TODO(fpion): Attribute
     return actorIds;
   }
 
@@ -55,6 +54,13 @@ internal class AttributeEntity : AggregateEntity
     Update(@event);
 
     IsPublished = true;
+  }
+
+  public void SetAttribute(AttributeEntity attribute)
+  {
+    Attribute = attribute;
+    AttributeId = attribute.AttributeId;
+    AttributeUid = attribute.Id;
   }
 
   public void Unpublish(ContentLocaleUnpublished @event)

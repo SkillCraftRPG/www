@@ -12,6 +12,7 @@ public class RulesContext : DbContext
   }
 
   internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
+  internal DbSet<StatisticEntity> Statistics => Set<StatisticEntity>();
   internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)

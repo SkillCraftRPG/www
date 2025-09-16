@@ -33,7 +33,7 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Skill).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameSkill>());
-    builder.Property(x => x.Summary).HasMaxLength(160);
+    builder.Property(x => x.Summary).HasMaxLength(160); // TODO(fpion): constant
 
     builder.HasOne(x => x.RequiredTalent).WithMany(x => x.RequiringTalents)
       .HasForeignKey(x => x.RequiredTalentId).HasPrincipalKey(x => x.TalentId)

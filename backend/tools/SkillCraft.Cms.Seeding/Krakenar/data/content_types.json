@@ -57,6 +57,63 @@
     ]
   },
   {
+    "Id": "a0841e5e-739d-4730-9db5-9436ddc06320",
+    "IsInvariant": false,
+    "UniqueName": "Statistic",
+    "DisplayName": "Statistique",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "c7705aae-a880-4ce2-805a-88358d2ef3d4",
+        "FieldType": "Attribute",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Attribute",
+        "DisplayName": "Attribut",
+        "Description": null,
+        "Placeholder": "Sélectionnez un attribut"
+      },
+      {
+        "Id": "58443427-233f-4707-9042-f8816ffaa524",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7a3b1683-2096-4b15-84e7-f0d1c39c906e",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "4a6a2843-fb79-4cb7-b743-0bff52a3f83c",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",

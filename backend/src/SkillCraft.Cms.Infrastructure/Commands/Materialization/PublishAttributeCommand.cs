@@ -36,11 +36,11 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
       _context.Attributes.Add(attribute);
     }
 
-    attribute.Slug = locale.GetString(AttributeType.Slug);
+    attribute.Slug = locale.GetString(Attributes.Slug);
     attribute.Name = locale.DisplayName?.Value ?? string.Empty;
 
     AttributeCategory? category = null;
-    IReadOnlyCollection<string>? categories = invariant.TryGetSelect(AttributeType.Category);
+    IReadOnlyCollection<string>? categories = invariant.TryGetSelect(Attributes.Category);
     if (categories is not null)
     {
       if (categories.Count > 1)
@@ -68,8 +68,8 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
     }
     attribute.Value = value;
 
-    attribute.Summary = locale.TryGetString(AttributeType.Summary);
-    attribute.Description = locale.TryGetString(AttributeType.HtmlContent);
+    attribute.Summary = locale.TryGetString(Attributes.Summary);
+    attribute.Description = locale.TryGetString(Attributes.HtmlContent);
 
     attribute.Publish(@event);
 
