@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Core;
 
-public enum GameAttribute // TODO(fpion): Contracts NuGet
+public enum GameAttribute
 {
   Dexterity,
   Health,

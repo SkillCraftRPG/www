@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Infrastructure.Contents;
 
-internal static class AttributeType
+internal static class Attributes
 {
   public static Guid ContentTypeId = Guid.Parse("fb78ad6b-8522-4037-ae1e-650c38c54165");
 

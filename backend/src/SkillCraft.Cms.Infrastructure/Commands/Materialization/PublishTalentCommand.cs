@@ -39,11 +39,11 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     talent.Slug = locale.UniqueName.Value;
     talent.Name = locale.DisplayName?.Value ?? ToName(locale.UniqueName.Value);
 
-    talent.Tier = (int)invariant.GetNumber(TalentType.Tier);
-    talent.AllowMultiplePurchases = invariant.GetBoolean(TalentType.AllowMultiplePurchases);
+    talent.Tier = (int)invariant.GetNumber(Talents.Tier);
+    talent.AllowMultiplePurchases = invariant.GetBoolean(Talents.AllowMultiplePurchases);
 
     GameSkill? skill = null;
-    IReadOnlyCollection<string>? skills = invariant.TryGetSelect(TalentType.Skill);
+    IReadOnlyCollection<string>? skills = invariant.TryGetSelect(Talents.Skill);
     if (skills is not null)
     {
       if (skills.Count > 1)
@@ -66,7 +66,7 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     talent.Skill = skill;
 
     TalentEntity? requiredTalent = null;
-    IReadOnlyCollection<Guid>? requiredTalentIds = invariant.TryGetRelatedContents(TalentType.RequiredTalent);
+    IReadOnlyCollection<Guid>? requiredTalentIds = invariant.TryGetRelatedContents(Talents.RequiredTalent);
     if (requiredTalentIds is not null)
     {
       if (requiredTalentIds.Count > 1)
@@ -85,8 +85,8 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     }
     talent.SetRequiredTalent(requiredTalent);
 
-    talent.Summary = locale.TryGetString(TalentType.Summary);
-    talent.Description = locale.TryGetString(TalentType.HtmlContent);
+    talent.Summary = locale.TryGetString(Talents.Summary);
+    talent.Description = locale.TryGetString(Talents.HtmlContent);
 
     talent.Publish(@event);
 

@@ -50,7 +50,7 @@ const tiles: Tile[] = [
     icon: "fas fa-magnifying-glass-chart",
     text: "Statistiques",
     to: "/regles/statistiques",
-    progress: 1 / 11,
+    progress: 1,
   },
   {
     icon: Icons.skill,
