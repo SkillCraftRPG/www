@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SkillCraft.Cms.Infrastructure.Commands;
+using SkillCraft.Cms.Infrastructure.Commands.Attributes;
 using SkillCraft.Cms.Infrastructure.Commands.Talents;
 using Stream = Logitar.EventSourcing.Stream;
 
@@ -21,7 +22,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<IEventHandler<ContentLocalePublished>, ContentMaterializationEvents>();
     services.AddTransient<IEventHandler<ContentLocaleUnpublished>, ContentMaterializationEvents>();
 
+    services.AddTransient<ICommandHandler<PublishAttributeCommand, CommandResult>, PublishAttributeCommandHandler>();
     services.AddTransient<ICommandHandler<PublishTalentCommand, CommandResult>, PublishTalentCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishAttributeCommand, CommandResult>, UnpublishAttributeCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishTalentCommand, CommandResult>, UnpublishTalentCommandHandler>();
   }
 
@@ -151,6 +154,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
 
     switch (kind)
     {
+      case EntityKind.Attribute:
+        await _commandBus.ExecuteAsync(new PublishAttributeCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Talent:
         await _commandBus.ExecuteAsync(new PublishTalentCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
@@ -200,6 +206,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
 
     switch (kind)
     {
+      case EntityKind.Attribute:
+        await _commandBus.ExecuteAsync(new UnpublishAttributeCommand(@event), cancellationToken);
+        break;
       case EntityKind.Talent:
         await _commandBus.ExecuteAsync(new UnpublishTalentCommand(@event), cancellationToken);
         break;

@@ -1,5 +1,62 @@
 ﻿[
   {
+    "Id": "fb78ad6b-8522-4037-ae1e-650c38c54165",
+    "IsInvariant": false,
+    "UniqueName": "Attribute",
+    "DisplayName": "Attribut",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "51729045-7510-4327-b566-f6d689947e87",
+        "FieldType": "AttributeCategory",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Category",
+        "DisplayName": "Catégorie",
+        "Description": null,
+        "Placeholder": "Sélectionnez une catégorie"
+      },
+      {
+        "Id": "9e79edc2-40db-4d89-8095-1461611b5cb2",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "dd30b087-ddfb-44a6-a8ac-a943e76e2a45",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "60aa5b3d-a35e-40bb-a808-d9aed3e5d45a",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",

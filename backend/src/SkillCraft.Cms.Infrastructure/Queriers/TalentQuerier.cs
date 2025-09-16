@@ -6,10 +6,10 @@ using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.Data;
 using Logitar.EventSourcing;
 using Microsoft.EntityFrameworkCore;
+using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
-using SkillCraft.Core;
 
 namespace SkillCraft.Cms.Infrastructure.Queriers;
 

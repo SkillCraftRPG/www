@@ -1,5 +1,4 @@
 ﻿using Krakenar.Contracts;
-using SkillCraft.Core;
 
 namespace SkillCraft.Cms.Core.Talents.Models;
 

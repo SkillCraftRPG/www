@@ -2,5 +2,6 @@
 
 internal enum EntityKind
 {
+  Attribute,
   Talent
 }

@@ -1,5 +1,24 @@
 ﻿[
   {
+    "Id": "9b47287c-9a90-4e3a-ba41-3e020ca3721a",
+    "UniqueName": "AttributeCategory",
+    "DisplayName": null,
+    "Description": null,
+    "Select": {
+      "IsMultiple": false,
+      "Options": [
+        {
+          "Text": "Physique",
+          "Value": "Physical"
+        },
+        {
+          "Text": "Mental",
+          "Value": "Mental"
+        }
+      ]
+    }
+  },
+  {
     "Id": "70916d92-11ca-4505-8b5e-51c91c33c9e4",
     "UniqueName": "Boolean",
     "DisplayName": null,
@@ -106,6 +125,17 @@
           "Value": "Thievery"
         }
       ]
+    }
+  },
+  {
+    "Id": "c1c161a1-d6bd-4e41-aa5c-3db07405f01c",
+    "UniqueName": "Slug",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": null,
+      "Pattern": "^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$"
     }
   },
   {

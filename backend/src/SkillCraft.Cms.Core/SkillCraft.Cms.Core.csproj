@@ -18,8 +18,4 @@
     <PackageReference Include="Krakenar.Core" Version="1.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SkillCraft.Core\SkillCraft.Core.csproj" />
-  </ItemGroup>
-
 </Project>
