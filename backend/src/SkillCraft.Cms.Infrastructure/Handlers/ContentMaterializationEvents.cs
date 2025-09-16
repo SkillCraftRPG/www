@@ -22,9 +22,11 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<IEventHandler<ContentLocaleUnpublished>, ContentMaterializationEvents>();
 
     services.AddTransient<ICommandHandler<PublishAttributeCommand, CommandResult>, PublishAttributeCommandHandler>();
+    services.AddTransient<ICommandHandler<PublishSkillCommand, CommandResult>, PublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<PublishStatisticCommand, CommandResult>, PublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<PublishTalentCommand, CommandResult>, PublishTalentCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishAttributeCommand, CommandResult>, UnpublishAttributeCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishSkillCommand, CommandResult>, UnpublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishStatisticCommand, CommandResult>, UnpublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishTalentCommand, CommandResult>, UnpublishTalentCommandHandler>();
   }
@@ -158,6 +160,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new PublishAttributeCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
+      case EntityKind.Skill:
+        await _commandBus.ExecuteAsync(new PublishSkillCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Statistic:
         await _commandBus.ExecuteAsync(new PublishStatisticCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
@@ -212,6 +217,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     {
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new UnpublishAttributeCommand(@event), cancellationToken);
+        break;
+      case EntityKind.Skill:
+        await _commandBus.ExecuteAsync(new UnpublishSkillCommand(@event), cancellationToken);
         break;
       case EntityKind.Statistic:
         await _commandBus.ExecuteAsync(new UnpublishStatisticCommand(@event), cancellationToken);

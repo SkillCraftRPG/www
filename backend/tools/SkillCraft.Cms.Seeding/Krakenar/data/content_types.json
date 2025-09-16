@@ -114,6 +114,63 @@
     ]
   },
   {
+    "Id": "d90f5df9-1bc2-4ee6-b433-376773ca2973",
+    "IsInvariant": false,
+    "UniqueName": "Skill",
+    "DisplayName": "Compétence",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "168e2e80-cda6-4c5f-8454-cc22b9290d8f",
+        "FieldType": "Attribute",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Attribute",
+        "DisplayName": "Attribut",
+        "Description": null,
+        "Placeholder": "Sélectionnez un attribut"
+      },
+      {
+        "Id": "aa6aae78-25a3-4edc-84b4-f8af27bc6d89",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "3cb29375-0f5f-49bd-86cf-9a10c03cccee",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "1e2a1cda-a8f8-4d3e-a1eb-e8dc41544d60",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",
