@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using SkillCraft.Cms.Infrastructure.Entities;
 
-namespace SkillCraft.Cms.Infrastructure.Commands.Talents;
+namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 
 internal record UnpublishTalentCommand(ContentLocaleUnpublished Event) : ICommand<CommandResult>;
 

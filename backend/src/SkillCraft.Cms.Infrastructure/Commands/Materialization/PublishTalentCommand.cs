@@ -7,7 +7,7 @@ using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure.Contents;
 using SkillCraft.Cms.Infrastructure.Entities;
 
-namespace SkillCraft.Cms.Infrastructure.Commands.Talents;
+namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 
 internal record PublishTalentCommand(ContentLocalePublished Event, ContentLocale Invariant, ContentLocale Locale) : ICommand<CommandResult>;
 

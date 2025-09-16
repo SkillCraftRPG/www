@@ -7,7 +7,7 @@ using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure.Contents;
 using SkillCraft.Cms.Infrastructure.Entities;
 
-namespace SkillCraft.Cms.Infrastructure.Commands.Attributes;
+namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 
 internal record PublishAttributeCommand(ContentLocalePublished Event, ContentLocale Invariant, ContentLocale Locale) : ICommand<CommandResult>;
 
@@ -61,7 +61,12 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
       }
     }
     attribute.Category = category;
-    attribute.Value = Enum.Parse<GameAttribute>(invariant.UniqueName.Value);
+
+    if (!Enum.TryParse(invariant.UniqueName.Value, out GameAttribute value))
+    {
+      _logger.LogWarning("The attribute value '{Value}' was not parsed, for attribute '{Attribute}'.", invariant.UniqueName, attribute);
+    }
+    attribute.Value = value;
 
     attribute.Summary = locale.TryGetString(AttributeType.Summary);
     attribute.Description = locale.TryGetString(AttributeType.HtmlContent);

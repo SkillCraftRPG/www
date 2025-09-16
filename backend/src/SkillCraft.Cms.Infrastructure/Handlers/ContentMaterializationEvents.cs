@@ -9,8 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SkillCraft.Cms.Infrastructure.Commands;
-using SkillCraft.Cms.Infrastructure.Commands.Attributes;
-using SkillCraft.Cms.Infrastructure.Commands.Talents;
+using SkillCraft.Cms.Infrastructure.Commands.Materialization;
 using Stream = Logitar.EventSourcing.Stream;
 
 namespace SkillCraft.Cms.Infrastructure.Handlers;
