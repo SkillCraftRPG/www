@@ -12,7 +12,7 @@
     <ul>
       <li>Réussite si la majorité (50 % + 1) des membres du groupe réussit le test.</li>
       <li>Calcul de la moyenne des résultats (faire la somme des résultats et diviser par le nombre de membres) et utiliser cette moyenne.</li>
-      <li>Réussite ou échec individuelle des membres du groupe.</li>
+      <li>Réussite ou échec individuel des membres du groupe.</li>
     </ul>
   </main>
 </template>

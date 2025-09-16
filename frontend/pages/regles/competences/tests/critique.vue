@@ -38,7 +38,10 @@
       d’obtenir une réussite critique ou réduire vos chances d’obtenir un échec critique. Certaines capacités ou conditions peuvent également réduire ces
       chances, voire les nullifier.
     </p>
-    <p>L’obtention d’une réussite critique ne signifie pas que vous infligez des <strong>points de dégâts</strong> supplémentaires, sauf lorsque indiqué.</p>
+    <p>
+      L’obtention d’une réussite critique ne signifie pas que vous infligez des
+      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> supplémentaires, sauf lorsque indiqué.
+    </p>
     <p>Les talents suivants augmentent vos chances d’obtenir une réussite critique lorsque vous effectuez une attaque :</p>
     <div class="row">
       <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">

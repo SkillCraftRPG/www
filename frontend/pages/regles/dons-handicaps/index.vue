@@ -5,8 +5,8 @@
     <p>Les dons et handicaps sont une manière additionnelle de personnaliser son personnage.</p>
     <p>Ils sont complètement optionnels : un joueur peut très bien créer un personnage sans don ni handicap.</p>
     <p>
-      Ces éléments sont également permanents, c’est-à-dire qu’ils ne peuvent être ajoutés à un personnage qu’au moment de sa création, et ils ne peuvent jamais
-      être retirés.
+      Ces éléments sont également permanents, c’est-à-dire qu’ils ne peuvent être ajoutés à un personnage qu’au moment de sa
+      <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, et ils ne peuvent jamais être retirés.
     </p>
     <p>Au moment de la création du personnage, le joueur peut lui attribuer des dons. Il doit néanmoins lui attribuer un nombre égal de handicaps.</p>
     <p>Le maître de jeu peut restreindre le nombre de dons et handicaps qu’un joueur peut attribuer à son personnage. La recommandation est la suivante :</p>

@@ -12,7 +12,7 @@
         <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
           <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
           <div class="w-100 px-3">
-            <TarProgress :striped="tile.progress < 1" :value="tile.progress * 100" />
+            <TarProgress :label="tile.progress >= 1 ? '✓' : undefined" :striped="tile.progress < 1" :value="tile.progress * 100" />
           </div>
         </NuxtLink>
       </div>
@@ -38,25 +38,25 @@ const tiles: Tile[] = [
     icon: "fas fa-id-card",
     text: "Personnages",
     to: "/regles/personnages",
-    progress: 0,
+    progress: 13 / 18,
   },
   {
     icon: "fas fa-chart-simple",
     text: "Attributs",
     to: "/regles/attributs",
-    progress: 100,
+    progress: 1 / 6,
   },
   {
     icon: "fas fa-magnifying-glass-chart",
     text: "Statistiques",
     to: "/regles/statistiques",
-    progress: 100,
+    progress: 1 / 11,
   },
   {
     icon: Icons.skill,
     text: "Compétences",
     to: "/regles/competences",
-    progress: 0,
+    progress: 15 / 35,
   },
   {
     icon: "fas fa-paw",
@@ -68,25 +68,25 @@ const tiles: Tile[] = [
     icon: "fas fa-wheelchair",
     text: "Dons & Handicaps",
     to: "/regles/dons-handicaps",
-    progress: 0,
+    progress: 1 / 47,
   },
   {
     icon: "fas fa-screwdriver-wrench",
     text: "Castes",
     to: "/regles/castes",
-    progress: 0,
+    progress: 1 / 11,
   },
   {
     icon: "fas fa-graduation-cap",
     text: "Éducations",
     to: "/regles/educations",
-    progress: 0,
+    progress: 1 / 11,
   },
   {
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
-    progress: (3 + 4) / 179,
+    progress: (3 + 19) / 179,
   },
   {
     icon: "fas fa-wand-sparkles",

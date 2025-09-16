@@ -3,8 +3,8 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Formation" :parent="parent" />
     <p>
-      Lorsqu’un personnage effectue une <strong>attaque</strong>, il doit effectuer un <NuxtLink to="/regles/competences/tests">test</NuxtLink> de
-      <NuxtLink to="/regles/competences">compétence</NuxtLink>.
+      Lorsqu’un personnage effectue une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>, il doit effectuer un
+      <NuxtLink to="/regles/competences/tests">test</NuxtLink> de <NuxtLink to="/regles/competences">compétence</NuxtLink>.
     </p>
     <p>
       Cette compétence varie en fonction de la nature de l’attaque et de l’<NuxtLink to="/regles/equipement/armes">arme</NuxtLink> utilisée. Cette compétence
