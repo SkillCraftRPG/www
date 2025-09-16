@@ -56,36 +56,36 @@ internal class TalentQuerier : ITalentQuerier
         .Select(Helper.Normalize)
         .Distinct()
         .ToArray();
-      builder.Where(RulesDb.Talents.SlugNormalized, Operators.IsIn(normalizedSlugs)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.SlugNormalized, Operators.IsIn(normalizedSlugs));
     }
     if (payload.Tiers.Count > 0)
     {
       object[] tiers = payload.Tiers.Distinct().Select(tier => (object)tier).ToArray();
-      builder.Where(RulesDb.Talents.Tier, Operators.IsIn(tiers)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.Tier, Operators.IsIn(tiers));
     }
     if (!string.IsNullOrWhiteSpace(payload.Skill))
     {
       string trimmed = payload.Skill.Trim();
       if (Enum.TryParse(trimmed, ignoreCase: true, out GameSkill skill))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsEqualTo(skill.ToString())); // TODO(fpion): test with PostgreSQL
+        builder.Where(RulesDb.Talents.Skill, Operators.IsEqualTo(skill.ToString()));
       }
       else if (trimmed.Equals("any", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNotNull()); // TODO(fpion): test with PostgreSQL
+        builder.Where(RulesDb.Talents.Skill, Operators.IsNotNull());
       }
       else if (trimmed.Equals("none", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNull()); // TODO(fpion): test with PostgreSQL
+        builder.Where(RulesDb.Talents.Skill, Operators.IsNull());
       }
     }
     if (payload.AllowMultiplePurchases.HasValue)
     {
-      builder.Where(RulesDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.AllowMultiplePurchases, Operators.IsEqualTo(payload.AllowMultiplePurchases.Value));
     }
     if (payload.RequiredTalentId.HasValue)
     {
-      builder.Where(RulesDb.Talents.RequiredTalentUid, Operators.IsEqualTo(payload.RequiredTalentId.Value)); // TODO(fpion): test with PostgreSQL
+      builder.Where(RulesDb.Talents.RequiredTalentUid, Operators.IsEqualTo(payload.RequiredTalentId.Value));
     }
 
     IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking()
@@ -138,7 +138,7 @@ internal class TalentQuerier : ITalentQuerier
   {
     IEnumerable<ActorId> actorIds = talents.SelectMany(talent => talent.GetActorIds());
     IReadOnlyDictionary<ActorId, Actor> actors = await _actorService.FindAsync(actorIds, cancellationToken);
-    CmsMapper mapper = new(actors);
+    RulesMapper mapper = new(actors);
 
     return talents.Select(mapper.ToTalent).ToList().AsReadOnly();
   }

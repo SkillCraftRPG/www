@@ -8,16 +8,16 @@ using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggrega
 
 namespace SkillCraft.Cms.Infrastructure;
 
-internal class CmsMapper
+internal class RulesMapper
 {
   private readonly Dictionary<ActorId, Actor> _actors = [];
   private readonly Actor _system = new();
 
-  public CmsMapper()
+  public RulesMapper()
   {
   }
 
-  public CmsMapper(IReadOnlyDictionary<ActorId, Actor> actors)
+  public RulesMapper(IReadOnlyDictionary<ActorId, Actor> actors)
   {
     foreach (KeyValuePair<ActorId, Actor> actor in actors)
     {
