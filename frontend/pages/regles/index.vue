@@ -11,6 +11,9 @@
       <div class="grid">
         <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
           <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
+          <div class="w-100 px-3">
+            <TarProgress :striped="tile.progress < 1" :value="tile.progress * 100" />
+          </div>
         </NuxtLink>
       </div>
     </div>
@@ -19,6 +22,7 @@
 
 <script setup lang="ts">
 import type { RouteLocationAsPathGeneric, RouteLocationAsRelativeGeneric } from "vue-router";
+import { TarProgress } from "logitar-vue3-ui";
 
 import { Icons } from "~/types/constants";
 
@@ -26,6 +30,7 @@ type Tile = {
   icon: string;
   text: string;
   to: string | RouteLocationAsRelativeGeneric | RouteLocationAsPathGeneric;
+  progress: number;
 };
 
 const tiles: Tile[] = [
@@ -33,71 +38,85 @@ const tiles: Tile[] = [
     icon: "fas fa-id-card",
     text: "Personnages",
     to: "/regles/personnages",
+    progress: 0,
   },
   {
     icon: "fas fa-chart-simple",
     text: "Attributs",
     to: "/regles/attributs",
+    progress: 100,
   },
   {
     icon: "fas fa-magnifying-glass-chart",
     text: "Statistiques",
     to: "/regles/statistiques",
+    progress: 100,
   },
   {
     icon: Icons.skill,
     text: "Compétences",
     to: "/regles/competences",
+    progress: 0,
   },
   {
     icon: "fas fa-paw",
     text: "Espèces",
     to: "/regles/especes",
+    progress: 0,
   },
   {
     icon: "fas fa-wheelchair",
     text: "Dons & Handicaps",
     to: "/regles/dons-handicaps",
+    progress: 0,
   },
   {
     icon: "fas fa-screwdriver-wrench",
     text: "Castes",
     to: "/regles/castes",
+    progress: 0,
   },
   {
     icon: "fas fa-graduation-cap",
     text: "Éducations",
     to: "/regles/educations",
+    progress: 0,
   },
   {
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
+    progress: (3 + 4) / 179,
   },
   {
     icon: "fas fa-wand-sparkles",
     text: "Magie",
     to: "/regles/magie",
+    progress: 0,
   },
   {
     icon: "fas fa-landmark",
     text: "Spécialisations",
     to: "/regles/specialisations",
+    progress: 3 / 60,
   },
   {
     icon: "fas fa-cart-shopping",
     text: "Équipement",
     to: "/regles/equipement",
+    progress: 0,
   },
   {
     icon: "fas fa-person-hiking",
     text: "Aventure",
     to: "/regles/aventure",
+    progress: 0,
   },
   {
     icon: "fas fa-hand-fist",
     text: "Combat",
     to: "/regles/combat",
+    progress: 0,
   },
 ];
 const title: string = "Règles";
