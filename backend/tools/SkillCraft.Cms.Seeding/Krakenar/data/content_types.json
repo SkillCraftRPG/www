@@ -1,0 +1,140 @@
+﻿[
+  {
+    "Id": "fb78ad6b-8522-4037-ae1e-650c38c54165",
+    "IsInvariant": false,
+    "UniqueName": "Attribute",
+    "DisplayName": "Attribut",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "51729045-7510-4327-b566-f6d689947e87",
+        "FieldType": "AttributeCategory",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Category",
+        "DisplayName": "Catégorie",
+        "Description": null,
+        "Placeholder": "Sélectionnez une catégorie"
+      },
+      {
+        "Id": "9e79edc2-40db-4d89-8095-1461611b5cb2",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "dd30b087-ddfb-44a6-a8ac-a943e76e2a45",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "60aa5b3d-a35e-40bb-a808-d9aed3e5d45a",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
+    "IsInvariant": false,
+    "UniqueName": "Talent",
+    "DisplayName": null,
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "74a6f8b4-4bef-45bf-91f6-b5d8d2ca77c0",
+        "FieldType": "TalentTier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Tier",
+        "DisplayName": "Tiers",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "16122d65-00ab-4efa-a79b-467790633ae1",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "AllowMultiplePurchases",
+        "DisplayName": "Achats multiples",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "d3dfe90d-42bf-4c2f-a534-4853a71e75cb",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Description": null,
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "771cf6bf-cd1c-4a78-be7d-790d7ec1b7c4",
+        "FieldType": "Talent",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "RequiredTalent",
+        "DisplayName": "Talent requis",
+        "Description": null,
+        "Placeholder": "Sélectionnez un talent"
+      },
+      {
+        "Id": "ee8a28d1-a576-479e-8281-2ae171e2699b",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "3ad9e599-4dba-4ff9-87ca-bbb6e7e9f1cb",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  }
+]

@@ -42,7 +42,10 @@
     </ul>
     <h2 id="des" class="h3">Dés d’Espérance et de Damnation</h2>
     <ul>
-      <li>Désignez un de ces dés comme dé d’Espérance, et l’autre comme dé de Damnation.</li>
+      <li>
+        Désignez un de ces dés comme dé d’<NuxtLink to="/regles/competences/esperance-damnation">Espérance</NuxtLink>, et l’autre comme dé de
+        <NuxtLink to="/regles/competences/esperance-damnation">Damnation</NuxtLink>.
+      </li>
       <li>
         <font-awesome-icon icon="fas fa-lightbulb" /> Si vous ne possédez qu’une paire de d10 (unité et dizaine), utilisez votre dé d’unité comme dé d’Espérance
         ainsi que votre dé de dizaine comme dé de Damnation.

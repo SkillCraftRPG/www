@@ -21,7 +21,7 @@
       Plusieurs avantages et désavantages peuvent s’appliquer à un même test. Lorsque cette situation se produit, retirez le nombre le moins élevé du nombre le
       plus élevé puis appliquez le résultat. En cas d’égalité, aucun avantage ni désavantage n’est appliqué.
     </p>
-    <p>Vous pouvez cumuler au maximum 2 avantages ou 2 désavantages. Chacun s’applique à un dé différent.</p>
+    <p>Vous pouvez appliquer au maximum 2 avantages ou 2 désavantages. Chacun s’applique à un dé différent.</p>
     <h3 class="h5">Exemples</h3>
     <ul>
       <li>Vous cumulez 3 avantages. Vous appliquez 2 avantages afin d’honorer la limite, et chaque avantage s’applique obligatoirement à un dé différent.</li>

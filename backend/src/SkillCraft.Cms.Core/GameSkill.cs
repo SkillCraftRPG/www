@@ -1,0 +1,25 @@
+﻿namespace SkillCraft.Cms.Core;
+
+public enum GameSkill // TODO(fpion): Contracts NuGet
+{
+  Acrobatics,
+  Athletics,
+  Crafting,
+  Deception,
+  Diplomacy,
+  Discipline,
+  Insight,
+  Investigation,
+  Knowledge,
+  Linguistics,
+  Medicine,
+  Melee,
+  Occultism,
+  Orientation,
+  Perception,
+  Performance,
+  Resistance,
+  Stealth,
+  Survival,
+  Thievery
+}

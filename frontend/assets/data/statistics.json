@@ -16,7 +16,7 @@
     "name": "Charge",
     "attributeId": "cb5e613c-8ba3-4077-82c0-229fed874525",
     "summary": "La Charge indique combien de poids un personnage peut porter sans pénalité. Au-delà, il est encombré et subit des effets en jeu.",
-    "description": "La **Charge**, ou capacité de portage, représente la quantité de poids qu’un personnage peut porter sans pénalité.\n\nLorsqu’une créature porte un poids supérieur à sa Charge, elle est [encombrée](/regles/equipement/encombrement).\n\nL’équation suivante calcule la Charge d’une créature :\n\n<code>Charge = 10 × (5 + Vigueur)</code>",
+    "description": "La **Charge**, ou capacité de portage, représente le poids qu’un personnage peut porter sans pénalité.\n\nLorsqu’une créature porte un poids supérieur à sa Charge, elle est [encombrée](/regles/equipement/encombrement).\n\nL’équation suivante calcule la Charge d’une créature :\n\n<code>Charge = 10 × (5 + Vigueur)</code>",
     "notes": null
   },
   {
@@ -76,7 +76,7 @@
     "name": "Puissance",
     "attributeId": "4ba22a20-bfdd-48aa-9321-83178e5b5328",
     "summary": "La Puissance représente l’impact des attaques surnaturelles et augmente les dégâts infligés lorsqu’une attaque de ce type réussit.",
-    "description": "La **Puissance** représente l’impact des [attaques surnaturelles](/regles/magie/effets/attaque) du personnage.\n\nElle est ajoutée aux points de [dégâts](/regles/combat/degats) infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Puissance d’une créature :\n\n<code>Puissance = 5 + (Sens × 2)</code>",
+    "description": "La **Puissance** représente l’impact des [attaques surnaturelles](/regles/magie/effets/attaque) du personnage.\n\nElle est ajoutée aux [points de dégâts](/regles/combat/degats) infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule la Puissance d’une créature :\n\n<code>Puissance = 5 + (Sens × 2)</code>",
     "notes": null
   },
   {
@@ -86,7 +86,7 @@
     "name": "Stratagème",
     "attributeId": "968e32a3-f49d-42dd-9d77-c6d7c61a7ed2",
     "summary": "Le Stratagème définit l’impact des attaques physiques astucieuses et augmente les dégâts infligés lorsqu’une attaque de ce type réussit.",
-    "description": "Le **Stratagème** représente l’impact des attaques physiques astucieuses du personnage.\n\nElle est ajoutée aux points de [dégâts](/regles/combat/degats) infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule le Stratagème d’une créature :\n\n<code>Stratagème = 5 + (Intellect × 2)</code>",
+    "description": "Le **Stratagème** représente l’impact des attaques physiques astucieuses du personnage.\n\nElle est ajoutée aux [points de dégâts](/regles/combat/degats) infligés lorsqu’une de ces attaques est réussie.\n\nL’équation suivante calcule le Stratagème d’une créature :\n\n<code>Stratagème = 5 + (Intellect × 2)</code>",
     "notes": null
   },
   {

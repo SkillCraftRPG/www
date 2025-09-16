@@ -36,6 +36,6 @@ internal static class ValidationExtensions
 
   public static IRuleBuilderOptions<T, string> Summary<T>(this IRuleBuilder<T, string> ruleBuilder)
   {
-    return ruleBuilder.NotEmpty().MaximumLength(byte.MaxValue); // TODO(fpion): should not exceed 160 characters.
+    return ruleBuilder.NotEmpty().MaximumLength(byte.MaxValue); // NOTE(fpion): should not exceed 160 characters.
   }
 }

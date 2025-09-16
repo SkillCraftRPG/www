@@ -90,22 +90,26 @@
       séance de jeu s’ils n’ont pas été utilisés.
     </p>
     <p>
-      Une exception notable à cette règle survient lorsque la séance de jeu se termine sur un combat non complété : le maître de jeu est alors invité à
-      conserver ces points de Damnation jusqu’à la fin du combat, puis à se débarrasser des points générés lors de la séance précédente lorsque le combat est
-      terminé.
+      Une exception notable à cette règle survient lorsque la séance de jeu se termine sur un <NuxtLink to="/regles/combat">combat</NuxtLink> non complété : le
+      maître de jeu est alors invité à conserver ces points de Damnation jusqu’à la fin du combat, puis à se débarrasser des points générés lors de la séance
+      précédente lorsque le combat est terminé.
     </p>
     <h2 id="momentum" class="h3">Momentum</h2>
-    <p>La règle du momentum décrit la réserve temporaire de points d’Espérance partagés par le groupe.</p>
+    <p>La règle du momentum décrit la réserve de points d’Espérance temporaires partagés par le groupe.</p>
     <p>Lorsqu’un personnage génère de l’Espérance en ayant atteint sa limite, ces nouveaux points sont placés dans cette réserve.</p>
     <p>Les joueurs peuvent piger dans cette réserve librement, tant qu’il y reste des points.</p>
     <p>À la fin de la séance de jeu, cette réserve est vidée et les points non utilisés sont perdus.</p>
     <p>
-      Une exception notable à cette règle survient lorsque la séance de jeu se termine sur un combat non complété : les joueurs sont alors invités à converver
-      ces points d’Espérance jusqu’àla fin du combat, puis à se débarrasser des points générés lors de la séance précédente lorsque le combat est terminé.
+      Une exception notable à cette règle survient lorsque la séance de jeu se termine sur un <NuxtLink to="/regles/combat">combat</NuxtLink> non complété : les
+      joueurs sont alors invités à converver ces points d’Espérance jusqu’à la fin du combat, puis à se débarrasser des points générés lors de la séance
+      précédente lorsque le combat est terminé.
     </p>
     <h2 id="depense" class="h3">Dépense</h2>
     <p>La table ci-dessous répertorie des exemples de dépense de points d’Espérance et de Damnation.</p>
-    <p>Toute dépense peut se faire avant ou pendant un test ou un jet de <strong>dégâts</strong>, mais jamais après l’annonce du résultat final.</p>
+    <p>
+      Toute dépense peut se faire avant ou pendant un test ou un jet de <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink>, mais jamais après l’annonce du
+      résultat final.
+    </p>
     <p>Le maître de jeu peut refuser une dépense de points d’Espérance, mais il lui est fortement conseillé d’atteindre plutôt un compromis.</p>
     <table class="table table-striped text-center">
       <thead>

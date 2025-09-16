@@ -1,11 +1,77 @@
 name: skillcraft
 services:
+  skillcraft_mongo:
+    image: mongo
+    container_name: SkillCraft_mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: skillcraft
+      MONGO_INITDB_ROOT_PASSWORD: qn63ZrdDLNP2XHV4
+    ports:
+      - 27028:27017
+    volumes:
+      - mongodata:/data/db
+
+  skillcraft_mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: SkillCraft_mssql
+    restart: unless-stopped
+    user: root
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: yUEeMb4Rw6F3Aupr
+    ports:
+      - 1438:1433
+    volumes:
+      - mssql_backup:/var/opt/mssql/backup
+      - mssql_data:/var/opt/mssql/data
+      - mssql_log:/var/opt/mssql/log
+
+  skillcraft_postgres:
+    image: postgres
+    container_name: SkillCraft_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: JBWP9LYhjU6dmRMF
+    ports:
+      - 5438:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  skillcraft_cms:
+    build:
+      context: ./backend
+      dockerfile: /src/SkillCraft.Cms/Dockerfile
+    image: skillcraft_cms
+    container_name: SkillCraft_cms
+    depends_on:
+      - skillcraft_mongo
+      - skillcraft_mssql
+      - skillcraft_postgres
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_Environment: Development
+      MONGOCONNSTR_Krakenar: mongodb://skillcraft:qn63ZrdDLNP2XHV4@skillcraft_mongo:27017/
+      POSTGRESQLCONNSTR_Krakenar: User ID=postgres;Password=JBWP9LYhjU6dmRMF;Host=skillcraft_postgres;Port=5432;Database=cms;
+      SQLCONNSTR_Krakenar: Server=skillcraft_mssql;Database=cms;User Id=SA;Password=yUEeMb4Rw6F3Aupr;Persist Security Info=False;Encrypt=False;
+    ports:
+      - 8888:8080
+
   skillcraft_frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     image: skillcraft_frontend
     container_name: SkillCraft_frontend
+    depends_on:
+      - skillcraft_cms
     restart: unless-stopped
     ports:
       - 18088:80
+
+volumes:
+  mongodata:
+  mssql_backup:
+  mssql_data:
+  mssql_log:
+  postgres_data:

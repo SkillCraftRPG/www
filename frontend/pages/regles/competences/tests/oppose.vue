@@ -14,22 +14,16 @@
     </p>
     <p>Certains tests opposés sont effectués avec la même <NuxtLink to="/regles/competences">compétence</NuxtLink> pour l’acteur et la cible, par exemple :</p>
     <ul>
+      <li><NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>. Course de vitesse ou à obstacles, compétition de cirque.</li>
+      <li><NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink>. Concours de force, bras de fer, tir à la corde, lutte.</li>
+      <li><NuxtLink to="/regles/competences/diplomatie">Diplomatie</NuxtLink>. Un acheteur et un vendeur négocient un prix.</li>
       <li>
-        <strong><NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>.</strong> Course de vitesse ou à obstacles, compétition de cirque.
+        <NuxtLink to="/regles/competences/linguistique">Linguistique</NuxtLink>. Une créature tente de comprendre un message caché ou encrypté par une autre
+        créature.
       </li>
       <li>
-        <strong><NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink>.</strong> Concours de force, bras de fer, tir à la corde, lutte.
-      </li>
-      <li>
-        <strong><NuxtLink to="/regles/competences/diplomatie">Diplomatie</NuxtLink>.</strong> Un acheteur et un vendeur négocient un prix.
-      </li>
-      <li>
-        <strong><NuxtLink to="/regles/competences/linguistique">Linguistique</NuxtLink>.</strong> Une créature tente de comprendre un message caché ou encrypté
-        par une autre créature.
-      </li>
-      <li>
-        <strong><NuxtLink to="/regles/competences/roublardise">Roublardise</NuxtLink>.</strong> Une créature tente de dénouer ou de s’échapper de liens noués
-        par une autre créature.
+        <NuxtLink to="/regles/competences/roublardise">Roublardise</NuxtLink>. Une créature tente de dénouer ou de s’échapper de liens noués par une autre
+        créature.
       </li>
     </ul>
     <p>Certains tests opposés sont effectués avec une compétence différente pour l’acteur et pour sa cible, par exemple :</p>

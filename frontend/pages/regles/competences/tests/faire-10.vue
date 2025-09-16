@@ -7,8 +7,9 @@
     <p><i>Faire 10</i> signifie que votre personnage fait de son mieux afin d’atteindre rapidement un résultat satisfaisant.</p>
     <ul>
       <li>
-        <strong>Vous n’êtes pas menacé.</strong> Vous n’êtes pas considéré menacé si aucune créature ennemie ne peut vous atteindre pas une attaque quelconque
-        (mêlée, à distance ou même surnaturelle).
+        <strong>Vous n’êtes pas menacé.</strong> Vous n’êtes pas considéré menacé si aucune créature ennemie ne peut vous atteindre pas une
+        <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> quelconque (<NuxtLink to="/regles/combat/attaque/melee">mêlée</NuxtLink>,
+        <NuxtLink to="/regles/combat/attaque/distance">à distance</NuxtLink> ou même <NuxtLink to="/regles/magie/effets/attaque">surnaturelle</NuxtLink>).
       </li>
       <li>
         <strong>Vous n’êtes pas distrait.</strong> Certaines situations peuvent causer la distraction, par exemple un fort bruit ambiant, des mouvements

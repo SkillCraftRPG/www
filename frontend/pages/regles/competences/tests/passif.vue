@@ -18,24 +18,24 @@
     <h2 class="h3">Exemples</h2>
     <ul>
       <li>
-        <strong><NuxtLink to="/regles/competences/diplomatie">Diplomatie</NuxtLink>.</strong> Un personnage discute avec un paysan craintif envers les
-        étrangers, sans savoir que ce dernier évalue sa fiabilité en écoutant ses propos.
+        <NuxtLink to="/regles/competences/diplomatie">Diplomatie</NuxtLink>. Un personnage discute avec un paysan craintif envers les étrangers, sans savoir que
+        ce dernier évalue sa fiabilité en écoutant ses propos.
       </li>
       <li>
-        <strong><NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>.</strong> Un personnage se déplace normalement, sans essayer d’être discret
-        mais sans être bruyant non plus, alors que des sentinelles bien dissimulées sont aux aguets.
+        <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>. Un personnage se déplace normalement, sans essayer d’être discret mais sans être
+        bruyant non plus, alors que des sentinelles bien dissimulées sont aux aguets.
       </li>
       <li>
-        <strong><NuxtLink to="/regles/competences/intuition">Intuition</NuxtLink>.</strong> Un personnage entend une discussion sans y porter attention, absorbé
-        dans un bouquin. Un des interlocuteurs dit un mensonge flagrant.
+        <NuxtLink to="/regles/competences/intuition">Intuition</NuxtLink>. Un personnage entend une discussion sans y porter attention, absorbé dans un bouquin.
+        Un des interlocuteurs dit un mensonge flagrant.
       </li>
       <li>
-        <strong><NuxtLink to="/regles/competences/perception">Perception</NuxtLink>.</strong> Un groupe d’aventuriers foule un sentier forestier en marchant à
-        vitesse normale, sans se douter qu’une embuscade leur est entendue plus loin par un groupe de bandits.
+        <NuxtLink to="/regles/competences/perception">Perception</NuxtLink>. Un groupe d’aventuriers foule un sentier forestier en marchant à vitesse normale,
+        sans se douter qu’une embuscade leur est entendue plus loin par un groupe de bandits.
       </li>
       <li>
-        <strong><NuxtLink to="/regles/competences/survie">Survie</NuxtLink>.</strong> Un groupe d’aventuriers arpente une vaste étendue sauvage, suivant des
-        directions ou une carte, sans toutefois bénéficier d’un chemin direct ou de repères évidents.
+        <NuxtLink to="/regles/competences/survie">Survie</NuxtLink>. Un groupe d’aventuriers arpente une vaste étendue sauvage, suivant des directions ou une
+        carte, sans toutefois bénéficier d’un chemin direct ou de repères évidents.
       </li>
     </ul>
   </main>
