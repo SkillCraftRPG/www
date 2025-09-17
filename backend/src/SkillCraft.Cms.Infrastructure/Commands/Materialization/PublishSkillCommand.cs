@@ -37,7 +37,7 @@ internal class PublishSkillCommandHandler : ICommandHandler<PublishSkillCommand,
     }
 
     skill.Slug = locale.GetString(Skills.Slug);
-    skill.Name = locale.DisplayName?.Value ?? ToName(locale.UniqueName.Value);
+    skill.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
     if (!Enum.TryParse(invariant.UniqueName.Value, out GameSkill value))
     {
@@ -75,7 +75,4 @@ internal class PublishSkillCommandHandler : ICommandHandler<PublishSkillCommand,
 
     return new CommandResult();
   }
-
-  private static string ToName(string slug) => string.Join(' ', slug.Split('-').Select(Capitalize));
-  private static string Capitalize(string value) => string.Concat(char.ToUpperInvariant(value.First()), value[1..]);
 }

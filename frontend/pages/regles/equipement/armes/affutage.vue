@@ -2,7 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Un personnage peut affûter une arme afin de lui conférer un bonus temporaire de points de dégâts.</p>
+    <p>Un personnage peut affûter une arme afin de lui conférer un bonus temporaire de points de <NuxtLink to="/regles/combat/degats/jet">dégâts</NuxtLink>.</p>
     <p>
       Cet affûtage peut être effectué sur une arme non magique simple ou martiale, tant qu’elle n’est pas
       <NuxtLink to="/regles/equipement/armes/improvisees">improvisée</NuxtLink> ni brisée.
@@ -24,7 +24,7 @@
     </p>
     <p>
       Il existe plusieurs niveaux d’affûtage. L’artisan sélectionne un niveau lorsqu’il affûte une arme. Voici les niveaux d’affûtage, le prix d’un affûtage
-      auprès d’un professionnel, ainsi que le talent requis afin de pouvoir effectuer l’affûtage à ce niveau.
+      auprès d’un professionnel, ainsi que le <NuxtLink to="/regles/talents">talent</NuxtLink> requis afin de pouvoir effectuer l’affûtage à ce niveau.
     </p>
     <table class="table table-striped text-center">
       <thead>

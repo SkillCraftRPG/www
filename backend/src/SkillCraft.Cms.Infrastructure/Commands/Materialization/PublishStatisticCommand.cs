@@ -37,7 +37,7 @@ internal class PublishStatisticCommandHandler : ICommandHandler<PublishStatistic
     }
 
     statistic.Slug = locale.GetString(Statistics.Slug);
-    statistic.Name = locale.DisplayName?.Value ?? ToName(locale.UniqueName.Value);
+    statistic.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
     if (!Enum.TryParse(invariant.UniqueName.Value, out GameStatistic value))
     {
@@ -78,7 +78,4 @@ internal class PublishStatisticCommandHandler : ICommandHandler<PublishStatistic
 
     return new CommandResult();
   }
-
-  private static string ToName(string slug) => string.Join(' ', slug.Split('-').Select(Capitalize));
-  private static string Capitalize(string value) => string.Concat(char.ToUpperInvariant(value.First()), value[1..]);
 }

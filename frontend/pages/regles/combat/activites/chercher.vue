@@ -49,4 +49,6 @@ useSeo({
   title,
   description: "Découvrez comment détecter créatures dissimulées, invisibles ou objets cachés grâce à la perception, l’observation et la surveillance.",
 });
+
+// TODO(fpion): chercher avec Investigation? Pour fonctionner avec le talent Enquête? Peut-être échanger avec la capacité du talent Investigation?
 </script>

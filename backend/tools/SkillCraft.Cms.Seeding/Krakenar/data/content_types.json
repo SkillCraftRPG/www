@@ -226,6 +226,18 @@
         "Placeholder": "Sélectionnez un talent"
       },
       {
+        "Id": "02733d80-d6d0-4a66-9cfb-d7ddf75c2a5c",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
         "Id": "ee8a28d1-a576-479e-8281-2ae171e2699b",
         "FieldType": "Summary",
         "IsInvariant": false,

@@ -4,8 +4,8 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>Un bouclier est une protection tenue par une ou plusieurs mains.</p>
     <p>
-      De manière générale, il doit être dégainé de la même manière qu’une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink>, et il peut être jeté au sol
-      en action libre.
+      De manière générale, il doit être dégainé de la même manière qu’une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink>, et il peut être
+      <NuxtLink to="/regles/combat/activites/lacher">jeté au sol</NuxtLink> en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>.
     </p>
     <p>Une créature peut bénéficier de plusieurs boucliers à la fois, mais elle ne peut lever qu’un seul bouclier à la fois.</p>
     <p>
@@ -59,7 +59,8 @@
     <p>
       Les boucliers <strong>lourds</strong> peuvent être levés par une action. Lorsqu’une créature lève son bouclier, celui-ci lui confère des
       <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink> supplémentaires et elle peut bénéficier de la propriété <i>Rempart</i> du bouclier,
-      mais sa vitesse de réduite de moitié. Elle peut abaisser son bouclier en action libre afin d’annuler les bénéfices et pénalités associés.
+      mais sa <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> est réduite de moitié. Elle peut abaisser son bouclier en action libre afin
+      d’annuler les bénéfices et pénalités associés.
     </p>
     <h2 id="talents" class="h3">Talents</h2>
     <p>Les talents suivants sont utiles aux utilisateurs de boucliers.</p>
@@ -187,4 +188,6 @@ useSeo({
   title,
   description: "Découvrez les catégories, propriétés, talents et particularités des boucliers, ainsi que leur prix, poids, défense et résistances.",
 });
+
+// TODO(fpion): "lever son bouclier", action / rabaisser, avec liens depuis cette page
 </script>

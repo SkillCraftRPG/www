@@ -36,8 +36,8 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
       _context.Talents.Add(talent);
     }
 
-    talent.Slug = locale.UniqueName.Value;
-    talent.Name = locale.DisplayName?.Value ?? ToName(locale.UniqueName.Value);
+    talent.Slug = locale.GetString(Talents.Slug);
+    talent.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
     talent.Tier = (int)invariant.GetNumber(Talents.Tier);
     talent.AllowMultiplePurchases = invariant.GetBoolean(Talents.AllowMultiplePurchases);
@@ -95,7 +95,4 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
 
     return new CommandResult();
   }
-
-  private static string ToName(string slug) => string.Join(' ', slug.Split('-').Select(Capitalize));
-  private static string Capitalize(string value) => string.Concat(char.ToUpperInvariant(value.First()), value[1..]);
 }
