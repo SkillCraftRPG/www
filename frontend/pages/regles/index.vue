@@ -56,7 +56,7 @@ const tiles: Tile[] = [
     icon: Icons.skill,
     text: "Compétences",
     to: "/regles/competences",
-    progress: 15 / 35,
+    progress: 1,
   },
   {
     icon: "fas fa-paw",
