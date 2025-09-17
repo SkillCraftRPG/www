@@ -24,7 +24,7 @@ internal class TalentEntity : AggregateEntity
 
   public int Tier { get; set; }
   public bool AllowMultiplePurchases { get; set; }
-  public GameSkill? Skill { get; set; }
+  public GameSkill? Skill { get; set; } // TODO(fpion): should be a foreign key
 
   public TalentEntity? RequiredTalent { get; private set; }
   public int? RequiredTalentId { get; private set; }

@@ -28,8 +28,8 @@
     </p>
     <p>Il coûtera généralement le double du prix pour faire renforcer un objet auprès d’un artisan afin de payer son temps de travail et son expertise.</p>
     <p>
-      Il existe plusieurs niveaux de renforcement. L’artisan sélectionne un niveau lorsqu’il affûte un objet. Voici les niveaux de renforcement et le talent
-      requis afin de pouvoir renforcer à ce niveau.
+      Il existe plusieurs niveaux de renforcement. L’artisan sélectionne un niveau lorsqu’il renforce un équipement. Voici les niveaux de renforcement et le
+      <NuxtLink to="/regles/talents">talent</NuxtLink> requis afin de pouvoir renforcer à ce niveau.
     </p>
     <table class="table table-striped text-center">
       <thead>

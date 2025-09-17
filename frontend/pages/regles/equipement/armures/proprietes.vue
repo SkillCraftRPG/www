@@ -18,17 +18,23 @@
         pas dotée de cette propriété est considérée comme interrompue, peu importe sa durée.
       </li>
       <li>
-        <strong>Ferme.</strong> La fabrication de cette armure confère au personnage la <strong>résistance</strong> aux
-        <strong>dégâts physiques tranchants</strong>, que cela soit par un ensemble de pièces très fermement maintenues entre elles, ou par sa composition de
-        pièces extrêmement solides. Si son armure est magique, alors il est résistant à tout dégât tranchant (physique et magique).
+        <strong>Ferme.</strong> La fabrication de cette armure confère au personnage la
+        <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink> aux
+        <NuxtLink to="/regles/combat/degats/types">dégâts physiques tranchants</NuxtLink>, que cela soit par un ensemble de pièces très fermement maintenues
+        entre elles, ou par sa composition de pièces extrêmement solides. Si son armure est magique, alors il est résistant à tout dégât tranchant (physique et
+        magique).
       </li>
       <li>
-        <strong>Hybride.</strong> Les multiples couches de matériaux différents composant cette armure confèrent au personnage la résistance aux dégâts
-        physiques perforants. Si son armure est magique, alors il est résistant à tout dégât perforant (physique et magique).
+        <strong>Hybride.</strong> Les multiples couches de matériaux différents composant cette armure confèrent au personnage la
+        <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink> aux
+        <NuxtLink to="/regles/combat/degats/types">dégâts physiques perforants</NuxtLink>. Si son armure est magique, alors il est résistant à tout dégât
+        perforant (physique et magique).
       </li>
       <li>
-        <strong>Matelassée.</strong> La grande quantité de rembourrage constituant cette armure confère au personnage la résistance aux dégâts physiques
-        contondants. Si son armure est magique, alors il est résistant à tout dégât perforant (physique et magique).
+        <strong>Matelassée.</strong> La grande quantité de rembourrage constituant cette armure confère au personnage la
+        <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink> aux
+        <NuxtLink to="/regles/combat/degats/types">dégâts physiques contondants</NuxtLink>. Si son armure est magique, alors il est résistant à tout dégât
+        perforant (physique et magique).
       </li>
       <li>
         <strong>Rempart.</strong> Lorsque le personnage doit effectuer un

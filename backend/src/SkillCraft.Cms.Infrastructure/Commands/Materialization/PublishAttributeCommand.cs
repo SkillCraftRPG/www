@@ -37,7 +37,7 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
     }
 
     attribute.Slug = locale.GetString(Attributes.Slug);
-    attribute.Name = locale.DisplayName?.Value ?? string.Empty;
+    attribute.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
     AttributeCategory? category = null;
     IReadOnlyCollection<string>? categories = invariant.TryGetSelect(Attributes.Category);
@@ -78,7 +78,4 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
 
     return new CommandResult();
   }
-
-  private static string ToName(string slug) => string.Join(' ', slug.Split('-').Select(Capitalize));
-  private static string Capitalize(string value) => string.Concat(char.ToUpperInvariant(value.First()), value[1..]);
 }

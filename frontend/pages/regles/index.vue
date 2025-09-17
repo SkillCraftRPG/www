@@ -86,7 +86,7 @@ const tiles: Tile[] = [
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
-    progress: (3 + 19) / 179,
+    progress: (3 + 31) / 179,
   },
   {
     icon: "fas fa-wand-sparkles",
@@ -104,7 +104,7 @@ const tiles: Tile[] = [
     icon: "fas fa-cart-shopping",
     text: "Équipement",
     to: "/regles/equipement",
-    progress: 0,
+    progress: 38 / 40,
   },
   {
     icon: "fas fa-person-hiking",

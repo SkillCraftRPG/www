@@ -35,8 +35,9 @@
     </ul>
     <h2 id="poudre-noir" class="h3">Poudre noire</h2>
     <p>
-      La poudre noire sert à opérer à les armes à feu et l’artillerie. Lorsqu’un personnage <strong>charge</strong> son arme à feu, il verse d’abord environ un
-      tiers d’once de poudre noire dans le canon de l’arme, puis il y place la <NuxtLink to="/regles/equipement/armes/munitions">munition</NuxtLink>.
+      La poudre noire sert à opérer à les armes à feu et l’artillerie. Lorsqu’un personnage
+      <NuxtLink to="/regles/combat/activites/chargement">charge</NuxtLink> son arme à feu, il verse d’abord environ un tiers d’once de poudre noire dans le
+      canon de l’arme, puis il y place la <NuxtLink to="/regles/equipement/armes/munitions">munition</NuxtLink>.
     </p>
     <p>
       Elle est produite à partir d’un mélange homogène de charbon de bois, de soufre et de salpêtre séparément broyés finement. Sa production étant complexe,
@@ -62,16 +63,17 @@
       d’<NuxtLink to="/regles/competences/tests/critique">échec critique</NuxtLink>.
     </p>
     <p>
-      Une arme bloquée ne peut être utilisée tant qu’elle n’est pas débloquée. Elle peut être débloquée par l’action <strong>Objet</strong>, en utilisant des
+      Une arme bloquée ne peut être utilisée tant qu’elle n’est pas débloquée. Elle peut être débloquée par l’action
+      <NuxtLink to="/regles/combat/activites/objet">Objet</NuxtLink>, en utilisant des
       <NuxtLink to="/regles/equipement/outils">outils de bricoleur</NuxtLink> et en réussissant un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/artisanat">Artisanat</NuxtLink> de
       <NuxtLink to="/regles/competences/tests/difficulte">difficulté moyenne</NuxtLink>.
     </p>
     <p>
-      Lorsqu’une arme à feu brise, les probabilités qu’elle explose sont de ⅓ ({{ $n(1 / 3, "percentage") }}). Elle explose automatiquement en cas d’<NuxtLink
-        to="/regles/competences/tests/critique"
-        >échec critique</NuxtLink
-      >. L’explosion inflige 9 + 1d6 points de dégâts de feu au personnage tenant l’arme.
+      Lorsqu’une arme à feu <NuxtLink to="/regles/equipement/reparation">brise</NuxtLink>, les probabilités qu’elle explose sont de ⅓ ({{
+        $n(1 / 3, "percentage")
+      }}). Elle explose automatiquement en cas d’<NuxtLink to="/regles/competences/tests/critique">échec critique</NuxtLink>. L’explosion inflige 9 + 1d6 points
+      de <NuxtLink to="/regles/combat/degats/types">dégâts de feu</NuxtLink> au personnage tenant l’arme.
     </p>
     <p>
       Toute créature située à 1,5 mètres ou moins du personnage doit effectuer un

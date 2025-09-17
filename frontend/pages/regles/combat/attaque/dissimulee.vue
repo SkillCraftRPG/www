@@ -16,7 +16,8 @@
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> se voit conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage"
         >avantage</NuxtLink
       >. La position de l’attaquant est ensuite révélée, que l’attaque réussisse ou non, sauf si l’attaquant a acquis le
-      <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/maraudage">Maraudage</NuxtLink> et que l’attaque échoue.
+      <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/maraudage">Maraudage</NuxtLink>, que l’attaque échoue, et qu’il s’agit
+      d’une <NuxtLink to="/regles/combat/attaque/distance">attaque à distance</NuxtLink>.
     </p>
     <p>
       Voici quelques exemples de situations permettant de bénéficier de cet avantage : <NuxtLink to="/regles/combat/activites/cacher">se cacher</NuxtLink>, être

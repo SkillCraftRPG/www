@@ -65,11 +65,6 @@ const items: MenuItem[] = [
     description: "Défense : esquive, boucliers et armures pour bloquer les attaques, avec talents de protection.",
   },
   {
-    path: "/regles/combat/attaque/dissimulee",
-    title: "Attaque dissimulée",
-    description: "Pénalités aux cibles non voyantes et avantages pour les assaillants dissimulés.",
-  },
-  {
     path: "/regles/combat/attaque/melee",
     title: "Attaque de mêlée",
     description: "Coups au corps-à-corps avec armes ou membres, portée de 1,5 mètres.",
@@ -83,6 +78,11 @@ const items: MenuItem[] = [
     path: "/regles/combat/attaque/opportunite",
     title: "Attaque d’opportunité",
     description: "Effectuer une attaque en réaction à un déclencheur, règles et talents améliorant cette capacité.",
+  },
+  {
+    path: "/regles/combat/attaque/dissimulee",
+    title: "Attaque dissimulée",
+    description: "Pénalités aux cibles non voyantes et avantages pour les assaillants dissimulés.",
   },
   {
     path: "/regles/combat/attaque/deux-armes",

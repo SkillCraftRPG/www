@@ -50,8 +50,8 @@
       La nourriture fraîche est bien plus savoureuse et moins onéreuse que les rations. En revanche, elle est périssable, moins calorique que les rations, et on
       doit cuisiner en lot afin d’obtenir un faible prix. Le prix indiqué est un prix par portion, et un personnage doit cuisiner 4 portions ou plus afin de
       bénéficier de ce bas prix. Chaque portion pèse entre 300 et 500 grammes, et 3 portions doivent être consommées chaque jour afin de ne pas souffrir de la
-      <strong>faim</strong>. Étant périssable, cette nourriture se conserve généralement 24 heures ou moins. Il faut donc quotidiennement prendre le temps de se
-      rendre au marché afin d’acheter la nourriture, puis de la cuisiner.
+      <NuxtLink to="/regles/aventure/environnement/alimentation">faim</NuxtLink>. Étant périssable, cette nourriture se conserve généralement 24 heures ou
+      moins. Il faut donc quotidiennement prendre le temps de se rendre au marché afin d’acheter la nourriture, puis de la cuisiner.
     </p>
     <table class="table table-striped text-center">
       <thead>

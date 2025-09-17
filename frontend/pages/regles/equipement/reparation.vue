@@ -17,12 +17,12 @@
     <p>
       Lorsqu’une <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> n’a pas perdu
       tous ses <NuxtLink to="/regles/equipement/resistance">points de Résistance</NuxtLink>, on effectue une règle de trois afin de calculer le coût de la
-      réparation. Par exemple, il coûtera 30 deniers en matériaux afin de restaurer 12 points de Résistance à un bouclier possédant 20 points au total et ayant
-      un prix de vente de 400 deniers.
+      réparation. Par exemple, il coûtera <NuxtLink to="/regles/equipement/monnaie">30 deniers</NuxtLink> en matériaux afin de restaurer 12 points de Résistance
+      à un bouclier possédant 20 points au total et ayant un prix de vente de 400 deniers.
     </p>
     <p>
-      Les renforts sur un bouclier ou une armure peuvent également être réparés. Le coût en matériaux est le même que pour les autres points de Résistance de
-      l’objet.
+      Les <NuxtLink to="/regles/equipement/armures/renforcees">renforts</NuxtLink> sur un bouclier ou une armure peuvent également être réparés. Le coût en
+      matériaux est le même que pour les autres points de Résistance de l’objet.
     </p>
     <p>
       La nature de l’objet, son état, la rareté des ressources nécessaires ainsi que les habiletés de l’artisan peuvent faire varier ce prix, à la discrétion du

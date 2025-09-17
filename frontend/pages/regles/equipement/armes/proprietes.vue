@@ -23,8 +23,8 @@
       </li>
       <li>
         <strong>Dispersion.</strong> L’arme disperse des projectiles dans un cône de longueur égale à sa portée. Toute créature touchée reçoit les points de
-        dégâts. Un dé supplémentaire est ajouté aux points de dégâts reçus par une créature touchée se trouvant à 1,5 mètres ou moins de l’attaquant (tir à bout
-        portant).
+        <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink>. Un <NuxtLink to="/regles/combat/degats/jet">dé supplémentaire</NuxtLink> est ajouté aux points
+        de dégâts reçus par une créature touchée se trouvant à 1,5 mètres ou moins de l’attaquant (tir à bout portant).
       </li>
       <li>
         <strong>Finesse.</strong> Si le personnage a acquis le talent <NuxtLink to="/regles/talents/armes-de-finesse">Armes de finesse</NuxtLink>, il peut
@@ -41,8 +41,9 @@
         de dégâts infligés.
       </li>
       <li>
-        <strong>Légère.</strong> Permet à un personnage de combattre avec une arme dans chaque main sans subir une pénalité supplémentaire lorsqu’il effectue
-        une attaque. Chaque arme doit être dotée de cette propriété.
+        <strong>Légère.</strong> Permet à un personnage de combattre avec une arme
+        <NuxtLink to="/regles/combat/attaque/deux-armes">dans chaque main</NuxtLink> sans subir une pénalité supplémentaire lorsqu’il effectue une attaque.
+        Chaque arme doit être dotée de cette propriété.
       </li>
       <li>
         <strong>Lourde.</strong> Les armes lourdes imposent le <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink> aux tests
@@ -64,7 +65,10 @@
       exemple <i>Jet (4/12)</i> ou <i>Munition (30/120)</i>.
     </p>
     <p>Ces portées représentent un nombre de cases sur la grille de combat. Chaque case possède généralement une arête de 1,5 mètres.</p>
-    <p>Lorsqu’une attaque à distance est effectuée, la distance entre l’attaquant et sa cible est comparée à ces portées.</p>
+    <p>
+      Lorsqu’une <NuxtLink to="/regles/combat/attaque/distance">attaque à distance</NuxtLink> est effectuée, la distance entre l’attaquant et sa cible est
+      comparée à ces portées.
+    </p>
     <ul>
       <li>Si la distance est inférieure ou égale à la première (et plus petite) des deux portées, le test de l’attaque est effectué normalement.</li>
       <li>
