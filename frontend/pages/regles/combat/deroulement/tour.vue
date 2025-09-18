@@ -30,7 +30,7 @@
     <p>Le tour de la créature interrompue est suspendu le temps de résoudre la réaction, et il reprend ensuite son cours.</p>
     <p>Une créature peut réagir à la réaction d’une autre créature, même lorsque cette réaction se produit pendant son propre tour.</p>
     <p>
-      La majorité des réactions correspondent à une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>, mais certaines capacités
+      La plupart des réactions correspondent à une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>, mais certaines capacités
       permettent d’effectuer d’autres activités en réaction.
     </p>
     <p>Une créature <NuxtLink to="/regles/combat/deroulement/depourvu">prise au dépourvu</NuxtLink> ne peut utiliser sa réaction.</p>

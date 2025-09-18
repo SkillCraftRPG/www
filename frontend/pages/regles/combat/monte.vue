@@ -35,9 +35,9 @@
         <NuxtLink to="/regles/combat/activites/pas-prudent">Pas prudent</NuxtLink> et <NuxtLink to="/regles/combat/activites/defense">Défense</NuxtLink>.
       </li>
       <li>
-        Une créature non entraînée ou intelligente possède sa propre valeur d’<NuxtLink>Initiative</NuxtLink> et joue son
-        <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> indépendamment du vôtre. Elle peut agir comme bon lui semble et n’est pas limitée dans
-        les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> qu’elle peut effectuer.
+        Une créature non entraînée ou intelligente possède sa propre valeur d’<NuxtLink to="/regles/combat/deroulement/initiative">Initiative</NuxtLink> et joue
+        son <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> indépendamment du vôtre. Elle peut agir comme bon lui semble et n’est pas limitée
+        dans les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> qu’elle peut effectuer.
       </li>
     </ul>
   </main>

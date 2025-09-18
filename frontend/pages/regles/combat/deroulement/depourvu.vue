@@ -26,4 +26,6 @@ useSeo({
   title,
   description: "Découvrez la condition Pris au dépourvu : ses effets au début d’un combat, ses limites et comment certains talents ou capacités l’annulent.",
 });
+
+// TODO(fpion): une capacité ne devrait jamais te mettre "pris au dépourvu", sauf si c'est une condition. Ça devrait plutôt t'étourdir !
 </script>

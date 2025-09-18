@@ -39,7 +39,6 @@
       </p>
       <SkillCard class="mb-4" :skill="skill" />
     </template>
-    <!-- TODO(fpion): TalentTree -->
   </main>
 </template>
 
@@ -65,4 +64,6 @@ useSeo({
   title: title.value,
   description: talent.value?.summary,
 });
+
+// TODO(fpion): TalentTree
 </script>

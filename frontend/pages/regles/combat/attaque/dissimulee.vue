@@ -9,11 +9,11 @@
     </p>
     <p>
       L’attaque échoue automatiquement si la cible ne se trouve pas à l’emplacement ciblé. Dans ce cas, le maître de jeu annonce simplement que l’attaque a
-      échoué, sans révéler la position de la cible.
+      échoué. Il n’indique pas si la cible se trouvait à l’emplacement ciblé ou non.
     </p>
     <p>
-      Lorsqu’une créature dissimulée tente d’attaquer une cible qui n’est pas au courant de sa présence, son
-      <NuxtLink to="/regles/competences/tests">test</NuxtLink> se voit conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage"
+      Lorsqu’une créature <NuxtLink to="/regles/combat/activites/cacher">dissimulée</NuxtLink> tente d’attaquer une cible qui n’est pas au courant de sa
+      présence, son <NuxtLink to="/regles/competences/tests">test</NuxtLink> se voit conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage"
         >avantage</NuxtLink
       >. La position de l’attaquant est ensuite révélée, que l’attaque réussisse ou non, sauf si l’attaquant a acquis le
       <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/maraudage">Maraudage</NuxtLink>, que l’attaque échoue, et qu’il s’agit

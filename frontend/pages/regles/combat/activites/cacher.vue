@@ -8,8 +8,9 @@
       <NuxtLink to="/regles/combat/attaque/dissimulee">bénéfices</NuxtLink> lorsque vous êtes dissimulés.
     </p>
     <p>
-      Vous ne pouvez vous dissimuler d’une créature qui vous voit. Si une créature vous voit aller vous cacher, par exemple derrière un arbre ou dans un
-      placard, alors pouvez être dissimulés à ses yeux, mais elle connaît tout de même votre position. Faites preuve de logique dans votre suite d’actions.
+      Vous ne pouvez vous dissimuler d’une créature qui vous <NuxtLink to="/regles/aventure/environnement/vision">voit</NuxtLink>. Si une créature vous voit
+      aller vous cacher, par exemple derrière un arbre ou dans un placard, alors pouvez être dissimulés à ses yeux, mais elle connaît tout de même votre
+      position. Faites preuve de logique dans votre suite d’actions.
     </p>
     <p>
       Lorsque vous êtes dissimulés, une créature peut vous <NuxtLink to="/regles/combat/activites/chercher">chercher</NuxtLink> activement. Une créature qui ne

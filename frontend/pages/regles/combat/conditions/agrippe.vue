@@ -6,7 +6,10 @@
     <p>La condition prend fin lorsque survient l’une des situations suivantes :</p>
     <ul>
       <li>La créature agrippée réussit à <NuxtLink to="/regles/combat/activites/echapper">s’échapper</NuxtLink>.</li>
-      <li>La créature l’ayant agrippé la lâche, volontairement ou non, ou devient <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>.</li>
+      <li>
+        La créature l’ayant agrippé la <NuxtLink to="/regles/combat/activites/lacher">lâche</NuxtLink>, volontairement ou non, ou devient
+        <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>.
+      </li>
       <li>La créature agrippée est déplacée à l’extérieur de la portée de la créature l’agrippant par un effet quelconque.</li>
     </ul>
   </main>

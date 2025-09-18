@@ -5,7 +5,8 @@
     <p>Chaque source de dégâts est associée à un ou plusieurs types.</p>
     <p>
       Les différents types de dégâts n’ont pas de règles spécifiques s’appliquant à chacun. Cependant, certains types de dégâts n’ont pas la même
-      <NuxtLink to="/regles/combat/degats/efficacite">efficacité</NuxtLink> contre différents objets ou créatures.
+      <NuxtLink to="/regles/combat/degats/efficacite">efficacité</NuxtLink> contre différents
+      <NuxtLink to="/regles/aventure/interaction-objets">objets</NuxtLink> ou créatures.
     </p>
     <p>Voici les différents types de dégâts et des exemples pour chaque type.</p>
     <h6>Dégâts physiques</h6>

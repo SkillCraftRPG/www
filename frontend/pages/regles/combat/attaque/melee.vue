@@ -13,8 +13,11 @@
     <p>
       Les attaques de mêlée sont généralement effectuées par l’<NuxtLink to="/regles/combat/activites">activité</NuxtLink> <i>Attaquer</i>, par un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> de <NuxtLink to="/regles/competences/melee">Mêlée</NuxtLink>. La
-      <NuxtLink to="/regles/statistiques/force">Force</NuxtLink> de l’attaquant est ajoutée aux points de dégâts infligés. Ces attaques ne déclenchent pas
-      d’<NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.
+      <NuxtLink to="/regles/statistiques/force">Force</NuxtLink> de l’attaquant est ajoutée aux
+      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> infligés. Ces attaques ne déclenchent pas d’<NuxtLink
+        to="/regles/combat/attaque/opportunite"
+        >attaque d’opportunité</NuxtLink
+      >.
     </p>
     <p>
       Une créature peut attaquer avec un membre de son corps, par exemple donner un coup de poing ou un coup de pied. Elle inflige 1 +
@@ -39,4 +42,7 @@ useSeo({
   description:
     "Découvrez les règles des attaques de mêlée : coups portés avec le corps ou une arme, portée de 1,5 m, modificateurs de Force et talents associés.",
 });
+
+// TODO(fpion): TODO(fpion): talents pour le corps-à-corps
+// TODO(fpion): extraire le corps-à-corps, comme on a fait avec le combat à deux armes
 </script>

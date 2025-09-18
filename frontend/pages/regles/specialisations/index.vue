@@ -17,7 +17,6 @@
     </div>
     <h2 class="h3">Liste des spécialisations</h2>
     <p>🚧</p>
-    <!-- TODO(fpion): exemple pour Prêtre ou Clerc -->
   </main>
 </template>
 
@@ -47,4 +46,6 @@ useSeo({
   description:
     "Découvrez les spécialisations : progression des personnages à travers les tiers, acquisition unique, conditions, talents requis et pouvoirs associés.",
 });
+
+// TODO(fpion): exemple avec Clerc et Prêtre ?
 </script>

@@ -19,8 +19,9 @@
         <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> normalement.
       </li>
       <li>
-        <strong>Réussite.</strong> La créature est stabilisée. Elle ne risque plus la mort, sauf si elle est blessée à nouveau. Elle reprend conscience si elle
-        reçoit des <NuxtLink to="/regles/combat/degats/soins">soins</NuxtLink>, ou après <NuxtLink to="/regles/aventure/temps">une heure</NuxtLink>.
+        <strong>Réussite.</strong> La créature est stabilisée. Elle ne risque plus la mort, sauf si elle est
+        <NuxtLink to="/regles/combat/degats">blessée</NuxtLink> à nouveau. Elle reprend conscience si elle reçoit des
+        <NuxtLink to="/regles/combat/degats/soins">soins</NuxtLink>, ou après <NuxtLink to="/regles/aventure/temps">une heure</NuxtLink>.
       </li>
       <li><strong>Échec.</strong> La créature reste agonisante et instable. Rien ne vous empêche de réessayer !</li>
       <li>

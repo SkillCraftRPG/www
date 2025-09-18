@@ -6,7 +6,7 @@
       Certaines capacités confèrent à une créature des points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> <strong>temporaires</strong>.
     </p>
     <p>
-      Ceux-ci s’ajoutent à votre Vitalité courante, mais ils n’augmentent pas votre Vitalité maximale. Ils ne peuvent donc être
+      Ceux-ci s’ajoutent à sa Vitalité courante, mais ils n’augmentent pas sa Vitalité maximale. Ils ne peuvent donc être
       <NuxtLink to="/regles/aventure/repos">récupérés</NuxtLink>, ni <NuxtLink to="/regles/combat/degats/soins">soignés</NuxtLink>.
     </p>
     <p>La Vitalité actuelle d’une créature peut dépasser sa Vitalité maximale grâce à des points temporaires.</p>

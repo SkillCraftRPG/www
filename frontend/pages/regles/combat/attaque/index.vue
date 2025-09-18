@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’une créature effectue une attaque, elle ne peut tenter de cibler une partie du corps de son adversaire. Elle souhaite blesser sa cible, mais à
-      moins de <NuxtLink to="/regles/combat/mort-agonie">délivrer le coup fatal</NuxtLink>, elle ne choisit pas où l’attaque touchera.
+      moins de <NuxtLink to="/regles/combat/mort-agonie">délivrer le coup fatal</NuxtLink>, elle ne choisit pas l’endroit où l’attaque touchera.
     </p>
     <p>
       Les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> <i>Attaquer</i> et
@@ -28,7 +28,10 @@
       >
       qu’elle manie pour effectuer l’attaque, alors son <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de compétence n’est pas ajouté au test.
     </p>
-    <p>Les armes improvisées et attaques avec les membres de son corps nécessitent également une formation afin d’éviter cette pénalité.</p>
+    <p>
+      Les <NuxtLink to="/regles/equipement/armes/improvisees">armes improvisées</NuxtLink> et attaques avec les membres de son corps nécessitent également une
+      formation afin d’éviter cette pénalité.
+    </p>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />

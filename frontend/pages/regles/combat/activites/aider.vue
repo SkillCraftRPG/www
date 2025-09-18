@@ -51,4 +51,6 @@ useSeo({
   title,
   description: "Découvrez l’action Aider et ses variantes : conférer l’avantage à un allié, étendre la portée avec Diplomatie ou Distracter les ennemis.",
 });
+
+// TODO(fpion): il me semble que le bonus est faible pour une action + une réaction !
 </script>
