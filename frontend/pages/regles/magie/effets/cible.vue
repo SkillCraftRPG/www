@@ -12,8 +12,9 @@
       contre-indiqué.
     </p>
     <p>
-      Lorsqu’elle désigne une autre créature comme cible, elle doit pouvoir voir cette cible, sauf si contre-indiqué. Il est donc impossible de cibler une
-      créature bénéficiant d’un <NuxtLink to="/regles/combat/attaque/abri">abri total</NuxtLink>.
+      Lorsqu’elle désigne une autre créature comme cible, elle doit pouvoir <NuxtLink to="/regles/aventure/environnement/vision">voir</NuxtLink> cette cible,
+      sauf lorsque contre-indiqué. Il est donc impossible de cibler une créature bénéficiant d’un
+      <NuxtLink to="/regles/combat/attaque/abri">abri&nbsp;total</NuxtLink>.
     </p>
   </main>
 </template>

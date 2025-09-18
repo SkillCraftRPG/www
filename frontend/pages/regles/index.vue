@@ -13,7 +13,12 @@
           <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
             <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
             <div class="w-100 px-3">
-              <TarProgress :label="tile.progress >= 1 ? '✓' : undefined" :striped="tile.progress < 1" :value="tile.progress * 100" />
+              <TarProgress
+                :animated="tile.progress < 1"
+                :label="tile.progress >= 1 ? '✓' : undefined"
+                :striped="tile.progress < 1"
+                :value="tile.progress * 100"
+              />
             </div>
           </NuxtLink>
         </div>
@@ -120,7 +125,7 @@ const tiles: Tile[] = [
     icon: "fas fa-wand-sparkles",
     text: "Magie",
     to: "/regles/magie",
-    progress: 0,
+    progress: 1,
   },
 ];
 const title: string = "Règles";

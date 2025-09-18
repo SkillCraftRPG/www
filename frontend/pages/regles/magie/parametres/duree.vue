@@ -26,8 +26,8 @@
       Lorsqu’une créature est <NuxtLink to="/regles/combat/degats/letalite">blessée</NuxtLink>, elle doit effectuer un
       <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> de
       <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> afin de maintenir sa concentration. La
-      <NuxtLink to="/regles/competences/tests/difficulte">difficulté</NuxtLink> est égale à la valeur la plus élevée entre 15 et le nombre de
-      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> reçus divisé par deux. En cas d’échec, elle perd la concentration.
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté</NuxtLink> est égale à la valeur la plus élevée entre 15 et la moitié du nombre de
+      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> reçus. En cas d’échec, elle perd la concentration.
     </p>
   </main>
 </template>
