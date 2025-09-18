@@ -25,7 +25,10 @@
       Le test des <NuxtLink to="/regles/combat/attaque/distance">attaques à distance</NuxtLink> effectuées au-delà de la
       <NuxtLink to="/regles/equipement/armes/proprietes">courte portée</NuxtLink> de l’arme échoue automatiquement.
     </p>
-    <p>Les créatures entièrement submergées sont résistantes aux dégâts de feu.</p>
+    <p>
+      Les créatures entièrement submergées sont <NuxtLink to="/regles/combat/degats/efficacite">résistantes</NuxtLink> aux
+      <NuxtLink to="/regles/combat/degats/types">dégâts de feu</NuxtLink>.
+    </p>
   </main>
 </template>
 

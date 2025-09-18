@@ -12,11 +12,12 @@
         >Acrobaties</NuxtLink
       >
       de la cible (ou choix de celle-ci). Si vous réussissez le test, la cible est <NuxtLink to="/regles/combat/conditions/agrippe">agrippée</NuxtLink>, et elle
-      ne peut pas <strong>se déplacer</strong> de son plein gré.
+      ne peut pas <NuxtLink to="/regles/combat/activites/deplacement">se&nbsp;déplacer</NuxtLink> de son plein gré.
     </p>
     <p>
-      À tout moment, vous pouvez <strong>lâcher</strong> la cible en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>. Une créature
-      agrippée peut tenter de se déprendre en <NuxtLink to="/regles/combat/activites/echapper">s’échappant</NuxtLink>.
+      À tout moment, vous pouvez <NuxtLink to="/regles/combat/activites/lacher">lâcher</NuxtLink> la cible en
+      <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>. Une créature agrippée peut tenter de se déprendre en
+      <NuxtLink to="/regles/combat/activites/echapper">s’échappant</NuxtLink>.
     </p>
     <p>
       Vous pouvez vous déplacer en traînant la cible avec vous. Cependant, votre <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> est

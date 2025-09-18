@@ -18,6 +18,9 @@
         <font-awesome-icon icon="fas fa-lightbulb" /> N’oubliez pas que l’ascendance de votre personnage lui confère un talent gratuit ou plusieurs rabais.
       </li>
     </ul>
-    <!-- TODO(fpion): résumer chaque talent de compétence pour effectuer des suggestions au joueur -->
   </section>
 </template>
+
+<script setup lang="ts">
+// TODO(fpion): résumer chaque talent de compétence pour effectuer des suggestions au joueur
+</script>

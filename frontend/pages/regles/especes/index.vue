@@ -2,8 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" />
-    <!-- TODO(fpion): explanation text -->
-    <p>{{ "[…]" }}</p>
+    <p>🚧</p>
   </main>
 </template>
 
@@ -12,6 +11,6 @@ const title: string = "Espèces";
 
 useSeo({
   title,
-  description: "", // TODO(fpion): meta description
+  description: "🚧",
 });
 </script>

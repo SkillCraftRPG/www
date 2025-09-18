@@ -7,8 +7,8 @@
       une créature retombe sous la phase 1 d’ébriété.
     </p>
     <p>
-      Cette condition dure un nombre d’heures égal au nombre maximal de points d’alcoolémie atteint depuis que ces points sont retombés à 0, divisé par deux.
-      Elle peut aussi être retirée par une capacité naturelle ou surnaturelle réduisant le
+      Cette condition dure un nombre d’<NuxtLink to="/regles/aventure/temps">heures</NuxtLink> égal au nombre maximal de points d’alcoolémie atteint depuis que
+      ces points sont retombés à 0, divisé par deux. Elle peut aussi être retirée par une capacité naturelle ou surnaturelle réduisant le
       <NuxtLink to="/regles/combat/conditions/fatigue">niveau de Fatigue</NuxtLink>.
     </p>
     <p>Une créature affligée par la gueule de bois voit sa <NuxtLink to="/regles/aventure/repos">régénération</NuxtLink> réduite de moitié.</p>

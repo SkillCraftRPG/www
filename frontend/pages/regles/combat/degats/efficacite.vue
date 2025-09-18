@@ -2,7 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>Certains objets ou certaines créatures réagissent différemment aux dégâts de certains <NuxtLink to="/regles/combat/degats/types">types</NuxtLink>.</p>
+    <p>
+      Certains <NuxtLink to="/regles/aventure/interaction-objets">objets</NuxtLink> ou certaines créatures réagissent différemment aux dégâts de certains
+      <NuxtLink to="/regles/combat/degats/types">types</NuxtLink>.
+    </p>
     <ul>
       <li>
         <strong>Résistance.</strong> Lorsqu’une créature ou un objet résistant à un type de dégâts reçoit des points de dégâts de ce type, ceux-ci sont réduits

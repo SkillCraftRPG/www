@@ -2,12 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>
-      Une créature assourdie n’entend rien. Elle échoue automatiquement les <NuxtLink to="/regles/competences/tests">tests</NuxtLink> requérant l’<NuxtLink
-        to="/regles/aventure/environnement/vision"
-        >ouïe</NuxtLink
-      >.
-    </p>
+    <p>Une créature assourdie n’entend rien. Elle échoue automatiquement les <NuxtLink to="/regles/competences/tests">tests</NuxtLink> requérant l’ouïe.</p>
   </main>
 </template>
 

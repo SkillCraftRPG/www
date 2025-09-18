@@ -52,8 +52,8 @@
     </p>
     <p>Vous tombez hors du combat, toujours agonisants mais stables, à l’abri des menaces, et vous serez tirés d’affaire, sauf situation exceptionnelle.</p>
     <p>
-      Le maître de jeu raconte comment vous survivez. Si par mégarde vous êtes blessés, alors vous redevenez instables et devez à nouveau choisir une des trois
-      options.
+      Le maître de jeu raconte comment vous survivez. Si par malheur vous êtes <NuxtLink to="/regles/combat/degats">blessés</NuxtLink>, alors vous redevenez
+      instables et devez à nouveau choisir une des trois options.
     </p>
     <p>
       Vous reprenez conscience lorsque vos points de Vitalité remontent à une valeur supérieure à 0, soit lorsque vous recevez
@@ -68,14 +68,15 @@
       Indécis face à la <NuxtLink to="/regles/combat/conditions/mort">mort</NuxtLink>, vous décidez de tout risquer en laissant le destin choisir pour vous.
     </p>
     <p>
-      Vous restez agonisants pendant un nombre de round égal à 1 + <NuxtLink to="/regles/attributs/vigueur">Vigueur</NuxtLink>, divisé par 2 (minimum 1 round).
+      Vous restez agonisants pendant un nombre de <NuxtLink to="/regles/combat/deroulement">rounds</NuxtLink> égal à 1 +
+      <NuxtLink to="/regles/attributs/vigueur">Vigueur</NuxtLink>, divisé par 2 (minimum 1 round).
     </p>
     <p>
       Pendant votre agonie, vous pouvez être <NuxtLink to="/regles/combat/activites/stabiliser">stabilisés</NuxtLink>, mais vous pouvez également recevoir le
       <NuxtLink to="/regles/combat/activites/coup-grace">coup de grâce</NuxtLink>.
     </p>
     <p>
-      Au début de votre prochain tour <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> au cours du round décisif, jetez vos
+      Au début de votre prochain <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> au cours du round décisif, jetez vos
       <NuxtLink to="/regles/competences/tests/2d10">dés d’Espérance et de Damnation</NuxtLink>. Votre sort est décidé par le résultat.
     </p>
     <ul>
@@ -91,8 +92,8 @@
             Vous tombez hors du combat, toujours agonisants mais stables, à l’abri des menaces, et vous serez tirés d’affaire, sauf situation exceptionnelle.
           </li>
           <li>
-            Le maître de jeu raconte comment vous survivez. Si par mégarde vous êtes blessés, alors vous redevenez instables et devez à nouveau choisir une des
-            trois options.
+            Le maître de jeu raconte comment vous survivez. Si par malheur vous êtes <NuxtLink to="/regles/combat/degats">blessés</NuxtLink>, alors vous
+            redevenez instables et devez à nouveau choisir une des trois options.
           </li>
           <li>
             Vous reprenez conscience lorsque vos points de Vitalité remontent à une valeur supérieure à 0, soit lorsque vous recevez

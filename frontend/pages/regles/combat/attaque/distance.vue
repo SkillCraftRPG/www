@@ -17,7 +17,8 @@
       Les attaques à distance sont effectuées par l’<NuxtLink to="/regles/combat/activites">activité</NuxtLink> <i>Attaquer</i> (arme de jet) ou
       <NuxtLink to="/regles/combat/activites/viser-tirer">Viser et tirer</NuxtLink> (arme à munition), par un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/orientation">Orientation</NuxtLink>. La
-      <NuxtLink to="/regles/statistiques/precision">Précision</NuxtLink> de l’attaquant est ajoutée aux points de dégâts infligés. Ces attaques déclenchent une
+      <NuxtLink to="/regles/statistiques/precision">Précision</NuxtLink> de l’attaquant est ajoutée aux
+      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> infligés. Ces attaques déclenchent une
       <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>. Également, le test est affligé du
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink> si une arme à munition est utilisée contre une cible située à 1,5
       mètres ou moins de l’attaquant.

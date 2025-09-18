@@ -121,10 +121,9 @@
         <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/athletisme">Athlétisme</NuxtLink>.
       </li>
       <li>
-        Si elle atterit sur du <NuxtLink>terrain difficile</NuxtLink>, elle doit également réussir un test d’<NuxtLink to="/regles/competences/acrobaties"
-          >Acrobaties</NuxtLink
-        >
-        afin de ne pas tomber <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol.
+        Si elle atterit sur du <NuxtLink to="/regles/aventure/mouvement/terrain-difficile">terrain difficile</NuxtLink>, elle doit également réussir un test
+        d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink> afin de ne pas tomber
+        <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink> au sol.
       </li>
     </ul>
     <h3 id="saut-hauteur" class="h5">Saut en hauteur</h3>

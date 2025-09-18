@@ -25,8 +25,8 @@
     </ul>
     <p>
       Lorsqu’une créature est inconsciente parce que ses points d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink> sont de 0, elle reprend
-      conscience lorsque ceux-ci remontent au-delà de 0, généralement après une heure de <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink> ou de
-      <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.
+      conscience lorsque ceux-ci remontent au-delà de 0, généralement après une <NuxtLink to="/regles/aventure/temps">heure</NuxtLink> de
+      <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink> ou de <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink>.
     </p>
     <p>
       Lorsqu’une créature est inconsciente parce qu’elle cumule un nombre de points de dégâts

@@ -6,8 +6,11 @@
     <p>La condition prend fin lorsque ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> remontent à une valeur supérieure à 0.</p>
     <h2 class="h3">Instable</h2>
     <p>
-      Lorsque les points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> d’une créature chutent à 0, elle tombe à l’agonie en état instable,
-      et risque la <NuxtLink to="/regles/combat/mort-agonie">mort</NuxtLink>.
+      Lorsque les points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> d’une créature chutent à 0, elle tombe à l’<NuxtLink
+        to="/regles/combat/mort-agonie"
+        >agonie</NuxtLink
+      >
+      en état instable, et risque la <NuxtLink to="/regles/combat/conditions/mort">mort</NuxtLink>.
     </p>
     <p>Si elle est <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink>, elle ne récupère aucun point de Vitalité, mais son état se stabilise.</p>
     <p>Elle retombe également en état instable si son état était stable, mais qu’elle est <NuxtLink to="/regles/combat/degats">blessée</NuxtLink>.</p>
@@ -20,7 +23,10 @@
       niveau.
     </p>
     <h2 class="h3">Stable</h2>
-    <p>Une créature à l’agonie mais dans un état stable ne risque pas activement la <NuxtLink to="/regles/combat/mort-agonie">mort</NuxtLink>.</p>
+    <p>
+      Une créature à l’<NuxtLink to="/regles/combat/mort-agonie">agonie</NuxtLink> mais dans un état stable ne risque pas activement la
+      <NuxtLink to="/regles/combat/conditions/mort">mort</NuxtLink>.
+    </p>
     <p>
       Elle peut être <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink> normalement. Son état retombe instable si elle est
       <NuxtLink to="/regles/combat/degats">blessée</NuxtLink>.

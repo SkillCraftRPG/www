@@ -7,8 +7,8 @@
       <NuxtLink to="/regles/combat/conditions/agonisant">agonisante</NuxtLink> et instable.
     </p>
     <p>
-      Si la créature est agonisante mais stable, vous devez d’abord la rendre instable en la blessant, par exemple par une
-      <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>.
+      Si la créature est agonisante mais stable, vous devez d’abord la rendre instable en la <NuxtLink to="/regles/combat/degats">blessant</NuxtLink>, par
+      exemple par une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>.
     </p>
     <p>Une créature achevée meurt instantanément. Elle peut néanmoins être ressuscitée si les conditions sont respectées.</p>
   </main>
