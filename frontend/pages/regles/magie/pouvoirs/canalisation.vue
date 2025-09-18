@@ -9,10 +9,8 @@
       >.
     </p>
     <p>
-      Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> du test est égal au nombre de points d’<NuxtLink
-        to="/regles/statistiques/energie"
-        >Énergie</NuxtLink
-      >{{ " " }}<NuxtLink to="/regles/magie/pouvoirs/energie">dépensés</NuxtLink>.
+      Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> du test est égal au nombre de
+      <NuxtLink to="/regles/magie/pouvoirs/energie">points d’Énergie dépensés</NuxtLink>.
     </p>
     <ul>
       <li>En cas de réussite, le pouvoir prend effet et les points d’Énergie sont dépensés.</li>

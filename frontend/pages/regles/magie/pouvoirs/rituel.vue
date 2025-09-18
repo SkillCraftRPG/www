@@ -11,8 +11,8 @@
       pouvoir.
     </p>
     <p>
-      Collaborez avec votre maître de jeu afin de déterminer en quoi consiste le rituel. N’oubliez pas d’inclure toutes les <strong>composantes</strong> du
-      pouvoir dans les étapes du rituel.
+      Collaborez avec votre maître de jeu afin de déterminer en quoi consiste le rituel. N’oubliez pas d’inclure toutes les
+      <NuxtLink to="/regles/magie/parametres/composantes">composantes</NuxtLink> du pouvoir dans les étapes du rituel.
     </p>
     <p>
       Lorsque vous canalisez un pouvoir en rituel, vous réussissez automatiquement le <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink

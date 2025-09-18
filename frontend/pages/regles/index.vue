@@ -120,7 +120,7 @@ const tiles: Tile[] = [
     icon: "fas fa-wand-sparkles",
     text: "Magie",
     to: "/regles/magie",
-    progress: 0,
+    progress: 1,
   },
 ];
 const title: string = "Règles";
