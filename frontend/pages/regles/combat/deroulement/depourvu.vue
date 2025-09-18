@@ -9,7 +9,6 @@
       Une créature ayant acquis le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/vigilance">Vigilance</NuxtLink> n’est jamais
       prise au dépourvu.
     </p>
-    <p>Certaines capacités peuvent infliger cette condition à une créature.</p>
   </main>
 </template>
 
@@ -27,5 +26,6 @@ useSeo({
   description: "Découvrez la condition Pris au dépourvu : ses effets au début d’un combat, ses limites et comment certains talents ou capacités l’annulent.",
 });
 
-// TODO(fpion): une capacité ne devrait jamais te mettre "pris au dépourvu", sauf si c'est une condition. Ça devrait plutôt t'étourdir !
+// TODO(fpion): Fourberie
+// TODO(fpion): Renvoi des morts-vivants
 </script>

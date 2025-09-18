@@ -14,5 +14,5 @@ useSeo({
   description: "🚧",
 });
 
-// TODO(fpion): TODO(fpion): catégorie de taille, Facteur de Charge, Espace occupé (carrés), Espace occupé (hexagones), component for table with props for reusability)
+// TODO(fpion): catégorie de taille, Facteur de Charge, Espace occupé (carrés), Espace occupé (hexagones), component for table with props for reusability)
 </script>
