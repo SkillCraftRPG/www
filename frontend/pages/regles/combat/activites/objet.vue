@@ -10,7 +10,7 @@
     <p>
       Cette action déclenche une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink> si l’objet vous
       <NuxtLink to="/regles/combat/degats/soins">soigne</NuxtLink>, ou si son utilisation requiert vos deux mains, par exemple enclencher un lourd levier ou
-      appliquer un <strong>poison</strong> sur votre arme.
+      appliquer un <NuxtLink to="/regles/herboristerie/poisons">poison</NuxtLink> sur votre arme.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à utiliser un objet :</p>
     <div class="row">

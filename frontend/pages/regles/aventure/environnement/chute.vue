@@ -3,8 +3,9 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Lorsqu’un personnage subit une chute, il reçoit des points de dégâts contondants létaux et tombe en position
-      <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink>.
+      Lorsqu’un personnage subit une chute, il reçoit des points de <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink>{{ " "
+      }}<NuxtLink to="/regles/combat/degats/types">contondants</NuxtLink>{{ " " }}<NuxtLink to="/regles/combat/degats/letalite">létaux</NuxtLink> et tombe en
+      position <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink>.
     </p>
     <p>Ces points de dégâts sont de 1d6 par tranche de 1,5 mètres de hauteur.</p>
     <h2 class="h3">Amortir sa chute</h2>
