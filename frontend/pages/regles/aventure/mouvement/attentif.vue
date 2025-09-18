@@ -10,8 +10,9 @@
         <NuxtLink to="/regles/competences/perception">Perception</NuxtLink>.
       </li>
       <li>
-        En période de voyage, elle effectue un <NuxtLink to="/regles/competences/tests/passif">test passif</NuxtLink> de Perception. Le test est effectué en
-        secret par le maître de jeu afin de ne pas alerter les joueurs s’il échoue.
+        En période de voyage, elle effectue un <NuxtLink to="/regles/competences/tests/passif">test passif</NuxtLink> de
+        <NuxtLink to="/regles/competences/perception">Perception</NuxtLink>. Le test est effectué en secret par le maître de jeu afin de ne pas alerter les
+        joueurs s’il échoue.
       </li>
     </ul>
     <p>Si la créature se déplace rapidement, alors elle subit une pénalité à ce test.</p>

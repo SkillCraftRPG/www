@@ -40,7 +40,7 @@
       </li>
       <li>
         Ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> maximum sont réduits de 2+1d4. Les points de Vitalité maximum perdus de
-        cette façon sont récupérés après une nuit complète de sommeil, si la créature n’est plus affligée par la Soif, la Sécheresse, la Faim ou la Famine.
+        cette façon sont récupérés après une nuit complète de sommeil, si la créature n’est plus affligée par la Soif, la Sécheresse, la Faim et la Famine.
       </li>
     </ul>
     <p>

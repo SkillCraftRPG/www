@@ -22,7 +22,12 @@
       <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> est de 5 par round, additionné de 5 : 10 pour le premier round, 15 pour
       le second, et ainsi de suite.
     </p>
-    <p>En cas d’échec, ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> chutent à 0 et elle tombe à l’<strong>agonie</strong>.</p>
+    <p>
+      En cas d’échec, ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> chutent à 0 et elle tombe à l’<NuxtLink
+        to="/regles/combat/mort-agonie"
+        >agonie</NuxtLink
+      >.
+    </p>
   </main>
 </template>
 

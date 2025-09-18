@@ -113,7 +113,7 @@ const tiles: Tile[] = [
     icon: "fas fa-person-hiking",
     text: "Aventure",
     to: "/regles/aventure",
-    progress: 0,
+    progress: 1,
   },
   {
     icon: "fas fa-hand-fist",

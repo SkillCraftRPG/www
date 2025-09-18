@@ -108,7 +108,7 @@
         <NuxtLink to="/regles/competences/melee">Mêlée</NuxtLink>). Lorsqu’elle utilise cette capacité, elle dépense 1d10 points d’<NuxtLink
           to="/regles/statistiques/energie"
           >Énergie</NuxtLink
-        >. Si elle échoue le test, elle reçoit un nombre égal de points de dégâts non létaux.
+        >. Si elle échoue le test, elle reçoit un nombre égal de <NuxtLink to="/regles/combat/degats/letalite">points de dégâts non létaux</NuxtLink>.
       </li>
       <li>
         Avantage aux jets de sauvegarde de <NuxtLink to="/regles/competences/discipline">Discipline</NuxtLink> contre la
@@ -129,7 +129,7 @@
       <li>
         <strong>Effort débridé.</strong> Elle peut encore utiliser cette capacité, mais en dépensant 2d10 points d’<NuxtLink to="/regles/statistiques/energie"
           >Énergie</NuxtLink
-        >, et en recevant un nombre égal de points de dégâts non létaux en cas d’échec.
+        >, et en recevant un nombre égal de <NuxtLink to="/regles/combat/degats/letalite">points de dégâts non létaux</NuxtLink> en cas d’échec.
       </li>
       <li>
         <NuxtLink to="/regles/competences/tests/avantage-desavantage">Désavantage</NuxtLink> aux <NuxtLink to="/regles/competences/tests">tests</NuxtLink> de :
@@ -217,7 +217,13 @@
       Lorsqu’elle en fait ainsi, elle ne passe pas à la phase suivante d’ébriété, mais est automatiquement affligée de la
       <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>.
     </p>
-    <p>Également, elle reçoit un nombre de d4 de points de dégâts létaux d’acide égal à la phase qu’elle évite (4d4 pour le coma éthylique).</p>
+    <p>
+      Également, elle reçoit un nombre de d4 de <NuxtLink to="/regles/combat/degats/letalite">points de dégâts non létaux</NuxtLink> d’<NuxtLink
+        to="/regles/combat/degats/types"
+        >acide</NuxtLink
+      >
+      égal à la phase qu’elle évite (4d4 pour le coma éthylique).
+    </p>
     <h3 id="repos" class="h5">Repos</h3>
     <p>
       Une <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink> en étant en état d’ébriété est considérée comme interrompue, peu importe sa

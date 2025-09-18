@@ -19,8 +19,9 @@
     <h2 class="h3">Défense</h2>
     <p>
       Les objets étant inanimés, ils ne sont pas dotés d’<NuxtLink to="/regles/statistiques/esquive">Esquive</NuxtLink>. En revanche, ils possèdent une
-      <strong>Défense</strong> basée sur la dureté de leur matériau de construction. Un <strong>test d’attaque</strong> doit être supérieur ou égal à la Défense
-      de l’objet pour lui infliger des <strong>dégâts</strong>.
+      <NuxtLink to="/regles/combat/attaque/defense">Défense</NuxtLink> basée sur la dureté de leur matériau de construction. Un
+      <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> doit être supérieur ou égal à la
+      Défense de l’objet pour lui infliger des <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink>.
     </p>
     <table class="table table-striped text-center">
       <thead>
@@ -102,9 +103,9 @@
       >. Cependant, ils sont dotés de points de Résistance afin de les remplacer. Ceux-ci fonctionnent de la même manière que la Vitalité d’une créature.
     </p>
     <p>
-      Lorsque deux objets entrent en contact, c’est généralement l’objet le plus dur qui inflige des <strong>dégâts</strong> à l’autre. Par exemple, une épée
-      forgée en acier trempé infligera des dégâts à une porte en bois dur, mais la porte n’infligera pas de dégâts à l’épée. Le tableau précédent présente la
-      dureté de divers matériaux.
+      Lorsque deux objets entrent en contact, c’est généralement l’objet le plus dur qui inflige des <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink> à
+      l’autre. Par exemple, une épée forgée en acier trempé infligera des dégâts à une porte en bois dur, mais la porte n’infligera pas de dégâts à l’épée. Le
+      tableau précédent présente la dureté de divers matériaux.
     </p>
     <p>
       Lorsqu’un objet subit des points de dégâts, ceux-ci sont soustraits de sa Résistance. Un objet est endommagé lorsqu’il a perdu des points de Résistance.
@@ -130,9 +131,14 @@
       en adamantium.
     </p>
     <p>
-      Les objets sont immunisés aux dégâts de poison et psychiques. Certains types de dégâts peuvent être plus ou moins efficaces contre certains objets. Par
-      exemple, les objets en bois peuvent être vulnérables au feu, alors que les objets en pierre y seraient immunisés. Le papier pourrait être résistant aux
-      dégâts contondants, mais vulnérable aux dégâts tranchants.
+      Les objets sont <NuxtLink to="/regles/combat/degats/efficacite">immunisés</NuxtLink> aux dégâts de
+      <NuxtLink to="/regles/combat/degats/types">poison</NuxtLink> et aux dégâts <NuxtLink to="/regles/combat/degats/types">psychiques</NuxtLink>. Certains
+      <NuxtLink to="/regles/combat/degats/types">types de dégâts</NuxtLink> peuvent être plus ou moins
+      <NuxtLink to="/regles/combat/degats/efficacite">efficaces</NuxtLink> contre certains objets. Par exemple, les objets en bois peuvent être
+      <NuxtLink to="/regles/combat/degats/efficacite">vulnérables</NuxtLink> au <NuxtLink to="/regles/combat/degats/types">feu</NuxtLink>, alors que les objets
+      en pierre y seraient <NuxtLink to="/regles/combat/degats/efficacite">immunisés</NuxtLink>. Le papier pourrait être
+      <NuxtLink to="/regles/combat/degats/efficacite">résistant</NuxtLink> aux dégâts <NuxtLink to="/regles/combat/degats/types">contondants</NuxtLink>, mais
+      <NuxtLink to="/regles/combat/degats/efficacite">vulnérable</NuxtLink> aux dégâts <NuxtLink to="/regles/combat/degats/types">tranchants</NuxtLink>.
     </p>
     <table class="table table-striped text-center">
       <thead>
