@@ -1,0 +1,72 @@
+[
+  {
+    "id": "8dce1738-fb46-4a52-b335-2d65dcb797a0",
+    "date": "2025-10-01T12:00:00Z",
+    "title": "Moteur de jeu",
+    "summary": "Règles de base et génériques, avec hyperliens entre les pages, et contenu de base pour démarrer une aventure, exécuter des combats.",
+    "detail": [
+      "Création et progression de personnage",
+      "Attributs, statistiques et compétences",
+      "Espèces (explications et exemples)",
+      "Langues et alphabets (explications et exemples)",
+      "Talents de tiers 0 et associés à une compétence",
+      "Spécialisations (explications et exemples)",
+      "Équipement",
+      "Aventure",
+      "Combat",
+      "Magie"
+    ]
+  },
+  {
+    "id": "a9e878bb-268b-4977-9ee1-b583cfccea54",
+    "date": "2025-11-01T12:00:00Z",
+    "title": "Options minimales",
+    "summary": "Sélection minimale de création et de progression de personnage jusqu’au tiers 1. Astromancie et domaines divins.",
+    "detail": [
+      "Dons et handicaps",
+      "Castes et éducations",
+      "Espèces, langues et alphabets génériques",
+      "Talents de tiers 1",
+      "Spécialisations de tiers 1",
+      "Astromancie",
+      "Domaines divins"
+    ]
+  },
+  {
+    "id": "96a7c503-558a-4c71-9ac8-d9f67e2bf751",
+    "date": "2025-12-01T12:00:00Z",
+    "title": "Options intermédiaires",
+    "summary": "Sélection de création et de progression de personnage jusqu’au tiers 2. Animisme, herboristerie et élémentarisme.",
+    "detail": [
+      "Espèces, langues et alphabets classiques",
+      "Talents de tiers 2",
+      "Spécialisations de tiers 2",
+      "Animisme",
+      "Élémentarisme",
+      "Herboristerie",
+      "Manœuvres de combat"
+    ]
+  },
+  {
+    "id": "952d2fd0-99ae-436c-bb4f-cfcda2f28498",
+    "date": "2026-01-01T12:00:00Z",
+    "title": "Options avancées",
+    "summary": "Sélection complète de création et de progression de personnage jusqu’au tiers 3. 🚧",
+    "detail": [
+      "Espèces, langues et alphabets spécialisées",
+      "Talents de tiers 3",
+      "Spécialisations de tiers 3",
+      "Infusions magiques",
+      "Invocations mystérieuses",
+      "Jeu de rôle proactif",
+      "🚧Alignment, Personality Traits, Ideals, Flaws, Background, Story/War Story, Bonds/Events"
+    ]
+  },
+  {
+    "id": "1c8f2dfc-7957-4cfd-a01c-b86acee3f579",
+    "date": "2027-01-01T12:00:00Z",
+    "title": "Grimoire",
+    "summary": "🚧",
+    "detail": []
+  }
+]

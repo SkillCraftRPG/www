@@ -1,7 +1,10 @@
 <template>
   <main class="container">
-    <h1 class="text-center">SkillCraft</h1>
+    <h1 style="display: none">SkillCraft</h1>
+    <h2 class="h1 text-center">SkillCraft V7</h2>
     <Downloads />
+    <h2 class="h1 text-center">Calendrier V8</h2>
+    <Roadmap />
   </main>
 </template>
 

@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <NuxtLink to="/regles" class="nav-link"><font-awesome-icon icon="fas fa-book" /> Règles</NuxtLink>
+            <NuxtLink to="/regles" class="nav-link"><font-awesome-icon icon="fas fa-book" /> Règles V8</NuxtLink>
           </li>
         </ul>
       </div>
