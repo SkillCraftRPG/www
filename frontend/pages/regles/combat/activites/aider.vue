@@ -21,7 +21,6 @@
       </div>
     </div>
   </main>
-  <!--  -->
 </template>
 
 <script setup lang="ts">
