@@ -7,20 +7,24 @@
       Les rubriques sont également présentées en ordre logique d’utilisation : d’abord, la création et progression des personnages, puis les règles en
       découlant, et enfin les rubriques concernant le déroulement d’une partie de jeu.
     </p>
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <div class="grid">
-        <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
-          <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
-          <div class="w-100 px-3">
-            <TarProgress :label="tile.progress >= 1 ? '✓' : undefined" :striped="tile.progress < 1" :value="tile.progress * 100" />
-          </div>
-        </NuxtLink>
+    <ClientOnly>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="grid">
+          <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
+            <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
+            <div class="w-100 px-3">
+              <TarProgress :label="tile.progress >= 1 ? '✓' : undefined" :striped="tile.progress < 1" :value="tile.progress * 100" />
+            </div>
+          </NuxtLink>
+        </div>
       </div>
-    </div>
+    </ClientOnly>
   </main>
 </template>
 
 <script setup lang="ts">
+// TODO(fpion): enlever le ClientOnly une fois les Progress enlevées
+
 import type { RouteLocationAsPathGeneric, RouteLocationAsRelativeGeneric } from "vue-router";
 import { TarProgress } from "logitar-vue3-ui";
 
@@ -89,12 +93,6 @@ const tiles: Tile[] = [
     progress: (3 + 31) / 179,
   },
   {
-    icon: "fas fa-wand-sparkles",
-    text: "Magie",
-    to: "/regles/magie",
-    progress: 0,
-  },
-  {
     icon: "fas fa-landmark",
     text: "Spécialisations",
     to: "/regles/specialisations",
@@ -116,6 +114,12 @@ const tiles: Tile[] = [
     icon: "fas fa-hand-fist",
     text: "Combat",
     to: "/regles/combat",
+    progress: 0,
+  },
+  {
+    icon: "fas fa-wand-sparkles",
+    text: "Magie",
+    to: "/regles/magie",
     progress: 0,
   },
 ];
