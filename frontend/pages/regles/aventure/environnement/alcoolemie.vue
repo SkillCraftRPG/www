@@ -328,6 +328,4 @@ useSeo({
   title,
   description: "Découvrez les règles d’alcoolémie, ébriété et gueule de bois, leurs effets sur vos personnages et les risques d’un coma éthylique.",
 });
-
-// TODO(fpion): compléter les talents d'alcoolémie
 </script>

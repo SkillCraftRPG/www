@@ -6,8 +6,8 @@
       Les créatures sont dotées pour le plupart d’une portée de mêlée de 1,5 mètres. Les attaques de certaines créatures sont dotées d’une portée supérieure.
     </p>
     <p>
-      Cette portée correspond à la portée des attaques effectuées avec un membre de son corps ou avec une
-      <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> de mêlée. Les armes dotées de la propriété
+      Cette portée correspond à la portée des attaques effectuées avec un <NuxtLink to="/regles/combat/attaque/mains-nues">membre de son corps</NuxtLink> ou
+      avec une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> de mêlée. Les armes dotées de la propriété
       <NuxtLink to="/regles/equipement/armes/proprietes">Allonge</NuxtLink> augmentent cette portée.
     </p>
     <p>
@@ -18,12 +18,6 @@
         to="/regles/combat/attaque/opportunite"
         >attaque d’opportunité</NuxtLink
       >.
-    </p>
-    <p>
-      Une créature peut attaquer avec un membre de son corps, par exemple donner un coup de poing ou un coup de pied. Elle inflige 1 +
-      <NuxtLink to="/regles/statistiques/force">Force</NuxtLink> points de dégâts contondants non létaux en cas de réussite. Le
-      <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/arts-martiaux">Arts martiaux</NuxtLink> forme une créature au combat avec
-      un membre de son corps.
     </p>
   </main>
 </template>
@@ -42,7 +36,4 @@ useSeo({
   description:
     "Découvrez les règles des attaques de mêlée : coups portés avec le corps ou une arme, portée de 1,5 m, modificateurs de Force et talents associés.",
 });
-
-// TODO(fpion): TODO(fpion): talents pour le corps-à-corps
-// TODO(fpion): extraire le corps-à-corps, comme on a fait avec le combat à deux armes
 </script>

@@ -93,6 +93,11 @@ const items: MenuItem[] = [
     description: "Règles, désavantages et talents pour le combat à plusieurs armes.",
   },
   {
+    path: "/regles/combat/attaque/mains-nues",
+    title: "Combat à mains nues",
+    description: "Combattre à mains nues avec règles, dégâts et talents pour plus de puissance.",
+  },
+  {
     path: "/regles/combat/attaque/abri",
     title: "Abri",
     description: "Règles d’abri en combat : bonus de défense selon l’espace bloqué.",

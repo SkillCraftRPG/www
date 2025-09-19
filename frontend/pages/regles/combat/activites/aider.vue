@@ -5,8 +5,12 @@
     <p>Vous aidez une créature située à 1,5 mètres ou moins de votre position à accomplir une action quelconque.</p>
     <p>
       Pendant votre <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, vous vous préparez par une action. Vous utilisez ensuite votre réaction afin
-      de conférer l’<NuxtLink to="/regles/competences/tests/avantage-desavantage">avantage</NuxtLink> au
+      de conférer <NuxtLink to="/regles/competences/tests/avantage-desavantage">deux avantages</NuxtLink> au
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’une créature.
+    </p>
+    <p>
+      Vous utilisez votre réaction au moment où la créature effectue le test. Vous ne pouvez aider une créature à effectuer un
+      <NuxtLink to="/regles/competences/tests/passif">test passif</NuxtLink>.
     </p>
     <p>
       Votre réaction n’est pas perdue si vous ne l’utilisez pas. Également, si vous l’utilisez pour autre chose, par exemple afin d’effectuer une
@@ -51,6 +55,4 @@ useSeo({
   title,
   description: "Découvrez l’action Aider et ses variantes : conférer l’avantage à un allié, étendre la portée avec Diplomatie ou Distracter les ennemis.",
 });
-
-// TODO(fpion): il me semble que le bonus est faible pour une action + une réaction !
 </script>

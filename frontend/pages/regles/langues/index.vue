@@ -7,12 +7,10 @@
 </template>
 
 <script setup lang="ts">
-const title: string = "Taille";
+const title: string = "Langues";
 
 useSeo({
   title,
   description: "🚧",
 });
-
-// TODO(fpion): catégorie de taille, Facteur de Charge, Espace occupé (carrés), Espace occupé (hexagones), component for table with props for reusability)
 </script>
