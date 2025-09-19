@@ -12,12 +12,6 @@
       <NuxtLink to="/regles/competences/furtivite">Furtivité</NuxtLink>
       de ceux-ci.
     </p>
-    <p>
-      Le maître de jeu peut vous permettre de remplacer le test de Perception par un test d’<NuxtLink to="/regles/competences/investigation"
-        >Investigation</NuxtLink
-      >
-      si vous trouvez des indices indiquant la présence d’une créature ou d’un objet dissimulé.
-    </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à chercher :</p>
     <div class="row">
       <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
