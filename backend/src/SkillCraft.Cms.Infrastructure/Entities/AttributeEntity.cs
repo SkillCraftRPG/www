@@ -42,11 +42,24 @@ internal class AttributeEntity : AggregateEntity
   {
   }
 
-  public override IReadOnlyCollection<ActorId> GetActorIds()
+  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipStatistics: false, skipSkills: false);
+  public IReadOnlyCollection<ActorId> GetActorIds(bool skipStatistics, bool skipSkills)
   {
     List<ActorId> actorIds = new(base.GetActorIds());
-    // TODO(fpion): Statistics
-    // TODO(fpion): Skills
+    if (!skipStatistics)
+    {
+      foreach (StatisticEntity statistic in Statistics)
+      {
+        actorIds.AddRange(statistic.GetActorIds(skipAttribute: true));
+      }
+    }
+    if (!skipSkills)
+    {
+      foreach (SkillEntity skill in Skills)
+      {
+        actorIds.AddRange(skill.GetActorIds(skipAttribute: true));
+      }
+    }
     return actorIds;
   }
 

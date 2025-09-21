@@ -3,6 +3,9 @@ using Krakenar.EntityFrameworkCore.Relational;
 using Krakenar.Infrastructure;
 using Krakenar.Infrastructure.Commands;
 using Microsoft.Extensions.DependencyInjection;
+using SkillCraft.Cms.Core.Attributes;
+using SkillCraft.Cms.Core.Skills;
+using SkillCraft.Cms.Core.Statistics;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Infrastructure.Handlers;
 using SkillCraft.Cms.Infrastructure.Queriers;
@@ -15,11 +18,19 @@ public static class DependencyInjectionExtensions
   {
     ContentMaterializationEvents.Register(services);
 
-    services.AddScoped<ITalentQuerier, TalentQuerier>();
-
     return services
       .AddKrakenarInfrastructure()
       .AddKrakenarEntityFrameworkCoreRelational()
+      .AddSkillCraftCmsQueriers()
       .AddTransient<ICommandHandler<MigrateDatabase>, MigrateDatabaseCommandHandler>();
+  }
+
+  private static IServiceCollection AddSkillCraftCmsQueriers(this IServiceCollection services)
+  {
+    return services
+      .AddScoped<IAttributeQuerier, AttributeQuerier>()
+      .AddScoped<ISkillQuerier, SkillQuerier>()
+      .AddScoped<IStatisticQuerier, StatisticQuerier>()
+      .AddScoped<ITalentQuerier, TalentQuerier>();
   }
 }

@@ -2,6 +2,9 @@
 using Krakenar.Contracts.Actors;
 using Logitar;
 using Logitar.EventSourcing;
+using SkillCraft.Cms.Core.Attributes.Models;
+using SkillCraft.Cms.Core.Skills.Models;
+using SkillCraft.Cms.Core.Statistics.Models;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
@@ -25,9 +28,101 @@ internal class RulesMapper
     }
   }
 
-  public Talent ToTalent(TalentEntity source)
+  public AttributeModel ToAttribute(AttributeEntity source)
   {
-    Talent destination = new()
+    AttributeModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Category = source.Category,
+      Value = source.Value,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    foreach (StatisticEntity statistic in source.Statistics)
+    {
+      destination.Statistics.Add(ToStatistic(statistic, destination));
+    }
+    foreach (SkillEntity skill in source.Skills)
+    {
+      destination.Skills.Add(ToSkill(skill, destination));
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public SkillModel ToSkill(SkillEntity source) => ToSkill(source, attribute: null);
+  public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)
+  {
+    SkillModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Value = source.Value,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    if (attribute is not null)
+    {
+      destination.Attribute = attribute;
+    }
+    else if (source.Attribute is null)
+    {
+      if (source.AttributeId.HasValue)
+      {
+        throw new ArgumentException("The attribute is required.", nameof(source));
+      }
+    }
+    else
+    {
+      destination.Attribute = ToAttribute(source.Attribute);
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public StatisticModel ToStatistic(StatisticEntity source) => ToStatistic(source, attribute: null);
+  public StatisticModel ToStatistic(StatisticEntity source, AttributeModel? attribute)
+  {
+    StatisticModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Value = source.Value,
+      Summary = source.Summary,
+      Description = source.Description
+    };
+
+    if (attribute is not null)
+    {
+      destination.Attribute = attribute;
+    }
+    else if (source.Attribute is null)
+    {
+      throw new ArgumentException("The attribute is required.", nameof(source));
+    }
+    else
+    {
+      destination.Attribute = ToAttribute(source.Attribute);
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public TalentModel ToTalent(TalentEntity source)
+  {
+    TalentModel destination = new()
     {
       Id = source.Id,
       Slug = source.Slug,

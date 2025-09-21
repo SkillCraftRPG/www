@@ -26,14 +26,14 @@ internal class TalentQuerier : ITalentQuerier
     _talents = context.Talents;
   }
 
-  public async Task<Talent?> ReadAsync(Guid id, CancellationToken cancellationToken)
+  public async Task<TalentModel?> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.RequiredTalent)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
-  public async Task<Talent?> ReadAsync(string slug, CancellationToken cancellationToken)
+  public async Task<TalentModel?> ReadAsync(string slug, CancellationToken cancellationToken)
   {
     string slugNormalized = Helper.Normalize(slug);
 
@@ -43,7 +43,7 @@ internal class TalentQuerier : ITalentQuerier
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
 
-  public async Task<SearchResults<Talent>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken)
+  public async Task<SearchResults<TalentModel>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken)
   {
     IQueryBuilder builder = _sqlHelper.Query(RulesDb.Talents.Table).SelectAll(RulesDb.Talents.Table)
       .ApplyIdFilter(RulesDb.Talents.Id, payload.Ids)
@@ -125,16 +125,16 @@ internal class TalentQuerier : ITalentQuerier
     query = query.ApplyPaging(payload);
 
     TalentEntity[] entities = await query.ToArrayAsync(cancellationToken);
-    IReadOnlyCollection<Talent> talents = await MapAsync(entities, cancellationToken);
+    IReadOnlyCollection<TalentModel> talents = await MapAsync(entities, cancellationToken);
 
-    return new SearchResults<Talent>(talents, total);
+    return new SearchResults<TalentModel>(talents, total);
   }
 
-  private async Task<Talent> MapAsync(TalentEntity talent, CancellationToken cancellationToken)
+  private async Task<TalentModel> MapAsync(TalentEntity talent, CancellationToken cancellationToken)
   {
     return (await MapAsync([talent], cancellationToken)).Single();
   }
-  private async Task<IReadOnlyCollection<Talent>> MapAsync(IEnumerable<TalentEntity> talents, CancellationToken cancellationToken)
+  private async Task<IReadOnlyCollection<TalentModel>> MapAsync(IEnumerable<TalentEntity> talents, CancellationToken cancellationToken)
   {
     IEnumerable<ActorId> actorIds = talents.SelectMany(talent => talent.GetActorIds());
     IReadOnlyDictionary<ActorId, Actor> actors = await _actorService.FindAsync(actorIds, cancellationToken);
