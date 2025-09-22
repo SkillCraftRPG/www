@@ -126,27 +126,21 @@ export type SearchResults<T> = {
 export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan" | "Colossal";
 
 export type Skill = {
-  id: string;
   slug: string;
-  value: GameSkill;
   name: string;
-  attributeId?: string | null;
   attribute?: Attribute | null;
+  value: GameSkill;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
 };
 
-export type Statistic = {
-  id: string;
+export type Statistic = Aggregate & {
   slug: string;
-  value: GameStatistic;
   name: string;
-  attributeId: string;
-  attribute?: Attribute | null;
+  attribute: Attribute;
+  value: GameStatistic;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
 };
 
 export type Talent = {

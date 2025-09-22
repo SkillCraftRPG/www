@@ -24,7 +24,7 @@
       <h2 class="h3">Talents</h2>
       <p>
         L’acquisition des <NuxtLink to="/regles/talents">talents</NuxtLink> ci-dessous <NuxtLink to="/regles/competences/formation">forme</NuxtLink> le
-        personnage pour cette compétence et augmente de 1 le <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de cette compétence.
+        personnage pour cette compétence et augmente (+1) le <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de cette compétence.
       </p>
       <div class="row">
         <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -41,21 +41,28 @@ import { marked } from "marked";
 
 import type { Attribute, Skill, Talent } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
-import { getSkill } from "~/services/skills";
 import { getTalents } from "~/services/talents";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
 const route = useRoute();
 const { orderBy } = arrayUtils;
 
-const skill = ref<Skill | undefined>(getSkill(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { attribute: true }));
+const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
 
+const { data } = await useAsyncData<Skill>("skill", () =>
+  $fetch(`/api/skills/slug:${slug.value}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+
+const skill = ref<Skill | undefined>(data.value ?? undefined);
 const attribute = computed<Attribute | undefined>(() => skill.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (skill.value?.description ? (marked.parse(skill.value.description) as string) : undefined));
 const talents = computed<Talent[]>(() => {
   return orderBy(
     getTalents({ requiredTalent: true, skill: true })
-      .filter((talent) => talent.skill && talent.skill.id === skill.value?.id)
+      .filter((talent) => talent.skill && talent.skill.value === skill.value?.value)
       .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   );
