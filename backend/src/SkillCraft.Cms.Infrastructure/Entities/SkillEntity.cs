@@ -31,6 +31,8 @@ internal class SkillEntity : AggregateEntity
   public string? Summary { get; set; }
   public string? Description { get; set; }
 
+  public List<TalentEntity> Talents { get; private set; } = [];
+
   public SkillEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;

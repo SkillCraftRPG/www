@@ -43,11 +43,17 @@ internal class RulesMapper
 
     foreach (StatisticEntity statistic in source.Statistics)
     {
-      destination.Statistics.Add(ToStatistic(statistic, destination));
+      if (statistic.IsPublished)
+      {
+        destination.Statistics.Add(ToStatistic(statistic, destination));
+      }
     }
     foreach (SkillEntity skill in source.Skills)
     {
-      destination.Skills.Add(ToSkill(skill, destination));
+      if (skill.IsPublished)
+      {
+        destination.Skills.Add(ToSkill(skill, destination));
+      }
     }
 
     MapAggregate(source, destination);
@@ -79,7 +85,7 @@ internal class RulesMapper
         throw new ArgumentException("The attribute is required.", nameof(source));
       }
     }
-    else
+    else if (source.Attribute.IsPublished)
     {
       destination.Attribute = ToAttribute(source.Attribute);
     }
@@ -110,7 +116,7 @@ internal class RulesMapper
     {
       throw new ArgumentException("The attribute is required.", nameof(source));
     }
-    else
+    else if (source.Attribute.IsPublished)
     {
       destination.Attribute = ToAttribute(source.Attribute);
     }
@@ -129,10 +135,21 @@ internal class RulesMapper
       Name = source.Name,
       Tier = source.Tier,
       AllowMultiplePurchases = source.AllowMultiplePurchases,
-      Skill = source.Skill,
       Summary = source.Summary,
       Description = source.Description
     };
+
+    if (source.Skill is not null)
+    {
+      if (source.Skill.IsPublished)
+      {
+        destination.Skill = ToSkill(source.Skill);
+      }
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
 
     if (source.RequiredTalent is not null && source.RequiredTalent.IsPublished)
     {

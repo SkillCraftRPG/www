@@ -6,7 +6,6 @@ using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.Data;
 using Logitar.EventSourcing;
 using Microsoft.EntityFrameworkCore;
-using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
@@ -29,6 +28,7 @@ internal class TalentQuerier : ITalentQuerier
   public async Task<TalentModel?> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
     TalentEntity? talent = await _talents.AsNoTracking()
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
       .Include(x => x.RequiredTalent)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
@@ -38,6 +38,7 @@ internal class TalentQuerier : ITalentQuerier
     string slugNormalized = Helper.Normalize(slug);
 
     TalentEntity? talent = await _talents.AsNoTracking()
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
       .Include(x => x.RequiredTalent)
       .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
@@ -66,17 +67,17 @@ internal class TalentQuerier : ITalentQuerier
     if (!string.IsNullOrWhiteSpace(payload.Skill))
     {
       string trimmed = payload.Skill.Trim();
-      if (Enum.TryParse(trimmed, ignoreCase: true, out GameSkill skill))
+      if (Guid.TryParse(trimmed, out Guid skillUid))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsEqualTo(skill.ToString()));
+        builder.Where(RulesDb.Talents.SkillUid, Operators.IsEqualTo(skillUid));
       }
       else if (trimmed.Equals("any", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNotNull());
+        builder.Where(RulesDb.Talents.SkillId, Operators.IsNotNull());
       }
       else if (trimmed.Equals("none", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNull());
+        builder.Where(RulesDb.Talents.SkillId, Operators.IsNull());
       }
     }
     if (payload.AllowMultiplePurchases.HasValue)
@@ -89,6 +90,7 @@ internal class TalentQuerier : ITalentQuerier
     }
 
     IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking()
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
       .Include(x => x.RequiredTalent);
 
     long total = await query.LongCountAsync(cancellationToken);

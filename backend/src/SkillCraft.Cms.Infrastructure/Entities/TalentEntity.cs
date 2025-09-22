@@ -2,7 +2,6 @@
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.EventSourcing;
-using SkillCraft.Cms.Core;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
@@ -24,7 +23,10 @@ internal class TalentEntity : AggregateEntity
 
   public int Tier { get; set; }
   public bool AllowMultiplePurchases { get; set; }
-  public GameSkill? Skill { get; set; } // TODO(fpion): should be a foreign key
+
+  public SkillEntity? Skill { get; private set; }
+  public int? SkillId { get; private set; }
+  public Guid? SkillUid { get; private set; }
 
   public TalentEntity? RequiredTalent { get; private set; }
   public int? RequiredTalentId { get; private set; }
@@ -48,6 +50,10 @@ internal class TalentEntity : AggregateEntity
   public override IReadOnlyCollection<ActorId> GetActorIds()
   {
     List<ActorId> actorIds = new(base.GetActorIds());
+    if (Skill is not null)
+    {
+      actorIds.AddRange(Skill.GetActorIds());
+    }
     if (RequiredTalent is not null)
     {
       actorIds.AddRange(RequiredTalent.GetActorIds());
@@ -67,6 +73,13 @@ internal class TalentEntity : AggregateEntity
     RequiredTalent = requiredTalent;
     RequiredTalentId = requiredTalent?.TalentId;
     RequiredTalentUid = requiredTalent?.Id;
+  }
+
+  public void SetSkill(SkillEntity? skill)
+  {
+    Skill = skill;
+    SkillId = skill?.SkillId;
+    SkillUid = skill?.Id;
   }
 
   public void Unpublish(ContentLocaleUnpublished @event)
