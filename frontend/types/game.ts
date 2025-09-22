@@ -34,15 +34,13 @@ export type Aggregate = {
   updatedOn: string;
 };
 
-export type Attribute = {
-  id: string;
+export type Attribute = Aggregate & {
   slug: string;
-  value: GameAttribute;
-  category?: AttributeCategory | null;
   name: string;
+  category?: AttributeCategory | null;
+  value: GameAttribute;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
   statistics: Statistic[];
   skills: Skill[];
 };

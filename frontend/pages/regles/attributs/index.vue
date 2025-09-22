@@ -30,26 +30,40 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Attribute } from "~/types/game";
-import { getAttributes } from "~/services/attributes";
+import type { Attribute, SearchResults } from "~/types/game";
 
+const config = useRuntimeConfig();
 const title: string = "Attributs";
 const { orderBy } = arrayUtils;
 
+const { data } = await useLazyAsyncData<SearchResults<Attribute>>(
+  "attributes",
+  () =>
+    $fetch("/api/attributes", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
 const attributes = computed<Attribute[]>(() =>
   orderBy(
-    getAttributes({ statistics: true, skills: true }).map((attribute) => {
-      let sort: string = "2";
+    (data.value?.items ?? []).map((attribute) => {
+      const sort: unknown[] = [];
       switch (attribute.category) {
         case "Physical":
-          sort = "0";
+          sort.push(0);
           break;
         case "Mental":
-          sort = "1";
+          sort.push(1);
+          break;
+        default:
+          sort.push(2);
           break;
       }
-      sort = `${sort}_${attribute.slug}`;
-      return { ...attribute, sort };
+      sort.push(attribute.slug);
+      return { ...attribute, sort: sort.join("_") };
     }),
     "sort",
   ),
