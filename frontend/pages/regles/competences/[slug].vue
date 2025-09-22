@@ -64,8 +64,8 @@ const { data } = await useAsyncData<SkillWithTalents | undefined>("skill", async
   });
   return { ...skill, talents: results.items };
 });
+const skill = computed<SkillWithTalents | undefined>(() => data.value ?? undefined);
 
-const skill = ref<SkillWithTalents | undefined>(data.value ?? undefined);
 const attribute = computed<Attribute | undefined>(() => skill.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (skill.value?.description ? (marked.parse(skill.value.description) as string) : undefined));
 const talents = computed<Talent[]>(() => {

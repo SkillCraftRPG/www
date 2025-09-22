@@ -69,7 +69,6 @@ const { data } = await useLazyAsyncData<SearchResults<Skill>>(
     server: false,
   },
 );
-
 const skills = computed<Skill[]>(() => data.value?.items ?? []);
 
 useSeo({

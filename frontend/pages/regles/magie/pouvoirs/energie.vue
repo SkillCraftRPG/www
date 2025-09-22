@@ -125,7 +125,6 @@ const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
     baseURL: config.public.apiBaseUrl,
   }),
 );
-
 const talents = computed<Talent[]>(() =>
   orderBy(
     (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),

@@ -158,6 +158,18 @@ const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
     baseURL: config.public.apiBaseUrl,
   }),
 );
+const talentsCapacity = computed<Talent[]>(() =>
+  orderBy(
+    (data.value?.items ?? []).filter(({ slug }) => slugsCapacity.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
+const talentsFormation = computed<Talent[]>(() =>
+  orderBy(
+    (data.value?.items ?? []).filter(({ slug }) => slugsFormation.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
 
 const shields = ref<Shield[]>(getShields());
 
@@ -177,19 +189,6 @@ const medium = computed<Shield[]>(() =>
   orderBy(
     getShields().filter(({ category }) => category === "Medium"),
     "slug",
-  ),
-);
-
-const talentsCapacity = computed<Talent[]>(() =>
-  orderBy(
-    (data.value?.items ?? []).filter(({ slug }) => slugsCapacity.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
-    "sort",
-  ),
-);
-const talentsFormation = computed<Talent[]>(() =>
-  orderBy(
-    (data.value?.items ?? []).filter(({ slug }) => slugsFormation.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
-    "sort",
   ),
 );
 

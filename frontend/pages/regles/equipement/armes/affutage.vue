@@ -64,7 +64,6 @@ const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
     baseURL: config.public.apiBaseUrl,
   }),
 );
-
 const talents = computed<Map<string, Talent>>(() => new Map((data.value?.items ?? []).map((talent) => [talent.slug, talent])));
 
 type Level = {
