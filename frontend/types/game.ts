@@ -125,7 +125,7 @@ export type SearchResults<T> = {
 
 export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan" | "Colossal";
 
-export type Skill = {
+export type Skill = Aggregate & {
   slug: string;
   name: string;
   attribute?: Attribute | null;
@@ -143,18 +143,14 @@ export type Statistic = Aggregate & {
   description?: string | null;
 };
 
-export type Talent = {
-  id: string;
-  tier: number;
+export type Talent = Aggregate & {
   slug: string;
   name: string;
+  tier: number;
   allowMultiplePurchases: boolean;
-  skillId?: string | null;
   skill?: Skill | null;
-  requiredTalentId?: string | null;
-  requiredTalent?: Talent | null;
-  requiringTalents: Talent[];
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
+  requiredTalent?: Talent | null;
+  requiringTalents: Talent[];
 };

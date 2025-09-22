@@ -60,9 +60,9 @@ const items: MenuItem[] = [
 ];
 
 const { data } = await useLazyAsyncData<SearchResults<Skill>>(
-  "statistics",
+  "skills",
   () =>
-    $fetch("/api/statistics", {
+    $fetch("/api/skills", {
       baseURL: config.public.apiBaseUrl,
     }),
   {

@@ -47,15 +47,20 @@ import { marked } from "marked";
 
 import type { Breadcrumb } from "~/types/components";
 import type { Skill, Talent } from "~/types/game";
-import { getTalent } from "~/services/talents";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Talents", to: "/regles/talents" }];
 const route = useRoute();
 
-const talent = ref<Talent | undefined>(
-  getTalent(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { requiredTalent: true, skill: true }),
+const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
+
+const { data } = await useAsyncData<Talent>("talent", () =>
+  $fetch(`/api/talents/slug:${slug.value}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
 );
 
+const talent = computed<Talent | undefined>(() => data.value ?? undefined);
 const html = computed<string | undefined>(() => (talent.value?.description ? (marked.parse(talent.value.description) as string) : undefined));
 const skill = computed<Skill | undefined>(() => talent.value?.skill ?? undefined);
 const title = computed<string | undefined>(() => talent.value?.name);

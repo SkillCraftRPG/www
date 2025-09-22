@@ -29,7 +29,7 @@ internal class TalentQuerier : ITalentQuerier
   {
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
-      .Include(x => x.RequiredTalent)
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
@@ -39,7 +39,7 @@ internal class TalentQuerier : ITalentQuerier
 
     TalentEntity? talent = await _talents.AsNoTracking()
       .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
-      .Include(x => x.RequiredTalent)
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute)
       .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
@@ -91,7 +91,7 @@ internal class TalentQuerier : ITalentQuerier
 
     IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking()
       .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
-      .Include(x => x.RequiredTalent);
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute);
 
     long total = await query.LongCountAsync(cancellationToken);
 

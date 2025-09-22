@@ -34,7 +34,7 @@
     </p>
     <h2 class="h3">Attaque</h2>
     <p>
-      Lorsque vous effectuez une <NuxtLink to="/regles/combat/attaque">Attaque</NuxtLink>, certains talents ou certaines capacités peuvent augmenter vos chances
+      Lorsque vous effectuez une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>, certains talents ou certaines capacités peuvent augmenter vos chances
       d’obtenir une réussite critique ou réduire vos chances d’obtenir un échec critique. Certaines capacités ou conditions peuvent également réduire ces
       chances, voire les nullifier.
     </p>
@@ -61,28 +61,32 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/components";
-import type { Talent } from "~/types/game";
-import { getTalents } from "~/services/talents";
+import type { SearchResults, Talent } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },
   { text: "Tests", to: "/regles/competences/tests" },
 ];
-const slugs: Set<string> = new Set(["coup-critique", "critique-accru", "critique-superieur", "critique-extraordinaire"]);
 const title: string = "Critique";
 const { orderBy } = arrayUtils;
+
+const query: string = ["coup-critique", "critique-accru", "critique-superieur", "critique-extraordinaire"].map((slug) => `slug=${slug}`).join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+
+const talents = computed<Talent[]>(() =>
+  orderBy(
+    (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
 
 useSeo({
   title,
   description: "Découvrez les effets et conséquences des réussites critiques et échecs critiques dans le système SkillCraft.",
 });
-
-const talents = computed<Talent[]>(() =>
-  orderBy(
-    getTalents({ requiredTalent: true })
-      .filter(({ slug }) => slugs.has(slug))
-      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
-    "sort",
-  ),
-);
 </script>

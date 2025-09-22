@@ -72,7 +72,7 @@
     </p>
     <p>Les talents suivants augmentent ce seuil de manière permanente, en plus de conférer des bonus en lien avec l’alcool :</p>
     <div class="row">
-      <div v-for="talent in filteredTalents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <TalentCard class="d-flex flex-column h-100" :talent="talent" />
       </div>
     </div>
@@ -242,10 +242,10 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import { getTalents } from "~/services/talents";
 import type { Breadcrumb } from "~/types/components";
-import type { Talent } from "~/types/game";
+import type { SearchResults, Talent } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },
   { text: "Environnement", to: "/regles/aventure/environnement" },
@@ -311,11 +311,18 @@ const items = ref<Alcohol[]>([
   },
 ]);
 
-const talents = ref<Talent[]>(getTalents({ requiredTalent: true }));
+const query: string = ["tolerance-a-l-alcool-i", "tolerance-a-l-alcool-ii", "tolerance-a-l-alcool-iii", "tolerance-a-l-alcool-iv"]
+  .map((slug) => `slug=${slug}`)
+  .join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
 
-const filteredTalents = computed<Talent[]>(() =>
+const talents = computed<Talent[]>(() =>
   orderBy(
-    talents.value.filter(({ slug }) => slug.includes("alcool")).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   ),
 );

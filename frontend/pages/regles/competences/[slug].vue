@@ -39,9 +39,8 @@
 import { arrayUtils } from "logitar-js";
 import { marked } from "marked";
 
-import type { Attribute, Skill, Talent } from "~/types/game";
+import type { Attribute, SearchResults, Skill, Talent } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
-import { getTalents } from "~/services/talents";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
@@ -50,20 +49,28 @@ const { orderBy } = arrayUtils;
 
 const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
 
-const { data } = await useAsyncData<Skill>("skill", () =>
-  $fetch(`/api/skills/slug:${slug.value}`, {
+type SkillWithTalents = Skill & {
+  talents: Talent[];
+};
+const { data } = await useAsyncData<SkillWithTalents | undefined>("skill", async () => {
+  const skill = await $fetch<Skill | undefined>(`/api/skills/slug:${slug.value}`, {
     baseURL: config.public.apiBaseUrl,
-  }),
-);
+  });
+  if (!skill) {
+    return undefined;
+  }
+  const results = await $fetch<SearchResults<Talent>>(`/api/talents?skill=${skill.id}`, {
+    baseURL: config.public.apiBaseUrl,
+  });
+  return { ...skill, talents: results.items };
+});
 
-const skill = ref<Skill | undefined>(data.value ?? undefined);
+const skill = ref<SkillWithTalents | undefined>(data.value ?? undefined);
 const attribute = computed<Attribute | undefined>(() => skill.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (skill.value?.description ? (marked.parse(skill.value.description) as string) : undefined));
 const talents = computed<Talent[]>(() => {
   return orderBy(
-    getTalents({ requiredTalent: true, skill: true })
-      .filter((talent) => talent.skill && talent.skill.value === skill.value?.value)
-      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    (skill.value?.talents ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   );
 });
