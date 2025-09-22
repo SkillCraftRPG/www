@@ -33,6 +33,10 @@
       Si vous possédez une <NuxtLink to="/regles/equipement/outils">trousse de premiers soins</NuxtLink>, vous pouvez utiliser 1, 2 ou 3 charges de la trousse
       afin de conférer à votre test de un bonus +5, de +10, ou une réussite automatique.
     </p>
+    <p>
+      Le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/medecine">Médecine</NuxtLink> améliore votre capacité à stabiliser un
+      mourant.
+    </p>
   </main>
 </template>
 
