@@ -42,15 +42,20 @@
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
 import type { Talent } from "~/types/game";
-import { getTalent } from "~/services/talents";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armures", to: "/regles/equipement/armures" },
 ];
 const title: string = "Armures multiples";
 
-const talent = ref<Talent | undefined>(getTalent("blinde", { requiredTalent: true, skill: true }));
+const { data } = await useAsyncData<Talent>("talents", () =>
+  $fetch("/api/talents/slug:blinde", {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+const talent = computed<Talent | undefined>(() => data.value ?? undefined);
 
 useSeo({
   title,
