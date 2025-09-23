@@ -3,7 +3,6 @@ using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure.Contents;
 using SkillCraft.Cms.Infrastructure.Entities;
 
@@ -42,28 +41,25 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     talent.Tier = (int)invariant.GetNumber(Talents.Tier);
     talent.AllowMultiplePurchases = invariant.GetBoolean(Talents.AllowMultiplePurchases);
 
-    GameSkill? skill = null;
-    IReadOnlyCollection<string>? skills = invariant.TryGetSelect(Talents.Skill);
-    if (skills is not null)
+    SkillEntity? skill = null;
+    IReadOnlyCollection<Guid>? skillIds = invariant.TryGetRelatedContents(Talents.Skill);
+    if (skillIds is not null)
     {
-      if (skills.Count > 1)
+      if (skillIds.Count > 1)
       {
-        _logger.LogWarning("Many skills ({Count}) were provided, when at most one is expected, for talent '{Talent}'.", skills.Count, talent);
+        _logger.LogWarning("Many skills ({Count}) were provided, when at most one is expected, for talent '{Talent}'.", skillIds.Count, talent);
       }
-      else if (skills.Count == 1)
+      else if (skillIds.Count == 1)
       {
-        string skillValue = skills.Single();
-        if (Enum.TryParse(skillValue, out GameSkill parsedSkill))
+        Guid skillId = skillIds.Single();
+        skill = await _context.Skills.SingleOrDefaultAsync(x => x.Id == skillId, cancellationToken);
+        if (skill is null)
         {
-          skill = parsedSkill;
-        }
-        else
-        {
-          _logger.LogWarning("The skill '{Skill}' was not parsed, for talent '{Talent}'.", skillValue, talent);
+          _logger.LogWarning("The skill 'Id={SkillId}' was not found, for talent '{Talent}'.", skillId, talent);
         }
       }
     }
-    talent.Skill = skill;
+    talent.SetSkill(skill);
 
     TalentEntity? requiredTalent = null;
     IReadOnlyCollection<Guid>? requiredTalentIds = invariant.TryGetRelatedContents(Talents.RequiredTalent);

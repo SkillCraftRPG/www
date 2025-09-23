@@ -13,15 +13,23 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
+import type { SearchResults, Statistic } from "~/types/game";
 
-import type { Statistic } from "~/types/game";
-import { getStatistics } from "~/services/statistics";
-
+const config = useRuntimeConfig();
 const title: string = "Statistiques";
-const { orderBy } = arrayUtils;
 
-const statistics = ref<Statistic[]>(orderBy(getStatistics({ attribute: true }), "slug"));
+const { data } = await useLazyAsyncData<SearchResults<Statistic>>(
+  "statistics",
+  () =>
+    $fetch("/api/statistics", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const statistics = computed<Statistic[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

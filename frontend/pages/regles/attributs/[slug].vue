@@ -32,16 +32,21 @@ import { marked } from "marked";
 
 import type { Attribute, Skill, Statistic } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
-import { getAttribute } from "~/services/attributes";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Attributs", to: "/regles/attributs" }];
 const route = useRoute();
 const { orderBy } = arrayUtils;
 
-const attribute = ref<Attribute | undefined>(
-  getAttribute(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { statistics: true, skills: true }),
+const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
+
+const { data } = await useAsyncData<Attribute>("attribute", () =>
+  $fetch(`/api/attributes/slug:${slug.value}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
 );
 
+const attribute = computed<Attribute | undefined>(() => data.value ?? undefined);
 const html = computed<string | undefined>(() => (attribute.value?.description ? (marked.parse(attribute.value.description) as string) : undefined));
 const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "slug") : []));
 const statistics = computed<Statistic[]>(() => (attribute.value?.statistics ? orderBy(attribute.value.statistics, "slug") : []));

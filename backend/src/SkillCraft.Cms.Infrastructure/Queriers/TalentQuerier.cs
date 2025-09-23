@@ -6,7 +6,6 @@ using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.Data;
 using Logitar.EventSourcing;
 using Microsoft.EntityFrameworkCore;
-using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
@@ -26,24 +25,26 @@ internal class TalentQuerier : ITalentQuerier
     _talents = context.Talents;
   }
 
-  public async Task<Talent?> ReadAsync(Guid id, CancellationToken cancellationToken)
+  public async Task<TalentModel?> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
     TalentEntity? talent = await _talents.AsNoTracking()
-      .Include(x => x.RequiredTalent)
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
-  public async Task<Talent?> ReadAsync(string slug, CancellationToken cancellationToken)
+  public async Task<TalentModel?> ReadAsync(string slug, CancellationToken cancellationToken)
   {
     string slugNormalized = Helper.Normalize(slug);
 
     TalentEntity? talent = await _talents.AsNoTracking()
-      .Include(x => x.RequiredTalent)
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute)
       .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return talent is null ? null : await MapAsync(talent, cancellationToken);
   }
 
-  public async Task<SearchResults<Talent>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken)
+  public async Task<SearchResults<TalentModel>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken)
   {
     IQueryBuilder builder = _sqlHelper.Query(RulesDb.Talents.Table).SelectAll(RulesDb.Talents.Table)
       .ApplyIdFilter(RulesDb.Talents.Id, payload.Ids)
@@ -66,17 +67,17 @@ internal class TalentQuerier : ITalentQuerier
     if (!string.IsNullOrWhiteSpace(payload.Skill))
     {
       string trimmed = payload.Skill.Trim();
-      if (Enum.TryParse(trimmed, ignoreCase: true, out GameSkill skill))
+      if (Guid.TryParse(trimmed, out Guid skillUid))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsEqualTo(skill.ToString()));
+        builder.Where(RulesDb.Talents.SkillUid, Operators.IsEqualTo(skillUid));
       }
       else if (trimmed.Equals("any", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNotNull());
+        builder.Where(RulesDb.Talents.SkillId, Operators.IsNotNull());
       }
       else if (trimmed.Equals("none", StringComparison.InvariantCultureIgnoreCase))
       {
-        builder.Where(RulesDb.Talents.Skill, Operators.IsNull());
+        builder.Where(RulesDb.Talents.SkillId, Operators.IsNull());
       }
     }
     if (payload.AllowMultiplePurchases.HasValue)
@@ -89,7 +90,8 @@ internal class TalentQuerier : ITalentQuerier
     }
 
     IQueryable<TalentEntity> query = _talents.FromQuery(builder).AsNoTracking()
-      .Include(x => x.RequiredTalent);
+      .Include(x => x.Skill).ThenInclude(x => x!.Attribute)
+      .Include(x => x.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute);
 
     long total = await query.LongCountAsync(cancellationToken);
 
@@ -125,16 +127,16 @@ internal class TalentQuerier : ITalentQuerier
     query = query.ApplyPaging(payload);
 
     TalentEntity[] entities = await query.ToArrayAsync(cancellationToken);
-    IReadOnlyCollection<Talent> talents = await MapAsync(entities, cancellationToken);
+    IReadOnlyCollection<TalentModel> talents = await MapAsync(entities, cancellationToken);
 
-    return new SearchResults<Talent>(talents, total);
+    return new SearchResults<TalentModel>(talents, total);
   }
 
-  private async Task<Talent> MapAsync(TalentEntity talent, CancellationToken cancellationToken)
+  private async Task<TalentModel> MapAsync(TalentEntity talent, CancellationToken cancellationToken)
   {
     return (await MapAsync([talent], cancellationToken)).Single();
   }
-  private async Task<IReadOnlyCollection<Talent>> MapAsync(IEnumerable<TalentEntity> talents, CancellationToken cancellationToken)
+  private async Task<IReadOnlyCollection<TalentModel>> MapAsync(IEnumerable<TalentEntity> talents, CancellationToken cancellationToken)
   {
     IEnumerable<ActorId> actorIds = talents.SelectMany(talent => talent.GetActorIds());
     IReadOnlyDictionary<ActorId, Actor> actors = await _actorService.FindAsync(actorIds, cancellationToken);

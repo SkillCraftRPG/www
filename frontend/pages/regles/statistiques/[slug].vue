@@ -22,13 +22,20 @@ import { marked } from "marked";
 
 import type { Attribute, Statistic } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
-import { getStatistic } from "~/services/statistics";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Statistiques", to: "/regles/statistiques" }];
 const route = useRoute();
 
-const statistic = ref<Statistic | undefined>(getStatistic(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { attribute: true }));
+const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
 
+const { data } = await useAsyncData<Statistic>("statistic", () =>
+  $fetch(`/api/statistics/slug:${slug.value}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+
+const statistic = computed<Statistic | undefined>(() => data.value ?? undefined);
 const attribute = computed<Attribute | undefined>(() => statistic.value?.attribute ?? undefined);
 const html = computed<string | undefined>(() => (statistic.value?.description ? (marked.parse(statistic.value.description) as string) : undefined));
 const title = computed<string | undefined>(() => statistic.value?.name);

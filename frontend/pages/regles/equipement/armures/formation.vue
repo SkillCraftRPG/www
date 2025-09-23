@@ -56,22 +56,25 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/components";
-import type { Talent } from "~/types/game";
-import { getTalents } from "~/services/talents";
+import type { SearchResults, Talent } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armures", to: "/regles/equipement/armures" },
 ];
-const slugs: Set<string> = new Set(["cuirasse", "formation-martiale", "melee", "orientation"]);
 const title: string = "Formation au port d’armure";
 const { orderBy } = arrayUtils;
 
+const query: string = ["cuirasse", "formation-martiale", "melee", "orientation"].map((slug) => `slug=${slug}`).join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
 const talents = computed<Talent[]>(() =>
   orderBy(
-    getTalents({ requiredTalent: true, skill: true })
-      .filter(({ slug }) => slugs.has(slug))
-      .map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   ),
 );

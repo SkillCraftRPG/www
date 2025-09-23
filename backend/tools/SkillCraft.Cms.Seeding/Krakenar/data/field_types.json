@@ -47,94 +47,13 @@
     }
   },
   {
-    "Id": "00d98324-de42-4f14-83a9-f2a054056c04",
+    "Id": "4a338816-2d6f-423f-a679-ee160bdb439d",
     "UniqueName": "Skill",
     "DisplayName": null,
     "Description": null,
-    "Select": {
-      "IsMultiple": false,
-      "Options": [
-        {
-          "Text": "Acrobaties",
-          "Value": "Acrobatics"
-        },
-        {
-          "Text": "Athlétisme",
-          "Value": "Athletics"
-        },
-        {
-          "Text": "Artisanat",
-          "Value": "Crafting"
-        },
-        {
-          "Text": "Tromperie",
-          "Value": "Deception"
-        },
-        {
-          "Text": "Diplomatie",
-          "Value": "Diplomacy"
-        },
-        {
-          "Text": "Discipline",
-          "Value": "Discipline"
-        },
-        {
-          "Text": "Intuition",
-          "Value": "Insight"
-        },
-        {
-          "Text": "Investigation",
-          "Value": "Investigation"
-        },
-        {
-          "Text": "Connaissance",
-          "Value": "Knowledge"
-        },
-        {
-          "Text": "Linguistique",
-          "Value": "Linguistics"
-        },
-        {
-          "Text": "Médecine",
-          "Value": "Medicine"
-        },
-        {
-          "Text": "Mêlée",
-          "Value": "Melee"
-        },
-        {
-          "Text": "Occultisme",
-          "Value": "Occultism"
-        },
-        {
-          "Text": "Orientation",
-          "Value": "Orientation"
-        },
-        {
-          "Text": "Perception",
-          "Value": "Perception"
-        },
-        {
-          "Text": "Représentation",
-          "Value": "Performance"
-        },
-        {
-          "Text": "Résistance",
-          "Value": "Resistance"
-        },
-        {
-          "Text": "Furtivité",
-          "Value": "Stealth"
-        },
-        {
-          "Text": "Survie",
-          "Value": "Survival"
-        },
-        {
-          "Text": "Roublardise",
-          "Value": "Thievery"
-        }
-      ]
+    "RelatedContent": {
+      "ContentTypeId": "d90f5df9-1bc2-4ee6-b433-376773ca2973",
+      "IsMultiple": false
     }
   },
   {

@@ -49,15 +49,22 @@
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
-import type { Talent } from "~/types/game";
-import { getTalents } from "~/services/talents";
+import type { SearchResults, Talent } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },
   { text: "Armes", to: "/regles/equipement/armes" },
 ];
-const talents: Map<string, Talent> = new Map(getTalents().map((talent) => [talent.slug, talent]));
 const title: string = "Affûtage";
+
+const query: string = ["artisan-virtuose", "expertise-artisanale", "maitre-artisan"].map((slug) => `slug=${slug}`).join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+const talents = computed<Map<string, Talent>>(() => new Map((data.value?.items ?? []).map((talent) => [talent.slug, talent])));
 
 type Level = {
   level: number;
@@ -68,17 +75,17 @@ const levels = ref<Level[]>([
   {
     level: 1,
     price: 5,
-    talent: talents.get("expertise-artisanale"),
+    talent: talents.value.get("expertise-artisanale"),
   },
   {
     level: 2,
     price: 15,
-    talent: talents.get("maitre-artisan"),
+    talent: talents.value.get("maitre-artisan"),
   },
   {
     level: 3,
     price: 50,
-    talent: talents.get("artisan-virtuose"),
+    talent: talents.value.get("artisan-virtuose"),
   },
 ]);
 

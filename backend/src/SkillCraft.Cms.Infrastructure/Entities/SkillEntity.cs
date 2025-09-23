@@ -31,6 +31,8 @@ internal class SkillEntity : AggregateEntity
   public string? Summary { get; set; }
   public string? Description { get; set; }
 
+  public List<TalentEntity> Talents { get; private set; } = [];
+
   public SkillEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
@@ -42,10 +44,14 @@ internal class SkillEntity : AggregateEntity
   {
   }
 
-  public override IReadOnlyCollection<ActorId> GetActorIds()
+  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipAttribute: false);
+  public IReadOnlyCollection<ActorId> GetActorIds(bool skipAttribute)
   {
     List<ActorId> actorIds = new(base.GetActorIds());
-    // TODO(fpion): Attribute
+    if (!skipAttribute && Attribute is not null)
+    {
+      actorIds.AddRange(Attribute.GetActorIds(skipStatistics: false, skipSkills: true));
+    }
     return actorIds;
   }
 

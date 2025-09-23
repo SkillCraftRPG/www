@@ -27,22 +27,25 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/components";
-import type { Talent } from "~/types/game";
-import { getTalents } from "~/services/talents";
+import type { SearchResults, Talent } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },
   { text: "Activités", to: "/regles/combat/activites" },
 ];
-const slugs: Set<string> = new Set(["astuce", "colosse", "coup-de-bouclier", "mefait-feutre", "protection"]);
 const title: string = "Bousculer";
 const { orderBy } = arrayUtils;
 
-const allTalents = ref<Talent[]>(getTalents());
-
+const query: string = ["astuce", "colosse", "coup-de-bouclier", "mefait-feutre", "protection"].map((slug) => `slug=${slug}`).join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
 const talents = computed<Talent[]>(() =>
   orderBy(
-    allTalents.value.filter(({ slug }) => slugs.has(slug)).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
     "sort",
   ),
 );

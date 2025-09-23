@@ -14,7 +14,7 @@
       dépenser un point afin d’augmenter de 1 le rang d’une compétence.
     </p>
     <p>
-      Lorsqu’un personnage acquiert un <NuxtLink to="/regles/talents">talent</NuxtLink> associé à une compétence, le rang de celle-ci augmente de 1. Si le rang
+      Lorsqu’un personnage acquiert un <NuxtLink to="/regles/talents">talent</NuxtLink> associé à une compétence, le rang de celle-ci augmente (+1). Si le rang
       maximal était atteint avant l’acquisition, le personnage récupère un point de compétence qu’il peut dépenser afin d’augmenter le rang d’une aure
       compétence.
     </p>

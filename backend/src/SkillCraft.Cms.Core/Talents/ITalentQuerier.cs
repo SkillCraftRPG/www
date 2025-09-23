@@ -5,8 +5,8 @@ namespace SkillCraft.Cms.Core.Talents;
 
 public interface ITalentQuerier
 {
-  Task<Talent?> ReadAsync(Guid id, CancellationToken cancellationToken = default);
-  Task<Talent?> ReadAsync(string slug, CancellationToken cancellationToken = default);
+  Task<TalentModel?> ReadAsync(Guid id, CancellationToken cancellationToken = default);
+  Task<TalentModel?> ReadAsync(string slug, CancellationToken cancellationToken = default);
 
-  Task<SearchResults<Talent>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken = default);
+  Task<SearchResults<TalentModel>> SearchAsync(SearchTalentsPayload payload, CancellationToken cancellationToken = default);
 }

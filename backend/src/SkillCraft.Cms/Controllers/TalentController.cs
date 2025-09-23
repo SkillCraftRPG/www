@@ -18,23 +18,23 @@ public class TalentController : ControllerBase
   }
 
   [HttpGet("{id}")]
-  public async Task<ActionResult<Talent>> ReadAsync(Guid id, CancellationToken cancellationToken)
+  public async Task<ActionResult<TalentModel>> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
-    Talent? talent = await _talentQuerier.ReadAsync(id, cancellationToken);
+    TalentModel? talent = await _talentQuerier.ReadAsync(id, cancellationToken);
     return talent is null ? NotFound() : Ok(talent);
   }
 
   [HttpGet("slug:{slug}")]
-  public async Task<ActionResult<Talent>> ReadAsync(string slug, CancellationToken cancellationToken)
+  public async Task<ActionResult<TalentModel>> ReadAsync(string slug, CancellationToken cancellationToken)
   {
-    Talent? talent = await _talentQuerier.ReadAsync(slug, cancellationToken);
+    TalentModel? talent = await _talentQuerier.ReadAsync(slug, cancellationToken);
     return talent is null ? NotFound() : Ok(talent);
   }
 
   [HttpGet]
-  public async Task<ActionResult<SearchResults<Talent>>> SearchAsync([FromQuery] SearchTalentsParameters parameters, CancellationToken cancellationToken)
+  public async Task<ActionResult<SearchResults<TalentModel>>> SearchAsync([FromQuery] SearchTalentsParameters parameters, CancellationToken cancellationToken)
   {
-    SearchResults<Talent> talents = await _talentQuerier.SearchAsync(parameters.ToPayload(), cancellationToken);
+    SearchResults<TalentModel> talents = await _talentQuerier.SearchAsync(parameters.ToPayload(), cancellationToken);
     return Ok(talents);
   }
 }

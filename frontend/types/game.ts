@@ -34,15 +34,13 @@ export type Aggregate = {
   updatedOn: string;
 };
 
-export type Attribute = {
-  id: string;
+export type Attribute = Aggregate & {
   slug: string;
-  value: GameAttribute;
-  category?: AttributeCategory | null;
   name: string;
+  category?: AttributeCategory | null;
+  value: GameAttribute;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
   statistics: Statistic[];
   skills: Skill[];
 };
@@ -127,42 +125,32 @@ export type SearchResults<T> = {
 
 export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan" | "Colossal";
 
-export type Skill = {
-  id: string;
+export type Skill = Aggregate & {
   slug: string;
+  name: string;
+  attribute?: Attribute | null;
   value: GameSkill;
-  name: string;
-  attributeId?: string | null;
-  attribute?: Attribute | null;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
 };
 
-export type Statistic = {
-  id: string;
+export type Statistic = Aggregate & {
   slug: string;
+  name: string;
+  attribute: Attribute;
   value: GameStatistic;
-  name: string;
-  attributeId: string;
-  attribute?: Attribute | null;
   summary?: string | null;
   description?: string | null;
-  notes?: string | null;
 };
 
-export type Talent = {
-  id: string;
-  tier: number;
+export type Talent = Aggregate & {
   slug: string;
   name: string;
+  tier: number;
   allowMultiplePurchases: boolean;
-  skillId?: string | null;
   skill?: Skill | null;
-  requiredTalentId?: string | null;
+  summary?: string | null;
+  description?: string | null;
   requiredTalent?: Talent | null;
   requiringTalents: Talent[];
-  summary?: string | null;
-  description?: string | null;
-  notes?: string | null;
 };

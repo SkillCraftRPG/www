@@ -379,9 +379,11 @@ namespace SkillCraft.Cms.Infrastructure.PostgreSQL.Migrations
                     b.Property<Guid?>("RequiredTalentUid")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Skill")
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
+                    b.Property<int?>("SkillId")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid?>("SkillUid")
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Slug")
                         .IsRequired()
@@ -434,7 +436,9 @@ namespace SkillCraft.Cms.Infrastructure.PostgreSQL.Migrations
 
                     b.HasIndex("RequiredTalentUid");
 
-                    b.HasIndex("Skill");
+                    b.HasIndex("SkillId");
+
+                    b.HasIndex("SkillUid");
 
                     b.HasIndex("Slug");
 
@@ -485,7 +489,14 @@ namespace SkillCraft.Cms.Infrastructure.PostgreSQL.Migrations
                         .HasForeignKey("RequiredTalentId")
                         .OnDelete(DeleteBehavior.Restrict);
 
+                    b.HasOne("SkillCraft.Cms.Infrastructure.Entities.SkillEntity", "Skill")
+                        .WithMany("Talents")
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.Navigation("RequiredTalent");
+
+                    b.Navigation("Skill");
                 });
 
             modelBuilder.Entity("SkillCraft.Cms.Infrastructure.Entities.AttributeEntity", b =>
@@ -493,6 +504,11 @@ namespace SkillCraft.Cms.Infrastructure.PostgreSQL.Migrations
                     b.Navigation("Skills");
 
                     b.Navigation("Statistics");
+                });
+
+            modelBuilder.Entity("SkillCraft.Cms.Infrastructure.Entities.SkillEntity", b =>
+                {
+                    b.Navigation("Talents");
                 });
 
             modelBuilder.Entity("SkillCraft.Cms.Infrastructure.Entities.TalentEntity", b =>

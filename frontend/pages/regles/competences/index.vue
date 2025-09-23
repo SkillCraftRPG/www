@@ -26,13 +26,10 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
+import type { SearchResults, Skill } from "~/types/game";
 
-import type { Skill } from "~/types/game";
-import { getSkills } from "~/services/skills";
-
+const config = useRuntimeConfig();
 const title: string = "Compétences";
-const { orderBy } = arrayUtils;
 
 type MenuItem = {
   path: string;
@@ -62,7 +59,17 @@ const items: MenuItem[] = [
   },
 ];
 
-const skills = ref<Skill[]>(orderBy(getSkills({ attribute: true }), "slug"));
+const { data } = await useLazyAsyncData<SearchResults<Skill>>(
+  "skills",
+  () =>
+    $fetch("/api/skills", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+const skills = computed<Skill[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

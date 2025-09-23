@@ -2,8 +2,6 @@
 using Krakenar.EntityFrameworkCore.Relational.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure.Entities;
 
 namespace SkillCraft.Cms.Infrastructure.Configurations;
@@ -24,7 +22,8 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
     builder.HasIndex(x => x.Name);
     builder.HasIndex(x => x.Tier);
     builder.HasIndex(x => x.AllowMultiplePurchases);
-    builder.HasIndex(x => x.Skill);
+    builder.HasIndex(x => x.SkillId);
+    builder.HasIndex(x => x.SkillUid);
     builder.HasIndex(x => x.RequiredTalentId);
     builder.HasIndex(x => x.RequiredTalentUid);
     builder.HasIndex(x => x.Summary);
@@ -32,9 +31,9 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
     builder.Property(x => x.Slug).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
-    builder.Property(x => x.Skill).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameSkill>());
     builder.Property(x => x.Summary).HasMaxLength(160); // TODO(fpion): constant
 
+    builder.HasOne(x => x.Skill).WithMany(x => x.Talents).OnDelete(DeleteBehavior.Restrict);
     builder.HasOne(x => x.RequiredTalent).WithMany(x => x.RequiringTalents)
       .HasForeignKey(x => x.RequiredTalentId).HasPrincipalKey(x => x.TalentId)
       .OnDelete(DeleteBehavior.Restrict);
