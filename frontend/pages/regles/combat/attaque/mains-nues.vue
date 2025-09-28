@@ -58,6 +58,4 @@ useSeo({
   title,
   description: "Découvrez les règles du combat à mains nues : attaques, dégâts, talents spéciaux et options pour améliorer votre efficacité.",
 });
-
-// TODO(fpion): Arts martiaux, enlève l'attaque d'opportunité
 </script>

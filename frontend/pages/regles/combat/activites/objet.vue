@@ -8,6 +8,13 @@
       <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> que vous tenez, puis dégainer une arme ou prendre votre bouclier par la même action.
     </p>
     <p>
+      Cette activité vous permet de lever votre bouclier lourd afin de bénéficier de
+      <NuxtLink to="/regles/equipement/defense">points de Défense</NuxtLink> supplémentaires ainsi que de la propriété
+      <NuxtLink to="/regles/equipement/armures/proprietes">Rempart</NuxtLink> de celui-ci, en réduisant toutefois de moitié votre
+      <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink>. Vous pouvez abaisser votre bouclier en
+      <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink> afin d’annuler ces bénéfices et pénalités.
+    </p>
+    <p>
       Cette action déclenche une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink> si l’objet vous
       <NuxtLink to="/regles/combat/degats/soins">soigne</NuxtLink>, ou si son utilisation requiert vos deux mains, par exemple enclencher un lourd levier ou
       appliquer un <NuxtLink to="/regles/herboristerie/poisons">poison</NuxtLink> sur votre arme.

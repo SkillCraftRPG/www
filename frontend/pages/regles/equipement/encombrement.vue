@@ -83,6 +83,4 @@ useSeo({
   title,
   description: "Découvrez comment calculer la charge maximale qu’une créature peut porter et les pénalités de mouvement en cas d’encombrement.",
 });
-
-// TODO(fpion): "Encumbered" Condition
 </script>

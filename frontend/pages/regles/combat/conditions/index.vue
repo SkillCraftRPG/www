@@ -72,6 +72,11 @@ const conditions: Condition[] = [
     description: "Désavantage aux tests actifs.",
   },
   {
+    path: "/regles/combat/conditions/encombre",
+    title: "Encombré",
+    description: "Réduction de la vitesse de déplacement.",
+  },
+  {
     path: "/regles/combat/conditions/etourdi",
     title: "Étourdi",
     description: "Ne peut utiliser sa réaction.",
