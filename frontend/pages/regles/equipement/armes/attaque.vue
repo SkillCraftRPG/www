@@ -17,7 +17,9 @@
       </thead>
       <tbody>
         <tr>
-          <td>Attaque à mains nues</td>
+          <td>
+            <NuxtLink to="/regles/combat/attaque/mains-nues">Combat à mains nues</NuxtLink>
+          </td>
           <td>+0</td>
         </tr>
         <tr>
