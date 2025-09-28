@@ -6,7 +6,7 @@
       Lorsqu’une créature <NuxtLink to="/regles/equipement/encombrement">porte un poids</NuxtLink> supérieure à sa
       <NuxtLink to="/regles/statistiques/charge">Charge</NuxtLink>, elle est encombrée.
     </p>
-    <p>Sa <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse de déplacement</NuxtLink> est réduite.</p>
+    <p>Sa <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse de déplacement</NuxtLink> subit une pénalité varianet en fonction de l’excès de poids.</p>
   </main>
 </template>
 
