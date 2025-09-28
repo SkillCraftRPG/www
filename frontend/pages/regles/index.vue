@@ -95,7 +95,7 @@ const tiles: Tile[] = [
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
-    progress: (3 + 84) / 179,
+    progress: (3 + 85) / 179,
   },
   {
     icon: "fas fa-landmark",
@@ -104,10 +104,16 @@ const tiles: Tile[] = [
     progress: 3 / 60,
   },
   {
+    icon: "fas fa-language",
+    text: "Langues",
+    to: "/regles/langues",
+    progress: 0,
+  },
+  {
     icon: "fas fa-cart-shopping",
     text: "Équipement",
     to: "/regles/equipement",
-    progress: 38 / 40,
+    progress: 1,
   },
   {
     icon: "fas fa-person-hiking",
@@ -126,6 +132,12 @@ const tiles: Tile[] = [
     text: "Magie",
     to: "/regles/magie",
     progress: 1,
+  },
+  {
+    icon: "fas fa-book",
+    text: "Annexes",
+    to: "#",
+    progress: 0,
   },
 ];
 const title: string = "Règles";

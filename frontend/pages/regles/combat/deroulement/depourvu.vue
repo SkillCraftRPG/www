@@ -25,6 +25,4 @@ useSeo({
   title,
   description: "Découvrez la condition Pris au dépourvu : ses effets au début d’un combat, ses limites et comment certains talents ou capacités l’annulent.",
 });
-
-// TODO(fpion): Renvoi des morts-vivants
 </script>
