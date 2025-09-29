@@ -25,6 +25,13 @@ export type Actor = {
 
 export type ActorType = "System" | "ApiKey" | "User";
 
+export type Age = {
+  teenager: number;
+  adult: number;
+  mature: number;
+  venerable: number;
+};
+
 export type Aggregate = {
   id: string;
   version: number;
@@ -118,6 +125,30 @@ export type GameSkill =
 
 export type GameStatistic = "Dodge" | "Encumbrance" | "Initiative" | "Learning" | "Power" | "Precision" | "Stamina" | "Stratagem" | "Strength" | "Vitality";
 
+export type Languages = {
+  text: string;
+};
+
+export type Lineage = {
+  id: string;
+  slug: string;
+  name: string;
+  summary: string;
+  description: string;
+  traits: Trait[];
+  languages: Languages;
+  names: Names;
+  speeds: Speeds;
+  size: string;
+  height: string;
+  weight: Weight;
+  age: Age;
+};
+
+export type Names = {
+  text: string;
+};
+
 export type SearchResults<T> = {
   items: T[];
   total: number;
@@ -132,6 +163,10 @@ export type Skill = Aggregate & {
   value: GameSkill;
   summary?: string | null;
   description?: string | null;
+};
+
+export type Speeds = {
+  walk: number;
 };
 
 export type Statistic = Aggregate & {
@@ -153,4 +188,17 @@ export type Talent = Aggregate & {
   description?: string | null;
   requiredTalent?: Talent | null;
   requiringTalents: Talent[];
+};
+
+export type Trait = {
+  name: string;
+  description: string;
+};
+
+export type Weight = {
+  malnutrition: string;
+  skinny: string;
+  normal: string;
+  overweight: string;
+  obese: string;
 };
