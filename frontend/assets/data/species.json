@@ -1,0 +1,47 @@
+[
+  {
+    "id": "18cb6f2e-7c20-4889-a344-f61b73d4cfeb",
+    "slug": "demi-elfe",
+    "name": "Demi-elfe",
+    "summary": "🚧",
+    "description": "Issus de croisements entre [humains](#) et [elfes](#), les demi-elfes ont hérité de certaines qualités de chacune de ces espèces. Leurs traditions et valeurs varient grandement en fonction de s’ils ont été élevés par un seul de leurs deux parents, ou par leurs deux parents, ce qui est très rare. Leur longévité les place dans une situation déconcertante, puisqu’ils voient leur parent humain mourir, mais décèdent généralement avant leur parent elfique. De manière générale, s’ils ont été élevés à l’écart des sociétés de leurs parents, ils développement une affinité avec les individus marginaux. Sinon, ils apprennent à composer avec les différences et deviennent d’excellents médiateurs.",
+    "traits": [
+      {
+        "name": "Apprentissage accéléré",
+        "description": "Le personnage débute avec 2 points d’[Apprentissage](/regles/statistiques/apprentissage) supplémentaires et acquiert 1 point d’Apprentissage supplémentaire lorsqu’il atteint les [niveaux](/regles/personnages/progression/niveau) 10, 30, 50, 70 et 90."
+      },
+      {
+        "name": "Héritage elfique",
+        "description": "Le personnage se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets et [pouvoirs](/regles/magie/pouvoirs) causant le sommeil et l’[inconscience](/regles/combat/conditions/inconscient)."
+      },
+      {
+        "name": "Versatilité",
+        "description": "Le personnage peut acquérir [à rabais](/regles/talents/points) deux [talents](/regles/talents) différents associés à une [compétence](/regles/competences). Ces talents [portent le même nom](/regles/competences/formation) qu’une compétence."
+      }
+    ],
+    "languages": {
+      "text": "Le personnage apprend la langue maternelle du parent qui l’a élevé ainsi que 2 langues supplémentaires au choix. S’il a été élevé par ses deux parents, alors il apprend la langue maternelle de ses deux parents ainsi qu’une langue supplémentaire au choix."
+    },
+    "names": {
+      "text": "Le personnage porte un nom et un prénom en fonction du parent qui l’a élevé. Il n’est pas rare de voir un demi-elfe élevé par ses deux parents porter un prénom elfique et un nom de famille humain ou vice-versa."
+    },
+    "speeds": {
+      "walk": 6
+    },
+    "size": "Medium",
+    "height": "140+5d10",
+    "weight": {
+      "malnutrition": "11+1d4",
+      "skinny": "15+1d4",
+      "normal": "19+1d4",
+      "overweight": "23+1d6",
+      "obese": "29+1d8"
+    },
+    "age": {
+      "teenager": 10,
+      "adult": 20,
+      "mature": 40,
+      "venerable": 160
+    }
+  }
+]

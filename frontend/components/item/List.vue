@@ -29,6 +29,6 @@ defineProps<{
 }>();
 
 function parseToHtml(description: string): string {
-  return (marked.parse(description) as string).replace("<p>", "").replace("</p>", "");
+  return (marked.parse(description) as string).replace(/<\/?p>/g, "");
 }
 </script>
