@@ -63,4 +63,6 @@ useSeo({
   title,
   description: "Découvrez les règles d’acquisition de spécialisations : conditions, talents requis, pouvoirs associés et nombre de talents nécessaires.",
 });
+
+// TODO(fpion): exemple avec Clerc et Prêtre ?
 </script>

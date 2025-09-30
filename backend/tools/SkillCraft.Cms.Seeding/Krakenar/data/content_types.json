@@ -174,7 +174,7 @@
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",
-    "DisplayName": null,
+    "DisplayName": "Talent",
     "Description": null,
     "Fields": [
       {

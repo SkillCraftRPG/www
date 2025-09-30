@@ -8,8 +8,8 @@
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/intuition">Intuition</NuxtLink>.
     </p>
     <p>
-      Le <NuxtLink to="/regles/talents">talent</NuxtLink>
-      <NuxtLink to="/regles/talents/perception-extrasensorielle">Perception extrasensorielle</NuxtLink> améliore votre capacité à poser un jugement.
+      Le <NuxtLink to="/regles/talents">talent</NuxtLink>{{ " "
+      }}<NuxtLink to="/regles/talents/perception-extrasensorielle">Perception extrasensorielle</NuxtLink> améliore votre capacité à poser un jugement.
     </p>
   </main>
 </template>
