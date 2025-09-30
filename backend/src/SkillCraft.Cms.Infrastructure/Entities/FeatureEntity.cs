@@ -14,6 +14,8 @@ internal class FeatureEntity : AggregateEntity
   public string Name { get; set; } = string.Empty;
   public string? Description { get; set; }
 
+  public List<SpecializationEntity> Specializations { get; private set; } = [];
+
   public FeatureEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;

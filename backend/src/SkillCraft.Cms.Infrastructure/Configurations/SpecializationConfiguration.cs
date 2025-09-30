@@ -37,5 +37,6 @@ internal class SpecializationConfiguration : AggregateConfiguration<Specializati
       .OnDelete(DeleteBehavior.Restrict);
     builder.HasMany(x => x.OptionalTalents).WithMany(x => x.SpecializationsOptional);
     builder.HasMany(x => x.DiscountedTalents).WithMany(x => x.SpecializationsDiscounted);
+    builder.HasMany(x => x.Features).WithMany(x => x.Specializations);
   }
 }
