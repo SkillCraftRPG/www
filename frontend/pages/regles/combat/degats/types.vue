@@ -44,4 +44,6 @@ useSeo({
   title,
   description: "Découvrez les différents types de dégâts physiques et spéciaux, avec exemples d’impacts, pour enrichir vos combats et varier les menaces.",
 });
+
+// TODO(fpion): parler des dégâts magiques
 </script>

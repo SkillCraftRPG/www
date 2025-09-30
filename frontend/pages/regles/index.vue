@@ -101,7 +101,7 @@ const tiles: Tile[] = [
     icon: "fas fa-landmark",
     text: "Spécialisations",
     to: "/regles/specialisations",
-    progress: 3 / 60,
+    progress: (3 + 3) / 60,
   },
   {
     icon: "fas fa-language",

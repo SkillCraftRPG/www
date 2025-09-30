@@ -15,12 +15,19 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h2 class="h3">Liste des spécialisations</h2>
-    <p>🚧</p>
+    <template v-if="specializations.length">
+      <h2 class="h3">Liste des spécialisations</h2>
+      <SpecializationList :items="specializations" />
+    </template>
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 
 <script setup lang="ts">
+import specializations from "~/assets/data/specializations.json";
+
 const title: string = "Spécialisations";
 
 type MenuItem = {
