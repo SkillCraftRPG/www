@@ -21,7 +21,7 @@ const title: string = "Statistiques";
 const { data } = await useLazyAsyncData<SearchResults<Statistic>>(
   "statistics",
   () =>
-    $fetch("/api/statistics", {
+    $fetch("/api/statistics?sort=Slug", {
       baseURL: config.public.apiBaseUrl,
     }),
   {

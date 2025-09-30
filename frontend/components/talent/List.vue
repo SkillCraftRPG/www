@@ -106,7 +106,7 @@ const groups = computed<TalentGroup[]>(() => {
 
   const groups: TalentGroup[] = [];
   for (let tier = 0; tier <= 3; tier++) {
-    const talents: Talent[] = orderBy(map.get(tier) ?? [], "name");
+    const talents: Talent[] = orderBy(map.get(tier) ?? [], "slug");
     if (talents.length) {
       groups.push({ tier, talents });
     }
@@ -123,7 +123,7 @@ watch(
         map.set(talent.skill.id, talent.skill);
       }
     });
-    skills.value = orderBy([...map.values()], "name");
+    skills.value = orderBy([...map.values()], "slug");
   },
   { deep: true, immediate: true },
 );

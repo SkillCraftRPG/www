@@ -148,7 +148,7 @@ function toSelectionItem(value: string): SelectionItem {
   return { ...item, quantity };
 }
 onMounted(() => {
-  baseSelection.value = orderBy(selections.base.map(toSelectionItem), "name");
+  baseSelection.value = orderBy(selections.base.map(toSelectionItem), "slug");
   customSelections.value = orderBy(
     selections.custom.map((selection) => {
       const items: SelectionItem[] = selection.items.map(toSelectionItem);
