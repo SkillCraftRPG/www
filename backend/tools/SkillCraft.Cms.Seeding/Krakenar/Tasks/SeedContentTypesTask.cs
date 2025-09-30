@@ -18,9 +18,9 @@ internal class SeedContentTypesTask : SeedingTask
 
 internal class SeedContentTypesTaskHandler : ICommandHandler<SeedContentTypesTask, SeedingTaskResult>
 {
-  private readonly ILogger<SeedContentTypesTaskHandler> _logger;
   private readonly IContentTypeService _contentTypeService;
   private readonly IFieldDefinitionService _fieldDefinitionService;
+  private readonly ILogger<SeedContentTypesTaskHandler> _logger;
 
   public SeedContentTypesTaskHandler(
     IContentTypeService contentTypeService,

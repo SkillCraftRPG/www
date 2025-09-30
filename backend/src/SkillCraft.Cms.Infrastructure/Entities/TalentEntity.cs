@@ -36,6 +36,10 @@ internal class TalentEntity : AggregateEntity
   public string? Summary { get; set; }
   public string? Description { get; set; }
 
+  public List<SpecializationEntity> SpecializationsMandatory { get; private set; } = [];
+  public List<SpecializationOptionalTalentEntity> SpecializationsOptional { get; private set; } = [];
+  public List<SpecializationDiscountedTalentEntity> SpecializationsDiscounted { get; private set; } = [];
+
   public TalentEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
@@ -89,5 +93,5 @@ internal class TalentEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public override string ToString() => $"{Name ?? Slug} | {base.ToString()}";
+  public override string ToString() => $"{Name} | {base.ToString()}";
 }

@@ -3,7 +3,9 @@
 internal enum EntityKind
 {
   Attribute,
+  Feature,
   Skill,
+  Specialization,
   Statistic,
   Talent
 }

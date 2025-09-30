@@ -262,5 +262,179 @@
         "Placeholder": null
       }
     ]
+  },
+  {
+    "Id": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
+    "IsInvariant": false,
+    "UniqueName": "Feature",
+    "DisplayName": "Particularité",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "81fb1f77-55a3-41fd-ae3f-40fd5c7a7c56",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "1b2731ef-11f2-412a-9992-a699776a121f",
+    "IsInvariant": false,
+    "UniqueName": "Specialization",
+    "DisplayName": "Spécialisation",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "8d5d689e-a237-4199-988e-9f25a857b37c",
+        "FieldType": "SpecializationTier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Tier",
+        "DisplayName": "Tiers",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "508289de-2a3a-4f20-a4a5-35e74881655b",
+        "FieldType": "Talent",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MandatoryTalent",
+        "DisplayName": "Talent obligatoire",
+        "Description": null,
+        "Placeholder": "Sélectionnez un talent"
+      },
+      {
+        "Id": "13803036-78df-49bf-b85e-9a77882b640c",
+        "FieldType": "Talents",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "OptionalTalents",
+        "DisplayName": "Talents optionnels",
+        "Description": null,
+        "Placeholder": "Sélectionnez un ou plusieurs talents"
+      },
+      {
+        "Id": "f2875958-c16f-47f4-b501-98e444af5af6",
+        "FieldType": "Talents",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "DiscountedTalents",
+        "DisplayName": "Talents à rabais",
+        "Description": null,
+        "Placeholder": "Sélectionnez un ou plusieurs talents"
+      },
+      {
+        "Id": "f0180167-4d8b-4f8f-b9d8-d1524f2d9fa3",
+        "FieldType": "Features",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Features",
+        "DisplayName": "Particularités",
+        "Description": null,
+        "Placeholder": "Sélectionnez une ou plusieurs particularités"
+      },
+      {
+        "Id": "60440ff8-3d5a-4341-8bd9-4572bac6f563",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "5a479db7-c351-4340-b692-39dd89e314fe",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "e51b96d4-4f36-4ac3-ba17-08444b90c330",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "6b71467f-16de-44cd-8226-8c91d964edd1",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "OtherRequirements",
+        "DisplayName": "Autres requis",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "faed9bea-703b-4c9b-9cd7-04dc2a160a15",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "OtherOptions",
+        "DisplayName": "Autres options",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "e25b9df2-123f-4ae2-a01e-31ac8969637c",
+        "FieldType": "Name",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "ReservedTalentName",
+        "DisplayName": "Talent réservé (Nom)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "07a77cb3-578f-4426-a773-061168828794",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "ReservedTalentHtmlContent",
+        "DisplayName": "Talent réservé (Contenu HTML)",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
   }
 ]

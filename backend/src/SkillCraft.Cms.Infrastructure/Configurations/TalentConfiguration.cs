@@ -31,7 +31,7 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
     builder.Property(x => x.Slug).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
-    builder.Property(x => x.Summary).HasMaxLength(160); // TODO(fpion): constant
+    builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
 
     builder.HasOne(x => x.Skill).WithMany(x => x.Talents).OnDelete(DeleteBehavior.Restrict);
     builder.HasOne(x => x.RequiredTalent).WithMany(x => x.RequiringTalents)
