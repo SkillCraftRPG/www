@@ -23,8 +23,8 @@
         <strong>Vitesse.</strong> Les espèces et ethnies définissent vos <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesses de déplacement</NuxtLink>.
       </li>
       <li>
-        <strong>Apparence.</strong> Les membres d’une même ethnie ou espèce partagent une similarité d’apparence. Votre ethnie ou espèce définit votre taille,
-        poids et catégories d’âge.
+        <strong>Apparence.</strong> Les membres d’une même ethnie ou espèce partagent une similarité d’apparence. Votre ethnie ou espèce définit votre
+        <NuxtLink to="/regles/especes/taille">taille</NuxtLink>, poids et vieillissement.
       </li>
     </ul>
     <LineageList :items="lineages" />

@@ -71,7 +71,7 @@ const tiles: Tile[] = [
     icon: "fas fa-paw",
     text: "Espèces",
     to: "/regles/especes",
-    progress: (1 + 1) / 22,
+    progress: (2 + 1) / 22,
   },
   {
     icon: "fas fa-wheelchair",
