@@ -4,6 +4,7 @@ using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
+using SkillCraft.Cms.Seeding.Game.Tasks;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
 
 namespace SkillCraft.Cms.Seeding;
@@ -45,5 +46,6 @@ internal class Startup
     services.AddTransient<ICommandHandler<MigrateDatabaseTask, SeedingTaskResult>, MigrateDatabaseTaskHandler>();
     services.AddTransient<ICommandHandler<SeedContentTypesTask, SeedingTaskResult>, SeedContentTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedFieldTypesTask, SeedingTaskResult>, SeedFieldTypesTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedSpecializationsTask, SeedingTaskResult>, SeedSpecializationsTaskHandler>();
   }
 }

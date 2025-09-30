@@ -2,6 +2,7 @@
 using Krakenar.Core;
 using Krakenar.Core.Users;
 using Logitar.EventSourcing;
+using SkillCraft.Cms.Seeding.Game.Tasks;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
 using SkillCraft.Cms.Seeding.Settings;
 using User = Krakenar.Contracts.Users.User;
@@ -58,9 +59,11 @@ public class CmsSeedingWorker : BackgroundService
         ?? throw new InvalidOperationException($"The user 'UniqueName={defaults.UniqueName}' was not found.");
       _applicationContext.ActorId = new ActorId(new UserId(user.Id).Value);
 
-      await ExecuteAsync(new SeedContentTypesTask(), cancellationToken);
-      await ExecuteAsync(new SeedFieldTypesTask(), cancellationToken);
-      await ExecuteAsync(new SeedContentTypesTask(fieldDefinitions: true), cancellationToken);
+      //await ExecuteAsync(new SeedContentTypesTask(), cancellationToken);
+      //await ExecuteAsync(new SeedFieldTypesTask(), cancellationToken);
+      //await ExecuteAsync(new SeedContentTypesTask(fieldDefinitions: true), cancellationToken);
+
+      await ExecuteAsync(new SeedSpecializationsTask(), cancellationToken);
     }
     catch (Exception exception)
     {

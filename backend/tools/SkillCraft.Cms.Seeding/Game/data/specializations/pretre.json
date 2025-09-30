@@ -1,0 +1,33 @@
+﻿{
+  "Id": "9631972f-ae50-42a4-9fae-615b3560c376",
+  "Tier": 2,
+  "Name": "Prêtre",
+  "Summary": "🚧",
+  "Description": "Le prêtre est un clerc ayant progressé au sein de son clergé. Il est non seulement reconnu par ses pairs comme un important ambassadeur de sa divinité par un échelon plus élevé, il est également reconnu par sa divinité en recevant des pouvoirs plus puissants de la part de celle-ci.",
+  "Requirements": {
+    "Talent": "Magie puissante",
+    "Other": [
+      "Le personnage doit avoir acquis la spécialisation [Clerc](/regles/specialisations/clerc).",
+      "Il ne doit pas avoir acquis la spécialisation [Champion](/regles/specialisations/champion)."
+    ]
+  },
+  "Options": {
+    "Talents": "Barrière mentale, Distraction, Emboîter le pas, Endurance accrue, Herboristerie, Méditation, Philologie, Présence terrifiante, Renvoi des morts-vivants, Société, Suspicion",
+    "Other": [ "Pouvoirs de tiers 1 associés à son [domaine divin](#)." ]
+  },
+  "ReservedTalent": {
+    "Name": "Prêtrise",
+    "DiscountedTalents": [],
+    "Description": [
+      "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son domaine divin et apprend gratuitement un de ces pouvoirs.",
+      "Il acquiert une [capacité](#) de tiers 2 spécifique à son domaine divin.",
+      "Il peut maintenant invoquer un pouvoir divin spécifique à son domaine divin deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+    ],
+    "Features": [
+      {
+        "Name": "Attaque divine",
+        "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des dégâts du type associé à son domaine divin."
+      }
+    ]
+  }
+}
