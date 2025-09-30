@@ -37,8 +37,8 @@ internal class TalentEntity : AggregateEntity
   public string? Description { get; set; }
 
   public List<SpecializationEntity> SpecializationsMandatory { get; private set; } = [];
-  public List<SpecializationEntity> SpecializationsOptional { get; private set; } = [];
-  public List<SpecializationEntity> SpecializationsDiscounted { get; private set; } = [];
+  public List<SpecializationOptionalTalentEntity> SpecializationsOptional { get; private set; } = [];
+  public List<SpecializationDiscountedTalentEntity> SpecializationsDiscounted { get; private set; } = [];
 
   public TalentEntity(ContentLocalePublished @event) : base(@event)
   {

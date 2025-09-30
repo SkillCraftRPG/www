@@ -35,9 +35,9 @@ internal class SpecializationEntity : AggregateEntity
   public string ReservedTalentName { get; set; } = string.Empty;
   public string? ReservedTalentDescription { get; set; }
 
-  public List<TalentEntity> DiscountedTalents { get; private set; } = [];
-  public List<FeatureEntity> Features { get; private set; } = [];
-  public List<TalentEntity> OptionalTalents { get; private set; } = [];
+  public List<SpecializationDiscountedTalentEntity> DiscountedTalents { get; private set; } = [];
+  public List<SpecializationFeatureEntity> Features { get; private set; } = [];
+  public List<SpecializationOptionalTalentEntity> OptionalTalents { get; private set; } = [];
 
   public SpecializationEntity(ContentLocalePublished @event) : base(@event)
   {
@@ -48,6 +48,19 @@ internal class SpecializationEntity : AggregateEntity
 
   private SpecializationEntity() : base()
   {
+  }
+
+  public void AddDiscountedTalent(TalentEntity talent)
+  {
+    DiscountedTalents.Add(new SpecializationDiscountedTalentEntity(this, talent));
+  }
+  public void AddFeature(FeatureEntity feature)
+  {
+    Features.Add(new SpecializationFeatureEntity(this, feature));
+  }
+  public void AddOptionalTalent(TalentEntity talent)
+  {
+    OptionalTalents.Add(new SpecializationOptionalTalentEntity(this, talent));
   }
 
   public void Publish(ContentLocalePublished @event)

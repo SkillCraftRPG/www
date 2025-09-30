@@ -14,7 +14,10 @@ public class RulesContext : DbContext
   internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
   internal DbSet<FeatureEntity> Features => Set<FeatureEntity>();
   internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
+  internal DbSet<SpecializationDiscountedTalentEntity> SpecializationDiscountedTalents => Set<SpecializationDiscountedTalentEntity>();
   internal DbSet<SpecializationEntity> Specializations => Set<SpecializationEntity>();
+  internal DbSet<SpecializationFeatureEntity> SpecializationFeatures => Set<SpecializationFeatureEntity>();
+  internal DbSet<SpecializationOptionalTalentEntity> SpecializationOptionalTalents => Set<SpecializationOptionalTalentEntity>();
   internal DbSet<StatisticEntity> Statistics => Set<StatisticEntity>();
   internal DbSet<TalentEntity> Talents => Set<TalentEntity>();
 

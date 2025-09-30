@@ -288,7 +288,7 @@
     "Id": "1b2731ef-11f2-412a-9992-a699776a121f",
     "IsInvariant": false,
     "UniqueName": "Specialization",
-    "DisplayName": "Spécialization",
+    "DisplayName": "Spécialisation",
     "Description": null,
     "Fields": [
       {
@@ -427,7 +427,7 @@
         "Id": "07a77cb3-578f-4426-a773-061168828794",
         "FieldType": "HtmlContent",
         "IsInvariant": false,
-        "IsRequired": true,
+        "IsRequired": false,
         "IsIndexed": false,
         "IsUnique": false,
         "UniqueName": "ReservedTalentHtmlContent",

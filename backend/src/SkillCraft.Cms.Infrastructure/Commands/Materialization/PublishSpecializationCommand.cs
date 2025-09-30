@@ -28,7 +28,11 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     ContentLocale locale = command.Locale;
 
     string streamId = @event.StreamId.Value;
-    SpecializationEntity? specialization = await _context.Specializations.SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
+    SpecializationEntity? specialization = await _context.Specializations
+      .Include(x => x.DiscountedTalents)
+      .Include(x => x.Features)
+      .Include(x => x.OptionalTalents)
+      .SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
     if (specialization is null)
     {
       specialization = new SpecializationEntity(command.Event);
@@ -38,7 +42,7 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     specialization.Slug = locale.GetString(Specializations.Slug);
     specialization.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
-    specialization.Tier = (int)locale.GetNumber(Specializations.Tier);
+    specialization.Tier = (int)invariant.GetNumber(Specializations.Tier);
 
     TalentEntity? mandatoryTalent = null;
     IReadOnlyCollection<Guid>? mandatoryTalentIds = invariant.TryGetRelatedContents(Specializations.MandatoryTalent);
@@ -60,24 +64,7 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     }
     specialization.SetMandatoryTalent(mandatoryTalent);
 
-    specialization.OptionalTalents.Clear();
-    IReadOnlyCollection<Guid>? optionalTalentIds = invariant.TryGetRelatedContents(Specializations.OptionalTalents);
-    if (optionalTalentIds is not null)
-    {
-      Dictionary<Guid, TalentEntity> optionalTalents = await _context.Talents
-        .Where(x => optionalTalentIds.Contains(x.Id))
-        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
-
-      specialization.OptionalTalents.AddRange(optionalTalents.Values);
-
-      foreach (Guid optionalTalentId in optionalTalentIds)
-      {
-        if (!optionalTalents.ContainsKey(optionalTalentId))
-        {
-          _logger.LogWarning("The optional talent 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", optionalTalentId, specialization);
-        }
-      }
-    }
+    await SetOptionalTalentsAsync(specialization, invariant, cancellationToken);
 
     specialization.Summary = locale.TryGetString(Specializations.Summary);
     specialization.Description = locale.TryGetString(Specializations.HtmlContent);
@@ -88,43 +75,8 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     specialization.ReservedTalentName = locale.GetString(Specializations.ReservedTalentName);
     specialization.ReservedTalentDescription = locale.TryGetString(Specializations.ReservedTalentHtmlContent);
 
-    specialization.DiscountedTalents.Clear();
-    IReadOnlyCollection<Guid>? discountedTalentIds = invariant.TryGetRelatedContents(Specializations.DiscountedTalents);
-    if (discountedTalentIds is not null)
-    {
-      Dictionary<Guid, TalentEntity> discountedTalents = await _context.Talents
-        .Where(x => discountedTalentIds.Contains(x.Id))
-        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
-
-      specialization.OptionalTalents.AddRange(discountedTalents.Values);
-
-      foreach (Guid optionalTalentId in discountedTalentIds)
-      {
-        if (!discountedTalents.ContainsKey(optionalTalentId))
-        {
-          _logger.LogWarning("The discounted talent 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", optionalTalentId, specialization);
-        }
-      }
-    }
-
-    specialization.Features.Clear();
-    IReadOnlyCollection<Guid>? featureIds = invariant.TryGetRelatedContents(Specializations.Features);
-    if (featureIds is not null)
-    {
-      Dictionary<Guid, FeatureEntity> features = await _context.Features
-        .Where(x => featureIds.Contains(x.Id))
-        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
-
-      specialization.Features.AddRange(features.Values);
-
-      foreach (Guid featureId in featureIds)
-      {
-        if (!features.ContainsKey(featureId))
-        {
-          _logger.LogWarning("The feature 'Id={FeatureId}' was not found, for specialization '{Specialization}'.", featureId, specialization);
-        }
-      }
-    }
+    await SetDiscountedTalentsAsync(specialization, invariant, cancellationToken);
+    await SetFeaturesAsync(specialization, invariant, cancellationToken);
 
     specialization.Publish(@event);
 
@@ -132,5 +84,101 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     _logger.LogInformation("The specialization '{Specialization}' has been published.", specialization);
 
     return new CommandResult();
+  }
+
+  private async Task SetDiscountedTalentsAsync(SpecializationEntity specialization, ContentLocale invariant, CancellationToken cancellationToken)
+  {
+    IReadOnlyCollection<Guid> discountedTalentIds = invariant.GetRelatedContents(Specializations.DiscountedTalents);
+    Dictionary<Guid, TalentEntity> discountedTalents = discountedTalentIds.Count < 1
+      ? []
+      : await _context.Talents.Where(x => discountedTalentIds.Contains(x.Id)).ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+    foreach (SpecializationDiscountedTalentEntity discountedTalent in specialization.DiscountedTalents)
+    {
+      if (!discountedTalents.ContainsKey(discountedTalent.TalentUid))
+      {
+        _context.SpecializationDiscountedTalents.Remove(discountedTalent);
+      }
+    }
+
+    HashSet<Guid> existingIds = specialization.DiscountedTalents.Select(x => x.TalentUid).ToHashSet();
+    foreach (Guid discountedTalentId in discountedTalentIds)
+    {
+      if (discountedTalents.TryGetValue(discountedTalentId, out TalentEntity? talent))
+      {
+        if (!existingIds.Contains(discountedTalentId))
+        {
+          specialization.AddDiscountedTalent(talent);
+        }
+      }
+      else
+      {
+        _logger.LogWarning("The discounted talent 'Id={DiscountedTalentId}' was not found, for specialization '{Specialization}'.", discountedTalentId, specialization);
+      }
+    }
+  }
+
+  private async Task SetFeaturesAsync(SpecializationEntity specialization, ContentLocale invariant, CancellationToken cancellationToken)
+  {
+    IReadOnlyCollection<Guid> featureIds = invariant.GetRelatedContents(Specializations.Features);
+    Dictionary<Guid, FeatureEntity> features = featureIds.Count < 1
+      ? []
+      : await _context.Features.Where(x => featureIds.Contains(x.Id)).ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+    foreach (SpecializationFeatureEntity feature in specialization.Features)
+    {
+      if (!features.ContainsKey(feature.FeatureUid))
+      {
+        _context.SpecializationFeatures.Remove(feature);
+      }
+    }
+
+    HashSet<Guid> existingIds = specialization.Features.Select(x => x.FeatureUid).ToHashSet();
+    foreach (Guid featureId in featureIds)
+    {
+      if (features.TryGetValue(featureId, out FeatureEntity? feature))
+      {
+        if (!existingIds.Contains(featureId))
+        {
+          specialization.AddFeature(feature);
+        }
+      }
+      else
+      {
+        _logger.LogWarning("The feature 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", featureId, specialization);
+      }
+    }
+  }
+
+  private async Task SetOptionalTalentsAsync(SpecializationEntity specialization, ContentLocale invariant, CancellationToken cancellationToken)
+  {
+    IReadOnlyCollection<Guid> optionalTalentIds = invariant.GetRelatedContents(Specializations.OptionalTalents);
+    Dictionary<Guid, TalentEntity> optionalTalents = optionalTalentIds.Count < 1
+      ? []
+      : await _context.Talents.Where(x => optionalTalentIds.Contains(x.Id)).ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+    foreach (SpecializationOptionalTalentEntity optionalTalent in specialization.OptionalTalents)
+    {
+      if (!optionalTalents.ContainsKey(optionalTalent.TalentUid))
+      {
+        _context.SpecializationOptionalTalents.Remove(optionalTalent);
+      }
+    }
+
+    HashSet<Guid> existingIds = specialization.OptionalTalents.Select(x => x.TalentUid).ToHashSet();
+    foreach (Guid optionalTalentId in optionalTalentIds)
+    {
+      if (optionalTalents.TryGetValue(optionalTalentId, out TalentEntity? talent))
+      {
+        if (!existingIds.Contains(optionalTalentId))
+        {
+          specialization.AddOptionalTalent(talent);
+        }
+      }
+      else
+      {
+        _logger.LogWarning("The optional talent 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", optionalTalentId, specialization);
+      }
+    }
   }
 }
