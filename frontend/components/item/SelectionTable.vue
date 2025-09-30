@@ -30,5 +30,5 @@ const props = defineProps<{
   items: SelectionItem[];
 }>();
 
-const filteredItems = computed<SelectionItem[]>(() => orderBy(props.items, "name"));
+const filteredItems = computed<SelectionItem[]>(() => orderBy(props.items, "slug"));
 </script>

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "32309395-7dce-457f-9f4b-64a275efa91a",
+    "slug": "clerc",
+    "name": "Clerc",
+    "tier": 1,
+    "summary": "Sert une divinité, diffuse ses préceptes, et obtient des pouvoirs et capacités liés à sa divinité.",
+    "description": "Les clercs sont des adeptes religieux d’une divinité. Ils représentent celle-ci dans le monde matériel, faisant régner ses préceptes et tentant d’agrandir son cercle de croyants. En échange de cette mission, cette divinité leur prête une partie de ses pouvoirs, qu’ils peuvent utiliser afin d’étendre la portée de leur divinité.",
+    "requirements": {
+      "talent": "spiritualite",
+      "other": ["Le personnage doit avoir sélectionné un [domaine divin](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."]
+    },
+    "options": {
+      "talents": ["connaissance", "diplomatie", "discipline", "intuition", "linguistique", "medecine", "melee", "occultisme", "representation"],
+      "other": []
+    },
+    "reservedTalent": {
+      "name": "Clergé",
+      "discountedTalents": [],
+      "description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son domaine divin et apprend gratuitement un de ces pouvoirs.",
+        "Il acquiert une [capacité](#) de tiers 1 spécifique à son domaine divin."
+      ],
+      "features": [
+        {
+          "name": "Pouvoir divin",
+          "description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine](#) divin. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1f1b18ff-4f8c-44cd-8847-0d4dd285f112",
+    "slug": "combattant",
+    "name": "Combattant",
+    "tier": 1,
+    "summary": "Maîtrise du combat, endurance, adrénaline et second souffle.",
+    "description": "Il est évident que la spécialisation du combattant soit le combat. Certains s’adonnent à cet art pour gagner leur vie, d’autres le font afin de servir une cause. Quelques-uns le font même par passion pour cet art. Certains combattants préfèrent devenir champions d’un style de de combat, alors que d’autres désirent plutôt en maîtriser plusieurs.",
+    "requirements": {
+      "talent": "formation-martiale",
+      "other": []
+    },
+    "options": {
+      "talents": [
+        "acrobaties",
+        "artisanat",
+        "athletisme",
+        "intuition",
+        "melee",
+        "orientation",
+        "perception",
+        "representation",
+        "resistance",
+        "survie",
+        "vigilance"
+      ],
+      "other": []
+    },
+    "reservedTalent": {
+      "name": "Adrénaline",
+      "discountedTalents": ["cuirasse", "initiative-accrue"],
+      "description": [],
+      "features": [
+        {
+          "name": "Indomptable",
+          "description": "Lorsqu’il échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde), il peut rejouer le jet de sauvegarde en dépensant 25 points d’[Énergie](/regles/statistiques/energie) et doit conserver le nouveau résultat.\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        },
+        {
+          "name": "Second souffle",
+          "description": "En situation de [combat](/regles/combat), permet au personnage de récupérer des points de [Vitalité](/regles/statistiques/vitalite) en [action libre](/regles/combat/deroulement/tour).\n\nIl récupère 1d10 + [Santé](/regles/attributs/sante) (minimum 1) points de Vitalité et dépense un nombre égal de points d’[Énergie](/regles/statistiques/energie).\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        }
+      ]
+    }
+  },
+  {
+    "id": "9631972f-ae50-42a4-9fae-615b3560c376",
+    "slug": "pretre",
+    "name": "Prêtre",
+    "tier": 2,
+    "summary": "Clerc confirmé, ambassadeur de sa divinité et reçoit des pouvoirs renforcés ainsi qu’une attaque divine.",
+    "description": "Le prêtre est un clerc ayant progressé au sein de son clergé. Il est non seulement reconnu par ses pairs comme un important ambassadeur de sa divinité par un échelon plus élevé, il est également reconnu par sa divinité en recevant des pouvoirs plus puissants de la part de celle-ci.",
+    "requirements": {
+      "talent": "magie-puissante",
+      "other": [
+        "Le personnage doit avoir acquis la spécialisation [Clerc](/regles/specialisations/clerc).",
+        "Il ne doit pas avoir acquis la spécialisation [Champion](/regles/specialisations/champion)."
+      ]
+    },
+    "options": {
+      "talents": [
+        "barriere-mentale",
+        "distraction",
+        "emboiter-le-pas",
+        "endurance-accrue",
+        "herboristerie",
+        "meditation",
+        "philologie",
+        "presence-terrifiante",
+        "renvoi-des-morts-vivants",
+        "societe",
+        "suspicion"
+      ],
+      "other": ["Pouvoirs de tiers 1 associés à son [domaine divin](#)."]
+    },
+    "reservedTalent": {
+      "name": "Prêtrise",
+      "discountedTalents": [],
+      "description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son domaine divin et apprend gratuitement un de ces pouvoirs.",
+        "Il acquiert une [capacité](#) de tiers 2 spécifique à son domaine divin.",
+        "Il peut maintenant invoquer un pouvoir divin spécifique à son domaine divin deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+      ],
+      "features": [
+        {
+          "name": "Attaque divine",
+          "description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des dégâts du type associé à son domaine divin."
+        }
+      ]
+    }
+  }
+]

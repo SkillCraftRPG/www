@@ -28,48 +28,7 @@
       La <NuxtLink to="/regles/especes/taille">taille</NuxtLink> d’une créature affecte sa Charge. Une créature appartenant à une catégorie inférieure sera plus
       rapidement encombrée, au contraire d’une créature appartenant à une catégorie supérieure.
     </p>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-50">Catégorie de taille</th>
-          <th scope="col" class="w-50">Facteur de Charge</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ $t("size.category.options.Diminutive") }}</td>
-          <td>×¼</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Tiny") }}</td>
-          <td>×½</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Small") }}</td>
-          <td>×{{ getLoadMultiplier("Small") }}</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Medium") }}</td>
-          <td>×{{ getLoadMultiplier("Medium") }}</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Large") }}</td>
-          <td>×{{ getLoadMultiplier("Large") }}</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Huge") }}</td>
-          <td>×{{ getLoadMultiplier("Huge") }}</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Gargantuan") }}</td>
-          <td>×{{ getLoadMultiplier("Gargantuan") }}</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Colossal") }}</td>
-          <td>×{{ getLoadMultiplier("Colossal") }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <LineageSizeCategoryTable display="load" />
   </main>
 </template>
 

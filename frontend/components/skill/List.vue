@@ -80,7 +80,7 @@ watch(
         map.set(skill.attribute.id, skill.attribute);
       }
     });
-    attributes.value = orderBy([...map.values()], "name");
+    attributes.value = orderBy([...map.values()], "slug");
   },
   { deep: true, immediate: true },
 );

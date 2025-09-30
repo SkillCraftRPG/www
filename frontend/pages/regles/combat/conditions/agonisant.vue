@@ -15,7 +15,7 @@
     <p>Si elle est <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink>, elle ne récupère aucun point de Vitalité, mais son état se stabilise.</p>
     <p>Elle retombe également en état instable si son état était stable, mais qu’elle est <NuxtLink to="/regles/combat/degats">blessée</NuxtLink>.</p>
     <p>
-      Elle peut également être <NuxtLink to="/regles/combat/activites/stabiliser">stabilisée</NuxtLink> et recevoir le
+      Elle peut également être <NuxtLink to="/regles/combat/activites/stabiliser">stabilisée</NuxtLink>, ou recevoir le
       <NuxtLink to="/regles/combat/activites/coup-grace">coup de grâce</NuxtLink>.
     </p>
     <p>
@@ -27,10 +27,8 @@
       Une créature à l’<NuxtLink to="/regles/combat/mort-agonie">agonie</NuxtLink> mais dans un état stable ne risque pas activement la
       <NuxtLink to="/regles/combat/conditions/mort">mort</NuxtLink>.
     </p>
-    <p>
-      Elle peut être <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink> normalement. Son état retombe instable si elle est
-      <NuxtLink to="/regles/combat/degats">blessée</NuxtLink>.
-    </p>
+    <p>Elle peut être <NuxtLink to="/regles/combat/degats/soins">soignée</NuxtLink> normalement.</p>
+    <p>Son état retombe instable si elle est <NuxtLink to="/regles/combat/degats">blessée</NuxtLink>.</p>
   </main>
 </template>
 

@@ -73,7 +73,7 @@ watch(
         map.set(statistic.attribute.id, statistic.attribute);
       }
     });
-    attributes.value = orderBy([...map.values()], "name");
+    attributes.value = orderBy([...map.values()], "slug");
   },
   { deep: true, immediate: true },
 );

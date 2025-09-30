@@ -20,57 +20,7 @@
       catégories. Le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/culbutes">Culbutes</NuxtLink> permet d’outrepasser cette
       restriction.
     </p>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-third">Catégorie de taille</th>
-          <th scope="col" class="w-third">Espace occupé (carrés)</th>
-          <th scope="col" class="w-third">Espace occupé (hexagones)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ $t("size.category.options.Diminutive") }}</td>
-          <td>¼</td>
-          <td>¼</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Tiny") }}</td>
-          <td>½</td>
-          <td>½</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Small") }}</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Medium") }}</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Large") }}</td>
-          <td>2 × 2 (4)</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Huge") }}</td>
-          <td>3 × 3 (9)</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Gargantuan") }}</td>
-          <td>4 × 4 (16)</td>
-          <td>12</td>
-        </tr>
-        <tr>
-          <td>{{ $t("size.category.options.Colossal") }}</td>
-          <td>5 × 5 (25) et plus</td>
-          <td>30 et plus</td>
-        </tr>
-      </tbody>
-    </table>
+    <LineageSizeCategoryTable display="space" />
   </main>
 </template>
 

@@ -61,11 +61,10 @@ import type { Lineage, Trait } from "~/types/game";
 
 const parent: Breadcrumb[] = [{ text: "Espèces", to: "/regles/especes" }];
 const route = useRoute();
-const slug: string = Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug;
 const { orderBy } = arrayUtils;
 
-const lineage = ref<Lineage | undefined>(species.filter((species) => species.slug === slug)[0]);
-
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const lineage = computed<Lineage | undefined>(() => species.filter((species) => species.slug === slug.value)[0]);
 const html = computed<string | undefined>(() => (lineage.value?.description ? (marked.parse(lineage.value.description) as string) : undefined));
 const title = computed<string | undefined>(() => lineage.value?.name);
 const traits = computed<Trait[]>(() =>
@@ -82,11 +81,4 @@ useSeo({
   title: title.value,
   description: lineage.value?.summary,
 });
-
-/*
- * size: string;
- * height: string;
- * weight: Weight;
- * age: Age;
- */
 </script>
