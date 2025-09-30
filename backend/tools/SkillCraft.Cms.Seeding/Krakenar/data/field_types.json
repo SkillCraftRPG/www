@@ -68,6 +68,17 @@
     }
   },
   {
+    "Id": "d9c548c3-bd44-47ae-b42a-c4867500d902",
+    "UniqueName": "SpecializationTier",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 1,
+      "MaximumValue": 3,
+      "Step": 1
+    }
+  },
+  {
     "Id": "c9cf3897-d14e-4ae7-ae32-2357c440b32a",
     "UniqueName": "Summary",
     "DisplayName": null,
@@ -86,6 +97,16 @@
     "RelatedContent": {
       "ContentTypeId": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
       "IsMultiple": false
+    }
+  },
+  {
+    "Id": "67c60770-5b79-4ed5-ab2c-fb29f61242d3",
+    "UniqueName": "Talents",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
+      "IsMultiple": true
     }
   },
   {

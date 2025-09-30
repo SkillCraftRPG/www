@@ -4,6 +4,7 @@ internal enum EntityKind
 {
   Attribute,
   Skill,
+  Specialization,
   Statistic,
   Talent
 }
