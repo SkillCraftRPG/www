@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import specializations from "~/assets/data/specializations.json";
+import type { Specialization } from "~/types/game";
 
 const title: string = "Spécialisations";
 
@@ -47,6 +47,8 @@ const items: MenuItem[] = [
     description: "Capacités uniques aux spécialisations, coût variable selon le tiers.",
   },
 ];
+
+const specializations = ref<Specialization[]>([]); // TODO(fpion): fetch
 
 useSeo({
   title,

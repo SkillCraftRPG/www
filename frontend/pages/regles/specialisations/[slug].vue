@@ -62,7 +62,6 @@
 <script setup lang="ts">
 import { marked } from "marked";
 
-import specializations from "~/assets/data/specializations.json";
 import type { Breadcrumb } from "~/types/components";
 import type { ReservedTalent, Specialization } from "~/types/game";
 
@@ -70,7 +69,7 @@ const parent: Breadcrumb[] = [{ text: "Spécialisations", to: "/regles/specialis
 const route = useRoute();
 
 const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
-const specialization = computed<Specialization | undefined>(() => specializations.filter((specialization) => specialization.slug === slug.value)[0]);
+const specialization = computed<Specialization | undefined>(() => undefined); // TODO(fpion): fetch
 const html = computed<string | undefined>(() => (specialization.value?.description ? (marked.parse(specialization.value.description) as string) : undefined));
 const title = computed<string | undefined>(() => specialization.value?.name);
 
