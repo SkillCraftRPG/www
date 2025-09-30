@@ -31,6 +31,6 @@ internal class AttributeConfiguration : AggregateConfiguration<AttributeEntity>,
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Category).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<AttributeCategory>());
     builder.Property(x => x.Value).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameAttribute>());
-    builder.Property(x => x.Summary).HasMaxLength(160); // TODO(fpion): constant
+    builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
   }
 }

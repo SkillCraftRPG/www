@@ -20,15 +20,24 @@ internal class SpecializationEntity : AggregateEntity
   }
   public string Name { get; set; } = string.Empty;
 
-  public int? Tier { get; set; }
+  public int Tier { get; set; }
 
   public string? Summary { get; set; }
   public string? Description { get; set; }
 
+  public TalentEntity? MandatoryTalent { get; private set; }
+  public int? MandatoryTalentId { get; private set; }
+  public Guid? MandatoryTalentUid { get; private set; }
+
   public string? OtherRequirements { get; set; }
   public string? OtherOptions { get; set; }
 
-  // TODO(fpion): ReservedTalent
+  public string ReservedTalentName { get; set; } = string.Empty;
+  public string? ReservedTalentDescription { get; set; }
+
+  public List<TalentEntity> DiscountedTalents { get; private set; } = [];
+  public List<FeatureEntity> Features { get; private set; } = [];
+  public List<TalentEntity> OptionalTalents { get; private set; } = [];
 
   public SpecializationEntity(ContentLocalePublished @event) : base(@event)
   {
@@ -48,6 +57,13 @@ internal class SpecializationEntity : AggregateEntity
     IsPublished = true;
   }
 
+  public void SetMandatoryTalent(TalentEntity? mandatoryTalent)
+  {
+    MandatoryTalent = mandatoryTalent;
+    MandatoryTalentId = mandatoryTalent?.TalentId;
+    MandatoryTalentUid = mandatoryTalent?.Id;
+  }
+
   public void Unpublish(ContentLocaleUnpublished @event)
   {
     Update(@event);
@@ -55,5 +71,5 @@ internal class SpecializationEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public override string ToString() => $"{Name ?? Slug} | {base.ToString()}";
+  public override string ToString() => $"{Name} | {base.ToString()}";
 }

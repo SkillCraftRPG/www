@@ -264,6 +264,27 @@
     ]
   },
   {
+    "Id": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
+    "IsInvariant": false,
+    "UniqueName": "Feature",
+    "DisplayName": "Particularité",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "81fb1f77-55a3-41fd-ae3f-40fd5c7a7c56",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "1b2731ef-11f2-412a-9992-a699776a121f",
     "IsInvariant": false,
     "UniqueName": "Specialization",
@@ -306,10 +327,30 @@
         "Description": null,
         "Placeholder": "Sélectionnez un ou plusieurs talents"
       },
-      // TODO(fpion): ReservedTalent.Name
-      // TODO(fpion): ReservedTalent.DiscountedTalents
-      // TODO(fpion): ReservedTalent.DescriptionLines
-      // TODO(fpion): ReservedTalent.Features
+      {
+        "Id": "f2875958-c16f-47f4-b501-98e444af5af6",
+        "FieldType": "Talents",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "DiscountedTalents",
+        "DisplayName": "Talents à rabais",
+        "Description": null,
+        "Placeholder": "Sélectionnez un ou plusieurs talents"
+      },
+      {
+        "Id": "f0180167-4d8b-4f8f-b9d8-d1524f2d9fa3",
+        "FieldType": "Features",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Features",
+        "DisplayName": "Particularités",
+        "Description": null,
+        "Placeholder": "Sélectionnez une ou plusieurs particularités"
+      },
       {
         "Id": "60440ff8-3d5a-4341-8bd9-4572bac6f563",
         "FieldType": "Slug",
@@ -367,6 +408,30 @@
         "IsUnique": false,
         "UniqueName": "OtherOptions",
         "DisplayName": "Autres options",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "e25b9df2-123f-4ae2-a01e-31ac8969637c",
+        "FieldType": "Name",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "ReservedTalentName",
+        "DisplayName": "Talent réservé (Nom)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "07a77cb3-578f-4426-a773-061168828794",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "ReservedTalentHtmlContent",
+        "DisplayName": "Talent réservé (Contenu HTML)",
         "Description": null,
         "Placeholder": null
       }

@@ -36,6 +36,16 @@
     "Boolean": {}
   },
   {
+    "Id": "7684a2bf-09e9-4b29-b3bf-3a4a75845d2b",
+    "UniqueName": "Features",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
+      "IsMultiple": true
+    }
+  },
+  {
     "Id": "236d7923-356f-4a8f-8952-646b0f04bdb4",
     "UniqueName": "HtmlContent",
     "DisplayName": null,
@@ -44,6 +54,17 @@
       "ContentType": "text/html",
       "MinimumLength": null,
       "MaximumLength": null
+    }
+  },
+  {
+    "Id": "37ba5fb4-044e-44bc-8e3e-13def5295d92",
+    "UniqueName": "Name",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": 255,
+      "Pattern": null
     }
   },
   {

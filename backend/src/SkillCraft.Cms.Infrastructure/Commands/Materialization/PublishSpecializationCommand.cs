@@ -40,8 +40,44 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
 
     specialization.Tier = (int)locale.GetNumber(Specializations.Tier);
 
-    // TODO(fpion): Specializations.MandatoryTalent
-    // TODO(fpion): Specializations.OptionalTalents
+    TalentEntity? mandatoryTalent = null;
+    IReadOnlyCollection<Guid>? mandatoryTalentIds = invariant.TryGetRelatedContents(Specializations.MandatoryTalent);
+    if (mandatoryTalentIds is not null)
+    {
+      if (mandatoryTalentIds.Count > 1)
+      {
+        _logger.LogWarning("Many mandatory talents ({Count}) were provided, when at most one is expected, for specialization '{Specialization}'.", mandatoryTalentIds.Count, specialization);
+      }
+      else if (mandatoryTalentIds.Count == 1)
+      {
+        Guid mandatoryTalentId = mandatoryTalentIds.Single();
+        mandatoryTalent = await _context.Talents.SingleOrDefaultAsync(x => x.Id == mandatoryTalentId, cancellationToken);
+        if (mandatoryTalent is null)
+        {
+          _logger.LogWarning("The mandatory talent 'Id={MandatoryTalentId}' was not found, for specialization '{Specialization}'.", mandatoryTalentId, specialization);
+        }
+      }
+    }
+    specialization.SetMandatoryTalent(mandatoryTalent);
+
+    specialization.OptionalTalents.Clear();
+    IReadOnlyCollection<Guid>? optionalTalentIds = invariant.TryGetRelatedContents(Specializations.OptionalTalents);
+    if (optionalTalentIds is not null)
+    {
+      Dictionary<Guid, TalentEntity> optionalTalents = await _context.Talents
+        .Where(x => optionalTalentIds.Contains(x.Id))
+        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+      specialization.OptionalTalents.AddRange(optionalTalents.Values);
+
+      foreach (Guid optionalTalentId in optionalTalentIds)
+      {
+        if (!optionalTalents.ContainsKey(optionalTalentId))
+        {
+          _logger.LogWarning("The optional talent 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", optionalTalentId, specialization);
+        }
+      }
+    }
 
     specialization.Summary = locale.TryGetString(Specializations.Summary);
     specialization.Description = locale.TryGetString(Specializations.HtmlContent);
@@ -49,7 +85,46 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     specialization.OtherRequirements = locale.TryGetString(Specializations.OtherRequirements);
     specialization.OtherOptions = locale.TryGetString(Specializations.OtherOptions);
 
-    // TODO(fpion): ReservedTalent
+    specialization.ReservedTalentName = locale.GetString(Specializations.ReservedTalentName);
+    specialization.ReservedTalentDescription = locale.TryGetString(Specializations.ReservedTalentHtmlContent);
+
+    specialization.DiscountedTalents.Clear();
+    IReadOnlyCollection<Guid>? discountedTalentIds = invariant.TryGetRelatedContents(Specializations.DiscountedTalents);
+    if (discountedTalentIds is not null)
+    {
+      Dictionary<Guid, TalentEntity> discountedTalents = await _context.Talents
+        .Where(x => discountedTalentIds.Contains(x.Id))
+        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+      specialization.OptionalTalents.AddRange(discountedTalents.Values);
+
+      foreach (Guid optionalTalentId in discountedTalentIds)
+      {
+        if (!discountedTalents.ContainsKey(optionalTalentId))
+        {
+          _logger.LogWarning("The discounted talent 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", optionalTalentId, specialization);
+        }
+      }
+    }
+
+    specialization.Features.Clear();
+    IReadOnlyCollection<Guid>? featureIds = invariant.TryGetRelatedContents(Specializations.Features);
+    if (featureIds is not null)
+    {
+      Dictionary<Guid, FeatureEntity> features = await _context.Features
+        .Where(x => featureIds.Contains(x.Id))
+        .ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
+
+      specialization.Features.AddRange(features.Values);
+
+      foreach (Guid featureId in featureIds)
+      {
+        if (!features.ContainsKey(featureId))
+        {
+          _logger.LogWarning("The feature 'Id={FeatureId}' was not found, for specialization '{Specialization}'.", featureId, specialization);
+        }
+      }
+    }
 
     specialization.Publish(@event);
 

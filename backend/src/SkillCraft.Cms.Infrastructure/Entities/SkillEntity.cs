@@ -76,5 +76,5 @@ internal class SkillEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public override string ToString() => $"{Name ?? Slug} | {base.ToString()}";
+  public override string ToString() => $"{Name} | {base.ToString()}";
 }

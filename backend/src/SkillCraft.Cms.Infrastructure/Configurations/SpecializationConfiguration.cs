@@ -6,14 +6,14 @@ using SkillCraft.Cms.Infrastructure.Entities;
 
 namespace SkillCraft.Cms.Infrastructure.Configurations;
 
-internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEntityTypeConfiguration<TalentEntity>
+internal class SpecializationConfiguration : AggregateConfiguration<SpecializationEntity>, IEntityTypeConfiguration<SpecializationEntity>
 {
-  public override void Configure(EntityTypeBuilder<TalentEntity> builder)
+  public override void Configure(EntityTypeBuilder<SpecializationEntity> builder)
   {
     base.Configure(builder);
 
-    builder.ToTable(RulesDb.Talents.Table.Table!, RulesDb.Talents.Table.Schema);
-    builder.HasKey(x => x.TalentId);
+    builder.ToTable(RulesDb.Specializations.Table.Table!, RulesDb.Specializations.Table.Schema);
+    builder.HasKey(x => x.SpecializationId);
 
     builder.HasIndex(x => x.Id).IsUnique();
     builder.HasIndex(x => x.IsPublished);
@@ -21,21 +21,21 @@ internal class TalentConfiguration : AggregateConfiguration<TalentEntity>, IEnti
     builder.HasIndex(x => x.SlugNormalized).IsUnique();
     builder.HasIndex(x => x.Name);
     builder.HasIndex(x => x.Tier);
-    builder.HasIndex(x => x.AllowMultiplePurchases);
-    builder.HasIndex(x => x.SkillId);
-    builder.HasIndex(x => x.SkillUid);
-    builder.HasIndex(x => x.RequiredTalentId);
-    builder.HasIndex(x => x.RequiredTalentUid);
     builder.HasIndex(x => x.Summary);
+    builder.HasIndex(x => x.MandatoryTalentId);
+    builder.HasIndex(x => x.MandatoryTalentUid);
+    builder.HasIndex(x => x.ReservedTalentName);
 
     builder.Property(x => x.Slug).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
+    builder.Property(x => x.ReservedTalentName).HasMaxLength(DisplayName.MaximumLength);
 
-    builder.HasOne(x => x.Skill).WithMany(x => x.Talents).OnDelete(DeleteBehavior.Restrict);
-    builder.HasOne(x => x.RequiredTalent).WithMany(x => x.RequiringTalents)
-      .HasForeignKey(x => x.RequiredTalentId).HasPrincipalKey(x => x.TalentId)
+    builder.HasOne(x => x.MandatoryTalent).WithMany(x => x.SpecializationsMandatory)
+      .HasForeignKey(x => x.MandatoryTalentId).HasPrincipalKey(x => x.TalentId)
       .OnDelete(DeleteBehavior.Restrict);
+    builder.HasMany(x => x.OptionalTalents).WithMany(x => x.SpecializationsOptional);
+    builder.HasMany(x => x.DiscountedTalents).WithMany(x => x.SpecializationsDiscounted);
   }
 }

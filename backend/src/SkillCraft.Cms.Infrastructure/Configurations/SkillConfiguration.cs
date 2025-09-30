@@ -31,7 +31,7 @@ internal class SkillConfiguration : AggregateConfiguration<SkillEntity>, IEntity
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Value).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameSkill>());
-    builder.Property(x => x.Summary).HasMaxLength(160); // TODO(fpion): constant
+    builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
 
     builder.HasOne(x => x.Attribute).WithMany(x => x.Skills).OnDelete(DeleteBehavior.Restrict);
   }
