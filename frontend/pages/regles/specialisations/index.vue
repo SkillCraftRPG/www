@@ -46,6 +46,4 @@ useSeo({
   description:
     "Découvrez les spécialisations : progression des personnages à travers les tiers, acquisition unique, conditions, talents requis et pouvoirs associés.",
 });
-
-// TODO(fpion): exemple avec Clerc et Prêtre ?
 </script>
