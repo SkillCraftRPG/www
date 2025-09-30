@@ -19,6 +19,7 @@ internal static class Specializations
   public static readonly ColumnId IsPublished = new(nameof(SpecializationEntity.IsPublished), Table);
   public static readonly ColumnId MandatoryTalentId = new(nameof(SpecializationEntity.MandatoryTalentId), Table);
   public static readonly ColumnId MandatoryTalentUid = new(nameof(SpecializationEntity.MandatoryTalentUid), Table);
+  public static readonly ColumnId MetaDescription = new(nameof(SpecializationEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(SpecializationEntity.Name), Table);
   public static readonly ColumnId OtherOptions = new(nameof(SpecializationEntity.OtherOptions), Table);
   public static readonly ColumnId OtherRequirements = new(nameof(SpecializationEntity.OtherRequirements), Table);

@@ -23,6 +23,7 @@ internal class SpecializationEntity : AggregateEntity
   public int Tier { get; set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
   public TalentEntity? MandatoryTalent { get; private set; }

@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core;
 using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
+using Logitar;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using SkillCraft.Cms.Infrastructure.Contents;
@@ -67,6 +68,7 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     await SetOptionalTalentsAsync(specialization, invariant, cancellationToken);
 
     specialization.Summary = locale.TryGetString(Specializations.Summary);
+    specialization.MetaDescription = locale.Description?.Value.Truncate(Constants.MetaDescriptionMaximumLength);
     specialization.Description = locale.TryGetString(Specializations.HtmlContent);
 
     specialization.OtherRequirements = locale.TryGetString(Specializations.OtherRequirements);
