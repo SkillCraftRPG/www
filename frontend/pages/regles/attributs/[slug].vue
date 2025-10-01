@@ -1,59 +1,36 @@
 <template>
   <main class="container">
-    <template v-if="title">
+    <template v-if="attribute">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-    </template>
-    <div v-if="html" v-html="html"></div>
-    <template v-if="statistics.length">
-      <h2 class="h3">Statistiques</h2>
-      <p>Cet attribut influence la valeur des statistiques ci-dessous.</p>
-      <div class="row">
-        <div v-for="statistic in statistics" :key="statistic.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-          <StatisticCard class="d-flex flex-column h-100" no-attribute :statistic="statistic" />
-        </div>
-      </div>
-    </template>
-    <template v-if="skills.length">
-      <h2 class="h3">Compétences</h2>
-      <p>La valeur de cet attribut est ajoutée aux tests des compétences ci-dessous.</p>
-      <div class="row">
-        <div v-for="skill in skills" :key="skill.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-          <SkillCard class="d-flex flex-column h-100" no-attribute :skill="skill" />
-        </div>
-      </div>
+      <MarkdownContent v-if="attribute.description" :text="attribute.description" />
+      <AttributeStatistics v-if="attribute.statistics.length > 0" :attribute="attribute" />
+      <AttributeSkills v-if="attribute.skills.length > 0" :attribute="attribute" />
     </template>
   </main>
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
-import { marked } from "marked";
-
-import type { Attribute, Skill, Statistic } from "~/types/game";
+import type { Attribute } from "~/types/game";
 import type { Breadcrumb } from "~/types/components";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Attributs", to: "/regles/attributs" }];
 const route = useRoute();
-const { orderBy } = arrayUtils;
 
-const slug = ref<string>(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug);
-
-const { data } = await useAsyncData<Attribute>("attribute", () =>
-  $fetch(`/api/attributes/slug:${slug.value}`, {
-    baseURL: config.public.apiBaseUrl,
-  }),
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const { data } = await useAsyncData<Attribute>(
+  `attribute:${slug}`,
+  () =>
+    $fetch(`/api/attributes/slug:${slug.value}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  { watch: [slug] },
 );
 
 const attribute = computed<Attribute | undefined>(() => data.value ?? undefined);
-const html = computed<string | undefined>(() => (attribute.value?.description ? (marked.parse(attribute.value.description) as string) : undefined));
-const skills = computed<Skill[]>(() => (attribute.value?.skills ? orderBy(attribute.value.skills, "slug") : []));
-const statistics = computed<Statistic[]>(() => (attribute.value?.statistics ? orderBy(attribute.value.statistics, "slug") : []));
-const title = computed<string | undefined>(() => attribute.value?.name);
+const title = computed<string>(() => attribute.value?.name ?? "");
+const description = computed<string>(() => attribute.value?.metaDescription ?? "");
 
-useSeo({
-  title: title.value,
-  description: attribute.value?.summary,
-});
+useSeoMeta({ title, description });
 </script>

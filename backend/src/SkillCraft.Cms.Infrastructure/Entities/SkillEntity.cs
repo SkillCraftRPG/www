@@ -29,6 +29,7 @@ internal class SkillEntity : AggregateEntity
   public Guid? AttributeUid { get; private set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
   public List<TalentEntity> Talents { get; private set; } = [];

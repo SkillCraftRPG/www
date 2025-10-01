@@ -19,6 +19,7 @@ internal static class Skills
   public static readonly ColumnId Description = new(nameof(SkillEntity.Description), Table);
   public static readonly ColumnId Id = new(nameof(SkillEntity.Id), Table);
   public static readonly ColumnId IsPublished = new(nameof(SkillEntity.IsPublished), Table);
+  public static readonly ColumnId MetaDescription = new(nameof(SkillEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(SkillEntity.Name), Table);
   public static readonly ColumnId SkillId = new(nameof(SkillEntity.SkillId), Table);
   public static readonly ColumnId Slug = new(nameof(SkillEntity.Slug), Table);

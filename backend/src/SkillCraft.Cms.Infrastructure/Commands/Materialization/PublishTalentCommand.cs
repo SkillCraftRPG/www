@@ -82,6 +82,7 @@ internal class PublishTalentCommandHandler : ICommandHandler<PublishTalentComman
     talent.SetRequiredTalent(requiredTalent);
 
     talent.Summary = locale.TryGetString(Talents.Summary);
+    talent.MetaDescription = locale.Description?.ToMetaDescription();
     talent.Description = locale.TryGetString(Talents.HtmlContent);
 
     talent.Publish(@event);

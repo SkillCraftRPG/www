@@ -27,6 +27,7 @@ internal class AttributeEntity : AggregateEntity
   public GameAttribute Value { get; set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
   public List<StatisticEntity> Statistics { get; private set; } = [];

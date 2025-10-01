@@ -47,6 +47,7 @@ export type Attribute = Aggregate & {
   category?: AttributeCategory | null;
   value: GameAttribute;
   summary?: string | null;
+  metaDescription?: string | null;
   description?: string | null;
   statistics: Statistic[];
   skills: Skill[];
@@ -161,6 +162,7 @@ export type Skill = Aggregate & {
   attribute?: Attribute | null;
   value: GameSkill;
   summary?: string | null;
+  metaDescription?: string | null;
   description?: string | null;
 };
 
@@ -174,6 +176,7 @@ export type Statistic = Aggregate & {
   attribute: Attribute;
   value: GameStatistic;
   summary?: string | null;
+  metaDescription?: string | null;
   description?: string | null;
 };
 
@@ -184,6 +187,7 @@ export type Talent = Aggregate & {
   allowMultiplePurchases: boolean;
   skill?: Skill | null;
   summary?: string | null;
+  metaDescription?: string | null;
   description?: string | null;
   requiredTalent?: Talent | null;
   requiringTalents: Talent[];

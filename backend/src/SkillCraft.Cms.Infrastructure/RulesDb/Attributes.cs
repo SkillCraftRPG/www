@@ -19,6 +19,7 @@ internal static class Attributes
   public static readonly ColumnId Description = new(nameof(AttributeEntity.Description), Table);
   public static readonly ColumnId Id = new(nameof(AttributeEntity.Id), Table);
   public static readonly ColumnId IsPublished = new(nameof(AttributeEntity.IsPublished), Table);
+  public static readonly ColumnId MetaDescription = new(nameof(AttributeEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(AttributeEntity.Name), Table);
   public static readonly ColumnId Slug = new(nameof(AttributeEntity.Slug), Table);
   public static readonly ColumnId SlugNormalized = new(nameof(AttributeEntity.SlugNormalized), Table);

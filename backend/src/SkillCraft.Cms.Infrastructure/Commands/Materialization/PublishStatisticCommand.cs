@@ -69,6 +69,7 @@ internal class PublishStatisticCommandHandler : ICommandHandler<PublishStatistic
     }
 
     statistic.Summary = locale.TryGetString(Statistics.Summary);
+    statistic.MetaDescription = locale.Description?.ToMetaDescription();
     statistic.Description = locale.TryGetString(Statistics.HtmlContent);
 
     statistic.Publish(@event);
