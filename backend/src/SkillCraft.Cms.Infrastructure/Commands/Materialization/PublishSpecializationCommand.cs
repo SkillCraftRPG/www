@@ -67,12 +67,13 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     await SetOptionalTalentsAsync(specialization, invariant, cancellationToken);
 
     specialization.Summary = locale.TryGetString(Specializations.Summary);
+    specialization.MetaDescription = locale.Description?.ToMetaDescription();
     specialization.Description = locale.TryGetString(Specializations.HtmlContent);
 
     specialization.OtherRequirements = locale.TryGetString(Specializations.OtherRequirements);
     specialization.OtherOptions = locale.TryGetString(Specializations.OtherOptions);
 
-    specialization.ReservedTalentName = locale.GetString(Specializations.ReservedTalentName);
+    specialization.ReservedTalentName = locale.TryGetString(Specializations.ReservedTalentName);
     specialization.ReservedTalentDescription = locale.TryGetString(Specializations.ReservedTalentHtmlContent);
 
     await SetDiscountedTalentsAsync(specialization, invariant, cancellationToken);

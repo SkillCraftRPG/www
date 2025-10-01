@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
+using Logitar.EventSourcing;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
@@ -23,6 +24,7 @@ internal class SpecializationEntity : AggregateEntity
   public int Tier { get; set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
   public TalentEntity? MandatoryTalent { get; private set; }
@@ -32,7 +34,7 @@ internal class SpecializationEntity : AggregateEntity
   public string? OtherRequirements { get; set; }
   public string? OtherOptions { get; set; }
 
-  public string ReservedTalentName { get; set; } = string.Empty;
+  public string? ReservedTalentName { get; set; }
   public string? ReservedTalentDescription { get; set; }
 
   public List<SpecializationDiscountedTalentEntity> DiscountedTalents { get; private set; } = [];
@@ -61,6 +63,37 @@ internal class SpecializationEntity : AggregateEntity
   public void AddOptionalTalent(TalentEntity talent)
   {
     OptionalTalents.Add(new SpecializationOptionalTalentEntity(this, talent));
+  }
+
+  public override IReadOnlyCollection<ActorId> GetActorIds()
+  {
+    List<ActorId> actorIds = new(base.GetActorIds());
+    if (MandatoryTalent is not null)
+    {
+      actorIds.AddRange(MandatoryTalent.GetActorIds());
+    }
+    foreach (SpecializationDiscountedTalentEntity discounted in DiscountedTalents)
+    {
+      if (discounted.Talent is not null)
+      {
+        actorIds.AddRange(discounted.Talent.GetActorIds());
+      }
+    }
+    foreach (SpecializationFeatureEntity feature in Features)
+    {
+      if (feature.Feature is not null)
+      {
+        actorIds.AddRange(feature.Feature.GetActorIds());
+      }
+    }
+    foreach (SpecializationOptionalTalentEntity optional in OptionalTalents)
+    {
+      if (optional.Talent is not null)
+      {
+        actorIds.AddRange(optional.Talent.GetActorIds());
+      }
+    }
+    return actorIds.AsReadOnly();
   }
 
   public void Publish(ContentLocalePublished @event)

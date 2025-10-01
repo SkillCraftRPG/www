@@ -30,6 +30,7 @@ internal class SpecializationConfiguration : AggregateConfiguration<Specializati
     builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
+    builder.Property(x => x.MetaDescription).HasMaxLength(Constants.MetaDescriptionMaximumLength);
     builder.Property(x => x.ReservedTalentName).HasMaxLength(DisplayName.MaximumLength);
 
     builder.HasOne(x => x.MandatoryTalent).WithMany(x => x.SpecializationsMandatory)
