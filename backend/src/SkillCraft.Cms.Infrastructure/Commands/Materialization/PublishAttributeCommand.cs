@@ -70,6 +70,7 @@ internal class PublishAttributeCommandHandler : ICommandHandler<PublishAttribute
     attribute.Value = value;
 
     attribute.Summary = locale.TryGetString(Attributes.Summary);
+    attribute.MetaDescription = locale.Description?.ToMetaDescription();
     attribute.Description = locale.TryGetString(Attributes.HtmlContent);
 
     attribute.Publish(@event);

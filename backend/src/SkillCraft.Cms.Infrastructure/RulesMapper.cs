@@ -41,6 +41,7 @@ internal class RulesMapper
       Category = source.Category,
       Value = source.Value,
       Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
       Description = source.Description
     };
 
@@ -94,6 +95,7 @@ internal class RulesMapper
       Name = source.Name,
       Value = source.Value,
       Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
       Description = source.Description
     };
 
@@ -203,6 +205,7 @@ internal class RulesMapper
       Name = source.Name,
       Value = source.Value,
       Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
       Description = source.Description
     };
 
@@ -234,6 +237,7 @@ internal class RulesMapper
       Tier = source.Tier,
       AllowMultiplePurchases = source.AllowMultiplePurchases,
       Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
       Description = source.Description
     };
 

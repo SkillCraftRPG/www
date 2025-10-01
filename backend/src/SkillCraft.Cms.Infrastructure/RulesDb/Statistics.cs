@@ -19,6 +19,7 @@ internal static class Statistics
   public static readonly ColumnId Description = new(nameof(StatisticEntity.Description), Table);
   public static readonly ColumnId Id = new(nameof(StatisticEntity.Id), Table);
   public static readonly ColumnId IsPublished = new(nameof(StatisticEntity.IsPublished), Table);
+  public static readonly ColumnId MetaDescription = new(nameof(StatisticEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(StatisticEntity.Name), Table);
   public static readonly ColumnId Slug = new(nameof(StatisticEntity.Slug), Table);
   public static readonly ColumnId SlugNormalized = new(nameof(StatisticEntity.SlugNormalized), Table);

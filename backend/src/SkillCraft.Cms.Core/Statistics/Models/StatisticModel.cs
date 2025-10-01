@@ -13,5 +13,6 @@ public class StatisticModel : Aggregate
   public GameStatistic Value { get; set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 }

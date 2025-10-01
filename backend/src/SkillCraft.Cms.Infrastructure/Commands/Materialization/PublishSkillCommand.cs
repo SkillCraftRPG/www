@@ -66,6 +66,7 @@ internal class PublishSkillCommandHandler : ICommandHandler<PublishSkillCommand,
     skill.SetAttribute(attribute);
 
     skill.Summary = locale.TryGetString(Skills.Summary);
+    skill.MetaDescription = locale.Description?.ToMetaDescription();
     skill.Description = locale.TryGetString(Skills.HtmlContent);
 
     skill.Publish(@event);

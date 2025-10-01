@@ -33,5 +33,6 @@ internal class AttributeConfiguration : AggregateConfiguration<AttributeEntity>,
     builder.Property(x => x.Category).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<AttributeCategory>());
     builder.Property(x => x.Value).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameAttribute>());
     builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
+    builder.Property(x => x.MetaDescription).HasMaxLength(Constants.MetaDescriptionMaximumLength);
   }
 }

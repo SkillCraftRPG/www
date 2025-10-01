@@ -32,6 +32,7 @@ internal class SkillConfiguration : AggregateConfiguration<SkillEntity>, IEntity
     builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
     builder.Property(x => x.Value).HasMaxLength(byte.MaxValue).HasConversion(new EnumToStringConverter<GameSkill>());
     builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
+    builder.Property(x => x.MetaDescription).HasMaxLength(Constants.MetaDescriptionMaximumLength);
 
     builder.HasOne(x => x.Attribute).WithMany(x => x.Skills).OnDelete(DeleteBehavior.Restrict);
   }

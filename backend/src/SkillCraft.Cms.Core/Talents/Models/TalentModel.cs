@@ -13,6 +13,7 @@ public class TalentModel : Aggregate
   public SkillModel? Skill { get; set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
   public TalentModel? RequiredTalent { get; set; }
