@@ -6,7 +6,7 @@
         <MarkdownContent inline :text="requirement" />
       </li>
     </ul>
-    <p v-else>Aucun critère.</p>
+    <p v-else>Aucun autre critère.</p>
     <template v-if="specialization.requirements.talent">
       <h3 class="h5">Talent obligatoire</h3>
       <div class="mb-4">

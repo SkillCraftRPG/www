@@ -1,7 +1,7 @@
 <template>
   <h2 class="h3 mb-3">
-    <span v-if="education.wealthMultiplier" class="badge text-bg-secondary"
-      >Richesse de départ&nbsp;:&nbsp;×{{ $n(education.wealthMultiplier, "integer") }}</span
+    <TarBadge v-if="education.wealthMultiplier" variant="secondary"
+      >Richesse&nbsp;de&nbsp;départ&nbsp;:&nbsp;×{{ $n(education.wealthMultiplier, "integer") }}</TarBadge
     >
   </h2>
 </template>

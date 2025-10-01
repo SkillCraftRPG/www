@@ -6,7 +6,7 @@
         <MarkdownContent inline :text="option" />
       </li>
     </ul>
-    <p v-else>Aucune option.</p>
+    <p v-else>Aucune autre option.</p>
     <template v-if="specialization.options.talents.length > 0">
       <h3 class="h5">Talents optionnels</h3>
       <div class="row">

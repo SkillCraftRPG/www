@@ -1,6 +1,6 @@
 <template>
   <h2 class="h3 mb-3">
-    <span class="badge text-bg-secondary"><CustomizationKind :customization="customization" /></span>
+    <TarBadge variant="secondary"><CustomizationKind :customization="customization" /></TarBadge>
   </h2>
 </template>
 
