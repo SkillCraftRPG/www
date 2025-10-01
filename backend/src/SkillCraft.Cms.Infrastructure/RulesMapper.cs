@@ -3,6 +3,7 @@ using Krakenar.Contracts.Actors;
 using Logitar;
 using Logitar.EventSourcing;
 using SkillCraft.Cms.Core.Attributes.Models;
+using SkillCraft.Cms.Core.Customizations.Models;
 using SkillCraft.Cms.Core.Features.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
@@ -57,6 +58,24 @@ internal class RulesMapper
         destination.Skills.Add(ToSkill(skill, destination));
       }
     }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public CustomizationModel ToCustomization(CustomizationEntity source)
+  {
+    CustomizationModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Kind = source.Kind,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
 
     MapAggregate(source, destination);
 
