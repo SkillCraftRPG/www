@@ -30,3 +30,5 @@
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
+  - ⚠️ Pas corrigé! useSeo est un composable qui encapsule useSeoMeta, maintenant c’est perdu…
+- Retirer les dépendances à `logitar-vue3-ui` (0%)

@@ -1,7 +1,5 @@
 import type { Actor } from "./game";
 
-export const Brand: string = "SkillCraft";
-
 export const Icons: Record<string, string> = {
   attribute: "fas fa-chart-simple",
   skill: "fas fa-kitchen-set",

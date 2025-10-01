@@ -1,0 +1,17 @@
+<template>
+  <TarAlert :close="$t('actions.close')" dismissible :model-value="modelValue" variant="warning" @update:model-value="$emit('update:model-value', $event)">
+    <strong>{{ $t("users.signIn.invalidCredentials.lead") }}</strong> {{ $t("users.signIn.invalidCredentials.help") }}
+  </TarAlert>
+</template>
+
+<script setup lang="ts">
+import { TarAlert } from "logitar-vue3-ui";
+
+defineProps<{
+  modelValue?: boolean | string;
+}>();
+
+defineEmits<{
+  (e: "update:model-value", value: boolean): void;
+}>();
+</script>

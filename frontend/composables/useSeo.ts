@@ -1,7 +1,5 @@
 import { useHead, useRoute, useRuntimeConfig } from "nuxt/app";
 
-import { Brand } from "~/types/constants";
-
 type SeoMeta = {
   title?: string | null;
   description?: string | null;
@@ -23,7 +21,7 @@ export function useSeo(meta?: SeoMeta): void {
       ogImage: undefined, // TODO(fpion): OpenGraph Image
       ogUrl: href,
       ogLocale: locale,
-      ogSiteName: Brand,
+      ogSiteName: "SkillCraft",
     });
   }
 
