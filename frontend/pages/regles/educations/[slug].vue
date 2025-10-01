@@ -20,7 +20,7 @@ const parent: Breadcrumb[] = [{ text: "Éducations", to: "/regles/educations" }]
 const route = useRoute();
 
 const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
-const { data } = useAsyncData<Education>(
+const { data } = await useAsyncData<Education>(
   `education:${slug.value}`,
   () =>
     $fetch(`/api/educations/slug:${slug.value}`, {

@@ -4,7 +4,7 @@
       <NuxtLink to="/" class="navbar-brand">
         <img src="@/assets/img/logo.png" :alt="`${$t('brand')} Logo`" height="32" />
         {{ $t("brand") }}
-        <span v-if="environment !== 'production'" class="badge text-bg-warning">{{ environment }}</span>
+        <TarBadge v-if="environment !== 'production'" variant="warning">{{ environment }}</TarBadge>
       </NuxtLink>
       <button
         class="navbar-toggler"

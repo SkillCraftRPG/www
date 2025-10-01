@@ -16,11 +16,11 @@ import { parsingUtils } from "logitar-js";
 
 const options: SelectOption[] = [
   {
-    text: "Non",
+    text: $t("no"),
     value: false.toString(),
   },
   {
-    text: "Oui",
+    text: $t("yes"),
     value: true.toString(),
   },
 ];

@@ -1,34 +1,39 @@
 # TODO
 
-- Refactoriser les tables de listes (50%)
+- Refactoriser les tables de listes (60%)
   - ✅ Attributs
   - ✅ Castes
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
-- Refactoriser les appels aux contenus avec un `slug computed`, et une clé dynamique de `asyncData` (35%)
+  - ✅ Talents
+- Refactoriser les appels aux contenus avec un `slug computed`, et une clé dynamique de `asyncData` (45%)
   - ✅ Attributs
   - 🚧 Castes
   - 🚧 Dons & Handicaps
   - 🚧 Éducations
   - ✅ Spécialisations
-- Refactoriser les contenus en components (50%)
+  - ✅ Talents
+- Refactoriser les contenus en components (60%)
   - ✅ Attributs
   - ✅ Castes
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
-- Refactoriser les tableaux d’entête de contenus (50%)
+  - ✅ Talents
+- Refactoriser les tableaux d’entête de contenus (60%)
   - ✅ Attributs
   - ✅ Castes
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
-- Corriger le SEO des contenus (50%)
+  - ✅ Talents
+- Corriger le SEO des contenus (60%)
   - ✅ Attributs
   - ✅ Castes
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
+  - ✅ Talents
   - ⚠️ Pas corrigé! useSeo est un composable qui encapsule useSeoMeta, maintenant c’est perdu…
 - Retirer les dépendances à `logitar-vue3-ui` (0%)

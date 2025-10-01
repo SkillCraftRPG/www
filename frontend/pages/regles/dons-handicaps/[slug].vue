@@ -18,7 +18,7 @@ const parent: Breadcrumb[] = [{ text: "Dons & Handicaps", to: "/regles/dons-hand
 const route = useRoute();
 
 const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
-const { data } = useAsyncData<Customization>(
+const { data } = await useAsyncData<Customization>(
   `customization:${slug.value}`,
   () =>
     $fetch(`/api/customizations/slug:${slug.value}`, {

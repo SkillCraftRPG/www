@@ -1,6 +1,6 @@
 <template>
   <h2 class="h3 mb-3">
-    <span v-if="caste.wealthRoll" class="badge text-bg-secondary">Richesse de départ&nbsp;:&nbsp;{{ caste.wealthRoll }}&nbsp;({{ average }})</span>
+    <TarBadge v-if="caste.wealthRoll" variant="secondary">Richesse&nbsp;de&nbsp;départ&nbsp;:&nbsp;{{ caste.wealthRoll }}&nbsp;({{ average }})</TarBadge>
   </h2>
 </template>
 

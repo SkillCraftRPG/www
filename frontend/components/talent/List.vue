@@ -18,13 +18,13 @@
           <TalentCard :talent="talent" class="d-flex flex-column h-100" />
         </div>
       </div>
-      <table v-else-if="mode === 'list'" class="table table-striped">
+      <table v-else-if="mode === 'list'" class="table table-striped text-center">
         <thead>
           <tr>
-            <th scope="col">Nom</th>
-            <th scope="col">Talent requis</th>
-            <th scope="col">Compétence</th>
-            <th scope="col">Résumé</th>
+            <th scope="col" class="w-15">Nom</th>
+            <th scope="col" class="w-15">Talent requis</th>
+            <th scope="col" class="w-15">Compétence</th>
+            <th scope="col" class="w-55">Résumé</th>
           </tr>
         </thead>
         <tbody>
@@ -44,7 +44,7 @@
               <NuxtLink v-if="talent.skill" :to="`/regles/competences/${talent.skill.slug}`">{{ talent.skill.name }}</NuxtLink>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
-            <td class="summary-col">
+            <td>
               <template v-if="talent.summary">{{ talent.summary }}</template>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>

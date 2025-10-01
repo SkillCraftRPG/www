@@ -33,6 +33,7 @@
     }
   },
   "loading": "Chargement…",
+  "no": "Non",
   "size": {
     "category": {
       "options": {
@@ -77,5 +78,6 @@
       "username": "Nom d’utilisateur"
     },
     "signOut": "Déconnexion"
-  }
+  },
+  "yes": "Oui"
 }
