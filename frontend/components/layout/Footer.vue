@@ -2,17 +2,15 @@
   <footer class="bg-dark">
     <div class="fluid">
       <NuxtLink to="/" class="text-light">
-        <img src="@/assets/img/logo.png" :alt="`${Brand} Logo`" height="32" />
+        <img src="@/assets/img/logo.png" :alt="`${$t('brand')} Logo`" height="32" />
       </NuxtLink>
       {{ " " }}
-      <NuxtLink to="/" class="text-light">© {{ Brand }} {{ version }} {{ year }}.</NuxtLink>
+      <NuxtLink to="/" class="text-light">© {{ $t("brand") }} {{ version }} {{ year }}.</NuxtLink>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { Brand } from "~/types/constants";
-
 const config = useRuntimeConfig();
 const year: number = new Date().getUTCFullYear();
 

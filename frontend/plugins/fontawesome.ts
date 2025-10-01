@@ -2,6 +2,8 @@
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
+  faArrowRightFromBracket,
+  faArrowRightToBracket,
   faArrowUp,
   faBook,
   faBrain,
@@ -34,6 +36,7 @@ import {
   faTimes,
   faTriangleExclamation,
   faTrophy,
+  faUser,
   faWandSparkles,
   faWheelchair,
 } from "@fortawesome/free-solid-svg-icons";
@@ -41,6 +44,8 @@ import {
 config.autoAddCss = false;
 
 library.add(
+  faArrowRightFromBracket,
+  faArrowRightToBracket,
   faArrowUp,
   faBook,
   faBrain,
@@ -73,6 +78,7 @@ library.add(
   faTimes,
   faTriangleExclamation,
   faTrophy,
+  faUser,
   faWandSparkles,
   faWheelchair,
 );

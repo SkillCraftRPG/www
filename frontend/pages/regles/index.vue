@@ -7,31 +7,26 @@
       Les rubriques sont également présentées en ordre logique d’utilisation : d’abord, la création et progression des personnages, puis les règles en
       découlant, et enfin les rubriques concernant le déroulement d’une partie de jeu.
     </p>
-    <ClientOnly>
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="grid">
-          <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
-            <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
-            <div class="w-100 px-3">
-              <TarProgress
-                :animated="tile.progress < 1"
-                :label="tile.progress >= 1 ? '✓' : undefined"
-                :striped="tile.progress < 1"
-                :value="tile.progress * 100"
-              />
-            </div>
-          </NuxtLink>
-        </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="grid">
+        <NuxtLink v-for="(tile, index) in tiles" :key="index" :to="tile.to" class="tile">
+          <font-awesome-icon class="icon" :icon="tile.icon" /> {{ tile.text }}
+          <div class="w-100 px-3">
+            <TarProgress
+              :animated="tile.progress < 1"
+              :label="tile.progress >= 1 ? '✓' : undefined"
+              :striped="tile.progress < 1"
+              :value="tile.progress * 100"
+            />
+          </div>
+        </NuxtLink>
       </div>
-    </ClientOnly>
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
-// TODO(fpion): enlever le ClientOnly une fois les Progress enlevées
-
 import type { RouteLocationAsPathGeneric, RouteLocationAsRelativeGeneric } from "vue-router";
-import { TarProgress } from "logitar-vue3-ui";
 
 import { Icons } from "~/types/constants";
 
