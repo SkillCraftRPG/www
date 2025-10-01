@@ -15,6 +15,7 @@ internal class FeatureEntity : AggregateEntity
   public string? Description { get; set; }
 
   public List<CasteEntity> Castes { get; private set; } = [];
+  public List<EducationEntity> Educations { get; private set; } = [];
   public List<SpecializationFeatureEntity> Specializations { get; private set; } = [];
 
   public FeatureEntity(ContentLocalePublished @event) : base(@event)

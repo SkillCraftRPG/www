@@ -5,6 +5,7 @@ using Logitar.EventSourcing;
 using SkillCraft.Cms.Core.Attributes.Models;
 using SkillCraft.Cms.Core.Castes.Models;
 using SkillCraft.Cms.Core.Customizations.Models;
+using SkillCraft.Cms.Core.Educations.Models;
 using SkillCraft.Cms.Core.Features.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
@@ -120,6 +121,48 @@ internal class RulesMapper
       MetaDescription = source.MetaDescription,
       Description = source.Description
     };
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public EducationModel ToEducation(EducationEntity source)
+  {
+    EducationModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      WealthMultiplier = source.WealthMultiplier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.Skill is not null)
+    {
+      if (source.Skill.IsPublished)
+      {
+        destination.Skill = ToSkill(source.Skill);
+      }
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
+
+    if (source.Feature is not null)
+    {
+      if (source.Feature.IsPublished)
+      {
+        destination.Feature = ToFeature(source.Feature);
+      }
+    }
+    else if (source.FeatureId.HasValue)
+    {
+      throw new ArgumentException("The feature is required.", nameof(source));
+    }
 
     MapAggregate(source, destination);
 

@@ -84,17 +84,15 @@ export type Feature = {
   description?: string | null;
 };
 
-export type Education = {
-  id: string;
+export type Education = Attribute & {
   slug: string;
   name: string;
-  skillId: string;
+  wealthMultiplier?: number | null;
   skill?: Skill | null;
-  wealthMultiplier: number;
-  summary?: string | null;
-  description?: string | null;
   feature?: Feature | null;
-  notes?: string | null;
+  summary?: string | null;
+  metaDescription?: string | null;
+  description?: string | null;
 };
 
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";

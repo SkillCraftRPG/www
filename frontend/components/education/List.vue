@@ -6,13 +6,13 @@
         <EducationCard class="d-flex flex-column h-100" :education="education" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Education</th>
-          <th scope="col">Compétence</th>
-          <th scope="col">Argent de départ</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-15">Caste</th>
+          <th scope="col" class="w-15">Compétence</th>
+          <th scope="col" class="w-15">Richesse de départ</th>
+          <th scope="col" class="w-55">Résumé</th>
         </tr>
       </thead>
       <tbody>
@@ -25,10 +25,10 @@
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
           <td>
-            <template v-if="education.wealthMultiplier">×{{ education.wealthMultiplier }}</template>
+            <template v-if="education.wealthMultiplier">×{{ $n(education.wealthMultiplier, "integer") }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
-          <td class="summary-col">
+          <td>
             <template v-if="education.summary">{{ education.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

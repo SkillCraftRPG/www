@@ -342,6 +342,87 @@
     ]
   },
   {
+    "Id": "e3cd11f6-bc56-466b-a45e-f41da22c3dd3",
+    "IsInvariant": false,
+    "UniqueName": "Education",
+    "DisplayName": "Éducation",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "a252f2b3-dc4a-4e52-9ee0-f8ed698779bc",
+        "FieldType": "WealthMultiplier",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "WealthMultiplier",
+        "DisplayName": "Richesse de départ (facteur)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "1063ac5e-9270-4918-aa59-8d33f158f2a4",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Description": null,
+        "Placeholder": "Sélectionnez une compétence"
+      },
+      {
+        "Id": "ccc56b41-4cb7-4cc0-afee-2f0865275d64",
+        "FieldType": "Feature",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Feature",
+        "DisplayName": "Particularité",
+        "Description": null,
+        "Placeholder": "Sélectionnez une particularité"
+      },
+      {
+        "Id": "c3b373c3-d261-4b48-9106-39855e4f0dff",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "890275ad-1988-44d1-b83d-c78d7dfce3e9",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "df0c2b7f-dd53-4d29-b1ae-01845f457252",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",

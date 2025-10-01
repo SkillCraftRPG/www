@@ -161,5 +161,16 @@
       "MaximumValue": 3,
       "Step": 1
     }
+  },
+  {
+    "Id": "365c508b-6a96-4b54-bc5b-304032ef93e3",
+    "UniqueName": "WealthMultiplier",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 4,
+      "MaximumValue": 12,
+      "Step": 2
+    }
   }
 ]
