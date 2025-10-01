@@ -289,7 +289,7 @@
         "UniqueName": "Skill",
         "DisplayName": "Compétence",
         "Description": null,
-        "Placeholder": null
+        "Placeholder": "Sélectionnez une compétence"
       },
       {
         "Id": "5939b09d-3140-4d98-aff2-f89de7581657",
@@ -301,7 +301,7 @@
         "UniqueName": "Feature",
         "DisplayName": "Particularité",
         "Description": null,
-        "Placeholder": null
+        "Placeholder": "Sélectionnez une particularité"
       },
       {
         "Id": "f9438fee-d26c-43dd-a06a-c6534215f109",

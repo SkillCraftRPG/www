@@ -83,7 +83,7 @@ const tiles: Tile[] = [
     icon: "fas fa-screwdriver-wrench",
     text: "Castes",
     to: "/regles/castes",
-    progress: 1 / 11,
+    progress: (1 + 1) / 11,
   },
   {
     icon: "fas fa-graduation-cap",

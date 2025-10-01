@@ -55,17 +55,15 @@ export type Attribute = Aggregate & {
 
 export type AttributeCategory = "Mental" | "Physical";
 
-export type Caste = {
-  id: string;
+export type Caste = Aggregate & {
   slug: string;
   name: string;
-  skillId: string;
+  wealthRoll?: string | null;
   skill?: Skill | null;
-  wealthRoll: string;
-  summary?: string | null;
-  description?: string | null;
   feature?: Feature | null;
-  notes?: string | null;
+  summary?: string | null;
+  metaDescription?: string | null;
+  description?: string | null;
 };
 
 export type Customization = Aggregate & {
