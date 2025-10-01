@@ -6,13 +6,13 @@
         <AttributeDetailCard :attribute="attribute" class="d-flex flex-column h-100" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Attribut</th>
-          <th scope="col">Statistiques</th>
-          <th scope="col">Compétences</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-10">Attribut</th>
+          <th scope="col" class="w-10">Statistiques</th>
+          <th scope="col" class="w-10">Compétences</th>
+          <th scope="col" class="w-70">Résumé</th>
         </tr>
       </thead>
       <tbody>
@@ -34,7 +34,7 @@
               <br v-if="index < attribute.skills.length - 1" />
             </template>
           </td>
-          <td class="summary-col">
+          <td>
             <template v-if="attribute.summary">{{ attribute.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
