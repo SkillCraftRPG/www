@@ -1,30 +1,35 @@
 <template>
   <main class="container">
-    <template v-if="title">
+    <template v-if="customization">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
+      <CustomizationInfo :customization="customization" />
+      <MarkdownContent v-if="customization.description" :text="customization.description" />
     </template>
-    <div v-if="html" v-html="html"></div>
   </main>
 </template>
 
 <script setup lang="ts">
-import { marked } from "marked";
-
 import type { Breadcrumb } from "~/types/components";
 import type { Customization } from "~/types/game";
-import { getCustomization } from "~/services/customizations";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Dons & Handicaps", to: "/regles/dons-handicaps" }];
 const route = useRoute();
 
-const customization = ref<Customization | undefined>(getCustomization(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const { data } = useAsyncData<Customization>(
+  `customization:${slug.value}`,
+  () =>
+    $fetch(`/api/customizations/slug:${slug.value}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  { watch: [slug] },
+);
 
-const html = computed<string | undefined>(() => (customization.value?.description ? (marked.parse(customization.value.description) as string) : undefined));
-const title = computed<string | undefined>(() => customization.value?.name);
+const customization = computed<Customization | undefined>(() => data.value ?? undefined);
+const title = computed<string>(() => customization.value?.name ?? "");
+const description = computed<string>(() => customization.value?.metaDescription ?? "");
 
-useSeo({
-  title: title.value,
-  description: customization.value?.summary,
-});
+useSeoMeta({ title, description });
 </script>

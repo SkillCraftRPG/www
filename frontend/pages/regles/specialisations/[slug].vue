@@ -16,6 +16,7 @@
 import type { Breadcrumb } from "~/types/components";
 import type { Specialization } from "~/types/specializations";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Spécialisations", to: "/regles/specialisations" }];
 const route = useRoute();
 
@@ -24,7 +25,7 @@ const { data } = useAsyncData<Specialization>(
   `specialization:${slug.value}`,
   () =>
     $fetch(`/api/specializations/slug:${slug.value}`, {
-      baseURL: useRuntimeConfig().public.apiBaseUrl,
+      baseURL: config.public.apiBaseUrl,
     }),
   { watch: [slug] },
 );

@@ -13,21 +13,23 @@
         <CustomizationCard :customization="customization" class="d-flex flex-column h-100" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Personnalisation</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-20">Personnalisation</th>
+          <th scope="col" class="w-20">Type</th>
+          <th scope="col" class="w-60">Résumé</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="customization in customizations" :key="customization.id">
           <td>
             <NuxtLink :to="`/regles/dons-handicaps/${customization.slug}`">{{ customization.name }}</NuxtLink>
-            <br />
-            <span class="text-muted"><CustomizationKind :customization="customization" /></span>
           </td>
-          <td class="summary-col">
+          <td>
+            <CustomizationKind class="text-muted" :customization="customization" />
+          </td>
+          <td>
             <template v-if="customization.summary">{{ customization.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

@@ -11,6 +11,14 @@
       }
     }
   },
+  "customization": {
+    "kind": {
+      "options": {
+        "Disability": "Handicap",
+        "Gift": "Don"
+      }
+    }
+  },
   "damage": {
     "type": {
       "options": {
