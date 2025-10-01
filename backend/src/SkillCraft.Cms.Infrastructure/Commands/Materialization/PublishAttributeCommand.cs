@@ -3,9 +3,10 @@ using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SkillCraft.Cms.Core;
+using SkillCraft.Cms.Core.Attributes;
 using SkillCraft.Cms.Infrastructure.Contents;
 using SkillCraft.Cms.Infrastructure.Entities;
+using SkillCraft.Contracts;
 
 namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 

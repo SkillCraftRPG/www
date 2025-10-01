@@ -2,7 +2,8 @@
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using Logitar.EventSourcing;
-using SkillCraft.Cms.Core;
+using SkillCraft.Cms.Core.Attributes;
+using SkillCraft.Contracts;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;

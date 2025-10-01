@@ -3,8 +3,8 @@ using Krakenar.EntityFrameworkCore.Relational.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure.Entities;
+using SkillCraft.Contracts;
 
 namespace SkillCraft.Cms.Infrastructure.Configurations;
 

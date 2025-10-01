@@ -83,7 +83,7 @@ internal class SpecializationQuerier : ISpecializationQuerier
     IQueryBuilder builder = _sqlHelper.Query(RulesDb.Specializations.Table).SelectAll(RulesDb.Specializations.Table)
       .ApplyIdFilter(RulesDb.Specializations.Id, payload.Ids)
       .Where(RulesDb.Specializations.IsPublished, Operators.IsEqualTo(true));
-    _sqlHelper.ApplyTextSearch(builder, payload.Search, RulesDb.Specializations.Slug, RulesDb.Specializations.Name, RulesDb.Specializations.Summary);
+    _sqlHelper.ApplyTextSearch(builder, payload.Search, RulesDb.Specializations.Slug, RulesDb.Specializations.Name, RulesDb.Specializations.Summary, RulesDb.Specializations.ReservedTalentName);
 
     IQueryable<SpecializationEntity> query = _specializations.FromQuery(builder).AsNoTracking()
       .Include(x => x.MandatoryTalent).ThenInclude(x => x!.RequiredTalent).ThenInclude(x => x!.Skill).ThenInclude(x => x!.Attribute)
