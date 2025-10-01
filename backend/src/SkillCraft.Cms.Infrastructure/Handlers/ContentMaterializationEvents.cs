@@ -177,6 +177,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Disability:
         await _commandBus.ExecuteAsync(new PublishCustomizationCommand(CustomizationKind.Disability, @event, publishedInvariant, publishedLocale), cancellationToken);
         break;
+      case EntityKind.Education:
+        await _commandBus.ExecuteAsync(new PublishEducationCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Feature:
         await _commandBus.ExecuteAsync(new PublishFeatureCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
@@ -250,6 +253,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Disability:
       case EntityKind.Gift:
         await _commandBus.ExecuteAsync(new UnpublishCustomizationCommand(@event), cancellationToken);
+        break;
+      case EntityKind.Education:
+        await _commandBus.ExecuteAsync(new UnpublishEducationCommand(@event), cancellationToken);
         break;
       case EntityKind.Feature:
         await _commandBus.ExecuteAsync(new UnpublishFeatureCommand(@event), cancellationToken);

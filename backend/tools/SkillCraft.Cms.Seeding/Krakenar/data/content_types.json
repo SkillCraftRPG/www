@@ -342,7 +342,7 @@
     ]
   },
   {
-    "Id": "c20a301e-6dff-4dea-bb6b-23246c0b8cf5",
+    "Id": "e3cd11f6-bc56-466b-a45e-f41da22c3dd3",
     "IsInvariant": false,
     "UniqueName": "Education",
     "DisplayName": "Éducation",
@@ -350,7 +350,7 @@
     "Fields": [
       {
         "Id": "a252f2b3-dc4a-4e52-9ee0-f8ed698779bc",
-        "FieldType": "Roll",
+        "FieldType": "WealthMultiplier",
         "IsInvariant": true,
         "IsRequired": false,
         "IsIndexed": false,
