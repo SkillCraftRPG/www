@@ -4,6 +4,9 @@ import pkg from "./package.json";
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
+  devServer: {
+    port: 3030,
+  },
   modules: ["usebootstrap", "@nuxtjs/i18n"],
   css: ["@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
   app: {
@@ -22,12 +25,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBaseUrl: "http://localhost:8888",
-      baseUrl: "http://localhost:3000",
+      baseUrl: "http://localhost:3030",
       version: pkg.version,
     },
-  },
-  devServer: {
-    host: "127.0.0.1",
-    port: 3030,
   },
 });
