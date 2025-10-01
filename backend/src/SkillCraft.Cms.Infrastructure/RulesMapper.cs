@@ -142,27 +142,30 @@ internal class RulesMapper
       destination.Options.Other.AddRange(SplitOnNewLine(source.OtherOptions));
     }
 
-    destination.ReservedTalent.Name = source.ReservedTalentName;
-    if (source.ReservedTalentDescription is not null)
+    if (source.ReservedTalentName is not null)
     {
-      destination.ReservedTalent.Description.AddRange(SplitOnNewLine(source.ReservedTalentDescription));
-    }
-    foreach (SpecializationDiscountedTalentEntity discountedTalent in source.DiscountedTalents)
-    {
-      TalentEntity talent = discountedTalent.Talent
-        ?? throw new ArgumentException($"The discounted talent is required (SpecializationId={discountedTalent.SpecializationId}, TalentId={discountedTalent.TalentId}).", nameof(source)); ;
-      if (talent.IsPublished)
+      destination.ReservedTalent = new ReservedTalent(source.ReservedTalentName);
+      if (source.ReservedTalentDescription is not null)
       {
-        destination.ReservedTalent.DiscountedTalents.Add(ToTalent(talent));
+        destination.ReservedTalent.Description.AddRange(SplitOnNewLine(source.ReservedTalentDescription));
       }
-    }
-    foreach (SpecializationFeatureEntity specializationFeature in source.Features)
-    {
-      FeatureEntity feature = specializationFeature.Feature
-        ?? throw new ArgumentException($"The feature is required (SpecializationId={specializationFeature.SpecializationId}, FeatureId={specializationFeature.FeatureId}).", nameof(source));
-      if (feature.IsPublished)
+      foreach (SpecializationDiscountedTalentEntity discountedTalent in source.DiscountedTalents)
       {
-        destination.ReservedTalent.Features.Add(ToFeature(feature));
+        TalentEntity talent = discountedTalent.Talent
+          ?? throw new ArgumentException($"The discounted talent is required (SpecializationId={discountedTalent.SpecializationId}, TalentId={discountedTalent.TalentId}).", nameof(source)); ;
+        if (talent.IsPublished)
+        {
+          destination.ReservedTalent.DiscountedTalents.Add(ToTalent(talent));
+        }
+      }
+      foreach (SpecializationFeatureEntity specializationFeature in source.Features)
+      {
+        FeatureEntity feature = specializationFeature.Feature
+          ?? throw new ArgumentException($"The feature is required (SpecializationId={specializationFeature.SpecializationId}, FeatureId={specializationFeature.FeatureId}).", nameof(source));
+        if (feature.IsPublished)
+        {
+          destination.ReservedTalent.Features.Add(ToFeature(feature));
+        }
       }
     }
 

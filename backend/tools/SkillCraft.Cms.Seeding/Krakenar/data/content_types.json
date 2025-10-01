@@ -415,7 +415,7 @@
         "Id": "e25b9df2-123f-4ae2-a01e-31ac8969637c",
         "FieldType": "Name",
         "IsInvariant": false,
-        "IsRequired": true,
+        "IsRequired": false,
         "IsIndexed": false,
         "IsUnique": false,
         "UniqueName": "ReservedTalentName",

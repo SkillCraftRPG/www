@@ -34,7 +34,7 @@ internal class SpecializationEntity : AggregateEntity
   public string? OtherRequirements { get; set; }
   public string? OtherOptions { get; set; }
 
-  public string ReservedTalentName { get; set; } = string.Empty;
+  public string? ReservedTalentName { get; set; }
   public string? ReservedTalentDescription { get; set; }
 
   public List<SpecializationDiscountedTalentEntity> DiscountedTalents { get; private set; } = [];

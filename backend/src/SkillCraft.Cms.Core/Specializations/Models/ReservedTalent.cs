@@ -5,8 +5,17 @@ namespace SkillCraft.Cms.Core.Specializations.Models;
 
 public record ReservedTalent
 {
-  public string Name { get; set; } = string.Empty;
+  public string Name { get; set; }
   public List<string> Description { get; set; } = [];
   public List<TalentModel> DiscountedTalents { get; set; } = [];
   public List<FeatureModel> Features { get; set; } = [];
+
+  public ReservedTalent() : this(string.Empty)
+  {
+  }
+
+  public ReservedTalent(string name)
+  {
+    Name = name;
+  }
 }

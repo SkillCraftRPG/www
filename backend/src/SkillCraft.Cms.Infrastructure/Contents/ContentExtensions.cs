@@ -1,5 +1,7 @@
-﻿using Krakenar.Core.Contents;
+﻿using Krakenar.Core;
+using Krakenar.Core.Contents;
 using Krakenar.Core.Fields;
+using Logitar;
 
 namespace SkillCraft.Cms.Infrastructure.Contents;
 
@@ -43,5 +45,10 @@ internal static class ContentExtensions
   public static string? TryGetString(this ContentLocale locale, Guid fieldId)
   {
     return locale.FieldValues.TryGetValue(fieldId, out FieldValue? value) ? value.Value : null;
+  }
+
+  public static string? ToMetaDescription(this Description description)
+  {
+    return description.Value.Truncate(Constants.MetaDescriptionMaximumLength);
   }
 }
