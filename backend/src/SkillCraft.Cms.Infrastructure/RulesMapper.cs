@@ -3,6 +3,7 @@ using Krakenar.Contracts.Actors;
 using Logitar;
 using Logitar.EventSourcing;
 using SkillCraft.Cms.Core.Attributes.Models;
+using SkillCraft.Cms.Core.Castes.Models;
 using SkillCraft.Cms.Core.Customizations.Models;
 using SkillCraft.Cms.Core.Features.Models;
 using SkillCraft.Cms.Core.Skills.Models;
@@ -58,6 +59,48 @@ internal class RulesMapper
       {
         destination.Skills.Add(ToSkill(skill, destination));
       }
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public CasteModel ToCaste(CasteEntity source)
+  {
+    CasteModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      WealthRoll = source.WealthRoll,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.Skill is not null)
+    {
+      if (source.Skill.IsPublished)
+      {
+        destination.Skill = ToSkill(source.Skill);
+      }
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
+
+    if (source.Feature is not null)
+    {
+      if (source.Feature.IsPublished)
+      {
+        destination.Feature = ToFeature(source.Feature);
+      }
+    }
+    else if (source.FeatureId.HasValue)
+    {
+      throw new ArgumentException("The feature is required.", nameof(source));
     }
 
     MapAggregate(source, destination);

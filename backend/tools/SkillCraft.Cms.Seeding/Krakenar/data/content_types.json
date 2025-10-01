@@ -261,6 +261,87 @@
     ]
   },
   {
+    "Id": "e7ffc352-7ce6-4157-885f-fbd153c7bf18",
+    "IsInvariant": false,
+    "UniqueName": "Caste",
+    "DisplayName": "Caste",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "7c1c2dc8-fb97-4ddd-bbee-922a066d48eb",
+        "FieldType": "Roll",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "WealthRoll",
+        "DisplayName": "Richesse de départ (jet)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "143caff1-feb7-4e3f-9389-fbe8c47ac668",
+        "FieldType": "Skill",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Skill",
+        "DisplayName": "Compétence",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "5939b09d-3140-4d98-aff2-f89de7581657",
+        "FieldType": "Feature",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Feature",
+        "DisplayName": "Particularité",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "f9438fee-d26c-43dd-a06a-c6534215f109",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7a1061fb-d83d-4377-b8f0-bb452bd9abf6",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "d07259ce-64aa-42ae-9574-ab9575aa0e66",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "0ea520cb-f612-48b2-af23-fb0b64a2e97c",
     "IsInvariant": false,
     "UniqueName": "Talent",
