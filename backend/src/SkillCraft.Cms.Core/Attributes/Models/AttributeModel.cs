@@ -1,6 +1,7 @@
 ﻿using Krakenar.Contracts;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Statistics.Models;
+using SkillCraft.Contracts;
 
 namespace SkillCraft.Cms.Core.Attributes.Models;
 

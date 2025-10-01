@@ -15,11 +15,11 @@ import { TarSelect, type SelectOption } from "logitar-vue3-ui";
 
 const options: SelectOption[] = [
   {
-    text: "Don",
+    text: $t("customization.kind.options.Gift"),
     value: "Gift",
   },
   {
-    text: "Handicap",
+    text: $t("customization.kind.options.Disability"),
     value: "Disability",
   },
 ];

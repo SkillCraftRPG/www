@@ -1,4 +1,4 @@
-﻿using SkillCraft.Core;
+﻿using SkillCraft.Contracts;
 
 namespace SkillCraft.Rules.Compiler.Models;
 

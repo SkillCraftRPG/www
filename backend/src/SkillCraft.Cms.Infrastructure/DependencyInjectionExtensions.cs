@@ -4,6 +4,7 @@ using Krakenar.Infrastructure;
 using Krakenar.Infrastructure.Commands;
 using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.Cms.Core.Attributes;
+using SkillCraft.Cms.Core.Customizations;
 using SkillCraft.Cms.Core.Skills;
 using SkillCraft.Cms.Core.Specializations;
 using SkillCraft.Cms.Core.Statistics;
@@ -30,6 +31,7 @@ public static class DependencyInjectionExtensions
   {
     return services
       .AddScoped<IAttributeQuerier, AttributeQuerier>()
+      .AddScoped<ICustomizationQuerier, CustomizationQuerier>()
       .AddScoped<ISkillQuerier, SkillQuerier>()
       .AddScoped<ISpecializationQuerier, SpecializationQuerier>()
       .AddScoped<IStatisticQuerier, StatisticQuerier>()

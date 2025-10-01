@@ -1,4 +1,4 @@
-﻿namespace SkillCraft.Cms.Core;
+﻿namespace SkillCraft.Cms.Core.Attributes;
 
 public enum AttributeCategory
 {

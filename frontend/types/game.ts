@@ -67,14 +67,13 @@ export type Caste = {
   notes?: string | null;
 };
 
-export type Customization = {
-  id: string;
-  kind: CustomizationKind;
+export type Customization = Aggregate & {
   slug: string;
   name: string;
+  kind: CustomizationKind;
   summary?: string | null;
+  metaDescription?: string | null;
   description?: string | null;
-  notes?: string | null;
 };
 
 export type CustomizationKind = "Disability" | "Gift";

@@ -1,15 +1,14 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
-using Logitar.EventSourcing;
 using SkillCraft.Contracts;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
 
-internal class StatisticEntity : AggregateEntity
+internal class CustomizationEntity : AggregateEntity
 {
-  public int StatisticId { get; private set; }
+  public int CustomizationId { get; private set; }
   public Guid Id { get; private set; }
 
   public bool IsPublished { get; private set; }
@@ -22,35 +21,28 @@ internal class StatisticEntity : AggregateEntity
   }
   public string Name { get; set; } = string.Empty;
 
-  public GameStatistic Value { get; set; }
-
-  public AttributeEntity? Attribute { get; private set; }
-  public int AttributeId { get; private set; }
-  public Guid AttributeUid { get; private set; }
+  public CustomizationKind Kind { get; private set; }
 
   public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
-  public StatisticEntity(ContentLocalePublished @event) : base(@event)
+  public CustomizationEntity(CustomizationKind kind, ContentLocalePublished @event) : base(@event)
   {
+    if (!Enum.IsDefined(kind))
+    {
+      throw new ArgumentOutOfRangeException(nameof(kind));
+    }
+
     Id = new ContentId(@event.StreamId).EntityId;
 
     IsPublished = true;
+
+    Kind = kind;
   }
 
-  private StatisticEntity() : base()
+  private CustomizationEntity() : base()
   {
-  }
-
-  public override IReadOnlyCollection<ActorId> GetActorIds() => GetActorIds(skipAttribute: false);
-  public IReadOnlyCollection<ActorId> GetActorIds(bool skipAttribute)
-  {
-    List<ActorId> actorIds = new(base.GetActorIds());
-    if (!skipAttribute && Attribute is not null)
-    {
-      actorIds.AddRange(Attribute.GetActorIds(skipStatistics: true, skipSkills: false));
-    }
-    return actorIds;
   }
 
   public void Publish(ContentLocalePublished @event)
@@ -58,13 +50,6 @@ internal class StatisticEntity : AggregateEntity
     Update(@event);
 
     IsPublished = true;
-  }
-
-  public void SetAttribute(AttributeEntity attribute)
-  {
-    Attribute = attribute;
-    AttributeId = attribute.AttributeId;
-    AttributeUid = attribute.Id;
   }
 
   public void Unpublish(ContentLocaleUnpublished @event)

@@ -1,5 +1,7 @@
 <template>
-  <span class="kind"><font-awesome-icon :icon="icon" />&nbsp;{{ text }}</span>
+  <span class="kind"
+    ><template v-if="icon"><font-awesome-icon :icon="icon" />&nbsp;</template>{{ text }}</span
+  >
 </template>
 
 <script setup lang="ts">
@@ -9,20 +11,15 @@ const props = defineProps<{
   customization: Customization;
 }>();
 
-const icon = computed<string>(() => {
+const icon = computed<string | undefined>(() => {
   switch (props.customization.kind) {
     case "Disability":
       return "fas fa-wheelchair";
+    case "Gift":
+      return "fas fa-trophy";
   }
-  return "fas fa-hand-fist";
 });
-const text = computed<string>(() => {
-  switch (props.customization.kind) {
-    case "Disability":
-      return "Handicap";
-  }
-  return "Don";
-});
+const text = computed<string>(() => $t(`customization.kind.options.${props.customization.kind}`));
 </script>
 
 <style scoped>

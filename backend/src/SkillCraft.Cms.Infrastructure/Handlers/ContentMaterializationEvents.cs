@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SkillCraft.Cms.Infrastructure.Commands;
 using SkillCraft.Cms.Infrastructure.Commands.Materialization;
+using SkillCraft.Contracts;
 using Stream = Logitar.EventSourcing.Stream;
 
 namespace SkillCraft.Cms.Infrastructure.Handlers;
@@ -22,12 +23,14 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<IEventHandler<ContentLocaleUnpublished>, ContentMaterializationEvents>();
 
     services.AddTransient<ICommandHandler<PublishAttributeCommand, CommandResult>, PublishAttributeCommandHandler>();
+    services.AddTransient<ICommandHandler<PublishCustomizationCommand, CommandResult>, PublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishFeatureCommand, CommandResult>, PublishFeatureCommandHandler>();
     services.AddTransient<ICommandHandler<PublishSkillCommand, CommandResult>, PublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<PublishSpecializationCommand, CommandResult>, PublishSpecializationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishStatisticCommand, CommandResult>, PublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<PublishTalentCommand, CommandResult>, PublishTalentCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishAttributeCommand, CommandResult>, UnpublishAttributeCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishCustomizationCommand, CommandResult>, UnpublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishFeatureCommand, CommandResult>, UnpublishFeatureCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishSkillCommand, CommandResult>, UnpublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishSpecializationCommand, CommandResult>, UnpublishSpecializationCommandHandler>();
@@ -164,8 +167,14 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new PublishAttributeCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
+      case EntityKind.Disability:
+        await _commandBus.ExecuteAsync(new PublishCustomizationCommand(CustomizationKind.Disability, @event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Feature:
         await _commandBus.ExecuteAsync(new PublishFeatureCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
+      case EntityKind.Gift:
+        await _commandBus.ExecuteAsync(new PublishCustomizationCommand(CustomizationKind.Gift, @event, publishedInvariant, publishedLocale), cancellationToken);
         break;
       case EntityKind.Skill:
         await _commandBus.ExecuteAsync(new PublishSkillCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
@@ -227,6 +236,10 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     {
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new UnpublishAttributeCommand(@event), cancellationToken);
+        break;
+      case EntityKind.Disability:
+      case EntityKind.Gift:
+        await _commandBus.ExecuteAsync(new UnpublishCustomizationCommand(@event), cancellationToken);
         break;
       case EntityKind.Feature:
         await _commandBus.ExecuteAsync(new UnpublishFeatureCommand(@event), cancellationToken);

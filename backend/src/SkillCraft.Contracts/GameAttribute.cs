@@ -1,4 +1,4 @@
-﻿namespace SkillCraft.Cms.Core;
+﻿namespace SkillCraft.Contracts;
 
 public enum GameAttribute
 {
