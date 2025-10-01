@@ -1,0 +1,39 @@
+﻿using Krakenar.Core;
+using Krakenar.EntityFrameworkCore.Relational.Configurations;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SkillCraft.Cms.Infrastructure.Entities;
+
+namespace SkillCraft.Cms.Infrastructure.Configurations;
+
+internal class CasteConfiguration : AggregateConfiguration<CasteEntity>, IEntityTypeConfiguration<CasteEntity>
+{
+  public override void Configure(EntityTypeBuilder<CasteEntity> builder)
+  {
+    base.Configure(builder);
+
+    builder.ToTable(RulesDb.Castes.Table.Table!, RulesDb.Castes.Table.Schema);
+    builder.HasKey(x => x.CasteId);
+
+    builder.HasIndex(x => x.Id).IsUnique();
+    builder.HasIndex(x => x.IsPublished);
+    builder.HasIndex(x => x.Slug);
+    builder.HasIndex(x => x.SlugNormalized).IsUnique();
+    builder.HasIndex(x => x.Name);
+    builder.HasIndex(x => x.SkillId);
+    builder.HasIndex(x => x.SkillUid);
+    builder.HasIndex(x => x.FeatureId);
+    builder.HasIndex(x => x.FeatureUid);
+    builder.HasIndex(x => x.Summary);
+
+    builder.Property(x => x.Slug).HasMaxLength(UniqueName.MaximumLength);
+    builder.Property(x => x.SlugNormalized).HasMaxLength(UniqueName.MaximumLength);
+    builder.Property(x => x.Name).HasMaxLength(DisplayName.MaximumLength);
+    builder.Property(x => x.WealthRoll).HasMaxLength(Constants.RollMaximumLength);
+    builder.Property(x => x.Summary).HasMaxLength(Constants.SummaryMaximumLength);
+    builder.Property(x => x.MetaDescription).HasMaxLength(Constants.MetaDescriptionMaximumLength);
+
+    builder.HasOne(x => x.Skill).WithMany(x => x.Castes).OnDelete(DeleteBehavior.Restrict);
+    builder.HasOne(x => x.Feature).WithMany(x => x.Castes).OnDelete(DeleteBehavior.Restrict);
+  }
+}

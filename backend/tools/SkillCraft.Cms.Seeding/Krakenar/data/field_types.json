@@ -36,6 +36,16 @@
     "Boolean": {}
   },
   {
+    "Id": "20321755-8659-4733-ad1a-de0e3c8295df",
+    "UniqueName": "Feature",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
+      "IsMultiple": false
+    }
+  },
+  {
     "Id": "7684a2bf-09e9-4b29-b3bf-3a4a75845d2b",
     "UniqueName": "Features",
     "DisplayName": null,
@@ -65,6 +75,17 @@
       "MinimumLength": null,
       "MaximumLength": 255,
       "Pattern": null
+    }
+  },
+  {
+    "Id": "52a7692c-8e59-4fa4-b2ea-f76e285f1154",
+    "UniqueName": "Roll",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": 3,
+      "MaximumLength": 6,
+      "Pattern": "^(?:[1-9][0-9]?)d(?:4|6|8|10|12|20|100)$"
     }
   },
   {

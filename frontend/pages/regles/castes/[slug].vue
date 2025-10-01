@@ -1,64 +1,37 @@
 <template>
   <main class="container">
-    <template v-if="title">
+    <template v-if="caste">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-    </template>
-    <table v-if="average" class="table table-striped">
-      <tbody>
-        <tr>
-          <th scope="row">Argent de départ</th>
-          <td>{{ caste?.wealthRoll }} ({{ average }})</td>
-        </tr>
-      </tbody>
-    </table>
-    <div v-if="html" v-html="html"></div>
-    <template v-if="skill">
-      <h2 class="h3">Compétence</h2>
-      <p>
-        Cette <NuxtLink to="/regles/competences">compétence</NuxtLink> est fondamentale aux personnages appartenant à cette caste. Au moment de sa
-        <NuxtLink to="/regles/personnages/creation">création</NuxtLink>, il doit être <NuxtLink to="/regles/competences/formation">formé</NuxtLink> pour
-        celle-ci.
-      </p>
-      <SkillCard class="mb-4" :skill="skill" />
-    </template>
-    <template v-if="feature">
-      <h2 class="h3">Particularité : {{ caste?.feature?.name }}</h2>
-      <div v-html="feature"></div>
+      <CasteInfo :caste="caste" />
+      <MarkdownContent v-if="caste.description" :text="caste.description" />
+      <CasteSkill v-if="caste.skill" :skill="caste.skill" />
+      <CasteFeature v-if="caste.feature" :feature="caste.feature" />
     </template>
   </main>
 </template>
 
 <script setup lang="ts">
-import { marked } from "marked";
-
 import type { Breadcrumb } from "~/types/components";
-import type { Caste, Skill } from "~/types/game";
-import { getCaste } from "~/services/castes";
+import type { Caste } from "~/types/game";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Castes", to: "/regles/castes" }];
 const route = useRoute();
 
-const caste = ref<Caste | undefined>(getCaste(Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug, { skill: true }));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const { data } = useAsyncData<Caste>(
+  `caste:${slug.value}`,
+  () =>
+    $fetch(`/api/castes/slug:${slug.value}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  { watch: [slug] },
+);
 
-const average = computed<number | undefined>(() => {
-  const wealthRoll = caste.value?.wealthRoll ?? "";
-  const parts: string[] = wealthRoll.split("d");
-  const dice: number = Number(parts[0]);
-  const sides: number = Number(parts[1]);
-  if (isNaN(dice) || isNaN(sides) || dice <= 0 || sides <= 0) {
-    return undefined;
-  }
-  const average: number = (sides + 1) / 2;
-  return Math.floor(dice * average);
-});
-const feature = computed<string | undefined>(() => (caste.value?.feature?.description ? (marked.parse(caste.value.feature.description) as string) : undefined));
-const html = computed<string | undefined>(() => (caste.value?.description ? (marked.parse(caste.value.description) as string) : undefined));
-const skill = computed<Skill | undefined>(() => caste.value?.skill ?? undefined);
-const title = computed<string | undefined>(() => caste.value?.name);
+const caste = computed<Caste | undefined>(() => data.value ?? undefined);
+const title = computed<string>(() => caste.value?.name ?? "");
+const description = computed<string>(() => caste.value?.metaDescription ?? "");
 
-useSeo({
-  title: title.value,
-  description: caste.value?.summary,
-});
+useSeoMeta({ title, description });
 </script>
