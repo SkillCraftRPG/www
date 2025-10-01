@@ -26,8 +26,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Specialization } from "~/types/game";
+import type { SearchResults } from "~/types/game";
+import type { Specialization } from "~/types/specializations";
 
+const config = useRuntimeConfig();
 const title: string = "Spécialisations";
 
 type MenuItem = {
@@ -48,7 +50,18 @@ const items: MenuItem[] = [
   },
 ];
 
-const specializations = ref<Specialization[]>([]); // TODO(fpion): fetch
+const { data } = await useLazyAsyncData<SearchResults<Specialization>>(
+  "specializations",
+  () =>
+    $fetch("/api/specializations", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const specializations = computed<Specialization[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

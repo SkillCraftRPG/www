@@ -68,7 +68,7 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
     await SetOptionalTalentsAsync(specialization, invariant, cancellationToken);
 
     specialization.Summary = locale.TryGetString(Specializations.Summary);
-    specialization.MetaDescription = locale.Description?.Value.Truncate(Constants.MetaDescriptionMaximumLength);
+    specialization.MetaDescription = locale.Description?.Value.Truncate(Constants.MetaDescriptionMaximumLength); // TODO(fpion): refactor
     specialization.Description = locale.TryGetString(Specializations.HtmlContent);
 
     specialization.OtherRequirements = locale.TryGetString(Specializations.OtherRequirements);

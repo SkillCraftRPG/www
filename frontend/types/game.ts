@@ -149,23 +149,6 @@ export type Names = {
   text: string;
 };
 
-export type Options = {
-  talents: string[];
-  other: string[];
-};
-
-export type Requirements = {
-  talent?: string | null;
-  other: string[];
-};
-
-export type ReservedTalent = {
-  name: string;
-  discountedTalents: string[];
-  description: string[];
-  features: Feature[];
-};
-
 export type SearchResults<T> = {
   items: T[];
   total: number;
@@ -180,18 +163,6 @@ export type Skill = Aggregate & {
   value: GameSkill;
   summary?: string | null;
   description?: string | null;
-};
-
-export type Specialization = {
-  id: string;
-  slug: string;
-  name: string;
-  tier: number;
-  summary?: string | null;
-  description?: string | null;
-  requirements: Requirements;
-  options: Options;
-  reservedTalent: ReservedTalent;
 };
 
 export type Speeds = {

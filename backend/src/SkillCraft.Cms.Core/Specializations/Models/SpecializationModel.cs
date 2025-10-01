@@ -15,5 +15,5 @@ public class SpecializationModel : Aggregate
 
   public SpecializationRequirements Requirements { get; set; } = new();
   public SpecializationOptions Options { get; set; } = new();
-  public ReservedTalent ReservedTalent { get; set; } = new();
+  public ReservedTalent ReservedTalent { get; set; } = new(); // TODO(fpion): should be optional!
 }

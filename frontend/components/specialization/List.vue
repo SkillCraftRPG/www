@@ -8,11 +8,12 @@
           <SpecializationCard :specialization="specialization" class="d-flex flex-column h-100" />
         </div>
       </div>
-      <table v-else-if="mode === 'list'" class="table table-striped">
+      <table v-else-if="mode === 'list'" class="table table-striped text-center">
         <thead>
           <tr>
-            <th scope="col">Nom</th>
-            <th scope="col">Résumé</th>
+            <th scope="col" class="w-20">Nom</th>
+            <th scope="col" class="w-20">Talent réservé</th>
+            <th scope="col" class="w-60">Résumé</th>
           </tr>
         </thead>
         <tbody>
@@ -20,7 +21,11 @@
             <td>
               <NuxtLink :to="`/regles/specialisations/${specialization.slug}`">{{ specialization.name }}</NuxtLink>
             </td>
-            <td class="summary-col">
+            <td>
+              <template v-if="specialization.reservedTalent">{{ specialization.reservedTalent.name }}</template>
+              <span v-else class="text-muted">{{ "—" }}</span>
+            </td>
+            <td>
               <template v-if="specialization.summary">{{ specialization.summary }}</template>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
@@ -35,7 +40,7 @@
 import { arrayUtils } from "logitar-js";
 
 import type { ListMode } from "~/types/components";
-import type { Specialization } from "~/types/game";
+import type { Specialization } from "~/types/specializations";
 
 type SpecializationGroup = {
   tier: number;
