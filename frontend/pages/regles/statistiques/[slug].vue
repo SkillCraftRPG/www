@@ -31,5 +31,5 @@ const statistic = computed<Statistic | undefined>(() => data.value ?? undefined)
 const title = computed<string>(() => statistic.value?.name ?? "");
 const description = computed<string>(() => statistic.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

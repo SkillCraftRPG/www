@@ -1,8 +1,8 @@
 import { useHead, useRoute, useRuntimeConfig } from "nuxt/app";
 
 type SeoMeta = {
-  title?: string | null;
-  description?: string | null;
+  title?: ComputedRef<string> | string | null;
+  description?: ComputedRef<string> | string | null;
 };
 
 export function useSeo(meta?: SeoMeta): void {
@@ -42,5 +42,3 @@ export function useSeo(meta?: SeoMeta): void {
     ],
   }));
 }
-
-// TODO(fpion): I did break SEO by replacing useSeo with useSeoMeta in entity pages.

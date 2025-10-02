@@ -33,5 +33,5 @@ const education = computed<Education | undefined>(() => data.value ?? undefined)
 const title = computed<string>(() => education.value?.name ?? "");
 const description = computed<string>(() => education.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

@@ -32,5 +32,5 @@ const attribute = computed<Attribute | undefined>(() => data.value ?? undefined)
 const title = computed<string>(() => attribute.value?.name ?? "");
 const description = computed<string>(() => attribute.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

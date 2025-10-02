@@ -23,5 +23,5 @@ const lineage = computed<Lineage | undefined>(() => species.filter((species) => 
 const title = computed<string>(() => lineage.value?.name ?? "");
 const description = computed<string>(() => lineage.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

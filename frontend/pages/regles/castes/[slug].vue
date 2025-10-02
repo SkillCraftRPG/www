@@ -33,5 +33,5 @@ const caste = computed<Caste | undefined>(() => data.value ?? undefined);
 const title = computed<string>(() => caste.value?.name ?? "");
 const description = computed<string>(() => caste.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

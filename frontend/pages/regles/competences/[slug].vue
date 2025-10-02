@@ -46,5 +46,5 @@ const skill = computed<Skill | undefined>(() => data.value ?? undefined);
 const title = computed<string>(() => skill.value?.name ?? "");
 const description = computed<string>(() => skill.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>
