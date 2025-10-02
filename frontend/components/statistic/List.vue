@@ -13,12 +13,12 @@
         <StatisticCard class="d-flex flex-column h-100" :statistic="statistic" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Statistique</th>
-          <th scope="col">Attribut</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-20">Statistique</th>
+          <th scope="col" class="w-20">Attribut</th>
+          <th scope="col" class="w-60">Résumé</th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +30,7 @@
             <NuxtLink v-if="statistic.attribute" :to="`/regles/attributs/${statistic.attribute.slug}`">{{ statistic.attribute.name }}</NuxtLink>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
-          <td class="summary-col">
+          <td>
             <template v-if="statistic.summary">{{ statistic.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
