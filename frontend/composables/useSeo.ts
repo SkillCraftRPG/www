@@ -42,3 +42,5 @@ export function useSeo(meta?: SeoMeta): void {
     ],
   }));
 }
+
+// TODO(fpion): I did break SEO by replacing useSeo with useSeoMeta in entity pages.

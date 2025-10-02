@@ -25,10 +25,6 @@ button:disabled {
   display: block;
 }
 
-.summary-col {
-  max-width: 800px;
-} /* TODO(fpion): remove this class */
-
 .w-10 {
   width: 10% !important;
 }

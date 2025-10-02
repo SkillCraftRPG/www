@@ -27,9 +27,7 @@
           <template v-if="user">
             <li class="nav-item d-block d-lg-none">
               <NuxtLink to="/profil" class="nav-link">
-                <ClientOnly>
-                  <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress ?? undefined" :size="24" :url="user.pictureUrl ?? undefined" />
-                </ClientOnly>
+                <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress ?? undefined" :size="24" :url="user.pictureUrl ?? undefined" />
                 {{ user.displayName }}
               </NuxtLink>
             </li>
@@ -38,9 +36,7 @@
             </li>
             <li class="nav-item dropdown d-none d-lg-block">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <ClientOnly>
-                  <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress ?? undefined" :size="24" :url="user.pictureUrl ?? undefined" />
-                </ClientOnly>
+                <TarAvatar :display-name="user.displayName" :email-address="user.emailAddress ?? undefined" :size="24" :url="user.pictureUrl ?? undefined" />
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>

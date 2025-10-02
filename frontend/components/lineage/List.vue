@@ -6,11 +6,11 @@
         <LineageCard class="d-flex flex-column h-100" :lineage="lineage" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Espèce</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-20">Espèce</th>
+          <th scope="col" class="w-80">Résumé</th>
         </tr>
       </thead>
       <tbody>
@@ -18,7 +18,7 @@
           <td>
             <NuxtLink :to="`/regles/especes/${lineage.slug}`">{{ lineage.name }}</NuxtLink>
           </td>
-          <td class="summary-col">
+          <td>
             <template v-if="lineage.summary">{{ lineage.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Lineage } from "~/types/game";
+import type { Lineage } from "~/types/lineages";
 import type { ListMode } from "~/types/components";
 
 const props = defineProps<{

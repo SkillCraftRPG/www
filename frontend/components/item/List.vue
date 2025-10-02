@@ -13,22 +13,18 @@
         <td>{{ item.name }}</td>
         <td>{{ $n(item.price, "price") }}</td>
         <td>{{ $n(item.weight, "weight") }}</td>
-        <td v-html="parseToHtml(item.description)"></td>
+        <td>
+          <MarkdownContent inline :text="item.description" />
+        </td>
       </tr>
     </tbody>
   </table>
 </template>
 
 <script setup lang="ts">
-import { marked } from "marked";
-
 import type { Item } from "~/types/items";
 
 defineProps<{
   items: Item[];
 }>();
-
-function parseToHtml(description: string): string {
-  return (marked.parse(description) as string).replace(/<\/?p>/g, "");
-}
 </script>
