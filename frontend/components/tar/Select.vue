@@ -72,10 +72,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
 import { parsingUtils } from "logitar-js";
 
-import type { SelectOptions } from "~/types/tar";
+import type { SelectOptions } from "~/types/tar/select";
 
 const { parseBoolean } = parsingUtils;
 

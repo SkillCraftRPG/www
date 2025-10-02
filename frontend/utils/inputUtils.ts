@@ -1,4 +1,4 @@
-import type { InputType } from "~/types/tar";
+import type { InputType } from "~/types/tar/input";
 
 /**
  * Returns a value indicating whether or not the specified type is a date-time input type.

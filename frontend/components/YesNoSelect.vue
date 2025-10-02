@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { parsingUtils } from "logitar-js";
 
-import type { SelectOption } from "~/types/tar";
+import type { SelectOption } from "~/types/tar/select";
 
 const options: SelectOption[] = [
   {

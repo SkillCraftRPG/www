@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { InputStatus } from "~/types/tar";
+import type { InputStatus } from "~/types/tar/input";
 
 const props = withDefaults(
   defineProps<{

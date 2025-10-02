@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { SelectOption } from "~/types/tar";
+import type { SelectOption } from "~/types/tar/select";
 
 const { orderBy } = arrayUtils;
 

@@ -40,7 +40,6 @@
 import { arrayUtils } from "logitar-js";
 
 import allItems from "~/assets/data/roadmap.json";
-import { TarButton } from "logitar-vue3-ui";
 
 const now: string = new Date().toISOString();
 const { orderBy } = arrayUtils;

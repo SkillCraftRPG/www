@@ -8,8 +8,6 @@
 </template>
 
 <script setup lang="ts">
-import { TarButton } from "logitar-vue3-ui";
-
 import type { ListMode } from "~/types/components";
 
 defineProps<{

@@ -14,7 +14,7 @@
 import { arrayUtils, parsingUtils } from "logitar-js";
 
 import type { Actor, Attribute, GameAttribute } from "~/types/game";
-import type { SelectOption } from "~/types/tar";
+import type { SelectOption } from "~/types/tar/select";
 
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;

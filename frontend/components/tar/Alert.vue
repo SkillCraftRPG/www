@@ -8,10 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
 import { parsingUtils } from "logitar-js";
 
-import type { AlertOptions } from "~/types/tar";
+import type { AlertOptions } from "~/types/tar/alert";
 
 const { parseBoolean } = parsingUtils;
 

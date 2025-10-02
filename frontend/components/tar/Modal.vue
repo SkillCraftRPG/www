@@ -28,11 +28,10 @@
 
 <script setup lang="ts">
 import { Modal } from "bootstrap";
-import { computed, onMounted, ref } from "vue";
 import { nanoid } from "nanoid";
 import { parsingUtils } from "logitar-js";
 
-import type { ModalOptions } from "~/types/tar";
+import type { ModalOptions } from "~/types/tar/modal";
 
 const { parseBoolean } = parsingUtils;
 

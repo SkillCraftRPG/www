@@ -22,8 +22,6 @@
 </template>
 
 <script setup lang="ts">
-import { TarButton } from "logitar-vue3-ui";
-
 import PasswordInput from "~/components/PasswordInput.vue";
 import type { CurrentUser, SignInPayload } from "~/types/account";
 import { signIn } from "~/api/account";

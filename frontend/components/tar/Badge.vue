@@ -5,10 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
 import { parsingUtils } from "logitar-js";
 
-import type { BadgeOptions } from "~/types/tar";
+import type { BadgeOptions } from "~/types/tar/badge";
 
 const { parseBoolean } = parsingUtils;
 

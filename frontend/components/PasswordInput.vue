@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import TarInput from "~/components/tar/Input.vue";
-import type { InputStatus, InputType } from "~/types/tar";
+import type { InputStatus, InputType } from "~/types/tar/input";
 
 const props = withDefaults(
   defineProps<{

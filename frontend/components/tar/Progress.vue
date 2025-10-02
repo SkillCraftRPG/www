@@ -14,12 +14,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
 import { parsingUtils } from "logitar-js";
 
 const { parseBoolean, parseNumber } = parsingUtils;
 
-import type { ProgressOptions } from "~/types/tar";
+import type { ProgressOptions } from "~/types/tar/progress";
 
 const props = withDefaults(defineProps<ProgressOptions>(), {
   max: 100,
