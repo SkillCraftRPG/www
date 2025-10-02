@@ -1,29 +1,25 @@
 <template>
   <main class="container">
     <h1>{{ $t("users.signIn.title") }}</h1>
-    <ClientOnly>
-      <InvalidCredentials v-model="invalidCredentials" />
-      <form @submit.prevent="submit">
-        <UsernameInput v-model="username" />
-        <PasswordInput ref="passwordRef" v-model="password" />
-        <div class="mb-3">
-          <TarButton
-            :disabled="isLoading"
-            icon="fas fa-arrow-right-to-bracket"
-            :loading="isLoading"
-            :status="$t('loading')"
-            :text="$t('users.signIn.submit')"
-            type="submit"
-          />
-        </div>
-      </form>
-    </ClientOnly>
+    <InvalidCredentials v-model="invalidCredentials" />
+    <form @submit.prevent="submit">
+      <UsernameInput v-model="username" />
+      <PasswordInput ref="passwordRef" v-model="password" />
+      <div class="mb-3">
+        <TarButton
+          :disabled="isLoading"
+          icon="fas fa-arrow-right-to-bracket"
+          :loading="isLoading"
+          :status="$t('loading')"
+          :text="$t('users.signIn.submit')"
+          type="submit"
+        />
+      </div>
+    </form>
   </main>
 </template>
 
 <script setup lang="ts">
-import { TarButton } from "logitar-vue3-ui";
-
 import PasswordInput from "~/components/PasswordInput.vue";
 import type { CurrentUser, SignInPayload } from "~/types/account";
 import { signIn } from "~/api/account";

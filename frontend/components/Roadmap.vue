@@ -1,17 +1,17 @@
 <template>
-  <ClientOnly>
-    <div class="container-fluid mt-4 py-5 roadmap">
-      <div class="mt-2 row">
-        <div class="col-lg-12">
-          <div class="horizontal-timeline">
-            <ul class="list-inline items">
-              <li v-for="(item, index) in items" :key="index" class="list-inline-item items-list">
-                <div class="px-4">
-                  <div :class="getDateClasses(index)">{{ $d(new Date(item.date)) }}</div>
-                  <h5 class="pt-2">{{ item.title }}</h5>
-                  <p class="text-muted">{{ item.summary }}</p>
+  <div class="container-fluid mt-4 py-5 roadmap">
+    <div class="mt-2 row">
+      <div class="col-lg-12">
+        <div class="horizontal-timeline">
+          <ul class="list-inline items">
+            <li v-for="(item, index) in items" :key="index" class="list-inline-item items-list">
+              <div class="px-4">
+                <div :class="getDateClasses(index)">{{ $d(new Date(item.date)) }}</div>
+                <h5 class="pt-2">{{ item.title }}</h5>
+                <p class="text-muted">{{ item.summary }}</p>
+                <ClientOnly>
                   <TarButton icon="fas fa-list" text="Détails" data-bs-toggle="modal" :data-bs-target="`#roadmap-item-detail-${index}`" />
-                  <TarModal centered class="modal" close="Fermer" :id="`roadmap-item-detail-${index}`" :title="item.title">
+                  <TarModal centered class="modal" :close="$t('actions.close')" :id="`roadmap-item-detail-${index}`" :title="item.title">
                     <p>
                       <strong>Échéance : {{ $d(new Date(item.date)) }}</strong>
                     </p>
@@ -23,24 +23,23 @@
                     </template>
                     <div v-else>{{ item.summary }}</div>
                     <template #footer>
-                      <TarButton icon="fas fa-times" text="Fermer" variant="secondary" data-bs-dismiss="modal" />
+                      <TarButton icon="fas fa-times" :text="$t('actions.close')" variant="secondary" data-bs-dismiss="modal" />
                     </template>
                   </TarModal>
-                </div>
-              </li>
-            </ul>
-          </div>
+                </ClientOnly>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </ClientOnly>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
 import allItems from "~/assets/data/roadmap.json";
-import { TarButton, TarModal } from "logitar-vue3-ui";
 
 const now: string = new Date().toISOString();
 const { orderBy } = arrayUtils;

@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { TarInput, type InputStatus } from "logitar-vue3-ui";
+import type { InputStatus } from "~/types/tar/input";
 
 const props = withDefaults(
   defineProps<{
@@ -38,8 +38,8 @@ const emit = defineEmits<{
   (e: "update:model-value", value: string): void;
 }>();
 
-function onModelValueUpdate(value: string): void {
+function onModelValueUpdate(value: string | undefined): void {
   touched.value = true;
-  emit("update:model-value", value);
+  emit("update:model-value", value ?? "");
 }
 </script>

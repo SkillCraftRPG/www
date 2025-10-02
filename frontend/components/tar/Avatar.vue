@@ -10,10 +10,9 @@
 <script setup lang="ts">
 import md5 from "md5";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { computed } from "vue";
 import { parsingUtils } from "logitar-js";
 
-import type { AvatarOptions } from "~/types/tar";
+import type { AvatarOptions } from "~/types/tar/avatar";
 
 const { parseNumber } = parsingUtils;
 

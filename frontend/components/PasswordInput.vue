@@ -15,7 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import { TarInput, type InputStatus, type InputType } from "logitar-vue3-ui";
+import TarInput from "~/components/tar/Input.vue";
+import type { InputStatus, InputType } from "~/types/tar/input";
 
 const props = withDefaults(
   defineProps<{
@@ -43,9 +44,9 @@ const emit = defineEmits<{
   (e: "update:model-value", value: string): void;
 }>();
 
-function onModelValueUpdate(value: string): void {
+function onModelValueUpdate(value: string | undefined): void {
   touched.value = true;
-  emit("update:model-value", value);
+  emit("update:model-value", value ?? "");
 }
 
 function focus(): void {

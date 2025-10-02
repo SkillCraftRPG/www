@@ -11,10 +11,10 @@
 </template>
 
 <script setup lang="ts">
-import { TarSelect, type SelectOption } from "logitar-vue3-ui";
 import { arrayUtils, parsingUtils } from "logitar-js";
 
 import type { Actor, Attribute, GameAttribute } from "~/types/game";
+import type { SelectOption } from "~/types/tar/select";
 
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;

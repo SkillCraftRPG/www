@@ -3,10 +3,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
 import { parsingUtils } from "logitar-js";
 
-import type { ImageOptions } from "~/types/tar";
+import type { ImageOptions } from "~/types/tar/image";
 
 const { parseBoolean, parseNumber } = parsingUtils;
 
