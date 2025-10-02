@@ -1,40 +1,45 @@
 # TODO
 
-- Refactoriser les tables de listes (70%)
+- Refactoriser les tables de listes (89%)
   - ✅ Attributs
   - ✅ Castes
+  - ✅ Compétences
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
   - ✅ Statistiques
   - ✅ Talents
-- Refactoriser les appels aux contenus avec un `slug computed`, et une clé dynamique de `asyncData` (55%)
+- Refactoriser les appels aux contenus avec un `slug computed`, et une clé dynamique de `asyncData` (72%)
   - ✅ Attributs
   - 🚧 Castes
+  - ✅ Compétences
   - 🚧 Dons & Handicaps
   - 🚧 Éducations
   - ✅ Spécialisations
   - ✅ Statistiques
   - ✅ Talents
-- Refactoriser les contenus en components (70%)
+- Refactoriser les contenus en components (89%)
   - ✅ Attributs
   - ✅ Castes
+  - ✅ Compétences
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
   - ✅ Statistiques
   - ✅ Talents
-- Refactoriser les tableaux d’entête de contenus (70%)
+- Refactoriser les tableaux d’entête de contenus (89%)
   - ✅ Attributs
   - ✅ Castes
+  - ✅ Compétences
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations
   - ✅ Statistiques
   - ✅ Talents
-- Corriger le SEO des contenus (70%)
+- Corriger le SEO des contenus (89%)
   - ✅ Attributs
   - ✅ Castes
+  - ✅ Compétences
   - ✅ Dons & Handicaps
   - ✅ Éducations
   - ✅ Spécialisations

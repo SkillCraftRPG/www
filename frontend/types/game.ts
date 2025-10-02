@@ -160,6 +160,7 @@ export type Skill = Aggregate & {
   summary?: string | null;
   metaDescription?: string | null;
   description?: string | null;
+  talents?: Talent[] | null;
 };
 
 export type Speeds = {
