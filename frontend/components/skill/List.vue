@@ -20,12 +20,12 @@
         <SkillCard class="d-flex flex-column h-100" :skill="skill" />
       </div>
     </div>
-    <table v-else-if="mode === 'list'" class="table table-striped">
+    <table v-else-if="mode === 'list'" class="table table-striped text-center">
       <thead>
         <tr>
-          <th scope="col">Compétence</th>
-          <th scope="col">Attribut</th>
-          <th scope="col">Résumé</th>
+          <th scope="col" class="w-15">Compétence</th>
+          <th scope="col" class="w-15">Attribut</th>
+          <th scope="col" class="w-70">Résumé</th>
         </tr>
       </thead>
       <tbody>
@@ -35,9 +35,9 @@
           </td>
           <td>
             <NuxtLink v-if="skill.attribute" :to="`/regles/attributs/${skill.attribute.slug}`">{{ skill.attribute.name }}</NuxtLink>
-            <span v-else class="text-muted">Variable</span>
+            <i v-else class="text-muted">Variable</i>
           </td>
-          <td class="summary-col">
+          <td>
             <template v-if="skill.summary">{{ skill.summary }}</template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>

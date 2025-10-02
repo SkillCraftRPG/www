@@ -12,4 +12,6 @@ useHead({
     separator: "·",
   },
 });
+
+// TODO(fpion): remove logitar-vue3-ui and most <ClientOnly>
 </script>
