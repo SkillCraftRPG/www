@@ -31,5 +31,5 @@ const customization = computed<Customization | undefined>(() => data.value ?? un
 const title = computed<string>(() => customization.value?.name ?? "");
 const description = computed<string>(() => customization.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

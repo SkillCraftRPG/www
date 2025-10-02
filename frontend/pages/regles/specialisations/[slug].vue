@@ -40,5 +40,5 @@ const hasOptions = computed<boolean>(() =>
   Boolean(specialization.value && (specialization.value.options.talents.length > 0 || specialization.value.options.other.length > 0)),
 );
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 </script>

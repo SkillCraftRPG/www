@@ -33,7 +33,7 @@ const talent = computed<Talent | undefined>(() => data.value ?? undefined);
 const title = computed<string>(() => talent.value?.name ?? "");
 const description = computed<string>(() => talent.value?.metaDescription ?? "");
 
-useSeoMeta({ title, description });
+useSeo({ title, description });
 
 // TODO(fpion): TalentTree
 </script>
