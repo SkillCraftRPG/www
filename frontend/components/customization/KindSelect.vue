@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { TarSelect, type SelectOption } from "logitar-vue3-ui";
+import type { SelectOption } from "~/types/tar";
 
 const options: SelectOption[] = [
   {

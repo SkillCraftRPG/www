@@ -11,22 +11,39 @@
 </template>
 
 <script setup lang="ts">
-import { TarSelect, type SelectOption } from "logitar-vue3-ui";
 import { arrayUtils, parsingUtils } from "logitar-js";
 
-import type { GameSkill, Skill } from "~/types/game";
+import type { Actor, GameSkill, Skill } from "~/types/game";
+import type { SelectOption } from "~/types/tar";
 
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;
 
+const actor: Actor = {
+  type: "System",
+  id: "system",
+  isDeleted: false,
+  displayName: "System",
+};
+const now: string = new Date().toISOString();
 const anySkill: Skill = {
   id: "any",
+  version: 0,
+  createdBy: actor,
+  createdOn: now,
+  updatedBy: actor,
+  updatedOn: now,
   slug: "",
   value: "" as GameSkill,
   name: "N’importe laquelle",
 };
 const noneSkill: Skill = {
   id: "none",
+  version: 0,
+  createdBy: actor,
+  createdOn: now,
+  updatedBy: actor,
+  updatedOn: now,
   slug: "",
   value: "" as GameSkill,
   name: "Aucune",
