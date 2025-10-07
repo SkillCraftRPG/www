@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <AppBreadcrumb active="Acquisition" :parent="parent" />
     <p>
       Un personnage peut dépenser les <NuxtLink to="/regles/talents/points">points de talent</NuxtLink> obtenus à chaque
       <NuxtLink to="/regles/personnages/progression/niveau">gain de niveau</NuxtLink> afin d’acquérir de nouveaux pouvoirs.
@@ -26,7 +26,7 @@ const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },
   { text: "Pouvoirs", to: "/regles/magie/pouvoirs" },
 ];
-const title: string = "Apprentissage";
+const title: string = "Acquisition de pouvoir";
 
 useSeo({
   title,

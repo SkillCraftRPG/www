@@ -26,9 +26,9 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/magie/pouvoirs/apprentissage",
-    title: "Apprentissage",
-    description: "Apprendre de nouveaux pouvoirs avec les points de talent.",
+    path: "/regles/magie/pouvoirs/acquisition",
+    title: "Acquisition",
+    description: "Acquérir de nouveaux pouvoirs avec les points de talent.",
   },
   {
     path: "/regles/magie/pouvoirs/niveau",
