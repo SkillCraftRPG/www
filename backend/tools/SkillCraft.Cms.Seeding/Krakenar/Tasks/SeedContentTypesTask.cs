@@ -16,7 +16,7 @@ internal class SeedContentTypesTask : SeedingTask
   }
 }
 
-internal class SeedContentTypesTaskHandler : ICommandHandler<SeedContentTypesTask, SeedingTaskResult>
+internal class SeedContentTypesTaskHandler : ICommandHandler<SeedContentTypesTask, TaskResult>
 {
   private readonly IContentTypeService _contentTypeService;
   private readonly IFieldDefinitionService _fieldDefinitionService;
@@ -32,7 +32,7 @@ internal class SeedContentTypesTaskHandler : ICommandHandler<SeedContentTypesTas
     _logger = logger;
   }
 
-  public async Task<SeedingTaskResult> HandleAsync(SeedContentTypesTask task, CancellationToken cancellationToken)
+  public async Task<TaskResult> HandleAsync(SeedContentTypesTask task, CancellationToken cancellationToken)
   {
     string json = await File.ReadAllTextAsync("Krakenar/data/content_types.json", Encoding.UTF8, cancellationToken);
     IEnumerable<ContentTypePayload>? payloads = SeedingSerializer.Deserialize<IEnumerable<ContentTypePayload>>(json);
@@ -69,6 +69,6 @@ internal class SeedContentTypesTaskHandler : ICommandHandler<SeedContentTypesTas
       }
     }
 
-    return new SeedingTaskResult();
+    return new TaskResult();
   }
 }

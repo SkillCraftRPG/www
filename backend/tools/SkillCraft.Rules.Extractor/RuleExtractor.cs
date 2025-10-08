@@ -1,15 +1,14 @@
-﻿using SkillCraft.Rules.Compiler.Commands;
-using SkillCraft.Rules.Compiler.Tasks;
-using SkillCraft.Rules.Compiler.Tasks.Items;
+﻿using Krakenar.Core;
+using SkillCraft.Rules.Extractor.Tasks;
 
-namespace SkillCraft.Rules.Compiler;
+namespace SkillCraft.Rules.Extractor;
 
-public class RuleCompiler : BackgroundService
+public class RuleExtractor : BackgroundService
 {
   private const string GenericErrorMessage = "An unhanded exception occurred.";
 
   private readonly IHostApplicationLifetime _hostApplicationLifetime;
-  private readonly ILogger<RuleCompiler> _logger;
+  private readonly ILogger<RuleExtractor> _logger;
   private readonly IServiceProvider _serviceProvider;
 
   private ICommandBus? _commandBus = null;
@@ -17,7 +16,7 @@ public class RuleCompiler : BackgroundService
 
   private LogLevel _result = LogLevel.Information; // NOTE(fpion): "Information" means success.
 
-  public RuleCompiler(IHostApplicationLifetime hostApplicationLifetime, ILogger<RuleCompiler> logger, IServiceProvider serviceProvider)
+  public RuleExtractor(IHostApplicationLifetime hostApplicationLifetime, ILogger<RuleExtractor> logger, IServiceProvider serviceProvider)
   {
     _hostApplicationLifetime = hostApplicationLifetime;
     _logger = logger;
@@ -34,25 +33,12 @@ public class RuleCompiler : BackgroundService
 
     try
     {
-      // NOTE(fpion): the order of these tasks matter.
-      await ExecuteAsync(new CompileAttributes(), cancellationToken);
-      await ExecuteAsync(new CompileStatistics(), cancellationToken);
-      await ExecuteAsync(new CompileSkills(), cancellationToken);
-      await ExecuteAsync(new CompileCustomizations(), cancellationToken);
-      await ExecuteAsync(new CompileCastes(), cancellationToken);
-      await ExecuteAsync(new CompileEducations(), cancellationToken);
-      await ExecuteAsync(new CompileTalents(), cancellationToken);
+      Directory.CreateDirectory("output");
 
-      await ExecuteAsync(new CompileArmors(), cancellationToken);
-      await ExecuteAsync(new CompileWeapons(), cancellationToken);
-      await ExecuteAsync(new CompileFirearms(), cancellationToken);
-      await ExecuteAsync(new CompileGeneralItems(), cancellationToken);
-      await ExecuteAsync(new CompileContainers(), cancellationToken);
-      await ExecuteAsync(new CompileClothing(), cancellationToken);
-      await ExecuteAsync(new CompileGoods(), cancellationToken);
-      await ExecuteAsync(new CompileTools(), cancellationToken);
-      await ExecuteAsync(new CompileMounts(), cancellationToken);
-      await ExecuteAsync(new CompileMountAccessories(), cancellationToken);
+      // NOTE(fpion): the order of these tasks matter.
+      await ExecuteAsync(new ExtractAttributesTask(), cancellationToken);
+      await ExecuteAsync(new ExtractStatisticsTask(), cancellationToken);
+      await ExecuteAsync(new ExtractSkillsTask(), cancellationToken);
     }
     catch (Exception exception)
     {
@@ -70,13 +56,13 @@ public class RuleCompiler : BackgroundService
       switch (_result)
       {
         case LogLevel.Error:
-          _logger.LogError("Rule compilation failed after {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
+          _logger.LogError("Rule extraction failed after {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
           break;
         case LogLevel.Warning:
-          _logger.LogWarning("Rule compilation completed with warnings in {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
+          _logger.LogWarning("Rule extraction completed with warnings in {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
           break;
         default:
-          _logger.LogInformation("Rule compilation succeeded in {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
+          _logger.LogInformation("Rule extraction succeeded in {Elapsed}ms ({Seconds} {SecondText}).", chrono.ElapsedMilliseconds, seconds, secondText);
           break;
       }
 
@@ -84,11 +70,11 @@ public class RuleCompiler : BackgroundService
     }
   }
 
-  private async Task ExecuteAsync(RuleCompilerTask task, CancellationToken cancellationToken)
+  private async Task ExecuteAsync(ExtractionTask task, CancellationToken cancellationToken)
   {
     await ExecuteAsync(task, continueOnError: false, cancellationToken);
   }
-  private async Task ExecuteAsync(RuleCompilerTask task, bool continueOnError, CancellationToken cancellationToken)
+  private async Task ExecuteAsync(ExtractionTask task, bool continueOnError, CancellationToken cancellationToken)
   {
     bool hasFailed = false;
     try

@@ -26,5 +26,9 @@
     <Using Include="System.Reflection" />
     <Using Include="System.Text.Json" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <InternalsVisibleTo Include="SkillCraft.Rules.Extractor" />
+  </ItemGroup>
 
 </Project>
