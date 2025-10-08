@@ -23,6 +23,41 @@ internal static class ExtractionMapper
     return destination;
   }
 
+  public static CasteDto ToCaste(CasteEntity source)
+  {
+    CasteDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      WealthRoll = source.WealthRoll,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.Skill is not null)
+    {
+      destination.Skill = ToRelationship(source.Skill);
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
+
+    if (source.Feature is not null)
+    {
+      destination.Feature = ToFeature(source.Feature);
+    }
+    else if (source.FeatureId.HasValue)
+    {
+      throw new ArgumentException("The feature is required.", nameof(source));
+    }
+
+    return destination;
+  }
+
   public static CustomizationDto ToCustomization(CustomizationEntity source)
   {
     CustomizationDto destination = new()
@@ -40,7 +75,56 @@ internal static class ExtractionMapper
     return destination;
   }
 
+  public static EducationDto ToEducation(EducationEntity source)
+  {
+    EducationDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      WealthMultiplier = source.WealthMultiplier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.Skill is not null)
+    {
+      destination.Skill = ToRelationship(source.Skill);
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
+
+    if (source.Feature is not null)
+    {
+      destination.Feature = ToFeature(source.Feature);
+    }
+    else if (source.FeatureId.HasValue)
+    {
+      throw new ArgumentException("The feature is required.", nameof(source));
+    }
+
+    return destination;
+  }
+
+  public static FeatureDto ToFeature(FeatureEntity source)
+  {
+    FeatureDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Name = source.Name,
+      Description = source.Description
+    };
+    return destination;
+  }
+
   public static RelationshipDto ToRelationship(AttributeEntity attribute) => new(attribute.Slug, attribute.Name, attribute.IsPublished, attribute.Id);
+  public static RelationshipDto ToRelationship(SkillEntity skill) => new(skill.Slug, skill.Name, skill.IsPublished, skill.Id);
+  public static RelationshipDto ToRelationship(TalentEntity talent) => new(talent.Slug, talent.Name, talent.IsPublished, talent.Id);
 
   public static SkillDto ToSkill(SkillEntity source)
   {
@@ -87,6 +171,42 @@ internal static class ExtractionMapper
       MetaDescription = source.MetaDescription,
       Description = source.Description
     };
+    return destination;
+  }
+
+  public static TalentDto ToTalent(TalentEntity source)
+  {
+    TalentDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      Tier = source.Tier,
+      AllowMultiplePurchases = source.AllowMultiplePurchases,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.Skill is not null)
+    {
+      destination.Skill = ToRelationship(source.Skill);
+    }
+    else if (source.SkillId.HasValue)
+    {
+      throw new ArgumentException("The skill is required.", nameof(source));
+    }
+
+    if (source.RequiredTalent is not null)
+    {
+      destination.RequiredTalent = ToRelationship(source.RequiredTalent);
+    }
+    else if (source.RequiredTalentId.HasValue)
+    {
+      throw new ArgumentException("The required talent is required.", nameof(source));
+    }
+
     return destination;
   }
 }

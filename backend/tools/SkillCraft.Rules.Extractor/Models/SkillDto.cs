@@ -12,7 +12,6 @@ internal class SkillDto
   public string Name { get; set; } = string.Empty;
 
   public GameSkill Value { get; set; }
-
   public RelationshipDto? Attribute { get; set; }
 
   public string? Summary { get; set; }
