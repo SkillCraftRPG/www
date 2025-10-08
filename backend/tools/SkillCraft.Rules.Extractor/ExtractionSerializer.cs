@@ -1,7 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-
-namespace SkillCraft.Rules.Extractor;
+﻿namespace SkillCraft.Rules.Extractor;
 
 public interface IExtractionSerializer
 {

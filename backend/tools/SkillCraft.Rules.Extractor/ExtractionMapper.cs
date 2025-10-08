@@ -1,4 +1,5 @@
-﻿using SkillCraft.Cms.Infrastructure.Entities;
+﻿using Logitar;
+using SkillCraft.Cms.Infrastructure.Entities;
 using SkillCraft.Rules.Extractor.Models;
 
 namespace SkillCraft.Rules.Extractor;
@@ -152,6 +153,79 @@ internal static class ExtractionMapper
     return destination;
   }
 
+  public static SpecializationDto ToSpecialization(SpecializationEntity source)
+  {
+    SpecializationDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      Tier = source.Tier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    if (source.MandatoryTalent is not null)
+    {
+      destination.Requirements.Talent = ToRelationship(source.MandatoryTalent);
+    }
+    else if (source.MandatoryTalentId.HasValue)
+    {
+      throw new ArgumentException("The mandatory talent is required.", nameof(source));
+    }
+
+    if (source.OtherRequirements is not null)
+    {
+      destination.Requirements.Other.AddRange(SplitOnNewLine(source.OtherRequirements));
+    }
+
+    foreach (SpecializationOptionalTalentEntity optional in source.OptionalTalents)
+    {
+      if (optional.Talent is null)
+      {
+        throw new ArgumentException("The optional talent is required.", nameof(source));
+      }
+      destination.Options.Talents.Add(ToRelationship(optional.Talent));
+    }
+
+    if (source.OtherOptions is not null)
+    {
+      destination.Options.Other.AddRange(SplitOnNewLine(source.OtherOptions));
+    }
+
+    if (source.ReservedTalentName is not null)
+    {
+      destination.ReservedTalent = new ReservedTalentDto(source.ReservedTalentName);
+
+      if (source.ReservedTalentDescription is not null)
+      {
+        destination.ReservedTalent.Description.AddRange(SplitOnNewLine(source.ReservedTalentDescription));
+      }
+
+      foreach (SpecializationDiscountedTalentEntity discounted in source.DiscountedTalents)
+      {
+        if (discounted.Talent is null)
+        {
+          throw new ArgumentException("The discounted talent is required.", nameof(source));
+        }
+        destination.ReservedTalent.DiscountedTalents.Add(ToRelationship(discounted.Talent));
+      }
+
+      foreach (SpecializationFeatureEntity granted in source.Features)
+      {
+        if (granted.Feature is null)
+        {
+          throw new ArgumentException("The feature is required.", nameof(source));
+        }
+        destination.ReservedTalent.Features.Add(ToFeature(granted.Feature));
+      }
+    }
+
+    return destination;
+  }
+
   public static StatisticDto ToStatistic(StatisticEntity source)
   {
     if (source.Attribute is null)
@@ -209,4 +283,9 @@ internal static class ExtractionMapper
 
     return destination;
   }
+
+  private static IReadOnlyCollection<string> SplitOnNewLine(string text) => text.Remove("\r").Split('\n')
+    .Where(x => !string.IsNullOrWhiteSpace(x))
+    .Select(x => x.Trim())
+    .ToList().AsReadOnly();
 }

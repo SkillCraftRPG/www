@@ -47,6 +47,7 @@ internal class Startup
     services.AddTransient<ICommandHandler<ExtractCustomizationsTask, TaskResult>, ExtractCustomizationsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractEducationsTask, TaskResult>, ExtractEducationsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractSkillsTask, TaskResult>, ExtractSkillsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractSpecializationsTask, TaskResult>, ExtractSpecializationsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractStatisticsTask, TaskResult>, ExtractStatisticsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractTalentsTask, TaskResult>, ExtractTalentsTaskHandler>();
   }
