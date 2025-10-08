@@ -39,6 +39,7 @@ public class RuleExtractor : BackgroundService
       await ExecuteAsync(new ExtractAttributesTask(), cancellationToken);
       await ExecuteAsync(new ExtractStatisticsTask(), cancellationToken);
       await ExecuteAsync(new ExtractSkillsTask(), cancellationToken);
+      await ExecuteAsync(new ExtractCustomizationsTask(), cancellationToken);
     }
     catch (Exception exception)
     {

@@ -23,6 +23,23 @@ internal static class ExtractionMapper
     return destination;
   }
 
+  public static CustomizationDto ToCustomization(CustomizationEntity source)
+  {
+    CustomizationDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      Kind = source.Kind,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    return destination;
+  }
+
   public static RelationshipDto ToRelationship(AttributeEntity attribute) => new(attribute.Slug, attribute.Name, attribute.IsPublished, attribute.Id);
 
   public static SkillDto ToSkill(SkillEntity source)

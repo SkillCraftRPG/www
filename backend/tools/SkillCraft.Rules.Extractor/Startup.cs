@@ -43,6 +43,7 @@ internal class Startup
   private static void AddCommandHandlers(IServiceCollection services)
   {
     services.AddTransient<ICommandHandler<ExtractAttributesTask, TaskResult>, ExtractAttributesTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractCustomizationsTask, TaskResult>, ExtractCustomizationsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractSkillsTask, TaskResult>, ExtractSkillsTaskHandler>();
     services.AddTransient<ICommandHandler<ExtractStatisticsTask, TaskResult>, ExtractStatisticsTaskHandler>();
   }
