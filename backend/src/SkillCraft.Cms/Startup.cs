@@ -10,7 +10,6 @@ using SkillCraft.Cms.Extensions;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
-using SkillCraft.Cms.Settings;
 
 namespace SkillCraft.Cms;
 
@@ -42,9 +41,8 @@ internal class Startup : StartupBase
     }
 
     IHealthChecksBuilder healthChecks = services.AddHealthChecks();
-    DatabaseSettings databaseSettings = DatabaseSettings.Initialize(_configuration);
-    services.AddSingleton(databaseSettings);
-    switch (databaseSettings.Provider)
+    DatabaseProvider databaseProvider = GetDatabaseProvider();
+    switch (databaseProvider)
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
         services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
@@ -57,9 +55,18 @@ internal class Startup : StartupBase
         healthChecks.AddDbContextCheck<KrakenarContext>();
         break;
       default:
-        throw new DatabaseProviderNotSupportedException(databaseSettings.Provider);
+        throw new DatabaseProviderNotSupportedException(databaseProvider);
     }
     services.AddKrakenarMongoDB(_configuration);
+  }
+  private DatabaseProvider GetDatabaseProvider()
+  {
+    string? value = Environment.GetEnvironmentVariable("DATABASE_PROVIDER");
+    if (!string.IsNullOrWhiteSpace(value) && Enum.TryParse(value.Trim(), ignoreCase: true, out DatabaseProvider provider))
+    {
+      return provider;
+    }
+    return _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCorePostgreSQL;
   }
 
   public override void Configure(IApplicationBuilder builder)
