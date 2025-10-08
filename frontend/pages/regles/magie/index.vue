@@ -51,4 +51,6 @@ useSeo({
   title,
   description: "Découvrez l’art de la magie : pouvoirs, paramètres, effets et alchimie pour enrichir vos aventures.",
 });
+
+// TODO(fpion): harmonisation aux artefacts magiques et limite de 3
 </script>

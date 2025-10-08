@@ -35,5 +35,5 @@ const description = computed<string>(() => talent.value?.metaDescription ?? "");
 
 useSeo({ title, description });
 
-// TODO(fpion): TalentTree
+// TODO(fpion): Talent Tree
 </script>

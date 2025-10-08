@@ -41,4 +41,6 @@ const hasOptions = computed<boolean>(() =>
 );
 
 useSeo({ title, description });
+
+// TODO(fpion): Specialization Tree
 </script>
