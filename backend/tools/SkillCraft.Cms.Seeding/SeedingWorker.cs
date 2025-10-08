@@ -8,14 +8,14 @@ using User = Krakenar.Contracts.Users.User;
 
 namespace SkillCraft.Cms.Seeding;
 
-public class CmsSeedingWorker : BackgroundService
+public class SeedingWorker : BackgroundService
 {
   private const string GenericErrorMessage = "An unhanded exception occurred.";
 
   private readonly SeedingApplicationContext _applicationContext;
   private readonly IConfiguration _configuration;
   private readonly IHostApplicationLifetime _hostApplicationLifetime;
-  private readonly ILogger<CmsSeedingWorker> _logger;
+  private readonly ILogger<SeedingWorker> _logger;
   private readonly IServiceProvider _serviceProvider;
 
   private ICommandBus? _commandBus = null;
@@ -23,11 +23,11 @@ public class CmsSeedingWorker : BackgroundService
 
   private LogLevel _result = LogLevel.Information; // NOTE(fpion): "Information" means success.
 
-  public CmsSeedingWorker(
+  public SeedingWorker(
     IApplicationContext applicationContext,
     IConfiguration configuration,
     IHostApplicationLifetime hostApplicationLifetime,
-    ILogger<CmsSeedingWorker> logger,
+    ILogger<SeedingWorker> logger,
     IServiceProvider serviceProvider)
   {
     _applicationContext = (SeedingApplicationContext)applicationContext;
@@ -57,6 +57,8 @@ public class CmsSeedingWorker : BackgroundService
       User user = await userService.ReadAsync(id: null, defaults.UniqueName, customIdentifier: null, cancellationToken)
         ?? throw new InvalidOperationException($"The user 'UniqueName={defaults.UniqueName}' was not found.");
       _applicationContext.ActorId = new ActorId(new UserId(user.Id).Value);
+
+      await ExecuteAsync(new SeedUsersTask(), cancellationToken);
 
       await ExecuteAsync(new SeedContentTypesTask(), cancellationToken);
       await ExecuteAsync(new SeedFieldTypesTask(), cancellationToken);
