@@ -1,3 +1,3 @@
 ﻿namespace SkillCraft.Cms.Seeding;
 
-internal struct SeedingTaskResult;
+internal struct TaskResult;

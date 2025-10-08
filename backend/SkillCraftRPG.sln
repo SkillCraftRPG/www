@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Core", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Contracts", "src\SkillCraft.Contracts\SkillCraft.Contracts.csproj", "{08DEDF32-FFE1-4A1C-A831-F9C2E7962787}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Rules.Extractor", "tools\SkillCraft.Rules.Extractor\SkillCraft.Rules.Extractor.csproj", "{DC7808E2-7E3F-448C-A434-EB0C608D67A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{08DEDF32-FFE1-4A1C-A831-F9C2E7962787}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08DEDF32-FFE1-4A1C-A831-F9C2E7962787}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08DEDF32-FFE1-4A1C-A831-F9C2E7962787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7808E2-7E3F-448C-A434-EB0C608D67A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7808E2-7E3F-448C-A434-EB0C608D67A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7808E2-7E3F-448C-A434-EB0C608D67A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7808E2-7E3F-448C-A434-EB0C608D67A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{9611E491-E17E-4932-BA63-AB3779C430ED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DC7808E2-7E3F-448C-A434-EB0C608D67A4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E805FC2B-A01F-49D6-BE2D-F55164C31F6C}

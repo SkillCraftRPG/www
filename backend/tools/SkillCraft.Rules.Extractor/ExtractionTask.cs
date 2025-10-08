@@ -1,9 +1,9 @@
 ﻿using Krakenar.Core;
 using Logitar;
 
-namespace SkillCraft.Cms.Seeding;
+namespace SkillCraft.Rules.Extractor;
 
-internal abstract class SeedingTask : ICommand<TaskResult>
+internal abstract class ExtractionTask : ICommand<TaskResult>
 {
   /// <summary>
   /// Gets or sets the unique identifier of the task.
@@ -37,7 +37,7 @@ internal abstract class SeedingTask : ICommand<TaskResult>
   /// </summary>
   public virtual string? Description { get; protected set; }
 
-  protected SeedingTask(string? description = null, string? nameOverride = null, Guid? id = null, DateTime? startedOn = null)
+  protected ExtractionTask(string? description = null, string? nameOverride = null, Guid? id = null, DateTime? startedOn = null)
   {
     Id = id ?? Guid.NewGuid();
 
@@ -56,7 +56,7 @@ internal abstract class SeedingTask : ICommand<TaskResult>
     EndedOn = on ?? DateTime.Now;
   }
 
-  public override bool Equals(object? obj) => obj is SeedingTask task && task.GetType().Equals(GetType()) && task.Id == Id;
+  public override bool Equals(object? obj) => obj is ExtractionTask task && task.GetType().Equals(GetType()) && task.Id == Id;
   public override int GetHashCode() => HashCode.Combine(GetType(), Id);
   public override string ToString() => $"{Name} (Id={Id})";
 }

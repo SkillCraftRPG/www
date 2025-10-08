@@ -9,7 +9,7 @@ internal class SeedFieldTypesTask : SeedingTask
   public override string? Description => "Seeds the Field Types into Krakenar.";
 }
 
-internal class SeedFieldTypesTaskHandler : ICommandHandler<SeedFieldTypesTask, SeedingTaskResult>
+internal class SeedFieldTypesTaskHandler : ICommandHandler<SeedFieldTypesTask, TaskResult>
 {
   private readonly IFieldTypeService _fieldTypeService;
   private readonly ILogger<SeedFieldTypesTaskHandler> _logger;
@@ -20,7 +20,7 @@ internal class SeedFieldTypesTaskHandler : ICommandHandler<SeedFieldTypesTask, S
     _logger = logger;
   }
 
-  public async Task<SeedingTaskResult> HandleAsync(SeedFieldTypesTask _, CancellationToken cancellationToken)
+  public async Task<TaskResult> HandleAsync(SeedFieldTypesTask _, CancellationToken cancellationToken)
   {
     string json = await File.ReadAllTextAsync("Krakenar/data/field_types.json", Encoding.UTF8, cancellationToken);
     IEnumerable<FieldTypePayload>? payloads = SeedingSerializer.Deserialize<IEnumerable<FieldTypePayload>>(json);
@@ -34,6 +34,6 @@ internal class SeedFieldTypesTaskHandler : ICommandHandler<SeedFieldTypesTask, S
       }
     }
 
-    return new SeedingTaskResult();
+    return new TaskResult();
   }
 }

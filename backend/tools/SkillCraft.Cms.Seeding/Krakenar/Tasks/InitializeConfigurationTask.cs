@@ -15,7 +15,7 @@ internal class InitializeConfigurationTask : SeedingTask
   }
 }
 
-internal class InitializeConfigurationTaskHandler : ICommandHandler<InitializeConfigurationTask, SeedingTaskResult>
+internal class InitializeConfigurationTaskHandler : ICommandHandler<InitializeConfigurationTask, TaskResult>
 {
   private readonly ICommandHandler<InitializeConfiguration> _handler;
 
@@ -24,12 +24,12 @@ internal class InitializeConfigurationTaskHandler : ICommandHandler<InitializeCo
     _handler = handler;
   }
 
-  public async Task<SeedingTaskResult> HandleAsync(InitializeConfigurationTask task, CancellationToken cancellationToken)
+  public async Task<TaskResult> HandleAsync(InitializeConfigurationTask task, CancellationToken cancellationToken)
   {
     DefaultSettings defaults = task.Defaults;
     InitializeConfiguration command = new(defaults.Locale, defaults.UniqueName, defaults.Password);
     await _handler.HandleAsync(command, cancellationToken);
 
-    return new SeedingTaskResult();
+    return new TaskResult();
   }
 }

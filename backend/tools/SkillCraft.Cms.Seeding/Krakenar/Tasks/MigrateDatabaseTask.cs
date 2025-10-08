@@ -8,7 +8,7 @@ internal class MigrateDatabaseTask : SeedingTask
   public override string? Description => "Migrates Krakenar database.";
 }
 
-internal class MigrateDatabaseTaskHandler : ICommandHandler<MigrateDatabaseTask, SeedingTaskResult>
+internal class MigrateDatabaseTaskHandler : ICommandHandler<MigrateDatabaseTask, TaskResult>
 {
   private readonly ICommandHandler<MigrateDatabase> _handler;
 
@@ -17,11 +17,11 @@ internal class MigrateDatabaseTaskHandler : ICommandHandler<MigrateDatabaseTask,
     _handler = handler;
   }
 
-  public async Task<SeedingTaskResult> HandleAsync(MigrateDatabaseTask _, CancellationToken cancellationToken)
+  public async Task<TaskResult> HandleAsync(MigrateDatabaseTask _, CancellationToken cancellationToken)
   {
     MigrateDatabase command = new();
     await _handler.HandleAsync(command, cancellationToken);
 
-    return new SeedingTaskResult();
+    return new TaskResult();
   }
 }

@@ -4,9 +4,9 @@ using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
-using SkillCraft.Cms.Seeding.Krakenar.Tasks;
+using SkillCraft.Rules.Extractor.Tasks;
 
-namespace SkillCraft.Cms.Seeding;
+namespace SkillCraft.Rules.Extractor;
 
 internal class Startup
 {
@@ -33,17 +33,22 @@ internal class Startup
       default:
         throw new DatabaseProviderNotSupportedException(databaseProvider);
     }
-    services.AddSingleton<IApplicationContext, SeedingApplicationContext>();
+    services.AddSingleton<IApplicationContext, ExtractionApplicationContext>();
+    services.AddSingleton<IExtractionSerializer, ExtractionSerializer>();
 
-    services.AddHostedService<CmsSeedingWorker>();
+    services.AddHostedService<RuleExtractor>();
     AddCommandHandlers(services);
   }
 
   private static void AddCommandHandlers(IServiceCollection services)
   {
-    services.AddTransient<ICommandHandler<InitializeConfigurationTask, TaskResult>, InitializeConfigurationTaskHandler>();
-    services.AddTransient<ICommandHandler<MigrateDatabaseTask, TaskResult>, MigrateDatabaseTaskHandler>();
-    services.AddTransient<ICommandHandler<SeedContentTypesTask, TaskResult>, SeedContentTypesTaskHandler>();
-    services.AddTransient<ICommandHandler<SeedFieldTypesTask, TaskResult>, SeedFieldTypesTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractAttributesTask, TaskResult>, ExtractAttributesTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractCastesTask, TaskResult>, ExtractCastesTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractCustomizationsTask, TaskResult>, ExtractCustomizationsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractEducationsTask, TaskResult>, ExtractEducationsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractSkillsTask, TaskResult>, ExtractSkillsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractSpecializationsTask, TaskResult>, ExtractSpecializationsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractStatisticsTask, TaskResult>, ExtractStatisticsTaskHandler>();
+    services.AddTransient<ICommandHandler<ExtractTalentsTask, TaskResult>, ExtractTalentsTaskHandler>();
   }
 }
