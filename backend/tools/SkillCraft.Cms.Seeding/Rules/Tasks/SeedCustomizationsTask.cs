@@ -18,19 +18,19 @@ internal class SeedCustomizationsTask : SeedingTask
 
 internal class SeedCustomizationsTaskHandler : ICommandHandler<SeedCustomizationsTask, TaskResult>
 {
-  private readonly ICustomizationQuerier _customizationQuerier;
   private readonly IContentService _contentService;
+  private readonly ICustomizationQuerier _customizationQuerier;
   private readonly DefaultSettings _defaults;
   private readonly ILogger<SeedCustomizationsTaskHandler> _logger;
 
   public SeedCustomizationsTaskHandler(
-    ICustomizationQuerier customizationQuerier,
     IContentService contentService,
+    ICustomizationQuerier customizationQuerier,
     DefaultSettings defaults,
     ILogger<SeedCustomizationsTaskHandler> logger)
   {
-    _customizationQuerier = customizationQuerier;
     _contentService = contentService;
+    _customizationQuerier = customizationQuerier;
     _defaults = defaults;
     _logger = logger;
   }

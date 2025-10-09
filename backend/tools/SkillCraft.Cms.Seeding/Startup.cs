@@ -5,6 +5,7 @@ using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
+using SkillCraft.Cms.Seeding.Rules;
 using SkillCraft.Cms.Seeding.Rules.Tasks;
 using SkillCraft.Cms.Seeding.Settings;
 
@@ -40,6 +41,7 @@ internal class Startup
     services.AddSingleton<IApplicationContext, SeedingApplicationContext>();
 
     services.AddHostedService<SeedingWorker>();
+    services.AddScoped<IFeatureService, FeatureService>();
     AddCommandHandlers(services);
   }
 
@@ -48,8 +50,10 @@ internal class Startup
     services.AddTransient<ICommandHandler<InitializeConfigurationTask, TaskResult>, InitializeConfigurationTaskHandler>();
     services.AddTransient<ICommandHandler<MigrateDatabaseTask, TaskResult>, MigrateDatabaseTaskHandler>();
     services.AddTransient<ICommandHandler<SeedAttributesTask, TaskResult>, SeedAttributesTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedCastesTask, TaskResult>, SeedCastesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedContentTypesTask, TaskResult>, SeedContentTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedCustomizationsTask, TaskResult>, SeedCustomizationsTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedEducationsTask, TaskResult>, SeedEducationsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedFieldTypesTask, TaskResult>, SeedFieldTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedSkillsTask, TaskResult>, SeedSkillsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedStatisticsTask, TaskResult>, SeedStatisticsTaskHandler>();

@@ -1,0 +1,24 @@
+﻿[
+  {
+    "Id": "28876b0a-2489-4950-b8a7-7009d26c9108",
+    "IsPublished": true,
+    "Slug": "amuseur",
+    "Name": "Amuseur",
+    "WealthRoll": "8d6",
+    "Skill": {
+      "Id": "82a59add-a0e2-4d7b-8513-5eaa0f60e11b",
+      "IsPublished": true,
+      "Slug": "representation",
+      "Name": "Représentation"
+    },
+    "Feature": {
+      "Id": "2664d3ec-7c7e-44f2-a3eb-0ed5290aa20a",
+      "IsPublished": true,
+      "Name": "Charme du spectacle",
+      "Description": "Le personnage trouve toujours un endroit pour se présenter en spectacle, habituellement dans [une taverne ou une auberge](/regles/equipement/services/peuplements), mais possiblement auprès d’une troupe de cirque, d’un groupe de comédiens, ou à la cour de nobles.\n\nIl peut demander [le gite ou le couvert](/regles/equipement/services/gite-couvert) en échange de divertissement.\n\nÉgalement, lorsqu’il se donne en spectacle, sa [notoriété](/regles/equipement/depenses) augmente localement, ce qui peut lui permettre d’obtenir certaines faveurs, comme une audience auprès d’un noble ou des privilèges réservés aux personnalités populaires."
+    },
+    "Summary": "Artiste voyageur captivant, usant du spectacle pour vivre et se faire connaître.",
+    "MetaDescription": "Découvrez l’Amuseur, artiste itinérant qui charme les foules par ses spectacles, gagne en renommée et tisse un réseau d’informations et de contacts.",
+    "Description": "Adepte d’art, de poésie, de cirque ou de théâtre, l’amuseur ère de villages en cités afin d’offrir ses performances.\n\nBien plus qu’un simple gagne-pain, cela lui permet de former un réseau de contacts et de recueillir toutes sortes d’informations."
+  }
+]
