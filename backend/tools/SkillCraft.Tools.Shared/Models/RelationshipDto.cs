@@ -1,6 +1,6 @@
-﻿namespace SkillCraft.Rules.Extractor.Models;
+﻿namespace SkillCraft.Tools.Shared.Models;
 
-internal record RelationshipDto
+public record RelationshipDto
 {
   public Guid Id { get; set; }
 

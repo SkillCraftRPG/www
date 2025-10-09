@@ -19,4 +19,6 @@ public class AttributeModel : Aggregate
 
   public List<StatisticModel> Statistics { get; set; } = [];
   public List<SkillModel> Skills { get; set; } = [];
+
+  public override string ToString() => $"{Name} | {base.ToString()}";
 }

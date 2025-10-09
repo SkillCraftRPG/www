@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj" />
     <ProjectReference Include="..\..\src\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj" />
+    <ProjectReference Include="..\SkillCraft.Tools.Shared\SkillCraft.Tools.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

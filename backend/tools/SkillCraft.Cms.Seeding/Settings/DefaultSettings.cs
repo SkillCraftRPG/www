@@ -6,9 +6,9 @@ internal record DefaultSettings
 {
   public const string SectionKey = "Default";
 
-  public string Locale { get; set; } = "en";
-  public string UniqueName { get; set; } = "admin";
-  public string Password { get; set; } = "P@s$W0rD";
+  public string Locale { get; set; } = string.Empty;
+  public string UniqueName { get; set; } = string.Empty;
+  public string Password { get; set; } = string.Empty;
 
   public static DefaultSettings Initialize(IConfiguration configuration)
   {

@@ -1,0 +1,307 @@
+﻿[
+  {
+    "Id": "ba600891-151b-44f0-a2ed-b3e3ccb10cd7",
+    "IsPublished": true,
+    "Slug": "connaissance",
+    "Name": "Connaissance",
+    "Value": "Knowledge",
+    "Attribute": {
+      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
+      "IsPublished": true,
+      "Slug": "intellect",
+      "Name": "Intellect"
+    },
+    "Summary": "Connaissance mesure l’étendue des savoirs acquis du personnage, qu’ils soient encyclopédiques, spécialisés ou théoriques.",
+    "MetaDescription": null,
+    "Description": "La compétence **Connaissance** permet au personnage de faire appel à ses savoirs généraux ou spécialisés pour répondre à une question précise, qu’elle concerne un sujet commun ou un domaine particulier."
+  },
+  {
+    "Id": "21877dfa-439f-4dce-8235-556d311e1c54",
+    "IsPublished": true,
+    "Slug": "athletisme",
+    "Name": "Athlétisme",
+    "Value": "Athletics",
+    "Attribute": {
+      "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
+      "IsPublished": true,
+      "Slug": "vigueur",
+      "Name": "Vigueur"
+    },
+    "Summary": "Athlétisme mesure la capacité physique générale à se déplacer dans des environnements exigeants, notamment par l’escalade, la nage ou les sauts.",
+    "MetaDescription": null,
+    "Description": "La compétence **Athlétisme** permet au personnage de :\n\n- effectuer des [sauts](/regles/aventure/mouvement/types) en longueur et en hauteur\n- escalader des surfaces avec ou sans prises\n- nager ou se maintenir à la surface de l’eau"
+  },
+  {
+    "Id": "56ffe0d3-6271-4ca7-badf-d227d7785767",
+    "IsPublished": true,
+    "Slug": "artisanat",
+    "Name": "Artisanat",
+    "Value": "Crafting",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Artisanat mesure l’aptitude à créer, réparer ou démonter des objets à l’aide d’outils, allant de l’improvisation brute à la fabrication complexe.",
+    "MetaDescription": null,
+    "Description": "La compétence **Artisanat** permet au personnage de :\n\n- concevoir ou fabriquer un objet\n- démanteler un objet pour en récupérer les composantes utiles\n- [réparer](/regles/equipement/reparation) ou restaurer un objet\n\nCes actions nécessitent les [outils](/regles/equipement/outils), [matériaux](/regles/equipement/marchandise) et tables de travail appropriés."
+  },
+  {
+    "Id": "2a49d787-e957-4fe0-afe7-3de5b6ebb214",
+    "IsPublished": true,
+    "Slug": "diplomatie",
+    "Name": "Diplomatie",
+    "Value": "Diplomacy",
+    "Attribute": null,
+    "Summary": "Diplomatie évalue la finesse sociale : inspirer confiance, susciter sympathie et exploiter les échanges.",
+    "MetaDescription": null,
+    "Description": "La compétence **Diplomatie** permet au personnage de :\n\n- [influencer l’attitude d’autrui](/regles/aventure/interaction-sociale) par le tact, les mots justes ou une étiquette appropriée\n- obtenir des informations précises en interagissant habilement avec les bonnes personnes\n- se fondre dans une foule sans attirer l’attention"
+  },
+  {
+    "Id": "4153ec24-3cb6-4e5e-93e6-c80853e5688b",
+    "IsPublished": true,
+    "Slug": "discipline",
+    "Name": "Discipline",
+    "Value": "Discipline",
+    "Attribute": {
+      "Id": "bbc1fb7f-2637-4056-ac52-3b6b309bb256",
+      "IsPublished": true,
+      "Slug": "sante",
+      "Name": "Santé"
+    },
+    "Summary": "Discipline mesure la stabilité mentale et émotionnelle du personnage face au stress, à la douleur ou aux interférences surnaturelles.",
+    "MetaDescription": null,
+    "Description": "La compétence Discipline permet au personnage de :\n\n- conserver son sang-froid dans une situation difficile\n- [maintenir](/regles/combat/activites/concentration) un [Pouvoir](/regles/magie/pouvoirs) actif malgré les perturbations\n- rester en position malgré une blessure ou un environnement hostile\n- résister à certaines formes d’influence surnaturelle"
+  },
+  {
+    "Id": "93dbef75-5f50-4462-bd9b-43303b781443",
+    "IsPublished": true,
+    "Slug": "intuition",
+    "Name": "Intuition",
+    "Value": "Insight",
+    "Attribute": {
+      "Id": "11fd3351-7937-4697-8e02-1bc5b2a61a91",
+      "IsPublished": true,
+      "Slug": "sens",
+      "Name": "Sens"
+    },
+    "Summary": "Intuition mesure la capacité à lire les émotions, percevoir les intentions et déceler la manipulation.",
+    "MetaDescription": null,
+    "Description": "La compétence **Intuition** permet au personnage de :\n\n- déchiffrer le [langage corporel](/regles/aventure/interaction-sociale)\n- détecter une tentative de manipulation, qu’elle soit dirigée contre lui ou non\n- déterminer si quelqu’un ment ou tente de l’influencer\n- percevoir les intentions réelles d’une créature\n- utiliser son intelligence émotionnelle, c’est-à-dire percevoir, comprendre, exprimer et gérer les émotions"
+  },
+  {
+    "Id": "d227627b-acc4-4483-b45a-a82729d6c415",
+    "IsPublished": true,
+    "Slug": "linguistique",
+    "Name": "Linguistique",
+    "Value": "Linguistics",
+    "Attribute": {
+      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
+      "IsPublished": true,
+      "Slug": "intellect",
+      "Name": "Intellect"
+    },
+    "Summary": "Linguistique évalue l’aptitude du personnage à comprendre, manipuler ou produire des messages écrits ou symboliques, dans sa langue ou dans d’autres.",
+    "MetaDescription": null,
+    "Description": "La compétence **Linguistique** permet au personnage de :\n\n- comprendre ou produire un document écrit, qu’il soit simple ou complexe\n- décrypter un texte\n- falsifier un texte\n- interpréter un message non verbal\n- lire des schémas, comme des cartes ou des interfaces\n- tenter de comprendre un texte rédigé dans une langue inconnue"
+  },
+  {
+    "Id": "a6995524-b7b5-4511-8790-ef0e3b687442",
+    "IsPublished": true,
+    "Slug": "investigation",
+    "Name": "Investigation",
+    "Value": "Investigation",
+    "Attribute": {
+      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
+      "IsPublished": true,
+      "Slug": "intellect",
+      "Name": "Intellect"
+    },
+    "Summary": "Investigation mesure l’analyse logique et l’observation pour déduire à partir d’indices fragmentaires.",
+    "MetaDescription": null,
+    "Description": "La compétence **Investigation** permet au personnage de :\n\n- analyser un mécanisme complexe tel un piège\n- détecter les incohérences\n- estimer la [valeur](/regles/equipement/monnaie) d’un objet\n- reconstituer une scène à partir de fines observations\n- tirer des conclusions simples à partir d’indices\n- évaluer les coûts de fabrication et de [revente](/regles/equipement/vente) d’un objet"
+  },
+  {
+    "Id": "68f61feb-b81f-45bd-8de7-7ee6389b47aa",
+    "IsPublished": true,
+    "Slug": "furtivite",
+    "Name": "Furtivité",
+    "Value": "Stealth",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Furtivité permet d’éviter la détection grâce à la discrétion visuelle, sonore ou au camouflage.",
+    "MetaDescription": null,
+    "Description": "La compétence **Furtivité** permet au personnage de :\n\n- manipuler discrètement un objet sans être vu\n- minimiser les traces laissées lors d’un [déplacement](/regles/aventure/mouvement/furtif)\n- [se camoufler](/regles/combat/activites/cacher) dans un environnement\n- se dissimuler dans l’ombre ou au sein d’une foule\n- se déplacer silencieusement en terrain dégagé ou encombré"
+  },
+  {
+    "Id": "38b875a0-6519-4c8b-bff6-02c151e6a5fe",
+    "IsPublished": true,
+    "Slug": "acrobaties",
+    "Name": "Acrobaties",
+    "Value": "Acrobatics",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Maîtrise du corps : équilibre, figures complexes et évasion physique.",
+    "MetaDescription": "Découvrez Acrobaties, compétence d’adresse permettant d’amortir les chutes, garder l’équilibre, exécuter des manœuvres agiles et se libérer de liens.",
+    "Description": "La compétence **Acrobaties** permet au personnage de :\n\n- [amortir une chute](/regles/aventure/environnement/chute)\n- conserver son équilibre sur des surfaces instables\n- exécuter des manœuvres acrobatiques\n- se contorsionner pour [se libérer de liens](/regles/combat/activites/echapper)"
+  },
+  {
+    "Id": "786e509e-ea89-4a51-b144-b84352f91b0f",
+    "IsPublished": true,
+    "Slug": "medecine",
+    "Name": "Médecine",
+    "Value": "Medicine",
+    "Attribute": {
+      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
+      "IsPublished": true,
+      "Slug": "intellect",
+      "Name": "Intellect"
+    },
+    "Summary": "Médecine mesure la connaissance et l’habileté du personnage à soigner les blessures, diagnostiquer des afflictions et appliquer des traitements adaptés.",
+    "MetaDescription": null,
+    "Description": "La compétence **Médecine** permet au personnage de :\n\n- appliquer les premiers soins\n- diagnostiquer une maladie, un poison ou une blessure\n- déterminer ou préparer le traitement approprié\n- [stabiliser](/regles/combat/activites/stabiliser) un allié mourant"
+  },
+  {
+    "Id": "bd6bedde-2e50-493f-a1cc-8e23123c45c4",
+    "IsPublished": true,
+    "Slug": "melee",
+    "Name": "Mêlée",
+    "Value": "Melee",
+    "Attribute": {
+      "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
+      "IsPublished": true,
+      "Slug": "vigueur",
+      "Name": "Vigueur"
+    },
+    "Summary": "Mêlée mesure l’habileté du personnage à combattre au corps à corps.",
+    "MetaDescription": null,
+    "Description": "La compétence **Mêlée** permet au personnage d’effectuer une [attaque](/regles/combat/attaque) avec un membre de son corps ou une [arme](/regles/equipement/armes) de [mêlée](/regles/combat/attaque/melee)."
+  },
+  {
+    "Id": "f356649f-b39f-4db6-93f4-a2e0f8c2b841",
+    "IsPublished": true,
+    "Slug": "occultisme",
+    "Name": "Occultisme",
+    "Value": "Occultism",
+    "Attribute": {
+      "Id": "11fd3351-7937-4697-8e02-1bc5b2a61a91",
+      "IsPublished": true,
+      "Slug": "sens",
+      "Name": "Sens"
+    },
+    "Summary": "Occultisme représente la compréhension intuitive ou expérimentale des phénomènes surnaturels, ainsi que la capacité à interagir consciemment avec eux.",
+    "MetaDescription": null,
+    "Description": "La compétence **Occultisme** permet au personnage de :\n\n- activer ou de manipuler un objet magique\n- [canaliser](/regles/combat/activites/canaliser) un [Pouvoir](/regles/magie/pouvoirs) ou utiliser une capacité surnaturelle\n- faire des liens entre des effets magiques connus\n- identifier la nature surnaturelle d’un effet\n- s’adapter à un artefact"
+  },
+  {
+    "Id": "7dea15b0-82f6-455a-ab74-ae6b10e7e2b7",
+    "IsPublished": true,
+    "Slug": "orientation",
+    "Name": "Orientation",
+    "Value": "Orientation",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Orientation évalue la capacité à viser, se repérer et réagir aux trajectoires ou déplacements.",
+    "MetaDescription": null,
+    "Description": "La compétence **Orientation** permet au personnage de :\n\n- conduire une [monture ou un véhicule](/regles/equipement/montures-vehicules)\n- effectuer une [attaque](/regles/combat/attaque) avec une [arme](/regles/equipement/armes) à [distance](/regles/combat/attaque/distance)\n- exécuter une manœuvre en réponse à un danger\n- lancer un objet vers une cible approximative ou précise\n- suivre une carte ou un plan"
+  },
+  {
+    "Id": "626b3491-ce0f-41ba-82bf-27c1d6432caf",
+    "IsPublished": true,
+    "Slug": "perception",
+    "Name": "Perception",
+    "Value": "Perception",
+    "Attribute": {
+      "Id": "11fd3351-7937-4697-8e02-1bc5b2a61a91",
+      "IsPublished": true,
+      "Slug": "sens",
+      "Name": "Sens"
+    },
+    "Summary": "Perception représente l’acuité sensorielle, la capacité à remarquer les détails, les sons subtils ou les éléments dissimulés dans son environnement.",
+    "MetaDescription": null,
+    "Description": "La compétence **Perception** permet au personnage de :\n\n- capter des sons faibles comme une conversation chuchotée ou lointaine\n- [déceler](/regles/combat/activites/chercher) un piège ou un passage secret\n- repérer une créature [dissimulée](/regles/combat/activites/cacher), furtive ou discrète"
+  },
+  {
+    "Id": "82a59add-a0e2-4d7b-8513-5eaa0f60e11b",
+    "IsPublished": true,
+    "Slug": "representation",
+    "Name": "Représentation",
+    "Value": "Performance",
+    "Attribute": null,
+    "Summary": "Représentation reflète la capacité à captiver, émouvoir ou influencer par la performance artistique, l’intensité expressive ou la mise en scène.",
+    "MetaDescription": null,
+    "Description": "La compétence **Représentation** permet au personnage de :\n\n- [distraire ou captiver un auditoire](/regles/aventure/interaction-sociale)\n- faire diversion\n- inspirer la peur\n- provoquer pour détourner l’attention\n- se produire dans une discipline artistique comme la poésie, la danse, la musique ou le théâtre"
+  },
+  {
+    "Id": "5921b392-2010-4347-8492-1307291a74ef",
+    "IsPublished": true,
+    "Slug": "resistance",
+    "Name": "Résistance",
+    "Value": "Resistance",
+    "Attribute": {
+      "Id": "bbc1fb7f-2637-4056-ac52-3b6b309bb256",
+      "IsPublished": true,
+      "Slug": "sante",
+      "Name": "Santé"
+    },
+    "Summary": "Résistance reflète la robustesse physique du personnage face à la douleur, aux blessures et aux chocs traumatiques.",
+    "MetaDescription": null,
+    "Description": "La compétence **Résistance** permet au personnage de :\n\n- ne pas s’effondrer sous un important choc physique\n- rester debout après avoir subi de lourds dégâts\n- résister aux effets directs d’un impact violent"
+  },
+  {
+    "Id": "ecdcb4fb-13bc-498c-8222-40e0900c23e8",
+    "IsPublished": true,
+    "Slug": "survie",
+    "Name": "Survie",
+    "Value": "Survival",
+    "Attribute": {
+      "Id": "11fd3351-7937-4697-8e02-1bc5b2a61a91",
+      "IsPublished": true,
+      "Slug": "sens",
+      "Name": "Sens"
+    },
+    "Summary": "Survie évalue les connaissances et réflexes face à la nature : orientation, pistage, protection contre les éléments, et gestion des animaux.",
+    "MetaDescription": null,
+    "Description": "La compétence **Survie** permet au personnage de :\n\n- interagir avec des animaux sauvages ou dressés\n- prédire le climat\n- suivre une piste\n- s’orienter et de se déplacer sans se perdre en pleine nature\n- trouver un abri et de la [nourriture](/regles/aventure/environnement/alimentation)\n- éviter les dangers naturels"
+  },
+  {
+    "Id": "7b327339-488b-447d-a9b3-fbaa6d65d864",
+    "IsPublished": true,
+    "Slug": "tromperie",
+    "Name": "Tromperie",
+    "Value": "Deception",
+    "Attribute": null,
+    "Summary": "Tromperie mesure la capacité du personnage à induire les autres en erreur par des mensonges, des déguisements ou des manipulations verbales subtiles.",
+    "MetaDescription": null,
+    "Description": "La compétence **Tromperie** permet au personnage de :\n\n- imiter une créature d’une autre espèce ou d’un autre genre avec vraisemblance\n- [manipuler](/regles/aventure/interaction-sociale) sans contredire la vérité directement\n- mentir de façon crédible ou non\n- se faire passer pour autrui\n- utiliser un déguisement convaincant"
+  },
+  {
+    "Id": "70c5ac59-ed69-42e7-aa17-2720d98ae81a",
+    "IsPublished": true,
+    "Slug": "roublardise",
+    "Name": "Roublardise",
+    "Value": "Thievery",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Roublardise reflète l’habileté manuelle à interagir avec précision, ruse ou subtilité avec des mécanismes, dispositifs piégés ou objets délicats.",
+    "MetaDescription": null,
+    "Description": "La compétence **Roublardise** permet au personnage de :\n\n- manipuler de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer\n- activer un mécanisme\n- crocheter une serrure\n- désamorcer un piège\n- manipuler avec précision de petits objets\n- nouer ou dénouer un nœud simple ou complexe\n- saboter un mécanisme"
+  }
+]

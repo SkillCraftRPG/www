@@ -1,6 +1,6 @@
-﻿namespace SkillCraft.Rules.Extractor.Models;
+﻿namespace SkillCraft.Tools.Shared.Models;
 
-internal record SpecializationRequirementsDto
+public record SpecializationRequirementsDto
 {
   public RelationshipDto? Talent { get; set; }
   public List<string> Other { get; set; } = [];

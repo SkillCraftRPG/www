@@ -1,0 +1,1125 @@
+﻿[
+  {
+    "Id": "fb0ef845-b7aa-4a2a-a1e5-b8bc4defc8b2",
+    "IsPublished": true,
+    "Slug": "combattant",
+    "Name": "Combattant",
+    "Tier": 1,
+    "Summary": "Spécialiste du combat armé, endurant et prêt à tout pour vaincre.",
+    "MetaDescription": "Découvrez le Combattant, maître du combat armé, qui puise dans l’adrénaline pour encaisser, riposter et dominer le champ de bataille.",
+    "Description": "Il est évident que la spécialisation du combattant soit le combat. Certains s’adonnent à cet art pour gagner leur vie, d’autres le font afin de servir une cause. Quelques-uns le font même par passion pour cet art. Certains combattants préfèrent devenir champions d’un style de de combat, alors que d’autres désirent plutôt en maîtriser plusieurs.",
+    "Requirements": {
+      "Talent": {
+        "Id": "5601b8cb-9061-4a44-9dfe-2ac1fdd46f46",
+        "IsPublished": true,
+        "Slug": "formation-martiale",
+        "Name": "Formation martiale"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "081ac23a-7d82-4fab-ae4e-55692267c3d9",
+          "IsPublished": true,
+          "Slug": "acrobaties",
+          "Name": "Acrobaties"
+        },
+        {
+          "Id": "89552d5e-05f9-4482-bc86-19cbf4fc9c03",
+          "IsPublished": true,
+          "Slug": "athletisme",
+          "Name": "Athlétisme"
+        },
+        {
+          "Id": "e3bb71cc-8513-4bf0-b9ad-69e158fde51b",
+          "IsPublished": true,
+          "Slug": "resistance",
+          "Name": "Résistance"
+        },
+        {
+          "Id": "6651cbd0-51d8-4391-8385-7207c8ed80db",
+          "IsPublished": true,
+          "Slug": "melee",
+          "Name": "Mêlée"
+        },
+        {
+          "Id": "9bb1f8de-2120-4796-8271-a3d2ace4d053",
+          "IsPublished": true,
+          "Slug": "artisanat",
+          "Name": "Artisanat"
+        },
+        {
+          "Id": "97c10f43-c82d-41b1-b241-9b6cace8e9ab",
+          "IsPublished": true,
+          "Slug": "orientation",
+          "Name": "Orientation"
+        },
+        {
+          "Id": "ff67585b-bfd7-4965-a660-1fbdf0547c12",
+          "IsPublished": true,
+          "Slug": "perception",
+          "Name": "Perception"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "e7282746-a39b-4f5b-b356-022579e09001",
+          "IsPublished": true,
+          "Slug": "survie",
+          "Name": "Survie"
+        },
+        {
+          "Id": "ca25c64d-b500-473a-9919-e61d500692eb",
+          "IsPublished": true,
+          "Slug": "representation",
+          "Name": "Représentation"
+        },
+        {
+          "Id": "ecd7e18e-2055-44c4-9b9d-8057af7f6dc5",
+          "IsPublished": true,
+          "Slug": "vigilance",
+          "Name": "Vigilance"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Adrénaline",
+      "Description": [],
+      "DiscountedTalents": [
+        {
+          "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
+          "IsPublished": true,
+          "Slug": "cuirasse",
+          "Name": "Cuirassé"
+        },
+        {
+          "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+          "IsPublished": true,
+          "Slug": "initiative-accrue",
+          "Name": "Initiative accrue"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "f53708e7-c7ac-412f-96c4-2c312301c14b",
+          "IsPublished": true,
+          "Name": "Second souffle",
+          "Description": "En situation de [combat](/regles/combat), permet au personnage de récupérer des points de [Vitalité](/regles/statistiques/vitalite) en [action libre](/regles/combat/deroulement/tour).\n\nIl récupère 1d10 + [Santé](/regles/attributs/sante) (minimum 1) points de Vitalité et dépense un nombre égal de points d’[Énergie](/regles/statistiques/energie).\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        },
+        {
+          "Id": "77112879-b794-45a8-adf7-37857b958b4c",
+          "IsPublished": true,
+          "Name": "Indomptable",
+          "Description": "Lorsqu’il échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde), il peut rejouer le jet de sauvegarde en dépensant 25 points d’[Énergie](/regles/statistiques/energie) et doit conserver le nouveau résultat.\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "f8f5ac5a-e082-49c1-a4f6-4f30e9c6646a",
+    "IsPublished": true,
+    "Slug": "animiste",
+    "Name": "Animiste",
+    "Tier": 1,
+    "Summary": "Spécialisation spirituelle liée à la nature et à la transformation en bête.",
+    "MetaDescription": "Découvrez l’Animiste, un culte spirituel lié aux éléments naturels, capable d’assumer une forme sauvage et d’invoquer les pouvoirs de l’animisme.",
+    "Description": "L’animiste est un adepte d’un culte spirituel voué à un élément naturel. Ces éléments peuvent concerner par exemple les animaux, la chasse et le climat, ou encore la nuit et la Lune. Ils peuvent également concerner les esprits des défunts et ancestraux, ou encore les croyances des peuples archaïques. L’animiste jongle avec les forces féériques ou ombrageuses qui régissent ces éléments naturels, et adoptent généralement une posture de devin et de guérisseur auprès d’un culte ou d’une communauté primitive.",
+    "Requirements": {
+      "Talent": {
+        "Id": "d8473b88-7dc6-436b-9f92-9936e07362c4",
+        "IsPublished": true,
+        "Slug": "spiritualite",
+        "Name": "Spiritualité"
+      },
+      "Other": [
+        "Le personnage doit avoir sélectionné un [domaine d’animisme](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "71d95a8e-e487-4fef-bbe2-b6a6c903ebfd",
+          "IsPublished": true,
+          "Slug": "discipline",
+          "Name": "Discipline"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "98a688eb-10d5-4db5-ac37-64c8c4f6ad34",
+          "IsPublished": true,
+          "Slug": "connaissance",
+          "Name": "Connaissance"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "ff67585b-bfd7-4965-a660-1fbdf0547c12",
+          "IsPublished": true,
+          "Slug": "perception",
+          "Name": "Perception"
+        },
+        {
+          "Id": "e7282746-a39b-4f5b-b356-022579e09001",
+          "IsPublished": true,
+          "Slug": "survie",
+          "Name": "Survie"
+        },
+        {
+          "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
+          "IsPublished": true,
+          "Slug": "occultisme",
+          "Name": "Occultisme"
+        },
+        {
+          "Id": "8b38975a-dbb1-448e-9a5b-ff1637b3a77f",
+          "IsPublished": true,
+          "Slug": "armes-improvisees",
+          "Name": "Armes improvisées"
+        },
+        {
+          "Id": "7dd9ed2f-377b-4199-ba60-0d24240804e5",
+          "IsPublished": true,
+          "Slug": "dressage",
+          "Name": "Dressage"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Animisme",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son domaine d’animisme et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une [capacité](#) de tiers 1 spécifique à son domaine d’animisme."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "31c8550e-6451-4f70-beb5-89cdbbc9d169",
+          "IsPublished": true,
+          "Name": "Forme sauvage",
+          "Description": "Le personnage prend la forme d’une bête qu’il a vue ou touchée auparavant par une [action](/regles/combat/deroulement/tour).\n\nLe [niveau](/regles/personnages/progression/niveau) de la bête doit être inférieur ou égal à ½ et celle-ci ne doit pas pouvoir [voler](/regles/aventure/mouvement/types).\n\nIl peut assumer cette transformation une fois par jour et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nIl peut rester dans cette forme pendant un nombre d’[heures](/regles/aventure/temps) égal à son [rang](/regles/competences/rang) d’[Occultisme](/regles/competences/occultisme) (minimum 1). Après ce délai, il reprend sa forme normale.\n\nIl peut également reprendre sa forme normale par une action. Il reprend automatiquement sa forme normale s’il tombe [inconscient](/regles/combat/conditions/inconscient), [agonisant](/regles/combat/conditions/agonisant) ou qu’il [meurt](/regles/combat/conditions/mort).\n\nLes règles suivantes s’appliquent lorsqu’il assume une forme sauvage :\n\n- Sa valeur d’[Adresse](/regles/attributs/adresse), de [Vigueur](/regles/attributs/vigueur) et de [Santé](/regles/attributs/sante) sont remplacées par celles de la bête.\n- Il conserve ses rangs de compétences, sauf si le rang de la bête est plus élevé.\n- Il ne peut utiliser les actions légendaires, les résistances légendaires, ni les actions de repaire de la bête.\n- Ses points de [Vitalité](/regles/statistiques/vitalite) et d’[Énergie](/regles/statistiques/energie) sont remplacés par ceux de la bête. Lorsqu’il reprend sa forme normale, il retourne aux points de Vitalité qu’il avait avant de prendre sa forme sauvage. Si ses points de Vitalité en forme sauvage chutent à une valeur inférieure à 0, alors l’excès de [points de dégâts](/regles/combat/degats) est transféré aux points de Vitalité de sa forme normale.\n- En forme sauvage, il ne peut [canaliser](/regles/combat/activites/canaliser) de pouvoir, et son habileté à parler ou à effectuer une action requérant ses mains sont limitées à celle de la bête. Il ne perd pas la [concentration](/regles/magie/parametres/duree) qu’il [maintenait](/regles/combat/activites/concentration) sur un pouvoir au moment d’assumer sa forme sauvage, mais il ne peut [interagir](/regles/combat/activites/cesser-canaliser) avec ce pouvoir sans reprendre sa forme normale. Il peut néanmoins utiliser ses capacités d’[espèce](/regles/especes) ainsi que ses [talents](/regles/talents) si la bête le permet.\n- Il ne peut utiliser son [équipement](/regles/equipement) en forme sauvage. Il décide si son équipement tombe au sol à sa position, s’il fusionne avec sa forme sauvage, ou s’il est porté par la forme sauvage. L’équipement porté fonctionne comme sur sa forme normale, mais il ne change pas de taille afin de s’adapter à la forme sauvage. Il est donc possible qu’un équipement soit inutilisable et même gênant à la forme sauvage. L’équipement fusionné avec la forme sauvage n’a aucun effet tant que le personnage ne reprend pas sa forme normale."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "07f0980d-1c1f-44bc-aee8-998298fa6546",
+    "IsPublished": true,
+    "Slug": "clerc",
+    "Name": "Clerc",
+    "Tier": 1,
+    "Summary": "Adepte religieux invoquant pouvoirs divins pour servir sa communauté.",
+    "MetaDescription": "Découvrez le Clerc, serviteur d’une divinité, qui invoque des pouvoirs divins et propage les préceptes de son culte à travers foi et discipline.",
+    "Description": "Les clercs sont des adeptes religieux d’une divinité. Ils représentent celle-ci dans le monde matériel, faisant régner ses préceptes et tentant d’agrandir son cercle de croyants. En échange de cette mission, cette divinité leur prête une partie de ses pouvoirs, qu’ils peuvent utiliser afin d’étendre la portée de leur divinité.",
+    "Requirements": {
+      "Talent": {
+        "Id": "d8473b88-7dc6-436b-9f92-9936e07362c4",
+        "IsPublished": true,
+        "Slug": "spiritualite",
+        "Name": "Spiritualité"
+      },
+      "Other": [
+        "Le personnage doit avoir sélectionné un [domaine divin](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "71d95a8e-e487-4fef-bbe2-b6a6c903ebfd",
+          "IsPublished": true,
+          "Slug": "discipline",
+          "Name": "Discipline"
+        },
+        {
+          "Id": "6651cbd0-51d8-4391-8385-7207c8ed80db",
+          "IsPublished": true,
+          "Slug": "melee",
+          "Name": "Mêlée"
+        },
+        {
+          "Id": "98a688eb-10d5-4db5-ac37-64c8c4f6ad34",
+          "IsPublished": true,
+          "Slug": "connaissance",
+          "Name": "Connaissance"
+        },
+        {
+          "Id": "c95f665e-2da3-455f-a87e-2e38d4988a26",
+          "IsPublished": true,
+          "Slug": "linguistique",
+          "Name": "Linguistique"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
+          "IsPublished": true,
+          "Slug": "occultisme",
+          "Name": "Occultisme"
+        },
+        {
+          "Id": "3968f65a-586b-4c4c-b71e-f888c321697d",
+          "IsPublished": true,
+          "Slug": "diplomatie",
+          "Name": "Diplomatie"
+        },
+        {
+          "Id": "ca25c64d-b500-473a-9919-e61d500692eb",
+          "IsPublished": true,
+          "Slug": "representation",
+          "Name": "Représentation"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Clergé",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son domaine divin et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une [capacité](#) de tiers 1 spécifique à son domaine divin."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "3b91802e-596b-4a16-a490-c1f020f55117",
+          "IsPublished": true,
+          "Name": "Pouvoir divin",
+          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine](#) divin.\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "8d8f989a-6b50-475c-8d1a-38dcae61c61b",
+    "IsPublished": true,
+    "Slug": "pretre",
+    "Name": "Prêtre",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Le prêtre est un clerc ayant progressé au sein de son clergé. Il est non seulement reconnu par ses pairs comme un important ambassadeur de sa divinité par un échelon plus élevé, il est également reconnu par sa divinité en recevant des pouvoirs plus puissants de la part de celle-ci.",
+    "Requirements": {
+      "Talent": {
+        "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+        "IsPublished": true,
+        "Slug": "magie-puissante",
+        "Name": "Magie puissante"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Clerc](/regles/specialisations/clerc).",
+        "Il ne doit pas avoir acquis la spécialisation [Champion](/regles/specialisations/champion)."
+      ]
+    },
+    "Options": {
+      "Talents": [],
+      "Other": [
+        "Pouvoirs de tiers 1 associés à son [domaine divin](#)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Prêtrise",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son domaine divin et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une [capacité](#) de tiers 2 spécifique à son domaine divin.",
+        "Il peut maintenant invoquer un pouvoir divin spécifique à son domaine divin deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "49022307-f9f6-4da4-a58f-8ca1fa376fda",
+          "IsPublished": true,
+          "Name": "Attaque divine",
+          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des dégâts du type associé à son domaine divin."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "5dee7c12-f29d-4a09-b828-38b8ca102ed7",
+    "IsPublished": true,
+    "Slug": "astromancien",
+    "Name": "Astromancien",
+    "Tier": 1,
+    "Summary": "Mage spécialisé dans l’astromancie et les signes astrologiques.",
+    "MetaDescription": "Découvrez l’Astromancien, mage des signes et des étoiles, maîtrisant l’astromancie et les grimoires pour percer les secrets du ciel et des arcanes.",
+    "Description": "Les mages, appelés Astromanciens en raison de leur lien particulier avec les astres et les signes astrologiques, sont organisés en réseaux appartenant à une Tour de Magie. Chacun de ces réseaux remplit un objectif bien précis et conserve le secret à propos de ses opérations. De plus, les mages peuvent s’initier à un ou plusieurs cercles de magie afin d’acquérir des capacités propres à ces cercles.",
+    "Requirements": {
+      "Talent": {
+        "Id": "66e561e9-ef67-4ff7-8615-121e461b9916",
+        "IsPublished": true,
+        "Slug": "astrologie",
+        "Name": "Astrologie"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "71d95a8e-e487-4fef-bbe2-b6a6c903ebfd",
+          "IsPublished": true,
+          "Slug": "discipline",
+          "Name": "Discipline"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "98a688eb-10d5-4db5-ac37-64c8c4f6ad34",
+          "IsPublished": true,
+          "Slug": "connaissance",
+          "Name": "Connaissance"
+        },
+        {
+          "Id": "c95f665e-2da3-455f-a87e-2e38d4988a26",
+          "IsPublished": true,
+          "Slug": "linguistique",
+          "Name": "Linguistique"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
+          "IsPublished": true,
+          "Slug": "occultisme",
+          "Name": "Occultisme"
+        },
+        {
+          "Id": "3968f65a-586b-4c4c-b71e-f888c321697d",
+          "IsPublished": true,
+          "Slug": "diplomatie",
+          "Name": "Diplomatie"
+        },
+        {
+          "Id": "e52ed8a6-fd09-4b4c-a894-770ca354acc9",
+          "IsPublished": true,
+          "Slug": "langue-supplementaire",
+          "Name": "Langue supplémentaire"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Astromancie",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 d’[astromancie](#) et acquiert gratuitement un de ces pouvoirs.",
+        "Lorsqu’il [acquiert](/regles/talents/acquisition) un des [talents](/regles/talents) suivants, il acquiert gratuitement l’autre : [Initiation magique](/regles/talents/initiation-magique), [Méditation](/regles/talents/meditation)."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "9a5b7bff-374e-40cc-80ac-0e8c1e39691a",
+          "IsPublished": true,
+          "Name": "Ascendant",
+          "Description": "Le nombre maximal de [signes astrologiques](#) qu’il peut apprendre augmente de 21 à 35, suivant la formule 2 + [Intellect](/regles/attributs/intellect) + (2 × [rang](/regles/competences/rang) d’[Occultisme](/regles/competences/occultisme)).\n\nÉgalement, le temps et les matériaux nécessaires à la transcription d’un signe astrologique sont réduits de moitié."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "88454a0c-8521-4cba-a8e4-2a4e7886aaf3",
+    "IsPublished": true,
+    "Slug": "eclaireur",
+    "Name": "Éclaireur",
+    "Tier": 1,
+    "Summary": "Expert en repérage, survie et reconnaissance tactique.",
+    "MetaDescription": "Découvrez l’Éclaireur, spécialiste de reconnaissance et de survie, capable de sonder l’ennemi, tendre des embuscades et exploiter ses sens aiguisés.",
+    "Description": "À l’avant-garde de sa troupe, l’éclaireur sonde les défenses ennemies afin d’établir le meilleur plan et de profiter des brèches. Ses habiletés sont multiples et polyvalentes, ce qui lui permet de se débrouiller autant en milieu sauvage que dans une cité peuplée, dans des contextes sociaux et même dans une escarmouche dangereuse.",
+    "Requirements": {
+      "Talent": {
+        "Id": "e7282746-a39b-4f5b-b356-022579e09001",
+        "IsPublished": true,
+        "Slug": "survie",
+        "Name": "Survie"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "081ac23a-7d82-4fab-ae4e-55692267c3d9",
+          "IsPublished": true,
+          "Slug": "acrobaties",
+          "Name": "Acrobaties"
+        },
+        {
+          "Id": "89552d5e-05f9-4482-bc86-19cbf4fc9c03",
+          "IsPublished": true,
+          "Slug": "athletisme",
+          "Name": "Athlétisme"
+        },
+        {
+          "Id": "6651cbd0-51d8-4391-8385-7207c8ed80db",
+          "IsPublished": true,
+          "Slug": "melee",
+          "Name": "Mêlée"
+        },
+        {
+          "Id": "5601b8cb-9061-4a44-9dfe-2ac1fdd46f46",
+          "IsPublished": true,
+          "Slug": "formation-martiale",
+          "Name": "Formation martiale"
+        },
+        {
+          "Id": "7a8e3824-57a5-44e3-ad85-d2443f72ca4c",
+          "IsPublished": true,
+          "Slug": "furtivite",
+          "Name": "Furtivité"
+        },
+        {
+          "Id": "97c10f43-c82d-41b1-b241-9b6cace8e9ab",
+          "IsPublished": true,
+          "Slug": "orientation",
+          "Name": "Orientation"
+        },
+        {
+          "Id": "a5692e61-f95e-4147-ae10-174dcd2a8e7f",
+          "IsPublished": true,
+          "Slug": "roublardise",
+          "Name": "Roublardise"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "98a688eb-10d5-4db5-ac37-64c8c4f6ad34",
+          "IsPublished": true,
+          "Slug": "connaissance",
+          "Name": "Connaissance"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "ff67585b-bfd7-4965-a660-1fbdf0547c12",
+          "IsPublished": true,
+          "Slug": "perception",
+          "Name": "Perception"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "ecd7e18e-2055-44c4-9b9d-8057af7f6dc5",
+          "IsPublished": true,
+          "Slug": "vigilance",
+          "Name": "Vigilance"
+        },
+        {
+          "Id": "7dd9ed2f-377b-4199-ba60-0d24240804e5",
+          "IsPublished": true,
+          "Slug": "dressage",
+          "Name": "Dressage"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Avant-garde",
+      "Description": [],
+      "DiscountedTalents": [
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "c968fa05-5d67-4ac4-ae6f-321d094d3091",
+          "IsPublished": true,
+          "Name": "Cible privilégiée",
+          "Description": "Lorsqu’il réussit une [attaque](/regles/combat/attaque) contre une créature, il peut diriger toute son attention sur cette créature pendant la prochaine [minute](/regles/aventure/temps).\n\nAfin de maintenir son attention, il doit [se concentrer](/regles/magie/parametres/duree) sur cette créature, comme s’il maintenait un [pouvoir](/regles/magie/pouvoirs).\n\nUne fois par [tour](/regles/combat/deroulement/tour), lorsqu’il réussit une attaque contre la créature sur laquelle il dirige son attention, il peut ajouter [1d4 points de dégâts](/regles/combat/degats/jet) supplémentaires par [tiers](/regles/personnages/progression/tiers) de personnage.\n\nIl peut utiliser cette capacité (diriger son attention sur une créature) un nombre de fois égal à ses [Sens](/regles/attributs/sens) (minimum 1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        },
+        {
+          "Id": "a0bc7b66-8b55-44fa-a7d0-f9f9d660e9d5",
+          "IsPublished": true,
+          "Name": "Sens aiguisés",
+          "Description": "Lorsqu’il n’est pas [aveuglé](/regles/combat/conditions/aveugle), [assourdi](/regles/combat/conditions/assourdi) ou [incapable](/regles/combat/conditions/incapable), il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) s’il voit le déclencheur, par exemple un piège.\n\nÉgalement, lorsqu’une créature qu’il peut voir, et dont la [taille](/regles/especes/taille) est supérieure d’au moins une catégorie à la sienne, échoue une [attaque](/regles/combat/attaque) dirigée contre lui, alors il peut immédiatement effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite) en [réaction](/regles/combat/deroulement/tour)."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "d5f60efb-32b9-4180-965f-fec617e79c74",
+    "IsPublished": true,
+    "Slug": "elementariste",
+    "Name": "Élémentariste",
+    "Tier": 1,
+    "Summary": "Il utilise son énergie vitale pour libérer la puissance de son élément.",
+    "MetaDescription": "Découvrez l’Élémentariste, maître de l’énergie élémentaire, capable de canaliser sa force vitale pour libérer des pouvoirs destructeurs ou protecteurs.",
+    "Description": "Un Élémentariste s’est découvert la faculté de manipuler l’énergie d’un élément. Cette faculté est innée et généralement développée par l’expérience car les mentors sont rares. Le contrôle de toute cette énergie brute est généralement associé à une personnalité farouche et polyvalente. Cette faculté leur permet de combiner l’énergie élémentaire à leur force vitale, ce qui leur permet d’accroître grandement leur puissance au risque de causer des dommages irréparables à leur âme.",
+    "Requirements": {
+      "Talent": {
+        "Id": "7ba4f81d-f04b-43ed-8d2e-b5d3f17e2094",
+        "IsPublished": true,
+        "Slug": "elementarisme",
+        "Name": "Élémentarisme"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "e3bb71cc-8513-4bf0-b9ad-69e158fde51b",
+          "IsPublished": true,
+          "Slug": "resistance",
+          "Name": "Résistance"
+        },
+        {
+          "Id": "71d95a8e-e487-4fef-bbe2-b6a6c903ebfd",
+          "IsPublished": true,
+          "Slug": "discipline",
+          "Name": "Discipline"
+        },
+        {
+          "Id": "6651cbd0-51d8-4391-8385-7207c8ed80db",
+          "IsPublished": true,
+          "Slug": "melee",
+          "Name": "Mêlée"
+        },
+        {
+          "Id": "9bb1f8de-2120-4796-8271-a3d2ace4d053",
+          "IsPublished": true,
+          "Slug": "artisanat",
+          "Name": "Artisanat"
+        },
+        {
+          "Id": "97c10f43-c82d-41b1-b241-9b6cace8e9ab",
+          "IsPublished": true,
+          "Slug": "orientation",
+          "Name": "Orientation"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
+          "IsPublished": true,
+          "Slug": "occultisme",
+          "Name": "Occultisme"
+        },
+        {
+          "Id": "3c5bf24b-6c5a-44ac-9553-0954af589b77",
+          "IsPublished": true,
+          "Slug": "tromperie",
+          "Name": "Tromperie"
+        },
+        {
+          "Id": "ca25c64d-b500-473a-9919-e61d500692eb",
+          "IsPublished": true,
+          "Slug": "representation",
+          "Name": "Représentation"
+        },
+        {
+          "Id": "fb688c0c-e651-4b21-8f50-d595291efb13",
+          "IsPublished": true,
+          "Slug": "arts-martiaux",
+          "Name": "Arts martiaux"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Élémentarisme",
+      "Description": [
+        "Il peut convertir des points d’[Énergie](/regles/statistiques/energie) en points d’[essence élémentaire](#) afin d’utiliser de puissantes [capacités élémentaires](#) de tiers 1."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "0e7176d0-367d-459e-be87-2ca170ac95eb",
+          "IsPublished": true,
+          "Name": "Spécialité élémentaire",
+          "Description": "Le personnage se spécialise dans un des éléments pour lesquels il a acquis le talent [Élémentarisme](/regles/talents/elementarisme).\n\n- Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à cet [élément](/regles/talents/elementarisme) et acquiert gratuitement un de ces pouvoirs.\n- S’il a acquis le talent [Combinaison élémentaire](/regles/talents/combinaison-elementaire), il peut également acquérir les pouvoirs de tiers 1 issus d’une combinaison de deux éléments pour lesquels il a acquis le talent [Élémentarisme](/regles/talents/elementarisme). L’élément de sa spécialité doit figurer dans la combinaison élémentaire.\n\nIl peut acquérir [à rabais](/regles/talents/points) deux [talents](/regles/talents) en fonction en fonction de cet élément. S’il a [acquis](/regles/talents/acquisition) un de ces deux talents, alors le rabais est transféré à l’autre talent. S’il a acquis ces deux talents, alors les deux rabais s’appliquent à l’acquisition de son prochain [pouvoir élémentaire]().\n\n- Air : [Tromperie](/regles/talents/tromperie) et [Tissu de mensonges](/regles/talents/tissu-de-mensonges)\n- Eau : [Intuition](/regles/talents/intuition) et [Suspicion](/regles/talents/suspicion)\n- Feu : [Mêlée](/regles/talents/melee) et [Formation martiale](/regles/talents/formation-martiale)\n- Terre : [Résistance](/regles/talents/resistance) et [Robustesse accrue](/regles/talents/robustesse-accrue)\n- Esprit : [Discipline](/regles/talents/discipline) et [Endurance accrue](/regles/talents/endurance-accrue)"
+        }
+      ]
+    }
+  },
+  {
+    "Id": "a0305858-6df7-44a0-8680-57a81a53aa36",
+    "IsPublished": true,
+    "Slug": "menestrel",
+    "Name": "Ménestrel",
+    "Tier": 1,
+    "Summary": "Un artiste polyvalent qui charme, distrait et inspire par son art.",
+    "MetaDescription": "Découvrez le ménestrel, artiste ambulant qui enchante, divertit et inspire par ses talents multiples, procurant effets mystiques et soutien.",
+    "Description": "Le ménestrel est un saltimbanque, un danseur, un musicien, un conteur, un poète, un artiste ambulant. Il gagne sa vie par son art, qu’il utilise avec brio afin de faire vivre une palette d’émotions à son audience. Il est apprécié pour ses multiples talents ainsi que son art procurant des effets mystiques.",
+    "Requirements": {
+      "Talent": {
+        "Id": "ca25c64d-b500-473a-9919-e61d500692eb",
+        "IsPublished": true,
+        "Slug": "representation",
+        "Name": "Représentation"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "081ac23a-7d82-4fab-ae4e-55692267c3d9",
+          "IsPublished": true,
+          "Slug": "acrobaties",
+          "Name": "Acrobaties"
+        },
+        {
+          "Id": "7a8e3824-57a5-44e3-ad85-d2443f72ca4c",
+          "IsPublished": true,
+          "Slug": "furtivite",
+          "Name": "Furtivité"
+        },
+        {
+          "Id": "a5692e61-f95e-4147-ae10-174dcd2a8e7f",
+          "IsPublished": true,
+          "Slug": "roublardise",
+          "Name": "Roublardise"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "98a688eb-10d5-4db5-ac37-64c8c4f6ad34",
+          "IsPublished": true,
+          "Slug": "connaissance",
+          "Name": "Connaissance"
+        },
+        {
+          "Id": "c95f665e-2da3-455f-a87e-2e38d4988a26",
+          "IsPublished": true,
+          "Slug": "linguistique",
+          "Name": "Linguistique"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "ff67585b-bfd7-4965-a660-1fbdf0547c12",
+          "IsPublished": true,
+          "Slug": "perception",
+          "Name": "Perception"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "3968f65a-586b-4c4c-b71e-f888c321697d",
+          "IsPublished": true,
+          "Slug": "diplomatie",
+          "Name": "Diplomatie"
+        },
+        {
+          "Id": "3c5bf24b-6c5a-44ac-9553-0954af589b77",
+          "IsPublished": true,
+          "Slug": "tromperie",
+          "Name": "Tromperie"
+        },
+        {
+          "Id": "1945b4c7-fcf5-442f-ad92-ad8e9105ecc6",
+          "IsPublished": true,
+          "Slug": "tolerance-a-l-alcool-i",
+          "Name": "Tolérance à l’alcool I"
+        },
+        {
+          "Id": "8b38975a-dbb1-448e-9a5b-ff1637b3a77f",
+          "IsPublished": true,
+          "Slug": "armes-improvisees",
+          "Name": "Armes improvisées"
+        },
+        {
+          "Id": "e52ed8a6-fd09-4b4c-a894-770ca354acc9",
+          "IsPublished": true,
+          "Slug": "langue-supplementaire",
+          "Name": "Langue supplémentaire"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Inspiration artistique",
+      "Description": [
+        "La prochaine fois qu’il [acquiert](/regles/talents/acquisition) le talent [Expertise](/regles/talents/expertise), alors il acquiert gratuitement ce [talent](/regles/talents) pour une autre [compétence](/regles/competences) de son choix."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "a304cfeb-1041-4328-94e5-26cc4f15b4b0",
+          "IsPublished": true,
+          "Name": "Berceuse apaisante",
+          "Description": "Il peut jouer une douce berceuse pendant une [halte](/regles/aventure/repos/halte). Il dépense 15 points d’[Énergie](/regles/statistiques/energie) et sélectionne un nombre de créatures inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum 1).\n\nIl doit voir ces créatures, celles-ci doivent l’entendre, et elles doivent être situées à 4,5 mètres ou moins de sa position. Il peut se désigner lui-même comme cible.\n\nÀ la fin de la halte, chaque cible récupère 1d10 [points de Vitalité](/regles/statistiques/vitalite). Il doit jouer de manière continue, et la halte ne doit pas être interrompue.\n\nLorsqu’il atteint le [tiers 2](/regles/personnages/progression/tiers), le personnage peut dépenser 30 points d’Énergie afin d’augmenter à 2d10 les points de Vitalité récupérés.\n\nLorsqu’il atteint le tiers 3, il peut dépenser 45 points d’Énergie afin d’augmenter à 3d10 les points de Vitalité récupérés.\n\nLe personnage doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+        },
+        {
+          "Id": "82f46d82-efbd-4ba0-84ba-5125f8420509",
+          "IsPublished": true,
+          "Name": "Boléro héroïque",
+          "Description": "Par une [action](/regles/combat/deroulement/tour), le personnage dépense 5 points d’[Énergie](/regles/statistiques/energie) afin de jouer un boléro inspirant la gloire à une créature qu’il peut voir, qui peut l’entendre, et qui est située à 18 mètres ou moins de sa position.\n\nCelle-ci peut ajouter 1d10 à n’importe quel [test](/regles/competences/tests) de [compétence](/regles/competences) pendant la prochaine [heure](/regles/aventure/temps), avant de savoir si le résultat est une réussite ou un échec.\n\nUne créature ne peut bénéficier que d’une seule inspiration à la fois. L’inspiration est perdue si elle n’est pas utilisée à la fin de l’heure.\n\nLe personnage peut utiliser cette capacité un nombre de fois égal à son [Intellect](/regles/attributs/intellect) (minimum 1). Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "62c2c021-e25a-4dbb-bb24-4c9021561355",
+    "IsPublished": true,
+    "Slug": "roublard",
+    "Name": "Roublard",
+    "Tier": 1,
+    "Summary": "Spécialiste des ruses, des outils et des frappes rapides et précises.",
+    "MetaDescription": "Découvrez le roublard, maître du subterfuge, des outils de voleur et des mouvements furtifs entre ombre et opportunité.",
+    "Description": "Le terme roublard désigne tout individu utilisant l’astuce et la ruse afin de parvenir à ses fins. Il englobe généralement les voleurs, les égorgeurs, les espions, les bandits et les escrocs. Ils n’utilisent pas toujours leurs aptitudes à des fins malfaisantes, mais ces aptitudes ont néanmoins toujours un aspect illégal ou immoral.",
+    "Requirements": {
+      "Talent": {
+        "Id": "a8d60fd0-9754-4179-ad92-1cfcaa0df43a",
+        "IsPublished": true,
+        "Slug": "trousses",
+        "Name": "Trousses"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "081ac23a-7d82-4fab-ae4e-55692267c3d9",
+          "IsPublished": true,
+          "Slug": "acrobaties",
+          "Name": "Acrobaties"
+        },
+        {
+          "Id": "89552d5e-05f9-4482-bc86-19cbf4fc9c03",
+          "IsPublished": true,
+          "Slug": "athletisme",
+          "Name": "Athlétisme"
+        },
+        {
+          "Id": "7a8e3824-57a5-44e3-ad85-d2443f72ca4c",
+          "IsPublished": true,
+          "Slug": "furtivite",
+          "Name": "Furtivité"
+        },
+        {
+          "Id": "9bb1f8de-2120-4796-8271-a3d2ace4d053",
+          "IsPublished": true,
+          "Slug": "artisanat",
+          "Name": "Artisanat"
+        },
+        {
+          "Id": "97c10f43-c82d-41b1-b241-9b6cace8e9ab",
+          "IsPublished": true,
+          "Slug": "orientation",
+          "Name": "Orientation"
+        },
+        {
+          "Id": "a5692e61-f95e-4147-ae10-174dcd2a8e7f",
+          "IsPublished": true,
+          "Slug": "roublardise",
+          "Name": "Roublardise"
+        },
+        {
+          "Id": "381cff49-da31-45f8-9e13-f054ce52327d",
+          "IsPublished": true,
+          "Slug": "investigation",
+          "Name": "Investigation"
+        },
+        {
+          "Id": "9e59e2ba-adcc-4498-b4a1-4c8191ab11a4",
+          "IsPublished": true,
+          "Slug": "medecine",
+          "Name": "Médecine"
+        },
+        {
+          "Id": "ff67585b-bfd7-4965-a660-1fbdf0547c12",
+          "IsPublished": true,
+          "Slug": "perception",
+          "Name": "Perception"
+        },
+        {
+          "Id": "966a84ab-ca0e-4460-b9d0-3a38c4c53ade",
+          "IsPublished": true,
+          "Slug": "intuition",
+          "Name": "Intuition"
+        },
+        {
+          "Id": "3968f65a-586b-4c4c-b71e-f888c321697d",
+          "IsPublished": true,
+          "Slug": "diplomatie",
+          "Name": "Diplomatie"
+        },
+        {
+          "Id": "3c5bf24b-6c5a-44ac-9553-0954af589b77",
+          "IsPublished": true,
+          "Slug": "tromperie",
+          "Name": "Tromperie"
+        },
+        {
+          "Id": "ca25c64d-b500-473a-9919-e61d500692eb",
+          "IsPublished": true,
+          "Slug": "representation",
+          "Name": "Représentation"
+        },
+        {
+          "Id": "a215357d-53e8-4d1c-a471-4c1dd88915dd",
+          "IsPublished": true,
+          "Slug": "coup-critique",
+          "Name": "Coup critique"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Subterfuge",
+      "Description": [
+        "La prochaine fois qu’il [acquiert](/regles/talents/acquisition) le talent [Expertise](/regles/talents/expertise), alors il acquiert gratuitement ce [talent](/regles/talents) pour une autre [compétence](/regles/competences) de son choix."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
+          "IsPublished": true,
+          "Slug": "attaque-sournoise",
+          "Name": "Attaque sournoise"
+        },
+        {
+          "Id": "2e928d87-34eb-4a26-8dd0-453c021fda61",
+          "IsPublished": false,
+          "Slug": "parade",
+          "Name": "Parade"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "bd10409d-cd26-402c-abbe-56c465a9605d",
+          "IsPublished": true,
+          "Name": "Escarmouche",
+          "Description": "Lorsqu’une créature ennemie termine son [tour](/regles/combat/deroulement/tour) à 1,5 mètres ou moins de la position du personnage, alors celui-ci peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer un [Déplacement](/regles/combat/activites/deplacement) à la moitié de sa [vitesse](/regles/aventure/mouvement/vitesse) ou un [Pas prudent](/regles/combat/activites/pas-prudent).\n\nLe [test](/regles/competences/tests) des [attaques d’opportunité](/regles/combat/attaque/opportunite) déclenchées par ce déplacement est affligé du [désavantage](/regles/competences/tests/avantage-desavantage)."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "01bba848-3cf3-4d09-bedc-5710a65f25ea",
+    "IsPublished": true,
+    "Slug": "archer",
+    "Name": "Archer",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "L’archer se tient fièrement sur le champ de bataille, une silhouette gracieuse déployant l’arc avec une maîtrise inégalée. Vêtu d’un gambison ou d’une armure n’entravant pas ses mouvements, son regard perçant scrute l’horizon. Les doigts habiles manipulent la corde, libérant des flèches d’une précision redoutable. Son art transcende la simple compétence, l’archer incarne la symbiose entre la nature et la guerre, une force mortelle capable de façonner le destin à travers la danse gracieuse de ses flèches.",
+    "Requirements": {
+      "Talent": {
+        "Id": "67a9983f-4a92-46e6-a5b9-6c4d09e531c2",
+        "IsPublished": true,
+        "Slug": "tir-rapide",
+        "Name": "Tir rapide"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Archerie",
+      "Description": [],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "679867e2-c237-4751-bce5-78b7af15397e",
+          "IsPublished": true,
+          "Name": "Regard perçant",
+          "Description": "Lorsqu’il effectue l’activité [Viser et tirer](/regles/combat/activites/viser-tirer), il peut utiliser deux [actions](/regles/combat/deroulement/tour) et effectuer l’activité [Chercher](/regles/combat/activites/chercher) en même temps, en [action libre](/regles/combat/deroulement/tour).\n\nLorsqu’il en fait ainsi, il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) de [Perception](/regles/competences/perception)."
+        },
+        {
+          "Id": "20ff03cf-6ca0-4c93-8d43-7d1e59773f67",
+          "IsPublished": true,
+          "Name": "Tir à bout portant",
+          "Description": "Il peut effectuer l’activité [Viser et tirer](/regles/combat/activites/viser-tirer) lorsqu’il utilise sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite).\n\nIl ne peut utiliser qu’une seule [action](/regles/combat/deroulement/tour)."
+        },
+        {
+          "Id": "01e353af-16ed-43d5-9106-94d561bba842",
+          "IsPublished": true,
+          "Name": "Tir puissant",
+          "Description": "Lorsqu’il effectue l’activité [Viser et tirer](/regles/combat/activites/viser-tirer), il peut cibler deux créatures par une même [attaque](/regles/combat/attaque) en dépensant 10 points d’[Énergie](/regles/statistiques/energie).\n\nCes deux créatures doivent être situées à 1,5 mètres l’une de l’autre, elles doivent se trouver dans la [portée](/regles/equipement/armes/proprietes) de l’[arme](/regles/equipement/armes), et une de ces créatures doit être placée derrière l’autre, de manière qu’elles se trouvent toutes deux dans la ligne de mire du personnage.\n\nLe même [test](/regles/competences/tests) d’attaque et le même [jet de dégâts](/regles/combat/degats/jet) sont utilisés contre ces deux créatures."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "74b56aac-1c53-4aca-89ce-deaf4a4c121e",
+    "IsPublished": true,
+    "Slug": "augure",
+    "Name": "Augure",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Niché au sommet d’un mont, drapé dans ses toges sacrées, l’augure observe les oiseaux volant au-dessus de lui, scrutant les signes et présages que les dieux lui envoient. C’est à partir d’interprétations telles celles-ci que l’augure guide la populace, les généraux et même les nobles. Sa magie fait appel aux esprits qui peuvent prédire le futur et prédire le destin. Il souhaite ne pas se tromper dans ses prédictions et montrer la bonne voie dans sa sphère d’influence.",
+    "Requirements": {
+      "Talent": {
+        "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+        "IsPublished": true,
+        "Slug": "suspicion",
+        "Name": "Suspicion"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Élémentariste](/regles/specialisations/elementariste) et s’être spécialisé dans l’élément [Esprit](/regles/talents/elementarisme).",
+        "Il ne doit pas avoir acquis la spécialisation [Haruspice](/regles/specialisations/haruspice)."
+      ]
+    },
+    "Options": {
+      "Talents": [],
+      "Other": [
+        "Pouvoirs de tiers 1 associés à l’élément Esprit ([Divination](#))."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Présages",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à l'élément Esprit ([Divination](#)) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut désormais utiliser de puissantes [capacités élémentaires](#) de tiers 2."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "47a6e879-081d-4067-b3cb-850ed0fd477a",
+          "IsPublished": true,
+          "Name": "Attaque élémentaire",
+          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des [dégâts radiants](/regles/combat/degats/types)."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "da1297f8-8a85-48e8-83da-e5c6c90d5dfd",
+    "IsPublished": true,
+    "Slug": "bricoleur",
+    "Name": "Bricoleur",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "À l’aide de son imagination débordante et de ses outils rudimentaires ou improvisés, le bricoleur répare tout et invente des appareils hors du commun. Il voit chaque problème comme une opportunité de création et utilise ses mains expertes et son esprit vif afin d’apporter de solutions brillantes aux problèmes du quotidien, améliorant ainsi la vie de tous. Bien sûr, il bénéficie d’un peu d’aide magique afin de l’aider à accomplir ces prouesses.",
+    "Requirements": {
+      "Talent": {
+        "Id": "97bc80a5-4c5f-4e79-806f-83587553d743",
+        "IsPublished": true,
+        "Slug": "expertise-artisanale",
+        "Name": "Expertise artisanale"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis les talents [Trousses](/regles/talents/trousses) et [Infusions magiques](/regles/talents/infusions-magiques).",
+        "Il doit également avoir acquis un [bricolage magique](#) de tiers 1. Les bricolages magiques acquis gratuitement ne satisfont pas cette condition."
+      ]
+    },
+    "Options": {
+      "Talents": [],
+      "Other": [
+        "Un [bricolage magique](#) de tiers 1."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Ingéniosité magique",
+      "Description": [
+        "Il peut acquérir les [bricolages magiques](#) de tiers 2 et acquiert gratuitement un de ces bricolages magiques. Afin de [canaliser](/regles/magie/pouvoirs/canalisation) ces bricolages magiques à un [niveau](/regles/magie/pouvoirs/niveau) supérieur, il doit avoir acquis le talent [Magie puissante](/regles/talents/magie-puissante) ainsi qu’une des spécialisations suivantes : [Alchimiste](/regles/specialisations/alchimiste) ou [Artificier](/regles/specialisations/artificier)."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "41bf8836-a50c-4bd4-9e10-e41dc1b8efdf",
+          "IsPublished": true,
+          "Name": "Adepte d’artefacts",
+          "Description": "La [limite d’artefacts magiques](#) auxquels il peut s’harmoniser simultanément augmente à 4.\n\nLorsque son [tiers](/regles/personnages/progression/tiers) atteint 3, ce nombre augmente à 5 et il ignore les requis de [spécialisations](/regles/specialisations) et d’[espèces](/regles/especes) lorsqu’il s’harmonise à un artefact magique.\n\nÉgalement, lorsqu’il fabrique un artefact magique de rareté commune ou peu fréquente, il réduit de moitié le temps et les matériaux nécessaires à la fabrication."
+        },
+        {
+          "Id": "cccd3f97-57f7-4deb-a8cd-5a0acccd9f54",
+          "IsPublished": true,
+          "Name": "Éclair de génie",
+          "Description": "Lorsqu’il voit un allié situé à 9 mètres ou moins de sa position effectuer un [test](/regles/competences/tests) de [compétence](/regles/competences), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’ajouter au test un bonus égal à son [Intellect](/regles/attributs/intellect) (minimum&nbsp;1).\n\nIl peut utiliser cette capacité un nombre de fois égal à son Intellect (minimum 1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        },
+        {
+          "Id": "3f078896-d3a1-4ceb-8af6-7a956c975554",
+          "IsPublished": true,
+          "Name": "Escamotage magique",
+          "Description": "\uD83D\uDEA7\n\nLorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) le [niveau 1](/regles/magie/pouvoirs/niveau) du [pouvoir](/regles/magie/pouvoirs) [Main magique](#), il peut effectuer des actions supplémentaires avec la main :\n\n- Ranger un objet dans un conteneur porté ou tenu par une autre créature.\n- Récupérer un objet d’un conteneur porté ou tenu par une autre créature.\n- Utiliser des [outils de voleur](/regles/equipement/outils) à distance afin de [crocheter une serrure](/regles/competences/roublardise) ou [désamorcer un piège](/regles/competences/roublardise).\n\nIl peut effectuer ces actions de manière cachée par un [test](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) ou de [Roublardise](/regles/competences/roublardise), au choix.\n\nUne créature doit réussir un [test opposé](/regles/competences/tests/oppose) d’[Investigation](/regles/competences/investigation) ou de [Perception](/regles/competences/perception) afin de \uD83D\uDEA7.\n\n\uD83D\uDEA7 Méfait feutré\n\nLorsqu’il atteint le [tiers 3](/regles/personnages/progression/tiers), il peut rendre la main spectrale [invisible](/regles/combat/conditions/invisible). Le test opposé est alors affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n\n\uD83D\uDEA7Il peut également distraire une créature jusqu’à la fin de son tour, ce qui lui confère l’avantage au test de ses attaques dirigées contre cette créature.\n\nStarting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.\n\nAt 13th level, you gain the ability to distract targets with your Mage Hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn."
+        }
+      ]
+    }
+  }
+]
