@@ -35,7 +35,7 @@ internal class Startup
     }
     services.AddSingleton<IApplicationContext, SeedingApplicationContext>();
 
-    services.AddHostedService<CmsSeedingWorker>();
+    services.AddHostedService<SeedingWorker>();
     AddCommandHandlers(services);
   }
 
@@ -45,5 +45,6 @@ internal class Startup
     services.AddTransient<ICommandHandler<MigrateDatabaseTask, TaskResult>, MigrateDatabaseTaskHandler>();
     services.AddTransient<ICommandHandler<SeedContentTypesTask, TaskResult>, SeedContentTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedFieldTypesTask, TaskResult>, SeedFieldTypesTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedUsersTask, TaskResult>, SeedUsersTaskHandler>();
   }
 }
