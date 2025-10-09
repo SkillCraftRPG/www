@@ -22,7 +22,7 @@ const title: string = "Éducations";
 const { data } = await useLazyAsyncData<SearchResults<Education>>(
   "educations",
   () =>
-    $fetch("/api/educations", {
+    $fetch("/api/educations?sort=Slug", {
       baseURL: config.public.apiBaseUrl,
     }),
   {
