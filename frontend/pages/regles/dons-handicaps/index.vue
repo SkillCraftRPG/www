@@ -31,7 +31,7 @@ const title: string = "Dons & Handicaps";
 const { data } = await useLazyAsyncData<SearchResults<Customization>>(
   "customizations",
   () =>
-    $fetch("/api/customizations", {
+    $fetch("/api/customizations?sort=Slug", {
       baseURL: config.public.apiBaseUrl,
     }),
   {
