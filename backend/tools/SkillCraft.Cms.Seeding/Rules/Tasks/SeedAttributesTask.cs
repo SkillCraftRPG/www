@@ -42,13 +42,13 @@ internal class SeedAttributesTaskHandler : ICommandHandler<SeedAttributesTask, T
 
     if (entities.Length > 0)
     {
-      SearchResults<AttributeModel> attributes = await _attributeQuerier.SearchAsync(new SearchAttributesPayload(), cancellationToken);
-      Dictionary<Guid, AttributeModel> attributesById = attributes.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Attributes} attribute(s) from database.", attributesById.Count);
+      SearchResults<AttributeModel> results = await _attributeQuerier.SearchAsync(new SearchAttributesPayload(), cancellationToken);
+      Dictionary<Guid, AttributeModel> attributes = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Attributes} attribute(s) from database.", attributes.Count);
 
       foreach (AttributeDto entity in entities)
       {
-        _ = attributesById.TryGetValue(entity.Id, out AttributeModel? attribute);
+        _ = attributes.TryGetValue(entity.Id, out AttributeModel? attribute);
         if (attribute is null || HasChanges(attribute, entity))
         {
           Content content;

@@ -42,13 +42,13 @@ internal class SeedSkillsTaskHandler : ICommandHandler<SeedSkillsTask, TaskResul
 
     if (entities.Length > 0)
     {
-      SearchResults<SkillModel> skills = await _skillQuerier.SearchAsync(new SearchSkillsPayload(), cancellationToken);
-      Dictionary<Guid, SkillModel> skillsById = skills.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Skills} skill(s) from database.", skillsById.Count);
+      SearchResults<SkillModel> results = await _skillQuerier.SearchAsync(new SearchSkillsPayload(), cancellationToken);
+      Dictionary<Guid, SkillModel> skills = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Skills} skill(s) from database.", skills.Count);
 
       foreach (SkillDto entity in entities)
       {
-        _ = skillsById.TryGetValue(entity.Id, out SkillModel? skill);
+        _ = skills.TryGetValue(entity.Id, out SkillModel? skill);
         if (skill is null || HasChanges(skill, entity))
         {
           Content content;

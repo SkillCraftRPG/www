@@ -43,13 +43,13 @@ internal class SeedCustomizationsTaskHandler : ICommandHandler<SeedCustomization
 
     if (entities.Length > 0)
     {
-      SearchResults<CustomizationModel> customizations = await _customizationQuerier.SearchAsync(new SearchCustomizationsPayload(), cancellationToken);
-      Dictionary<Guid, CustomizationModel> customizationsById = customizations.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Customizations} customization(s) from database.", customizationsById.Count);
+      SearchResults<CustomizationModel> results = await _customizationQuerier.SearchAsync(new SearchCustomizationsPayload(), cancellationToken);
+      Dictionary<Guid, CustomizationModel> customizations = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Customizations} customization(s) from database.", customizations.Count);
 
       foreach (CustomizationDto entity in entities)
       {
-        _ = customizationsById.TryGetValue(entity.Id, out CustomizationModel? customization);
+        _ = customizations.TryGetValue(entity.Id, out CustomizationModel? customization);
         if (customization is null || HasChanges(customization, entity))
         {
           Content content;

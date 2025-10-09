@@ -45,13 +45,13 @@ internal class SeedEducationsTaskHandler : ICommandHandler<SeedEducationsTask, T
 
     if (entities.Length > 0)
     {
-      SearchResults<EducationModel> educations = await _educationQuerier.SearchAsync(new SearchEducationsPayload(), cancellationToken);
-      Dictionary<Guid, EducationModel> educationsById = educations.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Educations} education(s) from database.", educationsById.Count);
+      SearchResults<EducationModel> results = await _educationQuerier.SearchAsync(new SearchEducationsPayload(), cancellationToken);
+      Dictionary<Guid, EducationModel> educations = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Educations} education(s) from database.", educations.Count);
 
       foreach (EducationDto entity in entities)
       {
-        _ = educationsById.TryGetValue(entity.Id, out EducationModel? education);
+        _ = educations.TryGetValue(entity.Id, out EducationModel? education);
         if (education is null || HasChanges(education, entity))
         {
           if (entity.Feature is not null)

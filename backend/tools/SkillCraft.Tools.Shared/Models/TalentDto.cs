@@ -1,8 +1,6 @@
-﻿using SkillCraft.Tools.Shared.Models;
+﻿namespace SkillCraft.Tools.Shared.Models;
 
-namespace SkillCraft.Rules.Extractor.Models;
-
-internal class TalentDto
+public class TalentDto
 {
   public Guid Id { get; set; }
 

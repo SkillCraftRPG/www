@@ -45,13 +45,13 @@ internal class SeedCastesTaskHandler : ICommandHandler<SeedCastesTask, TaskResul
 
     if (entities.Length > 0)
     {
-      SearchResults<CasteModel> castes = await _casteQuerier.SearchAsync(new SearchCastesPayload(), cancellationToken);
-      Dictionary<Guid, CasteModel> castesById = castes.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Castes} caste(s) from database.", castesById.Count);
+      SearchResults<CasteModel> results = await _casteQuerier.SearchAsync(new SearchCastesPayload(), cancellationToken);
+      Dictionary<Guid, CasteModel> castes = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Castes} caste(s) from database.", castes.Count);
 
       foreach (CasteDto entity in entities)
       {
-        _ = castesById.TryGetValue(entity.Id, out CasteModel? caste);
+        _ = castes.TryGetValue(entity.Id, out CasteModel? caste);
         if (caste is null || HasChanges(caste, entity))
         {
           if (entity.Feature is not null)

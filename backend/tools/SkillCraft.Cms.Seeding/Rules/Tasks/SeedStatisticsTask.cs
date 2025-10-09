@@ -42,13 +42,13 @@ internal class SeedStatisticsTaskHandler : ICommandHandler<SeedStatisticsTask, T
 
     if (entities.Length > 0)
     {
-      SearchResults<StatisticModel> statistics = await _statisticQuerier.SearchAsync(new SearchStatisticsPayload(), cancellationToken);
-      Dictionary<Guid, StatisticModel> statisticsById = statistics.Items.ToDictionary(x => x.Id, x => x);
-      _logger.LogInformation("Retrieved {Statistics} statistic(s) from database.", statisticsById.Count);
+      SearchResults<StatisticModel> results = await _statisticQuerier.SearchAsync(new SearchStatisticsPayload(), cancellationToken);
+      Dictionary<Guid, StatisticModel> statistics = results.Items.ToDictionary(x => x.Id, x => x);
+      _logger.LogInformation("Retrieved {Statistics} statistic(s) from database.", statistics.Count);
 
       foreach (StatisticDto entity in entities)
       {
-        _ = statisticsById.TryGetValue(entity.Id, out StatisticModel? statistic);
+        _ = statistics.TryGetValue(entity.Id, out StatisticModel? statistic);
         if (statistic is null || HasChanges(statistic, entity))
         {
           Content content;

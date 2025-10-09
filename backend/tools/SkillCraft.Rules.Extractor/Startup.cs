@@ -21,7 +21,7 @@ internal class Startup
   {
     services.AddSkillCraftCmsCore();
     services.AddSkillCraftCmsInfrastructure();
-    DatabaseProvider databaseProvider = _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCoreSqlServer;
+    DatabaseProvider databaseProvider = GetDatabaseProvider();
     switch (databaseProvider)
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
@@ -38,6 +38,15 @@ internal class Startup
 
     services.AddHostedService<RuleExtractor>();
     AddCommandHandlers(services);
+  }
+  private DatabaseProvider GetDatabaseProvider()
+  {
+    string? value = Environment.GetEnvironmentVariable("DATABASE_PROVIDER");
+    if (!string.IsNullOrWhiteSpace(value) && Enum.TryParse(value.Trim(), ignoreCase: true, out DatabaseProvider provider))
+    {
+      return provider;
+    }
+    return _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCorePostgreSQL;
   }
 
   private static void AddCommandHandlers(IServiceCollection services)
