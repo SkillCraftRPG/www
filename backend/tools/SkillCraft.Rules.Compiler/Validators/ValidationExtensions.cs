@@ -33,9 +33,4 @@ internal static class ValidationExtensions
   {
     return ruleBuilder.NotEmpty().MaximumLength(40).SetValidator(new SlugValidator<T>());
   }
-
-  public static IRuleBuilderOptions<T, string> Summary<T>(this IRuleBuilder<T, string> ruleBuilder)
-  {
-    return ruleBuilder.NotEmpty().MaximumLength(byte.MaxValue); // NOTE(fpion): should not exceed 160 characters.
-  }
 }
