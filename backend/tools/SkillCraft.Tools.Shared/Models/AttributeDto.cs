@@ -1,9 +1,9 @@
 ﻿using SkillCraft.Cms.Core.Attributes;
 using SkillCraft.Contracts;
 
-namespace SkillCraft.Rules.Extractor.Models;
+namespace SkillCraft.Tools.Shared.Models;
 
-internal class AttributeDto
+public class AttributeDto
 {
   public Guid Id { get; set; }
 

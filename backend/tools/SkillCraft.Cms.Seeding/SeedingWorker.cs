@@ -3,6 +3,7 @@ using Krakenar.Core;
 using Krakenar.Core.Users;
 using Logitar.EventSourcing;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
+using SkillCraft.Cms.Seeding.Rules.Tasks;
 using SkillCraft.Cms.Seeding.Settings;
 using User = Krakenar.Contracts.Users.User;
 
@@ -45,10 +46,10 @@ public class SeedingWorker : BackgroundService
     using IServiceScope scope = _serviceProvider.CreateScope();
     _commandBus = scope.ServiceProvider.GetRequiredService<ICommandBus>();
 
+    DefaultSettings defaults = _serviceProvider.GetRequiredService<DefaultSettings>();
+
     try
     {
-      DefaultSettings defaults = DefaultSettings.Initialize(_configuration);
-
       // NOTE(fpion): the order of these tasks matter.
       await ExecuteAsync(new MigrateDatabaseTask(), cancellationToken);
       await ExecuteAsync(new InitializeConfigurationTask(defaults), cancellationToken);
@@ -63,6 +64,10 @@ public class SeedingWorker : BackgroundService
       await ExecuteAsync(new SeedContentTypesTask(), cancellationToken);
       await ExecuteAsync(new SeedFieldTypesTask(), cancellationToken);
       await ExecuteAsync(new SeedContentTypesTask(fieldDefinitions: true), cancellationToken);
+
+      await ExecuteAsync(new SeedAttributesTask(), cancellationToken);
+      await ExecuteAsync(new SeedStatisticsTask(), cancellationToken);
+      await ExecuteAsync(new SeedSkillsTask(), cancellationToken);
     }
     catch (Exception exception)
     {

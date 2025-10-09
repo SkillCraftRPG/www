@@ -1,4 +1,6 @@
-﻿namespace SkillCraft.Rules.Extractor.Models;
+﻿using SkillCraft.Tools.Shared.Models;
+
+namespace SkillCraft.Rules.Extractor.Models;
 
 internal class EducationDto
 {

@@ -5,6 +5,8 @@ using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
 using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
+using SkillCraft.Cms.Seeding.Rules.Tasks;
+using SkillCraft.Cms.Seeding.Settings;
 
 namespace SkillCraft.Cms.Seeding;
 
@@ -19,6 +21,8 @@ internal class Startup
 
   public void ConfigureServices(IServiceCollection services)
   {
+    services.AddSingleton(DefaultSettings.Initialize(_configuration));
+
     services.AddSkillCraftCmsCore();
     services.AddSkillCraftCmsInfrastructure();
     DatabaseProvider databaseProvider = _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCoreSqlServer;
@@ -43,8 +47,11 @@ internal class Startup
   {
     services.AddTransient<ICommandHandler<InitializeConfigurationTask, TaskResult>, InitializeConfigurationTaskHandler>();
     services.AddTransient<ICommandHandler<MigrateDatabaseTask, TaskResult>, MigrateDatabaseTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedAttributesTask, TaskResult>, SeedAttributesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedContentTypesTask, TaskResult>, SeedContentTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedFieldTypesTask, TaskResult>, SeedFieldTypesTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedSkillsTask, TaskResult>, SeedSkillsTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedStatisticsTask, TaskResult>, SeedStatisticsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedUsersTask, TaskResult>, SeedUsersTaskHandler>();
   }
 }

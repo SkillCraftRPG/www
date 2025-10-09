@@ -15,4 +15,6 @@ public class StatisticModel : Aggregate
   public string? Summary { get; set; }
   public string? MetaDescription { get; set; }
   public string? Description { get; set; }
+
+  public override string ToString() => $"{Name} | {base.ToString()}";
 }
