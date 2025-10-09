@@ -65,6 +65,7 @@ internal class Startup
     services.AddTransient<ICommandHandler<SeedEducationsTask, TaskResult>, SeedEducationsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedFieldTypesTask, TaskResult>, SeedFieldTypesTaskHandler>();
     services.AddTransient<ICommandHandler<SeedSkillsTask, TaskResult>, SeedSkillsTaskHandler>();
+    services.AddTransient<ICommandHandler<SeedSpecializationsTask, TaskResult>, SeedSpecializationsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedStatisticsTask, TaskResult>, SeedStatisticsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedTalentsTask, TaskResult>, SeedTalentsTaskHandler>();
     services.AddTransient<ICommandHandler<SeedUsersTask, TaskResult>, SeedUsersTaskHandler>();

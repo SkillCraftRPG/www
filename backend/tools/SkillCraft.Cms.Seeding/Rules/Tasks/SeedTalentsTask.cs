@@ -104,7 +104,7 @@ internal class SeedTalentsTaskHandler : ICommandHandler<SeedTalentsTask, TaskRes
             DisplayName = entity.Name,
             Description = entity.MetaDescription
           };
-          invariant.FieldValues.AddRange(GetLocaleFieldValues(entity));
+          locale.FieldValues.AddRange(GetLocaleFieldValues(entity));
           content = await _contentService.SaveLocaleAsync(content.Id, locale, _defaults.Locale, cancellationToken)
             ?? throw new InvalidOperationException($"The talent content 'Id={entity.Id}' was not found.");
         }

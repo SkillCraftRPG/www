@@ -1,8 +1,6 @@
-﻿using SkillCraft.Tools.Shared.Models;
+﻿namespace SkillCraft.Tools.Shared.Models;
 
-namespace SkillCraft.Rules.Extractor.Models;
-
-internal record ReservedTalentDto
+public record ReservedTalentDto
 {
   public string Name { get; set; }
   public List<string> Description { get; set; } = [];

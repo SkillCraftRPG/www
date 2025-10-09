@@ -99,15 +99,78 @@ internal class FeatureService : IFeatureService
       return string.Join('_', FormatUniqueName(prefix), FormatUniqueName(name));
     }
 
-    string[] words = name.Split(' ');
-    return string.Join("", words.Where(word => !string.IsNullOrWhiteSpace(word)).Select(Capitalize));
+    List<string> words = new(capacity: name.Length);
+    StringBuilder word = new();
+    foreach (char c in name)
+    {
+      if (char.IsLetterOrDigit(c))
+      {
+        word.Append(c);
+      }
+      else if (word.Length > 0)
+      {
+        words.Add(word.ToString());
+        word.Clear();
+      }
+    }
+    if (word.Length > 0)
+    {
+      words.Add(word.ToString());
+    }
+    return string.Join("", words.Select(Format));
   }
-  private static string Capitalize(string s)
+  private static string Format(string s)
   {
     ArgumentException.ThrowIfNullOrWhiteSpace(s, nameof(s));
-    s = s.Trim();
+    s = Unaccent(s.Trim());
 
     return s.Length == 1 ? s.ToUpperInvariant() : string.Concat(s[..1].ToUpperInvariant(), s[1..].ToLowerInvariant());
+  }
+
+  private static readonly Dictionary<char, string> _accents = new()
+  {
+    ['Á'] = "A",
+    ['À'] = "A",
+    ['Â'] = "A",
+    ['Ä'] = "A",
+    ['á'] = "a",
+    ['à'] = "a",
+    ['â'] = "a",
+    ['ä'] = "a",
+
+    ['Ç'] = "C",
+    ['ç'] = "c",
+
+    ['É'] = "E",
+    ['È'] = "E",
+    ['Ê'] = "E",
+    ['Ë'] = "E",
+    ['é'] = "e",
+    ['è'] = "e",
+    ['ê'] = "e",
+    ['ë'] = "e",
+
+    ['Í'] = "I",
+    ['Ì'] = "I",
+    ['Î'] = "I",
+    ['Ï'] = "I",
+    ['í'] = "i",
+    ['ì'] = "i",
+    ['î'] = "i",
+    ['ï'] = "i"
+  };
+  private static string Unaccent(string s)
+  {
+    StringBuilder result = new();
+    foreach (char c in s)
+    {
+      if (!char.IsLetterOrDigit(c))
+      {
+        continue;
+      }
+      result.Append(_accents.TryGetValue(c, out string? replacement) ? replacement : c);
+    }
+    return result.ToString();
   }
 
   private static IReadOnlyCollection<FieldValuePayload> GetLocaleFieldValues(FeatureDto feature)

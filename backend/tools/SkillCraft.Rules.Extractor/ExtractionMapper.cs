@@ -1,6 +1,5 @@
 ﻿using Logitar;
 using SkillCraft.Cms.Infrastructure.Entities;
-using SkillCraft.Rules.Extractor.Models;
 using SkillCraft.Tools.Shared.Models;
 
 namespace SkillCraft.Rules.Extractor;

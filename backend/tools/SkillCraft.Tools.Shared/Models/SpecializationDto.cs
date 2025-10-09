@@ -1,6 +1,6 @@
-﻿namespace SkillCraft.Rules.Extractor.Models;
+﻿namespace SkillCraft.Tools.Shared.Models;
 
-internal class SpecializationDto
+public class SpecializationDto
 {
   public Guid Id { get; set; }
 

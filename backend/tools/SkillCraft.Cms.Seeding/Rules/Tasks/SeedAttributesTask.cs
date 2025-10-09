@@ -84,7 +84,7 @@ internal class SeedAttributesTaskHandler : ICommandHandler<SeedAttributesTask, T
               DisplayName = entity.Name,
               Description = entity.MetaDescription
             };
-            invariant.FieldValues.AddRange(GetLocaleFieldValues(entity));
+            locale.FieldValues.AddRange(GetLocaleFieldValues(entity));
             content = await _contentService.SaveLocaleAsync(content.Id, locale, _defaults.Locale, cancellationToken)
               ?? throw new InvalidOperationException($"The attribute content 'Id={entity.Id}' was not found.");
           }
