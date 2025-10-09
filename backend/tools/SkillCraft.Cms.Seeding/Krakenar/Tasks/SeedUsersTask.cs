@@ -38,8 +38,10 @@ internal class SeedUsersTaskHandler : ICommandHandler<SeedUsersTask, TaskResult>
           ActorId? actorId = _applicationContext.ActorId;
           if (!actorId.HasValue)
           {
-            throw new InvalidOperationException("An user actor is required.");
+            _logger.LogWarning("The user '{UniqueName}' is being ignored, because it does not have an ID, and no actor has been specified.", payload.UniqueName);
+            continue;
           }
+
           UserId userId = new(actorId.Value.Value);
           payload.Id = userId.EntityId;
         }
