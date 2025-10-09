@@ -1,0 +1,122 @@
+﻿[
+  {
+    "Id": "dc5ac805-5e16-438b-9bbf-5cae99007e68",
+    "IsPublished": true,
+    "Slug": "abruti",
+    "Name": "Abruti",
+    "Kind": "Disability",
+    "Summary": "Limité, maladroit et désavantagé dans l’usage de son intellect.",
+    "MetaDescription": "Découvrez l’Abruti, un personnage simple d’esprit ou étourdi, pénalisé dans ses compétences intellectuelles et sociales les plus fines.",
+    "Description": "Simple d’esprit et bon vivant ou complètement taré, le personnage est dénué de sens commun et n’est pas doté d’une bonne mémoire.\n\nSes [tests](/regles/competences/tests) d’[Intellect](/regles/attributs/intellect) et des [compétences](/regles/competences) associées ([Connaissance](/regles/competences/connaissance), [Investigation](/regles/competences/investigation), [Linguistique](/regles/competences/linguistique) et [Médecine](/regles/competences/medecine)) sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "4cb51fef-d211-42b5-9a86-8b7c2f50aecc",
+    "IsPublished": true,
+    "Slug": "adresse-legendaire",
+    "Name": "Adresse légendaire",
+    "Kind": "Gift",
+    "Summary": "Sens inné de l’orientation et précision exceptionnelle.",
+    "MetaDescription": "Découvrez Adresse légendaire, un don rare qui confère un sens de l’orientation infaillible et une précision hors norme dans l’exploration.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut faire [Faire 20](/regles/competences/tests/faire-20) à un [test](/regles/competences/tests) d’[Orientation](/regles/competences/orientation) lorsque la situation lui permet de [Faire 10](/regles/competences/tests/faire-10), avec l’approbation du maître de jeu.\n- Lorsque la situation ne lui permet pas de Faire 10 à un test d’Orientation, il peut dépenser 20 points d’[Énergie](/regles/statistiques/energie) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son test.\n- Grâce à son sens spatial fabuleux, il sait toujours où il se situe par rapport à des indices visuels. Par exemple, s’il remarque la forme particulière d’un nœud dans l’écorce d’un arbre, lorsqu’il verra à nouveau le nœud, il sera capable de comparer sa position actuelle avec sa position précédente. Cela lui permet par exemple de se rendre compte instinctivement qu’il est perdu et qu’il tourne en rond. Il est également doté d’un sens précis des distances, ce qui lui permet de dessiner avec précision des cartes."
+  },
+  {
+    "Id": "cd3e4047-047b-484c-bb44-62e421ea30a1",
+    "IsPublished": true,
+    "Slug": "affinite-animale",
+    "Name": "Affinité animale",
+    "Kind": "Gift",
+    "Summary": "Permet de communiquer et d’interagir plus facilement avec les animaux.",
+    "MetaDescription": "Découvrez Affinité animale, un don permettant de communiquer avec les bêtes, comprendre leur comportement et leur donner des ordres simples.",
+    "Description": "En interagissant ou en observant un animal pendant au moins [une minute](/regles/aventure/temps), permet au personnage de communiquer des idées simples à l’animal, et de comprendre son comportement et ses réactions.\n\nÉgalement, une fois par [tour](/regles/combat/deroulement/tour), il peut donner un ordre à un animal qu’il a dressé en [action libre](/regles/combat/deroulement/tour)."
+  },
+  {
+    "Id": "b85b4be7-8002-4637-8735-cfb744e08f6f",
+    "IsPublished": true,
+    "Slug": "aigrefin",
+    "Name": "Aigrefin",
+    "Kind": "Gift",
+    "Summary": "Permet d’utiliser des objets plus librement en combat et hors combat.",
+    "MetaDescription": "Découvrez Aigrefin, le don qui accorde des interactions rapides avec les objets, une action libre au début des combats et plus de flexibilité en opportunité.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Pendant son [tour](/regles/combat/deroulement/tour), il peut effectuer jusqu’à deux [interactions simples avec un objet](/regles/combat/activites/deplacement) en [action libre](/regles/combat/deroulement/tour) s’il prend plusieurs actions [Déplacement](/regles/combat/activites/deplacement).\n- Lorsqu’il entre en situation de [combat](/regles/combat) et qu’il n’est pas [surpris](/regles/combat/deroulement/surprise), il peut effectuer l’activité [Objet](/regles/combat/activites/objet) en [action libre](/regles/combat/deroulement/tour) au moment où l’[Initiative](/regles/combat/deroulement/initiative) est déterminée.\n- Lorsqu’il peut effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite), alors il peut remplacer l’[attaque](/regles/combat/attaque) par une activité [Objet](/regles/combat/activites/objet)."
+  },
+  {
+    "Id": "b702bafd-9ba2-4ebd-90f3-27b86876cc5b",
+    "IsPublished": true,
+    "Slug": "anxiete",
+    "Name": "Anxiété",
+    "Kind": "Disability",
+    "Summary": "Handicap rendant vulnérable et diminuant initiative et défenses contre la peur.",
+    "MetaDescription": "Découvrez le handicap Anxiété : une peur paralysante qui affaiblit l’initiative et les défenses face à la peur, rendant le personnage vulnérable.",
+    "Description": "Face au danger, le personnage fige complètement sur place, ce qui le rend vulnérable, et est incapable de prendre une décision sous pression.\n\nSes [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets de [peur](/regles/combat/conditions/apeure) sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nLorsqu’il effectue un [test d’Initiative](/regles/combat/deroulement/initiative), il doit effectuer le test à nouveau, et utiliser le résultat le plus faible."
+  },
+  {
+    "Id": "4c407d9f-d1fa-4851-ae3a-212951a207a7",
+    "IsPublished": true,
+    "Slug": "aveugle",
+    "Name": "Aveugle",
+    "Kind": "Disability",
+    "Summary": "Handicap supprimant la vue, obligeant à compenser par l’ouïe en Perception.",
+    "MetaDescription": "Découvrez le handicap Aveugle : perte de la vision, échec automatique aux tests visuels, mais possibilité d’utiliser l’ouïe en Perception.",
+    "Description": "Le personnage a perdu son sens de la vision ou en est né dépourvu.\n\nIl échoue automatiquement ses [tests](/regles/competences/tests) requérant la [vision](/regles/aventure/environnement/vision).\n\nLorsqu’il effectue un test de [Perception](/regles/competences/perception), qu’il n’est pas victime d’un effet d’[assourdissement](/regles/combat/conditions/aveugle) et que le contexte sonore lui est favorable, alors il peut utiliser son ouïe à la place de sa vue."
+  },
+  {
+    "Id": "1da0e99b-7a77-4165-8541-1d72e5604272",
+    "IsPublished": true,
+    "Slug": "baraque",
+    "Name": "Baraqué",
+    "Kind": "Gift",
+    "Summary": "Double portée, avantage et dégâts contre objets et structures.",
+    "MetaDescription": "Découvrez le don Baraqué, qui double la portée des bousculades, accorde l’avantage pour briser des objets et double les dégâts infligés aux structures.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il repousse une créature par une [bousculade](/regles/combat/activites/bousculer), il double la portée de la bousculade.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) lorsqu’il tente de briser ou d’[attaquer](/regles/combat/attaque) un [objet](/regles/aventure/interaction-objets), une structure, un bâtiment ou une construction non magique.\n- Il double les [points de dégâts](/regles/combat/degats) qu’il inflige aux objets, aux structures, aux bâtiments ainsi qu’aux constructions non magiques."
+  },
+  {
+    "Id": "8e3592b5-a928-45a9-80ca-d4f84854aeb1",
+    "IsPublished": true,
+    "Slug": "borgne",
+    "Name": "Borgne",
+    "Kind": "Disability",
+    "Summary": "Perte d’un œil nuisant à la vue, l’intuition et le charisme.",
+    "MetaDescription": "Découvrez le handicap Borgne, qui réduit la perception et l’intuition du personnage, affectant aussi son apparence et ses interactions sociales.",
+    "Description": "Les [tests](/regles/competences/tests) d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie) du personnage requérant la [vision](/regles/aventure/environnement/vision), ainsi que ses tests associés à son apparence physique ou sa beauté (particulièrement [Diplomatie](/regles/competences/diplomatie), [Représentation](/regles/competences/representation) et [Tromperie](/regles/competences/tromperie)), sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "ebdcf1d3-e5d5-4a52-b6fb-f490fcdfe3c7",
+    "IsPublished": true,
+    "Slug": "chance-extraordinaire",
+    "Name": "Chance extraordinaire",
+    "Kind": "Gift",
+    "Summary": "Confère 3 points de chance pour imiter les effets d’Espérance.",
+    "MetaDescription": "Découvrez le don Chance extraordinaire, qui confère 3 points de chance permettant d’imiter des effets d’Espérance et de renverser le destin du personnage.",
+    "Description": "Confère 3 points de chance au personnage.\n\n- Il peut dépenser 1 point de chance afin de produire un effet équivalant à 2 [points d’Espérance](/regles/competences/esperance-damnation).\n- Il peut dépenser 2 points de chance afin de produire un effet équivalant à 4 [points d’Espérance](/regles/competences/esperance-damnation).\n- Il peut dépenser 3 points de chance afin de produire un effet équivalant à 5 [points d’Espérance](/regles/competences/esperance-damnation), avec l’approbation du maître de jeu.\n\nIl récupère ses points de chance lorsqu’il complète une [nuit de sommeil](/regles/aventure/repos/sommeil)."
+  },
+  {
+    "Id": "839d4ddc-d715-4299-9d04-ae1db773cfdc",
+    "IsPublished": true,
+    "Slug": "chaotique",
+    "Name": "Chaotique",
+    "Kind": "Disability",
+    "Summary": "Tendance à défier l’ordre ; malus aux tests de Discipline.",
+    "MetaDescription": "Découvrez le handicap Chaotique, qui pousse le personnage à défier les règles et rend ses tests de Discipline plus difficiles.",
+    "Description": "Affligé d’un grand besoin de liberté, le personnage a tendance à désobéir dès qu’il le peut, à contredire les lois ainsi, à ruiner les plans de ses alliés, et à effectuer des actions illogiques ou contradictoires.\n\nSes [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
+    "IsPublished": true,
+    "Slug": "sante-de-fer",
+    "Name": "Santé de fer",
+    "Kind": "Gift",
+    "Summary": "Renforce la résistance aux poisons, maladies et régénère mieux.",
+    "MetaDescription": "Découvrez le don Santé de fer, qui confère résistance au poison, immunité accrue aux maladies et régénération de vitalité améliorée.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les maladies.\n- Il peut se conférer l’avantage à un jet de sauvegarde de [Résistance](/regles/competences/resistance). Si le [test](/regles/competences/tests) a été effectué contre un [poison](/regles/combat/degats/types), le personnage est [résistant](/regles/combat/degats/efficacite) aux [points de dégâts](/regles/combat/degats) de ce poison. Il peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n- Il se voit conférer un bonus permanent (+50%) à sa [régénération](/regles/aventure/repos) de [Vitalité](/statistiques/vitalite). Ce bonus est cumulatif à tout autre bonus de guérison et de médecine, qu’il soit magique ou non."
+  },
+  {
+    "Id": "09c9e3a2-5c58-44e9-a574-06c0fa49a3b0",
+    "IsPublished": true,
+    "Slug": "chetif",
+    "Name": "Chétif",
+    "Kind": "Disability",
+    "Summary": "Santé fragile : régénération réduite et résistance affaiblie.",
+    "MetaDescription": "Découvrez le handicap Chétif, qui affaiblit la santé du personnage en réduisant sa régénération et en rendant ses tests de résistance plus difficiles.",
+    "Description": "La circulation sanguine du personnage est peu efficace, son teint est blême et sa santé est frêle.\n\nSa [régénération](/regles/aventure/repos) de [Vitalité](/regles/statistiques/vitalite) est réduite de moitié de manière permanente, et ses [tests](/regles/competences/tests) de [Résistance](/regles/competences/resistance) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  }
+]

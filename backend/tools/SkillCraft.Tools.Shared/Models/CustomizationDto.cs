@@ -1,8 +1,8 @@
 ﻿using SkillCraft.Contracts;
 
-namespace SkillCraft.Rules.Extractor.Models;
+namespace SkillCraft.Tools.Shared.Models;
 
-internal class CustomizationDto
+public class CustomizationDto
 {
   public Guid Id { get; set; }
 

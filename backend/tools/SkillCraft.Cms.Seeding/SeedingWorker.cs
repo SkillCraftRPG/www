@@ -68,6 +68,7 @@ public class SeedingWorker : BackgroundService
       await ExecuteAsync(new SeedAttributesTask(), cancellationToken);
       await ExecuteAsync(new SeedStatisticsTask(), cancellationToken);
       await ExecuteAsync(new SeedSkillsTask(), cancellationToken);
+      await ExecuteAsync(new SeedCustomizationsTask(), cancellationToken);
     }
     catch (Exception exception)
     {
