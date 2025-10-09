@@ -14,15 +14,23 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
+import type { Education, SearchResults } from "~/types/game";
 
-import type { Education } from "~/types/game";
-import { getEducations } from "~/services/educations";
-
+const config = useRuntimeConfig();
 const title: string = "Éducations";
-const { orderBy } = arrayUtils;
 
-const educations = ref<Education[]>(orderBy(getEducations({ skill: true }), "slug"));
+const { data } = await useLazyAsyncData<SearchResults<Education>>(
+  "educations",
+  () =>
+    $fetch("/api/educations", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const educations = computed<Education[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

@@ -23,15 +23,23 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
+import type { Customization, SearchResults } from "~/types/game";
 
-import type { Customization } from "~/types/game";
-import { getCustomizations } from "~/services/customizations";
-
+const config = useRuntimeConfig();
 const title: string = "Dons & Handicaps";
-const { orderBy } = arrayUtils;
 
-const customizations = ref<Customization[]>(orderBy(getCustomizations(), "slug"));
+const { data } = await useLazyAsyncData<SearchResults<Customization>>(
+  "customizations",
+  () =>
+    $fetch("/api/customizations", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const customizations = computed<Customization[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,
