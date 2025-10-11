@@ -72,7 +72,7 @@ const tiles: Tile[] = [
     icon: "fas fa-wheelchair",
     text: "Dons & Handicaps",
     to: "/regles/dons-handicaps",
-    progress: (1 + 14) / 47,
+    progress: (1 + 16) / 47,
   },
   {
     icon: "fas fa-screwdriver-wrench",
@@ -90,7 +90,7 @@ const tiles: Tile[] = [
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
-    progress: (3 + 122) / 179,
+    progress: (3 + 123) / 179,
   },
   {
     icon: "fas fa-landmark",
