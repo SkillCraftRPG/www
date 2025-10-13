@@ -30,6 +30,24 @@ import type { RouteLocationAsPathGeneric, RouteLocationAsRelativeGeneric } from 
 
 import { Icons } from "~/types/constants";
 
+type Progress = {
+  characters: number;
+  attributes: number;
+  statistics: number;
+  skills: number;
+  species: number;
+  customizations: number;
+  castes: number;
+  educations: number;
+  talents: number;
+  specializations: number;
+  languages: number;
+  equipment: number;
+  adventure: number;
+  combat: number;
+  magic: number;
+  annexes: number;
+};
 type Tile = {
   icon: string;
   text: string;
@@ -37,105 +55,118 @@ type Tile = {
   progress: number;
 };
 
-const tiles: Tile[] = [
+const config = useRuntimeConfig();
+const title: string = "Règles";
+
+const { data } = await useLazyAsyncData<Progress>(
+  "progress",
+  () =>
+    $fetch("/api/progress", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const tiles = computed<Tile[]>(() => [
   {
     icon: "fas fa-id-card",
     text: "Personnages",
     to: "/regles/personnages",
-    progress: 1,
+    progress: data.value?.characters ?? 0,
   },
   {
     icon: "fas fa-chart-simple",
     text: "Attributs",
     to: "/regles/attributs",
-    progress: 1,
+    progress: data.value?.attributes ?? 0,
   },
   {
     icon: "fas fa-magnifying-glass-chart",
     text: "Statistiques",
     to: "/regles/statistiques",
-    progress: 1,
+    progress: data.value?.statistics ?? 0,
   },
   {
     icon: Icons.skill,
     text: "Compétences",
     to: "/regles/competences",
-    progress: 1,
+    progress: data.value?.skills ?? 0,
   },
   {
     icon: "fas fa-paw",
     text: "Espèces",
     to: "/regles/especes",
-    progress: (2 + 1) / 22,
+    progress: data.value?.species ?? 0,
   },
   {
     icon: "fas fa-wheelchair",
     text: "Dons & Handicaps",
     to: "/regles/dons-handicaps",
-    progress: (1 + 18) / 47,
+    progress: data.value?.customizations ?? 0,
   },
   {
     icon: "fas fa-screwdriver-wrench",
     text: "Castes",
     to: "/regles/castes",
-    progress: (1 + 2) / 11,
+    progress: data.value?.castes ?? 0,
   },
   {
     icon: "fas fa-graduation-cap",
     text: "Éducations",
     to: "/regles/educations",
-    progress: (1 + 0) / 11,
+    progress: data.value?.educations ?? 0,
   },
   {
     icon: Icons.talent,
     text: "Talents",
     to: "/regles/talents",
-    progress: (3 + 125) / 179,
+    progress: data.value?.talents ?? 0,
   },
   {
     icon: "fas fa-landmark",
     text: "Spécialisations",
     to: "/regles/specialisations",
-    progress: (3 + 8) / 60,
+    progress: data.value?.specializations ?? 0,
   },
   {
     icon: "fas fa-language",
     text: "Langues",
     to: "/regles/langues",
-    progress: (0 + 0) / 22,
+    progress: data.value?.languages ?? 0,
   },
   {
     icon: "fas fa-cart-shopping",
     text: "Équipement",
     to: "/regles/equipement",
-    progress: 1,
+    progress: data.value?.equipment ?? 0,
   },
   {
     icon: "fas fa-person-hiking",
     text: "Aventure",
     to: "/regles/aventure",
-    progress: 1,
+    progress: data.value?.adventure ?? 0,
   },
   {
     icon: "fas fa-hand-fist",
     text: "Combat",
     to: "/regles/combat",
-    progress: 1,
+    progress: data.value?.combat ?? 0,
   },
   {
     icon: "fas fa-wand-sparkles",
     text: "Magie",
     to: "/regles/magie",
-    progress: 1,
+    progress: data.value?.magic ?? 0,
   },
   {
     icon: "fas fa-book",
     text: "Annexes",
     to: "#",
-    progress: 0,
+    progress: data.value?.annexes ?? 0,
   },
-];
-const title: string = "Règles";
+]);
 
 useSeo({
   title,
