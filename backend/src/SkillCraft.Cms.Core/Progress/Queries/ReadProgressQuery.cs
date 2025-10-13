@@ -59,6 +59,10 @@ internal class ReadProgressHandler : IQueryHandler<ReadProgress, ProgressModel>
   private static double Parse(string value)
   {
     value = value.Split('=').Where(x => !string.IsNullOrWhiteSpace(x)).Select(x => x.Trim()).Last();
-    return double.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, out double progress) ? progress : 0;
+    if (double.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, out double progress) && progress > 0)
+    {
+      return progress > 1 ? 1 : progress;
+    }
+    return 0;
   }
 }
