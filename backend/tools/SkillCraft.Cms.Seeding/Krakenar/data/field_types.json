@@ -78,6 +78,17 @@
     }
   },
   {
+    "Id": "b2123086-0af6-4d12-bc3f-df5d5955c3e8",
+    "UniqueName": "Progress",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": null,
+      "Pattern": null
+    }
+  },
+  {
     "Id": "52a7692c-8e59-4fa4-b2ea-f76e285f1154",
     "UniqueName": "Roll",
     "DisplayName": null,
