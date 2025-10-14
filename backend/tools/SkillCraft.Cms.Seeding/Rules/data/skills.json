@@ -1,5 +1,53 @@
 ﻿[
   {
+    "Id": "38b875a0-6519-4c8b-bff6-02c151e6a5fe",
+    "IsPublished": true,
+    "Slug": "acrobaties",
+    "Name": "Acrobaties",
+    "Value": "Acrobatics",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Maîtrise du corps : équilibre, figures complexes et évasion physique.",
+    "MetaDescription": "Découvrez Acrobaties, compétence d’adresse permettant d’amortir les chutes, garder l’équilibre, exécuter des manœuvres agiles et se libérer de liens.",
+    "Description": "La compétence **Acrobaties** permet au personnage de :\n\n- [amortir une chute](/regles/aventure/environnement/chute)\n- conserver son équilibre sur des surfaces instables\n- exécuter des manœuvres acrobatiques\n- se contorsionner pour [se libérer de liens](/regles/combat/activites/echapper)"
+  },
+  {
+    "Id": "56ffe0d3-6271-4ca7-badf-d227d7785767",
+    "IsPublished": true,
+    "Slug": "artisanat",
+    "Name": "Artisanat",
+    "Value": "Crafting",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Crée, répare ou démonte des objets à l’aide d’outils adaptés.",
+    "MetaDescription": "Découvrez la compétence Artisanat, permettant de concevoir, réparer ou démonter des objets grâce à l’adresse, aux outils et aux matériaux appropriés.",
+    "Description": "La compétence **Artisanat** permet au personnage de :\n\n- concevoir ou fabriquer un objet\n- démanteler un objet pour en récupérer les composantes utiles\n- [réparer](/regles/equipement/reparation) ou restaurer un objet\n\nCes actions nécessitent les [outils](/regles/equipement/outils), [matériaux](/regles/equipement/marchandise) et tables de travail appropriés."
+  },
+  {
+    "Id": "21877dfa-439f-4dce-8235-556d311e1c54",
+    "IsPublished": true,
+    "Slug": "athletisme",
+    "Name": "Athlétisme",
+    "Value": "Athletics",
+    "Attribute": {
+      "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
+      "IsPublished": true,
+      "Slug": "vigueur",
+      "Name": "Vigueur"
+    },
+    "Summary": "Force, agilité et endurance pour grimper, sauter et nager.",
+    "MetaDescription": "Découvrez la compétence Athlétisme, qui mesure la force physique, la vitesse et l’endurance pour sauter, grimper ou nager avec puissance et précision.",
+    "Description": "La compétence **Athlétisme** permet au personnage de :\n\n- effectuer des [sauts](/regles/aventure/mouvement/types) en longueur et en hauteur\n- escalader des surfaces avec ou sans prises\n- nager ou se maintenir à la surface de l’eau"
+  },
+  {
     "Id": "ba600891-151b-44f0-a2ed-b3e3ccb10cd7",
     "IsPublished": true,
     "Slug": "connaissance",
@@ -14,38 +62,6 @@
     "Summary": "Connaissance mesure l’étendue des savoirs acquis du personnage, qu’ils soient encyclopédiques, spécialisés ou théoriques.",
     "MetaDescription": null,
     "Description": "La compétence **Connaissance** permet au personnage de faire appel à ses savoirs généraux ou spécialisés pour répondre à une question précise, qu’elle concerne un sujet commun ou un domaine particulier."
-  },
-  {
-    "Id": "21877dfa-439f-4dce-8235-556d311e1c54",
-    "IsPublished": true,
-    "Slug": "athletisme",
-    "Name": "Athlétisme",
-    "Value": "Athletics",
-    "Attribute": {
-      "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
-      "IsPublished": true,
-      "Slug": "vigueur",
-      "Name": "Vigueur"
-    },
-    "Summary": "Athlétisme mesure la capacité physique générale à se déplacer dans des environnements exigeants, notamment par l’escalade, la nage ou les sauts.",
-    "MetaDescription": null,
-    "Description": "La compétence **Athlétisme** permet au personnage de :\n\n- effectuer des [sauts](/regles/aventure/mouvement/types) en longueur et en hauteur\n- escalader des surfaces avec ou sans prises\n- nager ou se maintenir à la surface de l’eau"
-  },
-  {
-    "Id": "56ffe0d3-6271-4ca7-badf-d227d7785767",
-    "IsPublished": true,
-    "Slug": "artisanat",
-    "Name": "Artisanat",
-    "Value": "Crafting",
-    "Attribute": {
-      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
-      "IsPublished": true,
-      "Slug": "adresse",
-      "Name": "Adresse"
-    },
-    "Summary": "Artisanat mesure l’aptitude à créer, réparer ou démonter des objets à l’aide d’outils, allant de l’improvisation brute à la fabrication complexe.",
-    "MetaDescription": null,
-    "Description": "La compétence **Artisanat** permet au personnage de :\n\n- concevoir ou fabriquer un objet\n- démanteler un objet pour en récupérer les composantes utiles\n- [réparer](/regles/equipement/reparation) ou restaurer un objet\n\nCes actions nécessitent les [outils](/regles/equipement/outils), [matériaux](/regles/equipement/marchandise) et tables de travail appropriés."
   },
   {
     "Id": "2a49d787-e957-4fe0-afe7-3de5b6ebb214",
@@ -75,6 +91,22 @@
     "Description": "La compétence Discipline permet au personnage de :\n\n- conserver son sang-froid dans une situation difficile\n- [maintenir](/regles/combat/activites/concentration) un [Pouvoir](/regles/magie/pouvoirs) actif malgré les perturbations\n- rester en position malgré une blessure ou un environnement hostile\n- résister à certaines formes d’influence surnaturelle"
   },
   {
+    "Id": "68f61feb-b81f-45bd-8de7-7ee6389b47aa",
+    "IsPublished": true,
+    "Slug": "furtivite",
+    "Name": "Furtivité",
+    "Value": "Stealth",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Furtivité permet d’éviter la détection grâce à la discrétion visuelle, sonore ou au camouflage.",
+    "MetaDescription": null,
+    "Description": "La compétence **Furtivité** permet au personnage de :\n\n- manipuler discrètement un objet sans être vu\n- minimiser les traces laissées lors d’un [déplacement](/regles/aventure/mouvement/furtif)\n- [se camoufler](/regles/combat/activites/cacher) dans un environnement\n- se dissimuler dans l’ombre ou au sein d’une foule\n- se déplacer silencieusement en terrain dégagé ou encombré"
+  },
+  {
     "Id": "93dbef75-5f50-4462-bd9b-43303b781443",
     "IsPublished": true,
     "Slug": "intuition",
@@ -89,22 +121,6 @@
     "Summary": "Intuition mesure la capacité à lire les émotions, percevoir les intentions et déceler la manipulation.",
     "MetaDescription": null,
     "Description": "La compétence **Intuition** permet au personnage de :\n\n- déchiffrer le [langage corporel](/regles/aventure/interaction-sociale)\n- détecter une tentative de manipulation, qu’elle soit dirigée contre lui ou non\n- déterminer si quelqu’un ment ou tente de l’influencer\n- percevoir les intentions réelles d’une créature\n- utiliser son intelligence émotionnelle, c’est-à-dire percevoir, comprendre, exprimer et gérer les émotions"
-  },
-  {
-    "Id": "d227627b-acc4-4483-b45a-a82729d6c415",
-    "IsPublished": true,
-    "Slug": "linguistique",
-    "Name": "Linguistique",
-    "Value": "Linguistics",
-    "Attribute": {
-      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
-      "IsPublished": true,
-      "Slug": "intellect",
-      "Name": "Intellect"
-    },
-    "Summary": "Linguistique évalue l’aptitude du personnage à comprendre, manipuler ou produire des messages écrits ou symboliques, dans sa langue ou dans d’autres.",
-    "MetaDescription": null,
-    "Description": "La compétence **Linguistique** permet au personnage de :\n\n- comprendre ou produire un document écrit, qu’il soit simple ou complexe\n- décrypter un texte\n- falsifier un texte\n- interpréter un message non verbal\n- lire des schémas, comme des cartes ou des interfaces\n- tenter de comprendre un texte rédigé dans une langue inconnue"
   },
   {
     "Id": "a6995524-b7b5-4511-8790-ef0e3b687442",
@@ -123,36 +139,20 @@
     "Description": "La compétence **Investigation** permet au personnage de :\n\n- analyser un mécanisme complexe tel un piège\n- détecter les incohérences\n- estimer la [valeur](/regles/equipement/monnaie) d’un objet\n- reconstituer une scène à partir de fines observations\n- tirer des conclusions simples à partir d’indices\n- évaluer les coûts de fabrication et de [revente](/regles/equipement/vente) d’un objet"
   },
   {
-    "Id": "68f61feb-b81f-45bd-8de7-7ee6389b47aa",
+    "Id": "d227627b-acc4-4483-b45a-a82729d6c415",
     "IsPublished": true,
-    "Slug": "furtivite",
-    "Name": "Furtivité",
-    "Value": "Stealth",
+    "Slug": "linguistique",
+    "Name": "Linguistique",
+    "Value": "Linguistics",
     "Attribute": {
-      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
       "IsPublished": true,
-      "Slug": "adresse",
-      "Name": "Adresse"
+      "Slug": "intellect",
+      "Name": "Intellect"
     },
-    "Summary": "Furtivité permet d’éviter la détection grâce à la discrétion visuelle, sonore ou au camouflage.",
+    "Summary": "Linguistique évalue l’aptitude du personnage à comprendre, manipuler ou produire des messages écrits ou symboliques, dans sa langue ou dans d’autres.",
     "MetaDescription": null,
-    "Description": "La compétence **Furtivité** permet au personnage de :\n\n- manipuler discrètement un objet sans être vu\n- minimiser les traces laissées lors d’un [déplacement](/regles/aventure/mouvement/furtif)\n- [se camoufler](/regles/combat/activites/cacher) dans un environnement\n- se dissimuler dans l’ombre ou au sein d’une foule\n- se déplacer silencieusement en terrain dégagé ou encombré"
-  },
-  {
-    "Id": "38b875a0-6519-4c8b-bff6-02c151e6a5fe",
-    "IsPublished": true,
-    "Slug": "acrobaties",
-    "Name": "Acrobaties",
-    "Value": "Acrobatics",
-    "Attribute": {
-      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
-      "IsPublished": true,
-      "Slug": "adresse",
-      "Name": "Adresse"
-    },
-    "Summary": "Maîtrise du corps : équilibre, figures complexes et évasion physique.",
-    "MetaDescription": "Découvrez Acrobaties, compétence d’adresse permettant d’amortir les chutes, garder l’équilibre, exécuter des manœuvres agiles et se libérer de liens.",
-    "Description": "La compétence **Acrobaties** permet au personnage de :\n\n- [amortir une chute](/regles/aventure/environnement/chute)\n- conserver son équilibre sur des surfaces instables\n- exécuter des manœuvres acrobatiques\n- se contorsionner pour [se libérer de liens](/regles/combat/activites/echapper)"
+    "Description": "La compétence **Linguistique** permet au personnage de :\n\n- comprendre ou produire un document écrit, qu’il soit simple ou complexe\n- décrypter un texte\n- falsifier un texte\n- interpréter un message non verbal\n- lire des schémas, comme des cartes ou des interfaces\n- tenter de comprendre un texte rédigé dans une langue inconnue"
   },
   {
     "Id": "786e509e-ea89-4a51-b144-b84352f91b0f",
@@ -262,6 +262,22 @@
     "Description": "La compétence **Résistance** permet au personnage de :\n\n- ne pas s’effondrer sous un important choc physique\n- rester debout après avoir subi de lourds dégâts\n- résister aux effets directs d’un impact violent"
   },
   {
+    "Id": "70c5ac59-ed69-42e7-aa17-2720d98ae81a",
+    "IsPublished": true,
+    "Slug": "roublardise",
+    "Name": "Roublardise",
+    "Value": "Thievery",
+    "Attribute": {
+      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
+      "IsPublished": true,
+      "Slug": "adresse",
+      "Name": "Adresse"
+    },
+    "Summary": "Roublardise reflète l’habileté manuelle à interagir avec précision, ruse ou subtilité avec des mécanismes, dispositifs piégés ou objets délicats.",
+    "MetaDescription": null,
+    "Description": "La compétence **Roublardise** permet au personnage de :\n\n- manipuler de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer\n- activer un mécanisme\n- crocheter une serrure\n- désamorcer un piège\n- manipuler avec précision de petits objets\n- nouer ou dénouer un nœud simple ou complexe\n- saboter un mécanisme"
+  },
+  {
     "Id": "ecdcb4fb-13bc-498c-8222-40e0900c23e8",
     "IsPublished": true,
     "Slug": "survie",
@@ -287,21 +303,5 @@
     "Summary": "Tromperie mesure la capacité du personnage à induire les autres en erreur par des mensonges, des déguisements ou des manipulations verbales subtiles.",
     "MetaDescription": null,
     "Description": "La compétence **Tromperie** permet au personnage de :\n\n- imiter une créature d’une autre espèce ou d’un autre genre avec vraisemblance\n- [manipuler](/regles/aventure/interaction-sociale) sans contredire la vérité directement\n- mentir de façon crédible ou non\n- se faire passer pour autrui\n- utiliser un déguisement convaincant"
-  },
-  {
-    "Id": "70c5ac59-ed69-42e7-aa17-2720d98ae81a",
-    "IsPublished": true,
-    "Slug": "roublardise",
-    "Name": "Roublardise",
-    "Value": "Thievery",
-    "Attribute": {
-      "Id": "4e23a288-1086-441f-9bd9-9f3f0b8d200f",
-      "IsPublished": true,
-      "Slug": "adresse",
-      "Name": "Adresse"
-    },
-    "Summary": "Roublardise reflète l’habileté manuelle à interagir avec précision, ruse ou subtilité avec des mécanismes, dispositifs piégés ou objets délicats.",
-    "MetaDescription": null,
-    "Description": "La compétence **Roublardise** permet au personnage de :\n\n- manipuler de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer\n- activer un mécanisme\n- crocheter une serrure\n- désamorcer un piège\n- manipuler avec précision de petits objets\n- nouer ou dénouer un nœud simple ou complexe\n- saboter un mécanisme"
   }
 ]

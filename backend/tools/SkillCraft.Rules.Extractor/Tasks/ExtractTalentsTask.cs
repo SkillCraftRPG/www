@@ -32,6 +32,7 @@ internal class ExtractTalentsTaskHandler : ICommandHandler<ExtractTalentsTask, T
     TalentEntity[] entities = await _talents.AsNoTracking()
       .Include(x => x.Skill)
       .Include(x => x.RequiredTalent)
+      .OrderBy(x => x.SlugNormalized)
       .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Talents} talent(s) from database.", entities.Length);
 

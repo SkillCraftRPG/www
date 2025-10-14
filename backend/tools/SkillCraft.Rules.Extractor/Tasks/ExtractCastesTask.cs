@@ -32,6 +32,7 @@ internal class ExtractCastesTaskHandler : ICommandHandler<ExtractCastesTask, Tas
     CasteEntity[] entities = await _castes.AsNoTracking()
       .Include(x => x.Skill)
       .Include(x => x.Feature)
+      .OrderBy(x => x.SlugNormalized)
       .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Castes} caste(s) from database.", entities.Length);
 

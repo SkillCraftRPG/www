@@ -34,6 +34,7 @@ internal class ExtractSpecializationsTaskHandler : ICommandHandler<ExtractSpecia
       .Include(x => x.DiscountedTalents).ThenInclude(x => x.Talent)
       .Include(x => x.Features).ThenInclude(x => x.Feature)
       .Include(x => x.OptionalTalents).ThenInclude(x => x.Talent)
+      .OrderBy(x => x.SlugNormalized)
       .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Specializations} specialization(s) from database.", entities.Length);
 
