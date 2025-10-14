@@ -29,7 +29,9 @@ internal class ExtractCustomizationsTaskHandler : ICommandHandler<ExtractCustomi
 
   public async Task<TaskResult> HandleAsync(ExtractCustomizationsTask command, CancellationToken cancellationToken)
   {
-    CustomizationEntity[] entities = await _customizations.AsNoTracking().ToArrayAsync(cancellationToken);
+    CustomizationEntity[] entities = await _customizations.AsNoTracking()
+      .OrderBy(x => x.SlugNormalized)
+      .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Customizations} customization(s) from database.", entities.Length);
 
     List<CustomizationDto> customizations = new(capacity: entities.Length);

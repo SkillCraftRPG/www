@@ -31,6 +31,7 @@ internal class ExtractSkillsTaskHandler : ICommandHandler<ExtractSkillsTask, Tas
   {
     SkillEntity[] entities = await _skills.AsNoTracking()
       .Include(x => x.Attribute)
+      .OrderBy(x => x.SlugNormalized)
       .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Skills} skill(s) from database.", entities.Length);
 

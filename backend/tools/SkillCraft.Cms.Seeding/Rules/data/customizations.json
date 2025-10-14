@@ -45,7 +45,7 @@
     "Slug": "anxiete",
     "Name": "Anxiété",
     "Kind": "Disability",
-    "Summary": "Handicap rendant vulnérable et diminuant initiative et défenses contre la peur.",
+    "Summary": "Rend vulnérable et diminue initiative et défenses contre la peur.",
     "MetaDescription": "Découvrez le handicap Anxiété : une peur paralysante qui affaiblit l’initiative et les défenses face à la peur, rendant le personnage vulnérable.",
     "Description": "Face au danger, le personnage fige complètement sur place, ce qui le rend vulnérable, et est incapable de prendre une décision sous pression.\n\nSes [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets de [peur](/regles/combat/conditions/apeure) sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nLorsqu’il effectue un [test d’Initiative](/regles/combat/deroulement/initiative), il doit effectuer le test à nouveau, et utiliser le résultat le plus faible."
   },
@@ -55,7 +55,7 @@
     "Slug": "aveugle",
     "Name": "Aveugle",
     "Kind": "Disability",
-    "Summary": "Handicap supprimant la vue, obligeant à compenser par l’ouïe en Perception.",
+    "Summary": "Supprime la vue et oblige à compenser par l’ouïe en Perception.",
     "MetaDescription": "Découvrez le handicap Aveugle : perte de la vision, échec automatique aux tests visuels, mais possibilité d’utiliser l’ouïe en Perception.",
     "Description": "Le personnage a perdu son sens de la vision ou en est né dépourvu.\n\nIl échoue automatiquement ses [tests](/regles/competences/tests) requérant la [vision](/regles/aventure/environnement/vision).\n\nLorsqu’il effectue un test de [Perception](/regles/competences/perception), qu’il n’est pas victime d’un effet d’[assourdissement](/regles/combat/conditions/aveugle) et que le contexte sonore lui est favorable, alors il peut utiliser son ouïe à la place de sa vue."
   },
@@ -100,16 +100,6 @@
     "Description": "Affligé d’un grand besoin de liberté, le personnage a tendance à désobéir dès qu’il le peut, à contredire les lois ainsi, à ruiner les plans de ses alliés, et à effectuer des actions illogiques ou contradictoires.\n\nSes [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
   },
   {
-    "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
-    "IsPublished": true,
-    "Slug": "sante-de-fer",
-    "Name": "Santé de fer",
-    "Kind": "Gift",
-    "Summary": "Renforce la résistance aux poisons, maladies et régénère mieux.",
-    "MetaDescription": "Découvrez le don Santé de fer, qui confère résistance au poison, immunité accrue aux maladies et régénération de vitalité améliorée.",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les maladies.\n- Il peut se conférer l’avantage à un jet de sauvegarde de [Résistance](/regles/competences/resistance). Si le [test](/regles/competences/tests) a été effectué contre un [poison](/regles/combat/degats/types), le personnage est [résistant](/regles/combat/degats/efficacite) aux [points de dégâts](/regles/combat/degats) de ce poison. Il peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n- Il se voit conférer un bonus permanent (+50%) à sa [régénération](/regles/aventure/repos) de [Vitalité](/statistiques/vitalite). Ce bonus est cumulatif à tout autre bonus de guérison et de médecine, qu’il soit magique ou non."
-  },
-  {
     "Id": "09c9e3a2-5c58-44e9-a574-06c0fa49a3b0",
     "IsPublished": true,
     "Slug": "chetif",
@@ -118,5 +108,85 @@
     "Summary": "Santé fragile : régénération réduite et résistance affaiblie.",
     "MetaDescription": "Découvrez le handicap Chétif, qui affaiblit la santé du personnage en réduisant sa régénération et en rendant ses tests de résistance plus difficiles.",
     "Description": "La circulation sanguine du personnage est peu efficace, son teint est blême et sa santé est frêle.\n\nSa [régénération](/regles/aventure/repos) de [Vitalité](/regles/statistiques/vitalite) est réduite de moitié de manière permanente, et ses [tests](/regles/competences/tests) de [Résistance](/regles/competences/resistance) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "134bc37e-8bae-4f32-8c58-c85d4d208bfd",
+    "IsPublished": true,
+    "Slug": "cleptomane",
+    "Name": "Cleptomane",
+    "Kind": "Disability",
+    "Summary": "Pousse le personnage à voler compulsivement tout objet convoité.",
+    "MetaDescription": "Découvrez le handicap Cleptomane, une manie irrésistible poussant le personnage à dérober tout objet convoité, quitte à mettre son groupe en péril.",
+    "Description": "Victime d’une étrange manie, le personnage ne peut s’empêcher de mettre la main sur tout objet de moindre valeur ou qui pourrait lui plaire d’une quelconque manière, même si cela met lui ou ses alliés en danger."
+  },
+  {
+    "Id": "c1ccd735-8f06-434f-a76e-463cb9dc3a7c",
+    "IsPublished": true,
+    "Slug": "distrait",
+    "Name": "Distrait",
+    "Kind": "Disability",
+    "Summary": "Rêveur et inattentif, il subit un désavantage à ses tests.",
+    "MetaDescription": "Découvrez le handicap Distrait, qui rend le personnage rêveur et inattentif, subissant un désavantage à ses tests de Perception et d’Investigation.",
+    "Description": "La tête dans les nuages, la pensée absente, le personnage entre souvent en collision avec des passants ou des objets se trouvant dans son chemin, et il peine à se concentrer sur ce qui se trouve devant ses yeux.\n\nSes [tests](/regles/competences/tests) de [Perception](/regles/competences/perception) et d’[Investigation](/regles/competences/investigation) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "70b98a30-b427-4e49-99b4-8a90545b90ba",
+    "IsPublished": true,
+    "Slug": "dur-a-cuire",
+    "Name": "Dur à cuire",
+    "Kind": "Gift",
+    "Summary": "Réduit les dégâts létaux subis selon la Santé du personnage.",
+    "MetaDescription": "Découvrez le don Dur à cuire, qui réduit les dégâts létaux subis d’un montant égal à la Santé du personnage, reflétant sa résistance exceptionnelle.",
+    "Description": "Lorsque le personnage reçoit des [points de dégâts létaux](/regles/combat/degats/letalite), il retire à ceux-ci sa [Santé](/regles/attributs/sante) (minimum 1)."
+  },
+  {
+    "Id": "a59d286c-9502-4610-b49b-84406e055a47",
+    "IsPublished": true,
+    "Slug": "efface",
+    "Name": "Effacé",
+    "Kind": "Gift",
+    "Summary": "Accorde de meilleurs bonus d’abri et de discrétion en combat.",
+    "MetaDescription": "Découvrez le don Effacé, qui améliore la furtivité et la défense en offrant un abri supérieur lorsqu’il est renversé ou à couvert partiel.",
+    "Description": "Le personnage est considéré [légèrement obscurci](/regles/aventure/environnement/vision) lorsqu’il est [renversé](/regles/combat/conditions/renverse).\n\nÉgalement, lorsqu’il bénéficie du [demi-abri](/regles/combat/attaque/abri), alors il traite l’abri comme un [abri aux trois-quarts](/regles/combat/attaque/abri)."
+  },
+  {
+    "Id": "e6ff4688-c203-46d3-afa9-de57f2ea38fc",
+    "IsPublished": true,
+    "Slug": "entrepot-a-connaissances",
+    "Name": "Entrepôt à connaissances",
+    "Kind": "Gift",
+    "Summary": "Consulte sa mémoire comme une bibliothèque vivante.",
+    "MetaDescription": "Découvrez le don Entrepôt à connaissances, qui permet de consulter sa mémoire comme une bibliothèque vivante pour obtenir des informations cruciales.",
+    "Description": "Par ses études intensives, le personnage est devenu un véritable entrepôt à connaissances.\n\nPendant [une minute](/regles/aventure/temps), il peut consulter ses connaissances à propos d’un sujet, ce qui est équivalent à feuilleter un bestiaire, fouiller dans une bibliothèque ou interroger un guide de voyage.\n\nS’il a la moindre chance d’avoir lu ou entendu quelque information à propos de ce sujet, alors il peut se souvenir d’un passage d’au plus 100 mots à propos de ce sujet, même si l’information n’est pas applicable ou pertinente à la situation actuelle.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) si un tel test est nécessaire.\n\nIl doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+  },
+  {
+    "Id": "02f96bac-63a8-41e5-bb2a-e8093634bf4c",
+    "IsPublished": true,
+    "Slug": "faiblesse",
+    "Name": "Faiblesse",
+    "Kind": "Disability",
+    "Summary": "Réduit la force du personnage et pénalise l’Athlétisme et la Mêlée.",
+    "MetaDescription": "Découvrez le handicap Faiblesse, qui réduit la force physique du personnage et lui impose un désavantage à l’Athlétisme et à la Mêlée.",
+    "Description": "Plutôt svelte, la musculature du personnage est largement inférieure à celle des autres individus de son espèce.\n\nSes [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) et de [Mêlée](/regles/competences/melee) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "12760c34-13e1-47d2-8d0e-33bae4003a47",
+    "IsPublished": true,
+    "Slug": "feroce",
+    "Name": "Féroce",
+    "Kind": "Gift",
+    "Summary": "Permet de relancer les dés de dégâts et garder le meilleur jet.",
+    "MetaDescription": "Découvrez le don Féroce, qui permet au personnage de lancer deux fois les dés de dégâts d’une attaque et de choisir le meilleur résultat.",
+    "Description": "Une fois par [tour](/regles/combat/deroulement/tour), le personnage peut [rouler deux fois les dégâts](/regles/combat/degats/jet) d’une [attaque](/regles/combat/attaque) et utiliser le résultat de son choix."
+  },
+  {
+    "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
+    "IsPublished": true,
+    "Slug": "sante-de-fer",
+    "Name": "Santé de fer",
+    "Kind": "Gift",
+    "Summary": "Renforce la résistance aux poisons, maladies et régénère mieux.",
+    "MetaDescription": "Découvrez le don Santé de fer, qui confère résistance au poison, immunité accrue aux maladies et régénération de vitalité améliorée.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les maladies.\n- Il peut se conférer l’avantage à un jet de sauvegarde de [Résistance](/regles/competences/resistance). Si le [test](/regles/competences/tests) a été effectué contre un [poison](/regles/combat/degats/types), le personnage est [résistant](/regles/combat/degats/efficacite) aux [points de dégâts](/regles/combat/degats) de ce poison. Il peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n- Il se voit conférer un bonus permanent (+50%) à sa [régénération](/regles/aventure/repos) de [Vitalité](/statistiques/vitalite). Ce bonus est cumulatif à tout autre bonus de guérison et de médecine, qu’il soit magique ou non."
   }
 ]

@@ -17,8 +17,52 @@
       "Name": "Charme du spectacle",
       "Description": "Le personnage trouve toujours un endroit pour se présenter en spectacle, habituellement dans [une taverne ou une auberge](/regles/equipement/services/peuplements), mais possiblement auprès d’une troupe de cirque, d’un groupe de comédiens, ou à la cour de nobles.\n\nIl peut demander [le gite ou le couvert](/regles/equipement/services/gite-couvert) en échange de divertissement.\n\nÉgalement, lorsqu’il se donne en spectacle, sa [notoriété](/regles/equipement/depenses) augmente localement, ce qui peut lui permettre d’obtenir certaines faveurs, comme une audience auprès d’un noble ou des privilèges réservés aux personnalités populaires."
     },
-    "Summary": "Artiste voyageur captivant, usant du spectacle pour vivre et se faire connaître.",
-    "MetaDescription": "Découvrez l’Amuseur, artiste itinérant qui charme les foules par ses spectacles, gagne en renommée et tisse un réseau d’informations et de contacts.",
+    "Summary": "Artiste itinérant gagnant prestige et faveurs par ses spectacles.",
+    "MetaDescription": "Découvrez la caste Amuseur, artiste itinérant dont les spectacles apportent joie, notoriété et influence auprès du peuple comme des nobles.",
     "Description": "Adepte d’art, de poésie, de cirque ou de théâtre, l’amuseur ère de villages en cités afin d’offrir ses performances.\n\nBien plus qu’un simple gagne-pain, cela lui permet de former un réseau de contacts et de recueillir toutes sortes d’informations."
+  },
+  {
+    "Id": "57a54399-3f66-40be-84fb-2e3a36c64bc7",
+    "IsPublished": true,
+    "Slug": "artisan",
+    "Name": "Artisan",
+    "WealthRoll": "8d6",
+    "Skill": {
+      "Id": "56ffe0d3-6271-4ca7-badf-d227d7785767",
+      "IsPublished": true,
+      "Slug": "artisanat",
+      "Name": "Artisanat"
+    },
+    "Feature": {
+      "Id": "ebd29e5a-b374-4f15-a741-36e4adb7dd49",
+      "IsPublished": true,
+      "Name": "Professionnel",
+      "Description": "Grâce à ses apprentissages et à ses réalisations, le personnage est membre d’une organisation de professionnels comme lui, ou il connait ces organisations.\n\nS’il ne peut subvenir à ses besoins, il n’aura aucun mal à trouver du travail grâce à ces organisations afin de couvrir minimalement ces [dépenses](/regles/equipement/depenses).\n\nCes organisations possèdent souvent un pouvoir politique important, ce qui peut l’aider à rencontrer des gens importants, à rallier des fidèles à une cause ou à mettre la main sur des matériaux rares.\n\nIl connait également la base du fonctionnement des systèmes économiques auxquels il a participé."
+    },
+    "Summary": "Expert des métiers manuels, membre d’une organisation d’artisans.",
+    "MetaDescription": "Découvrez la caste Artisan, experte en transformation des matières brutes, membre d’une organisation professionnelle et maître des outils et matériaux.",
+    "Description": "L’artisan est un expert d’un procédé de transformation des matières brutes.\n\nIl peut être un boulanger, un forgeron, un orfèvre, un tisserand ou pratiquer tout genre de profession œuvrant dans la transformation des matières brutes."
+  },
+  {
+    "Id": "2bfe4b67-df40-4d2b-ac88-7809dd607ab8",
+    "IsPublished": true,
+    "Slug": "boheme",
+    "Name": "Bohème",
+    "WealthRoll": "6d6",
+    "Skill": {
+      "Id": "70c5ac59-ed69-42e7-aa17-2720d98ae81a",
+      "IsPublished": true,
+      "Slug": "roublardise",
+      "Name": "Roublardise"
+    },
+    "Feature": {
+      "Id": "9b91a934-e79c-44f1-9160-1272f59f1f9f",
+      "IsPublished": true,
+      "Name": "Marginal",
+      "Description": "Grâce à son passé de vagabond, de hors-la-loi, ou une combinaison de ces éléments, le personnage connait les rouages du système et sait comment jouer avec les lois en place.\n\nIl sait comment éviter de payer des taxes, naviguer les marchés noirs et autres emplacements clandestins, et comment subvenir à ses besoins par des moyens hors de portée du grand public.\n\nCes savoirs peuvent lui permettre d’acquérir des objets interdits et de rencontrer des personnalités criminelles."
+    },
+    "Summary": "Vagabond rusé, vivant d’expédients et de réseaux clandestins.",
+    "MetaDescription": "Découvrez la caste Bohème, marginale et rusée, vivant d’expédients, de marchés noirs et d’alliances avec les hors-la-loi pour survivre aux marges du monde.",
+    "Description": "Le bohème ne possède aucun domicile fixe ni occupation permanente.\n\nIl doit sa survie à la bonté des autres lorsqu’il mendie ou aux crimes qu’il perpètre dans les centres urbains.\n\nIl est incapable de s’intégrer à la société dont laquelle il dépend afin de survivre, il est donc fréquemment rejeté par celle-ci."
   }
 ]

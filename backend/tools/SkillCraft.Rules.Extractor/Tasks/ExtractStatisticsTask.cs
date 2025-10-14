@@ -31,6 +31,7 @@ internal class ExtractStatisticsTaskHandler : ICommandHandler<ExtractStatisticsT
   {
     StatisticEntity[] entities = await _statistics.AsNoTracking()
       .Include(x => x.Attribute)
+      .OrderBy(x => x.SlugNormalized)
       .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Statistics} statistic(s) from database.", entities.Length);
 

@@ -29,7 +29,9 @@ internal class ExtractAttributesTaskHandler : ICommandHandler<ExtractAttributesT
 
   public async Task<TaskResult> HandleAsync(ExtractAttributesTask command, CancellationToken cancellationToken)
   {
-    AttributeEntity[] entities = await _attributes.AsNoTracking().ToArrayAsync(cancellationToken);
+    AttributeEntity[] entities = await _attributes.AsNoTracking()
+      .OrderBy(x => x.SlugNormalized)
+      .ToArrayAsync(cancellationToken);
     _logger.LogInformation("Retrieved {Attributes} attribute(s) from database.", entities.Length);
 
     List<AttributeDto> attributes = new(capacity: entities.Length);

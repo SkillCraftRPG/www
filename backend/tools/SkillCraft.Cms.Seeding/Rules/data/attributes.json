@@ -11,17 +11,6 @@
     "Description": "**Adresse** est l’attribut mesurant l’équilibre, le contrôle du corps, la flexibilité, la vitesse, la dextérité manuelle et le sens spatial du personnage.\n\nUn personnage adroit est agile et gracieux, ses mouvements sont vifs, précis, et il est habile de ses mains. Il possède une bonne visée ainsi qu’un excellent sens de l’orientation.\n\nLes archétypes de personnages suivants bénéficieront particulièrement de cet attribut :\n\n- Artilleur\n- Assassin ou ninja\n- Conducteur ou pilote\n- Danseur, espion ou prestidigitateur\n- Tireur d’élite ou sniper cybernétique\n- Voleur acrobatique"
   },
   {
-    "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
-    "IsPublished": true,
-    "Slug": "vigueur",
-    "Name": "Vigueur",
-    "Category": "Physical",
-    "Value": "Vigor",
-    "Summary": "Mesure la force physique brute, l’explosivité musculaire et la capacité à produire un effort court mais intense.",
-    "MetaDescription": "Découvrez la Vigueur, attribut mesurant la force brute et l’endurance, influençant la charge, la puissance physique et le combat au corps à corps.",
-    "Description": "**Vigueur** est l’attribut mesurant la force musculaire du personnage, sa puissance physique brute et l’efficacité de ses muscles.\n\nUn personnage vigoureux est capable de générer une force impressionnante, même sans avoir une carrure massive. Ses actions sont puissantes, ses mouvements chargés de tension et d’impact.\n\nLes archétypes de personnages suivants bénéficieront particulièrement de cet attribut :\n\n- Athlète, haltérophile\n- Berserker ou gladiateur\n- Combattant martial, garde du corps\n- Démolisseur, sapeur\n- Forgeron, ouvrier de l’extrême\n- Soldat d’assaut en armure lourde"
-  },
-  {
     "Id": "781cd30c-4341-4083-9d9e-a42c4104f7a6",
     "IsPublished": true,
     "Slug": "intellect",
@@ -53,5 +42,16 @@
     "Summary": "Mesure la perception instinctive, l’intuition, les réflexes sensoriels et la connexion au surnaturel inné.",
     "MetaDescription": "Découvrez les Sens, attribut de perception et d’intuition, influençant l’initiative, la puissance surnaturelle, l’occultisme et la survie.",
     "Description": "**Sens** est l’attribut mesurant la conscience du personnage, l’acuité de ses sens, son intuition, son impulsivité, son instinct, ainsi que ses capacités surnaturelles.\n\nUn personnage sensible remarque les moindres détails, se fie à son instinct pour survivre, et peut manifester des pouvoirs innés d’origine surnaturelle.\n\nLes archétypes de personnages suivants bénéficieront particulièrement de cet attribut :\n\n- Chaman, druide ou médium\n- Investigateur paranormal\n- Mutant empathique\n- Oracle ou augure des étoiles\n- Prodige aux dons incontrôlés, magicien studieux\n- Traqueur sauvage, rôdeur"
+  },
+  {
+    "Id": "45fc0f30-4e06-4ab3-8b51-2b193e92a632",
+    "IsPublished": true,
+    "Slug": "vigueur",
+    "Name": "Vigueur",
+    "Category": "Physical",
+    "Value": "Vigor",
+    "Summary": "Mesure la force physique brute, l’explosivité musculaire et la capacité à produire un effort court mais intense.",
+    "MetaDescription": "Découvrez la Vigueur, attribut mesurant la force brute et l’endurance, influençant la charge, la puissance physique et le combat au corps à corps.",
+    "Description": "**Vigueur** est l’attribut mesurant la force musculaire du personnage, sa puissance physique brute et l’efficacité de ses muscles.\n\nUn personnage vigoureux est capable de générer une force impressionnante, même sans avoir une carrure massive. Ses actions sont puissantes, ses mouvements chargés de tension et d’impact.\n\nLes archétypes de personnages suivants bénéficieront particulièrement de cet attribut :\n\n- Athlète, haltérophile\n- Berserker ou gladiateur\n- Combattant martial, garde du corps\n- Démolisseur, sapeur\n- Forgeron, ouvrier de l’extrême\n- Soldat d’assaut en armure lourde"
   }
 ]
