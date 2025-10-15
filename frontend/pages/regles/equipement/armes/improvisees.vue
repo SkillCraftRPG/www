@@ -22,6 +22,11 @@
     <p>
       Les armes improvisées peuvent conférer un bonus à l’<NuxtLink to="/regles/equipement/armes/attaque">Attaque</NuxtLink>, à la discrétion du maître de jeu.
     </p>
+    <p>
+      Certaines armes improvisées peuvent être dotées de <NuxtLink to="/regles/equipement/armes/proprietes">propriétés</NuxtLink> normalement réservées aux
+      armes conventionnelles. Ces armes improvisées peuvent alors interagir avec certains talents et capacités, par exemple
+      <NuxtLink to="/regles/talents/armes-de-finesse">Armes de finesse</NuxtLink> et <NuxtLink to="/regles/talents/armes-de-jet">Armes de jet</NuxtLink>.
+    </p>
     <h2 class="h3">Dégâts</h2>
     <p>
       Les points de dégâts infligés et leur létalité dépendent de la nature de l’objet. Si l’objet se rapproche d’une arme conventionnelle, il peut infliger les
