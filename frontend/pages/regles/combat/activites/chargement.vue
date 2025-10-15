@@ -6,6 +6,7 @@
       Vous chargez une <NuxtLink to="/regles/equipement/armes/munitions">munition</NuxtLink> dans une
       <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> dotée de la propriété <NuxtLink to="/regles/equipement/armes/proprietes">Chargement</NuxtLink>.
     </p>
+    <p>Cette action déclenche une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.</p>
     <p>
       Le <NuxtLink to="/regles/talents">talent</NuxtLink> <NuxtLink to="/regles/talents/chargement-rapide">Chargement rapide</NuxtLink> améliore votre capacité
       à charger une arme.

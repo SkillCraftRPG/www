@@ -11,6 +11,7 @@
       exemple par une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>.
     </p>
     <p>Une créature achevée meurt instantanément. Elle peut néanmoins être ressuscitée si les conditions sont respectées.</p>
+    <p>Cette action déclenche une <NuxtLink to="/regles/combat/attaque/opportunite">attaque d’opportunité</NuxtLink>.</p>
   </main>
 </template>
 
