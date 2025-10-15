@@ -86,5 +86,27 @@
     "Summary": "Banni de son peuple, il survit seul grâce à ses sens affûtés.",
     "MetaDescription": "Découvrez la caste des Exilés, survivants endurcis bannis de leur peuple, maîtres de la survie, du pistage et de la vengeance dans les terres sauvages.",
     "Description": "Banni par son peuple ou par choix personnel, l’exilé a recours à son instinct de survie et à sa connaissance des milieux sauvages afin de survivre à son environnement.\n\nIl garde de souvenirs amers de son ancienne vie et prépare aigrement sa vengeance."
+  },
+  {
+    "Id": "f74c59c9-a678-40d5-8ac8-47cb6878d42f",
+    "IsPublished": true,
+    "Slug": "guerisseur",
+    "Name": "Guérisseur",
+    "WealthRoll": "7d6",
+    "Skill": {
+      "Id": "786e509e-ea89-4a51-b144-b84352f91b0f",
+      "IsPublished": true,
+      "Slug": "medecine",
+      "Name": "Médecine"
+    },
+    "Feature": {
+      "Id": "1c651703-22f3-4dd2-892d-b61fc66842d8",
+      "IsPublished": true,
+      "Name": "Notoriété médicale",
+      "Description": "Les conseils et directions donnés par le personnage en lien avec la médecine et la santé sont rarement pris à la légère.\n\nCela lui confère une certaine notoriété à tous les niveaux de la pyramide sociale, et peut également lui permettre de se procurer du matériel médical à prix réduit, ou d’échanger ses services de guérison contre diverses faveurs."
+    },
+    "Summary": "Soigneur respecté, reconnu pour ses conseils et son expertise médicale.",
+    "MetaDescription": "Découvrez la caste du Guérisseur, maître de la médecine et du soin, dont la notoriété médicale inspire confiance et ouvre les portes de toutes classes.",
+    "Description": "Le guérisseur est responsable du maintien et de l’amélioration de la santé de la communauté ou de la société pour laquelle il œuvre.\n\nSa clientèle est vaste : il doit soigner les citadins bourgeois, la haute noblesse, mais aussi les pauvres paysans, et parfois même les chasseurs en territoire sauvage et les soldats blessés sur un champ de bataille."
   }
 ]

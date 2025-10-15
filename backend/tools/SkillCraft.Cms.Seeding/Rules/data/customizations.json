@@ -200,6 +200,26 @@
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il choisit un des types de terrains suivant : arctique, côte, désert, forêt, marécage, montagne, prairie ou souterrains. Lorsqu’il voyage dans sur un terrain appartenant à ce type, le [terrain difficile](/regles/aventure/mouvement/terrain-difficile) ne le ralentit pas, et il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) contre ce terrain difficile. S’il voyage en groupe, tout le groupe bénéficie de cette capacité. À la discrétion du maître de jeu, il peut acquérir cette capacité pour un autre type de terrain par un mélange d’études théoriques et d’observations pratiques effectuées sur une période de [7 jours](/regles/aventure/temps) ou plus.\n- Il ignore les effets du climat rigoureux, comme une température très chaude ou très froide.\n- Il se voit conférer l’avantage à ses [tests](/regles/competences/tests) effectués afin de détecter la présence de pièges et de passages secrets. En milieu naturel, il peut renoncer à l’avantage et remplacer le test par un test de [Survie](/regles/competences/survie)."
   },
   {
+    "Id": "db9135fc-4deb-43ba-9729-1d86960115af",
+    "IsPublished": true,
+    "Slug": "infatigable",
+    "Name": "Infatigable",
+    "Kind": "Gift",
+    "Summary": "Réduit les dégâts non létaux et la dépense d’énergie par la Santé.",
+    "MetaDescription": "Découvrez le don Infatigable, qui permet de réduire les dégâts non létaux et la dépense d’énergie grâce à une endurance physique exceptionnelle.",
+    "Description": "Lorsque le personnage reçoit des [points de dégâts non létaux](/regles/combat/degats/letalite), il retire de ceux-ci sa [Santé](/regles/attributs/sante) (minimum 1).\n\nÉgalement, une fois par [tour](/regles/combat/deroulement/tour), il peut réduire une dépense de points d’[Énergie](/regles/statistiques/energie) d’un nombre égal à sa Santé (minimum 1).\n\nIl ne peut réduire des [points de dégâts](/regles/combat/degats) ou une dépense de points d’Énergie en-deçà de 0."
+  },
+  {
+    "Id": "5a32e8d9-c03f-46c8-ba57-a59600718c85",
+    "IsPublished": true,
+    "Slug": "infirme",
+    "Name": "Infirme",
+    "Kind": "Disability",
+    "Summary": "Perte d’un bras ou d’une jambe limitant vitesse ou maniement d’armes.",
+    "MetaDescription": "Découvrez le handicap Infirme, qui réduit la mobilité ou empêche l’usage d’armes à deux mains selon le membre perdu ou inutilisable.",
+    "Description": "Le personnage est né dépourvu ou a perdu au cours de son passé l’usage d’un de ses bras ou d’une de ses jambes.\n\nSes [vitesses](/regles/aventure/mouvement/vitesse) sont réduites de moitié s’il s’agit d’une jambe.\n\nIl ne peut manier d’[armes](/regles/equipement/armes) à deux mains s’il s’agit d’un bras."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",

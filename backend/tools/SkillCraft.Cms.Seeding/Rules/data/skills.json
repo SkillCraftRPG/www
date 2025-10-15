@@ -70,8 +70,8 @@
     "Name": "Diplomatie",
     "Value": "Diplomacy",
     "Attribute": null,
-    "Summary": "Diplomatie évalue la finesse sociale : inspirer confiance, susciter sympathie et exploiter les échanges.",
-    "MetaDescription": null,
+    "Summary": "Permet d’influencer, négocier et obtenir des faveurs par le tact.",
+    "MetaDescription": "Découvrez la compétence Diplomatie, qui permet d’influencer autrui, d’obtenir des informations ou de se fondre dans la foule avec tact et justesse.",
     "Description": "La compétence **Diplomatie** permet au personnage de :\n\n- [influencer l’attitude d’autrui](/regles/aventure/interaction-sociale) par le tact, les mots justes ou une étiquette appropriée\n- obtenir des informations précises en interagissant habilement avec les bonnes personnes\n- se fondre dans une foule sans attirer l’attention"
   },
   {

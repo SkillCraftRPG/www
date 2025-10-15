@@ -1,5 +1,18 @@
 ﻿[
   {
+    "Id": "55be09ee-01f1-4ed4-a3e7-ef44c4619f2f",
+    "IsPublished": true,
+    "Slug": "acceleration",
+    "Name": "Accélération",
+    "Tier": 2,
+    "AllowMultiplePurchases": true,
+    "Skill": null,
+    "RequiredTalent": null,
+    "Summary": "Augmente la vitesse de marche grâce à un bonus de mouvement.",
+    "MetaDescription": "Découvrez le talent Accélération, qui augmente la vitesse de marche du personnage grâce à un bonus permanent de points de mouvement.",
+    "Description": "Confère au personnage un bonus permanent (+2) de [points de mouvement](/regles/aventure/mouvement/vitesse) (ou 3 mètres par seconde) à sa vitesse de [marche](/regles/aventure/mouvement/types)."
+  },
+  {
     "Id": "081ac23a-7d82-4fab-ae4e-55692267c3d9",
     "IsPublished": true,
     "Slug": "acrobaties",
@@ -379,6 +392,24 @@
     "Summary": "Permet d’attaquer en courant et de renverser la cible touchée.",
     "MetaDescription": "Découvrez le talent Charge, qui permet d’attaquer en pleine course pour infliger des dégâts accrus ou renverser un ennemi sur son passage.",
     "Description": "Permet au personnage d’effectuer une [attaque de mêlée](/regles/combat/attaque/melee) en [action libre](/regles/combat/deroulement/tour) lorsqu’il [court](/regles/aventure/mouvement/types) en ligne droite sur une distance d’au moins 4,5 mètres immédiatement avant d’effectuer cette [attaque](/regles/combat/attaque).\n\nIl peut ajouter un bonus (+5) à son [test](/regles/competences/tests) d’attaque ou un [dé de dégâts](/regles/combat/degats/jet) supplémentaire.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de l’attaque effectuée par le personnage.\n\nEn cas d’échec, elle est repoussée de 3 mètres, ou elle est repoussée de 1,5 mètres et tombe [renversée](/regles/combat/conditions/renverse) au sol, au choix du personnage."
+  },
+  {
+    "Id": "9d6b0831-d4c7-4218-9a25-2e91f31370c2",
+    "IsPublished": true,
+    "Slug": "chargement-rapide",
+    "Name": "Chargement rapide",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "67a9983f-4a92-46e6-a5b9-6c4d09e531c2",
+      "IsPublished": true,
+      "Slug": "tir-rapide",
+      "Name": "Tir rapide"
+    },
+    "Summary": "Recharge les armes plus vite sans déclencher d’attaque adverse.",
+    "MetaDescription": "Découvrez le talent Chargement rapide, qui permet de recharger une arme en une seule action sans subir d’attaque d’opportunité.",
+    "Description": "Permet au personnage de [charger une arme](/regles/combat/activites/chargement) en une seule [action](/regles/combat/deroulement/tour) plutôt que deux.\n\nDésormais, lorsqu’il charge une arme, il ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite)."
   },
   {
     "Id": "2f330428-3e52-48a2-bbc3-4fb875f810db",
@@ -1610,8 +1641,8 @@
       "Slug": "roublardise",
       "Name": "Roublardise"
     },
-    "Summary": "Avantage aux tests de Roublardise dissimulé, bousculade par Roublardise, méfaits difficiles à découvrir si effectués lentement.",
-    "MetaDescription": null,
+    "Summary": "Améliore la discrétion et la précision des actes de sabotage ou vol.",
+    "MetaDescription": "Découvrez le talent Méfait feutré, qui perfectionne la Roublardise et permet de dissimuler ses actions ou saboter un mécanisme sans être repéré.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Roublardise](/regles/competences/roublardise) lorsqu’il manipule (déplace ou dissimule) un objet d’au plus la grosseur de la paume de sa main.\n- Lorsqu’il [bouscule](/regles/combat/activites/bousculer) une créature, il peut remplacer le test d’[Athlétisme](/regles/competences/athletisme) par un test de Roublardise.\n- Il peut doubler le temps nécessaire afin d’accomplir une tâche nécessitant un test de Roublardise, par exemple crocheter une serrure, activer ou désamorcer un piège, ou encore saboter un mécanisme. Lorsqu’il en fait ainsi, le méfait est dissimulé et difficilement discernable. Afin de découvrir le méfait, une créature doit réussir un test de [Perception](/regles/competences/perception) ou d’[Investigation](/regles/competences/investigation) [opposé](/regles/competences/tests/oppose) au test de Roublardise du personnage."
   },
   {
