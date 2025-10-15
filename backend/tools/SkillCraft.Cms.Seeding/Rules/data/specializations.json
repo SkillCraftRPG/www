@@ -261,7 +261,7 @@
     "Options": {
       "Talents": [],
       "Other": [
-        "Pouvoirs de tiers 1 associés à l’élément Esprit ([Divination](#))."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à l’élément Esprit ([Divination](#))."
       ]
     },
     "ReservedTalent": {
@@ -443,13 +443,13 @@
     "Options": {
       "Talents": [],
       "Other": [
-        "Deux pouvoirs issus d’une [combinaison élémentaire](#)."
+        "Deux [pouvoirs](/regles/magie/pouvoirs) issus d’une [combinaison élémentaire](#)."
       ]
     },
     "ReservedTalent": {
       "Name": "Fusion élémentaire",
       "Description": [
-        "Il peut acquérir les pouvoirs de tiers 2 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste). Le prochain pouvoir qu’il acquiert parmi cette liste est acquis [à rabais](/regles/magie/pouvoirs/acquisition).",
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste). Le prochain pouvoir qu’il acquiert parmi cette liste est acquis [à rabais](/regles/magie/pouvoirs/acquisition).",
         "Il peut également acquérir les pouvoirs de tiers 2 associés à une [combinaison élémentaire](#) incluant sa spécialité, et acquiert gratuitement un de ces pouvoirs.",
         "Enfin, il peut acquérir les pouvoirs de tiers 1 associés aux autres [éléments qu’il contrôle](/regles/talents/elementarisme), ainsi que ceux associés à une combinaison de ces éléments.",
         "Il peut utiliser de puissantes [capacités élémentaires](#) de tiers 2."
@@ -490,7 +490,7 @@
     "Options": {
       "Talents": [],
       "Other": [
-        "Pouvoirs de tiers 1 associés à son [domaine d’animisme](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
       ]
     },
     "ReservedTalent": {
@@ -499,6 +499,40 @@
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](#) et acquiert gratuitement un de ces pouvoirs.",
         "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](#)."
       ],
+      "DiscountedTalents": [],
+      "Features": []
+    }
+  },
+  {
+    "Id": "6b15354e-1841-4a94-8e7a-117184cb44ff",
+    "IsPublished": true,
+    "Slug": "champion",
+    "Name": "Champion",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Le champion se dresse tel un rempart entre sa foi et les ennemis de celle-ci. Il protège les fervents de sa foi et ceux qui ne peuvent se protéger eux-mêmes. Sélectionné parmi son culte ou sa religion, ses armes scintillent de lueur divine lorsqu’il châtie ses ennemis. Il possède la capacité de sentir la présence d’énergie sacrée ou profane, que cette énergie se manifeste sous la forme d’une créature, d’un objet ou même d’un lieu.",
+    "Requirements": {
+      "Talent": {
+        "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
+        "IsPublished": true,
+        "Slug": "cuirasse",
+        "Name": "Cuirassé"
+      },
+      "Other": [
+        "Le personnage ne doit pas avoir acquis la spécialisation [Prêtre](/regles/specialisations/pretre).",
+        "Il doit avoir acquis le talent [Spiritualité](/regles/talents/spiritualite), et doit avoir sélectionné un [domaine divin](#) lorsqu’il a acquis ce talent."
+      ]
+    },
+    "Options": {
+      "Talents": [],
+      "Other": [
+        "Un [pouvoir](/regles/magie/pouvoirs) de tiers 1 associé à son [domaine divin](#)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Qualité divine",
+      "Description": [],
       "DiscountedTalents": [],
       "Features": []
     }
@@ -746,7 +780,7 @@
     "Options": {
       "Talents": [],
       "Other": [
-        "Pouvoirs de tiers 1 associés à son [domaine d’animisme](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
       ]
     },
     "ReservedTalent": {
@@ -1178,7 +1212,7 @@
     "Options": {
       "Talents": [],
       "Other": [
-        "Pouvoirs de tiers 1 associés à son [domaine divin](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](#)."
       ]
     },
     "ReservedTalent": {
