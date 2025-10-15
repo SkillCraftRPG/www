@@ -59,8 +59,8 @@
       "Slug": "intellect",
       "Name": "Intellect"
     },
-    "Summary": "Connaissance mesure l’étendue des savoirs acquis du personnage, qu’ils soient encyclopédiques, spécialisés ou théoriques.",
-    "MetaDescription": null,
+    "Summary": "Utilise savoirs généraux et spécialisés pour comprendre le monde.",
+    "MetaDescription": "Découvrez la compétence Connaissance, qui permet d’utiliser savoirs généraux ou spécialisés pour analyser, comprendre et reconnaître le monde qui vous entoure.",
     "Description": "La compétence **Connaissance** permet au personnage de faire appel à ses savoirs généraux ou spécialisés pour répondre à une question précise, qu’elle concerne un sujet commun ou un domaine particulier."
   },
   {

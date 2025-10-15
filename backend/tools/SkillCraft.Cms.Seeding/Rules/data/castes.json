@@ -64,5 +64,27 @@
     "Summary": "Vagabond rusé, vivant d’expédients et de réseaux clandestins.",
     "MetaDescription": "Découvrez la caste Bohème, marginale et rusée, vivant d’expédients, de marchés noirs et d’alliances avec les hors-la-loi pour survivre aux marges du monde.",
     "Description": "Le bohème ne possède aucun domicile fixe ni occupation permanente.\n\nIl doit sa survie à la bonté des autres lorsqu’il mendie ou aux crimes qu’il perpètre dans les centres urbains.\n\nIl est incapable de s’intégrer à la société dont laquelle il dépend afin de survivre, il est donc fréquemment rejeté par celle-ci."
+  },
+  {
+    "Id": "6502055a-8cc3-4780-83bd-a019e4b666c5",
+    "IsPublished": true,
+    "Slug": "exile",
+    "Name": "Exilé",
+    "WealthRoll": "6d6",
+    "Skill": {
+      "Id": "ecdcb4fb-13bc-498c-8222-40e0900c23e8",
+      "IsPublished": true,
+      "Slug": "survie",
+      "Name": "Survie"
+    },
+    "Feature": {
+      "Id": "a9dd032e-6be9-4764-8f01-a3d066514f0c",
+      "IsPublished": true,
+      "Name": "Rancunier",
+      "Description": "Le personnage a renoncé à sa fidélité envers son seigneur ou sa patrie, ou il a été banni de sa patrie et chassé par son seigneur.\n\nVictime de nombreuses privations, il n’est pas pénalisé par la [faim](/regles/aventure/environnement/alimentation), ni par la [soif](/regles/aventure/environnement/alimentation).\n\nIl sait également faire plus avec moins. Lorsqu’il trouve de l’eau ou de la nourriture en milieu sauvage, il peut nourrir un nombre de personnes inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1)."
+    },
+    "Summary": "Banni de son peuple, il survit seul grâce à ses sens affûtés.",
+    "MetaDescription": "Découvrez la caste des Exilés, survivants endurcis bannis de leur peuple, maîtres de la survie, du pistage et de la vengeance dans les terres sauvages.",
+    "Description": "Banni par son peuple ou par choix personnel, l’exilé a recours à son instinct de survie et à sa connaissance des milieux sauvages afin de survivre à son environnement.\n\nIl garde de souvenirs amers de son ancienne vie et prépare aigrement sa vengeance."
   }
 ]

@@ -17,7 +17,7 @@
     "Kind": "Gift",
     "Summary": "Sens inné de l’orientation et précision exceptionnelle.",
     "MetaDescription": "Découvrez Adresse légendaire, un don rare qui confère un sens de l’orientation infaillible et une précision hors norme dans l’exploration.",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut faire [Faire 20](/regles/competences/tests/faire-20) à un [test](/regles/competences/tests) d’[Orientation](/regles/competences/orientation) lorsque la situation lui permet de [Faire 10](/regles/competences/tests/faire-10), avec l’approbation du maître de jeu.\n- Lorsque la situation ne lui permet pas de Faire 10 à un test d’Orientation, il peut dépenser 20 points d’[Énergie](/regles/statistiques/energie) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son test.\n- Grâce à son sens spatial fabuleux, il sait toujours où il se situe par rapport à des indices visuels. Par exemple, s’il remarque la forme particulière d’un nœud dans l’écorce d’un arbre, lorsqu’il verra à nouveau le nœud, il sera capable de comparer sa position actuelle avec sa position précédente. Cela lui permet par exemple de se rendre compte instinctivement qu’il est perdu et qu’il tourne en rond. Il est également doté d’un sens précis des distances, ce qui lui permet de dessiner avec précision des cartes."
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut [Faire 20](/regles/competences/tests/faire-20) à un [test](/regles/competences/tests) d’[Orientation](/regles/competences/orientation) lorsqu’il n’est pas [menacé](/regles/combat), qu’il n’est pas distrait, et qu’il n’est pas contraint par le matériel.\n- Il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à un de ses tests d’Orientation.\n- Grâce à son sens spatial fabuleux, il sait toujours où il se situe par rapport à des indices visuels. Par exemple, s’il remarque la forme particulière d’un nœud dans l’écorce d’un arbre, lorsqu’il verra à nouveau le nœud, il sera capable de comparer sa position actuelle avec sa position précédente. Cela lui permet par exemple de se rendre compte instinctivement qu’il est perdu et qu’il tourne en rond. Il est également doté d’un sens précis des distances, ce qui lui permet de dessiner avec précision des cartes."
   },
   {
     "Id": "cd3e4047-047b-484c-bb44-62e421ea30a1",
@@ -67,7 +67,7 @@
     "Kind": "Gift",
     "Summary": "Double portée, avantage et dégâts contre objets et structures.",
     "MetaDescription": "Découvrez le don Baraqué, qui double la portée des bousculades, accorde l’avantage pour briser des objets et double les dégâts infligés aux structures.",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il repousse une créature par une [bousculade](/regles/combat/activites/bousculer), il double la portée de la bousculade.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) lorsqu’il tente de briser ou d’[attaquer](/regles/combat/attaque) un [objet](/regles/aventure/interaction-objets), une structure, un bâtiment ou une construction non magique.\n- Il double les [points de dégâts](/regles/combat/degats) qu’il inflige aux objets, aux structures, aux bâtiments ainsi qu’aux constructions non magiques."
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il [bouscule](/regles/combat/activites/bousculer) ou repousse une créature par une capacité non magique, la distance est doublée.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) lorsqu’il tente de briser ou d’[attaquer](/regles/combat/attaque) un [objet](/regles/aventure/interaction-objets), une structure, un bâtiment ou une construction non magique.\n- Il double les [points de dégâts](/regles/combat/degats) qu’il inflige aux objets, aux structures, aux bâtiments ainsi qu’aux constructions non magiques."
   },
   {
     "Id": "8e3592b5-a928-45a9-80ca-d4f84854aeb1",
@@ -178,6 +178,26 @@
     "Summary": "Permet de relancer les dés de dégâts et garder le meilleur jet.",
     "MetaDescription": "Découvrez le don Féroce, qui permet au personnage de lancer deux fois les dés de dégâts d’une attaque et de choisir le meilleur résultat.",
     "Description": "Une fois par [tour](/regles/combat/deroulement/tour), le personnage peut [rouler deux fois les dégâts](/regles/combat/degats/jet) d’une [attaque](/regles/combat/attaque) et utiliser le résultat de son choix."
+  },
+  {
+    "Id": "66ff2422-270f-43dc-a84d-3f5e78852113",
+    "IsPublished": true,
+    "Slug": "fignolage",
+    "Name": "Fignolage",
+    "Kind": "Gift",
+    "Summary": "Permet de perfectionner ses créations et réparer sous pression.",
+    "MetaDescription": "Découvrez le don Fignolage, qui permet d’exceller dans les travaux minutieux, d’améliorer les tests d’Artisanat et de réparer les objets même sous pression.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut [Faire 20](/regles/competences/tests/faire-20) à un [test](/regles/competences/tests) d’[Artisanat](/regles/competences/artisanat) lorsqu’il n’est pas [menacé](/regles/combat), qu’il n’est pas distrait, et qu’il n’est pas contraint par le [temps](/regles/aventure/temps).\n- Il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à un de ses tests d’Artisanat.\n- Il peut [Faire 10](/regles/competences/tests/faire-10) lorsqu’il utilise une [trousse de réparation](/regles/equipement/outils) pour [réparer un objet](/regles/talents/artisanat), même lorsqu’il est menacé ou distrait."
+  },
+  {
+    "Id": "374223d0-99ef-49e8-a494-56738ffd8e9e",
+    "IsPublished": true,
+    "Slug": "globe-trotteur",
+    "Name": "Globe-trotteur",
+    "Kind": "Gift",
+    "Summary": "Maîtrise les terrains extrêmes et guide son groupe sans ralentir.",
+    "MetaDescription": "Découvrez le don Globe-trotteur, qui permet d’exceller en terrain difficile, d’ignorer les climats extrêmes et de guider un groupe à travers les environnements…",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il choisit un des types de terrains suivant : arctique, côte, désert, forêt, marécage, montagne, prairie ou souterrains. Lorsqu’il voyage dans sur un terrain appartenant à ce type, le [terrain difficile](/regles/aventure/mouvement/terrain-difficile) ne le ralentit pas, et il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) contre ce terrain difficile. S’il voyage en groupe, tout le groupe bénéficie de cette capacité. À la discrétion du maître de jeu, il peut acquérir cette capacité pour un autre type de terrain par un mélange d’études théoriques et d’observations pratiques effectuées sur une période de [7 jours](/regles/aventure/temps) ou plus.\n- Il ignore les effets du climat rigoureux, comme une température très chaude ou très froide.\n- Il se voit conférer l’avantage à ses [tests](/regles/competences/tests) effectués afin de détecter la présence de pièges et de passages secrets. En milieu naturel, il peut renoncer à l’avantage et remplacer le test par un test de [Survie](/regles/competences/survie)."
   },
   {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",

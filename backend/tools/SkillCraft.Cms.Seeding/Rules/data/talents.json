@@ -58,7 +58,7 @@
     "Skill": null,
     "RequiredTalent": null,
     "Summary": "Maniement des armes de finesse et choix entre Force ou Précision.",
-    "MetaDescription": "Découvrez Armes de finesse, le talent offrant la maîtrise des armes simples et martiales avec finesse, permettant flexibilité entre Force et Précision et bonus…",
+    "MetaDescription": "Découvrez le talent Armes de finesse, qui permet d’utiliser précision ou force avec des armes légères et d’infliger des dégâts accrus en combat rapproché.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est [formé](/regles/equipement/armes/formation) au maniement des armes [simples](/regles/equipement/armes/simples) et [martiales](/regles/equipement/armes/martiales) possédant la propriété [Finesse](/regles/equipement/armes/proprietes).\n- Lorsqu’il effectue une [attaque](/regles/combat/attaque) en maniant une telle [arme](/regles/equipement/armes), il choisit s’il effectue un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) ou d’[Orientation](/regles/competences/orientation). Il ajoute aux [points de dégâts](/regles/combat/degats) infligés sa [Force](/regles/statistiques/force) s’il a effectué un test de Mêlée, ou sa [Précision](/regles/statistiques/precision) s’il a effectué un test d’Orientation.\n- Lorsqu’il effectue une [attaque de mêlée](/regles/combat/attaque/melee) en maniant une telle arme, il inflige un [dé de dégâts](/regles/combat/degats/jet) supplémentaire s’il ne tient aucune autre arme."
   },
   {
@@ -178,8 +178,8 @@
       "Slug": "occultisme",
       "Name": "Occultisme"
     },
-    "Summary": "Permet de transcrire des signes et d’obtenir des pouvoirs d’astromancie.",
-    "MetaDescription": "Découvrez Astrologie, un talent liant l’astronomie et l’occultisme, permettant de transcrire des signes dans un grimoire et d’acquérir des pouvoirs d’astromanc…",
+    "Summary": "Permet d’étudier les signes célestes et d’en extraire des pouvoirs.",
+    "MetaDescription": "Découvrez le talent Astrologie, qui permet d’étudier et de consigner des signes astrologiques, et d’en tirer des pouvoirs d’astromancie.",
     "Description": "### Grimoire\n\nAfin de bénéficier de de talent, le personnage doit posséder un [grimoire](/regles/equipement/general) d’une valeur minimale de [50 deniers](/regles/equipement/monnaie).\n\nIl y transcrit les [signes astrologiques](#) qu’il découvre ainsi que ses observations astronomiques de ces signes.\n\nIl peut y transcrire un nombre maximal de signes astrologiques égal à 2 + [Intellect](/regles/attributs/intellect) + [rang](/regles/competences/rang) d’[Occultisme](/regles/competences/occultisme) (minimum 2).\n\nChaque fois que son rang d’Occultisme augmente, il acquiert également un signe astrologique de son choix et le transcrit gratuitement dans son grimoire.\n\n### Transcription\n\nLe personnage peut transcrire un signe astrologique dans son grimoire lorsqu’il possède une représentation exacte de ce signe (par exemple, un autre grimoire, signe gravé sur une stèle, une table d’astronomie, etc.).\n\nLe processus de transcription nécessite [deux heures](/regles/aventure/temps) consécutives pendant lesquelles le personnage s’efforce de transcrire le signe à plusieurs reprises afin de le mémoriser. Cette transcription peut s’effectuer pendant deux [haltes](/regles/aventure/repos/halte) consécutives.\n\nAfin de transcrire un signe astrologique dans son grimoire, le personnage doit consommer des composantes matérielles, par exemple de l’[encre de qualité](/regles/equipement/general), d’une valeur minimale de [100&nbsp;deniers](/regles/equipement/monnaie).\n\n### Pouvoirs\n\nLe personnage peut désormais acquérir les pouvoirs d’[astromancie](#) de tiers 0, et il acquiert gratuitement un de ces pouvoirs.\n\nIl sélectionne un des signes astrologiques associés à ce pouvoir. Il acquiert ce signe et le signe opposé, et les transcrit gratuitement dans son grimoire."
   },
   {
@@ -257,7 +257,7 @@
     },
     "Summary": "Inflige des coups précis pour neutraliser sans ôter la vie.",
     "MetaDescription": "Découvrez le talent Attaque neutralisante, qui permet d’infliger des dégâts non létaux et de terrasser un adversaire sans le tuer.",
-    "Description": "### Passif\n\nPermet au personnage d’infliger des [points de dégâts non létaux](/regles/combat/degats/letalite) lorsqu’il réussit une [attaque de mêlée](/regles/combat/attaque/melee) en maniant une [arme](/regles/equipement/armes) pour laquelle il est [formé](/regles/equipement/armes/formation) et infligeant des points de dégâts [contondants](/regles/combat/degats/types).\n\nIl inflige la moitié des points de dégâts en létal (arrondi inférieur) et l’autre moitié en non létal (arrondi supérieur).\n\nIl peut utiliser une arme non contondante s’il attaque sa cible en utilisant une portion de l’arme s’apparentant à une arme contondante, par exemple le pommeau d’une épée ou la poignée d’une arme d’hast.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour).\n\n### Actif\n\nÉgalement, lorsqu’il utilise cette capacité, il peut ajouter des [dés de dégâts](/regles/combat/degats/jet) non létaux.\n\nIl peut ajouter un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) de l’[attaque](/regles/combat/attaque) effectuée par le personnage.\n\nEn cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, en proie à une douleur aigue."
+    "Description": "Le personnage peut infliger des [points de dégâts non létaux](/regles/combat/degats/letalite) lorsqu’il réussit une [attaque de mêlée](/regles/combat/attaque/melee) par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl doit manier une [arme](/regles/equipement/armes) infligeant des points de dégâts [contondants](/regles/combat/degats/types) létaux, et être [formé](/regles/equipement/armes/formation) au maniement de cette arme.\n\nIl inflige la moitié des points de dégâts en létal (arrondi inférieur) et l’autre moitié en non létal (arrondi supérieur).\n\nIl peut utiliser une arme non contondante s’il attaque sa cible en utilisant une portion de l’arme s’apparentant à une arme contondante, par exemple le pommeau d’une épée ou la poignée d’une arme d’hast.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour).\n\nÉgalement, lorsqu’il utilise cette capacité, il peut ajouter des [dés de dégâts](/regles/combat/degats/jet) non létaux.\n\nIl peut ajouter un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’[attaque](/regles/combat/attaque) effectuée par le personnage.\n\nEn cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, en proie à une douleur aigue."
   },
   {
     "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
@@ -270,7 +270,7 @@
     "RequiredTalent": null,
     "Summary": "Maximise les dégâts et peut étourdir les cibles plus petites.",
     "MetaDescription": "Découvrez le talent Attaque puissante, qui permet de maximiser les dés de dégâts et d’étourdir les cibles plus faibles au corps à corps.",
-    "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut remplacer des [dés de dégâts](/regles/combat/degats/jet) par leur valeur maximale.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier une [arme](/regles/equipement/armes) conventionnelle à une main pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl peut remplacer un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée.\n\nEn cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain tour."
+    "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut remplacer des [dés de dégâts](/regles/combat/degats/jet) par leur valeur maximale.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier une [arme](/regles/equipement/armes) à une main pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl peut remplacer un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’attaque effectuée par le personnage.\n\nEn cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain tour."
   },
   {
     "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
@@ -281,9 +281,9 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Inflige 2d6 dégâts bonus lors d’une attaque précise et rusée",
+    "Summary": "Inflige 2d6 dégâts bonus lors d’une attaque précise et rusée.",
     "MetaDescription": "Découvrez le talent Attaque sournoise, qui permet d’infliger 2d6 dégâts supplémentaires lors d’une frappe précise et avantageuse.",
-    "Description": "Lorsque le personnage réussit une [attaque à distance](/regles/combat/attaque/distance) ou en maniant une [arme](/regles/equipement/armes) possédant la propriété [Finesse](/regles/equipement/armes/proprietes), il peut ajouter [2d6 points de dégâts](/regles/combat/degats/jet).\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), et il doit être [formé](/regles/equipement/armes/formation) au maniement de l’arme utilisée.\n\nAfin d’utiliser cette capacité, le [test](/regles/competences/tests) de l’attaque doit être effectué avec [avantage](/regles/competences/tests/avantage-desavantage).\n\nLe personnage peut également utiliser cette capacité lorsque le test n’est pas effectué avec [désavantage](/regles/competences/tests/avantage-desavantage), et qu’une créature hostile envers la cible se trouve à 1,5 mètres ou moins de celle-ci et n’est pas [incapable](/regles/combat/conditions/incapable)."
+    "Description": "Lorsque le personnage réussit une [attaque](/regles/combat/attaque) par un [test](/regles/competences/tests) d’[Orientation](/regles/competences/orientation), il peut infliger [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires.\n\nIl doit effectuer une [attaque de mêlée](/regles/combat/attaque/melee) en maniant une arme possédant la propriété [Finesse](/regles/equipement/armes/proprietes), ou une [attaque à distance](/regles/combat/attaque/distance) en maniant une arme possédant la propriété [Munition](/regles/equipement/armes/proprietes).\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), et il doit être [formé](/regles/equipement/armes/formation) au maniement de l’arme utilisée.\n\nAfin d’utiliser cette capacité, le test de l’attaque doit être effectué avec [avantage](/regles/competences/tests/avantage-desavantage).\n\nLe personnage peut également utiliser cette capacité lorsque le test n’est pas effectué avec [désavantage](/regles/competences/tests/avantage-desavantage) et qu’une créature hostile envers la cible se trouve à 1,5 mètres ou moins de celle-ci, et que cette créature n’est pas [incapable](/regles/combat/conditions/incapable)."
   },
   {
     "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
@@ -346,7 +346,7 @@
   },
   {
     "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "bris",
     "Name": "Bris",
     "Tier": 1,
@@ -358,9 +358,9 @@
       "Slug": "armes-improvisees",
       "Name": "Armes improvisées"
     },
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
-    "Description": "\uD83D\uDEA7"
+    "Summary": "Permet de briser, désarmer ou renverser ses adversaires.",
+    "MetaDescription": "Découvrez le talent Bris, permettant d’endommager ou de briser les armes adverses et de renverser ou étourdir ses ennemis avec des armes improvisées.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il tente d’endommager ou de [briser un objet](/regles/aventure/interaction-objets) sans être [menacé](/regles/combat) ni distrait, il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) s’il ne peut [Faire 10](/regles/competences/tests/faire-10).\n- Lorsqu’il effectue une [attaque](/regles/combat/attaque) en maniant ou en lançant une [arme improvisée](/regles/equipement/armes/improvisees) par un test de [Mêlée](/regles/competences/melee), alors il peut tenter de cibler une [arme](/regles/equipement/armes) tenue par une autre créature.\n  - Son test est alors affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n  - La créature reçoit la moitié des [points de dégâts](/regles/combat/degats) en [non létal](/regles/combat/degats/letalite).\n  - L’arme ayant la valeur de [Défense](/regles/aventure/interaction-objets) la plus faible reçoit l’autre moitié. En cas d’égalité, les deux armes reçoivent le quart des points de dégâts.\n  - Si le résultat du test est inférieur à cette valeur de Défense, les deux armes ne reçoivent aucun point de dégâts.\n- Lorsqu’il effectue une attaque en maniant ou en lançant une arme improvisée par un test de Mêlée et que l’arme brise, alors la cible risque de recevoir des pénalités additionnelles si sa [taille](/regles/especes/taille) est inférieure ou égale à celle du personnage.\n  - La cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme), au choix. En cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, ou repoussée de 1,5 mètres, au choix du personnage.\n  - Elle doit également effectuer jet de sauvegarde de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance), à son choix. En cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour).\n  - La cible peut réutiliser les mêmes [dés](/regles/competences/tests/2d10) pour les deux jets de sauvegarde, à la discrétion du maître de jeu.\n  - La [difficulté](/regles/competences/tests/difficulte) des jets de sauvegarde correspond au résultat du test de Mêlée effectué par le personnage."
   },
   {
     "Id": "1b374cfe-6709-43e4-a6d9-61c637e0c8a4",
@@ -562,7 +562,7 @@
       "Name": "Formation martiale"
     },
     "Summary": "Permet de porter des armures lourdes et boucliers lourds sans pénalités.",
-    "MetaDescription": "Découvrez Cuirassé, le talent qui forme au port des armures lourdes et boucliers lourds, supprime les malus de bruit et facilite la régénération en armure légè…",
+    "MetaDescription": "Découvrez le talent Cuirassé, qui offre la maîtrise des armures lourdes et des boucliers, permettant de dormir en armure et d’ignorer le bruit du métal.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est [formé](/regles/equipement/armures/formation) au port des [armures lourdes](/regles/equipement/armures/lourdes) et à l’utilisation des [boucliers lourds](/regles/equipement/boucliers).\n- Il ignore la propriété [Bruyante](/regles/equipement/armures/proprietes) des [armures légères](/regles/equipement/armures/legeres) et [moyennes](/regles/equipement/armures/moyennes) qu’il porte.\n- Il peut [dormir](/regles/aventure/repos/sommeil) en portant une armure légère ou moyenne sans subir de pénalité à sa [régénération](/regles/aventure/repos)."
   },
   {
@@ -605,6 +605,24 @@
     "Summary": "Permet d’esquiver et réduire les dégâts d’une attaque reçue.",
     "MetaDescription": "Découvrez le talent Dérobade, une évolution de Parade permettant d’esquiver les attaques, réduire les dégâts reçus et améliorer ses jets d’Acrobaties.",
     "Description": "Lorsque le personnage effectue une [parade](/regles/talents/parade) ([posture défensive](/regles/combat/activites/defense) ou [réaction](/regles/combat/deroulement/tour)), il acquiert les capacités suivantes :\n\n- Il peut remplacer le bonus d’[Attaque](/regles/equipement/armes/attaque) de son [arme](/regles/equipement/armes) par la moitié de son [rang](/regles/competences/rang) d’[Acrobaties](/regles/competences/acrobaties). Il déduit de ce nombre tout bonus de [Défense](/regles/equipement/defense) conféré par son [équipement](/regles/equipement), notamment [armures](/regles/equipement/armures) et [boucliers](/regles/equipement/boucliers) dont il bénéficie. Ce bonus ne peut descendre en-deçà de 0.\n- Il peut réduire de moitié les [points de dégâts](/regles/combat/degats) reçus d’une [attaque](/regles/combat/attaque) le prenant pour cible ou d’un effet nécessitant un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’Acrobaties de sa part, même s’il échoue le jet de sauvegarde. Il ne peut réutiliser cette capacité avant la fin de son prochain [tour](/regles/combat/deroulement/tour).\n- Il peut conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à un de ses jets de sauvegarde d’Acrobaties. Il doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+  },
+  {
+    "Id": "c2a0e512-521c-485d-a7e4-784b74e37e40",
+    "IsPublished": true,
+    "Slug": "destruction",
+    "Name": "Destruction",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+      "IsPublished": true,
+      "Slug": "bris",
+      "Name": "Bris"
+    },
+    "Summary": "Brise son arme pour infliger plus de dégâts ou assommer l’ennemi.",
+    "MetaDescription": "Découvrez le talent Destruction, permettant d’infliger des dégâts accrus en brisant son arme contre l’ennemi et d’assommer les cibles affaiblies.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il tente d’endommager ou de [briser un objet](/regles/aventure/interaction-objets) sans être [menacé](/regles/combat) ni distrait, il peut [Faire 20](/regles/competences/tests/faire-20) s’il n’est pas contraint par le [temps](/regles/aventure/temps).\n- Lorsqu’il [cible une arme](/regles/talents/bris) tenue par une autre créature, alors son [test](/regles/competences/tests) n’est pas affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il [brise son arme](/regles/talents/bris) contre une créature et que celle-ci échoue un des [jets de sauvegarde](/regles/competences/tests/sauvegarde), elle reçoit des pénalités additionnelles si elle obtient un [échec critique](/regles/competences/tests/critique), ou que son [dé de Damnation](/regles/competences/tests/2d10) est supérieur à son [dé d’Espérance](/regles/competences/tests/2d10). Ces pénalités sont supplémentaires à celles spécifiées par le talent [Bris](/regles/talents/bris).\n  - Si elle échoue le jet de sauvegarde d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme) de cette manière, alors la créature reçoit un nombre de [points de dégâts](/regles/combat/degats) supplémentaires égal à la valeur maximale du [dé de dégâts](/regles/combat/degats/jet) de l’arme brisée.\n  - Si elle échoue le jet de sauvegarde [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance) de cette manière, alors la créature est [assommée](/regles/combat/conditions/assomme) jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour)."
   },
   {
     "Id": "3968f65a-586b-4c4c-b71e-f888c321697d",
@@ -662,7 +680,7 @@
     },
     "RequiredTalent": null,
     "Summary": "Octroie un bonus d’Énergie et renforce la stabilité mentale.",
-    "MetaDescription": "Découvrez le talent Discipline, qui renforce la stabilité mentale et accorde un bonus permanent d’Énergie pour résister au stress et aux influences surnaturell…",
+    "MetaDescription": "Découvrez le talent Discipline, qui renforce la stabilité mentale et confère 5 points d’énergie supplémentaires au personnage.",
     "Description": "Confère au personnage un bonus permanent de 5 points d’[Énergie](/regles/statistiques/energie)."
   },
   {
@@ -1638,6 +1656,24 @@
     "Description": "Après avoir effectué une action, le personnage peut inspirer d’autres créatures à effectuer la même action.\n\nPar une [action](/regles/combat/deroulement/tour), il sélectionne un nombre de créatures inférieur ou égal à la moitié de son [rang](/regles/competences/rang) de [Diplomatie](/regles/competences/diplomatie), situées à 9 mètres ou moins de sa position.\n\nJusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour), une créature ciblée se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) si elle effectue la même action que le personnage.\n\nÉgalement, si le personnage [interagit](/regles/aventure/interaction-sociale) continuellement pendant [10 minutes](/regles/aventure/temps) avec une créature qui peut le comprendre, par le langage [verbal](/regles/langues) ou corporel, il peut tenter de la [charmer](/regles/combat/conditions/charme) par un test de Diplomatie et en dépensant 15 points d’[Énergie](/regles/statistiques/energie).\n\nSi celle-ci échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du test, elle est charmée par celui-ci pendant un nombre de minutes égal à la moitié de son rang de Diplomatie.\n\nL’effet prend fin si le personnage ou un de ses alliés commet une action hostile contre la cible ou contre une créature alliée de celle-ci.\n\nLa cible ne sait pas qu’elle a été charmée lorsque l’effet prend fin, mais elle est immunisée à cet effet pendant les 24 prochaines heures."
   },
   {
+    "Id": "6fd1c3b5-4a26-4cc1-942a-9f8d844e3027",
+    "IsPublished": false,
+    "Slug": "meta-magie",
+    "Name": "Méta-magie",
+    "Tier": 1,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
+      "IsPublished": true,
+      "Slug": "occultisme",
+      "Name": "Occultisme"
+    },
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "\uD83D\uDEA7"
+  },
+  {
     "Id": "e1c94ff1-b416-4d96-b378-908912b1e3d1",
     "IsPublished": true,
     "Slug": "mythomane",
@@ -1681,7 +1717,7 @@
     },
     "Summary": "Avantage aux tests de Connaissance sur créatures naturelles et matériaux. Reçoit plus d’infos utiles. Reconnaît souvent les matériaux sans test.",
     "MetaDescription": null,
-    "Description": "### Créatures\n\nLe personnage possède de vastes connaissances à propos des créatures naturelles, par exemple les animaux, les plantes, les limons, les dragons et les monstruosités.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) envers ces créatures et reçoit de l’information supplémentaire lorsqu’il réussit un de ces tests.\n\nCette information correspond généralement aux habiletés de cette créature, à quel point celle-ci est dangereuse pour son groupe, la signification de ses comportements, les dangers naturels de son habitat, et quelles ressources de valeur peuvent être récoltées sur cette créature.\n\n### Matériaux\n\nÉgalement, il possède de vastes connaissances à propos des [matériaux](/regles/equipement/marchandise).\n\nIl reconnait instantanément la majorité des matériaux ainsi que leur rareté, sans nécessiter de test de Connaissance, à la discrétion du maître de jeu.\n\nIl se voit conférer l’avantage à ses tests de Connaissance afin de recevoir de l’information supplémentaire à propos de ces matériaux."
+    "Description": "### Créatures\n\nLe personnage possède de vastes connaissances à propos des créatures naturelles, par exemple les animaux, les plantes, les limons, les dragons et les monstruosités.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) envers ces créatures et reçoit de l’information supplémentaire lorsqu’il réussit un de ces tests.\n\nCette information correspond généralement aux habiletés de cette créature, à quel point celle-ci est dangereuse pour son groupe, la signification de ses comportements, les dangers naturels de son habitat, et quelles ressources de valeur peuvent être récoltées sur cette créature.\n\nIl peut utiliser cette capacité pour, par exemple, identifier une créature à partir des traces qu’elle a laissées au sol.\n\n### Matériaux\n\nÉgalement, il possède de vastes connaissances à propos des [matériaux](/regles/equipement/marchandise).\n\nIl reconnait instantanément la majorité des matériaux ainsi que leur rareté, sans nécessiter de test de Connaissance, à la discrétion du maître de jeu.\n\nIl se voit conférer l’avantage à ses tests de Connaissance afin de recevoir de l’information supplémentaire à propos de ces matériaux."
   },
   {
     "Id": "066f198d-e331-4006-8bd9-2831aff258de",
@@ -1800,6 +1836,24 @@
     "Summary": "Ajoute le bonus d’arme à la défense pour parer les attaques.",
     "MetaDescription": "Découvrez le talent Parade, qui permet de détourner les attaques en posture défensive, ajoutant le bonus d’attaque de l’arme à la défense du combattant.",
     "Description": "Lorsque le personnage se place en [posture défensive](/regles/combat/activites/defense), il peut ajouter le bonus d’[Attaque](/regles/equipement/armes/attaque) de son [arme](/regles/equipement/armes) à sa [Défense](/regles/combat/attaque/defense) ainsi qu’à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties).\n\nAfin d’utiliser cette capacité, il doit manier une arme à une main pour laquelle il est [formé](/regles/equipement/armes/formation). Il ne peut manier aucune autre arme.\n\nS’il bénéficie d’un [bouclier](/regles/equipement/boucliers), il retire du bonus d’Attaque le bonus à la [Défense](/regles/equipement/defense) conféré par le bouclier. Le bonus conféré par cette capacité ne peut descendre en-deçà de 0.\n\nÉgalement, il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de tenter de parer une [attaque](/regles/combat/attaque/defense) le prenant pour cible, ou d’esquiver un effet nécessitant un jet de sauvegarde d’Acrobaties de sa part. Il doit [voir](/regles/aventure/environnement/vision) la source de l’attaque ou de l’effet.\n\nIl ajoute le même bonus que mentionné précédemment à sa Défense et à ses jets de sauvegarde, et doit respecter les mêmes conditions. L’effet dure jusqu’au début de son prochain&nbsp;[tour](/regles/combat/deroulement/tour)."
+  },
+  {
+    "Id": "3e69bf90-dabc-4bc1-bc07-2be486508f31",
+    "IsPublished": true,
+    "Slug": "pareidolie",
+    "Name": "Paréidolie",
+    "Tier": 1,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "133da5f0-a957-4dbc-b1b8-7a9f35224223",
+      "IsPublished": true,
+      "Slug": "illusions-mineures",
+      "Name": "Illusions mineures"
+    },
+    "Summary": "Permet d’apprendre les illusions de tiers 1 et d’en acquérir une.",
+    "MetaDescription": "Découvrez le talent Paréidolie, qui permet d’acquérir les illusions de tiers 1 et d’élargir la maîtrise des pouvoirs visuels des Astromanciens et Ménestrels.",
+    "Description": "Ce talent n’a aucun effet si le personnage n’a pas acquis la spécialisation [Astromancien](/regles/specialisations/astromancien) ou [Ménestrel](/regles/specialisations/menestrel).\n\nIl peut désormais acquérir les [illusions](#) de tiers 1 et apprend gratuitement une de ces illusions."
   },
   {
     "Id": "326302ae-b229-435c-a055-c87c6f6353be",
