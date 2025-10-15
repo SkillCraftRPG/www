@@ -538,6 +538,37 @@
     }
   },
   {
+    "Id": "656a91dd-ce68-4ca9-b3b1-061ca4592dbc",
+    "IsPublished": true,
+    "Slug": "chasseur",
+    "Name": "Chasseur",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Arpenteur des forêts denses, des étendues sauvages, des déserts de glace ou même des profonds réseaux souterrains de cavernes, le chasseur se fond dans le décor des milieux naturels, silencieux comme le vent et connaisseur des sentiers cachés et des secrets de la nature. La plupart vit à l’écart des sociétés, à l’écart de la civilisation. Il est à la fois craint pour ses aptitudes rappelant celle d’une bête et respecté pour les services rendus lorsqu’il capture ou terrasse un terrible monstre terrorisant les communautés à proximité.",
+    "Requirements": {
+      "Talent": {
+        "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+        "IsPublished": true,
+        "Slug": "survivalisme",
+        "Name": "Survivalisme"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Pistage",
+      "Description": [
+        "\uD83D\uDEA7"
+      ],
+      "DiscountedTalents": [],
+      "Features": []
+    }
+  },
+  {
     "Id": "07f0980d-1c1f-44bc-aee8-998298fa6546",
     "IsPublished": true,
     "Slug": "clerc",
