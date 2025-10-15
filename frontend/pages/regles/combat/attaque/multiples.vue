@@ -2,10 +2,7 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb active="Multiples" :parent="parent" />
-    <p>
-      Pendant son <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, une créature peut effectuer une
-      <NuxtLink to="/regles/combat/activites">activité</NuxtLink> <i>Attaquer</i> par membre de son corps.
-    </p>
+    <p>Pendant son <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, une créature peut effectuer une attaque par membre de son corps.</p>
     <p>Par exemple, un personnage doté de deux bras et de deux jambes peut effectuer un attaque avec chacun de ses bras, ainsi qu’avec une de ses jambes.</p>
     <p>
       Lorsqu’une créature effectue plusieurs attaques pendant le même tour, un pénalité cumulative (-5, -10, etc.) est infligée au
@@ -35,7 +32,7 @@ const parent: Breadcrumb[] = [
 const title: string = "Attaques multiples";
 const { orderBy } = arrayUtils;
 
-const query: string = ["attaques-multiples", "frenesie"].map((slug) => `slug=${slug}`).join("&");
+const query: string = ["ambidextre", "attaques-multiples", "double-attaque", "frenesie"].map((slug) => `slug=${slug}`).join("&");
 const { data } = await useAsyncData<SearchResults<Talent>>("talents", () =>
   $fetch(`/api/talents?${query}`, {
     baseURL: config.public.apiBaseUrl,

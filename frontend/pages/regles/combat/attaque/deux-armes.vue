@@ -9,8 +9,8 @@
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>.
     </p>
     <p>
-      Toute créature est dotée d’une main principale, déterminée à sa création, et qui ne peut changer par la suite. Lorsqu’elle effectue une attaque en maniant
-      une arme avec une autre de ses mains, alors son test est affligé du désavantage et elle n’ajoute que la moitié de sa
+      Toute créature est dotée d’une main principale, déterminée à sa création, qui ne peut être changée par la suite. Lorsqu’elle effectue une attaque en
+      maniant une arme avec une autre de ses mains, alors son test est affligé du désavantage et elle n’ajoute que la moitié de sa
       <NuxtLink to="/regles/statistiques/force">Force</NuxtLink> ou de sa <NuxtLink to="/regles/statistiques/precision">Précision</NuxtLink> aux points de
       dégâts infligés.
     </p>

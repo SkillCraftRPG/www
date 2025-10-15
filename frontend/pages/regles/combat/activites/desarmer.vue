@@ -9,10 +9,11 @@
       d’<NuxtLink to="/regles/competences/acrobaties">Acrobaties</NuxtLink>, au choix de la cible.
     </p>
     <p>
-      Si votre test réussit, la cible est forcée de <NuxtLink to="/regles/combat/activites/lacher">lâcher</NuxtLink> son arme. L’arme tombe au sol, à ses pieds.
+      Si votre test réussit, la cible est forcée de <NuxtLink to="/regles/combat/activites/lacher">lâcher</NuxtLink> son
+      <NuxtLink to="/regles/equipement/armes">arme</NuxtLink>. L’arme tombe au sol, à ses pieds.
     </p>
     <p>
-      Cette activité comme comme une attaque. Vous devez respecter votre limite d’attaques, et l’activité n’est pas exempte de la pénalité des
+      Cette activité compte comme une attaque, elle n’est donc pas exempte de la pénalité des
       <NuxtLink to="/regles/combat/attaque/multiples">attaques multiples</NuxtLink>.
     </p>
     <p>Les <NuxtLink to="/regles/talents">talents</NuxtLink> suivants améliorent votre capacité à désarmer :</p>
