@@ -108,5 +108,27 @@
     "Summary": "Soigneur respecté, reconnu pour ses conseils et son expertise médicale.",
     "MetaDescription": "Découvrez la caste du Guérisseur, maître de la médecine et du soin, dont la notoriété médicale inspire confiance et ouvre les portes de toutes classes.",
     "Description": "Le guérisseur est responsable du maintien et de l’amélioration de la santé de la communauté ou de la société pour laquelle il œuvre.\n\nSa clientèle est vaste : il doit soigner les citadins bourgeois, la haute noblesse, mais aussi les pauvres paysans, et parfois même les chasseurs en territoire sauvage et les soldats blessés sur un champ de bataille."
+  },
+  {
+    "Id": "ebef8be0-23d3-416a-81b4-ce86ab43904a",
+    "IsPublished": true,
+    "Slug": "marchand",
+    "Name": "Marchand",
+    "WealthRoll": "8d6",
+    "Skill": {
+      "Id": "a6995524-b7b5-4511-8790-ef0e3b687442",
+      "IsPublished": true,
+      "Slug": "investigation",
+      "Name": "Investigation"
+    },
+    "Feature": {
+      "Id": "5a009ec8-7f50-4179-aaa3-e881134b0af1",
+      "IsPublished": true,
+      "Name": "Négociateur",
+      "Description": "Qu’il soit un vendeur ambulant ou propriétaire d’une boutique stationnaire, le personnage fait un grand nombre de rencontres.\n\nCes rencontres lui permettent d’établir un réseau de contact étendu et lui apportent des connaissances générales variées.\n\nIl peut utiliser ces connexions pour établir facilement un lien avec une personne d’intérêt, se procurer un objet rare, et négocier le prix de ses achats.\n\nIl connait également la base du fonctionnement des systèmes économiques auxquels il a participé."
+    },
+    "Summary": "Négociateur habile, il échange, analyse et tisse des relations utiles.",
+    "MetaDescription": "Découvrez la caste du Marchand, expert en communication et en analyse, capable de négocier, commercer et tisser des liens dans tous les milieux.",
+    "Description": "Propriétaire d’une boutique ou vendeur ambulant, le marchand est un des derniers maillons de la chaîne de production de sa société.\n\nSa profession requiert de sa part une excellente communication ainsi qu’un bon sens d’analyse afin de s’assurer de la qualité des produits vendus."
   }
 ]
