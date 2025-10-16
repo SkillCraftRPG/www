@@ -12,7 +12,8 @@
       <li>Votre personnage doit être formé pour un minimum de 6 compétences, incluant les compétences associées à sa caste et à son éducation.</li>
       <li>Vous devez dépenser au minimum 10 points de talent.</li>
       <li>
-        Vous pouvez acquérir d’autres talents de tiers 0, mais vous ne pouvez acquérir un <NuxtLink to="/regles/specialisations">talent réservé</NuxtLink>.
+        Vous pouvez acquérir d’autres talents de tiers 0, mais vous ne pouvez acquérir un
+        <NuxtLink to="/regles/specialisations/talent-reserve">talent réservé</NuxtLink>.
       </li>
       <li>
         <font-awesome-icon icon="fas fa-lightbulb" /> N’oubliez pas que l’ascendance de votre personnage lui confère un talent gratuit ou plusieurs rabais.

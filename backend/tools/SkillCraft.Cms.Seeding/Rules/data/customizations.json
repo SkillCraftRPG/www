@@ -215,9 +215,19 @@
     "Slug": "infirme",
     "Name": "Infirme",
     "Kind": "Disability",
-    "Summary": "Perte d’un bras ou d’une jambe limitant vitesse ou maniement d’armes.",
+    "Summary": "Perte d’un bras ou d’une jambe limitant vitesse ou maniement.",
     "MetaDescription": "Découvrez le handicap Infirme, qui réduit la mobilité ou empêche l’usage d’armes à deux mains selon le membre perdu ou inutilisable.",
     "Description": "Le personnage est né dépourvu ou a perdu au cours de son passé l’usage d’un de ses bras ou d’une de ses jambes.\n\nSes [vitesses](/regles/aventure/mouvement/vitesse) sont réduites de moitié s’il s’agit d’une jambe.\n\nIl ne peut manier d’[armes](/regles/equipement/armes) à deux mains s’il s’agit d’un bras."
+  },
+  {
+    "Id": "cf99d263-8e12-4f34-a405-35358fdb52c8",
+    "IsPublished": true,
+    "Slug": "maladroit",
+    "Name": "Maladroit",
+    "Kind": "Disability",
+    "Summary": "Réduit l’agilité et pénalise les tests d’Acrobaties et de Furtivité.",
+    "MetaDescription": "Découvrez le handicap Maladroit, qui réduit l’agilité du personnage et lui impose un désavantage à ses tests d’Acrobaties et de Furtivité.",
+    "Description": "Le corps du personnage n’est pas souple ni agile.\n\nSes [tests](/regles/competences/tests) d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
   },
   {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",

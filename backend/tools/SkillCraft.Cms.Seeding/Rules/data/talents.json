@@ -44,6 +44,24 @@
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Le [test](/regles/competences/tests) de ses [attaques](/regles/combat/attaque) effectuées en maniant une [arme](/regles/equipement/armes) avec une [main secondaire](/regles/combat/attaque/deux-armes) n’est plus affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il combat en maniant une arme différente dans chaque main, il se voit conférer un bonus (+1) à l’[Esquive](/regles/combat/attaque/esquive) s’il ne bénéficie pas d’un [bouclier](/regles/equipement/boucliers).\n- Lorsqu’il dégaine ou rengaine une arme, il peut rengainer ou dégainer une autre arme avec une autre main en [action libre](/regles/combat/deroulement/tour)."
   },
   {
+    "Id": "398cfada-90d4-4e78-ad70-8a96c3f301cc",
+    "IsPublished": true,
+    "Slug": "apothicairerie",
+    "Name": "Apothicairerie",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+      "IsPublished": true,
+      "Slug": "herboristerie",
+      "Name": "Herboristerie"
+    },
+    "Summary": "Permet de créer des remèdes avancés en dépensant de l’énergie.",
+    "MetaDescription": "Découvrez le talent d’Apothicairerie, permettant de concocter des remèdes avancés et d’utiliser l’énergie vitale pour soigner les afflictions naturelles.",
+    "Description": "Le personnage peut désormais apprendre les [remèdes avancés](/regles/herboristerie/remedes).\n\nÉgalement, il peut concocter un remède par une action [Objet](/regles/combat/activites/objet) en remplaçant les ingrédients conventionnels par des charges d’une [trousse de premiers soins](/regles/equipement/outils) et en dépensant des points d’[Énergie](/regles/statistiques/energie).\n\nIl peut concocter un remède de base en utilisant 5 charges d’une trousse de premiers soins et en dépensant 15 points d’Énergie, ou un remède avancé en utilisant 10 charges d’une trousse de premiers soins et en dépensant 25 points d’Énergie.\n\nCe remède ne peut soigner qu’une [condition](/regles/combat/conditions) naturelle (induite par une source non magique) et temporaire.\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+  },
+  {
     "Id": "273dcbee-6b36-43f0-b28a-bd1784ec066a",
     "IsPublished": true,
     "Slug": "armes-a-deux-mains",
@@ -1746,8 +1764,8 @@
       "Slug": "connaissance",
       "Name": "Connaissance"
     },
-    "Summary": "Avantage aux tests de Connaissance sur créatures naturelles et matériaux. Reçoit plus d’infos utiles. Reconnaît souvent les matériaux sans test.",
-    "MetaDescription": null,
+    "Summary": "Maîtrise la nature et les matériaux grâce à un savoir étendu.",
+    "MetaDescription": "Découvrez le talent Naturalisme, qui offre un savoir approfondi sur les créatures naturelles et les matériaux, améliorant les tests de Connaissance.",
     "Description": "### Créatures\n\nLe personnage possède de vastes connaissances à propos des créatures naturelles, par exemple les animaux, les plantes, les limons, les dragons et les monstruosités.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) envers ces créatures et reçoit de l’information supplémentaire lorsqu’il réussit un de ces tests.\n\nCette information correspond généralement aux habiletés de cette créature, à quel point celle-ci est dangereuse pour son groupe, la signification de ses comportements, les dangers naturels de son habitat, et quelles ressources de valeur peuvent être récoltées sur cette créature.\n\nIl peut utiliser cette capacité pour, par exemple, identifier une créature à partir des traces qu’elle a laissées au sol.\n\n### Matériaux\n\nÉgalement, il possède de vastes connaissances à propos des [matériaux](/regles/equipement/marchandise).\n\nIl reconnait instantanément la majorité des matériaux ainsi que leur rareté, sans nécessiter de test de Connaissance, à la discrétion du maître de jeu.\n\nIl se voit conférer l’avantage à ses tests de Connaissance afin de recevoir de l’information supplémentaire à propos de ces matériaux."
   },
   {
@@ -2579,6 +2597,24 @@
     "Summary": "Augmente le seuil de tolérance à l’alcool, pas de gueule de bois et ne titube pas en deuxième phase.",
     "MetaDescription": null,
     "Description": "Augmente de manière permanente (+4) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, le personnage n’est jamais affligé de la [gueule de bois](/regles/combat/conditions/gueule-bois) lorsqu’il atteint la deuxième phase d’alcoolémie, peu importe le résultat de son [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance), et il ne titube jamais lorsqu’il est seulement en deuxième phase d’alcoolémie."
+  },
+  {
+    "Id": "0b64a74b-9acf-4187-93e8-6c457fe1aa93",
+    "IsPublished": true,
+    "Slug": "toxicologie",
+    "Name": "Toxicologie",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+      "IsPublished": true,
+      "Slug": "herboristerie",
+      "Name": "Herboristerie"
+    },
+    "Summary": "Permet de créer et d’altérer des poisons avancés aux effets variés.",
+    "MetaDescription": "Découvrez le talent de Toxicologie, permettant de concevoir et modifier des poisons avancés aux effets variés : différés, dissimulés, ou débilitants.",
+    "Description": "Le personnage peut désormais apprendre les [poisons avancés](/regles/herboristerie/poisons).\n\nÉgalement, il peut modifier un poison à l’aide d’une [trousse d’empoisonneur](/regles/equipement/outils).\n\nIl choisit un nombre de propriétés parmi la liste suivante plus petit ou égal à son [Intellect](/regles/attributs/intellect) (minimum 1).\n\nIl manipule le poison pendant une durée de [15 minutes](/regles/aventure/temps) par propriété sélectionnée.\n\nIl doit ensuite réussir un [test](/regles/competences/tests) de [Médecine](/regles/competences/medecine) de [difficulté](/regles/competences/tests/difficulte) égale à 10 + 5 × nombre de propriétés sélectionnées et dépense un nombre de points d’[Énergie](/regles/statistiques/energie) égal au degré de difficulté du test.\n\nS’il réussit le test, les propriétés sélectionnées sont ajoutées au poison ; s’il échoue, les points d’Énergie sont perdus et le poison reste intact.\n\n- **Débilitant.** Si la créature ciblée par le poison obtient un [échec avec Damnation](/regles/competences/tests/2d10) ou un [échec critique](/regles/competences/tests/critique) à son [jet de sauvegarde](/regles/competences/tests/sauvegarde) contre le poison, elle est [étourdie](/regles/combat/conditions/etourdi) pendant la durée du poison.\n- **Différé.** Un certain temps s’écoule avant que le poison ne commence à faire effet. Ce durée doit être inférieure ou égale à 72 heures.\n- **Dissimulé.** Le degré de difficulté afin de détecter la présence du poison augmente d’une valeur égale à la moitié du [rang](/regles/competences/rang) de Médecine du personnage.\n- **Non identifié.** Le personnage brouille les indices permettant d’identifier le poison. Cela afflige du [désavantage](/regles/competences/tests/avantage-desavantage) les tests effectués afin d’identifier le poison pendant les 24 prochaines heures après le début de ses effets."
   },
   {
     "Id": "3c5bf24b-6c5a-44ac-9553-0954af589b77",
