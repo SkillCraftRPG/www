@@ -1490,8 +1490,8 @@
     "AllowMultiplePurchases": true,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Permet au personnage d’apprendre une langue supplémentaire, s’il a accès à une source valide et si la langue figure parmi celles qu’il peut apprendre.",
-    "MetaDescription": null,
+    "Summary": "Permet d’apprendre une nouvelle langue parmi celles accessibles.",
+    "MetaDescription": "Découvrez le talent Langue supplémentaire, qui permet au personnage d’apprendre une nouvelle langue parmi celles accessibles à son univers.",
     "Description": "Le personnage apprend une [langue](/regles/langues) supplémentaire de son choix.\n\nIl doit avoir accès à un interlocuteur pouvant lui apprendre cette langue, ou suffisamment de source écrites.\n\nLa langue doit également figurer parmi les catégories de langues auxquelles il a accès."
   },
   {
@@ -1529,6 +1529,42 @@
     "Summary": "Permet d’agripper, renverser ou immobiliser un adversaire.",
     "MetaDescription": "Découvrez le talent Lutte, qui permet de renverser, agripper ou restreindre une créature lors d’un combat grâce à des tests d’Athlétisme opposés.",
     "Description": "### Renverser\n\nLorsque le personnage est [agrippé](/regles/combat/conditions/agrippe) par une créature dont la [taille](/regles/especes/taille) est d’au plus une catégorie supérieure à la sienne, il peut tenter de de renverser la situation.\n\nPar une [action](/regles/combat/deroulement/tour), il effectue un [test](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) [opposé](/regles/competences/tests/oppose) à un test d’Athlétisme de la cible.\n\nS’il réussit le test, il n’est plus agrippé par la créature, et celle-ci est maintenant agrippée par le personnage.\n\n### Restreindre\n\nÉgalement, il peut tenter d’entrer en situation de lutte avec une créature qu’il [agrippe](/regles/combat/activites/agripper) et dont la [taille](/regles/especes/taille) est de catégorie inférieure ou égale à la sienne.\n\nPar une [action](/regles/combat/deroulement/tour), il effectue un [test](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) [opposé](/regles/competences/tests/oppose) à un test d’[Acrobaties](/regles/competences/acrobaties) ou d’Athlétisme de la cible.\n\nS’il réussit le test, la créature est [restreinte](/regles/combat/conditions/restreint) par le personnage, et le personnage ne peut plus [se déplacer](/regles/combat/activites/deplacement) tant qu’il maintient la situation de lutte."
+  },
+  {
+    "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+    "IsPublished": true,
+    "Slug": "magie-guerriere",
+    "Name": "Magie guerrière",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+      "IsPublished": true,
+      "Slug": "magie-puissante",
+      "Name": "Magie puissante"
+    },
+    "Summary": "Allie magie et combat, gardant concentration et liberté d’action.",
+    "MetaDescription": "Découvrez le talent Magie guerrière, qui permet d’unir la puissance magique et le combat rapproché sans perdre la concentration ni l’avantage tactique.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) afin de maintenir sa [concentration](/regles/magie/parametres/duree).\n- Lorsqu’une créature provoque une [attaque d’opportunité](/regles/combat/attaque/opportunite) de la part du personnage, alors celui-ci peut substituer l’attaque par un [pouvoir](/regles/magie/pouvoirs). Le pouvoir ne doit [cibler](/regles/magie/effets/cible) que cette créature (il ne peut cibler plusieurs créatures, ni un point dans l’espace), et son [incantation](/regles/magie/parametres/incantation) doit être d’exactement [deux actions](/regles/combat/deroulement/tour).\n- Il ne déclenche pas d’attaque d’opportunité lorsqu’il canalise un pouvoir dont la [portée](/regles/magie/parametres/portee) est Toucher ou Soi en présence d’une créature hostile envers lui.\n- Il n’a pas besoin d’avoir une main libre afin de d’exécuter la composante [Somatique](/regles/magie/parametres/composantes) d’un pouvoir.\n  - Cela lui permet par exemple de canaliser un pouvoir ne nécessitant qu’une composante [Somatique](/regles/magie/parametres/composantes), ou une composante [Somatique](/regles/magie/parametres/composantes) et [Verbal](/regles/magie/parametres/composantes), tout en maniant une [arme](/regles/equipement/armes) dans une main et en tenant un [bouclier](/regles/equipement/boucliers) dans l’autre.\n  - Toutefois, il doit toujours avoir une main de libre afin d’exécuter les composantes [Matériel](/regles/magie/parametres/composantes) et [Focus](/regles/magie/parametres/composantes) d’un pouvoir."
+  },
+  {
+    "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+    "IsPublished": true,
+    "Slug": "magie-precise",
+    "Name": "Magie précise",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+      "IsPublished": true,
+      "Slug": "magie-puissante",
+      "Name": "Magie puissante"
+    },
+    "Summary": "Accroît la portée et la précision des pouvoirs d’attaque magique.",
+    "MetaDescription": "Découvrez le talent Magie précise, qui permet d’étendre la portée et la justesse des pouvoirs magiques pour frapper avec une précision redoutable.",
+    "Description": "Le personnage acquiert les capacités suivantes. Ces capacités s’appliquent aux [pouvoirs](/regles/magie/pouvoirs) d’[attaque](/regles/magie/effets/attaque) à distance (portée supérieure à [Toucher](/regles/magie/parametres/portee)).\n\n- Il double la [portée](/regles/magie/parametres/portee) de ces pouvoirs.\n- Lorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) un de ces pouvoirs, le pouvoir ignore le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri) des créatures ciblées.\n- Lorsqu’il canalise un de ces pouvoirs, le [test](/regles/competences/tests) n’est pas affligé du [désavantage](/regles/competences/tests/avantage-desavantage) si la cible est [renversée](/regles/combat/conditions/renverse).\n- Lorsqu’il canalise un de ces pouvoirs, il peut le faire par une [action](/regles/combat/deroulement/tour) supplémentaire afin d’ajouter un bonus (+5) à son test ainsi qu’un [dé de dégâts](/regles/combat/degats/jet)."
   },
   {
     "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
@@ -2018,8 +2054,8 @@
       "Slug": "linguistique",
       "Name": "Linguistique"
     },
-    "Summary": "Le personnage apprend une langue, peut apprendre les langues anciennes et identifier certaines langues inconnues.",
-    "MetaDescription": null,
+    "Summary": "Permet d’apprendre et reconnaître les langues et textes anciens.",
+    "MetaDescription": "Découvrez le talent Philologie, qui permet d’apprendre les langues anciennes, d’en reconnaître de nouvelles et d’analyser des textes étrangers.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut désormais apprendre les [langues anciennes](/regles/langues).\n- Il apprend une langue de son choix.\n- Lorsqu’il écoute une discussion parlée dans une langue qu’il ne connait pas, il identifie néanmoins cette langue si elle appartient à la même famille linguistique qu’une des langues qu’il connait. Il peut également analyser un texte rédigé dans une langue qu’il ne connait pas pendant au moins [une minute](/regles/aventure/temps). S’il connait une langue partageant son alphabet avec la langue de rédaction du texte, alors il identifie cette langue."
   },
   {
