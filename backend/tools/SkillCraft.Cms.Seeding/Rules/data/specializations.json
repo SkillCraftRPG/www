@@ -833,6 +833,37 @@
     }
   },
   {
+    "Id": "1326391b-d2d3-463e-9fa3-5c2242b5f17c",
+    "IsPublished": true,
+    "Slug": "duelliste",
+    "Name": "Duelliste",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Doté de la grâce d’un chat, rugissant comme un lion, rapide comme un lynx, le duelliste bondit d’un adversaire à un autre au combat et provoque ou manipule adroitement pendant une joute diplomatique. Sa cape virevolte et son chapeau plumé danse en suivant ses mouvements. Ses mots précis font naître des émotions d’espoir et de courage, ou au contraire, ses insultes justes piquent au vif ses belligérants. Il est doté d’un humour audacieux et sa réputation exhibe son élégance. Il est parfois vu comme un héros romantique, parfois comme un imprudent, un téméraire et un saboteur.",
+    "Requirements": {
+      "Talent": {
+        "Id": "2e928d87-34eb-4a26-8dd0-453c021fda61",
+        "IsPublished": true,
+        "Slug": "parade",
+        "Name": "Parade"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Escrime",
+      "Description": [
+        "Il peut acquérir le talent [Provocation](/regles/talents/provocation) au coût de 2 [points de talent](/regles/talents/points) plutôt que 4."
+      ],
+      "DiscountedTalents": [],
+      "Features": []
+    }
+  },
+  {
     "Id": "88454a0c-8521-4cba-a8e4-2a4e7886aaf3",
     "IsPublished": true,
     "Slug": "eclaireur",

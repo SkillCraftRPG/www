@@ -230,6 +230,26 @@
     "Description": "Le corps du personnage n’est pas souple ni agile.\n\nSes [tests](/regles/competences/tests) d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
   },
   {
+    "Id": "f24624cd-c430-4be9-922e-447e9202802d",
+    "IsPublished": true,
+    "Slug": "malchanceux",
+    "Name": "Malchanceux",
+    "Kind": "Disability",
+    "Summary": "Le personnage attire la malchance, au profit du maître du jeu.",
+    "MetaDescription": "Découvrez le handicap Malchanceux, où la poisse poursuit le personnage, offrant au maître du jeu des points de malchance à utiliser contre lui.",
+    "Description": "Reconnu pour sa mauvaise fortune, les proches du personnage l’évitent ou rient des situations cocasses qui en découlent.\n\nLe maître de jeu est doté de 3 points de malchance qu’il peut utiliser contre le personnage.\n\n- Il peut dépenser 1 point de malchance afin de produire un effet équivalant à 2 [points de Damnation](/regles/competences/esperance-damnation).\n- Il peut dépenser 2 points de malchance afin de produire un effet équivalant à 4 [points de Damnation](/regles/competences/esperance-damnation).\n- Il peut dépenser 3 points de malchance afin de produire un effet équivalant à 5 [points de Damnation](/regles/competences/esperance-damnation).\n\nIl récupère ces points lorsque le personnage complète une [nuit de sommeil](/regles/aventure/repos/sommeil)."
+  },
+  {
+    "Id": "58b7a409-a2c6-44f5-9b41-b8ac7c22b926",
+    "IsPublished": true,
+    "Slug": "malentendant",
+    "Name": "Malentendant",
+    "Kind": "Disability",
+    "Summary": "Audition réduite, désavantage aux tests liés à l’écoute.",
+    "MetaDescription": "Découvrez le handicap Malentendant, qui réduit l’efficacité auditive du personnage et lui impose un désavantage aux tests liés à l’ouïe.",
+    "Description": "Le personnage est né pourvu d’une audition peu efficace.\n\nSes [tests](/regles/competences/tests) d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie) liés à l’ouïe sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",

@@ -102,8 +102,8 @@
       "Slug": "adresse",
       "Name": "Adresse"
     },
-    "Summary": "Furtivité permet d’éviter la détection grâce à la discrétion visuelle, sonore ou au camouflage.",
-    "MetaDescription": null,
+    "Summary": "Permet de se dissimuler, se camoufler et agir sans être vu.",
+    "MetaDescription": "Découvrez la compétence Furtivité, qui permet de se déplacer, d’agir et de se dissimuler sans être vu, même en terrain découvert ou dans une foule.",
     "Description": "La compétence **Furtivité** permet au personnage de :\n\n- manipuler discrètement un objet sans être vu\n- minimiser les traces laissées lors d’un [déplacement](/regles/aventure/mouvement/furtif)\n- [se camoufler](/regles/combat/activites/cacher) dans un environnement\n- se dissimuler dans l’ombre ou au sein d’une foule\n- se déplacer silencieusement en terrain dégagé ou encombré"
   },
   {
@@ -118,8 +118,8 @@
       "Slug": "sens",
       "Name": "Sens"
     },
-    "Summary": "Intuition mesure la capacité à lire les émotions, percevoir les intentions et déceler la manipulation.",
-    "MetaDescription": null,
+    "Summary": "Permet de lire les émotions, repérer les mensonges et influences.",
+    "MetaDescription": "Découvrez la compétence Intuition, qui permet de lire les émotions, détecter les mensonges et percevoir les intentions cachées ou influences subtiles.",
     "Description": "La compétence **Intuition** permet au personnage de :\n\n- déchiffrer le [langage corporel](/regles/aventure/interaction-sociale)\n- détecter une tentative de manipulation, qu’elle soit dirigée contre lui ou non\n- déterminer si quelqu’un ment ou tente de l’influencer\n- percevoir les intentions réelles d’une créature\n- utiliser son intelligence émotionnelle, c’est-à-dire percevoir, comprendre, exprimer et gérer les émotions"
   },
   {
@@ -134,8 +134,8 @@
       "Slug": "intellect",
       "Name": "Intellect"
     },
-    "Summary": "Investigation mesure l’analyse logique et l’observation pour déduire à partir d’indices fragmentaires.",
-    "MetaDescription": null,
+    "Summary": "Permet de lire les émotions, repérer les mensonges et influences.",
+    "MetaDescription": "Découvrez la compétence Intuition, qui permet de lire les émotions, détecter les mensonges et percevoir les intentions cachées ou influences subtiles.",
     "Description": "La compétence **Investigation** permet au personnage de :\n\n- analyser un mécanisme complexe tel un piège\n- détecter les incohérences\n- estimer la [valeur](/regles/equipement/monnaie) d’un objet\n- reconstituer une scène à partir de fines observations\n- tirer des conclusions simples à partir d’indices\n- évaluer les coûts de fabrication et de [revente](/regles/equipement/vente) d’un objet"
   },
   {
