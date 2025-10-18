@@ -152,5 +152,27 @@
     "Summary": "Protecteur du peuple, formé au combat et à la discipline militaire.",
     "MetaDescription": "Découvrez la caste du Milicien, défenseur des citoyens et bras armé de la loi, formé au combat rapproché et habitué à un sommeil militaire rigoureux.",
     "Description": "Le milicien est responsable de protéger les citoyens sur les terres de son seigneur.\n\nIl possède les droits mais également la responsabilité de faire appliquer les lois.\n\nIl doit également parfois jouer le rôle d’éclaireur et de soldat au sein de l’armée de sa patrie."
+  },
+  {
+    "Id": "448f6802-01e5-4684-bfaa-9195430ab1b9",
+    "IsPublished": true,
+    "Slug": "noble",
+    "Name": "Noble",
+    "WealthRoll": "9d6",
+    "Skill": {
+      "Id": "2a49d787-e957-4fe0-afe7-3de5b6ebb214",
+      "IsPublished": true,
+      "Slug": "diplomatie",
+      "Name": "Diplomatie"
+    },
+    "Feature": {
+      "Id": "b2c44089-545e-4183-9361-27b7de627660",
+      "IsPublished": true,
+      "Name": "Privilégié",
+      "Description": "Le personnage est connu de la noblesse par le prestige de sa famille et les actes accomplis par les membres de sa lignée.\n\nBien que les gens aient des attentes envers lui, ils sont tout de même disposés à l’accommoder, à lui offrir gite, couvert et protection contre des faveurs équivalentes.\n\nSon prestige lui ouvre des portes fermées au commun des mortels, ce qui lui permet d’être invité ou de demander une invitation à des événements de l’aristocratie, et d’entrer en contact avec d’autres membres de la noblesse.\n\nIl connait également les modalités et manières qui lui permettent d’être respecté auprès de la noblesse."
+    },
+    "Summary": "Dirige, arbitre et rayonne grâce au prestige de la noblesse.",
+    "MetaDescription": "Découvrez la caste des Nobles, gardiens des lois et du prestige familial, maîtres de la diplomatie et du pouvoir au sein de l’aristocratie.",
+    "Description": "Riche propriétaire terrien ou lié par son sang à un seigneur, le noble est responsable de l’administration et de la gouvernance de terres.\n\nIl codifie les lois et tranche en cas de différents.\n\nL’ensemble de ses tâches est lourd de responsabilités et pousse parfois les héritiers nobles à quitter leur famille avant d’hériter de ces fonctions."
   }
 ]

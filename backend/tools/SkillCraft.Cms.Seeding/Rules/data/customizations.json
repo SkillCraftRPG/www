@@ -250,6 +250,16 @@
     "Description": "Le personnage est né pourvu d’une audition peu efficace.\n\nSes [tests](/regles/competences/tests) d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie) liés à l’ouïe sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
   },
   {
+    "Id": "0d9c119d-7d59-40ae-acc5-fcf551f2c648",
+    "IsPublished": true,
+    "Slug": "medecine-de-brousse",
+    "Name": "Médecine de brousse",
+    "Kind": "Gift",
+    "Summary": "Permet de stabiliser, ranimer et soigner les blessés en terrain rude.",
+    "MetaDescription": "Découvrez le don Médecine de brousse, qui permet de stabiliser, ranimer ou soigner les blessés grâce à une trousse de soins et un savoir pratique.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il utilise une charge d’une [trousse de premiers soins](/regles/equipement/outils) afin de [stabiliser](/regles/combat/activites/stabiliser) une créature [agonisante](/regles/combat/conditions/agonisant), il peut utiliser une seconde charge par une [action](/regles/combat/deroulement/tour) supplémentaire. La créature [récupère](/regles/combat/degats/soins) un point de [Vitalité](/regles/statistiques/vitalite) et reprend immédiatement conscience.\n- Lorsqu’il stabilise une créature agonisante, il ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite).\n- Pendant une [halte](/regles/aventure/repos/halte) d’une durée d’au moins [une heure](/regles/aventure/temps), il peut soigner une créature. Il effectue un [test](/regles/competences/tests) de [Médecine](/regles/competences/medecine) et utilise deux charges d’une trousse de premiers soins. La cible dépense un nombre de points d’[Énergie](/regles/statistiques/energie) inférieur ou égal au résultat du test et récupère un nombre égal de points de Vitalité. La cible doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir être soignée à nouveau par cette capacité."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",

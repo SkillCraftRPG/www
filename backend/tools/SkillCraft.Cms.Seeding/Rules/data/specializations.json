@@ -1004,6 +1004,123 @@
     }
   },
   {
+    "Id": "42816767-12ec-4f5f-9fca-26791071cc96",
+    "IsPublished": true,
+    "Slug": "elemancien",
+    "Name": "Élémancien",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "L’Élémancien est un Élémentariste ayant raffiné sa faculté à manipuler l’énergie d’un élément. Cet entraînement est généralement long et pénible, et le résultat de dangereuses expériences en manipulant cette énergie. Néanmoins, cet entraînement lui a permis d’atteindre des pouvoirs élémentaires de puissance supérieure, ce qui en a valu la chandelle.",
+    "Requirements": {
+      "Talent": {
+        "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+        "IsPublished": true,
+        "Slug": "magie-puissante",
+        "Name": "Magie puissante"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Élémentariste](/regles/specialisations/elementariste) et s’être spécialisé dans un des éléments suivants : Air, Eau, Feu et Terre."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
+          "IsPublished": true,
+          "Slug": "attaque-puissante",
+          "Name": "Attaque puissante"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "c00d8449-0195-4f6d-8443-5bb252154a6b",
+          "IsPublished": true,
+          "Slug": "frappe-puissante",
+          "Name": "Frappe puissante"
+        },
+        {
+          "Id": "97bc80a5-4c5f-4e79-806f-83587553d743",
+          "IsPublished": true,
+          "Slug": "expertise-artisanale",
+          "Name": "Expertise artisanale"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Âme élémentaire",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut également acquérir les pouvoirs de tiers 2 associés à une [combinaison élémentaire](#) incluant sa spécialité.",
+        "Il peut utiliser de puissantes [capacités élémentaires](#) de tiers 2."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "9a1879cb-87a2-48be-b07e-a476da8671ad",
+          "IsPublished": true,
+          "Name": "Attaque élémentaire",
+          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des [dégâts du type](/regles/combat/degats/types) associé à sa [spécialité élémentaire](/regles/specialisations/elementariste)."
+        },
+        {
+          "Id": "508fd232-1d8f-475c-94f2-b34478194ab7",
+          "IsPublished": true,
+          "Name": "Harmonie élémentaire",
+          "Description": "Le personnage peut acquérir [à rabais](/regles/talents/points) un [talent](/regles/talents) en fonction de sa [spécialité élémentaire](/regles/specialisations/elementariste).\n\n- Air : [Fourberie](/regles/talents/fourberie)\n- Eau : [Discernement](/regles/talents/discernement)\n- Feu : [Manœuvres de combat](/regles/talents/manoeuvres-de-combat)\n- Terre : [Robustesse supérieure](/regles/talents/robustesse-superieure)"
+        }
+      ]
+    }
+  },
+  {
     "Id": "d5f60efb-32b9-4180-965f-fec617e79c74",
     "IsPublished": true,
     "Slug": "elementariste",
