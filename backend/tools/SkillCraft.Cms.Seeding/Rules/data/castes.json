@@ -130,5 +130,27 @@
     "Summary": "Négociateur habile, il échange, analyse et tisse des relations utiles.",
     "MetaDescription": "Découvrez la caste du Marchand, expert en communication et en analyse, capable de négocier, commercer et tisser des liens dans tous les milieux.",
     "Description": "Propriétaire d’une boutique ou vendeur ambulant, le marchand est un des derniers maillons de la chaîne de production de sa société.\n\nSa profession requiert de sa part une excellente communication ainsi qu’un bon sens d’analyse afin de s’assurer de la qualité des produits vendus."
+  },
+  {
+    "Id": "58dc24b0-2d17-49c7-954a-d183b35523a0",
+    "IsPublished": true,
+    "Slug": "milicien",
+    "Name": "Milicien",
+    "WealthRoll": "7d6",
+    "Skill": {
+      "Id": "bd6bedde-2e50-493f-a1cc-8e23123c45c4",
+      "IsPublished": true,
+      "Slug": "melee",
+      "Name": "Mêlée"
+    },
+    "Feature": {
+      "Id": "0f446958-f483-47fc-adb6-e9420a93b9ee",
+      "IsPublished": true,
+      "Name": "Militaire",
+      "Description": "Le personnage est un simple mercenaire, membre d’une milice local, ou encore engagé par une armée.\n\nSon rang lui permet d’être en relation avec des supérieurs, et peut lui permettre d’accéder à des endroits qui sont normalement restreints ou d’emprunter du matériel réservé aux officiers.\n\nÉgalement, il peut ne dormir que [4 heures](/regles/aventure/temps) par [nuit de sommeil](/regles/aventure/repos/sommeil) et compléter par 4 heures de [halte](/regles/aventure/repos/halte).\n\nLorsqu’il dort entre 4 et 6 heures, sa nuit est considérée complète. En revanche, son niveau de [Fatigue](/regles/combat/conditions/fatigue) n’augmente pas et ne diminue pas."
+    },
+    "Summary": "Protecteur du peuple, formé au combat et à la discipline militaire.",
+    "MetaDescription": "Découvrez la caste du Milicien, défenseur des citoyens et bras armé de la loi, formé au combat rapproché et habitué à un sommeil militaire rigoureux.",
+    "Description": "Le milicien est responsable de protéger les citoyens sur les terres de son seigneur.\n\nIl possède les droits mais également la responsabilité de faire appliquer les lois.\n\nIl doit également parfois jouer le rôle d’éclaireur et de soldat au sein de l’armée de sa patrie."
   }
 ]

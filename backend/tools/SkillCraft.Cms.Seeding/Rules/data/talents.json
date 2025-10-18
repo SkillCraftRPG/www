@@ -273,6 +273,42 @@
     "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut ajouter des [dés de dégâts](/regles/combat/degats/jet).\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier à deux mains une [arme](/regles/equipement/armes) possédant la propriété [Deux mains](/regles/equipement/armes/proprietes) ou [Versatile](/regles/equipement/armes/proprietes) et pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl peut ajouter un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’attaque effectuée par le personnage.\n\nEn cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, ou repoussée de 1,5 mètres, au choix du personnage."
   },
   {
+    "Id": "7f59aab9-2398-4b3d-be64-3be095114f51",
+    "IsPublished": true,
+    "Slug": "attaque-incapacitante",
+    "Name": "Attaque incapacitante",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
+      "IsPublished": true,
+      "Slug": "attaque-neutralisante",
+      "Name": "Attaque neutralisante"
+    },
+    "Summary": "Inflige des coups non létaux et affaiblit fortement la cible.",
+    "MetaDescription": "Découvrez le talent Attaque incapacitante, permettant d’infliger des coups non létaux et d’affaiblir durablement les ennemis.",
+    "Description": "Lorsque le personnage effectue une attaque neutralisante, il peut tenter de pénaliser davantage sa cible.\n\nIl dépense 15 points d’[Énergie](/regles/statistiques/energie) supplémentaires, pour un total de 30, avant de savoir si l’[attaque](/regles/combat/attaque) réussit ou échoue.\n\nSi l’attaque réussit, l’entièreté des [points de dégâts](/regles/combat/degats) sont convertis en [dégâts non létaux](/regles/combat/degats/letalite).\n\nLa cible reçoit des pénalités additionnelles si elle obtient un [échec critique](/regles/competences/tests/critique) à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde), ou si son [dé de Damnation](/regles/competences/tests/2d10) est supérieur à son [dé d’Espérance](/regles/competences/tests/2d10). Ces pénalités sont supplémentaires à celles spécifiées par l’attaque neutralisante.\n\n- Si elle échoue n’importe lequel des jets de sauvegarde, ses [tests](/regles/competences/tests) de [compétence](/regles/competences) et d’attaque sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage) jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour).\n- Si elle échoue le jet de sauvegarde d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme) de cette manière, sa [vitesse](/regles/aventure/mouvement/vitesse) est réduite de moitié jusqu’à la fin de son prochain tour.\n- Si elle échoue le jet de sauvegarde de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance) de cette manière, elle est [incapable](/regles/combat/conditions/incapable) jusqu’à la fin de son prochain tour.\n- Si elle échoue les deux jets de sauvegarde, elle est [paralysée](/regles/combat/conditions/paralyse) jusqu’à la fin de son prochain tour."
+  },
+  {
+    "Id": "43774d2a-52d3-4b69-b75a-4432a0ef3b56",
+    "IsPublished": true,
+    "Slug": "attaque-mortelle",
+    "Name": "Attaque mortelle",
+    "Tier": 3,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "3a318dfc-40ef-4d1c-ae76-9ca8c2a35565",
+      "IsPublished": true,
+      "Slug": "attaque-sanglante",
+      "Name": "Attaque sanglante"
+    },
+    "Summary": "Amplifie les attaques sournoises pour infliger des dégâts fatals.",
+    "MetaDescription": "Découvrez le talent Attaque mortelle, qui transforme les frappes sournoises en coups fatals, amplifiant leurs dégâts pour des blessures dévastatrices.",
+    "Description": "Lorsque le personnage effectue une attaque sournoise, il inflige [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires (pour un total de 6d6).\n\nIl peut remplacer les dés de dégâts de l’attaque sournoise et de l’hémorragie qui sont tombés sur les faces 1 et 2 du dé par la valeur 3."
+  },
+  {
     "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
     "IsPublished": true,
     "Slug": "attaque-neutralisante",
@@ -286,9 +322,9 @@
       "Slug": "melee",
       "Name": "Mêlée"
     },
-    "Summary": "Inflige des coups précis pour neutraliser sans ôter la vie.",
-    "MetaDescription": "Découvrez le talent Attaque neutralisante, qui permet d’infliger des dégâts non létaux et de terrasser un adversaire sans le tuer.",
-    "Description": "Le personnage peut infliger des [points de dégâts non létaux](/regles/combat/degats/letalite) lorsqu’il réussit une [attaque de mêlée](/regles/combat/attaque/melee) par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl doit manier une [arme](/regles/equipement/armes) infligeant des points de dégâts [contondants](/regles/combat/degats/types) létaux, et être [formé](/regles/equipement/armes/formation) au maniement de cette arme.\n\nIl inflige la moitié des points de dégâts en létal (arrondi inférieur) et l’autre moitié en non létal (arrondi supérieur).\n\nIl peut utiliser une arme non contondante s’il attaque sa cible en utilisant une portion de l’arme s’apparentant à une arme contondante, par exemple le pommeau d’une épée ou la poignée d’une arme d’hast.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour).\n\nÉgalement, lorsqu’il utilise cette capacité, il peut ajouter des [dés de dégâts](/regles/combat/degats/jet) non létaux.\n\nIl peut ajouter un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’[attaque](/regles/combat/attaque) effectuée par le personnage.\n\nEn cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, en proie à une douleur aigue."
+    "Summary": "Permet de neutraliser un ennemi sans le tuer grâce à un coup précis.",
+    "MetaDescription": "Découvrez le talent Attaque neutralisante, permettant de frapper sans tuer et de neutraliser un adversaire par un coup précis et contrôlé.",
+    "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut tenter de neutraliser sa cible.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier une [arme](/regles/equipement/armes) infligeant des [points de dégâts](/regles/combat/degats) [contondants](/regles/combat/degats/types) [létaux](/regles/combat/degats/letalite) pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nS’il est formé au maniement des [armes improvisées](/regles/equipement/armes/improvisees), alors il peut utiliser une arme non contondante en attaquant sa cible avec une portion de l’arme s’apparentant à une arme contondante, par exemple le pommeau d’une épée ou la poignée d’une arme d’hast.\n\nIl dépense 15 points d’[Énergie](/regles/statistiques/energie) avant de savoir si l’attaque réussit ou échoue.\n\nSi l’attaque réussit, la moitié des points de dégâts sont convertis en [dégâts non létaux](/regles/combat/degats/letalite), et le prochain test de la cible (excluant les [jets de sauvegarde](/regles/competences/tests/sauvegarde)) est affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage :\n\n- Elle doit effectuer un jet de sauvegarde d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme), au choix. En cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol.\n- Elle doit également effectuer un jet de sauvegarde de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance), au choix. En cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain tour.\n- La cible peut réutiliser les mêmes [dés](/regles/competences/tests/2d10) pour les deux jets de sauvegarde, à la discrétion du maître de jeu.\n- La [difficulté](/regles/competences/tests/difficulte) des jets de sauvegarde correspond au résultat du test de Mêlée effectué par le personnage."
   },
   {
     "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
@@ -302,6 +338,24 @@
     "Summary": "Maximise les dégâts et peut étourdir les cibles plus petites.",
     "MetaDescription": "Découvrez le talent Attaque puissante, qui permet de maximiser les dés de dégâts et d’étourdir les cibles plus faibles au corps à corps.",
     "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut remplacer des [dés de dégâts](/regles/combat/degats/jet) par leur valeur maximale.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier une [arme](/regles/equipement/armes) à une main pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl peut remplacer un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’attaque effectuée par le personnage.\n\nEn cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain tour."
+  },
+  {
+    "Id": "3a318dfc-40ef-4d1c-ae76-9ca8c2a35565",
+    "IsPublished": true,
+    "Slug": "attaque-sanglante",
+    "Name": "Attaque sanglante",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
+      "IsPublished": true,
+      "Slug": "attaque-sournoise",
+      "Name": "Attaque sournoise"
+    },
+    "Summary": "Inflige une hémorragie continue après une attaque sournoise.",
+    "MetaDescription": "Découvrez le talent Attaque sanglante, qui amplifie les frappes sournoises en infligeant une hémorragie continue à la cible jusqu’à sa résistance.",
+    "Description": "Lorsque le personnage effectue une attaque sournoise, il inflige [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires (pour un total de 4d6) ainsi qu’une hémorragie à sa cible.\n\nAu début de chacun de ses [tours](/regles/combat/deroulement/tour), la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du [test](/regles/competences/tests) de l’[attaque](/regles/combat/attaque), réduite de 2 par tour subséquent.\n\nSi la cible réussit le test, alors l’hémorragie cesse, sinon elle reçoit 2d6 points de dégâts létaux.\n\nLes dés de dégâts de l’hémorragie ne sont pas cumulables.\n\nEn revanche, lorsqu’une créature souffrant d’une hémorragie est affectée par une autre, la difficulté du jet de sauvegarde est remplacée par la difficulté du nouvel effet si celle-ci est supérieure à la difficulté de l’effet précédent."
   },
   {
     "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
@@ -1364,8 +1418,8 @@
       "Name": "Intuition"
     },
     "RequiredTalent": null,
-    "Summary": "Permet au personnage de deviner le motif (souvent une émotion) d’une créature lorsqu’il réussit un test d’Intuition opposé à un test de Tromperie.",
-    "MetaDescription": null,
+    "Summary": "Permet de deviner les émotions et motifs cachés d’un adversaire.",
+    "MetaDescription": "Découvrez le talent Intuition, qui permet de percer les motivations et émotions cachées d’autrui lors d’un test opposé à la Tromperie.",
     "Description": "Lorsque le personnage réussit un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) [opposé](/regles/competences/tests/oppose) à un test de [Tromperie](/regles/competences/tromperie), il peut deviner le motif ayant motivé la créature à tenter de le tromper.\n\nCe motif correspond généralement à un seul mot, et très souvent est une émotion."
   },
   {
@@ -1382,8 +1436,8 @@
       "Name": "Investigation"
     },
     "RequiredTalent": null,
-    "Summary": "Permet de trouver une créature ou un objet dissimulé par un test d’Investigation grâce à des indices.",
-    "MetaDescription": null,
+    "Summary": "Analyse et déduction logique pour découvrir ce qui est caché.",
+    "MetaDescription": "Découvrez le talent Investigation, qui permet d’analyser les indices logiquement pour déduire la présence d’une créature ou d’un objet dissimulé.",
     "Description": "Lorsque le personnage [cherche](/regles/combat/activites/chercher) une créature ou un objet [dissimulé](/regles/combat/activites/cacher), il peut remplacer le [test](/regles/competences/tests) de [Perception](/regles/competences/perception) par un test d’[Investigation](/regles/competences/investigation).\n\nAfin d’utiliser cette capacité, il doit y avoir présence d’indices indiquant une possible créature ou objet dissimulé."
   },
   {
@@ -1787,8 +1841,8 @@
       "Slug": "perception",
       "Name": "Perception"
     },
-    "Summary": "Ne peut être surpris s’il est conscient. Peut lire sur les lèvres d’une créature parlant une langue qu’il comprend.",
-    "MetaDescription": null,
+    "Summary": "Reste toujours alerte et peut lire sur les lèvres pour comprendre.",
+    "MetaDescription": "Découvrez le talent Observateur, qui permet de rester vigilant en toute circonstance et de lire sur les lèvres pour comprendre sans entendre.",
     "Description": "Le personnage ne peut être [surpris](/regles/combat/deroulement/surprise) lorsqu’il est conscient.\n\nÉgalement, il peut comprendre ce qu’une créature dit seulement en observant les mouvements de sa bouche si elle parle une [langue](/regles/langues) qu’il comprend comprend."
   },
   {
