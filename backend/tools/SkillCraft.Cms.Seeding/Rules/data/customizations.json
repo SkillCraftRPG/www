@@ -260,6 +260,26 @@
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il utilise une charge d’une [trousse de premiers soins](/regles/equipement/outils) afin de [stabiliser](/regles/combat/activites/stabiliser) une créature [agonisante](/regles/combat/conditions/agonisant), il peut utiliser une seconde charge par une [action](/regles/combat/deroulement/tour) supplémentaire. La créature [récupère](/regles/combat/degats/soins) un point de [Vitalité](/regles/statistiques/vitalite) et reprend immédiatement conscience.\n- Lorsqu’il stabilise une créature agonisante, il ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite).\n- Pendant une [halte](/regles/aventure/repos/halte) d’une durée d’au moins [une heure](/regles/aventure/temps), il peut soigner une créature. Il effectue un [test](/regles/competences/tests) de [Médecine](/regles/competences/medecine) et utilise deux charges d’une trousse de premiers soins. La cible dépense un nombre de points d’[Énergie](/regles/statistiques/energie) inférieur ou égal au résultat du test et récupère un nombre égal de points de Vitalité. La cible doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir être soignée à nouveau par cette capacité."
   },
   {
+    "Id": "3018fac6-f702-47e6-8300-1d47e27a74e9",
+    "IsPublished": true,
+    "Slug": "menace-ingenieuse",
+    "Name": "Menace ingénieuse",
+    "Kind": "Gift",
+    "Summary": "Intimide par des moyens créatifs et accorde un avantage aux alliés.",
+    "MetaDescription": "Découvrez le don Menace ingénieuse, qui permet d’intimider avec créativité en utilisant d’autres compétences et en soutenant ses alliés par la ruse.",
+    "Description": "Permet au personnage d’intimider une créature d’une manière créative et non conventionnelle, en utilisant une autre [compétence](/regles/competences).\n\nLorsqu’il en fait ainsi, il remplace son [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) par un test de cette compétence.\n\nÉgalement, lorsqu’il réussit à intimider une créature, le personnage et ses alliés se voient conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à leurs tests de [Diplomatie](/regles/competences/diplomatie), d’[Intuition](/regles/competences/intuition) et de [Tromperie](/regles/competences/tromperie) contre celle-ci pendant la prochaine [minute](/regles/aventure/temps)."
+  },
+  {
+    "Id": "6fde608d-586b-4567-96c1-c9d2faef8933",
+    "IsPublished": true,
+    "Slug": "mots-d-encouragement",
+    "Name": "Mots d’encouragement",
+    "Kind": "Gift",
+    "Summary": "Encourage ses alliés au combat, leur offrant soutien et protection.",
+    "MetaDescription": "Découvrez le don Mots d’encouragement, qui permet d’inspirer et protéger les alliés en combat grâce à des paroles motivantes et des réflexes héroïques.",
+    "Description": "Lorsque le personnage [aide](/regles/combat/activites/aider) une créature en situation de [combat](/regles/combat), celle-ci se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à tout [test](/regles/competences/tests) jugé pertinent par le maître de jeu jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour).\n\nÉgalement, lorsqu’une créature située à 9 mètres ou moins du personnage est victime d’une [attaque](/regles/combat/attaque), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’aider cette créature, affligeant du [désavantage](/regles/competences/tests/avantage-desavantage) le test de l’attaque.\n\nIl doit [voir](/regles/aventure/environnement/vision) la source de l’attaque afin d’utiliser cette capacité."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",
