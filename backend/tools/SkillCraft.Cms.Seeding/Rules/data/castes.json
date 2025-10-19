@@ -174,5 +174,27 @@
     "Summary": "Dirige, arbitre et rayonne grâce au prestige de la noblesse.",
     "MetaDescription": "Découvrez la caste des Nobles, gardiens des lois et du prestige familial, maîtres de la diplomatie et du pouvoir au sein de l’aristocratie.",
     "Description": "Riche propriétaire terrien ou lié par son sang à un seigneur, le noble est responsable de l’administration et de la gouvernance de terres.\n\nIl codifie les lois et tranche en cas de différents.\n\nL’ensemble de ses tâches est lourd de responsabilités et pousse parfois les héritiers nobles à quitter leur famille avant d’hériter de ces fonctions."
+  },
+  {
+    "Id": "71d70445-9e8b-4070-aed3-8cf8fed4d060",
+    "IsPublished": true,
+    "Slug": "paysan",
+    "Name": "Paysan",
+    "WealthRoll": "7d6",
+    "Skill": {
+      "Id": "21877dfa-439f-4dce-8235-556d311e1c54",
+      "IsPublished": true,
+      "Slug": "athletisme",
+      "Name": "Athlétisme"
+    },
+    "Feature": {
+      "Id": "b4b17a8f-8724-4e74-9702-db0342ca4e8e",
+      "IsPublished": true,
+      "Name": "Hospitalité",
+      "Description": "Par son humilité, sa simplicité et ses manières rustiques, le rang social du personnage transparait sans équivoque.\n\nIl sait comment subvenir à ses besoins au plus faible prix, comment exploiter, troquer, et trouver les matières brutes.\n\nLes roturiers reconnaissent qu’il est du même rang social et seront prêts a lui offrir gite, couvert et parfois même protection contre la loi, toutefois sans risquer leur propre vie."
+    },
+    "Summary": "Travailleurs endurants, humbles et solidaires, maîtres du labeur.",
+    "MetaDescription": "Découvrez la caste des Paysans, piliers laborieux de la société, dotés d’une endurance hors pair et d’un savoir rustique ancré dans la simplicité.",
+    "Description": "Les paysans représentent la base de la pyramide hiérarchique de leur société, bien que les plus nombreux.\n\nIls sont affectés aux tâches les moins louables mais les plus importantes au sein de la chaîne de production.\n\nMineurs, bûcherons, agriculteurs ou autres professionnels, leur mode de vie requiert une bonne forme physique et une tolérance exceptionnelle à l’effort."
   }
 ]

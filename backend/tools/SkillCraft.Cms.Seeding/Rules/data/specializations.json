@@ -1226,6 +1226,117 @@
     }
   },
   {
+    "Id": "9a72eb55-a360-4ccb-b62b-069810f171fe",
+    "IsPublished": true,
+    "Slug": "haruspice",
+    "Name": "Haruspice",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Dans les profondeurs de son repaire obscur et caché loin des regards, l’haruspice pratique de sombres rituels incorporant du sang, des entrailles de bêtes et d’anciens symboles gravés dans la pierre. Les murmures des esprits guident ses mains, lui révélant des visions d’avenir, des secrets du passé et des réalités du présent. Bien qu’il soit craint par la populace et la noblesse, les prédictions de l’haruspice ne sont pas toujours teintées de mort et de désespoir.",
+    "Requirements": {
+      "Talent": {
+        "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+        "IsPublished": true,
+        "Slug": "naturalisme",
+        "Name": "Naturalisme"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Élémentariste](/regles/specialisations/elementariste) et s’être spécialisé dans l’élément [Esprit](/regles/talents/elementarisme).",
+        "Il ne doit pas avoir acquis la spécialisation [Augure](/regles/specialisations/augure)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+          "IsPublished": true,
+          "Slug": "bris",
+          "Name": "Bris"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à l’élément Esprit ([Nécromancie](#))."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Hiéroscopie",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à l'élément Esprit ([Nécromancie](#)) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut désormais utiliser de puissantes [capacités élémentaires](#) de tiers 2."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "66b80472-5273-408b-8c64-c3e02c702069",
+          "IsPublished": true,
+          "Name": "Attaque élémentaire",
+          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des [dégâts nécrotiques](/regles/combat/degats/types)."
+        }
+      ]
+    }
+  },
+  {
     "Id": "a0305858-6df7-44a0-8680-57a81a53aa36",
     "IsPublished": true,
     "Slug": "menestrel",

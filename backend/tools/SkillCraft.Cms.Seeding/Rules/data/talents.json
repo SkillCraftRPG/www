@@ -291,6 +291,24 @@
     "Description": "Lorsque le personnage effectue une attaque neutralisante, il peut tenter de pénaliser davantage sa cible.\n\nIl dépense 15 points d’[Énergie](/regles/statistiques/energie) supplémentaires, pour un total de 30, avant de savoir si l’[attaque](/regles/combat/attaque) réussit ou échoue.\n\nSi l’attaque réussit, l’entièreté des [points de dégâts](/regles/combat/degats) sont convertis en [dégâts non létaux](/regles/combat/degats/letalite).\n\nLa cible reçoit des pénalités additionnelles si elle obtient un [échec critique](/regles/competences/tests/critique) à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde), ou si son [dé de Damnation](/regles/competences/tests/2d10) est supérieur à son [dé d’Espérance](/regles/competences/tests/2d10). Ces pénalités sont supplémentaires à celles spécifiées par l’attaque neutralisante.\n\n- Si elle échoue n’importe lequel des jets de sauvegarde, ses [tests](/regles/competences/tests) de [compétence](/regles/competences) et d’attaque sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage) jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour).\n- Si elle échoue le jet de sauvegarde d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme) de cette manière, sa [vitesse](/regles/aventure/mouvement/vitesse) est réduite de moitié jusqu’à la fin de son prochain tour.\n- Si elle échoue le jet de sauvegarde de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance) de cette manière, elle est [incapable](/regles/combat/conditions/incapable) jusqu’à la fin de son prochain tour.\n- Si elle échoue les deux jets de sauvegarde, elle est [paralysée](/regles/combat/conditions/paralyse) jusqu’à la fin de son prochain tour."
   },
   {
+    "Id": "bd4005cc-0689-4c5c-8436-fe10f06c1edc",
+    "IsPublished": true,
+    "Slug": "attaque-magique",
+    "Name": "Attaque magique",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+      "IsPublished": true,
+      "Slug": "magie-guerriere",
+      "Name": "Magie guerrière"
+    },
+    "Summary": "Canalise la magie pour renforcer ses attaques physiques.",
+    "MetaDescription": "Découvrez le talent Attaque magique, qui fusionne combat et arcanes pour infliger des dégâts mystiques ou canaliser la puissance magique en mêlée.",
+    "Description": "Une fois par [tour](/regles/combat/deroulement/tour), le personnage peut augmenter une [attaque](/regles/combat/attaque) physique en utilisant une des deux capacités suivantes.\n\n- Il infuse son [arme](/regles/equipement/armes) de magie et choisit un nombre entre 1 et sa [Puissance](/regles/statistiques/puissance). Il dépense un nombre égal de points d’[Énergie](/regles/statistiques/energie) avant de savoir si l’attaque réussit ou échoue, et ajoute un nombre égal de [points de dégâts magiques](/regles/combat/degats/types).\n- Il remplace le [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) ou d’[Orientation](/regles/competences/orientation) d’une attaque par un test d’[Occultisme](/regles/competences/occultisme). Lorsqu’il en fait ainsi, il remplace sa [Force](/regles/statistiques/force) ou sa [Précision](/regles/statistiques/precision) par sa [Puissance](/regles/statistiques/puissance), et tous les [points de dégâts](/regles/combat/degats) infligés sont [magiques](/regles/combat/degats/types)."
+  },
+  {
     "Id": "43774d2a-52d3-4b69-b75a-4432a0ef3b56",
     "IsPublished": true,
     "Slug": "attaque-mortelle",
@@ -325,6 +343,24 @@
     "Summary": "Permet de neutraliser un ennemi sans le tuer grâce à un coup précis.",
     "MetaDescription": "Découvrez le talent Attaque neutralisante, permettant de frapper sans tuer et de neutraliser un adversaire par un coup précis et contrôlé.",
     "Description": "Lorsque le personnage effectue une [attaque de mêlée](/regles/combat/attaque/melee), il peut tenter de neutraliser sa cible.\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit manier une [arme](/regles/equipement/armes) infligeant des [points de dégâts](/regles/combat/degats) [contondants](/regles/combat/degats/types) [létaux](/regles/combat/degats/letalite) pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nS’il est formé au maniement des [armes improvisées](/regles/equipement/armes/improvisees), alors il peut utiliser une arme non contondante en attaquant sa cible avec une portion de l’arme s’apparentant à une arme contondante, par exemple le pommeau d’une épée ou la poignée d’une arme d’hast.\n\nIl dépense 15 points d’[Énergie](/regles/statistiques/energie) avant de savoir si l’attaque réussit ou échoue.\n\nSi l’attaque réussit, la moitié des points de dégâts sont convertis en [dégâts non létaux](/regles/combat/degats/letalite), et le prochain test de la cible (excluant les [jets de sauvegarde](/regles/competences/tests/sauvegarde)) est affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à celle du personnage :\n\n- Elle doit effectuer un jet de sauvegarde d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme), au choix. En cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol.\n- Elle doit également effectuer un jet de sauvegarde de [Discipline](/regles/competences/discipline) ou de [Résistance](/regles/competences/resistance), au choix. En cas d’échec, elle est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain tour.\n- La cible peut réutiliser les mêmes [dés](/regles/competences/tests/2d10) pour les deux jets de sauvegarde, à la discrétion du maître de jeu.\n- La [difficulté](/regles/competences/tests/difficulte) des jets de sauvegarde correspond au résultat du test de Mêlée effectué par le personnage."
+  },
+  {
+    "Id": "9f0c90cc-29b8-4fb6-b4c8-fe930b3042d7",
+    "IsPublished": true,
+    "Slug": "attaque-precise",
+    "Name": "Attaque précise",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
+      "IsPublished": true,
+      "Slug": "attaque-puissante",
+      "Name": "Attaque puissante"
+    },
+    "Summary": "Rend les attaques de mêlée plus puissantes et précises.",
+    "MetaDescription": "Découvrez le talent Attaque précise, qui perfectionne les coups portés en mêlée, ajoutant puissance et exactitude pour maximiser les dégâts infligés.",
+    "Description": "Le personnage peut effectuer une [attaque de mêlée](/regles/combat/attaque/melee) par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nIl doit manier une [arme](/regles/equipement/armes) à une main pour laquelle il est [formé](/regles/equipement/armes/formation) et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nLorsqu’il en fait ainsi, il peut ajouter un bonus (+5) à son test d’attaque ainsi qu’un [dé de dégâts](/regles/combat/degats/jet)."
   },
   {
     "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
@@ -425,8 +461,8 @@
       "Slug": "survivalisme",
       "Name": "Survivalisme"
     },
-    "Summary": "Camouflage confère l’avantage en Furtivité, tandis que Bastion permet de renforcer les défenses d’un lieu selon le rang de Survie du personnage.",
-    "MetaDescription": null,
+    "Summary": "Permet de camoufler et fortifier en milieu naturel avec ingéniosité.",
+    "MetaDescription": "Découvrez le talent Bricolage naturel, qui permet de créer des camouflages et fortifications en milieu sauvage grâce à la maîtrise de la survie et de l’ingénio…",
     "Description": "### Camouflage\n\nLorsqu’il se trouve en milieu naturel et sauvage, le personnage peut fabriquer un camouflage en utilisant les ressources du milieu en [10 minutes](/regles/aventure/temps).\n\nS’il utilise également une [trousse de déguisement](/regles/equipement/outils) et qu’il est formé à l’utilisation de cette trousse, il n’a besoin que d’une minute afin de fabriquer le camouflage.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) lorsqu’il porte le camouflage en se trouvant dans le milieu depuis lequel les ressources du camouflage proviennent.\n\n### Bastion\n\nLe personnage peut tenter d’améliorer les fortifications d’un lieu tel un campement, un champ de bataille ou un bastion. Il doit posséder le temps et les ressources nécessaires.\n\nIl choisit un nombre compris entre 1 et son [rang](/regles/competences/rang) de [Survie](/regles/competences/survie), et doit réussir un test de Survie de [difficulté](/regles/competences/tests/difficulte) égale au double de ce nombre.\n\nSi le test est réussi, les fortifications bénéficient des bonus suivants :\n\n- La moitié du nombre choisi est ajoutée à la [Défense](/regles/aventure/interaction-objets) des fortifications.\n- Si la fortification n’a pas de valeur de Défense mais qu’elle peut être brisée par un test, la moitié du nombre choisi est ajouté à la difficulté du test.\n- Si la fortification possède des [points de Résistance](/regles/aventure/interaction-objets), elle se voit conférer un nombre de [points temporaires](/regles/combat/degats/temporaire) égal aux [Sens](/regles/attributs/sens) + rang de Survie du personnage (minimum 1).\n\nS’il utilise également des [outils de bricoleur](/regles/equipement/outils) et qu’il est formé à l’utilisation de ces outils, il multiplie ces bonus par 1,5."
   },
   {
@@ -1508,8 +1544,8 @@
       "Name": "Linguistique"
     },
     "RequiredTalent": null,
-    "Summary": "Permet au personnage d’apprendre une langue, d’utiliser une trousse de falsification et d’accéder aux langues exotiques.",
-    "MetaDescription": null,
+    "Summary": "Permet d’apprendre des langues et de manier la trousse de falsification.",
+    "MetaDescription": "Découvrez le talent Linguistique, qui permet d’apprendre de nouvelles langues, d’utiliser une trousse de falsification et de lire les textes exotiques.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est formé à l’utilisation de la [trousse de falsification](/regles/equipement/outils).\n- Il peut désormais apprendre les [langues exotiques](/regles/langues).\n- Il apprend une langue de son choix."
   },
   {
@@ -2123,8 +2159,8 @@
       "Slug": "representation",
       "Name": "Représentation"
     },
-    "Summary": "Permet d’intimider en combat et de rendre le terrain difficile pour les ennemis affectés. Avantage pour intimider après avoir infligé des dégâts.",
-    "MetaDescription": null,
+    "Summary": "Intimide les ennemis par une aura de peur et d’autorité au combat.",
+    "MetaDescription": "Découvrez le talent Présence terrifiante, qui permet d’intimider les ennemis au combat et d’imposer sa volonté par une aura de peur et de domination.",
     "Description": "En [situation de combat](/regles/combat), permet au personnage d’intimider ses ennemis par une [action](/regles/combat/deroulement/tour).\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) [opposé](/regles/competences/tests/oppose) à un test de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de toute cible qu’il désigne et qu’il peut atteindre par une [attaque de mêlée](/regles/combat/attaque/melee).\n\nLe terrain devient [difficile](/regles/aventure/mouvement/terrain-difficile) pour toute créature échouant le test opposé.\n\nUne créature immunisée à la [peur](/regles/combat/conditions/apeure) ou au terrain difficile n’est pas affectée par cette capacité.\n\nÉgalement, lorsque le personnage inflige des [points de dégâts](/regles/combat/degats) à une créature, il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de Représentation afin d’intimider cette créature jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour)."
   },
   {
