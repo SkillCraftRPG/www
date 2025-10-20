@@ -1337,6 +1337,132 @@
     }
   },
   {
+    "Id": "031d639d-26cc-4ffe-ab94-c81e2ab7dfb4",
+    "IsPublished": true,
+    "Slug": "illusionniste",
+    "Name": "Illusionniste",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "L’illusionniste capture les regards avec ses tours captivants et déconcertants. Derrière ses talents d’amuseur se cache un esprit bien aiguisé. Il sait faire bien plus que divertir ; il peut utiliser ses pouvoirs afin de manipuler et d’influencer la noblesse, jouant des vanités et des rivalités de la cour, jouant son propre jeu politique et échappant aux soupçons. Il sait faire oublier les malheurs d’un instant à la populace.",
+    "Requirements": {
+      "Talent": {
+        "Id": "3e69bf90-dabc-4bc1-bc07-2be486508f31",
+        "IsPublished": true,
+        "Slug": "pareidolie",
+        "Name": "Paréidolie"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Ménestrel](/regles/specialisations/menestrel)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "0daa9126-6911-4cc8-a960-d0898e31c27e",
+          "IsPublished": true,
+          "Slug": "maraudage",
+          "Name": "Maraudage"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "5b2904bd-5e73-458e-a37d-d2d1d15e003f",
+          "IsPublished": true,
+          "Slug": "mefait-feutre",
+          "Name": "Méfait feutré"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "17dcdec1-469d-452b-bf94-c225ddc3017a",
+          "IsPublished": true,
+          "Slug": "philologie",
+          "Name": "Philologie"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
+      "Other": [
+        "[Illusions](#) de tiers 1."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Illusionnisme",
+      "Description": [
+        "Il peut acquérir les [illusions](#) de tiers 2 et acquiert gratuitement un de ces [pouvoirs](/regles/magie/pouvoirs)."
+      ],
+      "DiscountedTalents": [],
+      "Features": []
+    }
+  },
+  {
     "Id": "a0305858-6df7-44a0-8680-57a81a53aa36",
     "IsPublished": true,
     "Slug": "menestrel",

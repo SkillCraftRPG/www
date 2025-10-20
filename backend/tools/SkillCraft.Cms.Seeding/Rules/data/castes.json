@@ -196,5 +196,27 @@
     "Summary": "Travailleurs endurants, humbles et solidaires, maîtres du labeur.",
     "MetaDescription": "Découvrez la caste des Paysans, piliers laborieux de la société, dotés d’une endurance hors pair et d’un savoir rustique ancré dans la simplicité.",
     "Description": "Les paysans représentent la base de la pyramide hiérarchique de leur société, bien que les plus nombreux.\n\nIls sont affectés aux tâches les moins louables mais les plus importantes au sein de la chaîne de production.\n\nMineurs, bûcherons, agriculteurs ou autres professionnels, leur mode de vie requiert une bonne forme physique et une tolérance exceptionnelle à l’effort."
+  },
+  {
+    "Id": "f5599ebb-40c4-47ab-87e3-00b1c6598a1a",
+    "IsPublished": true,
+    "Slug": "religieux",
+    "Name": "Religieux",
+    "WealthRoll": "9d6",
+    "Skill": {
+      "Id": "f356649f-b39f-4db6-93f4-a2e0f8c2b841",
+      "IsPublished": true,
+      "Slug": "occultisme",
+      "Name": "Occultisme"
+    },
+    "Feature": {
+      "Id": "41047e74-e51d-42f2-9851-6a8c3c59e390",
+      "IsPublished": true,
+      "Name": "Refuge des fidèles",
+      "Description": "Le personnage est membre d’un culte ou d’une religion. Il œuvre à un temple ou à un lieu spirituel, et est connu des autres fidèles de son culte. Il sait où sont établis les lieux de son culte et où se rassemblent ses fidèles.\n\nSon temple et les fidèles de son culte sont prêts à l’héberger et à le sauver en cas de nécessité, souvent en échange de faveurs équivalentes ou d’une aumône quelconque.\n\nSa religion peut également lui permettre d’accéder à des reliques, des services spirituels particuliers, ou des personnalités religieuses."
+    },
+    "Summary": "Servant du culte, guide spirituel et interprète du surnaturel.",
+    "MetaDescription": "Découvrez la caste Religieux, gardienne du culte et des traditions, œuvrant dans les temples pour apaiser les fidèles et interpréter les phénomènes surnaturels.",
+    "Description": "Les religieux sont responsables du culte et des traditions de leur société.\n\nIls ont également le mandat de traiter les événements surnaturels et de rassurer la population quant à ceux-ci.\n\nLes religieux œuvrent dans un temple, un sanctuaire, une église ou tout autre lieu de culte.\n\nIls peuvent compter sur l’aide d’autres fidèles, mais doivent également s’impliquer auprès de leur culte."
   }
 ]
