@@ -150,8 +150,8 @@
       "Slug": "intellect",
       "Name": "Intellect"
     },
-    "Summary": "Linguistique évalue l’aptitude du personnage à comprendre, manipuler ou produire des messages écrits ou symboliques, dans sa langue ou dans d’autres.",
-    "MetaDescription": null,
+    "Summary": "Permet d’apprendre, lire et falsifier des langues ou symboles.",
+    "MetaDescription": "Découvrez la compétence Linguistique, dédiée à la création et la falsification de textes, ainsi qu’à l’apprentissage et au déchiffrage des langues.",
     "Description": "La compétence **Linguistique** permet au personnage de :\n\n- comprendre ou produire un document écrit, qu’il soit simple ou complexe\n- décrypter un texte\n- falsifier un texte\n- interpréter un message non verbal\n- lire des schémas, comme des cartes ou des interfaces\n- tenter de comprendre un texte rédigé dans une langue inconnue"
   },
   {

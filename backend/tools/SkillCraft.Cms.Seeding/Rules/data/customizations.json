@@ -280,6 +280,16 @@
     "Description": "Lorsque le personnage [aide](/regles/combat/activites/aider) une créature en situation de [combat](/regles/combat), celle-ci se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à tout [test](/regles/competences/tests) jugé pertinent par le maître de jeu jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour).\n\nÉgalement, lorsqu’une créature située à 9 mètres ou moins du personnage est victime d’une [attaque](/regles/combat/attaque), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’aider cette créature, affligeant du [désavantage](/regles/competences/tests/avantage-desavantage) le test de l’attaque.\n\nIl doit [voir](/regles/aventure/environnement/vision) la source de l’attaque afin d’utiliser cette capacité."
   },
   {
+    "Id": "760f44c8-19be-4d22-b7ea-ca4d92679dd4",
+    "IsPublished": true,
+    "Slug": "muet",
+    "Name": "Muet",
+    "Kind": "Disability",
+    "Summary": "Incapable de parler ou canaliser un pouvoir verbal.",
+    "MetaDescription": "Découvrez le handicap Muet, qui empêche tout discours articulé et limite la parole à quelques mots simples, tout en laissant intactes les capacités télépathiqu…",
+    "Description": "Les parents du personnage ne sont jamais parvenus à lui apprendre à parler convenablement.\n\nIl est complètement incapable de parler ou de formuler des phrases complètes.\n\nIl ne peut dire que quelques mots courts, simples et faciles à prononcer.\n\nSes capacités télépathiques ne sont pas affectées.\n\nIl est incapable de [canaliser](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs) requérant une composante [Verbale](/regles/magie/parametres/composantes)."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",

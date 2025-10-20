@@ -394,6 +394,19 @@
     "Description": "Lorsque le personnage effectue une attaque sournoise, il inflige [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires (pour un total de 4d6) ainsi qu’une hémorragie à sa cible.\n\nAu début de chacun de ses [tours](/regles/combat/deroulement/tour), la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du [test](/regles/competences/tests) de l’[attaque](/regles/combat/attaque), réduite de 2 par tour subséquent.\n\nSi la cible réussit le test, alors l’hémorragie cesse, sinon elle reçoit 2d6 points de dégâts létaux.\n\nLes dés de dégâts de l’hémorragie ne sont pas cumulables.\n\nEn revanche, lorsqu’une créature souffrant d’une hémorragie est affectée par une autre, la difficulté du jet de sauvegarde est remplacée par la difficulté du nouvel effet si celle-ci est supérieure à la difficulté de l’effet précédent."
   },
   {
+    "Id": "3acd933a-0e0d-44ce-ab18-0a4966734307",
+    "IsPublished": true,
+    "Slug": "attaques-multiples",
+    "Name": "Attaques multiples",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": null,
+    "Summary": "Permet d’attaquer plusieurs fois avec le même membre.",
+    "MetaDescription": "Découvrez le talent Attaques multiples, permettant d’enchaîner plusieurs frappes avec un même membre de corps durant un tour, malgré la pénalité habituelle.",
+    "Description": "Permet au personnage d’effectuer plusieurs [attaques](/regles/combat/attaque) avec le même membre de corps pendant son [tour](/regles/combat/deroulement/tour).\n\nIl n’est pas exempt de la pénalité affligée aux [attaques multiples](/regles/combat/attaque/multiples)."
+  },
+  {
     "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
     "IsPublished": true,
     "Slug": "attaque-sournoise",
@@ -867,6 +880,24 @@
     "Summary": "Détourne l’attention des ennemis et lie art et combat.",
     "MetaDescription": "Découvrez le talent Distraction, permettant d’aider un allié en détournant l’attention des ennemis et d’utiliser la Représentation en combat.",
     "Description": "### Distraction\n\nLorsque le personnage [aide](/regles/combat/activites/aider) un allié à [attaquer](/regles/combat/attaque) une créature, au moment où il utilise sa [réaction](/regles/combat/deroulement/tour), il peut tenter de distraire les créatures situées à 1,5 mètres ou moins de la cible.\n\nIl sélectionne un nombre de cibles inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum 1). Ces créatures doivent pouvoir le voir ou l’entendre.\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) [opposé](/regles/competences/tests/oppose) à un test de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de ces créatures.\n\nLe test de la prochaine attaque dirigée contre une créature ayant échoué le test opposé se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n\n### Combat de scène\n\nLe personnage sélectionne un type d’[arme](/regles/equipement/armes) et est [formé](/regles/equipement/armes/formation) au maniement des armes de ce type s’il ne l’est pas déjà.\n\nLorsque son [tiers](/regles/personnages/progression/tiers) augmente, il sélectionne un type d’arme additionnel.\n\nLorsqu’il effectue une attaque en maniant une arme appartenant à un de ces types, il peut remplacer le test de [Mêlée](/regles/competences/melee) ou d’[Orientation](/regles/competences/orientation) par un test de Représentation en retirant la moitié de son [rang](/regles/competences/rang).\n\nLorsqu’il en fait ainsi, il remplace sa [Force](/regles/statistiques/force) ou sa [Précision](/regles/statistiques/precision) par la moitié de son [Stratagème](/regles/statistiques/stratageme) dans le calcul des [points de dégâts](/regles/combat/degats) infligés."
+  },
+  {
+    "Id": "dc53c886-b804-46fd-8d0c-86e5e0079a58",
+    "IsPublished": true,
+    "Slug": "double-attaque",
+    "Name": "Double attaque",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "1f8cf0b2-edb9-4f9f-aa13-a78794b8c1ba",
+      "IsPublished": true,
+      "Slug": "ambidextre",
+      "Name": "Ambidextre"
+    },
+    "Summary": "Permet d’attaquer avec chaque main en un même tour.",
+    "MetaDescription": "Découvrez le talent Double attaque, permettant de frapper avec chaque main lors d’un tour, réduisant les pénalités pour enchaîner plusieurs attaques.",
+    "Description": "Lorsque le personnage effectue une [attaque](/regles/combat/attaque) avec une [main autre que sa principale](/regles/combat/attaque/deux-armes), alors il ajoute la totalité de sa [Force](/regles/statistiques/force) ou de sa [Précision](/regles/statistiques/precision) aux [points de dégâts](/regles/combat/degats) infligés.\n\nÉgalement, lorsqu’il effectue [plusieurs attaques](/regles/combat/attaque/multiples) par [tour](/regles/combat/deroulement/tour) en utilisant une main différente par attaque, alors la pénalité au [test](/regles/competences/tests) de sa deuxième attaque est -2, et la pénalité au test de sa troisième attaque est -5."
   },
   {
     "Id": "7dd9ed2f-377b-4199-ba60-0d24240804e5",
@@ -1731,8 +1762,8 @@
       "Name": "Médecine"
     },
     "RequiredTalent": null,
-    "Summary": "Permet de stabiliser en combat avec Faire 10. Une réussite avec Espérance évite la Fatigue, une réussite critique restaure 1 point de Vitalité.",
-    "MetaDescription": null,
+    "Summary": "Permet de stabiliser et soigner avec habileté et savoir médical.",
+    "MetaDescription": "Découvrez le talent Médecine, qui enseigne à soigner les blessures, stabiliser les créatures et diagnostiquer les afflictions avec précision et savoir-faire.",
     "Description": "Le personnage est formé à l’utilisation de la [trousse de premiers soins](/regles/equipement/outils).\n\nÉgalement, lorsqu’il utilise une charge pour [stabiliser](/regles/combat/activites/stabiliser) une créature, il peut réussir automatiquement le [test](/regles/competences/tests)."
   },
   {
@@ -2218,8 +2249,8 @@
       "Slug": "spiritualite",
       "Name": "Spiritualité"
     },
-    "Summary": "Permet au Clerc de repousser les morts-vivants par une prière. Les faibles morts-vivants sont détruits instantanément.",
-    "MetaDescription": null,
+    "Summary": "Repousse ou détruit les morts-vivants par prière et symbole divin.",
+    "MetaDescription": "Découvrez le talent Renvoi des morts-vivants, qui permet d’utiliser une prière divine pour repousser, étourdir ou détruire les créatures mortes-vivantes.",
     "Description": "Ce talent n’a aucun effet si le personnage n’a pas acquis la spécialisation [Clerc](/regles/specialisations/clerc).\n\nPermet au personnage d’utiliser son pouvoir divin par une [action](/regles/combat/deroulement/tour) afin de présenter son [symbole divin](/regles/equipement/general) en récitant une prière châtiant les morts-vivants.\n\nIl effectue un [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme). Toute créature morte-vivante située à 9 mètres ou moins de sa position et qui peut le voir ou l’entendre doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du test.\n\nEn cas d’échec du jet de sauvegarde, une créature est [étourdie](/regles/combat/conditions/etourdi) et doit utiliser toutes ses actions afin de fuir le personnage.\n\nSi elle ne peut fuir, alors elle ne peut qu’effectuer les activités [Défense](/regles/combat/activites/defense) ou [S’échapper](/regles/combat/activites/echapper).\n\nL’effet dure [1 minute](/regles/aventure/temps) ou jusqu’à ce que la créature reçoive des [points de dégâts](/regles/combat/degats).\n\nDe plus, si le [niveau](/regles/personnages/progression/niveau) de la créature est inférieur ou égal au [tiers](/regles/personnages/progression/tiers) du personnage, elle est instantanément détruite."
   },
   {
