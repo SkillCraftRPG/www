@@ -1,5 +1,227 @@
 ﻿[
   {
+    "Id": "680a15a0-dfa4-4cd5-8573-bff592cafef8",
+    "IsInvariant": true,
+    "UniqueName": "Progress",
+    "DisplayName": "Progression",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "e69dd72f-6a5a-4e04-999e-7889800e995a",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Characters",
+        "DisplayName": "Personnages",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "8be5921f-5e22-44e5-8410-c3c9dd6e9135",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Attributes",
+        "DisplayName": "Attributs",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "733ac9bc-fbfe-4b7e-96e1-31876737c165",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Statistics",
+        "DisplayName": "Statistiques",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "b7af2161-cf36-4a12-8fdb-ff234e02ec1a",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Skills",
+        "DisplayName": "Compétences",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "151ef689-2a45-4202-9cd2-0e66e672d4ed",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Species",
+        "DisplayName": "Espèces",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "dfc5d933-33fe-4ef6-b9e7-45259cce7bbb",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Customizations",
+        "DisplayName": "Dons & Handicaps",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "ffa532a9-1227-46e5-8a07-3e5a0413960d",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Castes",
+        "DisplayName": "Castes",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "18df9753-7a62-46d7-8be4-d2d535932147",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Educations",
+        "DisplayName": "Éducations",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "b07aeac1-a488-4767-955e-2ad75b9bfc65",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Talents",
+        "DisplayName": "Talents",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "a7f616d4-8d07-4689-86a1-bfd46e2ec157",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Specializations",
+        "DisplayName": "Spécialisations",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "05a3b027-bfeb-4cd6-828a-8a2045b7a2a5",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Languages",
+        "DisplayName": "Langues",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "85098ac6-6a1e-4dde-acf5-61794ff62df4",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Equipment",
+        "DisplayName": "Équipement",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "693fdf78-3094-402d-ad83-1eb9661923d1",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Adventure",
+        "DisplayName": "Aventure",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "1d8ed694-7059-49a0-bb4e-52dd7d752414",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Combat",
+        "DisplayName": "Combat",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "f1540126-da98-4871-971a-f3218dba43b6",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Magic",
+        "DisplayName": "Magie",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "1f047ee9-1514-407e-9eae-910e536b0165",
+        "FieldType": "Progress",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Annexes",
+        "DisplayName": "Annexes",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
+    "IsInvariant": false,
+    "UniqueName": "Feature",
+    "DisplayName": "Particularité",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "81fb1f77-55a3-41fd-ae3f-40fd5c7a7c56",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "fb78ad6b-8522-4037-ae1e-650c38c54165",
     "IsInvariant": false,
     "UniqueName": "Attribute",
@@ -167,6 +389,203 @@
         "DisplayName": "Contenu HTML",
         "Description": null,
         "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "68e69278-4103-4ab3-8388-222c6d4e9f92",
+    "IsInvariant": false,
+    "UniqueName": "Language",
+    "DisplayName": "Langue",
+    "Description": null,
+    "Fields": []
+  },
+  {
+    "Id": "df9bfb44-c586-4cb3-b08a-77c8508a0505",
+    "IsInvariant": false,
+    "UniqueName": "Species",
+    "DisplayName": "Espèce",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "0e5f3fb1-6f13-47bb-9c49-e54201b663fc",
+        "FieldType": "Species",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Parent",
+        "DisplayName": "Parent",
+        "Description": null,
+        "Placeholder": "Sélectionnez une espèce parente"
+      },
+      {
+        "Id": "2bcc6f71-3205-4d58-9149-267ebdecd537",
+        "FieldType": "Features",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Features",
+        "DisplayName": "Particularités",
+        "Description": null,
+        "Placeholder": "Sélectionnez une ou plusieurs particularités"
+      },
+      {
+        "Id": "060dff93-77c8-40dd-8ed1-7accdf3f80be",
+        "FieldType": "Languages",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Languages",
+        "DisplayName": "Langues",
+        "Description": null,
+        "Placeholder": "Sélectionnez une ou plusieurs langues"
+      },
+      {
+        "Id": "29e049d0-3318-4a52-a3ea-08bff95894a5",
+        "FieldType": "ExtraLanguages",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "ExtraLanguages",
+        "DisplayName": "Langues supplémentaires",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "c88e08b0-8136-4a91-9d58-2c9bf56d8533",
+        "FieldType": "SpeciesSpeed",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Speeds",
+        "DisplayName": "Vitesses",
+        "Description": null,
+        "Placeholder": "Entrez les vitesses au format \"Type:Value,Type:Value,…\""
+      },
+      {
+        "Id": "ba9f7c73-599a-4006-98d1-6d82a64abe50",
+        "FieldType": "SizeCategory",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "SizeCategory",
+        "DisplayName": "Catégorie de taille",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "6172ac09-5cde-43b3-8503-d77cc5495b84",
+        "FieldType": "Roll",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "SizeRoll",
+        "DisplayName": "Taille (jet de dés)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7fc66901-2fe6-4595-8158-6e39d7b669e0",
+        "FieldType": "SpeciesWeight",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Weight",
+        "DisplayName": "Poids",
+        "Description": null,
+        "Placeholder": "Entrez les jets de poids au format \"{Dénutrition},{Maigre},{Normal},{Surpoids},{Obèse}\""
+      },
+      {
+        "Id": "c24ca3ad-0762-47be-9a80-b4757b285e35",
+        "FieldType": "SpeciesAge",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Age",
+        "DisplayName": "Âge",
+        "Description": null,
+        "Placeholder": "Entrez les seuils de vieillissement au format \"{Adolescent},{Adulte},{Mature},{Vénérable}\""
+      },
+      {
+        "Id": "f814a0a3-dd37-414e-9eff-1711b42b7103",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "9e075562-10a7-4ea3-9928-aad32a7f29c6",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7f570012-8254-4f9a-a561-c18a332b2d28",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "17cd5dc5-ddc8-4558-afd6-77e1e7ea933b",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "LanguagesText",
+        "DisplayName": "Langues (texte)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "31619dca-8655-46bd-a9ed-5ffdc08f1f00",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "NamesText",
+        "DisplayName": "Noms (texte)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "443063e3-5df2-4f08-a82c-f3aed1b7c0ce",
+        "FieldType": "SpeciesNames",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "NamesSelection",
+        "DisplayName": "Noms (sélection)",
+        "Description": null,
+        "Placeholder": "Une catégorie par ligne, au format \"{Key}:{Name},{Name},…\" ; catégories : Family, Female, Male, Unisex"
       }
     ]
   },
@@ -516,27 +935,6 @@
     ]
   },
   {
-    "Id": "3dd6e07f-bab9-4fa7-a956-bc2e5f41ff3f",
-    "IsInvariant": false,
-    "UniqueName": "Feature",
-    "DisplayName": "Particularité",
-    "Description": null,
-    "Fields": [
-      {
-        "Id": "81fb1f77-55a3-41fd-ae3f-40fd5c7a7c56",
-        "FieldType": "HtmlContent",
-        "IsInvariant": false,
-        "IsRequired": false,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "HtmlContent",
-        "DisplayName": "Contenu HTML",
-        "Description": null,
-        "Placeholder": null
-      }
-    ]
-  },
-  {
     "Id": "1b2731ef-11f2-412a-9992-a699776a121f",
     "IsInvariant": false,
     "UniqueName": "Specialization",
@@ -684,207 +1082,6 @@
         "IsUnique": false,
         "UniqueName": "ReservedTalentHtmlContent",
         "DisplayName": "Talent réservé (Contenu HTML)",
-        "Description": null,
-        "Placeholder": null
-      }
-    ]
-  },
-  {
-    "Id": "680a15a0-dfa4-4cd5-8573-bff592cafef8",
-    "IsInvariant": true,
-    "UniqueName": "Progress",
-    "DisplayName": "Progression",
-    "Description": null,
-    "Fields": [
-      {
-        "Id": "e69dd72f-6a5a-4e04-999e-7889800e995a",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Characters",
-        "DisplayName": "Personnages",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "8be5921f-5e22-44e5-8410-c3c9dd6e9135",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Attributes",
-        "DisplayName": "Attributs",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "733ac9bc-fbfe-4b7e-96e1-31876737c165",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Statistics",
-        "DisplayName": "Statistiques",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "b7af2161-cf36-4a12-8fdb-ff234e02ec1a",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Skills",
-        "DisplayName": "Compétences",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "151ef689-2a45-4202-9cd2-0e66e672d4ed",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Species",
-        "DisplayName": "Espèces",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "dfc5d933-33fe-4ef6-b9e7-45259cce7bbb",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Customizations",
-        "DisplayName": "Dons & Handicaps",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "ffa532a9-1227-46e5-8a07-3e5a0413960d",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Castes",
-        "DisplayName": "Castes",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "18df9753-7a62-46d7-8be4-d2d535932147",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Educations",
-        "DisplayName": "Éducations",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "b07aeac1-a488-4767-955e-2ad75b9bfc65",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Talents",
-        "DisplayName": "Talents",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "a7f616d4-8d07-4689-86a1-bfd46e2ec157",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Specializations",
-        "DisplayName": "Spécialisations",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "05a3b027-bfeb-4cd6-828a-8a2045b7a2a5",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Languages",
-        "DisplayName": "Langues",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "85098ac6-6a1e-4dde-acf5-61794ff62df4",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Equipment",
-        "DisplayName": "Équipement",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "693fdf78-3094-402d-ad83-1eb9661923d1",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Adventure",
-        "DisplayName": "Aventure",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "1d8ed694-7059-49a0-bb4e-52dd7d752414",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Combat",
-        "DisplayName": "Combat",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "f1540126-da98-4871-971a-f3218dba43b6",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Magic",
-        "DisplayName": "Magie",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "1f047ee9-1514-407e-9eae-910e536b0165",
-        "FieldType": "Progress",
-        "IsInvariant": true,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "Annexes",
-        "DisplayName": "Annexes",
         "Description": null,
         "Placeholder": null
       }

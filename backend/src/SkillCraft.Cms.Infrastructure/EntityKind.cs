@@ -10,6 +10,7 @@ internal enum EntityKind
   Gift,
   Skill,
   Specialization,
+  Species,
   Statistic,
   Talent
 }

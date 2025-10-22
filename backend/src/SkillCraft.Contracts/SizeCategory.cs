@@ -1,4 +1,4 @@
-﻿namespace SkillCraft.Core;
+﻿namespace SkillCraft.Contracts;
 
 public enum SizeCategory
 {

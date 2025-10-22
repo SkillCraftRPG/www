@@ -17,6 +17,6 @@ internal class SpecializationFeatureConfiguration : IEntityTypeConfiguration<Spe
     builder.HasIndex(x => x.FeatureUid);
 
     builder.HasOne(x => x.Specialization).WithMany(x => x.Features).OnDelete(DeleteBehavior.Cascade);
-    builder.HasOne(x => x.Feature).WithMany(x => x.Specializations);
+    builder.HasOne(x => x.Feature).WithMany(x => x.Specializations).OnDelete(DeleteBehavior.Restrict);
   }
 }

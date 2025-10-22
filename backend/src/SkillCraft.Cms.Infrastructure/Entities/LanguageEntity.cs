@@ -1,32 +1,39 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
+using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
 
-internal class FeatureEntity : AggregateEntity
+internal class LanguageEntity : AggregateEntity
 {
-  public int FeatureId { get; private set; }
+  public int LanguageId { get; private set; }
   public Guid Id { get; private set; }
 
   public bool IsPublished { get; private set; }
 
+  public string Slug { get; set; } = string.Empty;
+  public string SlugNormalized
+  {
+    get => Helper.Normalize(Slug);
+    private set { }
+  }
   public string Name { get; set; } = string.Empty;
+
+  public string? Summary { get; set; }
+  public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
-  public List<CasteEntity> Castes { get; private set; } = [];
-  public List<EducationEntity> Educations { get; private set; } = [];
-  public List<LineageFeatureEntity> Lineages { get; private set; } = [];
-  public List<SpecializationFeatureEntity> Specializations { get; private set; } = [];
+  public List<LineageLanguageEntity> Lineages { get; private set; } = [];
 
-  public FeatureEntity(ContentLocalePublished @event) : base(@event)
+  public LanguageEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
 
     IsPublished = true;
   }
 
-  private FeatureEntity() : base()
+  private LanguageEntity() : base()
   {
   }
 

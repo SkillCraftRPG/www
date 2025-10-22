@@ -146,7 +146,7 @@ internal class PublishSpecializationCommandHandler : ICommandHandler<PublishSpec
       }
       else
       {
-        _logger.LogWarning("The feature 'Id={OptionalTalentId}' was not found, for specialization '{Specialization}'.", featureId, specialization);
+        _logger.LogWarning("The feature 'Id={FeatureId}' was not found, for specialization '{Specialization}'.", featureId, specialization);
       }
     }
   }
