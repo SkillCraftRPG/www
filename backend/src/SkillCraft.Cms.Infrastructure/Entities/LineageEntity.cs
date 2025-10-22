@@ -118,6 +118,4 @@ internal class LineageEntity : AggregateEntity
   }
 
   public override string ToString() => $"{Name} | {base.ToString()}";
-
-  // TODO(fpion): Configuration + Db + Migration
 }
