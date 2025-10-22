@@ -27,9 +27,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<ICommandHandler<PublishCustomizationCommand, CommandResult>, PublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishEducationCommand, CommandResult>, PublishEducationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishFeatureCommand, CommandResult>, PublishFeatureCommandHandler>();
+    services.AddTransient<ICommandHandler<PublishLineageCommand, CommandResult>, PublishLineageCommandHandler>();
     services.AddTransient<ICommandHandler<PublishSkillCommand, CommandResult>, PublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<PublishSpecializationCommand, CommandResult>, PublishSpecializationCommandHandler>();
-    services.AddTransient<ICommandHandler<PublishSpeciesCommand, CommandResult>, PublishSpeciesCommandHandler>();
     services.AddTransient<ICommandHandler<PublishStatisticCommand, CommandResult>, PublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<PublishTalentCommand, CommandResult>, PublishTalentCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishAttributeCommand, CommandResult>, UnpublishAttributeCommandHandler>();
@@ -37,9 +37,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<ICommandHandler<UnpublishCustomizationCommand, CommandResult>, UnpublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishEducationCommand, CommandResult>, UnpublishEducationCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishFeatureCommand, CommandResult>, UnpublishFeatureCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishLineageCommand, CommandResult>, UnpublishLineageCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishSkillCommand, CommandResult>, UnpublishSkillCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishSpecializationCommand, CommandResult>, UnpublishSpecializationCommandHandler>();
-    services.AddTransient<ICommandHandler<UnpublishSpeciesCommand, CommandResult>, UnpublishSpeciesCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishStatisticCommand, CommandResult>, UnpublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishTalentCommand, CommandResult>, UnpublishTalentCommandHandler>();
   }
@@ -188,14 +188,14 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Gift:
         await _commandBus.ExecuteAsync(new PublishCustomizationCommand(CustomizationKind.Gift, @event, publishedInvariant, publishedLocale), cancellationToken);
         break;
+      case EntityKind.Lineage:
+        await _commandBus.ExecuteAsync(new PublishLineageCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Skill:
         await _commandBus.ExecuteAsync(new PublishSkillCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
       case EntityKind.Specialization:
         await _commandBus.ExecuteAsync(new PublishSpecializationCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
-        break;
-      case EntityKind.Species:
-        await _commandBus.ExecuteAsync(new PublishSpeciesCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
       case EntityKind.Statistic:
         await _commandBus.ExecuteAsync(new PublishStatisticCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
@@ -265,14 +265,14 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
       case EntityKind.Feature:
         await _commandBus.ExecuteAsync(new UnpublishFeatureCommand(@event), cancellationToken);
         break;
+      case EntityKind.Lineage:
+        await _commandBus.ExecuteAsync(new UnpublishLineageCommand(@event), cancellationToken);
+        break;
       case EntityKind.Skill:
         await _commandBus.ExecuteAsync(new UnpublishSkillCommand(@event), cancellationToken);
         break;
       case EntityKind.Specialization:
         await _commandBus.ExecuteAsync(new UnpublishSpecializationCommand(@event), cancellationToken);
-        break;
-      case EntityKind.Species:
-        await _commandBus.ExecuteAsync(new UnpublishSpeciesCommand(@event), cancellationToken);
         break;
       case EntityKind.Statistic:
         await _commandBus.ExecuteAsync(new UnpublishStatisticCommand(@event), cancellationToken);

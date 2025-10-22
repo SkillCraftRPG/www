@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Infrastructure.Contents;
 
-public static class Species
+public static class Lineages
 {
   public static readonly Guid ContentTypeId = Guid.Parse("df9bfb44-c586-4cb3-b08a-77c8508a0505");
 

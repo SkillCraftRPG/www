@@ -6,20 +6,20 @@ using SkillCraft.Cms.Infrastructure.Entities;
 
 namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 
-internal record UnpublishSpeciesCommand(ContentLocaleUnpublished Event) : ICommand<CommandResult>;
+internal record UnpublishLineageCommand(ContentLocaleUnpublished Event) : ICommand<CommandResult>;
 
-internal class UnpublishSpeciesCommandHandler : ICommandHandler<UnpublishSpeciesCommand, CommandResult>
+internal class UnpublishLineageCommandHandler : ICommandHandler<UnpublishLineageCommand, CommandResult>
 {
   private readonly RulesContext _context;
-  private readonly ILogger<UnpublishSpeciesCommandHandler> _logger;
+  private readonly ILogger<UnpublishLineageCommandHandler> _logger;
 
-  public UnpublishSpeciesCommandHandler(RulesContext context, ILogger<UnpublishSpeciesCommandHandler> logger)
+  public UnpublishLineageCommandHandler(RulesContext context, ILogger<UnpublishLineageCommandHandler> logger)
   {
     _context = context;
     _logger = logger;
   }
 
-  public async Task<CommandResult> HandleAsync(UnpublishSpeciesCommand command, CancellationToken cancellationToken)
+  public async Task<CommandResult> HandleAsync(UnpublishLineageCommand command, CancellationToken cancellationToken)
   {
     ContentLocaleUnpublished @event = command.Event;
     string streamId = @event.StreamId.Value;

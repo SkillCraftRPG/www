@@ -8,7 +8,7 @@ internal static class ProgressType
   public static readonly Guid Attributes = Guid.Parse("8be5921f-5e22-44e5-8410-c3c9dd6e9135");
   public static readonly Guid Statistics = Guid.Parse("733ac9bc-fbfe-4b7e-96e1-31876737c165");
   public static readonly Guid Skills = Guid.Parse("b7af2161-cf36-4a12-8fdb-ff234e02ec1a");
-  public static readonly Guid Species = Guid.Parse("151ef689-2a45-4202-9cd2-0e66e672d4ed");
+  public static readonly Guid Lineages = Guid.Parse("151ef689-2a45-4202-9cd2-0e66e672d4ed");
   public static readonly Guid Customizations = Guid.Parse("dfc5d933-33fe-4ef6-b9e7-45259cce7bbb");
   public static readonly Guid Castes = Guid.Parse("ffa532a9-1227-46e5-8a07-3e5a0413960d");
   public static readonly Guid Educations = Guid.Parse("18df9753-7a62-46d7-8be4-d2d535932147");
