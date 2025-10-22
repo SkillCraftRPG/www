@@ -11,9 +11,14 @@
       "Slug": "linguistique",
       "Name": "Linguistique"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "d1d668eb-1a19-44e1-a627-963d09d22e06",
+      "IsPublished": true,
+      "Name": "Ouverture culturelle",
+      "Description": "Du fait de son éducation effectuée à l’étranger, le personnage s’est formé un réseau de contacts dans cette région.\n\nS’il y retourne, il pourra certainement compter sur eux pour l’assister ou le diriger.\n\nIl y a également vécu une période d’adaptation plus ou moins difficile.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Linguistique](/regles/competences/linguistique) effectués afin de communiquer une idée simple à une créature avec laquelle il ne partage aucune [langue](/regles/langues)."
+    },
+    "Summary": "Éducation axée sur la linguistique et l’ouverture culturelle mondiale.",
+    "MetaDescription": "Découvrez l’éducation Apprenti à l’étranger, formant à la linguistique et favorisant l’ouverture culturelle ainsi qu’un réseau de contacts internationaux.",
     "Description": "L’éducation du personnage a été effectuée à l’étranger, dans une région différente de sa terre natale.\n\nIl y a appris une nouvelle langue ainsi que l’importance de s’ouvrir aux autres cultures différentes de la sienne."
   },
   {
