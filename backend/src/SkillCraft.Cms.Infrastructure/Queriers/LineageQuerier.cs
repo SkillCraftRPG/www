@@ -50,8 +50,19 @@ internal class LineageQuerier : ILineageQuerier
   {
     IQueryBuilder builder = _sqlHelper.Query(RulesDb.Lineages.Table).SelectAll(RulesDb.Lineages.Table)
       .ApplyIdFilter(RulesDb.Lineages.Id, payload.Ids)
-      .Where(RulesDb.Lineages.IsPublished, Operators.IsEqualTo(true));
+      .Where(RulesDb.Lineages.IsPublished, Operators.IsEqualTo(true))
+      .Where(RulesDb.Lineages.ParentUid, payload.ParentId.HasValue ? Operators.IsEqualTo(payload.ParentId.Value) : Operators.IsNull());
     _sqlHelper.ApplyTextSearch(builder, payload.Search, RulesDb.Lineages.Slug, RulesDb.Lineages.Name, RulesDb.Lineages.Summary);
+
+    if (payload.LanguageId.HasValue)
+    {
+      OperatorCondition condition = new(RulesDb.LineageLanguages.LanguageUid, Operators.IsEqualTo(payload.LanguageId.Value));
+      builder.Join(RulesDb.LineageLanguages.LineageId, RulesDb.Lineages.LineageId, condition);
+    }
+    if (payload.SizeCategory.HasValue)
+    {
+      builder.Where(RulesDb.Lineages.SizeCategory, Operators.IsEqualTo(payload.SizeCategory.Value));
+    }
 
     IQueryable<LineageEntity> query = _lineages.FromQuery(builder).AsNoTracking();
 

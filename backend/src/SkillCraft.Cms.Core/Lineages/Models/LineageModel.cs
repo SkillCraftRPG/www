@@ -17,8 +17,8 @@ public class LineageModel : Aggregate
 
   public SpeedsModel Speeds { get; set; } = new();
   public SizeModel Size { get; set; } = new();
-  public WeightsModel Weights { get; set; } = new();
-  public AgesModel Ages { get; set; } = new();
+  public WeightModel Weight { get; set; } = new();
+  public AgeModel Age { get; set; } = new();
 
   public LineageModel? Parent { get; set; }
   public List<LineageModel> Children { get; set; } = [];

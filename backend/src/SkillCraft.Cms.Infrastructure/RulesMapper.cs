@@ -203,8 +203,8 @@ internal class RulesMapper
       Description = source.Description,
       Speeds = source.GetSpeeds(),
       Size = source.GetSize(),
-      Weights = source.GetWeight(),
-      Ages = source.GetAge()
+      Weight = source.GetWeight(),
+      Age = source.GetAge()
     };
 
     if (source.Parent is not null && source.Parent.IsPublished)

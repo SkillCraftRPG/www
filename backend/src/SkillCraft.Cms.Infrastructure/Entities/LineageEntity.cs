@@ -48,7 +48,7 @@ internal class LineageEntity : AggregateEntity
   public string? Overweight { get; set; }
   public string? Obese { get; set; }
 
-  public int Adolescent { get; set; }
+  public int Teenager { get; set; }
   public int Adult { get; set; }
   public int Mature { get; set; }
   public int Venerable { get; set; }
@@ -74,7 +74,7 @@ internal class LineageEntity : AggregateEntity
 
   public override IReadOnlyCollection<ActorId> GetActorIds()
   {
-    List<ActorId> actorIds = new(base.GetHashCode());
+    List<ActorId> actorIds = new(base.GetActorIds());
     if (Parent is not null)
     {
       actorIds.AddRange(Parent.GetActorIds());
@@ -126,7 +126,7 @@ internal class LineageEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public AgesModel GetAge() => new(Adolescent, Adult, Mature, Venerable);
+  public AgeModel GetAge() => new(Teenager, Adult, Mature, Venerable);
 
   public NamesModel GetNames()
   {
@@ -148,7 +148,7 @@ internal class LineageEntity : AggregateEntity
 
   public SpeedsModel GetSpeeds() => new(Walk, Climb, Swim, Fly, Burrow, Hover);
 
-  public WeightsModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese);
+  public WeightModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese);
 
   public override string ToString() => $"{Name} | {base.ToString()}";
 }

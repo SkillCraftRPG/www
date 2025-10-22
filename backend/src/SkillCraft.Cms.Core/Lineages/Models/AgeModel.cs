@@ -1,19 +1,19 @@
 ﻿namespace SkillCraft.Cms.Core.Lineages.Models;
 
-public record AgesModel
+public record AgeModel
 {
-  public int Adolescent { get; set; }
+  public int Teenager { get; set; }
   public int Adult { get; set; }
   public int Mature { get; set; }
   public int Venerable { get; set; }
 
-  public AgesModel()
+  public AgeModel()
   {
   }
 
-  public AgesModel(int adolescent, int adult, int mature, int venerable)
+  public AgeModel(int teenager, int adult, int mature, int venerable)
   {
-    Adolescent = adolescent;
+    Teenager = teenager;
     Adult = adult;
     Mature = mature;
     Venerable = venerable;

@@ -97,7 +97,7 @@ internal class PublishLineageCommandHandler : ICommandHandler<PublishLineageComm
       int[] values = value.Split(Separator).Select(value => int.TryParse(value, out int parsed) ? parsed : 0).ToArray();
       if (values.Length == 4 && values.All(value => value > 0) && values.SequenceEqual(values.OrderBy(x => x)))
       {
-        lineage.Adolescent = values[0];
+        lineage.Teenager = values[0];
         lineage.Adult = values[1];
         lineage.Mature = values[2];
         lineage.Venerable = values[3];
@@ -109,7 +109,7 @@ internal class PublishLineageCommandHandler : ICommandHandler<PublishLineageComm
       }
     }
 
-    lineage.Adolescent = 0;
+    lineage.Teenager = 0;
     lineage.Adult = 0;
     lineage.Mature = 0;
     lineage.Venerable = 0;
