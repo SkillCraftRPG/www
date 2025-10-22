@@ -88,6 +88,60 @@
     }
   },
   {
+    "Id": "54965d58-e440-46a8-b070-f6f9f9513637",
+    "UniqueName": "Lineage",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "df9bfb44-c586-4cb3-b08a-77c8508a0505",
+      "IsMultiple": false
+    }
+  },
+  {
+    "Id": "154d1479-fd00-4e37-a7b3-27786b6d28a1",
+    "UniqueName": "LineageAge",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": 16,
+      "Pattern": null
+    }
+  },
+  {
+    "Id": "98f67d35-1766-4cfb-9267-e20be54762d8",
+    "UniqueName": "LineageNames",
+    "DisplayName": null,
+    "Description": null,
+    "RichText": {
+      "ContentType": "text/plain",
+      "MinimumLength": null,
+      "MaximumLength": null
+    }
+  },
+  {
+    "Id": "9c4e3d66-8401-4082-9c13-5978791749d1",
+    "UniqueName": "LineageSpeed",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": 40,
+      "Pattern": null
+    }
+  },
+  {
+    "Id": "2db5b238-6e08-4b95-8750-22b18c2fe37a",
+    "UniqueName": "LineageWeight",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": 40,
+      "Pattern": null
+    }
+  },
+  {
     "Id": "37ba5fb4-044e-44bc-8e3e-13def5295d92",
     "UniqueName": "Name",
     "DisplayName": null,
@@ -193,60 +247,6 @@
       "MinimumValue": 1,
       "MaximumValue": 3,
       "Step": 1
-    }
-  },
-  {
-    "Id": "54965d58-e440-46a8-b070-f6f9f9513637",
-    "UniqueName": "Species",
-    "DisplayName": null,
-    "Description": null,
-    "RelatedContent": {
-      "ContentTypeId": "df9bfb44-c586-4cb3-b08a-77c8508a0505",
-      "IsMultiple": false
-    }
-  },
-  {
-    "Id": "154d1479-fd00-4e37-a7b3-27786b6d28a1",
-    "UniqueName": "SpeciesAge",
-    "DisplayName": null,
-    "Description": null,
-    "String": {
-      "MinimumLength": null,
-      "MaximumLength": 16,
-      "Pattern": null
-    }
-  },
-  {
-    "Id": "98f67d35-1766-4cfb-9267-e20be54762d8",
-    "UniqueName": "SpeciesNames",
-    "DisplayName": null,
-    "Description": null,
-    "RichText": {
-      "ContentType": "text/plain",
-      "MinimumLength": null,
-      "MaximumLength": null
-    }
-  },
-  {
-    "Id": "9c4e3d66-8401-4082-9c13-5978791749d1",
-    "UniqueName": "SpeciesSpeed",
-    "DisplayName": null,
-    "Description": null,
-    "String": {
-      "MinimumLength": null,
-      "MaximumLength": 40,
-      "Pattern": null
-    }
-  },
-  {
-    "Id": "2db5b238-6e08-4b95-8750-22b18c2fe37a",
-    "UniqueName": "SpeciesWeight",
-    "DisplayName": null,
-    "Description": null,
-    "String": {
-      "MinimumLength": null,
-      "MaximumLength": 40,
-      "Pattern": null
     }
   },
   {

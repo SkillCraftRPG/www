@@ -61,8 +61,8 @@
         "IsRequired": true,
         "IsIndexed": false,
         "IsUnique": false,
-        "UniqueName": "Species",
-        "DisplayName": "Espèces",
+        "UniqueName": "Lineages",
+        "DisplayName": "Lignées",
         "Description": null,
         "Placeholder": null
       },
@@ -403,13 +403,13 @@
   {
     "Id": "df9bfb44-c586-4cb3-b08a-77c8508a0505",
     "IsInvariant": false,
-    "UniqueName": "Species",
-    "DisplayName": "Espèce",
+    "UniqueName": "Lineage",
+    "DisplayName": "Lignée",
     "Description": null,
     "Fields": [
       {
         "Id": "0e5f3fb1-6f13-47bb-9c49-e54201b663fc",
-        "FieldType": "Species",
+        "FieldType": "Lineage",
         "IsInvariant": true,
         "IsRequired": false,
         "IsIndexed": false,
@@ -417,7 +417,7 @@
         "UniqueName": "Parent",
         "DisplayName": "Parent",
         "Description": null,
-        "Placeholder": "Sélectionnez une espèce parente"
+        "Placeholder": "Sélectionnez une lignée parente"
       },
       {
         "Id": "2bcc6f71-3205-4d58-9149-267ebdecd537",
@@ -457,7 +457,7 @@
       },
       {
         "Id": "c88e08b0-8136-4a91-9d58-2c9bf56d8533",
-        "FieldType": "SpeciesSpeed",
+        "FieldType": "LineageSpeed",
         "IsInvariant": true,
         "IsRequired": false,
         "IsIndexed": false,
@@ -493,7 +493,7 @@
       },
       {
         "Id": "7fc66901-2fe6-4595-8158-6e39d7b669e0",
-        "FieldType": "SpeciesWeight",
+        "FieldType": "LineageWeight",
         "IsInvariant": true,
         "IsRequired": false,
         "IsIndexed": false,
@@ -505,7 +505,7 @@
       },
       {
         "Id": "c24ca3ad-0762-47be-9a80-b4757b285e35",
-        "FieldType": "SpeciesAge",
+        "FieldType": "LineageAge",
         "IsInvariant": true,
         "IsRequired": false,
         "IsIndexed": false,
@@ -577,7 +577,7 @@
       },
       {
         "Id": "443063e3-5df2-4f08-a82c-f3aed1b7c0ce",
-        "FieldType": "SpeciesNames",
+        "FieldType": "LineageNames",
         "IsInvariant": false,
         "IsRequired": false,
         "IsIndexed": false,

@@ -6,7 +6,7 @@ public record ProgressModel
   public double Attributes { get; set; }
   public double Statistics { get; set; }
   public double Skills { get; set; }
-  public double Species { get; set; }
+  public double Lineages { get; set; }
   public double Customizations { get; set; }
   public double Castes { get; set; }
   public double Educations { get; set; }

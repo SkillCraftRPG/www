@@ -17,7 +17,7 @@ internal class ReadProgressHandler : IQueryHandler<ReadProgress, ProgressModel>
     [ProgressType.Attributes] = (progress, field) => progress.Attributes = Parse(field.Value),
     [ProgressType.Statistics] = (progress, field) => progress.Statistics = Parse(field.Value),
     [ProgressType.Skills] = (progress, field) => progress.Skills = Parse(field.Value),
-    [ProgressType.Species] = (progress, field) => progress.Species = Parse(field.Value),
+    [ProgressType.Lineages] = (progress, field) => progress.Lineages = Parse(field.Value),
     [ProgressType.Customizations] = (progress, field) => progress.Customizations = Parse(field.Value),
     [ProgressType.Castes] = (progress, field) => progress.Castes = Parse(field.Value),
     [ProgressType.Educations] = (progress, field) => progress.Educations = Parse(field.Value),

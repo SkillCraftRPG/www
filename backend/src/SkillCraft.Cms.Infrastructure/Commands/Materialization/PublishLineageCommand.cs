@@ -11,22 +11,22 @@ using SkillCraft.Contracts;
 
 namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
 
-internal record PublishSpeciesCommand(ContentLocalePublished Event, ContentLocale Invariant, ContentLocale Locale) : ICommand<CommandResult>;
+internal record PublishLineageCommand(ContentLocalePublished Event, ContentLocale Invariant, ContentLocale Locale) : ICommand<CommandResult>;
 
-internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesCommand, CommandResult>
+internal class PublishLineageCommandHandler : ICommandHandler<PublishLineageCommand, CommandResult>
 {
   private const char Separator = ',';
 
   private readonly RulesContext _context;
-  private readonly ILogger<PublishSpeciesCommandHandler> _logger;
+  private readonly ILogger<PublishLineageCommandHandler> _logger;
 
-  public PublishSpeciesCommandHandler(RulesContext context, ILogger<PublishSpeciesCommandHandler> logger)
+  public PublishLineageCommandHandler(RulesContext context, ILogger<PublishLineageCommandHandler> logger)
   {
     _context = context;
     _logger = logger;
   }
 
-  public async Task<CommandResult> HandleAsync(PublishSpeciesCommand command, CancellationToken cancellationToken)
+  public async Task<CommandResult> HandleAsync(PublishLineageCommand command, CancellationToken cancellationToken)
   {
     ContentLocalePublished @event = command.Event;
     ContentLocale invariant = command.Invariant;
@@ -44,18 +44,18 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
       _context.Lineages.Add(lineage);
     }
 
-    lineage.Slug = locale.GetString(Species.Slug);
+    lineage.Slug = locale.GetString(Lineages.Slug);
     lineage.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
 
-    lineage.ExtraLanguages = (int)invariant.GetNumber(Species.ExtraLanguages);
-    lineage.LanguagesText = locale.TryGetString(Species.LanguagesText);
+    lineage.ExtraLanguages = (int)invariant.GetNumber(Lineages.ExtraLanguages);
+    lineage.LanguagesText = locale.TryGetString(Lineages.LanguagesText);
 
     SetNames(lineage, locale);
 
     SetSpeed(lineage, invariant);
 
     SizeCategory sizeCategory = SizeCategory.Medium;
-    IReadOnlyCollection<string> sizeCategories = invariant.GetSelect(Species.SizeCategory);
+    IReadOnlyCollection<string> sizeCategories = invariant.GetSelect(Lineages.SizeCategory);
     if (sizeCategories.Count > 1)
     {
       _logger.LogWarning("Many size categories ({Count}) were provided, when at most one is expected, for lineage '{Lineage}'.", sizeCategories.Count, lineage);
@@ -69,13 +69,13 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
       }
     }
     lineage.SizeCategory = sizeCategory;
-    lineage.SizeRoll = invariant.TryGetString(Species.SizeRoll);
+    lineage.SizeRoll = invariant.TryGetString(Lineages.SizeRoll);
     SetWeight(lineage, invariant);
     SetAge(lineage, invariant);
 
-    lineage.Summary = locale.TryGetString(Species.Summary);
+    lineage.Summary = locale.TryGetString(Lineages.Summary);
     lineage.MetaDescription = locale.Description?.ToMetaDescription();
-    lineage.Description = locale.TryGetString(Species.HtmlContent);
+    lineage.Description = locale.TryGetString(Lineages.HtmlContent);
 
     await SetParentAsync(lineage, invariant, cancellationToken);
     await SetFeaturesAsync(lineage, invariant, cancellationToken);
@@ -91,7 +91,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
 
   private void SetAge(LineageEntity lineage, ContentLocale invariant)
   {
-    string? value = invariant.TryGetString(Species.Age);
+    string? value = invariant.TryGetString(Lineages.Age);
     if (!string.IsNullOrWhiteSpace(value))
     {
       int[] values = value.Split(Separator).Select(value => int.TryParse(value, out int parsed) ? parsed : 0).ToArray();
@@ -117,7 +117,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
 
   private async Task SetFeaturesAsync(LineageEntity lineage, ContentLocale invariant, CancellationToken cancellationToken)
   {
-    IReadOnlyCollection<Guid> featureIds = invariant.GetRelatedContents(Species.Features);
+    IReadOnlyCollection<Guid> featureIds = invariant.GetRelatedContents(Lineages.Features);
     Dictionary<Guid, FeatureEntity> features = featureIds.Count < 1
       ? []
       : await _context.Features.Where(x => featureIds.Contains(x.Id)).ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
@@ -149,7 +149,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
 
   private async Task SetLanguagesAsync(LineageEntity lineage, ContentLocale invariant, CancellationToken cancellationToken)
   {
-    IReadOnlyCollection<Guid> languageIds = invariant.GetRelatedContents(Species.Languages);
+    IReadOnlyCollection<Guid> languageIds = invariant.GetRelatedContents(Lineages.Languages);
     Dictionary<Guid, LanguageEntity> languages = languageIds.Count < 1
       ? []
       : await _context.Languages.Where(x => languageIds.Contains(x.Id)).ToDictionaryAsync(x => x.Id, x => x, cancellationToken);
@@ -183,10 +183,10 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
   {
     NamesModel names = new()
     {
-      Text = locale.TryGetString(Species.NamesText)
+      Text = locale.TryGetString(Lineages.NamesText)
     };
 
-    string? namesSelection = locale.TryGetString(Species.NamesSelection);
+    string? namesSelection = locale.TryGetString(Lineages.NamesSelection);
     if (!string.IsNullOrWhiteSpace(namesSelection))
     {
       string[] lines = namesSelection.Remove("\r").Split('\n');
@@ -254,7 +254,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
   {
     LineageEntity? parent = null;
 
-    IReadOnlyCollection<Guid> parentIds = invariant.GetRelatedContents(Species.Parent);
+    IReadOnlyCollection<Guid> parentIds = invariant.GetRelatedContents(Lineages.Parent);
     if (parentIds.Count > 1)
     {
       _logger.LogWarning("Many parent lineage ({Count}) were provided, when at most one is expected, for lineage '{Lineage}'.", parentIds.Count, lineage);
@@ -281,7 +281,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
 
   private void SetSpeed(LineageEntity lineage, ContentLocale invariant)
   {
-    string? value = invariant.TryGetString(Species.Speeds);
+    string? value = invariant.TryGetString(Lineages.Speeds);
     if (string.IsNullOrWhiteSpace(value))
     {
       lineage.Walk = 0;
@@ -340,7 +340,7 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
 
   private void SetWeight(LineageEntity lineage, ContentLocale invariant)
   {
-    string? value = invariant.TryGetString(Species.Weight);
+    string? value = invariant.TryGetString(Lineages.Weight);
     if (!string.IsNullOrWhiteSpace(value))
     {
       string[] values = value.Split(Separator);

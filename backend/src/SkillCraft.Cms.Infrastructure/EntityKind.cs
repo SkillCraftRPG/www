@@ -8,9 +8,9 @@ internal enum EntityKind
   Education,
   Feature,
   Gift,
+  Lineage,
   Skill,
   Specialization,
-  Species,
   Statistic,
   Talent
 }
