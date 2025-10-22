@@ -438,6 +438,24 @@
     "Description": "Lorsque le personnage est ciblé par une capacité surnaturelle tel un [pouvoir](/regles/magie/pouvoirs), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de lever ses barrières mentales pour s’en protéger.\n\nIl dépense un nombre de points d’[Énergie](/regles/statistiques/energie) égal à la moitié des [points d’Énergie dépensés](/regles/magie/pouvoirs/energie) afin de [canaliser](/regles/magie/pouvoirs/canalisation) le pouvoir, ou dépense 15 points d’Énergie si la capacité surnaturelle n’a pas de dépense associée.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [jet de sauvegarde](/regles/competences/tests/sauvegarde) contre la capacité et ajoute la moitié de son [rang](/regles/competences/rang) de [Discipline](/regles/competences/discipline) à sa [Défense](/regles/combat/attaque/defense) contre la capacité."
   },
   {
+    "Id": "e4ab239d-5aff-4ba1-8a15-d467837cc0dc",
+    "IsPublished": true,
+    "Slug": "blinde",
+    "Name": "Blindé",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
+      "IsPublished": true,
+      "Slug": "cuirasse",
+      "Name": "Cuirassé"
+    },
+    "Summary": "Renforce la défense et la résistance du porteur d’armures lourdes.",
+    "MetaDescription": "Découvrez le talent Blindé, offrant une maîtrise des armures lourdes, une défense accrue et une résistance exceptionnelle aux effets et aux dommages d’armure.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est formé au port de [deux couches d’armure](/regles/equipement/armures/multiples).\n- Lorsqu’il porte une [armure complète](/regles/equipement/armures/partielles), il se voit conférer un bonus (+1) à sa [Défense](/regles/combat/attaque/defense).\n- Lorsqu’il porte une [armure lourde](/regles/equipement/armures/lourdes), ou un [bouclier lourd](/regles/equipement/boucliers) en plus d’une [armure](/regles/equipement/armures) complète, alors il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) et [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets le déplaçant contre son gré, le repoussant ou le [renversant](/regles/combat/conditions/renverse).\n- Lorsqu’un effet menace d’[endommager](/regles/equipement/resistance) son armure (bris, corrosion, rouille, etc.), alors il peut utiliser sa réaction pour empêcher que son armure ne soit affectée."
+  },
+  {
     "Id": "ce806d91-5235-4237-92e9-9a01fde44500",
     "IsPublished": true,
     "Slug": "bricolage-magique",
@@ -679,7 +697,7 @@
     },
     "Summary": "Permet d’attaquer, repousser ou protéger un allié avec son bouclier.",
     "MetaDescription": "Découvrez le talent Coup de bouclier, qui permet d’utiliser son bouclier pour attaquer, repousser ou protéger un allié grâce à sa Défense.",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Une fois par [tour](/regles/combat/deroulement/tour), il peut effectuer une [attaque de mêlée](/regles/combat/attaque/melee) par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) en donnant un coup de [bouclier](/regles/equipement/boucliers). Il ajoute la [Défense](/regles/equipement/defense) du bouclier au test de l’attaque et inflige 1&nbsp;+&nbsp;[Force](/regles/statistiques/force) [points de dégâts non létaux](/regles/combat/degats/letalite).\n- Une fois par [tour](/regles/combat/deroulement/tour), lorsqu’il effectue une [Bousculade](/regles/combat/activites/bousculer), il peut le faire avec son bouclier. Il ajoute à son test d’[Athlétisme](/regles/competences/athletisme) un bonus égal à la Défense de son bouclier.\n- Lorsqu’il voit une créature attaquer un allié situé à 1,5 mètres ou moins de sa position, il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de protéger son allié, lui conférant le bonus de Défense de son bouclier contre cette attaque.\n- Il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’ajouter la Défense de son bouclier à un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties).\n\nAfin d’utiliser ces capacités, il doit être [formé](/regles/equipement/boucliers) avec le bouclier qu’il tient."
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Une fois par [tour](/regles/combat/deroulement/tour), il peut effectuer une [attaque de mêlée](/regles/combat/attaque/melee) par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) en donnant un coup de [bouclier](/regles/equipement/boucliers). Il ajoute la [Défense](/regles/equipement/defense) du bouclier au test de l’[attaque](/regles/combat/attaque) et inflige 1&nbsp;+&nbsp;[Force](/regles/statistiques/force) [points de dégâts non létaux](/regles/combat/degats/letalite).\n- Une fois par [tour](/regles/combat/deroulement/tour), lorsqu’il effectue une [Bousculade](/regles/combat/activites/bousculer), il peut le faire avec son bouclier. Il ajoute à son test d’[Athlétisme](/regles/competences/athletisme) un bonus égal à la Défense de son bouclier.\n- Lorsqu’il voit une créature attaquer un allié situé à 1,5 mètres ou moins de sa position, il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de protéger son allié, lui conférant le bonus de Défense de son bouclier contre cette attaque.\n- Il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’ajouter la Défense de son bouclier à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties).\n\nAfin d’utiliser ces capacités, il doit être [formé](/regles/equipement/boucliers) avec le bouclier qu’il tient."
   },
   {
     "Id": "b94abe2c-7691-419d-af10-7cea5747bb52",
@@ -1414,11 +1432,11 @@
   },
   {
     "Id": "650d5c63-6463-4a39-aaab-626f45789784",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "initiation-magique",
     "Name": "Initiation magique",
     "Tier": 1,
-    "AllowMultiplePurchases": false,
+    "AllowMultiplePurchases": true,
     "Skill": null,
     "RequiredTalent": {
       "Id": "66e561e9-ef67-4ff7-8615-121e461b9916",
@@ -1428,7 +1446,7 @@
     },
     "Summary": "\uD83D\uDEA7",
     "MetaDescription": "\uD83D\uDEA7",
-    "Description": "\uD83D\uDEA7"
+    "Description": "Ce talent n’a aucun effet si le personnage n’a pas acquis la spécialisation [Astromancien](/regles/specialisations/astromancien).\n\nIl sélectionne un des cinq cercles de magie et acquiert une capacité spécifique à ce cercle.\n\n\uD83D\uDEA7"
   },
   {
     "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
@@ -1834,8 +1852,8 @@
       "Name": "Mêlée"
     },
     "RequiredTalent": null,
-    "Summary": "Formé aux armes simples de mêlée, aux armures légères et aux boucliers légers.",
-    "MetaDescription": null,
+    "Summary": "Forme au combat rapproché et au maniement des armes simples.",
+    "MetaDescription": "Découvrez le talent Mêlée, formant le personnage au combat rapproché, au maniement des armes simples, des armures légères et des boucliers légers.",
     "Description": "[Forme](/regles/equipement/armes/formation) le personnage au maniement des [armes simples](/regles/equipement/armes/simples) de mêlée.\n\nIl est également [formé](/regles/equipement/armures/formation) au port des [armures légères](/regles/equipement/armures/legeres) et à l’utilisation des [boucliers légers](/regles/equipement/boucliers)."
   },
   {
@@ -2003,8 +2021,8 @@
       "Name": "Orientation"
     },
     "RequiredTalent": null,
-    "Summary": "Formé aux armes simples à distance, ainsi qu’au port des armures légères et à l’utilisation des boucliers légers.",
-    "MetaDescription": null,
+    "Summary": "Forme au tir à distance, à la visée et à la perception des trajectoires.",
+    "MetaDescription": "Découvrez le talent Orientation, formant le personnage au tir à distance, à la visée précise et à l’usage des armures légères et boucliers légers.",
     "Description": "[Forme](/regles/equipement/armes/formation) le personnage au maniement des [armes simples](/regles/equipement/armes/simples) à distance.\n\nIl est également [formé au port](/regles/equipement/armures/formation) des [armures légères](/regles/equipement/armures/legeres) et à l’utilisation des [boucliers légers](/regles/equipement/boucliers)."
   },
   {
@@ -2195,6 +2213,24 @@
     "Description": "En [situation de combat](/regles/combat), permet au personnage d’intimider ses ennemis par une [action](/regles/combat/deroulement/tour).\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) [opposé](/regles/competences/tests/oppose) à un test de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de toute cible qu’il désigne et qu’il peut atteindre par une [attaque de mêlée](/regles/combat/attaque/melee).\n\nLe terrain devient [difficile](/regles/aventure/mouvement/terrain-difficile) pour toute créature échouant le test opposé.\n\nUne créature immunisée à la [peur](/regles/combat/conditions/apeure) ou au terrain difficile n’est pas affectée par cette capacité.\n\nÉgalement, lorsque le personnage inflige des [points de dégâts](/regles/combat/degats) à une créature, il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de Représentation afin d’intimider cette créature jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour)."
   },
   {
+    "Id": "f49126be-c2f2-49f3-8d2e-20cc0c140200",
+    "IsPublished": true,
+    "Slug": "protection",
+    "Name": "Protection",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "81c3ae91-c25f-481b-9628-0cc4ceb868c5",
+      "IsPublished": true,
+      "Slug": "coup-de-bouclier",
+      "Name": "Coup de bouclier"
+    },
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il donne un [coup de bouclier](/regles/talents/coup-de-bouclier), les [points de dégâts](/regles/combat/degats) augmentent à [1d4/1d6/1d8](/regles/combat/degats/jet) + [Force](/regles/statistiques/force) selon la catégorie du [bouclier](/regles/equipement/boucliers) (léger/moyen/lourd).\n- Lorsqu’il [bouscule](/regles/combat/activites/bousculer) une créature avec son bouclier, son [test](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il utilise sa [réaction](/regles/combat/deroulement/tour) afin de protéger un allié avec son bouclier, si l’[attaque](/regles/combat/attaque) réussit tout de même, alors il réduit les points de dégâts d’une valeur égale à ⚠️ son [rang](/regles/competences/rang) de [Mêlée](/regles/competences/melee) + [Défense](/regles/equipement/defense) conférée par le bouclier (minimum 0).\n- Lorsqu’il utilise sa réaction afin d’ajouter la Défense de son bouclier à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) effectué afin de réduire de moitié des points de dégâts et qu’il réussit le jet de sauvegarde, alors il ne reçoit aucun point de dégât.\n\nAfin d’utiliser ces capacités, il doit être [formé](/regles/equipement/boucliers) avec le bouclier qu’il tient."
+  },
+  {
     "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
     "IsPublished": true,
     "Slug": "provocation",
@@ -2377,8 +2413,8 @@
       "Slug": "resistance",
       "Name": "Résistance"
     },
-    "Summary": "Confère 10 points de Vitalité en bonus permanent. Il peut ignorer les niveaux 1 à 3 de Fatigue en perdant 10 points de Vitalité par action.",
-    "MetaDescription": null,
+    "Summary": "Confère +10 Vitalité et une résistance accrue à la Fatigue.",
+    "MetaDescription": "Découvrez le talent Robustesse accrue, conférant un bonus de 10 Vitalité et la résistance aux effets de Fatigue grâce à une endurance physique exceptionnelle.",
     "Description": "Confère au personnage un bonus permanent de 10 points de [Vitalité](/regles/statistiques/vitalite).\n\nÉgalement, il peut ignorer les effets des niveaux 1 à 3 de [Fatigue](/regles/combat/conditions/fatigue) en s’infligeant 10 [points de dégâts létaux](/regles/combat/degats/letalite) par [test](/regles/competences/tests) ou [déplacement](/regles/combat/activites/deplacement)."
   },
   {

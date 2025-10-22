@@ -166,8 +166,8 @@
       "Slug": "intellect",
       "Name": "Intellect"
     },
-    "Summary": "Médecine mesure la connaissance et l’habileté du personnage à soigner les blessures, diagnostiquer des afflictions et appliquer des traitements adaptés.",
-    "MetaDescription": null,
+    "Summary": "Diagnostiquer, traiter et stabiliser grâce au savoir médical.",
+    "MetaDescription": "Découvrez la compétence Médecine, qui permet de diagnostiquer, traiter, soigner et stabiliser les blessés grâce au savoir médical et à l’intellect du personnag…",
     "Description": "La compétence **Médecine** permet au personnage de :\n\n- appliquer les premiers soins\n- diagnostiquer une maladie, un poison ou une blessure\n- déterminer ou préparer le traitement approprié\n- [stabiliser](/regles/combat/activites/stabiliser) un allié mourant"
   },
   {

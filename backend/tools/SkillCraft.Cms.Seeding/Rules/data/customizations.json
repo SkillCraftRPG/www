@@ -290,6 +290,26 @@
     "Description": "Les parents du personnage ne sont jamais parvenus à lui apprendre à parler convenablement.\n\nIl est complètement incapable de parler ou de formuler des phrases complètes.\n\nIl ne peut dire que quelques mots courts, simples et faciles à prononcer.\n\nSes capacités télépathiques ne sont pas affectées.\n\nIl est incapable de [canaliser](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs) requérant une composante [Verbale](/regles/magie/parametres/composantes)."
   },
   {
+    "Id": "8588162e-2ee6-4bda-b81a-fb40d21583b0",
+    "IsPublished": true,
+    "Slug": "mysticisme",
+    "Name": "Mysticisme",
+    "Kind": "Gift",
+    "Summary": "Relie le personnage à un domaine mystique et accorde des pouvoirs.",
+    "MetaDescription": "Découvrez le don Mysticisme, qui lie le personnage à un domaine divin, animiste ou astrologique et lui confère des pouvoirs spirituels uniques.",
+    "Description": "Le personnage sélectionne l’[astromancie](#), un [domaine divin](#), ou un domaine d’[animisme](#).\n\nIl [acquiert](/regles/magie/pouvoirs/acquisition) gratuitement un [pouvoir](/regles/magie/pouvoirs) de tiers 0 de son choix associé à cette sélection.\n\nIl acquiert également gratuitement un pouvoir de tiers 1 de son choix associé à cette sélection lorsqu’il atteint le [tiers](/regles/personnages/progression/tiers) 1.\n\nDe plus, il se voit conférer une des capacités suivantes en fonction de cette sélection :\n\n- **Perturbateur planaire (astromancie).** Une fois par [tour](/regles/combat/deroulement/tour), il peut ajouter ses [Sens](/regles/attributs/sens) (minimum 1) aux [points de dégâts](/regles/combat/degats) infligés par une [attaque](/regles/combat/attaque) dirigée contre une créature issue d’une autre réalité ou dimension.\n- **Liaison spirituelle (domaine divin ou d’animisme).** Pendant qu’il [dort](/regles/aventure/repos/sommeil), il peut communiquer avec une entité associée à son domaine afin de lui poser une question, ou de placer une requête. L’entité peut l’ignorer ou intervenir si elle le désire, à la discrétion du maître de jeu. S’il profane le dogme de sa religion ou de son culte, il perd cette capacité jusqu’à ce qu’il se repente auprès de l’entité. Il doit attendre [24 heures](/regles/aventure/temps) afin de réutiliser cette capacité."
+  },
+  {
+    "Id": "ec87f740-1843-4388-a886-43d282e2b8d7",
+    "IsPublished": true,
+    "Slug": "orateur",
+    "Name": "Orateur",
+    "Kind": "Gift",
+    "Summary": "Permet de captiver ou motiver les alliés par des discours inspirants.",
+    "MetaDescription": "Découvrez le don Orateur, permettant de captiver une audience ou de motiver ses alliés par des discours inspirants, accordant avantage et vitalité temporaire.",
+    "Description": "### Captivant\n\nLorsque le personnage effectue une représentation d’une durée minimale de [10 minutes](/regles/aventure/temps), il peut captiver son audience pendant les 10 prochaines minutes.\n\nIl soustrait 20 puis divise par 2 le résultat de son [test](/regles/competences/tests) de [Représentation](/regles/competences/representation). S’il n’a pas effectué de test, alors il doit en effectuer un.\n\nToute créature parmi l’audience dont l’[Intellect](/regles/attributs/intellect) et les [Sens](/regles/attributs/sens) sont inférieurs à cette valeur est captivée.\n\nLe personnage se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de [Diplomatie](/regles/competences/diplomatie), de Représentation et de [Tromperie](/regles/competences/tromperie) contre une créature captivée.\n\n### Motivateur\n\nLe personnage peut motiver ses alliés par un discours engageant d’une durée minimale de [10 minutes](/regles/aventure/temps).\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) et sélectionne un nombre de cibles inférieur ou égal à la valeur de l’[attribut](/regles/attributs) utilisé pour le test (minimum 1).\n\nUne créature doit pouvoir le [voir](/regles/aventure/environnement/vision) et l’entendre, et être située à 9 mètres ou moins de sa position pendant la durée du discours afin d’être ciblée par cette capacité.\n\nChaque cible se voit conférer un nombre de [points de Vitalité temporaires](/regles/combat/degats/temporaire) égal au résultat du test (minimum 1).\n\nUne cible doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir être affectée à nouveau par cette capacité."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",
