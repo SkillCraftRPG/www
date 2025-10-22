@@ -35,7 +35,7 @@ type Progress = {
   attributes: number;
   statistics: number;
   skills: number;
-  species: number;
+  lineages: number;
   customizations: number;
   castes: number;
   educations: number;
@@ -98,7 +98,7 @@ const tiles = computed<Tile[]>(() => [
     icon: "fas fa-paw",
     text: "Espèces",
     to: "/regles/especes",
-    progress: data.value?.species ?? 0,
+    progress: data.value?.lineages ?? 0,
   },
   {
     icon: "fas fa-wheelchair",
