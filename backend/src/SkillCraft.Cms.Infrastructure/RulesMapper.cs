@@ -7,6 +7,8 @@ using SkillCraft.Cms.Core.Castes.Models;
 using SkillCraft.Cms.Core.Customizations.Models;
 using SkillCraft.Cms.Core.Educations.Models;
 using SkillCraft.Cms.Core.Features.Models;
+using SkillCraft.Cms.Core.Languages.Models;
+using SkillCraft.Cms.Core.Lineages.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
 using SkillCraft.Cms.Core.Statistics.Models;
@@ -170,6 +172,72 @@ internal class RulesMapper
   }
 
   public static FeatureModel ToFeature(FeatureEntity source) => new(source.Name, source.Description);
+
+  public LanguageModel ToLanguage(LanguageEntity source)
+  {
+    LanguageModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public LineageModel ToLineage(LineageEntity source)
+  {
+    LineageModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Names = source.GetNames(),
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description,
+      Speeds = source.GetSpeeds(),
+      Size = source.GetSize(),
+      Weights = source.GetWeight(),
+      Ages = source.GetAge()
+    };
+
+    if (source.Parent is not null && source.Parent.IsPublished)
+    {
+      destination.Parent = ToLineage(source.Parent);
+    }
+
+    foreach (LineageFeatureEntity lineageFeature in source.Features)
+    {
+      FeatureEntity feature = lineageFeature.Feature
+        ?? throw new ArgumentException($"The feature is required (LineageId={lineageFeature.LineageId}, FeatureId={lineageFeature.FeatureId}).", nameof(source));
+      if (feature.IsPublished)
+      {
+        destination.Features.Add(ToFeature(feature));
+      }
+    }
+
+    foreach (LineageLanguageEntity lineageLanguage in source.Languages)
+    {
+      LanguageEntity language = lineageLanguage.Language
+        ?? throw new ArgumentException($"The language is required (LineageId={lineageLanguage.LineageId}, LanguageId={lineageLanguage.LanguageId}).", nameof(source));
+      if (language.IsPublished)
+      {
+        destination.Languages.Items.Add(ToLanguage(language));
+      }
+    }
+    destination.Languages.Extra = source.ExtraLanguages;
+    destination.Languages.Text = source.LanguagesText;
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
 
   public SkillModel ToSkill(SkillEntity source) => ToSkill(source, attribute: null);
   public SkillModel ToSkill(SkillEntity source, AttributeModel? attribute)

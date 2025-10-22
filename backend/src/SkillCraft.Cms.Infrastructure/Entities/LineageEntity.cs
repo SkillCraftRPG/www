@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
+using Logitar.EventSourcing;
 using SkillCraft.Cms.Core.Lineages.Models;
 using SkillCraft.Contracts;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
@@ -71,6 +72,30 @@ internal class LineageEntity : AggregateEntity
   {
   }
 
+  public override IReadOnlyCollection<ActorId> GetActorIds()
+  {
+    List<ActorId> actorIds = new(base.GetHashCode());
+    if (Parent is not null)
+    {
+      actorIds.AddRange(Parent.GetActorIds());
+    }
+    foreach (LineageFeatureEntity relation in Features)
+    {
+      if (relation.Feature is not null)
+      {
+        actorIds.AddRange(relation.Feature.GetActorIds());
+      }
+    }
+    foreach (LineageLanguageEntity relation in Languages)
+    {
+      if (relation.Language is not null)
+      {
+        actorIds.AddRange(relation.Language.GetActorIds());
+      }
+    }
+    return actorIds.AsReadOnly();
+  }
+
   public void AddFeature(FeatureEntity feature)
   {
     Features.Add(new LineageFeatureEntity(this, feature));
@@ -101,9 +126,11 @@ internal class LineageEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public NamesModel? GetNames()
+  public AgesModel GetAge() => new(Adolescent, Adult, Mature, Venerable);
+
+  public NamesModel GetNames()
   {
-    return Names is null ? null : JsonSerializer.Deserialize<NamesModel>(Names);
+    return (Names is null ? null : JsonSerializer.Deserialize<NamesModel>(Names)) ?? new();
   }
   public void SetNames(NamesModel names)
   {
@@ -116,6 +143,12 @@ internal class LineageEntity : AggregateEntity
       Names = null;
     }
   }
+
+  public SizeModel GetSize() => new(SizeCategory, SizeRoll);
+
+  public SpeedsModel GetSpeeds() => new(Walk, Climb, Swim, Fly, Burrow, Hover);
+
+  public WeightsModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese);
 
   public override string ToString() => $"{Name} | {base.ToString()}";
 }
