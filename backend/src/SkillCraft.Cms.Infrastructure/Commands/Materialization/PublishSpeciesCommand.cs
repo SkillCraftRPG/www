@@ -346,11 +346,11 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
       string[] values = value.Split(Separator);
       if (values.Length == 5)
       {
-        lineage.Malnutrition = values[0].CleanTrim() ?? string.Empty;
-        lineage.Skinny = values[1].CleanTrim() ?? string.Empty;
-        lineage.NormalWeight = values[2].CleanTrim() ?? string.Empty;
-        lineage.Overweight = values[3].CleanTrim() ?? string.Empty;
-        lineage.Obese = values[4].CleanTrim() ?? string.Empty;
+        lineage.Malnutrition = values[0].CleanTrim();
+        lineage.Skinny = values[1].CleanTrim();
+        lineage.NormalWeight = values[2].CleanTrim();
+        lineage.Overweight = values[3].CleanTrim();
+        lineage.Obese = values[4].CleanTrim();
         return;
       }
       else
@@ -359,10 +359,10 @@ internal class PublishSpeciesCommandHandler : ICommandHandler<PublishSpeciesComm
       }
     }
 
-    lineage.Malnutrition = string.Empty;
-    lineage.Skinny = string.Empty;
-    lineage.NormalWeight = string.Empty;
-    lineage.Overweight = string.Empty;
-    lineage.Obese = string.Empty;
+    lineage.Malnutrition = null;
+    lineage.Skinny = null;
+    lineage.NormalWeight = null;
+    lineage.Overweight = null;
+    lineage.Obese = null;
   }
 }

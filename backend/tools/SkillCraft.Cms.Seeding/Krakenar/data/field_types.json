@@ -116,8 +116,8 @@
     "Description": null,
     "String": {
       "MinimumLength": 3,
-      "MaximumLength": 6,
-      "Pattern": "^(?:[1-9][0-9]?)d(?:4|6|8|10|12|20|100)$"
+      "MaximumLength": 10,
+      "Pattern": "^(?:(?:[1-9][0-9]{0,2})\\+)?(?:[1-9][0-9]?)d(?:4|6|8|10|12|20|100)$"
     }
   },
   {

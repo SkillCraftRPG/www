@@ -90,7 +90,7 @@ internal class LineageEntity : AggregateEntity
   public void SetParent(LineageEntity? parent)
   {
     Parent = parent;
-    ParentId = parent?.ParentId;
+    ParentId = parent?.LineageId;
     ParentUid = parent?.Id;
   }
 
