@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Lineage } from "~/types/game";
+import type { Lineage } from "~/types/lineages";
 
 defineProps<{
   lineage: Lineage;

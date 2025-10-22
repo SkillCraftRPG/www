@@ -32,9 +32,24 @@
 </template>
 
 <script setup lang="ts">
-import lineages from "~/assets/data/species.json";
+import type { Lineage } from "~/types/lineages";
+import type { SearchResults } from "~/types/game";
 
+const config = useRuntimeConfig();
 const title: string = "Espèces";
+
+const { data } = await useLazyAsyncData<SearchResults<Lineage>>(
+  "lineages",
+  () =>
+    $fetch("/api/lineages?sort=Slug", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const lineages = computed<Lineage[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

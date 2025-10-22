@@ -10,4 +10,6 @@ import type { Customization } from "~/types/game";
 defineProps<{
   customization: Customization;
 }>();
+
+// TODO(fpion): should not contain a H2!
 </script>

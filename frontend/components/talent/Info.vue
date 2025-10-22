@@ -14,4 +14,6 @@ const props = defineProps<{
 
 const icon = computed<string>(() => (props.talent.allowMultiplePurchases ? "fas fa-check" : "fas fa-times"));
 const text = computed<string>(() => $t(props.talent.allowMultiplePurchases ? "yes" : "no"));
+
+// TODO(fpion): should not contain a H2!
 </script>

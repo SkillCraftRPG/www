@@ -10,4 +10,6 @@ import type { Specialization } from "~/types/specializations";
 defineProps<{
   specialization: Specialization;
 }>();
+
+// TODO(fpion): should not contain a H2!
 </script>

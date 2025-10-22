@@ -22,4 +22,6 @@ const average = computed<number | undefined>(() => {
   const average: number = (sides + 1) / 2;
   return Math.floor(dice * average);
 });
+
+// TODO(fpion): should not contain a H2!
 </script>

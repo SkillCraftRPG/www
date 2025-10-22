@@ -1,4 +1,4 @@
-import type { Feature } from "./game";
+import type { Aggregate, Feature, Language, SizeCategory } from "./game";
 
 export type Age = {
   teenager: number;
@@ -8,38 +8,60 @@ export type Age = {
 };
 
 export type Languages = {
-  text: string;
+  items: Language[];
+  extra: number;
+  text?: string | null;
 };
 
-export type Lineage = {
-  id: string;
+export type Lineage = Aggregate & {
   slug: string;
   name: string;
-  summary?: string;
-  metaDescription?: string;
-  description?: string;
-  traits: Feature[];
   languages: Languages;
   names: Names;
+  summary?: string | null;
+  metaDescription?: string | null;
+  description?: string | null;
   speeds: Speeds;
-  size: string;
-  height: string;
+  size: Size;
   weight: Weight;
   age: Age;
+  parent?: Lineage | null;
+  children: Lineage[];
+  features: Feature[];
+};
+
+export type NameCategory = {
+  category: string;
+  values: string[];
 };
 
 export type Names = {
-  text: string;
+  text?: string | null;
+  family: string[];
+  female: string[];
+  male: string[];
+  unisex: string[];
+  custom: NameCategory[];
+};
+
+export type Size = {
+  category: SizeCategory;
+  roll?: string | null;
 };
 
 export type Speeds = {
   walk: number;
+  climb: number;
+  swim: number;
+  fly: number;
+  hover: boolean;
+  burrow: number;
 };
 
 export type Weight = {
-  malnutrition: string;
-  skinny: string;
-  normal: string;
-  overweight: string;
-  obese: string;
+  malnutrition?: string | null;
+  skinny?: string | null;
+  normal?: string | null;
+  overweight?: string | null;
+  obese?: string | null;
 };
