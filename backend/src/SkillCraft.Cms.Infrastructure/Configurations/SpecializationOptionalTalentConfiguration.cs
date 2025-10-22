@@ -17,6 +17,6 @@ internal class SpecializationOptionalTalentConfiguration : IEntityTypeConfigurat
     builder.HasIndex(x => x.TalentUid);
 
     builder.HasOne(x => x.Specialization).WithMany(x => x.OptionalTalents).OnDelete(DeleteBehavior.Cascade);
-    builder.HasOne(x => x.Talent).WithMany(x => x.SpecializationsOptional);
+    builder.HasOne(x => x.Talent).WithMany(x => x.SpecializationsOptional).OnDelete(DeleteBehavior.Restrict);
   }
 }
