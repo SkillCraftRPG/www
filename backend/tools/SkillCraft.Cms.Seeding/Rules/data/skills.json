@@ -182,8 +182,8 @@
       "Slug": "vigueur",
       "Name": "Vigueur"
     },
-    "Summary": "Mêlée mesure l’habileté du personnage à combattre au corps à corps.",
-    "MetaDescription": null,
+    "Summary": "Compétence de combat rapproché fondée sur la force et la maîtrise.",
+    "MetaDescription": "Découvrez la compétence Mêlée, dédiée au combat rapproché, à la maîtrise des armes simples et à la puissance physique brute incarnée par la Vigueur.",
     "Description": "La compétence **Mêlée** permet au personnage d’effectuer une [attaque](/regles/combat/attaque) avec un membre de son corps ou une [arme](/regles/equipement/armes) de [mêlée](/regles/combat/attaque/melee)."
   },
   {
@@ -198,8 +198,8 @@
       "Slug": "sens",
       "Name": "Sens"
     },
-    "Summary": "Occultisme représente la compréhension intuitive ou expérimentale des phénomènes surnaturels, ainsi que la capacité à interagir consciemment avec eux.",
-    "MetaDescription": null,
+    "Summary": "Permet d’analyser, canaliser et optimiser les forces surnaturelles.",
+    "MetaDescription": "Découvrez la compétence Occultisme, essentielle pour comprendre, canaliser et maîtriser les phénomènes et pouvoirs surnaturels du monde magique.",
     "Description": "La compétence **Occultisme** permet au personnage de :\n\n- activer ou de manipuler un objet magique\n- [canaliser](/regles/combat/activites/canaliser) un [Pouvoir](/regles/magie/pouvoirs) ou utiliser une capacité surnaturelle\n- faire des liens entre des effets magiques connus\n- identifier la nature surnaturelle d’un effet\n- s’adapter à un artefact"
   },
   {

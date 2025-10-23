@@ -1553,7 +1553,7 @@
         }
       ],
       "Other": [
-        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 d’[Astromancie](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 d’[astromancie](#)."
       ]
     },
     "ReservedTalent": {
@@ -1582,6 +1582,130 @@
           "Name": "Magie précise"
         }
       ],
+      "Features": []
+    }
+  },
+  {
+    "Id": "6694982d-66a3-49d0-9857-7a01ead402c5",
+    "IsPublished": true,
+    "Slug": "magelame",
+    "Name": "Magelame",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Les magelames forment un ordre d’Astromanciens ne sacrifiant nullement les arts martiaux, alliant la maîtrise des arcanes à celle de l’épée. Le magelame possède une ou plusieurs armes vibrant d’une énergie mystique, lui permettant d’incarner une tempête sur le champ de bataille. Ceux qui osent l’affronter peuvent difficilement prédire si le prochain coup sera celui de son arme ou une puissante déflagration énergétique. Il est un véritable tourbillon de lumière et de métal.",
+    "Requirements": {
+      "Talent": null,
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Astromancien](/regles/specialisations/astromancien).",
+        "Il ne doit pas avoir acquis la spécialisation [Mage](/regles/specialisations/mage).",
+        "Il doit également avoir acquis le talent [Formation martiale](/regles/talents/formation-martiale)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "c8b0b178-8436-4343-8c89-83c4ff3b9d56",
+          "IsPublished": true,
+          "Slug": "manoeuvres-de-combat",
+          "Name": "Manœuvres de combat"
+        },
+        {
+          "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+          "IsPublished": true,
+          "Slug": "initiative-accrue",
+          "Name": "Initiative accrue"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+          "IsPublished": true,
+          "Slug": "naturalisme",
+          "Name": "Naturalisme"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
+          "IsPublished": true,
+          "Slug": "attaque-puissante",
+          "Name": "Attaque puissante"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "1b374cfe-6709-43e4-a6d9-61c637e0c8a4",
+          "IsPublished": true,
+          "Slug": "charge",
+          "Name": "Charge"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "973edb2d-facb-473b-9fe9-cb59fce38349",
+          "IsPublished": true,
+          "Slug": "costaud",
+          "Name": "Costaud"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        }
+      ],
+      "Other": [
+        "Pouvoirs de tiers 1 d’[astromancie](#) appartenant au cercle d’Abjuration."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Magie de combat",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) appartenant au cercle d’Abjuration.",
+        "S’il [acquiert](/regles/talents/acquisition) le talent [Magie guerrière](/regles/talents/magie-guerriere), alors il acquiert gratuitement le talent [Attaque magique](/regles/talents/attaque-magique) au même moment."
+      ],
+      "DiscountedTalents": [],
       "Features": []
     }
   },
@@ -1749,7 +1873,74 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "17dcdec1-469d-452b-bf94-c225ddc3017a",
+          "IsPublished": true,
+          "Slug": "philologie",
+          "Name": "Philologie"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "0a9e78a0-14db-465d-a10d-8673b83c77ef",
+          "IsPublished": true,
+          "Slug": "renvoi-des-morts-vivants",
+          "Name": "Renvoi des morts-vivants"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
       "Other": [
         "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](#)."
       ]
