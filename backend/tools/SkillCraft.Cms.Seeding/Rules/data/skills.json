@@ -182,8 +182,8 @@
       "Slug": "vigueur",
       "Name": "Vigueur"
     },
-    "Summary": "Mêlée mesure l’habileté du personnage à combattre au corps à corps.",
-    "MetaDescription": null,
+    "Summary": "Compétence de combat rapproché fondée sur la force et la maîtrise.",
+    "MetaDescription": "Découvrez la compétence Mêlée, dédiée au combat rapproché, à la maîtrise des armes simples et à la puissance physique brute incarnée par la Vigueur.",
     "Description": "La compétence **Mêlée** permet au personnage d’effectuer une [attaque](/regles/combat/attaque) avec un membre de son corps ou une [arme](/regles/equipement/armes) de [mêlée](/regles/combat/attaque/melee)."
   },
   {
@@ -198,8 +198,8 @@
       "Slug": "sens",
       "Name": "Sens"
     },
-    "Summary": "Occultisme représente la compréhension intuitive ou expérimentale des phénomènes surnaturels, ainsi que la capacité à interagir consciemment avec eux.",
-    "MetaDescription": null,
+    "Summary": "Permet d’analyser, canaliser et optimiser les forces surnaturelles.",
+    "MetaDescription": "Découvrez la compétence Occultisme, essentielle pour comprendre, canaliser et maîtriser les phénomènes et pouvoirs surnaturels du monde magique.",
     "Description": "La compétence **Occultisme** permet au personnage de :\n\n- activer ou de manipuler un objet magique\n- [canaliser](/regles/combat/activites/canaliser) un [Pouvoir](/regles/magie/pouvoirs) ou utiliser une capacité surnaturelle\n- faire des liens entre des effets magiques connus\n- identifier la nature surnaturelle d’un effet\n- s’adapter à un artefact"
   },
   {
@@ -214,8 +214,8 @@
       "Slug": "adresse",
       "Name": "Adresse"
     },
-    "Summary": "Orientation évalue la capacité à viser, se repérer et réagir aux trajectoires ou déplacements.",
-    "MetaDescription": null,
+    "Summary": "Gère la précision du tir, la conduite et la visée à distance.",
+    "MetaDescription": "Découvrez la compétence Orientation, qui régit le tir à distance, la conduite et la maîtrise des trajectoires en combat ou en déplacement.",
     "Description": "La compétence **Orientation** permet au personnage de :\n\n- conduire une [monture ou un véhicule](/regles/equipement/montures-vehicules)\n- effectuer une [attaque](/regles/combat/attaque) avec une [arme](/regles/equipement/armes) à [distance](/regles/combat/attaque/distance)\n- exécuter une manœuvre en réponse à un danger\n- lancer un objet vers une cible approximative ou précise\n- suivre une carte ou un plan"
   },
   {
@@ -230,8 +230,8 @@
       "Slug": "sens",
       "Name": "Sens"
     },
-    "Summary": "Perception représente l’acuité sensorielle, la capacité à remarquer les détails, les sons subtils ou les éléments dissimulés dans son environnement.",
-    "MetaDescription": null,
+    "Summary": "Aiguise les sens et révèle les détails cachés.",
+    "MetaDescription": "Découvrez la compétence Perception, essentielle pour repérer les sons, pièges ou créatures dissimulées grâce à des sens aiguisés.",
     "Description": "La compétence **Perception** permet au personnage de :\n\n- capter des sons faibles comme une conversation chuchotée ou lointaine\n- [déceler](/regles/combat/activites/chercher) un piège ou un passage secret\n- repérer une créature [dissimulée](/regles/combat/activites/cacher), furtive ou discrète"
   },
   {
@@ -241,8 +241,8 @@
     "Name": "Représentation",
     "Value": "Performance",
     "Attribute": null,
-    "Summary": "Représentation reflète la capacité à captiver, émouvoir ou influencer par la performance artistique, l’intensité expressive ou la mise en scène.",
-    "MetaDescription": null,
+    "Summary": "Allie art, émotion et manipulation en combat.",
+    "MetaDescription": "Découvrez la compétence Représentation, liant art et stratégie pour captiver, inspirer ou intimider à travers performances et talents.",
     "Description": "La compétence **Représentation** permet au personnage de :\n\n- [distraire ou captiver un auditoire](/regles/aventure/interaction-sociale)\n- faire diversion\n- inspirer la peur\n- provoquer pour détourner l’attention\n- se produire dans une discipline artistique comme la poésie, la danse, la musique ou le théâtre"
   },
   {
@@ -257,8 +257,8 @@
       "Slug": "sante",
       "Name": "Santé"
     },
-    "Summary": "Résistance reflète la robustesse physique du personnage face à la douleur, aux blessures et aux chocs traumatiques.",
-    "MetaDescription": null,
+    "Summary": "Renforce la vitalité et la capacité à encaisser les chocs.",
+    "MetaDescription": "Découvrez la compétence Résistance, qui renforce la vitalité, l’endurance et la capacité à supporter les chocs physiques ou mentaux extrêmes.",
     "Description": "La compétence **Résistance** permet au personnage de :\n\n- ne pas s’effondrer sous un important choc physique\n- rester debout après avoir subi de lourds dégâts\n- résister aux effets directs d’un impact violent"
   },
   {
@@ -273,8 +273,8 @@
       "Slug": "adresse",
       "Name": "Adresse"
     },
-    "Summary": "Roublardise reflète l’habileté manuelle à interagir avec précision, ruse ou subtilité avec des mécanismes, dispositifs piégés ou objets délicats.",
-    "MetaDescription": null,
+    "Summary": "Maîtrise la dextérité, le vol et les actes discrets.",
+    "MetaDescription": "Découvrez la compétence Roublardise, dédiée à la manipulation précise, au crochetage, au sabotage et aux actes discrets ou rusés.",
     "Description": "La compétence **Roublardise** permet au personnage de :\n\n- manipuler de petits objets — que ce soit pour les dérober, les dissimuler ou les déposer\n- activer un mécanisme\n- crocheter une serrure\n- désamorcer un piège\n- manipuler avec précision de petits objets\n- nouer ou dénouer un nœud simple ou complexe\n- saboter un mécanisme"
   },
   {
@@ -289,8 +289,8 @@
       "Slug": "sens",
       "Name": "Sens"
     },
-    "Summary": "Survie évalue les connaissances et réflexes face à la nature : orientation, pistage, protection contre les éléments, et gestion des animaux.",
-    "MetaDescription": null,
+    "Summary": "Maîtrise la survie, la chasse et l’adaptation en nature.",
+    "MetaDescription": "Découvrez la compétence Survie, dédiée à l’orientation, la chasse, la protection contre les éléments et l’improvisation en pleine nature.",
     "Description": "La compétence **Survie** permet au personnage de :\n\n- interagir avec des animaux sauvages ou dressés\n- prédire le climat\n- suivre une piste\n- s’orienter et de se déplacer sans se perdre en pleine nature\n- trouver un abri et de la [nourriture](/regles/aventure/environnement/alimentation)\n- éviter les dangers naturels"
   },
   {
@@ -300,8 +300,8 @@
     "Name": "Tromperie",
     "Value": "Deception",
     "Attribute": null,
-    "Summary": "Tromperie mesure la capacité du personnage à induire les autres en erreur par des mensonges, des déguisements ou des manipulations verbales subtiles.",
-    "MetaDescription": null,
+    "Summary": "Permet de mentir, manipuler et tromper avec ruse.",
+    "MetaDescription": "Découvrez la compétence Tromperie, utilisée pour mentir, manipuler, imiter autrui et créer des déguisements crédibles avec ruse et finesse.",
     "Description": "La compétence **Tromperie** permet au personnage de :\n\n- imiter une créature d’une autre espèce ou d’un autre genre avec vraisemblance\n- [manipuler](/regles/aventure/interaction-sociale) sans contredire la vérité directement\n- mentir de façon crédible ou non\n- se faire passer pour autrui\n- utiliser un déguisement convaincant"
   }
 ]

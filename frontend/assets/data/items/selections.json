@@ -41,7 +41,7 @@
     {
       "key": "diplomate",
       "name": "Sélection de diplomate",
-      "description": "Cette sélection servira aux nobles, aux messagers ainsi qu’au négociateurs",
+      "description": "Cette sélection servira aux nobles, aux messagers ainsi qu’aux négociateurs.",
       "items": [
         "chevaliere",
         "cire-a-cacheter",

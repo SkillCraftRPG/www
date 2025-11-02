@@ -551,6 +551,24 @@
     "Description": "Permet au personnage de [charger une arme](/regles/combat/activites/chargement) en une seule [action](/regles/combat/deroulement/tour) plutôt que deux.\n\nDésormais, lorsqu’il charge une arme, il ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite)."
   },
   {
+    "Id": "0fa21f56-552e-48cb-b504-fbfa078fce12",
+    "IsPublished": true,
+    "Slug": "chasse-mage",
+    "Name": "Chasse-mage",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+      "IsPublished": true,
+      "Slug": "barriere-mentale",
+      "Name": "Barrière mentale"
+    },
+    "Summary": "Permet de contrer et perturber les pouvoirs magiques ennemis.",
+    "MetaDescription": "Découvrez le talent Chasse-mage, qui renforce votre résistance mentale et perturbe la concentration des ennemis utilisant la magie.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il réussit une [attaque d’opportunité](/regles/combat/attaque/opportunite) contre une créature [canalisant](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs), celle-ci doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du [test](/regles/competences/tests) de l’[attaque](/regles/combat/attaque). Si elle échoue, alors son test d’[Occultisme](/regles/competences/occultisme) effectué afin de [canaliser](/regles/magie/pouvoirs/canalisation) le pouvoir est affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il [blesse](/regles/combat/degats) une créature [se concentrant](/regles/magie/parametres/duree) sur un pouvoir, alors le jet de sauvegarde de Discipline de cette créature effectué afin de [maintenir sa concentration](/regles/combat/activites/concentration) est affligé du désavantage.\n- Ses jets de sauvegarde de Discipline contre les pouvoirs canalisés par une créature qu’il peut atteindre par une [attaque de mêlée](/regles/combat/attaque/melee) se voient conférer l’[avantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
     "Id": "2f330428-3e52-48a2-bbc3-4fb875f810db",
     "IsPublished": true,
     "Slug": "colosse",
@@ -716,6 +734,24 @@
     "Summary": "Augmente vos chances de coup critique et permet de les confirmer.",
     "MetaDescription": "Découvrez le talent Critique accru, qui augmente vos chances de réussir un coup critique et permet de relancer pour confirmer des frappes dévastatrices.",
     "Description": "Lorsque le personnage effectue une [attaque](/regles/combat/attaque), il obtient une [réussite critique](/regles/competences/tests/critique) si la somme des [dés](/regles/competences/tests/2d10) égale 17.\n\nÉgalement, lorsqu’il obtient une réussite critique pour une attaque, il peut relancer les dés du [test](/regles/competences/tests) afin de tenter de confirmer le coup critique.\n\nS’il obtient à nouveau une réussite critique, il roule une seconde fois les [dés de dégâts](/regles/combat/degats/jet) et les ajoute aux points de dégâts infligés."
+  },
+  {
+    "Id": "268502a7-a973-4741-874b-61354c9b3610",
+    "IsPublished": true,
+    "Slug": "critique-superieur",
+    "Name": "Critique supérieur",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "b94abe2c-7691-419d-af10-7cea5747bb52",
+      "IsPublished": true,
+      "Slug": "critique-accru",
+      "Name": "Critique accru"
+    },
+    "Summary": "Améliore vos coups critiques et augmente leurs dégâts totaux.",
+    "MetaDescription": "Découvrez le talent Critique supérieur, qui renforce vos coups critiques et amplifie les dégâts infligés par votre puissance ou précision.",
+    "Description": "Lorsque le personnage effectue une [attaque](/regles/combat/attaque), il obtient un [coup critique](/regles/competences/tests/critique) si la somme des [dés](/regles/competences/tests/2d10) égale 16.\n\nÉgalement, lorsqu’il [confirme](/regles/talents/critique-accru) un coup critique, il ajoute une seconde fois sa [Force](/regles/statistiques/force), [Précision](/regles/statistiques/precision), [Puissance](/regles/statistiques/puissance) ou [Stratagème](/regles/statistiques/stratageme) aux [points de dégâts](/regles/combat/degats) infligés."
   },
   {
     "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
@@ -1467,6 +1503,24 @@
     "Description": "Confère au personnage un bonus permanent (+2) à l’[Initiative](/regles/statistiques/initiative).\n\nÉgalement, lorsqu’il obtient une valeur inférieure à ses [Sens](/regles/attributs/sens) (minimum 2) sur le dé d’un [test d’Initiative](/regles/combat/deroulement/initiative), il remplace cette valeur par ses Sens."
   },
   {
+    "Id": "73bf30d0-02e8-4b97-ab9e-d07408a5b675",
+    "IsPublished": true,
+    "Slug": "initiative-superieure",
+    "Name": "Initiative supérieure",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+      "IsPublished": true,
+      "Slug": "initiative-accrue",
+      "Name": "Initiative accrue"
+    },
+    "Summary": "Renforce vos réflexes et améliore vos jets d’initiative en combat.",
+    "MetaDescription": "Découvrez le talent Initiative supérieure, qui augmente vos réflexes et vos chances d’agir avant vos adversaires en combat.",
+    "Description": "Confère au personnage un bonus permanent (+3) à l’[Initiative](/regles/statistiques/initiative).\n\nÉgalement, lorsqu’il effectue un [test d’Initiative](/regles/combat/deroulement/initiative), il peut jeter 2d10 et conserver le dé de son choix."
+  },
+  {
     "Id": "714ef5e8-e70a-4c79-98c2-4213f1c9abfe",
     "IsPublished": true,
     "Slug": "interprete",
@@ -1881,7 +1935,7 @@
   },
   {
     "Id": "6fd1c3b5-4a26-4cc1-942a-9f8d844e3027",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "meta-magie",
     "Name": "Méta-magie",
     "Tier": 1,
@@ -1964,7 +2018,7 @@
     },
     "Summary": "Reste toujours alerte et peut lire sur les lèvres pour comprendre.",
     "MetaDescription": "Découvrez le talent Observateur, qui permet de rester vigilant en toute circonstance et de lire sur les lèvres pour comprendre sans entendre.",
-    "Description": "Le personnage ne peut être [surpris](/regles/combat/deroulement/surprise) lorsqu’il est conscient.\n\nÉgalement, il peut comprendre ce qu’une créature dit seulement en observant les mouvements de sa bouche si elle parle une [langue](/regles/langues) qu’il comprend comprend."
+    "Description": "Le personnage ne peut être [surpris](/regles/combat/deroulement/surprise) lorsqu’il est conscient.\n\nÉgalement, il peut comprendre ce qu’une créature dit seulement en observant les mouvements de sa bouche si elle parle une [langue](/regles/langues) qu’il comprend."
   },
   {
     "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
@@ -1980,8 +2034,8 @@
       "Name": "Occultisme"
     },
     "RequiredTalent": null,
-    "Summary": "Formé aux parchemins. Peut identifier un pouvoir inscrit, ses effets et son niveau, et jauger les capacités surnaturelles d’une créature en action.",
-    "MetaDescription": null,
+    "Summary": "Permet de lire, comprendre et identifier les pouvoirs surnaturels.",
+    "MetaDescription": "Découvrez le talent Occultisme, formant à la compréhension des phénomènes surnaturels et à l’analyse intuitive des pouvoirs et entités mystiques.",
     "Description": "Le personnage est formé à l’utilisation des [parchemins](/regles/magie/pouvoirs/parchemins) de pouvoir.\n\nIl peut lire un parchemin afin de déterminer quel [pouvoir](/regles/magie/pouvoirs) est inscrit sur le parchemin, à quel [niveau](/regles/magie/pouvoirs/niveau) le pouvoir sera canalisé, et quels effets seront produits par son utilisation.\n\nÉgalement, lorsqu’il voit une créature canaliser un pouvoir, il peut déterminer en [action libre](/regles/combat/deroulement/tour) si les capacités surnaturelles de la créature sont inférieures, supérieures ou équivalentes aux siennes."
   },
   {
@@ -2116,8 +2170,8 @@
       "Name": "Perception"
     },
     "RequiredTalent": null,
-    "Summary": "Permet de percevoir des détails visuels ou des chuchotements jusqu’à une distance égale à 30 cm par point de Perception passive.",
-    "MetaDescription": null,
+    "Summary": "Aiguise les sens pour repérer sons, détails et éléments dissimulés.",
+    "MetaDescription": "Découvrez le talent Perception, qui améliore l’acuité sensorielle du personnage et sa capacité à remarquer les détails ou sons cachés autour de lui.",
     "Description": "Le personnage peut déceler des détails ou du texte précis depuis un document, un objet ou toute autre surface.\n\nIl peut également entendre clairement une discussion chuchotée.\n\nLa portée de cette capacité est de 30 centimètres multipliés par son [test passif](/regles/competences/tests/passif) de [Perception](/regles/competences/perception)."
   },
   {
@@ -2226,9 +2280,9 @@
       "Slug": "coup-de-bouclier",
       "Name": "Coup de bouclier"
     },
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il donne un [coup de bouclier](/regles/talents/coup-de-bouclier), les [points de dégâts](/regles/combat/degats) augmentent à [1d4/1d6/1d8](/regles/combat/degats/jet) + [Force](/regles/statistiques/force) selon la catégorie du [bouclier](/regles/equipement/boucliers) (léger/moyen/lourd).\n- Lorsqu’il [bouscule](/regles/combat/activites/bousculer) une créature avec son bouclier, son [test](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il utilise sa [réaction](/regles/combat/deroulement/tour) afin de protéger un allié avec son bouclier, si l’[attaque](/regles/combat/attaque) réussit tout de même, alors il réduit les points de dégâts d’une valeur égale à ⚠️ son [rang](/regles/competences/rang) de [Mêlée](/regles/competences/melee) + [Défense](/regles/equipement/defense) conférée par le bouclier (minimum 0).\n- Lorsqu’il utilise sa réaction afin d’ajouter la Défense de son bouclier à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) effectué afin de réduire de moitié des points de dégâts et qu’il réussit le jet de sauvegarde, alors il ne reçoit aucun point de dégât.\n\nAfin d’utiliser ces capacités, il doit être [formé](/regles/equipement/boucliers) avec le bouclier qu’il tient."
+    "Summary": "Renforce la défense au bouclier et protège efficacement les alliés.",
+    "MetaDescription": "Découvrez le talent Protection, qui améliore l’efficacité du bouclier, renforce la défense d’un allié et réduit les dégâts subis.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il donne un [coup de bouclier](/regles/talents/coup-de-bouclier), les [points de dégâts](/regles/combat/degats) augmentent à [1d4/1d6/1d8](/regles/combat/degats/jet) + [Force](/regles/statistiques/force) selon la catégorie du [bouclier](/regles/equipement/boucliers) (léger/moyen/lourd).\n- Lorsqu’il [bouscule](/regles/combat/activites/bousculer) une créature avec son bouclier, son [test](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il utilise sa [réaction](/regles/combat/deroulement/tour) afin de protéger un allié avec son bouclier, si l’[attaque](/regles/combat/attaque) réussit tout de même, alors la cible ne reçoit que la moitié des points de dégâts.\n- Lorsqu’il utilise sa réaction afin d’ajouter la Défense de son bouclier à un de ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) effectué afin de réduire de moitié des points de dégâts et qu’il réussit le jet de sauvegarde, alors il ne reçoit aucun point de dégât.\n\nAfin d’utiliser ces capacités, il doit être [formé](/regles/equipement/boucliers) avec le bouclier qu’il tient."
   },
   {
     "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
@@ -2326,8 +2380,8 @@
       "Name": "Représentation"
     },
     "RequiredTalent": null,
-    "Summary": "Formé à un nombre d’arts ou d’instruments égal à son rang de Représentation.",
-    "MetaDescription": null,
+    "Summary": "Formé à un nombre d’arts ou d’instruments égal à son rang.",
+    "MetaDescription": "Découvrez le talent Représentation, qui unit art et stratégie pour influencer les émotions et détourner l’attention en combat.",
     "Description": "Le personnage est formé à l’utilisation d’un nombre d’[instruments de musique](/regles/equipement/outils/musique), de types d’art ou d’[ensembles de jeu](/regles/equipement/outils/jeux) égal à son [rang](/regles/competences/rang) de [Représentation](/regles/competences/representation)."
   },
   {
@@ -2367,8 +2421,8 @@
       "Name": "Résistance"
     },
     "RequiredTalent": null,
-    "Summary": "Bonus de Vitalité.",
-    "MetaDescription": null,
+    "Summary": "Renforce la vitalité et la résistance physique du personnage.",
+    "MetaDescription": "Découvrez le talent Résistance, qui accroît la vitalité et la robustesse face à la douleur, aux blessures et aux chocs physiques.",
     "Description": "Confère au personnage un bonus permanent de 5 points de [Vitalité](/regles/statistiques/vitalite)."
   },
   {
@@ -2478,7 +2532,7 @@
     },
     "RequiredTalent": null,
     "Summary": "Formé aux outils de voleur et peut manipuler un objet par l’activité Objet.",
-    "MetaDescription": null,
+    "MetaDescription": "Découvrez le talent Roublardise, qui développe la dextérité, la ruse et la précision pour manipuler objets, pièges et mécanismes délicats.",
     "Description": "Le personnage est formé à l’utilisation des [outils de voleur](/regles/equipement/outils).\n\nÉgalement, il peut effectuer l’activité [Objet](/regles/combat/activites/objet) (une [action](/regles/combat/deroulement/tour)) afin de manipuler (déplacer, ou dissimuler sur lui ou quelqu’un d’autre) un objet d’au plus la grosseur de la paume de sa main."
   },
   {
@@ -2505,6 +2559,24 @@
     "Description": "Lorsque le personnage entre ou se prépare à entrer dans un lieu historique, telle une cité, des ruines, un champ de bataille ou une forteresse, il peut régaler ses compagnons de faits historiques et de mythes fictifs en lien avec cet endroit pendant [10 minutes](/regles/aventure/temps).\n\nIl désigne ensuite un nombre de créatures inférieur à son [Intellect](/regles/attributs/intellect) (minimum 0), effectue un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance), et dépense un nombre de points d’[Énergie](/regles/statistiques/energie) égal au résultat du test.\n\nPendant les 24 prochaines heures, le personnage se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de Connaissance effectués à propos du lieu historique, d’une créature ou d’un objet s’y trouvant.\n\nÉgalement, pendant les 24 prochaines heures, le personnage et les créatures désignées se voient conférer les bonus suivants lorsqu’ils se trouvent dans ce lieu historique :\n\n- Un nombre de [points de Vitalité temporaires](/regles/combat/degats/temporaire) égal à la moitié du résultat du test de Connaissance.\n- [Régénération](/regles/aventure/repos) doublée.\n- Une fois par [test](/regles/competences/tests) de [compétence](/regles/competences), peut ajouter 1d10 en dépensant un nombre de points d’Énergie égal au résultat du d10.\n- Peut rejouer ses [tests d’Initiative](/regles/combat/deroulement/initiative) et conserver le résultat de son choix.\n\nUne créature ne peut bénéficier simultanément de plusieurs utilisations de cette capacité.\n\nLe personnage ne peut réutiliser cette capacité pendant les 24 prochaines heures."
   },
   {
+    "Id": "fff4d66c-fbbb-44ba-a1f6-609d642f32bc",
+    "IsPublished": true,
+    "Slug": "sentinelle",
+    "Name": "Sentinelle",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "ecd7e18e-2055-44c4-9b9d-8057af7f6dc5",
+      "IsPublished": true,
+      "Slug": "vigilance",
+      "Name": "Vigilance"
+    },
+    "Summary": "Permet d’interrompre et ralentir les ennemis lors de leurs mouvements.",
+    "MetaDescription": "Découvrez le talent Sentinelle, qui permet de bloquer, punir ou ralentir les ennemis lors d’attaques d’opportunité et de protéger ses alliés en combat.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Une créature déclenche désormais une [attaque d’opportunité](/regles/combat/attaque/opportunite) de la part du personnage lorsqu’elle effectue un [Pas prudent](/regles/combat/activites/pas-prudent).\n- Une créature déclenche une attaque d’opportunité de la part du personnage lorsqu’elle [attaque](/regles/combat/attaque) une créature différente de celui-ci.\n- Lorsque le personnage réussit une attaque d’opportunité, la cible perd sa [vitesse](/regles/aventure/mouvement/vitesse) restante si elle était en train de [se déplacer](/regles/combat/activites/deplacement).\n\nUne créature est immunisée à ces capacités si elle a également le talent Sentinelle."
+  },
+  {
     "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
     "IsPublished": true,
     "Slug": "societe",
@@ -2523,8 +2595,8 @@
       "Slug": "connaissance",
       "Name": "Connaissance"
     },
-    "Summary": "Avantage aux tests pour reconnaître symboles ou groupes, se déguiser en membre, ou identifier l’origine d’une créature selon sa langue ou son écriture.",
-    "MetaDescription": null,
+    "Summary": "Accorde un avantage pour reconnaître ou imiter des cultures et ordres.",
+    "MetaDescription": "Découvrez le talent Société, liant érudition et ruse pour reconnaître symboles, ordres et cultures, et agir sous déguisement avec avantage.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) lorsqu’il tente de reconnaître un élément historique ou culturel, par exemple un symbole religieux, un blason ou une insigne identifiant une entité géopolitique telle un ordre, une nation, une guilde, une entreprise, etc.\n- Il se voit conférer l’avantage à ses tests de [Tromperie](regles/competences/tromperie) lorsqu’il tente d’utiliser cet élément au sein d’un déguisement et d’agir comme un membre de cette société ou de cet ordre religieux.\n- Lorsqu’il entend une créature parler ou écrire une [langue](/regles/langues) qu’il connait, il peut déterminer la provenance de cette créature par son accent ou sa calligraphie. Il se voit conférer l’avantage à ses tests de Connaissance afin de déterminer la provenance approximative d’une créature qu’il entend parler ou écrire une langue qu’il ne connait pas."
   },
   {
@@ -2541,8 +2613,8 @@
       "Slug": "occultisme",
       "Name": "Occultisme"
     },
-    "Summary": "Permet d’acquérir gratuitement un pouvoir de tiers 0 et une capacité liée à un domaine divin ou d’animisme, et d’apprendre les pouvoirs de ce domaine.",
-    "MetaDescription": null,
+    "Summary": "Lie le personnage à un domaine sacré et révèle ses premiers dons.",
+    "MetaDescription": "Découvrez le talent Spiritualité, qui relie le personnage à un domaine divin ou animiste et lui accorde ses premiers pouvoirs sacrés.",
     "Description": "Le personnage sélectionne un [domaine divin](#) ou un [domaine d’animisme](#).\n\nL’animisme est l’ensemble des croyances consistant à octroyer une âme aux objets et aux animaux.\n\nLes domaines divins sont quant à eux associés à une ou plusieurs divinités, et relèvent de cultes et de religions.\n\nLe personnage peut désormais acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 0 associés à ce domaine, et il acquiert gratuitement un de ces pouvoirs.\n\nIl acquiert également une capacité spécifique au domaine qu’il a sélectionné."
   },
   {
@@ -2582,8 +2654,8 @@
       "Name": "Survie"
     },
     "RequiredTalent": null,
-    "Summary": "Permet d’improviser outils et tâches simples dans la nature, et de fabriquer de l’équipement à partir d’une carcasse lors d’une halte.",
-    "MetaDescription": null,
+    "Summary": "Permet de survivre, créer et s’abriter à partir de la nature.",
+    "MetaDescription": "Découvrez le talent Survie, qui permet de fabriquer, chasser et s’abriter en milieu sauvage à partir des ressources naturelles disponibles.",
     "Description": "Permet au personnage d’effectuer des tâches banales sans posséder les [outils](/regles/equipement/outils) nécessaires et en utilisant les ressources du milieu naturel et sauvage dans lequel il se trouve, par exemple allumer un feu, fabriquer un abri ou cuisiner.\n\nÉgalement, pendant une [halte](/regles/aventure/repos/halte) et en utilisant les ressources provenant d’une carcasse, il peut fabriquer un des objets suivants :\n\n- Un [bouclier léger](/regles/equipement/boucliers)\n- Une [arme simple](/regles/equipement/armes/simples) n’étant pas dotée de la propriété [Chargement](/regles/equipement/armes/proprietes)\n- 1d4 pièces de [munitions](/regles/equipement/armes/munitions) pour une arme simple n’étant pas dotée de la propriété [Chargement](/regles/equipement/armes/proprietes)\n\nLa carcasse doit être celle d’une bête, d’une construction, d’un dragon, d’une monstruosité, ou d’une plante, et la créature doit être de [taille](/regles/especes/taille) supérieure ou égale à Petite."
   },
   {
@@ -2605,8 +2677,8 @@
       "Slug": "survie",
       "Name": "Survie"
     },
-    "Summary": "Il réussit ses tâches de Survie banales sans outils, gagne l’avantage pour identifier des traces, et peut améliorer des pièges durant une halte.",
-    "MetaDescription": null,
+    "Summary": "Permet d’improviser outils et abris, et de survivre sans équipement.",
+    "MetaDescription": "Découvrez le talent Survivalisme, qui permet d’improviser outils, abris et pièges dans la nature tout en maîtrisant la survie en milieu sauvage.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il réussit automatiquement ses [tests](/regles/competences/tests) de [Survie](/regles/competences/survie) lorsqu’il effectue une tâche banale sans posséder les outils nécessaires et en utilisant les ressources du milieu naturel et sauvage dans lequel il se trouve, par exemple allumer un feu, fabriquer un abri ou cuisiner.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de Survie afin de déterminer l’espèce d’une créature en examinant les traces de celle-ci.\n- Pendant une [halte](/regles/aventure/repos/halte), il peut utiliser des [outils de bricoleur](/regles/equipement/outils) afin d’améliorer un objet de type piège, par exemple des [billes](/regles/equipement/general), des [chausse-trapes](/regles/equipement/general) ou un [piège de chasse](/regles/equipement/general). Il doit utiliser des matériaux d’une [valeur](/regles/equipement/monnaie) supérieure ou égale à celle de l’objet afin de l’améliorer. Il choisit un nombre compris entre 1 et son [rang](/regles/competences/rang) de Survie, et doit réussir un test de Survie de [degré de difficulté](/regles/competences/tests/difficulte) égal au double de ce nombre. Si le test est réussi, le nombre choisi est ajouté au degré de difficulté de l’objet amélioré."
   },
   {
@@ -2628,8 +2700,8 @@
       "Slug": "intuition",
       "Name": "Intuition"
     },
-    "Summary": "Peut relancer un test d’Intuition pour détecter un mensonge. Détecte humeur ou influence magique après observation ou interaction.",
-    "MetaDescription": null,
+    "Summary": "Permet de percer les mensonges et détecter les émotions cachées.",
+    "MetaDescription": "Découvrez le talent Suspicion, qui permet de percer les mensonges et de détecter les émotions, intentions ou influences surnaturelles d’autrui.",
     "Description": "Lorsque le personnage effectue un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) afin de déterminer si une créature dit la vérité, le joueur peut rejouer le test avant d’en connaître le résultat. Il utilise le résultat de son choix.\n\nÉgalement, le personnage peut observer ou interagir avec une créature pendant [une minute](/regles/aventure/temps) afin de déterminer son humeur, ou si elle est influencée par un [effet surnaturel](/regles/combat/conditions/charme). Il peut également utiliser cette capacité par une [action](/regles/combat/deroulement/tour) ([Jugement](/regles/combat/activites/jugement)) s’il peut examiner de près la cible en la tâtant et en sentant son odeur."
   },
   {
@@ -2697,8 +2769,8 @@
       "Slug": "armes-de-tir",
       "Name": "Armes de tir"
     },
-    "Summary": "Peut tirer avec une arme à munition en 1 action au lieu de 2 et ne subit pas de désavantage lors d’un tir à bout portant.",
-    "MetaDescription": null,
+    "Summary": "Permet d’attaquer à distance en une seule action et rapproché.",
+    "MetaDescription": "Découvrez le talent Tir rapide, qui permet d’effectuer une attaque à distance en un seul geste fluide, sans désavantage à bout portant.",
     "Description": "Permet au personnage d’effectuer une [attaque](/regles/combat/attaque) avec une arme à [munition](/regles/equipement/armes/proprietes) par l’activité [Viser et tirer](/regles/combat/activites/viser-tirer) en une seule [action](/regles/combat/deroulement/tour).\n\nDe plus, il ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’il effectue un [tir à bout portant](/regles/combat/attaque/distance) avec une telle [arme](/regles/equipement/armes)."
   },
   {
@@ -2720,8 +2792,8 @@
       "Slug": "tromperie",
       "Name": "Tromperie"
     },
-    "Summary": "Permet de relancer un d10 lors d’un échec en Tromperie sans désavantage, et d’ajouter ½ rang associé à un test simulant une tâche.",
-    "MetaDescription": null,
+    "Summary": "Accorde relance et bonus lors des tentatives de duperie.",
+    "MetaDescription": "Découvrez le talent Tissu de mensonges, qui améliore la Tromperie et accorde une relance partielle ou un bonus lors des tentatives de duperie.",
     "Description": "Lorsque le personnage échoue un [test](/regles/competences/tests) de [Tromperie](/regles/competences/tromperie), si le test n’a pas été effectué avec [désavantage](/regles/competences/tests/avantage-desavantage), alors il peut relancer [un des d10](/regles/competences/tests/2d10) et doit utiliser le nouveau résultat.\n\nÉgalement, lorsqu’il tente de faire croire à une créature qu’il est en train d’accomplir une tâche, son test de Tromperie se voit conférer un bonus égal à la moitié du [rang](/regles/competences/rang) de la [compétence](/regles/competences) associée à cette tâche."
   },
   {
@@ -2733,8 +2805,8 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Augmente le seuil de tolérance à l’alcool et ignore les désavantages liés aux tests d’Adresse en première phase d’alcoolémie.",
-    "MetaDescription": null,
+    "Summary": "Augmente la résistance à l’alcool et limite les effets de l’ivresse.",
+    "MetaDescription": "Découvrez le talent Tolérance à l’alcool I, qui accroît la résistance à l’alcool et prévient les effets négatifs légers de l’ivresse sur l’Adresse.",
     "Description": "Augmente de manière permanente (+1) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, elle ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Adresse](/regles/attributs/adresse) et des [compétences](/regles/competences) associées lorsqu’elle est en première phase d’alcoolémie."
   },
   {
@@ -2751,8 +2823,8 @@
       "Slug": "tolerance-a-l-alcool-i",
       "Name": "Tolérance à l’alcool I"
     },
-    "Summary": "Augmente le seuil de tolérance à l’alcool et permet d'utiliser l’Effort débridé sans avoir atteint la première phase.",
-    "MetaDescription": null,
+    "Summary": "Renforce la résistance et libère l’Effort dès 2 points d’ivresse.",
+    "MetaDescription": "Découvrez le talent Tolérance à l’alcool II, qui accroît la résistance à l’alcool et permet d’utiliser l’Effort débridé dès un état d’ivresse modéré.",
     "Description": "Augmente de manière permanente (+2) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, le personnage peut utiliser l’**Effort débridé** dès qu’il a acquis 2 points d’alcoolémie ou plus. Il n’a pas besoin d’être en première phase d’alcoolémie afin d’utiliser cette capacité."
   },
   {
@@ -2823,8 +2895,8 @@
       "Name": "Tromperie"
     },
     "RequiredTalent": null,
-    "Summary": "Forme à la trousse de déguisement. Un succès en Tromperie contrôle l’Initiative d’une cible si un combat éclate dans la minute.",
-    "MetaDescription": null,
+    "Summary": "Permet de mentir, manipuler et se déguiser avec ruse.",
+    "MetaDescription": "Découvrez le talent Tromperie, qui permet de manipuler, mentir et se déguiser avec adresse pour tromper les sens et l’esprit des autres.",
     "Description": "Forme le personnage à l’utilisation de la [trousse de déguisement](/regles/equipement/outils).\n\nÉgalement, lorsqu’il réussit un [test](/regles/competences/tests) de [Tromperie](/regles/competences/tromperie) contre une créature, si celle-ci entre en situation de [combat](/regles/combat) contre lui pendant la prochaine [minute](/regles/aventure/temps), alors elle doit rejouer son [test d’Initiative](/regles/combat/deroulement/initiative), et conserve le résultat choisit par le personnage."
   },
   {
@@ -2841,8 +2913,8 @@
       "Slug": "roublardise",
       "Name": "Roublardise"
     },
-    "Summary": "Forme à l’utilisation de certaines trousses, et permet de les utiliser par un test de Roublardise.",
-    "MetaDescription": null,
+    "Summary": "Permet d’utiliser les outils de déguisement et de falsification.",
+    "MetaDescription": "Découvrez le talent Trousse, qui forme à l’usage des outils de déguisement et de falsification, pour manipuler objets et documents avec ruse.",
     "Description": "Le personnage est formé à l’utilisation de la [trousse de déguisement](/regles/equipement/outils) ([Tromperie](/regles/competences/tromperie)) et de la [trousse de falsification](/regles/equipement/outils) ([Linguistique](/regles/competences/linguistique)).\n\nLorsqu’il utilise une de ces trousses, il peut le faire par un [test](/regles/competences/tests) de [Roublardise](/regles/competences/roublardise) plutôt que par un test de Tromperie ou de Linguistique."
   },
   {
@@ -2854,8 +2926,8 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Gagne +1 à l’Initiative, n’est jamais pris au dépourvu avant son premier tour, et peut agir et dégainer une arme même s’il est surpris.",
-    "MetaDescription": null,
+    "Summary": "Augmente l’initiative et permet d’agir même pris par surprise.",
+    "MetaDescription": "Découvrez le talent Vigilance, qui améliore l’initiative et permet d’agir même pris par surprise au début d’un combat.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Bonus permanent (+1) à l’[Initiative](/regles/statistiques/initiative).\n- Il n’est jamais [pris au dépourvu](/regles/combat/deroulement/depourvu) avant d’avoir joué son premier [tour](/regles/combat/deroulement/tour) en [combat](/regles/combat).\n- Lorsqu’il est [surpris](/regles/combat/deroulement/surprise), il peut dégainer une [arme](/regles/equipement/armes) en [action libre](/regles/combat/deroulement/tour) au début de son tour, et peut effectuer une [action](/regles/combat/deroulement/tour) pendant son tour."
   }
 ]

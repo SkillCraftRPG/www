@@ -310,6 +310,36 @@
     "Description": "### Captivant\n\nLorsque le personnage effectue une représentation d’une durée minimale de [10 minutes](/regles/aventure/temps), il peut captiver son audience pendant les 10 prochaines minutes.\n\nIl soustrait 20 puis divise par 2 le résultat de son [test](/regles/competences/tests) de [Représentation](/regles/competences/representation). S’il n’a pas effectué de test, alors il doit en effectuer un.\n\nToute créature parmi l’audience dont l’[Intellect](/regles/attributs/intellect) et les [Sens](/regles/attributs/sens) sont inférieurs à cette valeur est captivée.\n\nLe personnage se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests de [Diplomatie](/regles/competences/diplomatie), de Représentation et de [Tromperie](/regles/competences/tromperie) contre une créature captivée.\n\n### Motivateur\n\nLe personnage peut motiver ses alliés par un discours engageant d’une durée minimale de [10 minutes](/regles/aventure/temps).\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) et sélectionne un nombre de cibles inférieur ou égal à la valeur de l’[attribut](/regles/attributs) utilisé pour le test (minimum 1).\n\nUne créature doit pouvoir le [voir](/regles/aventure/environnement/vision) et l’entendre, et être située à 9 mètres ou moins de sa position pendant la durée du discours afin d’être ciblée par cette capacité.\n\nChaque cible se voit conférer un nombre de [points de Vitalité temporaires](/regles/combat/degats/temporaire) égal au résultat du test (minimum 1).\n\nUne cible doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir être affectée à nouveau par cette capacité."
   },
   {
+    "Id": "51ac502c-6468-4b31-b18f-b1a3b37c2b82",
+    "IsPublished": true,
+    "Slug": "pauvrete",
+    "Name": "Pauvreté",
+    "Kind": "Disability",
+    "Summary": "Divise la richesse de départ pour un passé modeste ou précaire.",
+    "MetaDescription": "Découvrez le handicap Pauvreté, réduisant la richesse de départ et représentant un passé modeste ou des difficultés financières.",
+    "Description": "La [richesse de départ](/regles/equipement/depart) du personnage est divisée par 1d10 + 5 (ou 10, à la discrétion du maître de jeu)."
+  },
+  {
+    "Id": "e892053f-0800-428b-bcac-2b0d6f017b4c",
+    "IsPublished": true,
+    "Slug": "pensee-claire",
+    "Name": "Pensée claire",
+    "Kind": "Gift",
+    "Summary": "Accorde mémoire parfaite et clarté d’esprit pour l’investigation.",
+    "MetaDescription": "Découvrez le don Pensée claire, qui accorde une mémoire parfaite, une lucidité accrue et un bonus d’analyse pour les tests d’Investigation.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se souvient exactement de tout ce qu’il a vu ou entendu pendant le dernier mois.\n- S’il observe le ciel pendant [une minute](/regles/aventure/temps), il peut déterminer où se trouve le Nord ainsi que le nombre d’heures restant avant le prochain coucher ou lever de soleil.\n- Il peut réfléchir pendant une minute à propos d’un sujet avant d’effectuer un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) ou de [Médecine](/regles/competences/medecine) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son test. Il doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n- Bonus permanent (+5) à ses [tests passifs](/regles/competences/tests/passif) d’Investigation."
+  },
+  {
+    "Id": "6a3637fd-a9cb-46d2-a5ba-517009a883a3",
+    "IsPublished": true,
+    "Slug": "richesse",
+    "Name": "Richesse",
+    "Kind": "Gift",
+    "Summary": "Multiplie la richesse de départ pour un statut aisé ou noble.",
+    "MetaDescription": "Découvrez le don Richesse, augmentant la fortune initiale du personnage et reflétant son statut social ou son passé prospère.",
+    "Description": "La [richesse de départ](/regles/equipement/depart) du personnage est multipliée par 1d10 + 5 (ou 10, à la discrétion du maître de jeu)."
+  },
+  {
     "Id": "660093cb-d809-4cbb-9025-9419e7893da8",
     "IsPublished": true,
     "Slug": "sante-de-fer",
