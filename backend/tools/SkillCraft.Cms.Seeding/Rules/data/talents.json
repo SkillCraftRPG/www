@@ -1935,7 +1935,7 @@
   },
   {
     "Id": "6fd1c3b5-4a26-4cc1-942a-9f8d844e3027",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "meta-magie",
     "Name": "Méta-magie",
     "Tier": 1,
@@ -2018,7 +2018,7 @@
     },
     "Summary": "Reste toujours alerte et peut lire sur les lèvres pour comprendre.",
     "MetaDescription": "Découvrez le talent Observateur, qui permet de rester vigilant en toute circonstance et de lire sur les lèvres pour comprendre sans entendre.",
-    "Description": "Le personnage ne peut être [surpris](/regles/combat/deroulement/surprise) lorsqu’il est conscient.\n\nÉgalement, il peut comprendre ce qu’une créature dit seulement en observant les mouvements de sa bouche si elle parle une [langue](/regles/langues) qu’il comprend comprend."
+    "Description": "Le personnage ne peut être [surpris](/regles/combat/deroulement/surprise) lorsqu’il est conscient.\n\nÉgalement, il peut comprendre ce qu’une créature dit seulement en observant les mouvements de sa bouche si elle parle une [langue](/regles/langues) qu’il comprend."
   },
   {
     "Id": "e5e59fa9-0f04-47db-9eb2-2ff9b9836c2f",
@@ -2380,8 +2380,8 @@
       "Name": "Représentation"
     },
     "RequiredTalent": null,
-    "Summary": "Formé à un nombre d’arts ou d’instruments égal à son rang de Représentation.",
-    "MetaDescription": null,
+    "Summary": "Formé à un nombre d’arts ou d’instruments égal à son rang.",
+    "MetaDescription": "Découvrez le talent Représentation, qui unit art et stratégie pour influencer les émotions et détourner l’attention en combat.",
     "Description": "Le personnage est formé à l’utilisation d’un nombre d’[instruments de musique](/regles/equipement/outils/musique), de types d’art ou d’[ensembles de jeu](/regles/equipement/outils/jeux) égal à son [rang](/regles/competences/rang) de [Représentation](/regles/competences/representation)."
   },
   {
@@ -2421,8 +2421,8 @@
       "Name": "Résistance"
     },
     "RequiredTalent": null,
-    "Summary": "Bonus de Vitalité.",
-    "MetaDescription": null,
+    "Summary": "Renforce la vitalité et la résistance physique du personnage.",
+    "MetaDescription": "Découvrez le talent Résistance, qui accroît la vitalité et la robustesse face à la douleur, aux blessures et aux chocs physiques.",
     "Description": "Confère au personnage un bonus permanent de 5 points de [Vitalité](/regles/statistiques/vitalite)."
   },
   {
@@ -2532,7 +2532,7 @@
     },
     "RequiredTalent": null,
     "Summary": "Formé aux outils de voleur et peut manipuler un objet par l’activité Objet.",
-    "MetaDescription": null,
+    "MetaDescription": "Découvrez le talent Roublardise, qui développe la dextérité, la ruse et la précision pour manipuler objets, pièges et mécanismes délicats.",
     "Description": "Le personnage est formé à l’utilisation des [outils de voleur](/regles/equipement/outils).\n\nÉgalement, il peut effectuer l’activité [Objet](/regles/combat/activites/objet) (une [action](/regles/combat/deroulement/tour)) afin de manipuler (déplacer, ou dissimuler sur lui ou quelqu’un d’autre) un objet d’au plus la grosseur de la paume de sa main."
   },
   {
@@ -2613,8 +2613,8 @@
       "Slug": "occultisme",
       "Name": "Occultisme"
     },
-    "Summary": "Permet d’acquérir gratuitement un pouvoir de tiers 0 et une capacité liée à un domaine divin ou d’animisme, et d’apprendre les pouvoirs de ce domaine.",
-    "MetaDescription": null,
+    "Summary": "Lie le personnage à un domaine sacré et révèle ses premiers dons.",
+    "MetaDescription": "Découvrez le talent Spiritualité, qui relie le personnage à un domaine divin ou animiste et lui accorde ses premiers pouvoirs sacrés.",
     "Description": "Le personnage sélectionne un [domaine divin](#) ou un [domaine d’animisme](#).\n\nL’animisme est l’ensemble des croyances consistant à octroyer une âme aux objets et aux animaux.\n\nLes domaines divins sont quant à eux associés à une ou plusieurs divinités, et relèvent de cultes et de religions.\n\nLe personnage peut désormais acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 0 associés à ce domaine, et il acquiert gratuitement un de ces pouvoirs.\n\nIl acquiert également une capacité spécifique au domaine qu’il a sélectionné."
   },
   {
@@ -2654,8 +2654,8 @@
       "Name": "Survie"
     },
     "RequiredTalent": null,
-    "Summary": "Permet d’improviser outils et tâches simples dans la nature, et de fabriquer de l’équipement à partir d’une carcasse lors d’une halte.",
-    "MetaDescription": null,
+    "Summary": "Permet de survivre, créer et s’abriter à partir de la nature.",
+    "MetaDescription": "Découvrez le talent Survie, qui permet de fabriquer, chasser et s’abriter en milieu sauvage à partir des ressources naturelles disponibles.",
     "Description": "Permet au personnage d’effectuer des tâches banales sans posséder les [outils](/regles/equipement/outils) nécessaires et en utilisant les ressources du milieu naturel et sauvage dans lequel il se trouve, par exemple allumer un feu, fabriquer un abri ou cuisiner.\n\nÉgalement, pendant une [halte](/regles/aventure/repos/halte) et en utilisant les ressources provenant d’une carcasse, il peut fabriquer un des objets suivants :\n\n- Un [bouclier léger](/regles/equipement/boucliers)\n- Une [arme simple](/regles/equipement/armes/simples) n’étant pas dotée de la propriété [Chargement](/regles/equipement/armes/proprietes)\n- 1d4 pièces de [munitions](/regles/equipement/armes/munitions) pour une arme simple n’étant pas dotée de la propriété [Chargement](/regles/equipement/armes/proprietes)\n\nLa carcasse doit être celle d’une bête, d’une construction, d’un dragon, d’une monstruosité, ou d’une plante, et la créature doit être de [taille](/regles/especes/taille) supérieure ou égale à Petite."
   },
   {
@@ -2700,8 +2700,8 @@
       "Slug": "intuition",
       "Name": "Intuition"
     },
-    "Summary": "Peut relancer un test d’Intuition pour détecter un mensonge. Détecte humeur ou influence magique après observation ou interaction.",
-    "MetaDescription": null,
+    "Summary": "Permet de percer les mensonges et détecter les émotions cachées.",
+    "MetaDescription": "Découvrez le talent Suspicion, qui permet de percer les mensonges et de détecter les émotions, intentions ou influences surnaturelles d’autrui.",
     "Description": "Lorsque le personnage effectue un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) afin de déterminer si une créature dit la vérité, le joueur peut rejouer le test avant d’en connaître le résultat. Il utilise le résultat de son choix.\n\nÉgalement, le personnage peut observer ou interagir avec une créature pendant [une minute](/regles/aventure/temps) afin de déterminer son humeur, ou si elle est influencée par un [effet surnaturel](/regles/combat/conditions/charme). Il peut également utiliser cette capacité par une [action](/regles/combat/deroulement/tour) ([Jugement](/regles/combat/activites/jugement)) s’il peut examiner de près la cible en la tâtant et en sentant son odeur."
   },
   {
@@ -2769,8 +2769,8 @@
       "Slug": "armes-de-tir",
       "Name": "Armes de tir"
     },
-    "Summary": "Peut tirer avec une arme à munition en 1 action au lieu de 2 et ne subit pas de désavantage lors d’un tir à bout portant.",
-    "MetaDescription": null,
+    "Summary": "Permet d’attaquer à distance en une seule action et rapproché.",
+    "MetaDescription": "Découvrez le talent Tir rapide, qui permet d’effectuer une attaque à distance en un seul geste fluide, sans désavantage à bout portant.",
     "Description": "Permet au personnage d’effectuer une [attaque](/regles/combat/attaque) avec une arme à [munition](/regles/equipement/armes/proprietes) par l’activité [Viser et tirer](/regles/combat/activites/viser-tirer) en une seule [action](/regles/combat/deroulement/tour).\n\nDe plus, il ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’il effectue un [tir à bout portant](/regles/combat/attaque/distance) avec une telle [arme](/regles/equipement/armes)."
   },
   {
@@ -2792,8 +2792,8 @@
       "Slug": "tromperie",
       "Name": "Tromperie"
     },
-    "Summary": "Permet de relancer un d10 lors d’un échec en Tromperie sans désavantage, et d’ajouter ½ rang associé à un test simulant une tâche.",
-    "MetaDescription": null,
+    "Summary": "Accorde relance et bonus lors des tentatives de duperie.",
+    "MetaDescription": "Découvrez le talent Tissu de mensonges, qui améliore la Tromperie et accorde une relance partielle ou un bonus lors des tentatives de duperie.",
     "Description": "Lorsque le personnage échoue un [test](/regles/competences/tests) de [Tromperie](/regles/competences/tromperie), si le test n’a pas été effectué avec [désavantage](/regles/competences/tests/avantage-desavantage), alors il peut relancer [un des d10](/regles/competences/tests/2d10) et doit utiliser le nouveau résultat.\n\nÉgalement, lorsqu’il tente de faire croire à une créature qu’il est en train d’accomplir une tâche, son test de Tromperie se voit conférer un bonus égal à la moitié du [rang](/regles/competences/rang) de la [compétence](/regles/competences) associée à cette tâche."
   },
   {
@@ -2805,8 +2805,8 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Augmente le seuil de tolérance à l’alcool et ignore les désavantages liés aux tests d’Adresse en première phase d’alcoolémie.",
-    "MetaDescription": null,
+    "Summary": "Augmente la résistance à l’alcool et limite les effets de l’ivresse.",
+    "MetaDescription": "Découvrez le talent Tolérance à l’alcool I, qui accroît la résistance à l’alcool et prévient les effets négatifs légers de l’ivresse sur l’Adresse.",
     "Description": "Augmente de manière permanente (+1) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, elle ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Adresse](/regles/attributs/adresse) et des [compétences](/regles/competences) associées lorsqu’elle est en première phase d’alcoolémie."
   },
   {
@@ -2823,8 +2823,8 @@
       "Slug": "tolerance-a-l-alcool-i",
       "Name": "Tolérance à l’alcool I"
     },
-    "Summary": "Augmente le seuil de tolérance à l’alcool et permet d'utiliser l’Effort débridé sans avoir atteint la première phase.",
-    "MetaDescription": null,
+    "Summary": "Renforce la résistance et libère l’Effort dès 2 points d’ivresse.",
+    "MetaDescription": "Découvrez le talent Tolérance à l’alcool II, qui accroît la résistance à l’alcool et permet d’utiliser l’Effort débridé dès un état d’ivresse modéré.",
     "Description": "Augmente de manière permanente (+2) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, le personnage peut utiliser l’**Effort débridé** dès qu’il a acquis 2 points d’alcoolémie ou plus. Il n’a pas besoin d’être en première phase d’alcoolémie afin d’utiliser cette capacité."
   },
   {
@@ -2895,8 +2895,8 @@
       "Name": "Tromperie"
     },
     "RequiredTalent": null,
-    "Summary": "Forme à la trousse de déguisement. Un succès en Tromperie contrôle l’Initiative d’une cible si un combat éclate dans la minute.",
-    "MetaDescription": null,
+    "Summary": "Permet de mentir, manipuler et se déguiser avec ruse.",
+    "MetaDescription": "Découvrez le talent Tromperie, qui permet de manipuler, mentir et se déguiser avec adresse pour tromper les sens et l’esprit des autres.",
     "Description": "Forme le personnage à l’utilisation de la [trousse de déguisement](/regles/equipement/outils).\n\nÉgalement, lorsqu’il réussit un [test](/regles/competences/tests) de [Tromperie](/regles/competences/tromperie) contre une créature, si celle-ci entre en situation de [combat](/regles/combat) contre lui pendant la prochaine [minute](/regles/aventure/temps), alors elle doit rejouer son [test d’Initiative](/regles/combat/deroulement/initiative), et conserve le résultat choisit par le personnage."
   },
   {
@@ -2913,8 +2913,8 @@
       "Slug": "roublardise",
       "Name": "Roublardise"
     },
-    "Summary": "Forme à l’utilisation de certaines trousses, et permet de les utiliser par un test de Roublardise.",
-    "MetaDescription": null,
+    "Summary": "Permet d’utiliser les outils de déguisement et de falsification.",
+    "MetaDescription": "Découvrez le talent Trousse, qui forme à l’usage des outils de déguisement et de falsification, pour manipuler objets et documents avec ruse.",
     "Description": "Le personnage est formé à l’utilisation de la [trousse de déguisement](/regles/equipement/outils) ([Tromperie](/regles/competences/tromperie)) et de la [trousse de falsification](/regles/equipement/outils) ([Linguistique](/regles/competences/linguistique)).\n\nLorsqu’il utilise une de ces trousses, il peut le faire par un [test](/regles/competences/tests) de [Roublardise](/regles/competences/roublardise) plutôt que par un test de Tromperie ou de Linguistique."
   },
   {
@@ -2926,8 +2926,8 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Gagne +1 à l’Initiative, n’est jamais pris au dépourvu avant son premier tour, et peut agir et dégainer une arme même s’il est surpris.",
-    "MetaDescription": null,
+    "Summary": "Augmente l’initiative et permet d’agir même pris par surprise.",
+    "MetaDescription": "Découvrez le talent Vigilance, qui améliore l’initiative et permet d’agir même pris par surprise au début d’un combat.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Bonus permanent (+1) à l’[Initiative](/regles/statistiques/initiative).\n- Il n’est jamais [pris au dépourvu](/regles/combat/deroulement/depourvu) avant d’avoir joué son premier [tour](/regles/combat/deroulement/tour) en [combat](/regles/combat).\n- Lorsqu’il est [surpris](/regles/combat/deroulement/surprise), il peut dégainer une [arme](/regles/equipement/armes) en [action libre](/regles/combat/deroulement/tour) au début de son tour, et peut effectuer une [action](/regles/combat/deroulement/tour) pendant son tour."
   }
 ]

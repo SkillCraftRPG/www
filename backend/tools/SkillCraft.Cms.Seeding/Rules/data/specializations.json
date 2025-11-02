@@ -2092,5 +2092,451 @@
         }
       ]
     }
+  },
+  {
+    "Id": "b07dff39-8085-4afa-8397-ad677520bd93",
+    "IsPublished": true,
+    "Slug": "soldat",
+    "Name": "Soldat",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Le soldat est un professionnel hautement discipliné entraîné au combat, ardent défenseur des intérêts de l’armée qu’il a intégrée. Il est vêtu d’une armure forgée avec précision et d’armes sélectionnées avec discernement, paré de son fidèle bouclier, sans oublier son arc de prédilection ou quelques javelots. Sa force ou sa précision légendaire, son regard scrutateur, sa résilience et sa loyauté indéfectible en font un allié remarquable.",
+    "Requirements": {
+      "Talent": {
+        "Id": "c8b0b178-8436-4343-8c89-83c4ff3b9d56",
+        "IsPublished": true,
+        "Slug": "manoeuvres-de-combat",
+        "Name": "Manœuvres de combat"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+          "IsPublished": true,
+          "Slug": "initiative-accrue",
+          "Name": "Initiative accrue"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "881700ba-f7d3-4425-b38c-86bc6e75fb08",
+          "IsPublished": true,
+          "Slug": "armes-de-tir",
+          "Name": "Armes de tir"
+        },
+        {
+          "Id": "273dcbee-6b36-43f0-b28a-bd1784ec066a",
+          "IsPublished": true,
+          "Slug": "armes-a-deux-mains",
+          "Name": "Armes à deux mains"
+        },
+        {
+          "Id": "1f8cf0b2-edb9-4f9f-aa13-a78794b8c1ba",
+          "IsPublished": true,
+          "Slug": "ambidextre",
+          "Name": "Ambidextre"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
+          "IsPublished": true,
+          "Slug": "cuirasse",
+          "Name": "Cuirassé"
+        },
+        {
+          "Id": "23525c66-0331-44f2-97df-e51ec96c87d8",
+          "IsPublished": true,
+          "Slug": "armes-de-finesse",
+          "Name": "Armes de finesse"
+        },
+        {
+          "Id": "55c22052-8b98-4155-9183-baa59aae999f",
+          "IsPublished": true,
+          "Slug": "culbutes",
+          "Name": "Culbutes"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
+          "IsPublished": true,
+          "Slug": "attaque-neutralisante",
+          "Name": "Attaque neutralisante"
+        },
+        {
+          "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
+          "IsPublished": true,
+          "Slug": "attaque-puissante",
+          "Name": "Attaque puissante"
+        },
+        {
+          "Id": "81c3ae91-c25f-481b-9628-0cc4ceb868c5",
+          "IsPublished": true,
+          "Slug": "coup-de-bouclier",
+          "Name": "Coup de bouclier"
+        },
+        {
+          "Id": "97bc80a5-4c5f-4e79-806f-83587553d743",
+          "IsPublished": true,
+          "Slug": "expertise-artisanale",
+          "Name": "Expertise artisanale"
+        },
+        {
+          "Id": "a1aae77b-f08a-4c8a-9e83-b971ce674eba",
+          "IsPublished": true,
+          "Slug": "lutte",
+          "Name": "Lutte"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Entraînement militaire",
+      "Description": [],
+      "DiscountedTalents": [
+        {
+          "Id": "a9309936-48c7-4f01-be61-e0efb8525b7a",
+          "IsPublished": true,
+          "Slug": "poigne-de-fer",
+          "Name": "Poigne de fer"
+        },
+        {
+          "Id": "9f0c90cc-29b8-4fb6-b4c8-fe930b3042d7",
+          "IsPublished": true,
+          "Slug": "attaque-precise",
+          "Name": "Attaque précise"
+        },
+        {
+          "Id": "3acd933a-0e0d-44ce-ab18-0a4966734307",
+          "IsPublished": true,
+          "Slug": "attaques-multiples",
+          "Name": "Attaques multiples"
+        }
+      ],
+      "Features": []
+    }
+  },
+  {
+    "Id": "bb04ecfd-b806-44ff-8b9d-ef5482f32642",
+    "IsPublished": true,
+    "Slug": "sorcier",
+    "Name": "Sorcier",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Au sommet d’une tour d’ébène se trouve un sorcier se penchant sur des techniques magiques ésotériques et méconnues de ses semblables. Il manipule des forces et artéfacts anciens et interdits, se plongeant dans des incantations oubliées depuis des siècles ou même plus. Il fait appeler aux vents du chaos afin de manipuler le destin et de déchirer la fabrique du monde matériel. Il est également capable d’absorber les enchantements les plus puissants dirigés vers lui afin de retourner cette énergie contre ses adversaires.",
+    "Requirements": {
+      "Talent": {
+        "Id": "6fd1c3b5-4a26-4cc1-942a-9f8d844e3027",
+        "IsPublished": true,
+        "Slug": "meta-magie",
+        "Name": "Méta-magie"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis le talent [Astrologie](/regles/talents/astrologie).",
+        "Il doit avoir acquis le talent [Élémentarisme](/regles/talents/elementarisme) en sélectionnant l’élément Esprit.",
+        "Il doit avoir acquis un [pouvoir](/regles/magie/pouvoirs) de tiers 1 d’[astromancie](#) ou associé à l’[élément Esprit](#). Les pouvoirs acquis gratuitement ne satisfont pas cette condition."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+          "IsPublished": true,
+          "Slug": "naturalisme",
+          "Name": "Naturalisme"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "17dcdec1-469d-452b-bf94-c225ddc3017a",
+          "IsPublished": true,
+          "Slug": "philologie",
+          "Name": "Philologie"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "97bc80a5-4c5f-4e79-806f-83587553d743",
+          "IsPublished": true,
+          "Slug": "expertise-artisanale",
+          "Name": "Expertise artisanale"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
+      "Other": [
+        "Un [pouvoir](/regles/magie/pouvoirs) de tiers 1 d’[astromancie](#).",
+        "Un pouvoir de tiers 1 associé à l’[élément Esprit](#)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Sorcellerie",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) dès qu’il l’acquiert la spécialisation [Astromancien](/regles/specialisations/astromancien).",
+        "Il peut acquérir les pouvoirs de tiers 2 associés à l’[élément Esprit](#) dès qu’il l’acquiert la spécialisation [Élémentariste](/regles/specialisations/elementariste), si sa spécialité élémentaire est l’Esprit.",
+        "Il peut utiliser une capacité de [Méta-magie](/regles/talents/meta-magie) en dépensant des [points d’essence élémentaire](#) associés à l’Esprit plutôt que des points d’[Énergie](/regles/statistiques/energie). Lorsqu’il en fait ainsi, il le fait en [action libre](/regles/combat/deroulement/tour), et dépense un point d’essence élémentaire pour chaque tranche de points d’Énergie supplémentaires requis par cette capacité."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "db16d90c-099e-45ce-8321-c174eeb38a0b",
+          "IsPublished": true,
+          "Slug": "optimisation-magique",
+          "Name": "Optimisation magique"
+        },
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+          "IsPublished": true,
+          "Slug": "magie-precise",
+          "Name": "Magie précise"
+        }
+      ],
+      "Features": []
+    }
+  },
+  {
+    "Id": "e4133c80-ce3f-4816-a576-8bb851a519ab",
+    "IsPublished": true,
+    "Slug": "troubadour",
+    "Name": "Troubadour",
+    "Tier": 2,
+    "Summary": "\uD83D\uDEA7",
+    "MetaDescription": "\uD83D\uDEA7",
+    "Description": "Le troubadour est un ménestrel, soit un compositeur, un poète, un musicien ou un artiste ambulant, ayant percé parmi les siens, et ayant rejoint une ou plusieurs cours nobles. Il chante les épopées de chevalerie et l’amour courtois à ces cours, mais certains n’hésitent pas à faire usage d’humour ou à interpréter des chansons grivoises auprès de la populace, se moquant parfois du seigneur qui l’engage devant ses sujets.",
+    "Requirements": {
+      "Talent": null,
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Ménestrel](/regles/specialisations/menestrel).",
+        "Il doit également avoir acquis un des deux talents suivants : [Distraction](/regles/talents/distraction) ou [Présence terrifiante](/regles/talents/presence-terrifiante)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "0daa9126-6911-4cc8-a960-d0898e31c27e",
+          "IsPublished": true,
+          "Slug": "maraudage",
+          "Name": "Maraudage"
+        },
+        {
+          "Id": "97c10f43-c82d-41b1-b241-9b6cace8e9ab",
+          "IsPublished": true,
+          "Slug": "orientation",
+          "Name": "Orientation"
+        },
+        {
+          "Id": "66def333-62b6-414d-b35a-d80ae0207140",
+          "IsPublished": true,
+          "Slug": "tolerance-a-l-alcool-ii",
+          "Name": "Tolérance à l’alcool II"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "1f8cf0b2-edb9-4f9f-aa13-a78794b8c1ba",
+          "IsPublished": true,
+          "Slug": "ambidextre",
+          "Name": "Ambidextre"
+        },
+        {
+          "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+          "IsPublished": true,
+          "Slug": "naturalisme",
+          "Name": "Naturalisme"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "5b2904bd-5e73-458e-a37d-d2d1d15e003f",
+          "IsPublished": true,
+          "Slug": "mefait-feutre",
+          "Name": "Méfait feutré"
+        },
+        {
+          "Id": "55c22052-8b98-4155-9183-baa59aae999f",
+          "IsPublished": true,
+          "Slug": "culbutes",
+          "Name": "Culbutes"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "17dcdec1-469d-452b-bf94-c225ddc3017a",
+          "IsPublished": true,
+          "Slug": "philologie",
+          "Name": "Philologie"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+          "IsPublished": true,
+          "Slug": "bris",
+          "Name": "Bris"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Fascination",
+      "Description": [
+        "Lorsqu’il [acquiert](/regles/talents/acquisition) un des [talents](/regles/talents) suivants, il acquiert gratuitement l’autre : [Érudition](/regles/talents/erudition), [Mythologie](/regles/talents/mythologie)."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
+          "IsPublished": true,
+          "Slug": "provocation",
+          "Name": "Provocation"
+        }
+      ],
+      "Features": []
+    }
   }
 ]

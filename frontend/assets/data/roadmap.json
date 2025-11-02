@@ -36,13 +36,14 @@
     "id": "96a7c503-558a-4c71-9ac8-d9f67e2bf751",
     "date": "2025-12-01T12:00:00Z",
     "title": "Options intermédiaires",
-    "summary": "Sélection de création et de progression de personnage jusqu’au tiers 2. Animisme, herboristerie et élémentarisme.",
+    "summary": "Sélection de création et de progression de personnage jusqu’au tiers 2. Herboristerie et manœuvres de combat.",
     "detail": [
-      "Espèces, langues et alphabets classiques",
+      "Dons et handicaps",
+      "Éducations",
+      "Espèces génériques",
+      "Langues et alphabets génériques, avec explications",
       "Talents de tiers 2",
       "Spécialisations de tiers 2",
-      "Animisme",
-      "Élémentarisme",
       "Herboristerie",
       "Manœuvres de combat"
     ]
@@ -51,23 +52,30 @@
     "id": "952d2fd0-99ae-436c-bb4f-cfcda2f28498",
     "date": "2026-01-01T12:00:00Z",
     "title": "Options avancées",
-    "summary": "Sélection complète de création et de progression de personnage jusqu’au tiers 3. Options de personnalisation.",
+    "summary": "Sélection avancée de création et de progression de personnage jusqu’au tiers 3. Options de personnalisation et magie.",
     "detail": [
-      "Espèces, langues et alphabets spécialisées",
+      "Espèces, langues et alphabets classiques",
       "Talents de tiers 3",
       "Spécialisations de tiers 3",
-      "Infusions magiques",
-      "Invocations mystérieuses",
-      "Jeu de rôle proactif",
       "Traits de personnalité, idéaux et défauts",
-      "Schémas de jeu de rôle"
+      "Animisme",
+      "Astromancie",
+      "Domaines divins",
+      "Élémentarisme"
     ]
+  },
+  {
+    "id": "6c1ce886-3ea6-47b3-8840-32707de39a38",
+    "date": "2026-02-01T12:00:00Z",
+    "title": "Options complètes",
+    "summary": "Sélection complète de création et de progression de personnage, explication des schémas de jeu de rôle et proactif.",
+    "detail": ["Espèces, langues et alphabets spécialisées", "Infusions magiques", "Invocations mystérieuses", "Jeu de rôle proactif", "Schémas de jeu de rôle"]
   },
   {
     "id": "1c8f2dfc-7957-4cfd-a01c-b86acee3f579",
     "date": "2027-01-01T12:00:00Z",
     "title": "Grimoire",
-    "summary": "🚧",
-    "detail": []
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non velit erat. Cras id tortor dignissim pharetra.",
+    "detail": ["Grimoire"]
   }
 ]
