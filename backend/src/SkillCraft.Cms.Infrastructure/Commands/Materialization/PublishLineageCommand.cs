@@ -70,8 +70,13 @@ internal class PublishLineageCommandHandler : ICommandHandler<PublishLineageComm
     }
     lineage.SizeCategory = sizeCategory;
     lineage.SizeRoll = invariant.TryGetString(Lineages.SizeRoll);
+    lineage.SizeText = locale.TryGetString(Lineages.SizeText);
+
     SetWeight(lineage, invariant);
+    lineage.WeightText = locale.TryGetString(Lineages.WeightText);
+
     SetAge(lineage, invariant);
+    lineage.AgeText = locale.TryGetString(Lineages.AgeText);
 
     lineage.Summary = locale.TryGetString(Lineages.Summary);
     lineage.MetaDescription = locale.Description?.ToMetaDescription();

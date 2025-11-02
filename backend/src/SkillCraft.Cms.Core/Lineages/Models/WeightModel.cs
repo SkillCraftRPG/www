@@ -7,17 +7,19 @@ public record WeightModel
   public string? Normal { get; set; }
   public string? Overweight { get; set; }
   public string? Obese { get; set; }
+  public string? Text { get; set; }
 
   public WeightModel()
   {
   }
 
-  public WeightModel(string? malnutrition, string? skinny, string? normal, string? overweight, string? obese)
+  public WeightModel(string? malnutrition, string? skinny, string? normal, string? overweight, string? obese, string? text = null)
   {
     Malnutrition = malnutrition;
     Skinny = skinny;
     Normal = normal;
     Overweight = overweight;
     Obese = obese;
+    Text = text;
   }
 }

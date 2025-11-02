@@ -41,17 +41,20 @@ internal class LineageEntity : AggregateEntity
 
   public SizeCategory SizeCategory { get; set; }
   public string? SizeRoll { get; set; }
+  public string? SizeText { get; set; }
 
   public string? Malnutrition { get; set; }
   public string? Skinny { get; set; }
   public string? NormalWeight { get; set; }
   public string? Overweight { get; set; }
   public string? Obese { get; set; }
+  public string? WeightText { get; set; }
 
   public int Teenager { get; set; }
   public int Adult { get; set; }
   public int Mature { get; set; }
   public int Venerable { get; set; }
+  public string? AgeText { get; set; }
 
   public string? Summary { get; set; }
   public string? MetaDescription { get; set; }
@@ -126,7 +129,7 @@ internal class LineageEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public AgeModel GetAge() => new(Teenager, Adult, Mature, Venerable);
+  public AgeModel GetAge() => new(Teenager, Adult, Mature, Venerable, AgeText);
 
   public NamesModel GetNames()
   {
@@ -144,11 +147,11 @@ internal class LineageEntity : AggregateEntity
     }
   }
 
-  public SizeModel GetSize() => new(SizeCategory, SizeRoll);
+  public SizeModel GetSize() => new(SizeCategory, SizeRoll, SizeText);
 
   public SpeedsModel GetSpeeds() => new(Walk, Climb, Swim, Fly, Burrow, Hover);
 
-  public WeightModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese);
+  public WeightModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese, WeightText);
 
   public override string ToString() => $"{Name} | {base.ToString()}";
 }

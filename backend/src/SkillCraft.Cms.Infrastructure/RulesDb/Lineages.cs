@@ -15,6 +15,7 @@ internal static class Lineages
   public static readonly ColumnId Version = new(nameof(LineageEntity.Version), Table);
 
   public static readonly ColumnId Adult = new(nameof(LineageEntity.Adult), Table);
+  public static readonly ColumnId AgeText = new(nameof(LineageEntity.AgeText), Table);
   public static readonly ColumnId Burrow = new(nameof(LineageEntity.Burrow), Table);
   public static readonly ColumnId Climb = new(nameof(LineageEntity.Climb), Table);
   public static readonly ColumnId Description = new(nameof(LineageEntity.Description), Table);
@@ -37,6 +38,7 @@ internal static class Lineages
   public static readonly ColumnId ParentUid = new(nameof(LineageEntity.ParentUid), Table);
   public static readonly ColumnId SizeCategory = new(nameof(LineageEntity.SizeCategory), Table);
   public static readonly ColumnId SizeRoll = new(nameof(LineageEntity.SizeRoll), Table);
+  public static readonly ColumnId SizeText = new(nameof(LineageEntity.SizeText), Table);
   public static readonly ColumnId Skinny = new(nameof(LineageEntity.Skinny), Table);
   public static readonly ColumnId Slug = new(nameof(LineageEntity.Slug), Table);
   public static readonly ColumnId SlugNormalized = new(nameof(LineageEntity.SlugNormalized), Table);
@@ -45,4 +47,5 @@ internal static class Lineages
   public static readonly ColumnId Teenager = new(nameof(LineageEntity.Teenager), Table);
   public static readonly ColumnId Venerable = new(nameof(LineageEntity.Venerable), Table);
   public static readonly ColumnId Walk = new(nameof(LineageEntity.Walk), Table);
+  public static readonly ColumnId WeightText = new(nameof(LineageEntity.WeightText), Table);
 }
