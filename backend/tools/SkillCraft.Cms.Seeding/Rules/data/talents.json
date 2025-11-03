@@ -2216,8 +2216,8 @@
       "Slug": "manoeuvres-de-combat",
       "Name": "Manœuvres de combat"
     },
-    "Summary": "Avantage au désarmement, désavantage aux adversaires. Désavantage aux fuyards agrippés. Peut infliger des dégâts non létaux par une poigne.",
-    "MetaDescription": null,
+    "Summary": "Renforce les prises et le contrôle en combat rapproché.",
+    "MetaDescription": "Découvrez le talent Poigne de fer, qui renforce les prises, facilite le désarmement et inflige des dégâts accrus en combat rapproché.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il tente de [désarmer](/regles/combat/activites/desarmer) un adversaire, son [test](/regles/competences/tests) se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il est ciblé par une tentative de désarmement, le test de son adversaire est affligé du désavantage.\n- Lorsqu’une créature qu’il [agrippe](/regles/combat/activites/agripper) tente de [s’échapper](/regles/combat/activites/echapper), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de serrer sa poigne et d’infliger le désavantage au test de cette créature.\n- Lorsqu’il tient une créature [agrippée](/regles/combat/conditions/agrippe), il peut serrer sa poigne par une [action](/regles/combat/deroulement/tour) afin de tenter de la [blesser](/regles/combat/degats). Cette action compte comme une [attaque](/regles/combat/attaque). Il doit respecter sa limite d’attaques, et cette action n’est pas exempte de la pénalité des [attaques multiples](/regles/combat/attaque/multiples).\n\nLorsqu’il sert sa poigne, il effectue un test d’[Athlétisme](/regles/competences/athletisme) [opposé](/regles/competences/tests/oppose) à un test de [Résistance](/regles/competences/resistance). En cas de réussite, le personnage inflige 1 + [Force](/regles/statistiques/force) points de dégâts [contondants](/regles/combat/degats/types) [non létaux](/regles/combat/degats/letalite) à sa cible. S’il est formé pour le [combat à mains nues](/regles/combat/attaque/mains-nues), il remplace 1 par le dé approprié."
   },
   {

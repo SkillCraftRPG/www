@@ -77,7 +77,7 @@ export type Feature = {
   description?: string | null;
 };
 
-export type Education = Attribute & {
+export type Education = Aggregate & {
   slug: string;
   name: string;
   wealthMultiplier?: number | null;
@@ -114,9 +114,20 @@ export type GameSkill =
 
 export type GameStatistic = "Dodge" | "Encumbrance" | "Initiative" | "Learning" | "Power" | "Precision" | "Stamina" | "Stratagem" | "Strength" | "Vitality";
 
-export type Language = Attribute & {
+export type Language = Aggregate & {
   slug: string;
   name: string;
+  script?: Script | null;
+  typicalSpeakers?: string | null;
+  summary?: string | null;
+  metaDescription?: string | null;
+  description?: string | null;
+};
+
+export type Script = Aggregate & {
+  slug: string;
+  name: string;
+  languages: Language[];
   summary?: string | null;
   metaDescription?: string | null;
   description?: string | null;
