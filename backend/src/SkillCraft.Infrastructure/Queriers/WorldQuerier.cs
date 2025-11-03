@@ -1,6 +1,7 @@
 ﻿using Krakenar.Contracts.Actors;
 using Logitar.EventSourcing;
 using Microsoft.EntityFrameworkCore;
+using SkillCraft.Core;
 using SkillCraft.Core.Worlds;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Infrastructure.Actors;
@@ -11,11 +12,13 @@ namespace SkillCraft.Infrastructure.Queriers;
 internal class WorldQuerier : IWorldQuerier
 {
   private readonly IActorService _actorService;
+  private readonly IApplicationContext _applicationContext;
   private readonly DbSet<WorldEntity> _worlds;
 
-  public WorldQuerier(IActorService actorService, GameContext context)
+  public WorldQuerier(IActorService actorService, IApplicationContext applicationContext, GameContext context)
   {
     _actorService = actorService;
+    _applicationContext = applicationContext;
     _worlds = context.Worlds;
   }
 
@@ -25,15 +28,17 @@ internal class WorldQuerier : IWorldQuerier
   }
   public async Task<WorldModel?> ReadAsync(WorldId id, CancellationToken cancellationToken)
   {
+    Guid userId = _applicationContext.UserId.ToGuid();
     WorldEntity? world = await _worlds.AsNoTracking()
-      .Where(x => x.StreamId == id.Value) // TODO(fpion): filtering?
+      .Where(x => x.StreamId == id.Value && x.OwnerId == userId)
       .SingleOrDefaultAsync(cancellationToken);
     return world is null ? null : await MapAsync(world, cancellationToken);
   }
   public async Task<WorldModel?> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
+    Guid userId = _applicationContext.UserId.ToGuid();
     WorldEntity? world = await _worlds.AsNoTracking()
-      .Where(x => x.Id == id) // TODO(fpion): filtering?
+      .Where(x => x.Id == id && x.OwnerId == userId)
       .SingleOrDefaultAsync(cancellationToken);
     return world is null ? null : await MapAsync(world, cancellationToken);
   }
