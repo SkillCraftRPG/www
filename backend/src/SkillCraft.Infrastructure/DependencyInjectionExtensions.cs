@@ -16,8 +16,8 @@ public static class DependencyInjectionExtensions
       .AddEventHandlers()
       .AddQueriers()
       .AddRepositories()
-      .AddScoped<IActorService, ActorService>()
-      .AddSingleton<IEventSerializer, EventSerializer>();
+      .AddSingleton<IEventSerializer, EventSerializer>()
+      .AddScoped<IActorService, ActorService>();
   }
 
   private static IServiceCollection AddEventHandlers(this IServiceCollection services)
