@@ -8,6 +8,7 @@ internal enum EntityKind
   Education,
   Feature,
   Gift,
+  Language,
   Lineage,
   Script,
   Skill,

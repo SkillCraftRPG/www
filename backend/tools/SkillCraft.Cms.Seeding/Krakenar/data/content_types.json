@@ -443,7 +443,68 @@
     "UniqueName": "Language",
     "DisplayName": "Langue",
     "Description": null,
-    "Fields": []
+    "Fields": [
+      {
+        "Id": "9ee86492-a998-4a00-ac6e-2d05465d0e9d",
+        "FieldType": "Script",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Script",
+        "DisplayName": "Système d’écriture",
+        "Description": null,
+        "Placeholder": "Sélectionnez un système d’écriture"
+      },
+      {
+        "Id": "b191115d-c38c-4d00-816f-1a9f31f3d2ca",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "9f4820a5-fde3-40ca-90dd-7d446e05181b",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "63ac017c-2773-435c-b0bb-a3bcdfc7d599",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "8ecd06bc-5315-436d-be8a-2827e6af285a",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "TypicalSpeakers",
+        "DisplayName": "Locuteurs typiques",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
   },
   {
     "Id": "df9bfb44-c586-4cb3-b08a-77c8508a0505",
