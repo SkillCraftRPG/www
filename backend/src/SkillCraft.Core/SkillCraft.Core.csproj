@@ -15,7 +15,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Krakenar.Core" Version="1.1.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Krakenar.Contracts" Version="1.1.0" />
+    <PackageReference Include="Logitar.EventSourcing" Version="7.0.2" />
   </ItemGroup>
 
   <ItemGroup>

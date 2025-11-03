@@ -1,5 +1,4 @@
 ﻿using Krakenar.Contracts;
-using Krakenar.Core.Users;
 using Logitar;
 
 namespace SkillCraft.Core.Permissions;
@@ -29,13 +28,13 @@ public class PermissionDeniedException : ErrorException
   public PermissionDeniedException(UserId userId, string action, IEntity? resource = null)
     : base(BuildMessage(userId, action, resource))
   {
-    UserId = userId.EntityId;
+    UserId = userId.ToGuid();
     Action = action;
     Resource = resource;
   }
 
   private static string BuildMessage(UserId userId, string action, IEntity? resource) => new ErrorMessageBuilder(ErrorMessage)
-    .AddData(nameof(UserId), userId.EntityId)
+    .AddData(nameof(UserId), userId.ToGuid())
     .AddData(nameof(Action), action)
     .AddData("Entity.Kind", resource?.Kind, "<null>")
     .AddData("Entity.Identifier", resource?.Identifier, "<null>")

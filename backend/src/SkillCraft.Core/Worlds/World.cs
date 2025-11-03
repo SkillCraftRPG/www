@@ -1,7 +1,4 @@
-﻿using Krakenar.Core;
-using Krakenar.Core.Users;
-using Logitar.EventSourcing;
-using SkillCraft.Core.Actors;
+﻿using Logitar.EventSourcing;
 using SkillCraft.Core.Worlds.Events;
 
 namespace SkillCraft.Core.Worlds;
@@ -49,7 +46,7 @@ public class World : AggregateRoot
   public World(UserId ownerId, DisplayName name, WorldId? worldId = null)
     : base((worldId ?? WorldId.NewId()).StreamId)
   {
-    Raise(new WorldCreated(ownerId, name), ownerId.GetActorId());
+    Raise(new WorldCreated(ownerId, name), ownerId.ActorId);
   }
   protected virtual void Handle(WorldCreated @event)
   {
@@ -62,7 +59,7 @@ public class World : AggregateRoot
   {
     if (HasUpdates)
     {
-      Raise(_updated, userId.GetActorId(), DateTime.Now);
+      Raise(_updated, userId.ActorId, DateTime.Now);
       _updated = new();
     }
   }

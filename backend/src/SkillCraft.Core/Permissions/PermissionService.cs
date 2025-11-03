@@ -1,7 +1,4 @@
-﻿using Krakenar.Core;
-using Krakenar.Core.Users;
-using SkillCraft.Core.Actors;
-using SkillCraft.Core.Worlds;
+﻿using SkillCraft.Core.Worlds;
 
 namespace SkillCraft.Core.Permissions;
 
@@ -36,7 +33,7 @@ internal class PermissionService : IPermissionService
   }
   public async Task CheckAsync(string action, object? resource, CancellationToken cancellationToken)
   {
-    UserId userId = _applicationContext.GetUserId();
+    UserId userId = _applicationContext.UserId;
 
     Entity? entity = null;
     bool isAllowed = false;

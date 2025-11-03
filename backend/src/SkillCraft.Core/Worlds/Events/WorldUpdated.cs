@@ -1,5 +1,4 @@
-﻿using Krakenar.Core;
-using Logitar.EventSourcing;
+﻿using Logitar.EventSourcing;
 
 namespace SkillCraft.Core.Worlds.Events;
 

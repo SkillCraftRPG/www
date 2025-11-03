@@ -1,7 +1,4 @@
-﻿using Krakenar.Core.Logging;
-using Krakenar.Core.Settings;
-using Logitar.EventSourcing;
-using Microsoft.Extensions.Configuration;
+﻿using Logitar.EventSourcing;
 using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.Core.Permissions;
 using SkillCraft.Core.Worlds;
@@ -16,13 +13,6 @@ public static class DependencyInjectionExtensions
 
     return services
       .AddLogitarEventSourcing()
-      .AddSingleton(InitializeRetrySettings)
-      .AddScoped<ILoggingService, LoggingService>()
       .AddScoped<IPermissionService, PermissionService>();
-  }
-
-  private static RetrySettings InitializeRetrySettings(this IServiceProvider serviceProvider)
-  {
-    return RetrySettings.Initialize(serviceProvider.GetRequiredService<IConfiguration>());
   }
 }

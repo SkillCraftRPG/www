@@ -1,7 +1,4 @@
 ﻿using FluentValidation;
-using Krakenar.Core;
-using Krakenar.Core.Users;
-using SkillCraft.Core.Actors;
 using SkillCraft.Core.Permissions;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Core.Worlds.Validators;
@@ -44,7 +41,7 @@ internal class CreateOrReplaceWorldCommandHandler : ICommandHandler<CreateOrRepl
       world = await _worldRepository.LoadAsync(worldId, cancellationToken);
     }
 
-    UserId ownerId = _applicationContext.GetUserId();
+    UserId ownerId = _applicationContext.UserId;
     DisplayName name = new(payload.Name);
 
     bool created = false;

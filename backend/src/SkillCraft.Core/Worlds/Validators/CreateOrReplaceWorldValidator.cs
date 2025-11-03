@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Krakenar.Core;
 using SkillCraft.Core.Worlds.Models;
 
 namespace SkillCraft.Core.Worlds.Validators;
