@@ -11,7 +11,7 @@ internal class WorldConfiguration : AggregateConfiguration<WorldEntity>, IEntity
   {
     base.Configure(builder);
 
-    builder.ToTable(""); // TODO(fpion): implement
+    builder.ToTable(GameDb.Worlds.Table.Table!, GameDb.Worlds.Table.Schema);
     builder.HasKey(x => x.WorldId);
 
     builder.HasIndex(x => x.Id).IsUnique();
