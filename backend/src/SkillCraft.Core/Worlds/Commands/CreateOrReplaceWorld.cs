@@ -54,6 +54,8 @@ internal class CreateOrReplaceWorldCommandHandler : ICommandHandler<CreateOrRepl
     }
     else
     {
+      await _permissionService.CheckAsync(ActionKind.Update, world, cancellationToken);
+
       world.Name = name;
     }
 
