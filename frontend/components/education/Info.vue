@@ -12,4 +12,6 @@ import type { Education } from "~/types/game";
 defineProps<{
   education: Education;
 }>();
+
+// TODO(fpion): should not contain a H2!
 </script>

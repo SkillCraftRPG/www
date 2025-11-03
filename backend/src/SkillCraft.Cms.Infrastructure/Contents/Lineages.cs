@@ -19,4 +19,7 @@ public static class Lineages
   public static readonly Guid LanguagesText = Guid.Parse("17cd5dc5-ddc8-4558-afd6-77e1e7ea933b");
   public static readonly Guid NamesText = Guid.Parse("31619dca-8655-46bd-a9ed-5ffdc08f1f00");
   public static readonly Guid NamesSelection = Guid.Parse("443063e3-5df2-4f08-a82c-f3aed1b7c0ce");
+  public static readonly Guid SizeText = Guid.Parse("365f9e84-387e-44b3-80c0-630d67f92fbb");
+  public static readonly Guid WeightText = Guid.Parse("22496716-6dab-428a-8a92-d8886fcf8b97");
+  public static readonly Guid AgeText = Guid.Parse("cd0d0123-d75e-4f06-9075-fc5095853290");
 }

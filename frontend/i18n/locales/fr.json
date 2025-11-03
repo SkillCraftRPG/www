@@ -48,6 +48,28 @@
       }
     }
   },
+  "unit": {
+    "centimeter": "centimètre | centimètre | centimètres",
+    "inch": "pouce | pouce | pouces",
+    "kilogram": "kilogramme | kilogramme | kilogrammes",
+    "foot": "pied | pied | pieds",
+    "meter": "mètre | mètre | mètres",
+    "pound": "livre | livre | livres",
+    "year": "an | an | ans"
+  },
+  "users": {
+    "signIn": {
+      "invalidCredentials": {
+        "help": "Veuillez vérifier que vous avez bien entré votre nom d’utilisateur et mot de passe.",
+        "lead": "Connexion échouée !"
+      },
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "title": "Connexion",
+      "username": "Nom d’utilisateur"
+    },
+    "signOut": "Déconnexion"
+  },
   "weapon": {
     "property": {
       "options": {
@@ -65,19 +87,6 @@
         "Versatile": "Versatile"
       }
     }
-  },
-  "users": {
-    "signIn": {
-      "invalidCredentials": {
-        "help": "Veuillez vérifier que vous avez bien entré votre nom d’utilisateur et mot de passe.",
-        "lead": "Connexion échouée !"
-      },
-      "password": "Mot de passe",
-      "submit": "Se connecter",
-      "title": "Connexion",
-      "username": "Nom d’utilisateur"
-    },
-    "signOut": "Déconnexion"
   },
   "yes": "Oui"
 }

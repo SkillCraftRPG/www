@@ -114,6 +114,14 @@ export type GameSkill =
 
 export type GameStatistic = "Dodge" | "Encumbrance" | "Initiative" | "Learning" | "Power" | "Precision" | "Stamina" | "Stratagem" | "Strength" | "Vitality";
 
+export type Language = Attribute & {
+  slug: string;
+  name: string;
+  summary?: string | null;
+  metaDescription?: string | null;
+  description?: string | null;
+};
+
 export type SearchResults<T> = {
   items: T[];
   total: number;

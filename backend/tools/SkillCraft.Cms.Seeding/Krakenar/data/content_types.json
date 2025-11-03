@@ -586,6 +586,42 @@
         "DisplayName": "Noms (sélection)",
         "Description": null,
         "Placeholder": "Une catégorie par ligne, au format \"{Key}:{Name},{Name},…\" ; catégories : Family, Female, Male, Unisex"
+      },
+      {
+        "Id": "365f9e84-387e-44b3-80c0-630d67f92fbb",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "SizeText",
+        "DisplayName": "Taille (texte)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "22496716-6dab-428a-8a92-d8886fcf8b97",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "WeightText",
+        "DisplayName": "Poids (texte)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "cd0d0123-d75e-4f06-9075-fc5095853290",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "AgeText",
+        "DisplayName": "Âge (texte)",
+        "Description": null,
+        "Placeholder": null
       }
     ]
   },

@@ -22,7 +22,7 @@ const route = useRoute();
 const { orderBy } = arrayUtils;
 
 const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
-const { data } = await useAsyncData<Skill | undefined>(
+const { data } = await useAsyncData<Skill>(
   `skill:${slug.value}`,
   async () => {
     const skill = await $fetch<Skill>(`/api/skills/slug:${slug.value}`, {

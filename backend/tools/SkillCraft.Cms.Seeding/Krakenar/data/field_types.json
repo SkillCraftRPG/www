@@ -42,7 +42,7 @@
     "Description": null,
     "Number": {
       "MinimumValue": 0,
-      "MaximumValue": 2,
+      "MaximumValue": 3,
       "Step": 1
     }
   },

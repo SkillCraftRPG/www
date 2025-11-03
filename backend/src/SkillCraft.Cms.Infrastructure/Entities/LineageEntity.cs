@@ -1,6 +1,7 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
+using Logitar.EventSourcing;
 using SkillCraft.Cms.Core.Lineages.Models;
 using SkillCraft.Contracts;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
@@ -40,17 +41,20 @@ internal class LineageEntity : AggregateEntity
 
   public SizeCategory SizeCategory { get; set; }
   public string? SizeRoll { get; set; }
+  public string? SizeText { get; set; }
 
   public string? Malnutrition { get; set; }
   public string? Skinny { get; set; }
   public string? NormalWeight { get; set; }
   public string? Overweight { get; set; }
   public string? Obese { get; set; }
+  public string? WeightText { get; set; }
 
-  public int Adolescent { get; set; }
+  public int Teenager { get; set; }
   public int Adult { get; set; }
   public int Mature { get; set; }
   public int Venerable { get; set; }
+  public string? AgeText { get; set; }
 
   public string? Summary { get; set; }
   public string? MetaDescription { get; set; }
@@ -69,6 +73,30 @@ internal class LineageEntity : AggregateEntity
 
   private LineageEntity() : base()
   {
+  }
+
+  public override IReadOnlyCollection<ActorId> GetActorIds()
+  {
+    List<ActorId> actorIds = new(base.GetActorIds());
+    if (Parent is not null)
+    {
+      actorIds.AddRange(Parent.GetActorIds());
+    }
+    foreach (LineageFeatureEntity relation in Features)
+    {
+      if (relation.Feature is not null)
+      {
+        actorIds.AddRange(relation.Feature.GetActorIds());
+      }
+    }
+    foreach (LineageLanguageEntity relation in Languages)
+    {
+      if (relation.Language is not null)
+      {
+        actorIds.AddRange(relation.Language.GetActorIds());
+      }
+    }
+    return actorIds.AsReadOnly();
   }
 
   public void AddFeature(FeatureEntity feature)
@@ -101,9 +129,11 @@ internal class LineageEntity : AggregateEntity
     IsPublished = false;
   }
 
-  public NamesModel? GetNames()
+  public AgeModel GetAge() => new(Teenager, Adult, Mature, Venerable, AgeText);
+
+  public NamesModel GetNames()
   {
-    return Names is null ? null : JsonSerializer.Deserialize<NamesModel>(Names);
+    return (Names is null ? null : JsonSerializer.Deserialize<NamesModel>(Names)) ?? new();
   }
   public void SetNames(NamesModel names)
   {
@@ -116,6 +146,12 @@ internal class LineageEntity : AggregateEntity
       Names = null;
     }
   }
+
+  public SizeModel GetSize() => new(SizeCategory, SizeRoll, SizeText);
+
+  public SpeedsModel GetSpeeds() => new(Walk, Climb, Swim, Fly, Burrow, Hover);
+
+  public WeightModel GetWeight() => new(Malnutrition, Skinny, NormalWeight, Overweight, Obese, WeightText);
 
   public override string ToString() => $"{Name} | {base.ToString()}";
 }
