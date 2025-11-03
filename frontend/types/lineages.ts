@@ -5,6 +5,7 @@ export type Age = {
   adult: number;
   mature: number;
   venerable: number;
+  text?: string | null;
 };
 
 export type Languages = {
@@ -47,6 +48,7 @@ export type Names = {
 export type Size = {
   category: SizeCategory;
   roll?: string | null;
+  text?: string | null;
 };
 
 export type Speeds = {
@@ -64,4 +66,5 @@ export type Weight = {
   normal?: string | null;
   overweight?: string | null;
   obese?: string | null;
+  text?: string | null;
 };

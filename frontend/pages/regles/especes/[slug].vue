@@ -7,6 +7,8 @@
       <LineageChildren v-if="lineage.children.length" :children="lineage.children" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
       <LineageNames v-if="showNames" :names="lineage.names" />
+      <LineagePhysical :lineage="lineage" />
+      <LineageSpeeds v-if="showSpeeds" :speeds="lineage.speeds" />
       <LineageFeatures v-if="lineage.features.length" :lineage="lineage" />
     </template>
   </main>
@@ -59,13 +61,14 @@ const showNames = computed<boolean>(() =>
         lineage.value.names.custom.length > 0),
   ),
 );
+const showSpeeds = computed<boolean>(() =>
+  Boolean(
+    lineage.value &&
+      (lineage.value.speeds.walk || lineage.value.speeds.climb || lineage.value.speeds.swim || lineage.value.speeds.fly || lineage.value.speeds.burrow),
+  ),
+);
 
 useSeo({ title, description });
-
-// TODO(fpion): Speeds
-// TODO(fpion): Size
-// TODO(fpion): Weight
-// TODO(fpion): Age
 
 // TODO(fpion): URLs should have a hierarchy
 </script>
