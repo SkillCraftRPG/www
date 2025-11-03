@@ -9,6 +9,7 @@ using SkillCraft.Cms.Core.Educations.Models;
 using SkillCraft.Cms.Core.Features.Models;
 using SkillCraft.Cms.Core.Languages.Models;
 using SkillCraft.Cms.Core.Lineages.Models;
+using SkillCraft.Cms.Core.Scripts.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
 using SkillCraft.Cms.Core.Statistics.Models;
@@ -233,6 +234,23 @@ internal class RulesMapper
     }
     destination.Languages.Extra = source.ExtraLanguages;
     destination.Languages.Text = source.LanguagesText;
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public ScriptModel ToScript(ScriptEntity source)
+  {
+    ScriptModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
 
     MapAggregate(source, destination);
 

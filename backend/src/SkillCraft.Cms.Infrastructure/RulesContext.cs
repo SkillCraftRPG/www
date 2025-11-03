@@ -20,6 +20,7 @@ public class RulesContext : DbContext
   internal DbSet<LineageEntity> Lineages => Set<LineageEntity>();
   internal DbSet<LineageFeatureEntity> LineageFeatures => Set<LineageFeatureEntity>();
   internal DbSet<LineageLanguageEntity> LineageLanguages => Set<LineageLanguageEntity>();
+  internal DbSet<ScriptEntity> Scripts => Set<ScriptEntity>();
   internal DbSet<SkillEntity> Skills => Set<SkillEntity>();
   internal DbSet<SpecializationDiscountedTalentEntity> SpecializationDiscountedTalents => Set<SpecializationDiscountedTalentEntity>();
   internal DbSet<SpecializationEntity> Specializations => Set<SpecializationEntity>();

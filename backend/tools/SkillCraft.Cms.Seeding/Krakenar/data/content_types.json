@@ -393,6 +393,51 @@
     ]
   },
   {
+    "Id": "0bebf870-0a58-46cb-9b1e-141e020019f4",
+    "IsInvariant": false,
+    "UniqueName": "Script",
+    "DisplayName": "Système d’écriture",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "36234b88-34e3-4be3-adae-6de76cb9c582",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "853b8df0-8c88-4ecc-a6f3-f231d6b8ab97",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "724fa172-3c28-45fc-9167-f9ca405f2345",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
     "Id": "68e69278-4103-4ab3-8388-222c6d4e9f92",
     "IsInvariant": false,
     "UniqueName": "Language",

@@ -9,6 +9,7 @@ internal enum EntityKind
   Feature,
   Gift,
   Lineage,
+  Script,
   Skill,
   Specialization,
   Statistic,
