@@ -27,6 +27,6 @@ internal class WorldService : IWorldService
   public async Task<CreateOrReplaceWorldResult> CreateOrReplaceAsync(CreateOrReplaceWorldPayload payload, Guid? id, CancellationToken cancellationToken)
   {
     CreateOrReplaceWorldCommand command = new(payload, id);
-    return await _commandBus.ExecuteAsync(command, cancellationToken);
+    return await _commandBus.HandleAsync(command, cancellationToken);
   }
 }
