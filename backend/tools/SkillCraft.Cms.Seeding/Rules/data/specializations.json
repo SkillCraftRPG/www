@@ -2099,8 +2099,8 @@
     "Slug": "soldat",
     "Name": "Soldat",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Maître du combat et des manœuvres tactiques disciplinées.",
+    "MetaDescription": "Découvrez la spécialisation Soldat, experte en combat discipliné, manœuvres tactiques et endurance martiale, symbole de puissance et de loyauté.",
     "Description": "Le soldat est un professionnel hautement discipliné entraîné au combat, ardent défenseur des intérêts de l’armée qu’il a intégrée. Il est vêtu d’une armure forgée avec précision et d’armes sélectionnées avec discernement, paré de son fidèle bouclier, sans oublier son arc de prédilection ou quelques javelots. Sa force ou sa précision légendaire, son regard scrutateur, sa résilience et sa loyauté indéfectible en font un allié remarquable.",
     "Requirements": {
       "Talent": {
@@ -2241,7 +2241,32 @@
           "Name": "Attaques multiples"
         }
       ],
-      "Features": []
+      "Features": [
+        {
+          "Id": "6f0caed3-3d02-4369-835f-af58423155bc",
+          "IsPublished": true,
+          "Name": "Ardeur au combat",
+          "Description": "En situation de [combat](/regles/combat), permet au personnage de dépenser 15, 30 ou 45 points d’[Énergie](/regles/statistiques/energie) à la fin de son [tour](/regles/combat/deroulement/tour).\n\nPour chaque tranche de 15 points d’Énergie dépensés, il peut effectuer une [action](/regles/combat/deroulement/tour) supplémentaire pendant ce tour.\n\nIl peut effectuer un total de 3 actions supplémentaires, et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer cette capacité."
+        },
+        {
+          "Id": "63b0309a-e75b-4087-a94c-e989c4563b8d",
+          "IsPublished": true,
+          "Name": "Athlète remarquable",
+          "Description": "Le personnage remplace son [rang](/regles/competences/rang) par son [tiers](/regles/personnages/progression/tiers) lorsqu’il effectue un [test](/regles/competences/tests) d’une des [compétences](/regles/competences) suivantes, si son tiers est supérieur à son rang de compétence.\n\n- [Acrobaties](/regles/competences/acrobaties)\n- [Artisanat](/regles/competences/artisanat)\n- [Athlétisme](/regles/competences/athletisme)\n- [Furtivité](/regles/competences/furtivite)\n- [Mêlée](/regles/competences/melee)\n- [Orientation](/regles/competences/orientation)\n- [Résistance](/regles/competences/resistance)\n- [Roublardise](/regles/competences/roublardise)"
+        },
+        {
+          "Id": "58543662-f9fc-420d-acdd-9f9eb6a2c4f4",
+          "IsPublished": true,
+          "Name": "Déduction guerrière",
+          "Description": "Lorsqu’il n’est pas en situation de [combat](/regles/combat), le personnage peut observer ou interagir avec une créature pendant [une minute](/regles/aventure/temps).\n\nCela lui permet de déterminer si les caractéristiques suivantes de cette créature sont supérieures, inférieures ou égales aux siennes, à la discrétion du maître de jeu :\n\n- [Adresse](/regles/attributs/adresse)\n- [Santé](/regles/attributs/sante)\n- [Vigueur](/regles/attributs/vigueur)\n- [Vitalité courante et maximale](/regles/statistiques/vitalite)\n- [Énergie courante et maximale](/regles/statistiques/energie)\n- [Esquive](/regles/combat/attaque/esquive)\n- [Défense](/regles/combat/attaque/defense)"
+        },
+        {
+          "Id": "db649337-0beb-4869-a785-a704fe5e68e2",
+          "IsPublished": true,
+          "Name": "Supériorité martiale",
+          "Description": "Le personnage peut désormais effectuer un nombre de [manœuvres de combat](/regles/talents/manoeuvres-de-combat) égal au double de son [tiers](/regles/personnages/progression/tiers).\n\nIl doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        }
+      ]
     }
   },
   {
