@@ -7,7 +7,7 @@ using SkillCraft.Cms.Models.Language;
 namespace SkillCraft.Cms.Controllers;
 
 [ApiController]
-[Route("api/languages")]
+[Route("api/rules/languages")]
 public class LanguageController : ControllerBase
 {
   private readonly ILanguageQuerier _languageQuerier;
