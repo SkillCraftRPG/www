@@ -181,10 +181,23 @@ internal class RulesMapper
       Id = source.Id,
       Slug = source.Slug,
       Name = source.Name,
+      TypicalSpeakers = source.TypicalSpeakers,
       Summary = source.Summary,
       MetaDescription = source.MetaDescription,
       Description = source.Description
     };
+
+    if (source.Script is not null)
+    {
+      if (source.Script.IsPublished)
+      {
+        destination.Script = ToScript(source.Script);
+      }
+    }
+    else if (source.ScriptId.HasValue)
+    {
+      throw new ArgumentException("The script is required.", nameof(source));
+    }
 
     MapAggregate(source, destination);
 

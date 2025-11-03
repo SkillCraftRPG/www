@@ -20,7 +20,10 @@ internal static class Languages
   public static readonly ColumnId LanguageId = new(nameof(LanguageEntity.LanguageId), Table);
   public static readonly ColumnId MetaDescription = new(nameof(LanguageEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(LanguageEntity.Name), Table);
+  public static readonly ColumnId ScriptId = new(nameof(LanguageEntity.ScriptId), Table);
+  public static readonly ColumnId ScriptUid = new(nameof(LanguageEntity.ScriptUid), Table);
   public static readonly ColumnId Slug = new(nameof(LanguageEntity.Slug), Table);
   public static readonly ColumnId SlugNormalized = new(nameof(LanguageEntity.SlugNormalized), Table);
   public static readonly ColumnId Summary = new(nameof(LanguageEntity.Summary), Table);
+  public static readonly ColumnId TypicalSpeakers = new(nameof(LanguageEntity.TypicalSpeakers), Table);
 }

@@ -7,6 +7,7 @@ using SkillCraft.Cms.Core.Attributes;
 using SkillCraft.Cms.Core.Castes;
 using SkillCraft.Cms.Core.Customizations;
 using SkillCraft.Cms.Core.Educations;
+using SkillCraft.Cms.Core.Languages;
 using SkillCraft.Cms.Core.Lineages;
 using SkillCraft.Cms.Core.Scripts;
 using SkillCraft.Cms.Core.Skills;
@@ -38,6 +39,7 @@ public static class DependencyInjectionExtensions
       .AddScoped<ICasteQuerier, CasteQuerier>()
       .AddScoped<ICustomizationQuerier, CustomizationQuerier>()
       .AddScoped<IEducationQuerier, EducationQuerier>()
+      .AddScoped<ILanguageQuerier, LanguageQuerier>()
       .AddScoped<ILineageQuerier, LineageQuerier>()
       .AddScoped<IScriptQuerier, ScriptQuerier>()
       .AddScoped<ISkillQuerier, SkillQuerier>()

@@ -29,7 +29,7 @@ internal class LineageQuerier : ILineageQuerier
   {
     LineageEntity? lineage = await _lineages.AsNoTracking()
       .Include(x => x.Features).ThenInclude(x => x.Feature)
-      .Include(x => x.Languages).ThenInclude(x => x.Language)
+      .Include(x => x.Languages).ThenInclude(x => x.Language).ThenInclude(x => x!.Script)
       .Include(x => x.Parent)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return lineage is null ? null : await MapAsync(lineage, cancellationToken);
@@ -40,7 +40,7 @@ internal class LineageQuerier : ILineageQuerier
 
     LineageEntity? lineage = await _lineages.AsNoTracking()
       .Include(x => x.Features).ThenInclude(x => x.Feature)
-      .Include(x => x.Languages).ThenInclude(x => x.Language)
+      .Include(x => x.Languages).ThenInclude(x => x.Language).ThenInclude(x => x!.Script)
       .Include(x => x.Parent)
       .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return lineage is null ? null : await MapAsync(lineage, cancellationToken);

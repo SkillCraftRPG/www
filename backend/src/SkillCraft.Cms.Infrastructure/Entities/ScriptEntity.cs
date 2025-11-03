@@ -24,6 +24,8 @@ internal class ScriptEntity : AggregateEntity
   public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
+  public List<LanguageEntity> Languages { get; private set; } = [];
+
   public ScriptEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
