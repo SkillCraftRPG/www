@@ -140,7 +140,7 @@
     "slug": "encensoir",
     "name": "Encensoir",
     "price": 5,
-    "weight": 7.5,
+    "weight": 1,
     "description": "L’encensoir est un vase brûle-parfum en métal décoré de motifs religieux. On le tient par une petite chaînette métallique, ce qui permet de le balancer. On peut y faire brûler de l’encens sur des charbons ardents de résines végétales."
   },
   {
@@ -428,7 +428,7 @@
     "slug": "symbole-divin",
     "name": "Symbole divin",
     "price": 5,
-    "weight": 1.5,
+    "weight": 1,
     "description": "La représentation d’une divinité, d’un culte ou d’un panthéon. Il permet aux Clercs de canaliser certains pouvoirs. Il peut être tenu dans la main, porté en collier ou fixé sur un bouclier."
   },
   {
