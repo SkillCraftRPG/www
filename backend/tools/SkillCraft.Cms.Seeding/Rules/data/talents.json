@@ -358,9 +358,9 @@
       "Slug": "attaque-puissante",
       "Name": "Attaque puissante"
     },
-    "Summary": "Rend les attaques de mêlée plus puissantes et précises.",
-    "MetaDescription": "Découvrez le talent Attaque précise, qui perfectionne les coups portés en mêlée, ajoutant puissance et exactitude pour maximiser les dégâts infligés.",
-    "Description": "Le personnage peut effectuer une [attaque de mêlée](/regles/combat/attaque/melee) par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nIl doit manier une [arme](/regles/equipement/armes) à une main pour laquelle il est [formé](/regles/equipement/armes/formation) et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nLorsqu’il en fait ainsi, il peut ajouter un bonus (+5) à son test d’attaque ainsi qu’un [dé de dégâts](/regles/combat/degats/jet)."
+    "Summary": "Renforce les attaques de mêlée avec précision et puissance accrue.",
+    "MetaDescription": "Découvrez le talent Attaque précise, qui améliore les frappes de mêlée en ajoutant puissance, précision et pénétration des résistances ennemies.",
+    "Description": "Le personnage peut effectuer une [attaque de mêlée](/regles/combat/attaque/melee) par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nL’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee), et il doit manier une [arme](/regles/equipement/armes) à une main pour laquelle il est [formé](/regles/equipement/armes/formation).\n\nLorsqu’il en fait ainsi, il bénéficie de :\n\n- Bonus (+5) à son test d’attaque.\n- Bonus d’un [dé de dégâts](/regles/combat/degats/jet).\n- Les [points de dégâts](/regles/combat/degats) infligés ignorent la [résistance](/regles/combat/degats/efficacite) de la cible."
   },
   {
     "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
@@ -415,7 +415,7 @@
     "AllowMultiplePurchases": false,
     "Skill": null,
     "RequiredTalent": null,
-    "Summary": "Inflige 2d6 dégâts bonus lors d’une attaque précise et rusée.",
+    "Summary": "Inflige 2d6 dégâts bonus lors d’une attaque scrupuleuse et rusée.",
     "MetaDescription": "Découvrez le talent Attaque sournoise, qui permet d’infliger 2d6 dégâts supplémentaires lors d’une frappe précise et avantageuse.",
     "Description": "Lorsque le personnage réussit une [attaque](/regles/combat/attaque) par un [test](/regles/competences/tests) d’[Orientation](/regles/competences/orientation), il peut infliger [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires.\n\nIl doit effectuer une [attaque de mêlée](/regles/combat/attaque/melee) en maniant une arme possédant la propriété [Finesse](/regles/equipement/armes/proprietes), ou une [attaque à distance](/regles/combat/attaque/distance) en maniant une arme possédant la propriété [Munition](/regles/equipement/armes/proprietes).\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), et il doit être [formé](/regles/equipement/armes/formation) au maniement de l’arme utilisée.\n\nAfin d’utiliser cette capacité, le test de l’attaque doit être effectué avec [avantage](/regles/competences/tests/avantage-desavantage).\n\nLe personnage peut également utiliser cette capacité lorsque le test n’est pas effectué avec [désavantage](/regles/competences/tests/avantage-desavantage) et qu’une créature hostile envers la cible se trouve à 1,5 mètres ou moins de celle-ci, et que cette créature n’est pas [incapable](/regles/combat/conditions/incapable)."
   },
@@ -867,8 +867,8 @@
       "Slug": "suspicion",
       "Name": "Suspicion"
     },
-    "Summary": "Confère l’avantage à divers tests contre une créature après avoir décelé un mensonge et aide une créature contrainte à rejouer un jet.",
-    "MetaDescription": null,
+    "Summary": "Détecte mensonges et manipulations mentales.",
+    "MetaDescription": "Découvrez le talent Discernement, qui permet de percer la vérité, contrer les manipulations mentales et détecter les influences surnaturelles.",
     "Description": "Lorsque le personnage réussit un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) afin de déterminer si une créature dit la vérité, ses tests de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation), de [Tromperie](/regles/competences/tromperie) et des [compétences](/regles/competences) associées à l’[Intellect](/regles/attributs/intellect) et aux [Sens](/regles/attributs/sens) contre cette créature se voient conférer l’[avantage](/regles/competences/tests/avantage-desavantage) pendant la [prochaine minute](/regles/aventure/temps), tant qu’il peut continuer à observer les yeux et la bouche de la créature.\n\nÉgalement, il peut discuter pendant 10 minutes avec une créature affectée par un effet ou un pouvoir la contraignant à [agir d’une certaine manière](/regles/combat/conditions/charme) ou ayant modifié sa mémoire.\n\nCelle-ci peut alors rejouer le [jet de sauvegarde](/regles/competences/tests/sauvegarde) contre l’effet ou le pouvoir.\n\nLa créature doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir bénéficier de cette capacité à nouveau."
   },
   {
@@ -1031,8 +1031,8 @@
       "Slug": "maraudage",
       "Name": "Maraudage"
     },
-    "Summary": "Peut relancer les dés de dégâts en attaque dissimulée. Permet un Pas prudent en réaction lié à un test de Furtivité, suivi d’un nouveau jet.",
-    "MetaDescription": null,
+    "Summary": "Optimise les attaques et déplacements furtifs.",
+    "MetaDescription": "Découvrez le talent Embuscade, qui renforce les attaques depuis la dissimulation et permet de se cacher ou se repositionner avec agilité.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il réussit une [attaque](/regles/combat/attaque) en étant [dissimulé](/regles/combat/attaque/dissimulee), il peut rouler deux fois les [dés de dégâts](/regles/combat/degats/jet) et conserver le résultat de son choix.\n- Lorsqu’il voit une créature tenter de [se cacher](/regles/combat/activites/cacher), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de tenter de se cacher lui aussi. Il effectue un [Pas prudent](/regles/combat/activites/pas-prudent) en direction de la créature (si possible) tout en se [jetant au sol](/regles/combat/activites/jeter-sol) avant d’effectuer son [test](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite).\n- Lorsqu’il tente de se cacher, il peut effectuer un Pas prudent en [action libre](/regles/combat/deroulement/tour) tout en se jetant au sol. Celui lui permet de rejouer le test de Furtivité, mais il doit conserver le nouveau résultat."
   },
   {
@@ -1100,8 +1100,8 @@
       "Slug": "endurance-accrue",
       "Name": "Endurance accrue"
     },
-    "Summary": "Bonus de 15 Énergie. Peut convertir la moitié des dégâts en non létaux. Avantage aux jets contre la Fatigue, ou réussite auto (1 fois/jour).",
-    "MetaDescription": null,
+    "Summary": "Renforce énergie, volonté et résistance physique.",
+    "MetaDescription": "Découvrez le talent Endurance supérieure, qui renforce l’énergie, la résistance à la fatigue et la volonté face aux blessures les plus rudes.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Bonus permanent de 15 points d’[Énergie](/regles/statistiques/energie).\n- Lorsqu’il reçoit des [dégâts létaux](/regles/combat/degats/letalite), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de convertir la moitié des points de dégâts en dégâts non létaux.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) afin d’éviter d’augmenter son niveau de [Fatigue](/regles/combat/conditions/fatigue). Il peut réussir automatiquement un tel jet de sauvegarde, mais doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
   },
   {
@@ -1180,6 +1180,24 @@
     "Description": "Augmente (+1) de manière permanente un [attribut](/regles/attributs) du personnage dont la valeur était inférieure ou égale à 3 avant l’acquisition de ce talent."
   },
   {
+    "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+    "IsPublished": true,
+    "Slug": "erudition",
+    "Name": "Érudition",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+      "IsPublished": true,
+      "Slug": "naturalisme",
+      "Name": "Naturalisme"
+    },
+    "Summary": "Analyse les ennemis ou objets pour en exploiter les faiblesses.",
+    "MetaDescription": "Découvrez le talent Érudition, qui permet d’analyser créatures et structures pour exploiter leurs faiblesses et maximiser ses attaques.",
+    "Description": "### Bestiaires\n\nLorsque le personnage réussit un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) à propos d’une créature naturelle ou construite, il acquiert les capacités suivantes contre cette créature et les autres créatures de la même espèce pendant les 24 prochaines [heures](/regles/aventure/temps).\n\n- Il ne peut être [surpris](/regles/combat/deroulement/surprise) par ces créatures.\n- Lorsqu’il est victime d’un [coup critique](/regles/competences/tests/critique) de la part d’une de ces créatures, alors il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de transformer cette [attaque](/regles/combat/attaque) en réussite non critique.\n- Une fois par [tour](/regles/combat/deroulement/tour), lorsqu’il réussit une attaque dirigée contre une de ces créatures, il inflige un nombre de [points de dégâts](/regles/combat/degats) supplémentaires égal à son [Intellect](/regles/attributs/intellect) (minimum 1).\n\n### Architecture\n\nLe personnage peut examiner une structure ou un objet inanimé pendant [10 minutes](/regles/aventure/temps).\n\nS’il réussit un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) à propos de cette structure ou de cet objet, alors il peut discerner grossièrement l’âge de celui-ci ainsi que les points faibles des matériaux le composant.\n\nLorsqu’il [endommage](/regles/aventure/interaction-objets) cet objet ou cette structure, que cela soit en attaquant ses points faibles ou en utilisant une substance (par exemple en appliquant de l’acide sur du métal), il maximise les [dégâts](/regles/combat/degats) infligés en remplaçant les [dés de dégâts](/regles/combat/degats/jet) par leur valeur maximale."
+  },
+  {
     "Id": "6c169831-5295-45ee-a1fc-f77d8ee92b23",
     "IsPublished": true,
     "Slug": "escamotage",
@@ -1198,8 +1216,8 @@
       "Slug": "mefait-feutre",
       "Name": "Méfait feutré"
     },
-    "Summary": "Permet de chaparder un objet tenu et de saboter un pouvoir par Roublardise en réaction. Désavantage si pas dissimulé ou objet difficile.",
-    "MetaDescription": null,
+    "Summary": "Permet de voler ou saboter avec adresse et discrétion.",
+    "MetaDescription": "Découvrez le talent Escamotage, qui permet de subtiliser objets ou de saboter la magie ennemie avec une précision et une discrétion redoutables.",
     "Description": "### Chaparde\n\nLe personnage peut tenter de dérober un objet tenu ou attaché fermement à une autre créature par une [action](/regles/combat/deroulement/tour) si la [taille](/regles/especes/taille) de celle-ci est d’au plus une catégorie supérieure à la sienne.\n\nIl effectue un [test](/regles/competences/tests) de [Roublardise](/regles/competences/roublardise) [opposé](/regles/competences/tests/oppose) à un test d’[Athlétisme](/regles/competences/athletisme) (seulement si l’objet est tenu), d’[Acrobaties](/regles/competences/acrobaties) (seulement si l’objet est attaché), ou de Roublardise de la cible.\n\nLe test du personnage est affligé du [désavantage](/regles/competences/tests/avantage-desavantage) s’il n’est pas [dissimulé](/regles/combat/activites/cacher) aux yeux de la cible, ou s’il tente de lui arracher une [arme](/regles/equipement/armes) ou un [bouclier](/regles/equipement/boucliers).\n\nSi le personnage réussit le test, il peut s’emparer de l’objet s’il a une main libre, sinon l’objet tombe au sol.\n\n### Interruption\n\nLorsqu’une créature située à 1,5 mètres ou moins de sa position [canalise](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs) requérant une composante [Focus](/regles/magie/parametres/composantes) ou [Matériel](/regles/magie/parametres/composantes), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) et dépenser 20 points d’[Énergie](/regles/statistiques/energie) afin de tenter de saboter la [canalisation](/regles/magie/pouvoirs/canalisation).\n\nIl effectue un test de Roublardise, et si le résultat obtenu est supérieur ou égal au résultat du test d’[Occultisme](/regles/competences/occultisme) de la cible, la canalisation échoue.\n\nLe test du personnage est affligé du désavantage s’il n’est pas dissimulé aux yeux de la cible.\n\nLa cible ne perd pas ses points d’Énergie, ni ses composantes."
   },
   {
@@ -1275,8 +1293,8 @@
       "Slug": "herboristerie",
       "Name": "Herboristerie"
     },
-    "Summary": "Permet d’extraire, neutraliser ou récolter du poison à l’aide de charbon activé, de trousses et d’Énergie, selon les talents et outils disponibles.",
-    "MetaDescription": null,
+    "Summary": "Permet d’extraire, purifier ou stocker des poisons pour les réutiliser.",
+    "MetaDescription": "Découvrez le talent Extraction du poison, permettant de neutraliser, stocker ou réutiliser des toxines grâce à la médecine et l’herboristerie.",
     "Description": "Le personnage acquiert les capacités suivantes. Il doit posséder du charbon de bois activé afin de pouvoir utiliser ces capacités.\n\n- Il peut extraire un [poison](/regles/herboristerie/poisons) naturel affligeant une créature empoisonnée. Il traite la créature pendant [une minute] et consomme une charge d’une [trousse de premiers soins](/regles/equipement/outils). Il effectue un [test](/regles/competences/tests) de [Médecine](/regles/competences/medecine) contre le [degré de difficulté](/regles/competences/tests/difficulte) du poison et dépense 15 points d’[Énergie](/regles/statistiques/energie). S’il réussit le test, le poison est extrait et détruit, et la créature est soignée du poison.\n- S’il a acquis le talent [Apothicairerie](/regles/talents/apothicairerie), il peut consommer une charge supplémentaire de sa trousse de premiers soins afin de concocter un antidote à usage unique contre le poison extrait.\n- S’il a acquis le talent [Toxicologie](/regles/talents/toxicologie) et qu’il possède un [contenant](/regles/equipement/general/contenants) vide telle une fiole, alors il peut extraire la dose de poison dans cette fiole. La dose n’est pas détruite et le personnage peut réutiliser le poison par la même méthode qu’il a été utilisé à l’origine.\n- S’il possède une [trousse d’empoisonneur](/regles/equipement/outils) et une fiole vide, il peut extraire le venin d’une créature venimeuse. Par une action, il effectue un test de Médecine contre le degré de difficulté du poison et dépense 15 points d’Énergie. S’il réussit le test, le venin est extrait dans cette fiole, ce qui lui permet de l’utiliser."
   },
   {
@@ -1298,8 +1316,8 @@
       "Slug": "observateur",
       "Name": "Observateur"
     },
-    "Summary": "Peut entrer en état de focus par une action. Accorde des bonus et réduit les avantages ennemis, mais consomme de l’Énergie chaque tour.",
-    "MetaDescription": null,
+    "Summary": "Améliore la vigilance et la précision en état de concentration.",
+    "MetaDescription": "Découvrez le talent Focus, qui aiguise les sens, renforce la perception et améliore la vigilance pendant les combats.",
     "Description": "Permet au personnage d’entrer en état de focus par une [action](/regles/combat/deroulement/tour).\n\nIl peut revenir à son état normal à tout moment en [action libre](/regles/combat/deroulement/tour).\n\nEn état de focus, s’il n’est pas [aveuglé](/regles/combat/conditions/aveugle), il peut ajouter 1d4+1 à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ainsi qu’à ses [tests](/regles/competences/tests) de [Perception](/regles/competences/perception).\n\nÀ la fin de chaque tour passé en état de focus, il dépense un nombre de points d’[Énergie](/regles/statistiques/energie) égal au total des bonus ajoutés à ses tests.\n\nÉgalement, lorsqu’il est en état de focus, le test des [attaques](/regles/combat/attaque) en provenance d’une créature [dissimulée](/regles/combat/attaque/dissimulee) le prenant pour cible ne se voit pas conférer l’[avantage](/regles/competences/tests/avantage-desavantage)."
   },
   {
@@ -1321,8 +1339,8 @@
       "Slug": "costaud",
       "Name": "Costaud"
     },
-    "Summary": "Permet de traîner une créature sous l’eau, d’escalader à l’horizontale, et d’optimiser les dégâts d’une arme Versatile à une main.",
-    "MetaDescription": null,
+    "Summary": "Accroît la force, l’endurance et la puissance des armes maniées.",
+    "MetaDescription": "Découvrez le talent Force incroyable, qui augmente la puissance physique, la nage, l’escalade et la maîtrise des armes polyvalentes.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il est dans l’eau, il peut [traîner une autre créature](/regles/equipement/encombrement) avec lui sans subir de pénalité à sa [vitesse](/regles/aventure/mouvement/vitesse) de nage. La [taille](/regles/especes/taille) de la créature doit être d’au plus une catégorie supérieure à la sienne.\n- Il peut [escalader](/regles/competences/athletisme) des surfaces horizontales, tel un plafond, comme si elles étaient verticales.\n- Lorsqu’il combat en maniant à une main une [arme](/regles/equipement/armes) possédant la propriété [Versatile](/regles/equipement/armes/proprietes), il inflige les [points de dégâts](/regles/combat/degats) de l’arme comme si elle était maniée à deux mains."
   },
   {
@@ -1367,9 +1385,27 @@
       "Slug": "tissu-de-mensonges",
       "Name": "Tissu de mensonges"
     },
-    "Summary": "Peut feinter une cible pour la rendre prise au dépourvu, substituer son rang d’Intuition par Tromperie et gagne avantage aux tests d’Intuition opposés.",
-    "MetaDescription": null,
+    "Summary": "Permet de feinter et manipuler l’adversaire grâce à la tromperie.",
+    "MetaDescription": "Découvrez le talent Fourberie, qui transforme la ruse en arme, permettant de tromper, feinter et désorienter les ennemis.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il doit effectuer un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) [opposé](/regles/competences/tests/oppose) à un test de [Tromperie](/regles/competences/tromperie), il peut substituer son [rang](/regles/competences/rang) d’Intuition par son rang de Tromperie.\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses tests d’Intuition opposés à un test de Tromperie.\n- En [situation de combat](/regles/combat), par une [action](/regles/combat/deroulement/tour) et en dépensant 15 points d’[Énergie](/regles/statistiques/energie), il peut tenter une feinte contre une cible par un test de Tromperie. Si la cible échoue un test opposé d’Intuition, elle est déconcertée par la feinte. Les ennemis de la cible peuvent effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite), et la cible est [étourdie](/regles/combat/conditions/etourdi) jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). La cible est ensuite immunisée contre cette capacité pendant les [24 prochaines heures](/regles/aventure/temps)."
+  },
+  {
+    "Id": "69c6a792-9570-4acb-a081-ba9fa11f2c1e",
+    "IsPublished": true,
+    "Slug": "frappe-precise",
+    "Name": "Frappe précise",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "c00d8449-0195-4f6d-8443-5bb252154a6b",
+      "IsPublished": true,
+      "Slug": "frappe-puissante",
+      "Name": "Frappe puissante"
+    },
+    "Summary": "Renforce les attaques à mains nues avec précision et puissance accrue.",
+    "MetaDescription": "Découvrez le talent Frappe précise, qui améliore les attaques à mains nues en ajoutant puissance, précision et pénétration des résistances.",
+    "Description": "Le personnage inflige désormais 1d8 + [Force](/regles/statistiques/force) ou [Précision](/regles/statistiques/precision) [points de dégâts](/regles/combat/degats) [contondants](/regles/combat/degats/types) [non létaux](/regles/combat/degats/letalite) lorsqu’il [combat à mains nues](/regles/combat/attaque/mains-nues).\n\nÉgalement, il peut effectuer une [attaque](/regles/combat/attaque) à mains nues par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nLorsqu’il en fait ainsi, il bénéficie de :\n\n- Bonus (+5) à son [test](/regles/competences/tests) d’attaque.\n- Bonus d’un [dé de dégâts](/regles/combat/degats/jet).\n- Les [points de dégâts](/regles/combat/degats) infligés ignorent la [résistance](/regles/combat/degats/efficacite) de la cible."
   },
   {
     "Id": "c00d8449-0195-4f6d-8443-5bb252154a6b",
@@ -1429,6 +1465,24 @@
     "Summary": "Permet de concocter remèdes et poisons naturels.",
     "MetaDescription": "Découvrez le talent Herboristerie, qui enseigne la création de remèdes et poisons à partir de plantes naturelles et améliore la compétence de Médecine.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il est formé à l’utilisation de la [trousse d’herboristerie](/regles/equipement/outils), qui lui permet de concocter des [remèdes](/regles/herboristerie/remedes) à partir de ressources naturelles telles des herbes médicinales qu’il peut acheter, cultiver lui-même ou trouver dans la nature.\n- Il est également formé à l’utilisation de la [trousse d’empoisonneur](/regles/equipement/outils), qui lui permet de concocter des [poisons](/regles/herboristerie/poisons) à partir de ressources naturelles telles du venin ou des plantes vénéneuses qu’il peut acheter, cultiver lui-même ou récolter dans la nature. L’acquisition de ce talent ne lui permet pas d’extraire le venin d’une créature morte ou vivante.\n- Il peut désormais apprendre les remèdes et poisons de base.\n- Il peut apprendre un nombre de remèdes et de poisons égal à son [rang](/regles/competences/rang) de [Médecine](/regles/competences/medecine).\n- Il peut identifier un remède ou un poison qu’il connait par un [test](/regles/competences/tests) de Médecine de [difficulté faible](/regles/competences/tests/difficulte). S’il ne connait pas le remède ou le poison, la difficulté est élevée. Il peut également tenter de la même manière d’identifier les herbes médicinales et vénéneuses, ainsi que les créatures venimeuses."
+  },
+  {
+    "Id": "2bfa4236-95c0-4128-aee4-2bc68e4b330e",
+    "IsPublished": true,
+    "Slug": "hostilite-perturbatrice",
+    "Name": "Hostilité perturbatrice",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+      "IsPublished": true,
+      "Slug": "presence-terrifiante",
+      "Name": "Présence terrifiante"
+    },
+    "Summary": "Effraie et perturbe les ennemis proches de sa présence.",
+    "MetaDescription": "Découvrez le talent Hostilité perturbatrice, qui renforce la présence terrifiante et affaiblit les ennemis proches.",
+    "Description": "Lorsqu’une créature est intimidée par la [présence terrifiante](/regles/talents/presence-terrifiante) du personnage, les [tests](/regles/competences/tests) des [compétences](/regles/competences) suivantes et des [attaques à distance](/regles/combat/attaque/distance) de cette créature sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’elle se trouve dans la zone.\n\n- [Connaissance](/regles/competences/connaissance)\n- [Diplomatie](/regles/competences/diplomatie)\n- [Intuition](/regles/competences/intuition)\n- [Investigation](/regles/competences/investigation)\n- [Linguistique](/regles/competences/linguistique)\n- [Médecine](/regles/competences/medecine)\n- [Perception](/regles/competences/perception)\n- [Représentation](/regles/competences/representation)\n- [Survie](/regles/competences/survie)\n- [Tromperie](/regles/competences/tromperie)\n\nÉgalement, lorsqu’il fait chuter à 0 les points de [Vitalité](/regles/statistiques/vitalite) d’une créature ennemie, il peut tenter d’effrayer les alliés de cette créature situés dans sa zone de présence terrifiante en [action libre](/regles/combat/deroulement/tour) et en dépensant 25 points d’[Énergie](/regles/statistiques/energie).\n\nChaque créature effectue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou d’Intuition de [difficulté](/regles/competences/tests/difficulte) égale au [test passif](/regles/competences/tests/passif) de Représentation du personnage.\n\nEn cas d’échec, une créature est [apeurée](/regles/combat/conditions/apeure) par le personnage pendant la prochaine [minute](/regles/aventure/temps).\n\nUne créature apeurée peut répéter le jet de sauvegarde au début de chacun de ses [tours](/regles/combat/deroulement/tour) si elle se trouve à l’extérieur de la zone de présence terrifiante du personnage.\n\nAfin de réutiliser cette capacité, le personnage doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil)."
   },
   {
     "Id": "133da5f0-a957-4dbc-b1b8-7a9f35224223",
@@ -1598,6 +1652,24 @@
     "Description": "Lorsque le personnage effectue une [attaque à distance](/regles/combat/attaque/distance), il peut ajouter des [dés de dégâts](/regles/combat/degats/jet).\n\nIl peut utiliser cette capacité une fois par [tour](/regles/combat/deroulement/tour), il doit lancer une [arme](/regles/equipement/armes) possédant la propriété [Jet](/regles/equipement/armes/proprietes) et pour laquelle il est [formé](/regles/equipement/armes/formation), et l’[attaque](/regles/combat/attaque) doit être effectuée par un [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee).\n\nIl peut ajouter un nombre de dés inférieur ou égal à son [tiers](/regles/personnages/progression/tiers) et dépense 15 points d’[Énergie](/regles/statistiques/energie) par dé avant de savoir si l’attaque réussit ou échoue.\n\nSi la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de Mêlée de l’attaque effectuée par le personnage.\n\nEn cas d’échec, elle est [renversée](/regles/combat/conditions/renverse) au sol, ou repoussée de 1,5 mètres, au choix du personnage."
   },
   {
+    "Id": "eb0632dc-3008-425d-a1b8-3bb438ee6201",
+    "IsPublished": true,
+    "Slug": "lancer-precis",
+    "Name": "Lancer précis",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "70ba6c8f-af9a-4586-812f-f15e1e36ace8",
+      "IsPublished": true,
+      "Slug": "lancer-brutal",
+      "Name": "Lancer brutal"
+    },
+    "Summary": "Rend les lancers plus précis et puissants, sans désavantage.",
+    "MetaDescription": "Découvrez le talent Lancer précis, qui perfectionne les attaques à distance en lançant des armes avec une précision et une puissance accrues.",
+    "Description": "Le personnage peut effectuer une [attaque à distance](/regles/combat/attaque/distance) en lançant une [arme](/regles/equipement/armes) possédant la propriété [Jet](/regles/equipement/armes/proprietes) par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nLorsqu’il en fait ainsi, il bénéficie des capacités suivantes :\n\n- Il ignore le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri) de sa cible.\n- Il ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’il utilise son arme à [longue portée](/regles/equipement/armes/proprietes).\n- Il ne subit pas de désavantage lorsqu’il cible une créature [renversée](/regles/combat/conditions/renverse).\n- Bonus (+5) à son [test](/regles/competences/tests) d’[attaque](/regles/combat/attaque).\n- Bonus d’un [dé de dégâts](/regles/combat/degats/jet)."
+  },
+  {
     "Id": "38173a78-554b-4d1b-928b-a7d61d8c8ace",
     "IsPublished": true,
     "Slug": "langue-d-argent",
@@ -1701,9 +1773,9 @@
       "Slug": "magie-puissante",
       "Name": "Magie puissante"
     },
-    "Summary": "Accroît la portée et la précision des pouvoirs d’attaque magique.",
-    "MetaDescription": "Découvrez le talent Magie précise, qui permet d’étendre la portée et la justesse des pouvoirs magiques pour frapper avec une précision redoutable.",
-    "Description": "Le personnage acquiert les capacités suivantes. Ces capacités s’appliquent aux [pouvoirs](/regles/magie/pouvoirs) d’[attaque](/regles/magie/effets/attaque) à distance (portée supérieure à [Toucher](/regles/magie/parametres/portee)).\n\n- Il double la [portée](/regles/magie/parametres/portee) de ces pouvoirs.\n- Lorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) un de ces pouvoirs, le pouvoir ignore le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri) des créatures ciblées.\n- Lorsqu’il canalise un de ces pouvoirs, le [test](/regles/competences/tests) n’est pas affligé du [désavantage](/regles/competences/tests/avantage-desavantage) si la cible est [renversée](/regles/combat/conditions/renverse).\n- Lorsqu’il canalise un de ces pouvoirs, il peut le faire par une [action](/regles/combat/deroulement/tour) supplémentaire afin d’ajouter un bonus (+5) à son test ainsi qu’un [dé de dégâts](/regles/combat/degats/jet)."
+    "Summary": "Double la portée et renforce la précision des pouvoirs d’attaque.",
+    "MetaDescription": "Découvrez le talent Magie précise, qui augmente la portée, la puissance et la précision des pouvoirs d’attaque à distance.",
+    "Description": "Le personnage peut canaliser un [pouvoir](/regles/magie/pouvoirs) d’[attaque](/regles/magie/effets/attaque) par une [action](/regles/combat/deroulement/tour) supplémentaire.\n\nLorsqu’il en fait ainsi, il bénéficie d’un bonus (+5) à son [test](/regles/competences/tests) d’[attaque](/regles/combat/attaque) et d’un [dé de dégâts](/regles/combat/degats/jet) supplémentaires.\n\nÉgalement, si le pouvoir a une portée supérieure à [Toucher](/regles/magie/parametres/portee) :\n\n- La [portée](/regles/magie/parametres/portee) du pouvoir est doublée.\n- Il ignore le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri) de sa cible.\n- Il ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’il cible une créature [renversée](/regles/combat/conditions/renverse)."
   },
   {
     "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
@@ -1747,8 +1819,8 @@
       "Slug": "expertise-artisanale",
       "Name": "Expertise artisanale"
     },
-    "Summary": "Expertise avec deux types d’outils ; peut réduire de moitié matériaux et temps pour une tâche simple sans perte de qualité, à la discrétion du MJ.",
-    "MetaDescription": null,
+    "Summary": "Optimise l’usage d’outils artisanaux et réduit le temps de fabrication.",
+    "MetaDescription": "Découvrez le talent Maître-artisan, qui offre une expertise supérieure avec deux types d’outils d’artisan et améliore la qualité et la rapidité des créations.",
     "Description": "### Expertise\n\nLe personnage désigne deux types d’[outils d’artisan](/regles/equipement/outils) de son choix parmi ceux qu’il formé à utiliser et développe une expertise avec le type d’outils choisi.\n\nLorsqu’il utilise ce type d’outils, il peut conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) d’[Artisanat](/regles/competences/artisanat) ou y ajouter un bonus égal à son [Adresse](/regles/attributs/adresse).\n\n### Maîtrise\n\nLe personnage sait faire plus avec moins lorsqu’il effectue une tâche simple d’artisanat en utilisant des outils avec lesquels il a développé une expertise.\n\nÀ la discrétion du maître de jeu, il peut réduire jusqu’à 50 % la quantité de matériaux requis et/ou la durée de la tâche sans compromettre la qualité du résultat."
   },
   {
@@ -1771,7 +1843,7 @@
       "Name": "Formation martiale"
     },
     "Summary": "Le personnage apprend trois manœuvres de combat.",
-    "MetaDescription": null,
+    "MetaDescription": "\uD83D\uDEA7",
     "Description": "Le personnage apprend trois **manœuvres de combat**."
   },
   {
@@ -1929,8 +2001,8 @@
       "Slug": "emboiter-le-pas",
       "Name": "Emboîter le pas"
     },
-    "Summary": "Permet d’inspirer d’autres créatures à imiter une action et de tenter de charmer une cible après 10 minutes d’interaction verbale ou corporelle continue.",
-    "MetaDescription": null,
+    "Summary": "Inspire les alliés à reproduire vos actions avec efficacité.",
+    "MetaDescription": "Découvrez le talent Mener par l’exemple, permettant d’inspirer ses alliés à imiter vos actions et à obtenir des bonus grâce à votre leadership.",
     "Description": "Après avoir effectué une action, le personnage peut inspirer d’autres créatures à effectuer la même action.\n\nPar une [action](/regles/combat/deroulement/tour), il sélectionne un nombre de créatures inférieur ou égal à la moitié de son [rang](/regles/competences/rang) de [Diplomatie](/regles/competences/diplomatie), situées à 9 mètres ou moins de sa position.\n\nJusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour), une créature ciblée se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [test](/regles/competences/tests) si elle effectue la même action que le personnage.\n\nÉgalement, si le personnage [interagit](/regles/aventure/interaction-sociale) continuellement pendant [10 minutes](/regles/aventure/temps) avec une créature qui peut le comprendre, par le langage [verbal](/regles/langues) ou corporel, il peut tenter de la [charmer](/regles/combat/conditions/charme) par un test de Diplomatie et en dépensant 15 points d’[Énergie](/regles/statistiques/energie).\n\nSi celle-ci échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de [difficulté](/regles/competences/tests/difficulte) égale au résultat du test, elle est charmée par celui-ci pendant un nombre de minutes égal à la moitié de son rang de Diplomatie.\n\nL’effet prend fin si le personnage ou un de ses alliés commet une action hostile contre la cible ou contre une créature alliée de celle-ci.\n\nLa cible ne sait pas qu’elle a été charmée lorsque l’effet prend fin, mais elle est immunisée à cet effet pendant les 24 prochaines heures."
   },
   {
@@ -1950,6 +2022,42 @@
     "Summary": "\uD83D\uDEA7",
     "MetaDescription": "\uD83D\uDEA7",
     "Description": "\uD83D\uDEA7"
+  },
+  {
+    "Id": "959ac693-3553-4cc0-90ac-f892250d1f77",
+    "IsPublished": true,
+    "Slug": "monture-de-combat",
+    "Name": "Monture de combat",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "7dd9ed2f-377b-4199-ba60-0d24240804e5",
+      "IsPublished": true,
+      "Slug": "dressage",
+      "Name": "Dressage"
+    },
+    "Summary": "Optimise combat et défense avec sa monture.",
+    "MetaDescription": "Découvrez le talent Monture de combat, qui améliore la coordination et la défense entre un cavalier et sa monture.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il [combat sur une monture](/regles/combat/monte), il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[attaques de mêlée](/regles/combat/attaque/melee) dirigées contre une créature n’étant pas sur une monture et dont la [taille](/regles/especes/taille) est inférieure à celle de sa monture.\n- Si la monture du personnage est affectée par un effet nécessitant un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) afin de réduire de moitié les [points de dégâts](/regles/combat/degats) reçus, alors la monture ne reçoit aucun dégât si elle réussit le test, et ne reçoit que la moitié des dégâts si elle l’échoue.\n- Lorsqu’une créature ennemie cible la monture du personnage par une [attaque](/regles/combat/attaque) ou un [pouvoir](/regles/magie/pouvoirs), le personnage peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’épargner sa monture en devenant la cible de l’attaque ou du pouvoir.\n- Lorsque le personnage est ciblé par un pouvoir bénéfique, il peut également faire bénéficier sa monture des effets de ce pouvoir, à la discrétion du maître de jeu."
+  },
+  {
+    "Id": "d3042400-af91-41df-b7ce-2c36ed19df6e",
+    "IsPublished": true,
+    "Slug": "mythologie",
+    "Name": "Mythologie",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+      "IsPublished": true,
+      "Slug": "societe",
+      "Name": "Société"
+    },
+    "Summary": "Permet d’identifier artefacts, portails et créatures mythiques.",
+    "MetaDescription": "Découvrez le talent Mythologie, qui permet d’identifier artefacts légendaires, portails et créatures d’autres réalités grâce à un savoir ancien.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il voit un artefact magique, il reconnaît la rareté de cet objet.\n  - S’il s’agit d’un objet légendaire, alors il identifie le nom de l’objet ainsi que son précédent propriétaire, à la discrétion du maître de jeu.\n  - Il se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) effectués afin d’obtenir plus d’informations au sujet de cet objet.\n  - Il peut aussi utiliser cette capacité sans voir l’objet, si l’objet est évoqué ou décrit de manière qu’il puisse se constituer un modèle mental fidèle à l’objet.\n- Il possède un savoir détaillé à propos des créatures issues d’une autre réalité ou dimension. Lorsqu’il réussit un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) contre une de ces créatures :\n  - Il se remémore certaines capacités de cette créature, telles ses habiletés physiques et surnaturelles, ses [attaques](/regles/combat/attaque) habituelles et si elle est considérée dangereuse pour lui et son groupe.\n  - Une fois par [tour](/regles/combat/deroulement/tour), lorsqu’il réussit une [attaque](/regles/combat/attaque) dirigée contre cette créature ou une autre créature de la même espèce, il inflige un nombre de [points de dégâts](/regles/combat/degats) supplémentaires égal à son [Intellect](/regles/attributs/intellect) (minimum 1).\n- En étudiant un portail ouvert pendant [une minute](/regles/aventure/temps), il peut identifier si le portail mène vers une autre dimension ou non.\n  - Si le portail mène vers une autre dimension et qu’il connaît celle-ci, il peut également l’identifier.\n  - S’il ne connaît pas cette dimension, il se voit conférer l’avantage à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) effectués afin de l’identifier."
   },
   {
     "Id": "e1c94ff1-b416-4d96-b378-908912b1e3d1",
@@ -1998,6 +2106,24 @@
     "Description": "### Créatures\n\nLe personnage possède de vastes connaissances à propos des créatures naturelles, par exemple les animaux, les plantes, les limons, les dragons et les monstruosités.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance) envers ces créatures et reçoit de l’information supplémentaire lorsqu’il réussit un de ces tests.\n\nCette information correspond généralement aux habiletés de cette créature, à quel point celle-ci est dangereuse pour son groupe, la signification de ses comportements, les dangers naturels de son habitat, et quelles ressources de valeur peuvent être récoltées sur cette créature.\n\nIl peut utiliser cette capacité pour, par exemple, identifier une créature à partir des traces qu’elle a laissées au sol.\n\n### Matériaux\n\nÉgalement, il possède de vastes connaissances à propos des [matériaux](/regles/equipement/marchandise).\n\nIl reconnait instantanément la majorité des matériaux ainsi que leur rareté, sans nécessiter de test de Connaissance, à la discrétion du maître de jeu.\n\nIl se voit conférer l’avantage à ses tests de Connaissance afin de recevoir de l’information supplémentaire à propos de ces matériaux."
   },
   {
+    "Id": "1d2d6d96-7eb5-49f1-aa90-2d5a4aa0fc1b",
+    "IsPublished": true,
+    "Slug": "obeissance-animale",
+    "Name": "Obéissance animale",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "60c63539-0bf4-42c5-9cfb-84602a45b37f",
+      "IsPublished": true,
+      "Slug": "medecine-animale",
+      "Name": "Médecine animale"
+    },
+    "Summary": "Renforce l’entraînement et la coordination des bêtes alliées.",
+    "MetaDescription": "Découvrez le talent Obéissance animale, qui renforce le lien entre le dresseur et ses bêtes, leur conférant discipline et vitalité.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il peut désormais apprivoiser et dresser une bête de niveau ½ ou moins.\n- Il peut apprendre à ses bêtes des tours complexes tels trouver un objet précis dans un sac, surveiller un lieu, suivre une piste, effectuer des attaques multiples, etc. par une série de [tests](/regles/competences/tests) de [Survie](/regles/competences/survie).\n- Le nombre de tours que ses bêtes dressées peuvent apprendre est doublé.\n- Il peut entraîner une de ses bêtes dressées pendant [une heure](/regles/aventure/temps) afin de lui conférer des [points de Vitalité temporaires](/regles/combat/degats/temporaire).\n  - Cet entraînement peut être effectué pendant une [halte](/regles/aventure/repos/halte) et il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n  - Le nombre de points de Vitalité temporaires conférés est égal au double de son [rang](/regles/competences/rang) de Survie additionné à ses [Sens](/regles/attributs/sens) (minimum 5)."
+  },
+  {
     "Id": "066f198d-e331-4006-8bd9-2831aff258de",
     "IsPublished": true,
     "Slug": "observateur",
@@ -2039,6 +2165,24 @@
     "Description": "Le personnage est formé à l’utilisation des [parchemins](/regles/magie/pouvoirs/parchemins) de pouvoir.\n\nIl peut lire un parchemin afin de déterminer quel [pouvoir](/regles/magie/pouvoirs) est inscrit sur le parchemin, à quel [niveau](/regles/magie/pouvoirs/niveau) le pouvoir sera canalisé, et quels effets seront produits par son utilisation.\n\nÉgalement, lorsqu’il voit une créature canaliser un pouvoir, il peut déterminer en [action libre](/regles/combat/deroulement/tour) si les capacités surnaturelles de la créature sont inférieures, supérieures ou équivalentes aux siennes."
   },
   {
+    "Id": "ccd64cee-29c5-46f5-b2d0-b1c9160aa759",
+    "IsPublished": true,
+    "Slug": "onde-de-choc",
+    "Name": "Onde de choc",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "33973454-6d35-4fab-949f-d671b279a179",
+      "IsPublished": true,
+      "Slug": "attaque-brutale",
+      "Name": "Attaque brutale"
+    },
+    "Summary": "Propage ses frappes pour ébranler les ennemis proches.",
+    "MetaDescription": "Découvrez le talent Onde de choc, permettant de propager un impact physique à plusieurs ennemis autour de la cible.",
+    "Description": "Lorsque le personnage réussit une [attaque brutale](/regles/talents/attaque-brutale), il peut déclencher une onde de choc afin d’impacter toute créature située à 1,5 mètres ou moins de la cible, excluant lui-même.\n\nIl utilise cette capacité en [action libre](/regles/combat/deroulement/tour) et dépense 15 points d’[Énergie](/regles/statistiques/energie) avant de savoir si l’[attaque](/regles/combat/attaque) réussit ou échoue.\n\nChaque créature touchée par l’attaque (le résultat original est réutilisé) reçoit un nombre de points de dégâts [non létaux](/regles/combat/degats/letalite) égal à la moitié des [points de dégâts](/regles/combat/degats) reçus par la cible originale.\n\nDe plus, si sa [taille](/regles/especes/taille) est inférieure ou égale à celle du personnage, une créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme).\n\nLa [difficulté](/regles/competences/tests/difficulte) correspond au résultat du [test](/regles/competences/tests) de [Mêlée](/regles/competences/melee) de l’attaque effectuée par le personnage.\n\nEn cas d’échec, la créature est [renversée](/regles/combat/conditions/renverse) au sol ou repoussée de 1,5 mètres, selon l’option choisie contre la cible originale."
+  },
+  {
     "Id": "db16d90c-099e-45ce-8321-c174eeb38a0b",
     "IsPublished": true,
     "Slug": "optimisation-magique",
@@ -2057,8 +2201,8 @@
       "Slug": "magie-puissante",
       "Name": "Magie puissante"
     },
-    "Summary": "Réduit de moitié la difficulté d’Occultisme lors de la canalisation. Réduit aussi d’un niveau le coût en Énergie d’un pouvoir (minimum 1).",
-    "MetaDescription": null,
+    "Summary": "Réduit la difficulté et le coût énergétique des pouvoirs magiques.",
+    "MetaDescription": "Découvrez le talent Optimisation magique, qui réduit la difficulté et le coût en énergie des pouvoirs canalisés pour une magie plus efficiente.",
     "Description": "Lorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs), le [degré de difficulté](/regles/competences/tests/difficulte) de son [test](/regles/competences/tests) d’[Occultisme](/regles/competences/tests/occultisme) est réduit de moitié.\n\nÉgalement, le niveau canalisé est réduit de 1 pour le calcul des [points d’Énergie dépensés](/regles/magie/pouvoirs/energie) (minimum 1 point d’Énergie dépensé)."
   },
   {
@@ -2078,6 +2222,24 @@
     "Summary": "Forme au tir à distance, à la visée et à la perception des trajectoires.",
     "MetaDescription": "Découvrez le talent Orientation, formant le personnage au tir à distance, à la visée précise et à l’usage des armures légères et boucliers légers.",
     "Description": "[Forme](/regles/equipement/armes/formation) le personnage au maniement des [armes simples](/regles/equipement/armes/simples) à distance.\n\nIl est également [formé au port](/regles/equipement/armures/formation) des [armures légères](/regles/equipement/armures/legeres) et à l’utilisation des [boucliers légers](/regles/equipement/boucliers)."
+  },
+  {
+    "Id": "c9abbe04-b581-4fc3-a815-8a7fe62c2dcb",
+    "IsPublished": true,
+    "Slug": "otage",
+    "Name": "Otage",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "a1aae77b-f08a-4c8a-9e83-b971ce674eba",
+      "IsPublished": true,
+      "Slug": "lutte",
+      "Name": "Lutte"
+    },
+    "Summary": "Domine et utilise l’ennemi qu’il agrippe à son avantage.",
+    "MetaDescription": "Découvrez le talent Otage, qui accorde un avantage en combat rapproché lors d’une prise et permet de manipuler les attaques ennemies.",
+    "Description": "Lorsque le personnage [agrippe](/regles/combat/activites/agripper) une créature, ses [tests](/regles/competences/tests) d’[attaque](/regles/combat/attaque) contre cette créature se voient conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n\nLes tests d’attaque de cette créature contre le personnage sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nÉgalement, lorsqu’il se trouve en situation de [lutte](/regles/talents/lutte) avec une créature qu’il agrippe, il peut utiliser sa [réaction](/regles/combat/deroulement/tour) pour rediriger une attaque le ciblant contre cette créature."
   },
   {
     "Id": "76600f51-f0e5-4544-bc0c-31fba6698164",
@@ -2239,8 +2401,8 @@
       "Slug": "enquete",
       "Name": "Enquête"
     },
-    "Summary": "Peut remplacer son Esquive par Investigation passive contre une attaque et certains tests non formés par Investigation -½ rang en dépensant de l’Énergie.",
-    "MetaDescription": null,
+    "Summary": "Anticipe les menaces et esquive grâce à l’analyse et l’intuition.",
+    "MetaDescription": "Découvrez le talent Prédiction, qui permet d’anticiper les attaques et d’utiliser la logique et l’intuition pour esquiver le danger.",
     "Description": "Lorsqu’il est ciblé par une [attaque](/regles/combat/attaque), le personnage peut utiliser sa [réaction](/regles/combat/deroulement/tour) et dépenser 15 points d’[Énergie](/regles/statistiques/energie) afin de remplacer son [Esquive](/regles/combat/attaque/esquive) par son [test passif](/regles/competences/tests/passif) d’[Investigation](/regles/competences/investigation) contre cette attaque.\n\nIl n’a pas besoin de voir son assaillant, mais il doit avoir repéré des indices quelconques lui signalant le danger.\n\nÉgalement, lorsqu’il effectue un [test](/regles/competences/tests) de [compétence](/regles/competences) (excluant les attaques et [jets de sauvegarde](/regles/competences/tests/sauvegarde)), s’il n’est pas [formé](/regles/competences/formation) pour cette compétence et qu’il possède du matériel de référence, alors il peut dépenser 15 points d’Énergie et remplacer le test par un test d’Investigation en retirant la moitié de son [rang](/regles/competences/rang)."
   },
   {
@@ -2298,8 +2460,8 @@
       "Slug": "distraction",
       "Name": "Distraction"
     },
-    "Summary": "Peut provoquer pour détourner les attaques, se battre avec style en utilisant Représentation et Stratagème, et aider un allié après un critique.",
-    "MetaDescription": null,
+    "Summary": "Provoque les ennemis et transforme la ruse en arme de combat.",
+    "MetaDescription": "Découvrez le talent Provocation, qui permet de détourner l’attention des ennemis et d’utiliser la ruse pour manipuler le champ de bataille.",
     "Description": "### Provocation\n\nPermet au personnage de provoquer des créatures situées à 9 mètres ou moins de sa position par une [action](/regles/combat/deroulement/tour).\n\nIl peut cibler un nombre de créatures inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum 1). Ces créatures doivent pouvoir le voir ou l’entendre.\n\nIl effectue un [test](/regles/competences/tests) de [Représentation](/regles/competences/representation) [opposé](/regles/competences/tests/oppose) à un test de [Discipline](/regles/competences/discipline) ou d’[Intuition](/regles/competences/intuition) de toute cible.\n\nEn cas d’échec, une créature se voit affligée du [désavantage](/regles/competences/tests/avantage-desavantage) au test de ses [attaques](/regles/combat/attaque) dirigées contre une cible autre que le personnage jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) de celui-ci.\n\nLes créatures immunisées aux [charmes](/regles/combat/conditions/charme) ne sont pas affectées par cette capacité.\n\n### Combat de scène\n\nLorsqu’il effectue une [attaque](/regles/combat/attaque) en maniant une [arme](/regles/equipement/armes) appartenant à un des types sélectionnés avec le talent [Distraction](/regles/talents/distraction), il peut remplacer le test de [Mêlée](/regles/competences/melee) ou d’[Orientation](/regles/competences/orientation) par un test de Représentation, sans réduction de [rang](/regles/competences/rang).\n\nLorsqu’il en fait ainsi, il remplace sa [Force](/regles/statistiques/force) ou sa [Précision](/regles/statistiques/precision) par son [Stratagème](/regles/statistiques/stratageme) (sans réduction) dans le calcul des [points de dégâts](/regles/combat/degats) infligés.\n\nÉgalement, lorsqu’il en fait ainsi et obtient une [réussite critique](/regles/competences/tests/critique), il peut immédiatement après l’attaque [aider](/regles/combat/activites/aider) un allié à attaquer une créature en [action libre](/regles/combat/deroulement/tour).\n\nIl doit tout de même utiliser sa [réaction](/regles/combat/deroulement/tour), et peut effectuer une distraction à ce moment."
   },
   {
@@ -2362,8 +2524,8 @@
       "Slug": "culbutes",
       "Name": "Culbutes"
     },
-    "Summary": "Améliore la mobilité tactique, permet de se repositionner en défense, d’attaquer sans riposte immédiate et de se déplacer efficacement.",
-    "MetaDescription": null,
+    "Summary": "Permet de battre en retraite tout en évitant les ripostes.",
+    "MetaDescription": "Découvrez le talent Repli défensif, permettant de se replier agilement après une défense ou une attaque sans subir d’opportunité.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Lorsqu’il effectue l’activité [Défense](/regles/combat/activites/defense), il peut immédiatement effectuer un [Pas prudent](/regles/combat/activites/pas-prudent) en [action libre](/regles/combat/deroulement/tour).\n- Lorsqu’il effectue l’activité [Attaque](/regles/combat/attaque), il ne provoque pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite) de la part de sa cible jusqu’à la fin de son [tour](/regles/combat/deroulement/tour), même si l’attaque échoue.\n- Bonus permanent d’un [point de mouvement](/regles/aventure/mouvement/vitesse)."
   },
   {
@@ -2406,6 +2568,24 @@
     "Summary": "Reste conscient lorsque agonisant, limité à une seule action, rampe seulement et s’évanouit s’il subit des dégâts ou après une action.",
     "MetaDescription": null,
     "Description": "Si les [Sens](/regles/attributs/sens) du personnage sont supérieurs à sa [Vigueur](/regles/attributs/vigueur), alors il peut utiliser ses Sens dans le calcul du [nombre de tours qu’il reste à l’agonie](/regles/combat/mort-agonie).\n\nÉgalement, lorsqu’il tombe [agonisant](/regles/combat/conditions/agonisant), il reste conscient de son environnement et de ce qui se déroule autour de lui. Cependant, les autres pénalités de l’[inconscience](/regles/combat/conditions/inconscient) s’appliquent quand même.\n\nÀ son [tour](/regles/combat/deroulement/tour), il ne peut utiliser qu’une seule action ou ne rien faire. Il ne peut utiliser sa réaction. Il reste conscient s’il ne fait rien.\n\nIl tombe inconscient s’il reçoit des [points de dégâts](/regles/combat/degats), ou s’il utilise une action, immédiatement après l’avoir effectuée.\n\nIl ne peut se [relever](/regles/aventure/mouvement/types), et ne peut [se déplacer](/regles/combat/activites/deplacement) qu’en [rampant](/regles/aventure/mouvement/types).\n\nS’il tente de se [stabiliser](/regles/combat/activites/stabiliser), son [test](/regles/competences/tests/avantage-desavantage) est affligé du [désavantage](/regles/competences/tests/avantage-desavantage). Étant limité à une seule action, il lui est impossible d’utiliser une [trousse de premiers soins](/regles/equipement/outils)."
+  },
+  {
+    "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+    "IsPublished": true,
+    "Slug": "resilience",
+    "Name": "Résilience",
+    "Tier": 2,
+    "AllowMultiplePurchases": false,
+    "Skill": null,
+    "RequiredTalent": {
+      "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+      "IsPublished": true,
+      "Slug": "barriere-mentale",
+      "Name": "Barrière mentale"
+    },
+    "Summary": "Renforce la défense mentale et atténue les dégâts psychiques.",
+    "MetaDescription": "Découvrez le talent Résilience, qui renforce la barrière mentale et réduit les effets des attaques mentales.",
+    "Description": "Lorsque le personnage utilise sa [barrière mentale](/regles/talents/barriere-mentale) et que celle-ci échoue à le protéger, il peut tenter un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) de [difficulté](/regles/competences/tests/difficulte) égale au nombre de points d’[Énergie](/regles/statistiques/energie) dépensés afin de canaliser la capacité, ou 15 si la capacité surnaturelle n’a pas de dépense associée.\n\nEn cas de réussite, il réduit de moitié les [points de dégâts](/regles/combat/degats) reçus, ou la [durée](/regles/magie/parametres/duree) de l’effet si celui-ci n’inflige aucun point de dégâts.\n\nIl peut utiliser cette capacité même si la capacité surnaturelle initiale ne lui imposait pas un jet de sauvegarde ou si elle n’était pas une [attaque](/regles/magie/effets/attaque)."
   },
   {
     "Id": "e3bb71cc-8513-4bf0-b9ad-69e158fde51b",
@@ -2513,8 +2693,8 @@
       "Slug": "robustesse-accrue",
       "Name": "Robustesse accrue"
     },
-    "Summary": "Bonus de 15 Vitalité. Peut dépenser de l’Énergie pour annuler ou réduire des dégâts sur sauvegarde. Une réussite auto par jour (ou après halte).",
-    "MetaDescription": null,
+    "Summary": "Accorde +15 vitalité et réduit les dégâts subis par endurance.",
+    "MetaDescription": "Découvrez le talent Robustesse supérieure, conférant vitalité accrue, résistance aux dégâts et endurance exceptionnelle.",
     "Description": "Confère au personnage un bonus permanent de 15 points de [Vitalité](/regles/statistiques/vitalite).\n\nÉgalement, lorsqu’il réussit un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) afin de réduire de moitié des [dégâts](/regles/combat/degats) reçus, il peut dépenser un nombre de points d’[Énergie](/regles/statistiques/energie) égal au nombre de points de dégâts reçus afin de ne recevoir aucun point de dégâts.\n\nS’il échoue le jet de sauvegarde, il peut également réduire les points de dégâts reçus de moitié en dépensant un nombre de points d’Énergie égal à la réduction de points de dégâts.\n\nIl peut réussir automatiquement un tel jet de sauvegarde, mais doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
   },
   {
@@ -2723,8 +2903,8 @@
       "Slug": "philologie",
       "Name": "Philologie"
     },
-    "Summary": "Le personnage apprend une langue. Il bénéficie d’un rabais pour les langues partageant un alphabet connu, sauf anciennes ou selon le contexte.",
-    "MetaDescription": null,
+    "Summary": "Apprend une langue et facilite celles partageant le même alphabet.",
+    "MetaDescription": "Découvrez le talent Synergie alphabétique, facilitant l’apprentissage de nouvelles langues partageant le même alphabet et renforçant la linguistique.",
     "Description": "Le personnage apprend une [langue](/regles/langues) de son choix.\n\nÉgalement, lorsqu’il acquiert le talent [Langue supplémentaire](/regles/talents/langue-supplementaire), si la langue qu’il désire apprendre partage son alphabet avec celui d’une langue qu’il connait déjà, alors il peut acquérir le talent à [rabais](/regles/talents/points).\n\nCette capacité ne s’applique pas aux langues anciennes, et le maître de jeu décide si elle s’applique aux langues exotiques en fonction de l’historique du personnage et de son contexte actuel."
   },
   {
@@ -2746,9 +2926,9 @@
       "Slug": "tir-rapide",
       "Name": "Tir rapide"
     },
-    "Summary": "Ignore les désavantages à longue portée et contre une cible renversée, ignore l’abri partiel, et gagne à l’attaque ou aux dégâts en tir concentré.",
-    "MetaDescription": null,
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Ses [attaques](/regles/combat/attaque) effectuées en maniant une [arme](/regles/equipement/armes) possédant la propriété [Munition](/regles/equipement/armes/proprietes) ne subissent pas de [désavantage](/regles/competences/tests/avantage-desavantage) à [longue portée](/regles/equipement/armes/proprietes).\n- Ses attaques effectuées en maniant une telle arme ignorent le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri).\n- Ses attaques effectuées en maniant une telle arme ne subissent pas de désavantage lorsqu’il cible une créature [renversée](/regles/combat/conditions/renverse).\n- Lorsqu’il effectue une attaque en maniant une telle arme, il peut le faire par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une. Lorsqu’il en fait ainsi, il peut ajouter un bonus (+5) à son [test](/regles/competences/tests) d’attaque ainsi qu’un [dé de dégâts](/regles/combat/degats/jet)."
+    "Summary": "Améliore la précision au tir et ignore les abris défensifs.",
+    "MetaDescription": "Découvrez le talent Tir précis, qui améliore la visée à distance et permet d’ignorer les abris ou désavantages au tir.",
+    "Description": "Le personnage peut effectuer une [attaque à distance](/regles/combat/attaque/distance) en utilisant une [arme](/regles/equipement/armes) possédant la propriété [Munition](/regles/equipement/armes/proprietes) par deux [actions](/regles/combat/deroulement/tour) plutôt qu’une.\n\nLorsqu’il en fait ainsi, il bénéficie des capacités suivantes :\n\n- Il ignore le [demi-abri](/regles/combat/attaque/abri) et l’[abri aux trois-quarts](/regles/combat/attaque/abri) de sa cible.\n- Il ne subit pas de [désavantage](/regles/competences/tests/avantage-desavantage) lorsqu’il utilise son arme à [longue portée](/regles/equipement/armes/proprietes).\n- Il ne subit pas de désavantage lorsqu’il cible une créature [renversée](/regles/combat/conditions/renverse).\n- Bonus (+5) à son [test](/regles/competences/tests) d’[attaque](/regles/combat/attaque).\n- Bonus d’un [dé de dégâts](/regles/combat/degats/jet)."
   },
   {
     "Id": "67a9983f-4a92-46e6-a5b9-6c4d09e531c2",
@@ -2841,8 +3021,8 @@
       "Slug": "tolerance-a-l-alcool-ii",
       "Name": "Tolérance à l’alcool II"
     },
-    "Summary": "Augmente le seuil de tolérance à l’alcool, et peut convertir de l’Énergie en Vitalité temporaire lorsqu’il boit.",
-    "MetaDescription": null,
+    "Summary": "Augmente la tolérance et accorde vitalité via l’alcoolémie.",
+    "MetaDescription": "Découvrez le talent Tolérance à l’alcool III, qui augmente la résistance à l’ivresse et confère de la vitalité temporaire via l’alcoolémie.",
     "Description": "Augmente de manière permanente (+3) le [seuil de tolérance à l’alcool](/regles/aventure/environnement/alcoolemie) du personnage.\n\nÉgalement, chaque fois qu’il acquiert des points d’alcoolémie, il peut se conférer des [points de Vitalité temporaires](/regles/combat/degats/temporaire) en dépensant un nombre égal de points d’[Énergie](/regles/statistiques/energie). Il peut se conférer 2 points de Vitalité temporaires par point d’alcoolémie, ou 5 points de Vitalité temporaires pour 2 points d’alcoolémie."
   },
   {

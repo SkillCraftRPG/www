@@ -2081,6 +2081,12 @@
           "IsPublished": true,
           "Slug": "attaque-sournoise",
           "Name": "Attaque sournoise"
+        },
+        {
+          "Id": "2e928d87-34eb-4a26-8dd0-453c021fda61",
+          "IsPublished": true,
+          "Slug": "parade",
+          "Name": "Parade"
         }
       ],
       "Features": [
