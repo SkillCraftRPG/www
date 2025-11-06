@@ -32,4 +32,13 @@ export default defineNuxtConfig({
       version: pkg.version,
     },
   },
+  // vite: {
+  //   optimizeDeps: {
+  //     include: ["bootstrap", "logitar-js", "marked", "md5", "nanoid"],
+  //     force: false,
+  //   },
+  //   server: {
+  //     watch: { ignored: ["**/.nuxt/**", "**/.output/**"] },
+  //   },
+  // },
 });

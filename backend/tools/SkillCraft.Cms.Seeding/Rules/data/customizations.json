@@ -200,6 +200,26 @@
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il choisit un des types de terrains suivant : arctique, côte, désert, forêt, marécage, montagne, prairie ou souterrains. Lorsqu’il voyage dans sur un terrain appartenant à ce type, le [terrain difficile](/regles/aventure/mouvement/terrain-difficile) ne le ralentit pas, et il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) contre ce terrain difficile. S’il voyage en groupe, tout le groupe bénéficie de cette capacité. À la discrétion du maître de jeu, il peut acquérir cette capacité pour un autre type de terrain par un mélange d’études théoriques et d’observations pratiques effectuées sur une période de [7 jours](/regles/aventure/temps) ou plus.\n- Il ignore les effets du climat rigoureux, comme une température très chaude ou très froide.\n- Il se voit conférer l’avantage à ses [tests](/regles/competences/tests) effectués afin de détecter la présence de pièges et de passages secrets. En milieu naturel, il peut renoncer à l’avantage et remplacer le test par un test de [Survie](/regles/competences/survie)."
   },
   {
+    "Id": "a617f987-f003-4f92-a69a-6686e560098a",
+    "IsPublished": true,
+    "Slug": "grossier",
+    "Name": "Grossier",
+    "Kind": "Disability",
+    "Summary": "Maladroit et peu éloquent, subit un désavantage social.",
+    "MetaDescription": "Découvrez le handicap Grossier, qui réduit les talents sociaux et rend le personnage maladroit et désagréable.",
+    "Description": "L’apparence et les manières du personnage sont naturellement désagréables.\n\nSon éloquence laisse également à désirer : il est affligé de graves bégaiements ou d’autres problèmes de prononciation évidents.\n\nSes [tests](/regles/competences/tests) de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation) et de [Tromperie](/regles/competences/tromperie) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "4708a14a-f893-4d4b-ac6c-aa1c2f125696",
+    "IsPublished": true,
+    "Slug": "hemophobe",
+    "Name": "Hémophobe",
+    "Kind": "Disability",
+    "Summary": "Panique à la vue du sang, provoquant peur et perte de contrôle.",
+    "MetaDescription": "Découvrez le handicap Hémophobe, où la vue du sang déclenche la panique et affaiblit la concentration du personnage en combat.",
+    "Description": "Peu n’effraie davantage le personnage que la vue du sang ou d’une plaie ouverte.\n\nLorsque lui-même ou un allié situé à 1,5 mètres ou moins de sa position est blessé par des [points de dégâts](/regles/combat/degats) [tranchants ou perforants](/regles/combat/degats/types), alors il doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) de [difficulté](/regles/competences/tests/difficulte) égale aux points de dégâts subis.\n\nEn cas d’échec, il est [apeuré](/regles/combat/conditions/apeure) jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour)."
+  },
+  {
     "Id": "db9135fc-4deb-43ba-9729-1d86960115af",
     "IsPublished": true,
     "Slug": "infatigable",
@@ -330,6 +350,36 @@
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se souvient exactement de tout ce qu’il a vu ou entendu pendant le dernier mois.\n- S’il observe le ciel pendant [une minute](/regles/aventure/temps), il peut déterminer où se trouve le Nord ainsi que le nombre d’heures restant avant le prochain coucher ou lever de soleil.\n- Il peut réfléchir pendant une minute à propos d’un sujet avant d’effectuer un [test](/regles/competences/tests) de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) ou de [Médecine](/regles/competences/medecine) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son test. Il doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n- Bonus permanent (+5) à ses [tests passifs](/regles/competences/tests/passif) d’Investigation."
   },
   {
+    "Id": "e97d29f6-3538-4c82-800e-b3464184d964",
+    "IsPublished": true,
+    "Slug": "phasmophobe",
+    "Name": "Phasmophobe",
+    "Kind": "Disability",
+    "Summary": "Terreur du surnaturel, désavantage face aux effets mystiques.",
+    "MetaDescription": "Découvrez le handicap Phasmophobe, où la peur panique du surnaturel affaiblit la volonté face aux morts-vivants et aux phénomènes occultes.",
+    "Description": "Le personnage est terriblement effrayé par le surnaturel.\n\nSes [tests](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) et [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets surnaturels sont affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nÉgalement, lorsqu’il [voit](/regles/aventure/environnement/vision) une créature morte-vivante de [niveau](/regles/personnages/progression/niveau) supérieur à son [tiers](/regles/personnages/progression/tiers), alors il doit effectuer un jet de sauvegarde de [Discipline](/regles/competences/discipline) de [difficulté moyenne](/regles/competences/tests/difficulte).\n\nEn cas d’échec, il est [apeuré](/regles/combat/conditions/apeure) jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour)."
+  },
+  {
+    "Id": "d56194c2-bd54-46f8-8905-bbbd2fa189c6",
+    "IsPublished": true,
+    "Slug": "polyglotte",
+    "Name": "Polyglotte",
+    "Kind": "Gift",
+    "Summary": "Apprend de nouvelles langues gratuitement à chaque progression.",
+    "MetaDescription": "Découvrez le don Polyglotte, qui offre la maîtrise gratuite de plusieurs langues, incluant parfois des idiomes rares ou exotiques.",
+    "Description": "Le personnage apprend gratuitement deux [langues](/regles/langues) supplémentaires.\n\nUne de ces deux langues peut être une langue exotique, à la discrétion du maître de jeu.\n\nÉgalement, il apprend gratuitement une langue supplémentaire chaque fois que son [tiers](/regles/personnages/progression/tiers) augmente."
+  },
+  {
+    "Id": "a689c986-b36e-4fdb-8809-dabc457751ed",
+    "IsPublished": true,
+    "Slug": "reflexes",
+    "Name": "Réflexes",
+    "Kind": "Gift",
+    "Summary": "Accorde l’avantage pour éviter les pièges et esquiver les entraves.",
+    "MetaDescription": "Découvrez le don Réflexes, qui accorde l’avantage contre les pièges et permet d’esquiver les dangers grâce à une agilité instinctive.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Acrobaties](/regles/competences/acrobaties) afin d’éviter les pièges, et il devient [résistant](/regles/combat/degats/efficacite) aux [dégâts](/regles/combat/degats) infligés par les pièges.\n- Lorsqu’il réussit un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’Acrobaties, alors il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer un [pas prudent](/regles/combat/activites/pas-prudent).\n- Il peut [Faire 20](/regles/competences/tests/faire-20) à un test pour s’échapper d’une contrainte physique par [deux actions](/regles/combat/deroulement/tour). Il ne peut [se déplacer](/regles/combat/activites/deplacement) jusqu’à la fin de son [tour](/regles/combat/deroulement/tour) lorsqu’il en fait ainsi."
+  },
+  {
     "Id": "6a3637fd-a9cb-46d2-a5ba-517009a883a3",
     "IsPublished": true,
     "Slug": "richesse",
@@ -348,5 +398,65 @@
     "Summary": "Renforce la résistance aux poisons, maladies et régénère mieux.",
     "MetaDescription": "Découvrez le don Santé de fer, qui confère résistance au poison, immunité accrue aux maladies et régénération de vitalité améliorée.",
     "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les maladies.\n- Il peut se conférer l’avantage à un jet de sauvegarde de [Résistance](/regles/competences/resistance). Si le [test](/regles/competences/tests) a été effectué contre un [poison](/regles/combat/degats/types), le personnage est [résistant](/regles/combat/degats/efficacite) aux [points de dégâts](/regles/combat/degats) de ce poison. Il peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n- Il se voit conférer un bonus permanent (+50%) à sa [régénération](/regles/aventure/repos) de [Vitalité](/statistiques/vitalite). Ce bonus est cumulatif à tout autre bonus de guérison et de médecine, qu’il soit magique ou non."
+  },
+  {
+    "Id": "48e9e0f9-210f-4e3f-ad55-622bf57cbc45",
+    "IsPublished": true,
+    "Slug": "sens-aiguises",
+    "Name": "Sens aiguisés",
+    "Kind": "Gift",
+    "Summary": "Accorde vision aveugle et bonus de perception en obscurité.",
+    "MetaDescription": "Découvrez le don Sens aiguisés, qui améliore la perception en obscurité, accorde une vision aveugle limitée et permet de sentir les vibrations environnantes.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Ses [tests](/regles/competences/tests) de [Perception](/regles/competences/perception) effectués dans une zone [légèrement obscurcie](/regles/aventure/environnement/vision) ne sont pas affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Il acquiert une [vision aveugle](/regles/aventure/environnement/vision) de 1,5 mètres.\n- Par une [action](/regles/combat/deroulement/tour), il peut effleurer une surface afin d’en ressentir les vibrations. Jusqu’à la fin de son prochain [tour](/regles/combat/deroulement/tour), il peut discerner la position de toute créature située à 4,5 mètres ou moins de la surface qu’il a effleurée. Il n’a pas besoin de voir ou d’entendre ces créatures.\n- Bonus permanent (+5) à ses [tests passifs](/regles/competences/tests/passif) de Perception."
+  },
+  {
+    "Id": "8d33b0fa-8670-47b8-bcdd-a2ee3444fb75",
+    "IsPublished": true,
+    "Slug": "sixieme-sens",
+    "Name": "Sixième sens",
+    "Kind": "Gift",
+    "Summary": "Perçoit les auras magiques et anticipe par instinct.",
+    "MetaDescription": "Découvrez le don Sixième sens, qui accorde une perception magique temporaire des auras et un instinct affûté.",
+    "Description": "Une fois par jour, en [action libre](/regles/combat/deroulement/tour), le personnage peut activer son sixième sens pendant une période de [10 minutes](/regles/aventure/temps).\n\nPendant cette période, par une [action](/regles/combat/deroulement/tour), il peut voir un faible aura autour de tout objet magique ou toute créature magique située à 9 mètres ou moins de sa position jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour).\n\nÉgalement, une fois par jour, il peut [Faire 20](/regles/competences/tests/faire-20) à un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces capacités."
+  },
+  {
+    "Id": "a6b2ec3e-4b81-48ff-856b-f89d420014b9",
+    "IsPublished": true,
+    "Slug": "sourd",
+    "Name": "Sourd",
+    "Kind": "Disability",
+    "Summary": "Le personnage est privé d’audition et échoue ses tests liés à l’ouïe.",
+    "MetaDescription": "Découvrez le handicap Sourd, qui prive le personnage de son audition et influence ses tests liés à l’ouïe et à la perception.",
+    "Description": "Le personnage a perdu son sens de l’audition ou en est né dépourvu.\n\nIl échoue automatiquement ses [tests](/regles/competences/tests) liés à l’ouïe.\n\nLorsqu’il effectue un test de [Perception](/regles/competences/perception) et qu’il n’est pas [aveuglé](/regles/combat/conditions/aveugle), alors il peut substituer son ouïe par sa [vue](/regles/aventure/environnement/vision) si la situation le permet."
+  },
+  {
+    "Id": "2f75c8f7-0c1b-44a0-a5b0-aaf3b597d9c2",
+    "IsPublished": true,
+    "Slug": "talentueux",
+    "Name": "Talentueux",
+    "Kind": "Gift",
+    "Summary": "Octroie gratuitement deux talents de base ou un talent général.",
+    "MetaDescription": "Découvrez le don Talentueux, qui permet d’obtenir gratuitement des talents de base liés à une compétence ou indépendants.",
+    "Description": "Le personnage [acquiert](/regles/talents/acquisition) gratuitement deux [talents](/regles/talents) de tiers 0 associés à une [compétence](/regles/competences), ou un talent de tiers 0 qui n’est pas associé à une compétence.\n\nCe talent ne peut être un [talent réservé](/regles/specialisations/talent-reserve)."
+  },
+  {
+    "Id": "7527d763-2043-4fa9-8e56-d2ba5169f7e9",
+    "IsPublished": true,
+    "Slug": "tremblements",
+    "Name": "Tremblements",
+    "Kind": "Disability",
+    "Summary": "Tremblements involontaires nuisant à la précision.",
+    "MetaDescription": "Découvrez le handicap Tremblements, qui affecte la précision manuelle et réduit la dextérité.",
+    "Description": "Les mains du personnage tremblent de manière inexplicable et fréquente, nuisant à sa dextérité.\n\nSes [tests](/regles/competences/tests) d’[Artisanat](/regles/competences/artisanat), d’[Orientation](/regles/competences/orientation) et de [Roublardise](/regles/competences/roublardise) sont effectués avec [désavantage](/regles/competences/tests/avantage-desavantage)."
+  },
+  {
+    "Id": "9eaaa699-40d5-4004-925c-b9b184a4bea7",
+    "IsPublished": true,
+    "Slug": "ventriloque",
+    "Name": "Ventriloque",
+    "Kind": "Gift",
+    "Summary": "Imite des voix et fait croire que les sons viennent d’ailleurs.",
+    "MetaDescription": "Découvrez le don Ventriloque, qui permet d’imiter des voix ou sons et de projeter la parole à distance.",
+    "Description": "Le personnage peut imiter avec exactitude la voix ou les sons d’une créature qu’il a préalablement écoutée et étudiée pendant au moins [une minute]().\n\nS’il dévie des paroles de la créature ou qu’il altère de quelconque manière les sons produits, les créatures l’écoutant peuvent détecter la supercherie par un [test](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) [opposé](/regles/competences/tests/oppose) à un test de [Tromperie](/regles/competences/tromperie) de sa part.\n\nÉgalement, lorsque le personnage parle, il peut donner l’impression que les paroles qu’il prononce ou les sons qu’il émet proviennent d’une source quelconque située à 9 mètres ou moins de sa position.\n\nLes créatures qui l’écoutent peuvent détecter la supercherie par un test d’Intuition opposé à un test de Tromperie de sa part.\n\nIl peut également utiliser cette capacité lorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs)."
   }
 ]

@@ -40,14 +40,38 @@
         dans les <NuxtLink to="/regles/combat/activites">activités</NuxtLink> qu’elle peut effectuer.
       </li>
     </ul>
+    <p>Le <NuxtLink to="/regles/talents">talent</NuxtLink> suivant améliore votre capacité à combattre sur un monture.</p>
+    <div class="row">
+      <div v-for="talent in talents" :key="talent.id" class="col-xs-12 mb-4">
+        <TalentCard class="d-flex flex-column h-100" :talent="talent" />
+      </div>
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import { arrayUtils } from "logitar-js";
 
+import type { Breadcrumb } from "~/types/components";
+import type { SearchResults, Talent } from "~/types/game";
+
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];
 const title: string = "Combat monté";
+const { orderBy } = arrayUtils;
+
+const query: string = ["monture-de-combat"].map((slug) => `slug=${slug}`).join("&");
+const { data } = await useAsyncData<SearchResults<Talent>>("talents:combat-monte", () =>
+  $fetch(`/api/talents?${query}`, {
+    baseURL: config.public.apiBaseUrl,
+  }),
+);
+const talents = computed<Talent[]>(() =>
+  orderBy(
+    (data.value?.items ?? []).map((talent) => ({ ...talent, sort: [talent.tier, talent.slug].join("_") })),
+    "sort",
+  ),
+);
 
 useSeo({
   title,
