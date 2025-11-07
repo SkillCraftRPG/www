@@ -1,6 +1,7 @@
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
+  faAdjust,
   faArrowRightFromBracket,
   faArrowRightToBracket,
   faArrowUp,
@@ -28,12 +29,14 @@ import {
   faLightbulb,
   faList,
   faMagnifyingGlassChart,
+  faMoon,
   faPaw,
   faPersonHiking,
   faPersonRunning,
   faRotateRight,
   faScrewdriverWrench,
   faScroll,
+  faSun,
   faTimes,
   faTriangleExclamation,
   faTrophy,
@@ -45,6 +48,7 @@ import {
 config.autoAddCss = false;
 
 library.add(
+  faAdjust,
   faArrowRightFromBracket,
   faArrowRightToBracket,
   faArrowUp,
@@ -72,12 +76,14 @@ library.add(
   faLightbulb,
   faList,
   faMagnifyingGlassChart,
+  faMoon,
   faPaw,
   faPersonHiking,
   faPersonRunning,
   faRotateRight,
   faScrewdriverWrench,
   faScroll,
+  faSun,
   faTimes,
   faTriangleExclamation,
   faTrophy,
