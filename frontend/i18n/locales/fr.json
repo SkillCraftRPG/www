@@ -48,6 +48,12 @@
       }
     }
   },
+  "theme": {
+    "title": "Thème",
+    "auto": "Automatique",
+    "dark": "Sombre",
+    "light": "Clair"
+  },
   "unit": {
     "centimeter": "centimètre | centimètre | centimètres",
     "inch": "pouce | pouce | pouces",
