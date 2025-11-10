@@ -16,7 +16,7 @@ a28506bf-699e-483a-8e2e-0e3e743b6eb8,corde-15-metres,Corde (15 mètres),1,5,Une 
 104797ef-a270-41fc-a44c-bdbfd804468f,couverture,Couverture,0.5,1.5,Une couverture chaude protégeant des nuits froides pour une personne.
 9668c8e0-fc96-47de-a236-f02f6060c881,craie,Craie,0.01,0,Cette pièce permet d’écrire et de marquer des surfaces diverses laissant une trace blanche ou colorée.
 d04a3307-a5c8-42ef-ab74-edf13e7a740e,echelle-3-metres,Échelle (3 mètres),0.1,12.5,Une simple échelle en bois d’une hauteur de 3 mètres.
-2412e7c4-c969-44c6-bbbe-2c1f3f16ff23,encensoir,Encensoir,5,7.5,"L’encensoir est un vase brûle-parfum en métal décoré de motifs religieux. On le tient par une petite chaînette métallique, ce qui permet de le balancer. On peut y faire brûler de l’encens sur des charbons ardents de résines végétales."
+2412e7c4-c969-44c6-bbbe-2c1f3f16ff23,encensoir,Encensoir,5,1,"L’encensoir est un vase brûle-parfum en métal décoré de motifs religieux. On le tient par une petite chaînette métallique, ce qui permet de le balancer. On peut y faire brûler de l’encens sur des charbons ardents de résines végétales."
 44bdb605-1538-4f44-8473-632d964a9030,encre-30-ml,Encre (30 ml),10,0,"Utilisée avec une plume à écrire, l’encre permet d’écrire sur un parchemin ou sur du papier."
 0bc22b78-92f4-43c7-be95-859997d94863,etui-a-parchemin,Étui à parchemin,1,0.5,Un petit cylindre de cuir pouvant contenir jusqu’à 5 parchemins roulés ou jusqu’à 10 feuilles de papier roulées.
 8b7ebd07-0f38-4100-b21b-daf452c88c86,ficelle-15-metres,Ficelle (15 mètres),10,2.5,Une ficelle de soie dotée de 2 points de Vitalité. On peut la briser en réussissant un test d’Athlétisme de difficulté élevée. La longueur standard est de 15 mètres.
@@ -52,7 +52,7 @@ b42fa839-a099-462d-9315-a061943cb4a1,sablier,Sablier,25,0.5,"Permet de mesurer l
 632dddaa-9208-48ba-aff7-7cb7a352ab1f,sac-de-couchage,Sac de couchage,1,3.5,"Permet de dormir sur le sol, par exemple dans une chambre d’auberge ou à l’extérieur. Il peut être combiné à une couverture pour les nuits froides."
 ea0ff0be-1d9f-4963-8e1b-b3e5f53f0ad4,savon,Savon,0.02,0,Une denrée nécessaire au nettoyage d’articles et à la baignade.
 73eeb99f-0f2c-4326-9d7f-2c0ee9e16eed,sifflet,Sifflet,0.05,0,Un petit sifflet utile afin de produire un avertissement sonore.
-dc7d8aae-1312-400f-8369-162ac40bab29,symbole-divin,Symbole divin,5,1.5,"La représentation d’une divinité, d’un culte ou d’un panthéon. Il permet aux Clercs de canaliser certains pouvoirs. Il peut être tenu dans la main, porté en collier ou fixé sur un bouclier."
+dc7d8aae-1312-400f-8369-162ac40bab29,symbole-divin,Symbole divin,5,1,"La représentation d’une divinité, d’un culte ou d’un panthéon. Il permet aux Clercs de canaliser certains pouvoirs. Il peut être tenu dans la main, porté en collier ou fixé sur un bouclier."
 1a0e2ce4-a1db-481d-bfc8-f337905b1f85,tente-2-personnes,Tente (2 personnes),2,10,Une tente simple et portative permettant d’accueillir deux personnes.
 1d90ad22-732c-4e89-b821-fa44e8eda47a,torche,Torche,0.01,0.5,"Lorsqu’elle est allumée, elle émet de la clarté dans un rayon de 6 mètres et de la pénombre dans un rayon supplémentaire de 6 mètres pendant une heure. On peut l’utiliser comme arme improvisée afin d’infliger 1 point de dégâts de feu."
 e807c03b-6688-49df-b366-80dcd98480e5,tronc,Tronc,7,2,Un tronc est une petite boîte percée d’une fente que les membres d’un clergé utilisent afin de recueillir l’aumône. Ils disposent d’un loquet pouvant être verrouillé et sont souvent décorées de motifs religieux.
