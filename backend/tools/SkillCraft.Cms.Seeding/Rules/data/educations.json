@@ -33,9 +33,14 @@
       "Slug": "discipline",
       "Name": "Discipline"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "cf048f2c-05b4-4815-bd62-62000275ed1b",
+      "IsPublished": true,
+      "Name": "Maîtrise singulière",
+      "Description": "Le maître du personnage lui a inculqué une maîtrise précise et exceptionnelle.\n\nSélectionnez une action précise. Lorsque votre personnage effectue cette action précise, vous pouvez conférer à son [test](/regles/competences/tests) un bonus (+2).\n\nLe personnage peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+    },
+    "Summary": "Formé par un maître, il maîtrise parfaitement un art précis.",
+    "MetaDescription": "Découvrez l’éducation Apprenti d’un maître, symbole d’un apprentissage rigoureux et d’une maîtrise transmise par un mentor.",
     "Description": "Le personnage a tout appris d’un maître partageant un art ou une profession avec lui.\n\nCe maître lui a enseigné les subtilités qui permettront au personnage d’être éventuellement reconnu comme un maître lui aussi.\n\nCet apprentissage a été effectué dans l’ordre et la discipline, sous la direction du maître."
   },
   {
@@ -50,9 +55,14 @@
       "Slug": "resistance",
       "Name": "Résistance"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "ebb1c9e1-425c-4c56-b374-a2f6f2e1a2fc",
+      "IsPublished": true,
+      "Name": "Résolution inébranlable",
+      "Description": "Ayant grandi au milieu des atrocités de la guerre, le personnage est doté d’une résolution exceptionnelle.\n\nLorsqu’il échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) contre un effet de [peur](/regles/combat/conditions/apeure) ou d’[étourdissement](/regles/combat/conditions/etourdi), alors il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) afin de rejouer le [test](/regles/competences/tests).\n\nAlternativement, il peut dépenser 15 points d’Énergie afin d’éviter les effets de la [Fatigue](/regles/combat/conditions/fatigue) pour un test ou [déplacement](/regles/combat/activites/deplacement).\n\nIl peut utiliser ces capacités un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+    },
+    "Summary": "Éducation forgée par la guerre, résistance et volonté inébranlables.",
+    "MetaDescription": "Découvrez une éducation marquée par la guerre. Endurci par la survie, le personnage développe une résistance exceptionnelle et une détermination sans faille.",
     "Description": "Le personnage est un enfant de la guerre, un fugitif d’un conflit ayant affecté les civils.\n\nSon enfance est maigre enmoments heureux et aisés, ce a fait de lui une personne endurcie dotée d’une personnalité pragmatique."
   },
   {
@@ -67,9 +77,14 @@
       "Slug": "connaissance",
       "Name": "Connaissance"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "0697c1bb-130b-47d3-9036-208bb0900781",
+      "IsPublished": true,
+      "Name": "Alumni",
+      "Description": "Grâce à son parcours académique, le personnage entretient un réseau de contacts issus de divers milieux.\n\nIl peut mobiliser ces relations pour obtenir des informations, un service, une recommandation ou un appui ponctuel, selon la nature de sa formation et les circonstances.\n\nCes connaissances peuvent lui apporter un avantage social, une ressource rare ou un contact utile à la mission."
+    },
+    "Summary": "Éducation érudite, savoir étendu et réseau d’influence académique.",
+    "MetaDescription": "Découvrez une éducation traditionnelle d’élite, fondée sur le savoir, la rigueur et un réseau d’anciens contacts utiles dans les milieux cultivés.",
     "Description": "Peu peuvent se vanter d’avoir reçu une éducation traditionnelle comme celle du personnage.\n\nIl a suivi un parcours scolaire conforme et sans dérogation ayant mené à une instruction de haute qualité.\n\nMalgré son manque d’expériences personnelles, son grand savoir lui permet de se débrouiller même dans les situations les plus difficiles."
   },
   {
@@ -84,10 +99,15 @@
       "Slug": "acrobaties",
       "Name": "Acrobaties"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
-    "Description": "Élevé dans la rue, le personnage est peut-être issu d’une famille de sans-abris.\\n\\nIl peut également avoir été élevé par d’autres clochards, n’ayant jamais connu ses parents.\\n\\nRecruté par un cirque ambulant ou esquivant les situations malencontreuses par ses prouesses physiques, ses mouvements sont prompts et souples."
+    "Feature": {
+      "Id": "4984804a-1c44-4497-8da4-2232c1f029c0",
+      "IsPublished": true,
+      "Name": "Enfant des ruelles",
+      "Description": "Ayant grandi au cœur des ruelles et des faubourgs, il connaît les codes tacites de la survie urbaine.\n\nVictime de nombreuses privations, il n’est pas pénalisé par la [faim](/regles/aventure/environnement/alimentation), ni par la [soif](/regles/aventure/environnement/alimentation).\n\nIl se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) lorsqu’il tente de trouver ou d’éviter les représentants de la loi et/ou les criminels dans les centres urbains."
+    },
+    "Summary": "Enfant des ruelles, agile et rusé, il a appris à survivre sans règles.",
+    "MetaDescription": "Découvrez l’éducation *Dans la rue*, forgée par la faim et l’instinct. Souple et débrouillard, l’enfant des ruelles survit parmi les faubourgs et la misère.",
+    "Description": "Élevé dans la rue, le personnage est peut-être issu d’une famille de sans-abris.\n\nIl peut également avoir été élevé par d’autres clochards, n’ayant jamais connu ses parents.\n\nRecruté par un cirque ambulant ou esquivant les situations malencontreuses par ses prouesses physiques, ses mouvements sont prompts et souples."
   },
   {
     "Id": "e15340ac-fb01-423a-9c01-b3aac489d2bb",
@@ -135,9 +155,14 @@
       "Slug": "perception",
       "Name": "Perception"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "61abcdbb-cff7-4eb0-b167-e0880196524b",
+      "IsPublished": true,
+      "Name": "Contemplation",
+      "Description": "En situation critique, le personnage peut recentrer son focus sur les enseignements et mémoires de son mentor.\n\nIl prend une [action](/regles/combat/deroulement/tour) afin de conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son prochain [test](/regles/competences/tests).\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+    },
+    "Summary": "A grandi auprès d’un sage, cultivant la patience et la clairvoyance.",
+    "MetaDescription": "Découvrez l’éducation Mentor vénérable, symbole d’un apprentissage calme et réfléchi transmis par un sage observateur du monde.",
     "Description": "Le personnage a été confié à un vieux sage, par exemple ses grands-parents ou aux moines d’un sanctuaire.\n\nIl aura développé un tempérament serein pendant son enfance.\n\nSon mentor lui aura également enseigné à prendre le temps d’observer son environnement et à porter attention aux détails afin de poser des conclusions rationnelles."
   },
   {
