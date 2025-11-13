@@ -44,4 +44,5 @@ useSeo({
 // TODO(fpion): réussite avec Damnation
 // TODO(fpion): échec avec Damnation
 // TODO(fpion): échec critique
+// TODO(fpion): Sorcier — Manipulation du chaos
 </script>

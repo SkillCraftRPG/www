@@ -101,8 +101,8 @@
     "Slug": "archer",
     "Name": "Archer",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Spécialiste du tir à distance, précision, vigilance et mobilité fluides.",
+    "MetaDescription": "Découvrez l’archer, maître du tir à distance. Alliant précision, perception et grâce martiale, il frappe juste, observe tout et contrôle le champ de bataille.",
     "Description": "L’archer se tient fièrement sur le champ de bataille, une silhouette gracieuse déployant l’arc avec une maîtrise inégalée. Vêtu d’un gambison ou d’une armure n’entravant pas ses mouvements, son regard perçant scrute l’horizon. Les doigts habiles manipulent la corde, libérant des flèches d’une précision redoutable. Son art transcende la simple compétence, l’archer incarne la symbiose entre la nature et la guerre, une force mortelle capable de façonner le destin à travers la danse gracieuse de ses flèches.",
     "Requirements": {
       "Talent": {
@@ -114,13 +114,123 @@
       "Other": []
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "0daa9126-6911-4cc8-a960-d0898e31c27e",
+          "IsPublished": true,
+          "Slug": "maraudage",
+          "Name": "Maraudage"
+        },
+        {
+          "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+          "IsPublished": true,
+          "Slug": "initiative-accrue",
+          "Name": "Initiative accrue"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "881700ba-f7d3-4425-b38c-86bc6e75fb08",
+          "IsPublished": true,
+          "Slug": "armes-de-tir",
+          "Name": "Armes de tir"
+        },
+        {
+          "Id": "1f8cf0b2-edb9-4f9f-aa13-a78794b8c1ba",
+          "IsPublished": true,
+          "Slug": "ambidextre",
+          "Name": "Ambidextre"
+        },
+        {
+          "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
+          "IsPublished": true,
+          "Slug": "attaque-sournoise",
+          "Name": "Attaque sournoise"
+        },
+        {
+          "Id": "5b2904bd-5e73-458e-a37d-d2d1d15e003f",
+          "IsPublished": true,
+          "Slug": "mefait-feutre",
+          "Name": "Méfait feutré"
+        },
+        {
+          "Id": "23525c66-0331-44f2-97df-e51ec96c87d8",
+          "IsPublished": true,
+          "Slug": "armes-de-finesse",
+          "Name": "Armes de finesse"
+        },
+        {
+          "Id": "55c22052-8b98-4155-9183-baa59aae999f",
+          "IsPublished": true,
+          "Slug": "culbutes",
+          "Name": "Culbutes"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
+          "IsPublished": true,
+          "Slug": "attaque-neutralisante",
+          "Name": "Attaque neutralisante"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "2e928d87-34eb-4a26-8dd0-453c021fda61",
+          "IsPublished": true,
+          "Slug": "parade",
+          "Name": "Parade"
+        }
+      ],
       "Other": []
     },
     "ReservedTalent": {
       "Name": "Archerie",
       "Description": [],
-      "DiscountedTalents": [],
+      "DiscountedTalents": [
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "09a52559-3dd9-4556-a4e8-c222585b3b2f",
+          "IsPublished": true,
+          "Slug": "tir-precis",
+          "Name": "Tir précis"
+        },
+        {
+          "Id": "9d6b0831-d4c7-4218-9a25-2e91f31370c2",
+          "IsPublished": true,
+          "Slug": "chargement-rapide",
+          "Name": "Chargement rapide"
+        }
+      ],
       "Features": [
         {
           "Id": "679867e2-c237-4751-bce5-78b7af15397e",
@@ -243,8 +353,8 @@
     "Slug": "augure",
     "Name": "Augure",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Voyant inspiré lisant les signes divins pour prédire l’avenir des mortels.",
+    "MetaDescription": "Découvrez l’Augure, maître des présages et interprète des signes sacrés. Relié aux esprits, il lit le destin, dévoile la vérité et prédit l’avenir des hommes.",
     "Description": "Niché au sommet d’un mont, drapé dans ses toges sacrées, l’augure observe les oiseaux volant au-dessus de lui, scrutant les signes et présages que les dieux lui envoient. C’est à partir d’interprétations telles celles-ci que l’augure guide la populace, les généraux et même les nobles. Sa magie fait appel aux esprits qui peuvent prédire le futur et prédire le destin. Il souhaite ne pas se tromper dans ses prédictions et montrer la bonne voie dans sa sphère d’influence.",
     "Requirements": {
       "Talent": {
@@ -259,7 +369,74 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "17dcdec1-469d-452b-bf94-c225ddc3017a",
+          "IsPublished": true,
+          "Slug": "philologie",
+          "Name": "Philologie"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
       "Other": [
         "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à l’élément Esprit ([Divination](#))."
       ]
@@ -270,7 +447,26 @@
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à l'élément Esprit ([Divination](#)) et acquiert gratuitement un de ces pouvoirs.",
         "Il peut désormais utiliser de puissantes [capacités élémentaires](#) de tiers 2."
       ],
-      "DiscountedTalents": [],
+      "DiscountedTalents": [
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+          "IsPublished": true,
+          "Slug": "magie-precise",
+          "Name": "Magie précise"
+        }
+      ],
       "Features": [
         {
           "Id": "47a6e879-081d-4067-b3cb-850ed0fd477a",
@@ -424,8 +620,8 @@
     "Slug": "catalyste",
     "Name": "Catalyste",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Maître des combinaisons magiques, il fusionne les éléments en puissance.",
+    "MetaDescription": "Découvrez le Catalyste, manipulateur des forces primordiales. Grâce à la fusion élémentaire, il unit plusieurs éléments pour créer des effets dévastateurs.",
     "Description": "La puissance du Catalyste provient de son contrôle de plusieurs éléments et de sa capacité à combiner ces éléments afin de produire des pouvoirs et effets surnaturels inhabituels. Parfois, cette combinaison est harmonieuse, particulièrement lorsque deux éléments similaires sont combinés. En revanche, lorsque deux éléments sont opposés, soit l’Air et la Terre ou l’Eau et le Feu, cette combinaison peut être dévastatrice et causer d’importants cataclysmes.",
     "Requirements": {
       "Talent": {
@@ -441,7 +637,104 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "4000f081-3804-4735-a29a-c70ffbe39aa7",
+          "IsPublished": true,
+          "Slug": "combinaison-elementaire",
+          "Name": "Combinaison élémentaire"
+        },
+        {
+          "Id": "6e31c8e4-b48c-42f3-9024-e972ac256728",
+          "IsPublished": true,
+          "Slug": "cuirasse",
+          "Name": "Cuirassé"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
+          "IsPublished": true,
+          "Slug": "attaque-neutralisante",
+          "Name": "Attaque neutralisante"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "c00d8449-0195-4f6d-8443-5bb252154a6b",
+          "IsPublished": true,
+          "Slug": "frappe-puissante",
+          "Name": "Frappe puissante"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "97bc80a5-4c5f-4e79-806f-83587553d743",
+          "IsPublished": true,
+          "Slug": "expertise-artisanale",
+          "Name": "Expertise artisanale"
+        },
+        {
+          "Id": "70ba6c8f-af9a-4586-812f-f15e1e36ace8",
+          "IsPublished": true,
+          "Slug": "lancer-brutal",
+          "Name": "Lancer brutal"
+        },
+        {
+          "Id": "a1aae77b-f08a-4c8a-9e83-b971ce674eba",
+          "IsPublished": true,
+          "Slug": "lutte",
+          "Name": "Lutte"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
       "Other": [
         "Deux [pouvoirs](/regles/magie/pouvoirs) issus d’une [combinaison élémentaire](#)."
       ]
@@ -454,7 +747,20 @@
         "Enfin, il peut acquérir les pouvoirs de tiers 1 associés aux autres [éléments qu’il contrôle](/regles/talents/elementarisme), ainsi que ceux associés à une combinaison de ces éléments.",
         "Il peut utiliser de puissantes [capacités élémentaires](#) de tiers 2."
       ],
-      "DiscountedTalents": [],
+      "DiscountedTalents": [
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+          "IsPublished": true,
+          "Slug": "resilience",
+          "Name": "Résilience"
+        }
+      ],
       "Features": [
         {
           "Id": "da862fa7-bcae-4c8d-a8db-c0680b46c9f4",
@@ -471,8 +777,8 @@
     "Slug": "chaman",
     "Name": "Chaman",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Médiateur entre les vivants et les esprits, voyageur des mondes éthérés.",
+    "MetaDescription": "Découvrez le Chaman, gardien des traditions et des esprits anciens. Par le chamanisme, il traverse le voile spirituel pour converser, soigner et combattre.",
     "Description": "Le chaman est un protecteur des traditions et des esprits ancestraux. C’est un gardien de la nature et des cimetières. Ses pratiques incluent les sacrifices de petits animaux, les danses autour du feu sacré et la consommation d’herbes ou de champignons hallucinogènes. Grâce à ces pratiques, il peut entrer en contact avec les esprits de la nature et de ses ancêtres, qui agissent en tant que guides auprès de lui et qui lui permettent d’acquérir les mystères de l’au-delà. Au sein de son peuple primitif, le chaman joue le rôle du guérisseur et du devin.",
     "Requirements": {
       "Talent": {
@@ -488,7 +794,74 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+          "IsPublished": true,
+          "Slug": "naturalisme",
+          "Name": "Naturalisme"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "ac76e322-95b6-4bf5-a9c7-80ba7a91da79",
+          "IsPublished": true,
+          "Slug": "magie-puissante",
+          "Name": "Magie puissante"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "70ba6c8f-af9a-4586-812f-f15e1e36ace8",
+          "IsPublished": true,
+          "Slug": "lancer-brutal",
+          "Name": "Lancer brutal"
+        },
+        {
+          "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+          "IsPublished": true,
+          "Slug": "bris",
+          "Name": "Bris"
+        },
+        {
+          "Id": "60c63539-0bf4-42c5-9cfb-84602a45b37f",
+          "IsPublished": true,
+          "Slug": "medecine-animale",
+          "Name": "Médecine animale"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
       "Other": [
         "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
       ]
@@ -500,7 +873,14 @@
         "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](#)."
       ],
       "DiscountedTalents": [],
-      "Features": []
+      "Features": [
+        {
+          "Id": "7f632223-7644-4446-b028-e3a41fb09ea1",
+          "IsPublished": true,
+          "Name": "Forme éthérée",
+          "Description": "Le personnage peut maintenant assumer sa [forme sauvage](/regles/specialisations/animiste) deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n\nPlutôt que de prendre la forme d’une bête, il peut assumer la forme d’un esprit marchant à la frontière de la dimension spirituelle. Il doit se trouver dans une dimension voisine à la dimension spirituelle afin d’en faire ainsi.\n\nLorsqu’il assume sa forme éthérée, il acquiert les capacités suivantes.\n\n- Il ajoute ses [Sens](/regles/attributs/sens) (minimum 1) à son [Esquive](/regles/combat/attaque/esquive).\n- Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline) lorsqu’il utilise sa [Barrière mentale](/regles/talents/barriere-mentale).\n- Il acquiert une [vitesse](/regles/aventure/mouvement/vitesse) de [lévitation](/regles/aventure/mouvement/types) égale à sa vitesse de marche. Lorsqu’il monte ou descend en altitude, sa vitesse est réduite de moitié.\n- Il est [résistant](/regles/combat/degats/efficacite) aux [dégâts physiques](/regles/combat/degats/types), mais ses [tests](/regles/competences/tests) d’[attaque](/regles/combat/attaque) se voient affligés du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Il acquiert une [vision dans le noir](/regles/aventure/environnement/vision) à une distance de 18 mètres. Il peut également percevoir faiblement ce qui se trouve dans la dimension spirituelle dans cette portée en teintes de gris, il lui est donc pratiquement impossible de discerner les couleurs. Il peut voir l’âme des créatures qui en sont dotées situées à 4,5 mètres ou moins de sa position, ce qui lui permet de détecter la présence de créatures [dissimulées](/regles/combat/activites/cacher) ou [invisibles](/regles/combat/conditions/invisible).\n- Il peut communiquer avec les esprits se trouvant dans la dimension spirituelle. Les créatures situées dans le monde matériel peuvent l’entendre communiquer avec l’esprit, et si l’esprit lui répond, les créatures situées dans la dimension spirituelle peuvent entendre l’esprit.\n- Il se voit conférer l’avantage à ses tests afin de ne pas être immobilisé ou de [se libérer](/regles/combat/activites/echapper) d’un effet l’immobilisant telle l’activité [Agripper](/regles/combat/activites/agripper), mais il se voit affligé du désavantage à ses tests lorsqu’il tente d’agripper une autre créature.\n- Il peut tenter de blesser l’âme d’une créature qui en est dotée en la [touchant](/regles/magie/parametres/portee) par une [action](/regles/combat/deroulement/tour). Il effectue un test d’[Occultisme](/regles/competences/occultisme) contre la [Défense](/regles/combat/attaque/defense) de la cible. Si l’[attaque](/regles/magie/effets/attaque) réussit, il inflige [1d4 points de dégâts](/regles/combat/degats/jet) [spectraux](/regles/combat/degats/types) additionnés à sa [Puissance](/regles/statistiques/puissance).\n- Il peut canaliser des [pouvoirs](/regles/magie/pouvoirs), mais ses cibles se voient conférer l’avantage à leurs jets de sauvegarde contre les pouvoirs canalisés par le personnage."
+        }
+      ]
     }
   },
   {
@@ -792,8 +1172,8 @@
     "Slug": "druide",
     "Name": "Druide",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Gardien des esprits naturels, maître des formes sauvages et du verbe sacré.",
+    "MetaDescription": "Découvrez le Druide, initié des cercles spirituels voués à la nature. Grâce au druidisme, il parle le langage secret du monde et prend la forme des bêtes.",
     "Description": "Le druide est un animiste ayant réussi un rite de passage afin d’être accepté dans un cercle d’un culte spirituel voué à un ou plusieurs éléments naturels. L’appartenance à ce culte lui a permis d’accéder aux secrets de ce culte, notamment un langage clandestin et des pouvoirs de puissance supérieure. Ces pouvoirs sont accompagnés de nouvelles responsabilités : il doit respecter les préceptes du cercle l’ayant accepté afin de conserver le droit de les utiliser.",
     "Requirements": {
       "Talent": {
@@ -809,7 +1189,74 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "edc9b423-bb0b-4259-aaf0-8b22d2db3519",
+          "IsPublished": true,
+          "Slug": "naturalisme",
+          "Name": "Naturalisme"
+        },
+        {
+          "Id": "da6a0b6e-4ff7-402e-9959-f5a12ff10362",
+          "IsPublished": true,
+          "Slug": "endurance-accrue",
+          "Name": "Endurance accrue"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+          "IsPublished": true,
+          "Slug": "bris",
+          "Name": "Bris"
+        },
+        {
+          "Id": "60c63539-0bf4-42c5-9cfb-84602a45b37f",
+          "IsPublished": true,
+          "Slug": "medecine-animale",
+          "Name": "Médecine animale"
+        },
+        {
+          "Id": "aa6905b3-98d0-4ea6-8fc3-06f47aed66db",
+          "IsPublished": true,
+          "Slug": "meditation",
+          "Name": "Méditation"
+        }
+      ],
       "Other": [
         "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
       ]
@@ -1009,8 +1456,8 @@
     "Slug": "elemancien",
     "Name": "Élémancien",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Maître des forces primordiales, il fusionne avec l’essence des éléments.",
+    "MetaDescription": "Découvrez l’Élémancien, savant des forces naturelles. Grâce à son âme élémentaire, il canalise la magie du feu, de l’eau, de la terre ou de l’air avec puissanc…",
     "Description": "L’Élémancien est un Élémentariste ayant raffiné sa faculté à manipuler l’énergie d’un élément. Cet entraînement est généralement long et pénible, et le résultat de dangereuses expériences en manipulant cette énergie. Néanmoins, cet entraînement lui a permis d’atteindre des pouvoirs élémentaires de puissance supérieure, ce qui en a valu la chandelle.",
     "Requirements": {
       "Talent": {
@@ -1103,7 +1550,20 @@
         "Il peut également acquérir les pouvoirs de tiers 2 associés à une [combinaison élémentaire](#) incluant sa spécialité.",
         "Il peut utiliser de puissantes [capacités élémentaires](#) de tiers 2."
       ],
-      "DiscountedTalents": [],
+      "DiscountedTalents": [
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "bd4005cc-0689-4c5c-8436-fe10f06c1edc",
+          "IsPublished": true,
+          "Slug": "attaque-magique",
+          "Name": "Attaque magique"
+        }
+      ],
       "Features": [
         {
           "Id": "9a1879cb-87a2-48be-b07e-a476da8671ad",
@@ -1231,8 +1691,8 @@
     "Slug": "haruspice",
     "Name": "Haruspice",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Mage occulte lisant les entrailles du monde pour déchiffrer la mort.",
+    "MetaDescription": "Découvrez le Haruspice, devin des ombres pratiquant la nécromancie et les rituels sanglants. Il lit les chairs et les esprits pour dévoiler vérité et fatalité.",
     "Description": "Dans les profondeurs de son repaire obscur et caché loin des regards, l’haruspice pratique de sombres rituels incorporant du sang, des entrailles de bêtes et d’anciens symboles gravés dans la pierre. Les murmures des esprits guident ses mains, lui révélant des visions d’avenir, des secrets du passé et des réalités du présent. Bien qu’il soit craint par la populace et la noblesse, les prédictions de l’haruspice ne sont pas toujours teintées de mort et de désespoir.",
     "Requirements": {
       "Talent": {
@@ -1325,7 +1785,26 @@
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à l'élément Esprit ([Nécromancie](#)) et acquiert gratuitement un de ces pouvoirs.",
         "Il peut désormais utiliser de puissantes [capacités élémentaires](#) de tiers 2."
       ],
-      "DiscountedTalents": [],
+      "DiscountedTalents": [
+        {
+          "Id": "f7157b4f-b65e-4eff-a66e-58d0a5c7f7be",
+          "IsPublished": true,
+          "Slug": "extraction-du-poison",
+          "Name": "Extraction du poison"
+        },
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+          "IsPublished": true,
+          "Slug": "erudition",
+          "Name": "Érudition"
+        }
+      ],
       "Features": [
         {
           "Id": "66b80472-5273-408b-8c64-c3e02c702069",
@@ -1468,8 +1947,8 @@
     "Slug": "mage",
     "Name": "Mage",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Érudit des arcanes ayant perfectionné l’art mystique au sein d’un cercle.",
+    "MetaDescription": "Découvrez le Mage, savant des arcanes ayant triomphé des épreuves d’astromancie. Par sa magie raffinée, il maîtrise les cercles occultes et canalise l’énergie …",
     "Description": "Le terme mage désigne les Astromanciens en général, mais le titre de Mage n’est décerné qu’aux plus brillants de ceux-ci. En réussissant une série de tests complexes et éprouvants, un Astromancien prouve sa valeur à une Tour de Magie. Il se spécialise ensuite dans un Cercle de Magie en étudiant le corpus de ses collègues.",
     "Requirements": {
       "Talent": {
@@ -1857,8 +2336,8 @@
     "Slug": "pretre",
     "Name": "Prêtre",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Serviteur consacré canalisant la puissance de sa divinité protectrice.",
+    "MetaDescription": "Découvrez le Prêtre, émissaire des dieux et canal de leur puissance. Par la prêtrise, il invoque la magie divine pour soigner, purifier et frapper au nom du sa…",
     "Description": "Le prêtre est un clerc ayant progressé au sein de son clergé. Il est non seulement reconnu par ses pairs comme un important ambassadeur de sa divinité par un échelon plus élevé, il est également reconnu par sa divinité en recevant des pouvoirs plus puissants de la part de celle-ci.",
     "Requirements": {
       "Talent": {
@@ -2095,6 +2574,12 @@
           "IsPublished": true,
           "Name": "Escarmouche",
           "Description": "Lorsqu’une créature ennemie termine son [tour](/regles/combat/deroulement/tour) à 1,5 mètres ou moins de la position du personnage, alors celui-ci peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer un [Déplacement](/regles/combat/activites/deplacement) à la moitié de sa [vitesse](/regles/aventure/mouvement/vitesse) ou un [Pas prudent](/regles/combat/activites/pas-prudent).\n\nLe [test](/regles/competences/tests) des [attaques d’opportunité](/regles/combat/attaque/opportunite) déclenchées par ce déplacement est affligé du [désavantage](/regles/competences/tests/avantage-desavantage)."
+        },
+        {
+          "Id": "d65b6abd-a99d-4722-85c9-6c45e86b7764",
+          "IsPublished": true,
+          "Name": "Coup de chance",
+          "Description": "Lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), il peut [Faire 10](/regles/competences/tests/faire-10) même s’il est menacé ou distrait.\n\nLe test ne doit pas être un test d’[attaque](/regles/combat/attaque), ni un [jet de sauvegarde](/regles/competences/tests/sauvegarde), et le personnage doit être [formé](/regles/competences/formation) pour cette compétence.\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations.\n\nIl peut [Faire 20](/regles/competences/tests/faire-20) au coût de deux utilisations, malgré les contraintes de temps et matérielles.\n\nIl peut utiliser ces capacités avant d’effectuer le test, après avoir jeté les [dés](/regles/competences/tests/2d10), ou après avoir été informé du résultat."
         }
       ]
     }
@@ -2281,8 +2766,8 @@
     "Slug": "sorcier",
     "Name": "Sorcier",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Prêt à tout pour dominer le chaos, il tord la magie pour altérer le destin.",
+    "MetaDescription": "Découvrez le Sorcier, manipulateur d’essences et d’artefacts anciens. Maître de la méta-magie, il canalise le chaos pour détourner les forces ennemies.",
     "Description": "Au sommet d’une tour d’ébène se trouve un sorcier se penchant sur des techniques magiques ésotériques et méconnues de ses semblables. Il manipule des forces et artéfacts anciens et interdits, se plongeant dans des incantations oubliées depuis des siècles ou même plus. Il fait appeler aux vents du chaos afin de manipuler le destin et de déchirer la fabrique du monde matériel. Il est également capable d’absorber les enchantements les plus puissants dirigés vers lui afin de retourner cette énergie contre ses adversaires.",
     "Requirements": {
       "Talent": {
@@ -2406,7 +2891,7 @@
       "Description": [
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) dès qu’il l’acquiert la spécialisation [Astromancien](/regles/specialisations/astromancien).",
         "Il peut acquérir les pouvoirs de tiers 2 associés à l’[élément Esprit](#) dès qu’il l’acquiert la spécialisation [Élémentariste](/regles/specialisations/elementariste), si sa spécialité élémentaire est l’Esprit.",
-        "Il peut utiliser une capacité de [Méta-magie](/regles/talents/meta-magie) en dépensant des [points d’essence élémentaire](#) associés à l’Esprit plutôt que des points d’[Énergie](/regles/statistiques/energie). Lorsqu’il en fait ainsi, il le fait en [action libre](/regles/combat/deroulement/tour), et dépense un point d’essence élémentaire pour chaque tranche de points d’Énergie supplémentaires requis par cette capacité."
+        "Il peut utiliser une capacité de [Méta-magie](/regles/talents/meta-magie) en dépensant des [points d’essence élémentaire](#) associés à l’Esprit plutôt que des points d’[Énergie](/regles/statistiques/energie). Lorsqu’il en fait ainsi, il dépense un point d’essence élémentaire pour chaque tranche de 10 points d’Énergie dépensée par cette capacité."
       ],
       "DiscountedTalents": [
         {
@@ -2428,7 +2913,20 @@
           "Name": "Magie précise"
         }
       ],
-      "Features": []
+      "Features": [
+        {
+          "Id": "1f9d60f2-b727-4bbe-9eeb-7519ec860670",
+          "IsPublished": true,
+          "Name": "Manipulation du chaos",
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), avant de savoir si le test est réussi ou échoué, il peut dépenser un [point d’essence élémentaire](#) associé à l’Esprit en [action libre](/regles/combat/deroulement/tour) afin de rejouer le test, et doit utiliser le nouveau résultat.\n\nIl peut également utiliser cette capacité en [réaction](/regles/combat/deroulement/tour) lorsqu’il voit une autre créature située à 18 mètres ou moins de sa position effectuer un test de compétence afin de lui conférer un bonus ou une pénalité (1d10), au choix."
+        },
+        {
+          "Id": "9c9d7317-b6bb-4f3e-87b7-95764e0c3804",
+          "IsPublished": true,
+          "Name": "Surtension magique",
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage [canalise](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs) infligeant des [points de dégâts](/regles/combat/degats), alors il peut dépenser un [point d’essence élémentaire](#) afin d’infliger un nombre de points de dégâts de force supplémentaires égal à sa [Puissance](/regles/statistiques/puissance).\n\nÉgalement, lorsqu’il met fin à un pouvoir en canalisant [Protection contre la magie](#), il acquiert un nombre de points d’essence élémentaire égal au tiers du pouvoir."
+        }
+      ]
     }
   },
   {

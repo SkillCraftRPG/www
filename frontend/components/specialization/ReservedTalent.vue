@@ -17,7 +17,7 @@
         </div>
       </div>
     </template>
-    <div v-for="(feature, index) in talent.features" :key="index">
+    <div v-for="(feature, index) in features" :key="index">
       <h3 class="h5">{{ feature.name }}</h3>
       <MarkdownContent v-if="feature.description" :text="feature.description" />
     </div>
@@ -28,7 +28,7 @@
 import { arrayUtils } from "logitar-js";
 
 import type { ReservedTalent } from "~/types/specializations";
-import type { Talent } from "~/types/game";
+import type { Feature, Talent } from "~/types/game";
 
 const { orderBy } = arrayUtils;
 
@@ -36,5 +36,6 @@ const props = defineProps<{
   talent: ReservedTalent;
 }>();
 
+const features = computed<Feature[]>(() => orderBy(props.talent.features, "name"));
 const talents = computed<Talent[]>(() => orderBy(props.talent.discountedTalents, "slug"));
 </script>
