@@ -56,4 +56,6 @@ useSeo({
   title,
   description: "Découvrez l’impact de la lumière et des types de vision sur la perception : obscurité, pénombre, vision dans le noir, aveugle ou absolue.",
 });
+
+// TODO(fpion): expliquer la [Darkness](https://www.dndbeyond.com/spells/2058-darkness)
 </script>
