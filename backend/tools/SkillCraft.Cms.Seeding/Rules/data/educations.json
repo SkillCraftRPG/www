@@ -121,9 +121,14 @@
       "Slug": "intuition",
       "Name": "Intuition"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "6807b84e-d664-47b3-9ffe-aea785ec8aac",
+      "IsPublished": true,
+      "Name": "Héritage familial",
+      "Description": "Issu d’un milieu où chaque membre contribue à un même héritage, il a grandi au cœur d’un réseau soudé par le travail et les liens du sang.\n\nIl peut solliciter l’aide ou les compétences de ses proches lorsque la situation s’y prête.\n\nLa notoriété associée à sa famille, favorable ou non, influence aussi la manière dont les autres le perçoivent et réagissent à sa présence."
+    },
+    "Summary": "Élevé dans le travail familial, doté d’intuition et d’un réseau soudé.",
+    "MetaDescription": "Découvrez l’éducation Entreprise familiale, où intuition, entraide et héritage forgent un personnage issu d’un milieu soudé et travailleur.",
     "Description": "Depuis sa tendre enfance, le personnage participe à l’activité principale de sa famille.\n\nPeu instruit, il a cependant développé une bonne intuition lui permettant de mener à bien ses tâches.\n\nPar la division du travail et la coopération avec sa fratrie, il a appris à collaborer et à partager."
   },
   {
