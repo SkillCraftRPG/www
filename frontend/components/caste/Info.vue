@@ -1,7 +1,7 @@
 <template>
-  <h2 class="h3 mb-3">
+  <div class="h3 mb-3">
     <TarBadge v-if="caste.wealthRoll" variant="secondary">Richesse&nbsp;de&nbsp;départ&nbsp;:&nbsp;{{ caste.wealthRoll }}&nbsp;({{ average }})</TarBadge>
-  </h2>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -22,6 +22,4 @@ const average = computed<number | undefined>(() => {
   const average: number = (sides + 1) / 2;
   return Math.floor(dice * average);
 });
-
-// TODO(fpion): should not contain a H2!
 </script>
