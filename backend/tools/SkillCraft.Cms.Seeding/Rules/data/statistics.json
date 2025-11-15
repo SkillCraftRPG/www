@@ -61,7 +61,7 @@
     },
     "Summary": "Mesure la rapidité et la précision pour éviter les attaques ennemies.",
     "MetaDescription": "Découvrez l’Esquive, la statistique qui détermine la capacité d’un personnage à éviter les attaques physiques ou surnaturelles.",
-    "Description": "L’**Esquive** détermine le résultat d’une [attaque](/regles/combat/attaque) dirigée contre le personnage.\n\nPlus elle est élevée, moins sont grandes les chances de réussite de cette attaque, qu’elle soit physique ou surnaturelle.\n\nL’équation suivante calcule l’Esquive d’une créature :\n\n<code>Esquive = 5 + (Adresse × 2)</code>"
+    "Description": "L’**Esquive** détermine le résultat d’une [attaque](/regles/combat/attaque) dirigée contre le personnage.\n\nPlus elle est élevée, moins sont grandes les chances de réussite de cette attaque, qu’elle soit physique ou surnaturelle.\n\nL’équation suivante calcule l’Esquive d’une créature :\n\n<code>Esquive = 10 + Adresse</code>"
   },
   {
     "Id": "e85b6ed2-8c96-4137-a379-2928860343d1",

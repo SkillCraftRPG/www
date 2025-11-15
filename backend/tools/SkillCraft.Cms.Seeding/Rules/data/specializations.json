@@ -483,7 +483,7 @@
     "Slug": "bricoleur",
     "Name": "Bricoleur",
     "Tier": 2,
-    "Summary": "Inventeur débrouillard utilisant bricolages magiques et outils improvisés.",
+    "Summary": "Inventeur futé utilisant bricolages magiques et outils improvisés.",
     "MetaDescription": "Découvrez le Bricoleur, un inventeur astucieux maniant outils improvisés et bricolages magiques pour créer, réparer et déjouer les obstacles du quotidien.",
     "Description": "À l’aide de son imagination débordante et de ses outils rudimentaires ou improvisés, le bricoleur répare tout et invente des appareils hors du commun. Il voit chaque problème comme une opportunité de création et utilise ses mains expertes et son esprit vif afin d’apporter de solutions brillantes aux problèmes du quotidien, améliorant ainsi la vie de tous. Bien sûr, il bénéficie d’un peu d’aide magique afin de l’aider à accomplir ces prouesses.",
     "Requirements": {
@@ -631,26 +631,172 @@
   },
   {
     "Id": "88d3074d-98b1-472d-88bf-95a7bb252968",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "brigand",
     "Name": "Brigand",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Forban rusé misant sur l’audace, l’improvisation et la chance brute.",
+    "MetaDescription": "Découvrez le Brigand, un opportuniste audacieux qui improvise, frappe avec ruse, détourne les règles et transforme les situations désespérées en succès inatten…",
     "Description": "Le brigand est souvent vu comme une racaille, un bandit des grands chemins, un cruel tyran et un malfrat. En réalité, il s’agit plutôt d’un être naturellement chaotique, utilisant les moyens du bord et doté d’audace afin de parvenir à ses fins. Son utilisation de stratégies non conventionnelles, une chance fabuleuse et une bravoure sans limite lui permettent de se tirer de la plupart des situations fâcheuses et lui valent une certaine réputation.",
     "Requirements": {
-      "Talent": null,
+      "Talent": {
+        "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+        "IsPublished": true,
+        "Slug": "bris",
+        "Name": "Bris"
+      },
       "Other": []
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "0daa9126-6911-4cc8-a960-d0898e31c27e",
+          "IsPublished": true,
+          "Slug": "maraudage",
+          "Name": "Maraudage"
+        },
+        {
+          "Id": "66def333-62b6-414d-b35a-d80ae0207140",
+          "IsPublished": true,
+          "Slug": "tolerance-a-l-alcool-ii",
+          "Name": "Tolérance à l’alcool II"
+        },
+        {
+          "Id": "96522676-0e8d-4ee9-8435-b0f4d5ae5c27",
+          "IsPublished": true,
+          "Slug": "survivalisme",
+          "Name": "Survivalisme"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "b94abe2c-7691-419d-af10-7cea5747bb52",
+          "IsPublished": true,
+          "Slug": "critique-accru",
+          "Name": "Critique accru"
+        },
+        {
+          "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
+          "IsPublished": true,
+          "Slug": "attaque-sournoise",
+          "Name": "Attaque sournoise"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "23525c66-0331-44f2-97df-e51ec96c87d8",
+          "IsPublished": true,
+          "Slug": "armes-de-finesse",
+          "Name": "Armes de finesse"
+        },
+        {
+          "Id": "297df6fe-d29a-4aa9-b9d1-34b8838850b6",
+          "IsPublished": true,
+          "Slug": "armes-de-jet",
+          "Name": "Armes de jet"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "1b374cfe-6709-43e4-a6d9-61c637e0c8a4",
+          "IsPublished": true,
+          "Slug": "charge",
+          "Name": "Charge"
+        },
+        {
+          "Id": "81c3ae91-c25f-481b-9628-0cc4ceb868c5",
+          "IsPublished": true,
+          "Slug": "coup-de-bouclier",
+          "Name": "Coup de bouclier"
+        },
+        {
+          "Id": "973edb2d-facb-473b-9fe9-cb59fce38349",
+          "IsPublished": true,
+          "Slug": "costaud",
+          "Name": "Costaud"
+        },
+        {
+          "Id": "5b1cf18c-f787-49f9-9881-d2086df74664",
+          "IsPublished": true,
+          "Slug": "herboristerie",
+          "Name": "Herboristerie"
+        },
+        {
+          "Id": "70ba6c8f-af9a-4586-812f-f15e1e36ace8",
+          "IsPublished": true,
+          "Slug": "lancer-brutal",
+          "Name": "Lancer brutal"
+        },
+        {
+          "Id": "2e928d87-34eb-4a26-8dd0-453c021fda61",
+          "IsPublished": true,
+          "Slug": "parade",
+          "Name": "Parade"
+        }
+      ],
       "Other": []
     },
     "ReservedTalent": {
       "Name": "Sournoiseries",
       "Description": [],
-      "DiscountedTalents": [],
-      "Features": []
+      "DiscountedTalents": [
+        {
+          "Id": "c2a0e512-521c-485d-a7e4-784b74e37e40",
+          "IsPublished": true,
+          "Slug": "destruction",
+          "Name": "Destruction"
+        },
+        {
+          "Id": "3a318dfc-40ef-4d1c-ae76-9ca8c2a35565",
+          "IsPublished": true,
+          "Slug": "attaque-sanglante",
+          "Name": "Attaque sanglante"
+        },
+        {
+          "Id": "eb0632dc-3008-425d-a1b8-3bb438ee6201",
+          "IsPublished": true,
+          "Slug": "lancer-precis",
+          "Name": "Lancer précis"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "9cd53a44-c794-4b13-a7d0-213eadf87759",
+          "IsPublished": true,
+          "Name": "Guet-apens",
+          "Description": "Il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[attaque](/regles/combat/attaque) effectués contre une créature [prise au dépourvu](/regles/combat/deroulement/depourvu).\n\nÉgalement, en situation de [combat](/regles/combat), la première attaque qu’il effectue contre une créature [surprise](/regles/combat/deroulement/surprise) est automatiquement une [réussite critique](/regles/competences/tests/critique)."
+        },
+        {
+          "Id": "bb3abac1-62b8-401b-962d-f9b63b583428",
+          "IsPublished": true,
+          "Name": "Pensées intrusives",
+          "Description": "Lorsqu’il réussit une [attaque](/regles/combat/attaque) en maniant une [arme improvisée](/regles/equipement/armes/improvisees), le ou les [dés de dégâts](/regles/combat/degats/jet) sont au moins des d8.\n\nÉgalement, lorsqu’il tente une attaque en maniant une arme improvisée, il peut décider si les [dégâts](/regles/combat/degats) infligés sont [létaux](/regles/combat/degats/letalite) ou non avant de connaître le résultat du [test](/regles/competences/tests).\n\nEnfin, il peut utiliser une [arme](/regles/equipement/armes) d’une manière non conventionnelle afin que celle-ci soit considérée comme une arme improvisée, par exemple le pommeau d’une épée, le manche d’une hache, ou encore le corps d’un arc.\n\nLorsqu’il en fait ainsi, il peut utiliser les talents [Bris](/regles/talents/bris) et [Destruction](/regles/talents/destruction) avec cette arme."
+        },
+        {
+          "Id": "acfda8bd-02ac-4965-b061-39abb48327d0",
+          "IsPublished": true,
+          "Name": "Exploits",
+          "Description": "La chance et la bravoure du personnage lui permettent parfois d’accomplir des exploits.\n\nLorsqu’il désire accomplir un exploit, il doit dépenser 20 [points d’Énergie](/regles/statistiques/energie) avant de savoir si le [test](/regles/competences/tests) est réussi ou échoué.\n\nIl peut également utiliser un point d’[Espérance](/regles/competences/esperance-damnation) afin de réduire cette dépense à 10 points d’Énergie, ou deux points d’Espérance afin de ne dépenser aucun point d’Énergie.\n\n- **Bagarre.** Lorsqu’il effectue un test d’[Initiative](/regles/combat/deroulement/initiative), il peut jeter 2d10 et conserver le dé de son choix.\n- **Cascade.** Lorsqu’il est ciblé par une [attaque](/regles/combat/attaque) et qu’il [voit](/regles/aventure/environnement/vision) la source de l’attaque, alors il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer un [Pas prudent](/regles/combat/activites/pas-prudent) ou de [se jeter au sol](/regles/combat/activites/jeter-sol). Lorsqu’il en fait ainsi, il se voit conférer un bonus (+2) à son [Esquive](/regles/combat/attaque/esquive) contre cette attaque et jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). S’il s’est jeté au sol, le test des [attaques de mêlée](/regles/combat/attaque/melee) dirigées contre lui ne se voit pas conférer l’[avantage](/regles/competences/tests/avantage-desavantage) parce qu’il se trouve en [position renversée](/regles/combat/conditions/renverse) jusqu’au début de son prochain tour.\n- **Contre-attaque.** Lorsqu’il [voit](/regles/aventure/environnement/vision) une créature échouer une [attaque de mêlée](/regles/combat/attaque/melee) dirigée contre lui, alors il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite) contre cette créature.\n- **Point faible.** Il peut effectuer une [Attaque sournoise](/regles/talents/attaque-sournoise) lorsqu’il se trouve à 1,5 mètres ou moins de sa cible, qu’aucune autre créature n’étant pas [incapable](/regles/combat/conditions/incapable) se trouve à 1,5 mètres ou moins de sa position, et que son [test](/regles/competences/tests) d’[attaque](/regles/combat/attaque) n’est pas affligé du [désavantage](/regles/competences/tests/avantage-desavantage)."
+        }
+      ]
     }
   },
   {
@@ -1264,12 +1410,12 @@
   },
   {
     "Id": "6b15354e-1841-4a94-8e7a-117184cb44ff",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "champion",
     "Name": "Champion",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Guerrier sacré protecteur, guidé par l’énergie et la volonté divines.",
+    "MetaDescription": "Découvrez le Champion, un défenseur sacré qui protège les siens, perçoit l’énergie divine et frappe ses ennemis avec une puissance sanctifiée.",
     "Description": "Le champion se dresse tel un rempart entre sa foi et les ennemis de celle-ci. Il protège les fervents de sa foi et ceux qui ne peuvent se protéger eux-mêmes. Sélectionné parmi son culte ou sa religion, ses armes scintillent de lueur divine lorsqu’il châtie ses ennemis. Il possède la capacité de sentir la présence d’énergie sacrée ou profane, que cette énergie se manifeste sous la forme d’une créature, d’un objet ou même d’un lieu.",
     "Requirements": {
       "Talent": {
@@ -1284,7 +1430,104 @@
       ]
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "c8b0b178-8436-4343-8c89-83c4ff3b9d56",
+          "IsPublished": true,
+          "Slug": "manoeuvres-de-combat",
+          "Name": "Manœuvres de combat"
+        },
+        {
+          "Id": "0ebae52a-9fa8-46e2-85e8-01ee0b6b9e2e",
+          "IsPublished": true,
+          "Slug": "robustesse-accrue",
+          "Name": "Robustesse accrue"
+        },
+        {
+          "Id": "10b43316-6e48-4336-a446-a58475c6fa6a",
+          "IsPublished": true,
+          "Slug": "initiative-accrue",
+          "Name": "Initiative accrue"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "9252d1cb-a4d4-4273-88b9-cf419aa16f49",
+          "IsPublished": true,
+          "Slug": "presence-terrifiante",
+          "Name": "Présence terrifiante"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f97bed18-fa69-4dfc-86c5-d0759a26732a",
+          "IsPublished": true,
+          "Slug": "attaque-neutralisante",
+          "Name": "Attaque neutralisante"
+        },
+        {
+          "Id": "29265217-194b-4aa1-b812-2fca7b9bc390",
+          "IsPublished": true,
+          "Slug": "attaque-puissante",
+          "Name": "Attaque puissante"
+        },
+        {
+          "Id": "8e1217d7-0b04-4d96-82bb-22988521aa99",
+          "IsPublished": true,
+          "Slug": "barriere-mentale",
+          "Name": "Barrière mentale"
+        },
+        {
+          "Id": "1b374cfe-6709-43e4-a6d9-61c637e0c8a4",
+          "IsPublished": true,
+          "Slug": "charge",
+          "Name": "Charge"
+        },
+        {
+          "Id": "81c3ae91-c25f-481b-9628-0cc4ceb868c5",
+          "IsPublished": true,
+          "Slug": "coup-de-bouclier",
+          "Name": "Coup de bouclier"
+        },
+        {
+          "Id": "973edb2d-facb-473b-9fe9-cb59fce38349",
+          "IsPublished": true,
+          "Slug": "costaud",
+          "Name": "Costaud"
+        },
+        {
+          "Id": "0a9e78a0-14db-465d-a10d-8673b83c77ef",
+          "IsPublished": true,
+          "Slug": "renvoi-des-morts-vivants",
+          "Name": "Renvoi des morts-vivants"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "a1aae77b-f08a-4c8a-9e83-b971ce674eba",
+          "IsPublished": true,
+          "Slug": "lutte",
+          "Name": "Lutte"
+        }
+      ],
       "Other": [
         "Un [pouvoir](/regles/magie/pouvoirs) de tiers 1 associé à son [domaine divin](#)."
       ]
@@ -1292,8 +1535,46 @@
     "ReservedTalent": {
       "Name": "Qualité divine",
       "Description": [],
-      "DiscountedTalents": [],
-      "Features": []
+      "DiscountedTalents": [
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "3b6590da-409b-4c4d-94a0-648630de73da",
+          "IsPublished": true,
+          "Slug": "mener-par-l-exemple",
+          "Name": "Mener par l’exemple"
+        },
+        {
+          "Id": "f49126be-c2f2-49f3-8d2e-20cc0c140200",
+          "IsPublished": true,
+          "Slug": "protection",
+          "Name": "Protection"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "0766a65d-9b22-4a25-85cf-41ec67abb4e5",
+          "IsPublished": true,
+          "Name": "Perception divine",
+          "Description": "Par une [action](/regles/combat/deroulement/tour), il peut dépenser 10 points d’[Énergie](/regles/statistiques/energie) afin d’ouvrir ses sens aux forces mystiques l’entourant.\n\nPendant la prochaine [minute](/regles/aventure/temps), il peut détecter la présence et la nature des créatures célestes, infernales ou mortes-vivantes situées à 18 mètres ou moins de sa position appartenant à ces types et ne bénéficiant pas d’un [abri total](/regles/combat/attaque/abri).\n\nIl peut également détecter la présence d’objets ou de lieux maudits ou sacrés dans la portée de l’effet.\n\nIl peut utiliser cette capacité un nombre de fois égal à ses [Sens](/regles/attributs/sens) (minimum 1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        },
+        {
+          "Id": "f7d0fce8-bfed-4d69-a3da-3aa41fc2189d",
+          "IsPublished": true,
+          "Name": "Pouvoir divin",
+          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine divin](#).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nS’il a acquis la spécialisation [Clerc](/regles/specialisations/clerc), il s’agit de la même capacité et possède désormais deux utilisations par jour."
+        },
+        {
+          "Id": "44820c12-61b1-495c-9e01-3595670ffafa",
+          "IsPublished": true,
+          "Name": "Châtiment divin",
+          "Description": "Lorsque le personnage réussit une [attaque de mêlée](/regles/combat/attaque/melee), il peut immédiatement dépenser une, deux ou trois tranches de 10 points d’[Énergie](/regles/statistiques/energie) afin d’infuser son [arme](/regles/equipement/armes) d’énergie divine et d’infliger des [points de dégâts](/regles/combat/degats) supplémentaires.\n\nLe [type](/regles/combat/degats/types) des dégâts dépend du [domaine divin](#) du personnage, telle l’[Attaque divine](/regles/specialisations/pretre) du [Prêtre](/regles/specialisations/pretre).\n\nLe nombre de points de dégâts ajoutés est égal à 1d12 par tranche de points d’Énergie dépensés, additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+        }
+      ]
     }
   },
   {
@@ -1696,7 +1977,7 @@
     "Slug": "druide",
     "Name": "Druide",
     "Tier": 2,
-    "Summary": "Gardien des esprits naturels, maître des formes sauvages et du verbe sacré.",
+    "Summary": "Gardien de la nature, maître des formes sauvages et du verbe sacré.",
     "MetaDescription": "Découvrez le Druide, initié des cercles spirituels voués à la nature. Grâce au druidisme, il parle le langage secret du monde et prend la forme des bêtes.",
     "Description": "Le druide est un animiste ayant réussi un rite de passage afin d’être accepté dans un cercle d’un culte spirituel voué à un ou plusieurs éléments naturels. L’appartenance à ce culte lui a permis d’accéder aux secrets de ce culte, notamment un langage clandestin et des pouvoirs de puissance supérieure. Ces pouvoirs sont accompagnés de nouvelles responsabilités : il doit respecter les préceptes du cercle l’ayant accepté afin de conserver le droit de les utiliser.",
     "Requirements": {
@@ -1805,12 +2086,12 @@
   },
   {
     "Id": "1326391b-d2d3-463e-9fa3-5c2242b5f17c",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "duelliste",
     "Name": "Duelliste",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Bretteur agile et hardi, alliant panache, précision et audace en duel.",
+    "MetaDescription": "Découvrez le Duelliste, spécialiste élégant et téméraire, maître de l’escrime, des provocations fines et des attaques rapides qui renversent le cours d’un comb…",
     "Description": "Doté de la grâce d’un chat, rugissant comme un lion, rapide comme un lynx, le duelliste bondit d’un adversaire à un autre au combat et provoque ou manipule adroitement pendant une joute diplomatique. Sa cape virevolte et son chapeau plumé danse en suivant ses mouvements. Ses mots précis font naître des émotions d’espoir et de courage, ou au contraire, ses insultes justes piquent au vif ses belligérants. Il est doté d’un humour audacieux et sa réputation exhibe son élégance. Il est parfois vu comme un héros romantique, parfois comme un imprudent, un téméraire et un saboteur.",
     "Requirements": {
       "Talent": {
@@ -1822,7 +2103,110 @@
       "Other": []
     },
     "Options": {
-      "Talents": [],
+      "Talents": [
+        {
+          "Id": "c8b0b178-8436-4343-8c89-83c4ff3b9d56",
+          "IsPublished": true,
+          "Slug": "manoeuvres-de-combat",
+          "Name": "Manœuvres de combat"
+        },
+        {
+          "Id": "0daa9126-6911-4cc8-a960-d0898e31c27e",
+          "IsPublished": true,
+          "Slug": "maraudage",
+          "Name": "Maraudage"
+        },
+        {
+          "Id": "66def333-62b6-414d-b35a-d80ae0207140",
+          "IsPublished": true,
+          "Slug": "tolerance-a-l-alcool-ii",
+          "Name": "Tolérance à l’alcool II"
+        },
+        {
+          "Id": "066f198d-e331-4006-8bd9-2831aff258de",
+          "IsPublished": true,
+          "Slug": "observateur",
+          "Name": "Observateur"
+        },
+        {
+          "Id": "8ede9dff-faf5-49b9-88c0-ac8963ba83dc",
+          "IsPublished": true,
+          "Slug": "suspicion",
+          "Name": "Suspicion"
+        },
+        {
+          "Id": "1f8cf0b2-edb9-4f9f-aa13-a78794b8c1ba",
+          "IsPublished": true,
+          "Slug": "ambidextre",
+          "Name": "Ambidextre"
+        },
+        {
+          "Id": "b94abe2c-7691-419d-af10-7cea5747bb52",
+          "IsPublished": true,
+          "Slug": "critique-accru",
+          "Name": "Critique accru"
+        },
+        {
+          "Id": "4a72617a-6415-4afe-9b2d-cd0eeae6ae39",
+          "IsPublished": true,
+          "Slug": "attaque-sournoise",
+          "Name": "Attaque sournoise"
+        },
+        {
+          "Id": "fec766e0-1278-4091-876e-4f03b4964ff5",
+          "IsPublished": true,
+          "Slug": "tissu-de-mensonges",
+          "Name": "Tissu de mensonges"
+        },
+        {
+          "Id": "4b19a88e-2d1b-4579-886c-3eb0b719fe4a",
+          "IsPublished": true,
+          "Slug": "distraction",
+          "Name": "Distraction"
+        },
+        {
+          "Id": "5b2904bd-5e73-458e-a37d-d2d1d15e003f",
+          "IsPublished": true,
+          "Slug": "mefait-feutre",
+          "Name": "Méfait feutré"
+        },
+        {
+          "Id": "23525c66-0331-44f2-97df-e51ec96c87d8",
+          "IsPublished": true,
+          "Slug": "armes-de-finesse",
+          "Name": "Armes de finesse"
+        },
+        {
+          "Id": "55c22052-8b98-4155-9183-baa59aae999f",
+          "IsPublished": true,
+          "Slug": "culbutes",
+          "Name": "Culbutes"
+        },
+        {
+          "Id": "164431e1-ff43-4ad7-9fdd-0e8b8d03080d",
+          "IsPublished": true,
+          "Slug": "emboiter-le-pas",
+          "Name": "Emboîter le pas"
+        },
+        {
+          "Id": "f7fd8d17-57e9-418e-802f-a8aeaa443e4e",
+          "IsPublished": true,
+          "Slug": "enquete",
+          "Name": "Enquête"
+        },
+        {
+          "Id": "c23cf3b8-baaf-4ccb-9870-03053037086c",
+          "IsPublished": true,
+          "Slug": "societe",
+          "Name": "Société"
+        },
+        {
+          "Id": "7105682d-e30d-445c-869f-7a59e1500bf6",
+          "IsPublished": true,
+          "Slug": "bris",
+          "Name": "Bris"
+        }
+      ],
       "Other": []
     },
     "ReservedTalent": {
@@ -1830,8 +2214,46 @@
       "Description": [
         "Il peut acquérir le talent [Provocation](/regles/talents/provocation) au coût de 2 [points de talent](/regles/talents/points) plutôt que 4."
       ],
-      "DiscountedTalents": [],
-      "Features": []
+      "DiscountedTalents": [
+        {
+          "Id": "ea127043-238b-46d6-aab8-809a908f3c75",
+          "IsPublished": true,
+          "Slug": "repli-defensif",
+          "Name": "Repli défensif"
+        },
+        {
+          "Id": "4791665a-cdab-406d-a938-1cfc0fea2e23",
+          "IsPublished": true,
+          "Slug": "derobade",
+          "Name": "Dérobade"
+        },
+        {
+          "Id": "dc53c886-b804-46fd-8d0c-86e5e0079a58",
+          "IsPublished": true,
+          "Slug": "double-attaque",
+          "Name": "Double attaque"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "3b3e6ecc-0174-4c48-9f74-bc2d9cf30061",
+          "IsPublished": true,
+          "Name": "Audace",
+          "Description": "Si l’[Intellect](/regles/attributs/intellect) du personnage est supérieur à ses [Sens](/regles/attributs/sens), alors il ajoute à son [Initiative](/regles/statistiques/initiative) un bonus égal à la différence.\n\nÉgalement, il peut effectuer une [Attaque sournoise](/regles/talents/attaque-sournoise) lorsqu’il se trouve à 1,5 mètres ou moins de sa cible, qu’aucune autre créature n’étant pas [incapable](/regles/combat/conditions/incapable) se trouve à 1,5 mètres ou moins de sa position, et que son [test](/regles/competences/tests) d’[attaque](/regles/combat/attaque) n’est pas affligé du [désavantage](/regles/competences/tests/avantage-desavantage)."
+        },
+        {
+          "Id": "36c7ac70-86a1-46d0-b0ce-28b80dc47abc",
+          "IsPublished": true,
+          "Name": "Élégance",
+          "Description": "Lorsque le personnage effectue un [test](/regles/competences/tests) d’[Acrobaties](/regles/competences/acrobaties), d’[Athlétisme](/regles/competences/athletisme) ou de [Furtivité](/regles/competences/furtivite), s’il peut doubler le [temps](/regles/aventure/temps) nécessaire afin d’entreprendre l’action et qu’il en fait ainsi, alors il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à son test."
+        },
+        {
+          "Id": "dc25d4af-a842-4483-ac0d-39a2a9b36f06",
+          "IsPublished": true,
+          "Name": "Fleuret",
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsqu’il réussit une [attaque de mêlée](/regles/combat/attaque/melee) en maniant une [arme](/regles/equipement/armes) possédant la propriété [Finesse](/regles/equipement/armes/proprietes), alors il se voit conférer un bonus de [2 points de mouvement](/regles/aventure/mouvement/vitesse) au prochain [déplacement](/regles/combat/activites/deplacement) effectué avant la fin de son tour.\n\nÉgalement, il peut bénéficier d’un des effets suivants au choix :\n\n- Il ajoute son [Intellect](/regles/attributs/intellect) à son [Esquive](/regles/combat/attaque/esquive) jusqu’au début de son prochain tour.\n- Il inflige un nombre de [points de dégâts](/regles/combat/degats) supplémentaires égal à son Intellect (minimum 1) si aucune autre créature qui n’est pas [incapable](/regles/combat/conditions/incapable) se trouve à 1,5 mètres ou moins de sa position. Sinon, il peut tenter de blesser cette autre créature en réutilisant le résultat du [test](/regles/competences/tests) de l’[attaque](/regles/combat/attaque). Si l’attaque réussit, il inflige un nombre de points de dégâts égal à son Intellect (minimum 1).\n- Si la [taille](/regles/especes/taille) de la cible est inférieure ou égale à la sienne, alors elle doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) ou d’[Athlétisme](/regles/competences/athletisme). La [difficulté](/regles/competences/tests/difficulte) correspond au résultat du test de l’attaque effectuée par le personnage. En cas d’échec, la cible est [renversée](/regles/combat/conditions/renverse) au sol, ou repoussée de 1,5 mètres, au choix du personnage."
+        }
+      ]
     }
   },
   {
@@ -2341,12 +2763,12 @@
   },
   {
     "Id": "031d639d-26cc-4ffe-ab94-c81e2ab7dfb4",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "illusionniste",
     "Name": "Illusionniste",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Manipulateur des sens, il façonne illusions et tromperies captivantes.",
+    "MetaDescription": "Découvrez l’Illusionniste, maître des tromperies et des mirages, jouant des sens et des émotions pour manipuler, détourner et émerveiller la foule.",
     "Description": "L’illusionniste capture les regards avec ses tours captivants et déconcertants. Derrière ses talents d’amuseur se cache un esprit bien aiguisé. Il sait faire bien plus que divertir ; il peut utiliser ses pouvoirs afin de manipuler et d’influencer la noblesse, jouant des vanités et des rivalités de la cour, jouant son propre jeu politique et échappant aux soupçons. Il sait faire oublier les malheurs d’un instant à la populace.",
     "Requirements": {
       "Talent": {
@@ -2462,7 +2884,26 @@
         "Il peut acquérir les [illusions](#) de tiers 2 et acquiert gratuitement un de ces [pouvoirs](/regles/magie/pouvoirs)."
       ],
       "DiscountedTalents": [],
-      "Features": []
+      "Features": [
+        {
+          "Id": "2c60cb3e-4af5-4b47-b496-e18f19a0778c",
+          "IsPublished": true,
+          "Name": "Fantaisie",
+          "Description": "Par [deux actions](/regles/combat/deroulement/tour) et en dépensant 15 points d’[Énergie](/regles/statistiques/energie), il peut faire apparaître un objet non magique dans un espace inoccupé de son choix sur une surface ou un liquide pouvant le supporter et situé à 10 mètres ou moins de sa position.\n\nLa valeur de l’objet ne peut dépasser un nombre de [deniers](/regles/equipement/monnaie) égal au [niveau](/regles/personnages/progression/niveau) du personnage multiplié par 4, et sa taille doit être au plus [Grande](/regles/especes/taille).\n\nL’objet scintille doucement, et une créature qui le touche entend une faible mélodie.\n\nL’objet disparaît après un nombre d’[heures](/regles/aventure/temps) égal à l’[Intellect](/regles/attributs/intellect) du personnage (minimum 1).\n\nUn seul de ces objets peut exister à la fois. Si le personnage crée un nouvel objet, le précédent disparaît immédiatement."
+        },
+        {
+          "Id": "5346f2ab-fc5d-4820-b552-4f89487323f0",
+          "IsPublished": true,
+          "Name": "Illusion majeure",
+          "Description": "Lorsque le personnage [canalise](/regles/combat/activites/canaliser) le pouvoir [Hallucination](#), il peut produire simultanément un effet visuel et un effet sonore en une seule [canalisation](/regles/magie/pouvoirs/canalisation).\n\nÉgalement, lorsqu’il canalise une [illusion](#) dont la durée est supérieure ou égale à [une minute](/regles/aventure/temps), alors il peut modifier cette illusion une fois par [tour](/regles/combat/deroulement/tour) par une [action](/regles/combat/deroulement/tour).\n\nIl doit [voir](/regles/aventure/environnement/vision) son illusion afin d’en faire ainsi et doit respecter les caractéristiques décrites par le [pouvoir](/regles/magie/pouvoirs/canalisation)."
+        },
+        {
+          "Id": "751b7b7a-2975-4830-8769-6d56a48430f4",
+          "IsPublished": true,
+          "Name": "Potentiel héroïque",
+          "Description": "Lorsque le personnage joue un [Boléro héroïque](/regles/specialisations/menestrel), il peut dépenser 5 points d’[Énergie](/regles/statistiques/energie) supplémentaires afin d’en jouer une version endiablée.\n\nLorsqu’il en fait ainsi, une illusion prenant la forme d’une note de musique apparaît autour de la cible et orbite autour de sa tête. Elle est intangible et invulnérable, translucide et dégage une lumière négligeable.\n\nLorsque la cible utilise le dé conféré par le boléro héroïque, l’illusion prend fin, procurant un effet supplémentaire à la cible en fonction de la nature du [test](/regles/competences/tests).\n\n- [Attaque.](/regles/combat/attaque) Immédiatement après le test, l’illusion explose en produisant un son violent et soudain. Toute créature située à 1,5 mètres ou moins de la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté](/regles/competences/tests/difficulte) égale au [test passif](/regles/competences/tests/passif) de [Représentation](/regles/competences/representation) ([Intellect](/regles/attributs/intellect)) du personnage. En cas d’échec, une créature reçoit un nombre de [points de dégâts](/regles/combat/degats) de [tonnerre](/regles/combat/degats/types) égal au résultat du dé additionné à l’Intellect du personnage et est repoussée de 1,5 mètres si sa [taille](/regles/especes/taille) est de catégorie inférieure ou égale à celle de la cible.\n- [Compétence.](/regles/competences) L’illusion éclate comme une bulle en émettant des étincelles colorées et inoffensives. La cible peut jeter deux fois le dé et conserver le résultat de son choix.\n- [Jet de sauvegarde.](/regles/competences/tests/sauvegarde) Immédiatement après le jet de sauvegarde, l’illusion disparaît sous une douce musique. La cible se voit conférer un nombre de [points de Vitalité temporaires](/regles/combat/degats/temporaire) égal au résultat du dé additionné à l’[Intellect](/regles/attributs/intellect) du personnage."
+        }
+      ]
     }
   },
   {
@@ -2590,19 +3031,19 @@
   },
   {
     "Id": "6694982d-66a3-49d0-9857-7a01ead402c5",
-    "IsPublished": false,
+    "IsPublished": true,
     "Slug": "magelame",
     "Name": "Magelame",
     "Tier": 2,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Summary": "Combattant mystique mêlant arcanes et combat avec des armes d’énergie.",
+    "MetaDescription": "Découvrez le Magelame, un guerrier mystique liant arts martiaux et arcanes pour manier des armes d’énergie et dominer le champ de bataille.",
     "Description": "Les magelames forment un ordre d’Astromanciens ne sacrifiant nullement les arts martiaux, alliant la maîtrise des arcanes à celle de l’épée. Le magelame possède une ou plusieurs armes vibrant d’une énergie mystique, lui permettant d’incarner une tempête sur le champ de bataille. Ceux qui osent l’affronter peuvent difficilement prédire si le prochain coup sera celui de son arme ou une puissante déflagration énergétique. Il est un véritable tourbillon de lumière et de métal.",
     "Requirements": {
       "Talent": null,
       "Other": [
-        "Le personnage doit avoir acquis la spécialisation [Astromancien](/regles/specialisations/astromancien).",
-        "Il ne doit pas avoir acquis la spécialisation [Mage](/regles/specialisations/mage).",
-        "Il doit également avoir acquis le talent [Formation martiale](/regles/talents/formation-martiale)."
+        "Le personnage doit avoir acquis le talent [Formation martiale](/regles/talents/formation-martiale).",
+        "Il doit également avoir acquis la spécialisation [Astromancien](/regles/specialisations/astromancien).",
+        "Il ne doit pas avoir acquis la spécialisation [Mage](/regles/specialisations/mage)."
       ]
     },
     "Options": {
@@ -2709,7 +3150,14 @@
         "S’il [acquiert](/regles/talents/acquisition) le talent [Magie guerrière](/regles/talents/magie-guerriere), alors il acquiert gratuitement le talent [Attaque magique](/regles/talents/attaque-magique) au même moment."
       ],
       "DiscountedTalents": [],
-      "Features": []
+      "Features": [
+        {
+          "Id": "c7a6b7e5-b851-4df2-bd23-2cee8492b3a7",
+          "IsPublished": true,
+          "Name": "Rituel martial",
+          "Description": "Le personnage peut effectuer un rituel d’une durée d’[une heure](/regles/aventure/temps) en tenant une de ses [armes](/regles/equipement/armes) de mêlée. Il peut effectuer ce rituel pendant une [halte](/regles/aventure/repos/halte).\n\nLe rituel crée un lien magique entre le personnage et cette arme. Il peut créer un nombre maximal de liens égal à son [tiers](/regles/personnages/progression/tiers). S’il effectue le rituel en ayant atteint cette limite, alors il doit briser un lien avec une autre arme.\n\nLorsqu’il manie une arme avec laquelle il a créé un lien, il ne peut être [désarmé](/regles/combat/activites/desarmer) de cette arme, même par [magie](/regles/magie), sauf s’il est [incapable](/regles/combat/conditions/incapable).\n\nSi l’arme et le personnage se trouvent dans la même dimension et qu’il a une main libre, alors il peut l’invoquer par une [action](/regles/combat/deroulement/tour). L’arme se téléporte alors instantanément dans sa main libre.\n\nIl acquiert également les capacités suivantes lorsqu’il manie une de ces armes.\n\n- Lorsqu’il effectue une [Charge](/regles/talents/charge), il peut se téléporter au lieu de courir. Le nombre d’[actions](/regles/combat/deroulement/tour) utilisées et la distance à parcourir restent les mêmes, mais le personnage évite les dangers dus à ce [déplacement](/regles/aventure/mouvement), tels les pièges, les [attaques d’opportunité](/regles/combat/attaque/opportunite) et le [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n- Lorsqu’il réussit une [attaque](/regles/combat/attaque), s’il a acquis le talent [Magie puissante](/regles/talents/magie-puissante), alors le prochain [jet de sauvegarde](/regles/competences/tests/sauvegarde) de la cible contre un [pouvoir](/regles/magie/pouvoirs) canalisé par le personnage avant la fin de son prochain [tour](/regles/combat/deroulement/tour) se voit affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Magie guerrière](/regles/talents/magie-guerriere), alors cette activité ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite), peu importe la [portée](/regles/magie/parametres/portee) du pouvoir.\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Attaque magique](/regles/talents/attaque-magique) et qu’il a utilisé [deux actions](/regles/combat/deroulement/tour) afin de canaliser le pouvoir, alors il peut effectuer une [Attaque magique](/regles/talents/attaque-magique) en [action libre](/regles/combat/deroulement/tour) immédiatement après avoir canalisé le pouvoir."
+        }
+      ]
     }
   },
   {

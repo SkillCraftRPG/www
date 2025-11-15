@@ -15,7 +15,7 @@
       "Id": "d1d668eb-1a19-44e1-a627-963d09d22e06",
       "IsPublished": true,
       "Name": "Ouverture culturelle",
-      "Description": "Du fait de son éducation effectuée à l’étranger, le personnage s’est formé un réseau de contacts dans cette région.\n\nS’il y retourne, il pourra certainement compter sur eux pour l’assister ou le diriger.\n\nIl y a également vécu une période d’adaptation plus ou moins difficile.\n\nIl se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Linguistique](/regles/competences/linguistique) effectués afin de communiquer une idée simple à une créature avec laquelle il ne partage aucune [langue](/regles/langues)."
+      "Description": "Du fait de son éducation effectuée à l’étranger, le personnage s’est formé un réseau de contacts dans cette région.\n\nS’il y retourne, il pourra certainement compter sur eux pour l’assister ou le diriger.\n\nIl y a également vécu une période d’adaptation plus ou moins difficile.\n\nIl se voit conférer un bonus égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1) à ses [tests](/regles/competences/tests) de [Linguistique](/regles/competences/linguistique) effectués afin de communiquer une idée simple à une créature avec laquelle il ne partage aucune [langue](/regles/langues)."
     },
     "Summary": "Éducation axée sur la linguistique et l’ouverture culturelle mondiale.",
     "MetaDescription": "Découvrez l’éducation Apprenti à l’étranger, formant à la linguistique et favorisant l’ouverture culturelle ainsi qu’un réseau de contacts internationaux.",
@@ -37,7 +37,7 @@
       "Id": "cf048f2c-05b4-4815-bd62-62000275ed1b",
       "IsPublished": true,
       "Name": "Maîtrise singulière",
-      "Description": "Le maître du personnage lui a inculqué une maîtrise précise et exceptionnelle.\n\nSélectionnez une action précise. Lorsque votre personnage effectue cette action précise, vous pouvez conférer à son [test](/regles/competences/tests) un bonus (+2).\n\nLe personnage peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+      "Description": "Le maître du personnage lui a inculqué une maîtrise précise et exceptionnelle.\n\nSélectionnez une action précise. Lorsque votre personnage effectue cette action précise, vous pouvez conférer un bonus (+2) à son [test](/regles/competences/tests).\n\nLe personnage peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1), et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
     },
     "Summary": "Formé par un maître, il maîtrise parfaitement un art précis.",
     "MetaDescription": "Découvrez l’éducation Apprenti d’un maître, symbole d’un apprentissage rigoureux et d’une maîtrise transmise par un mentor.",
@@ -103,7 +103,7 @@
       "Id": "4984804a-1c44-4497-8da4-2232c1f029c0",
       "IsPublished": true,
       "Name": "Enfant des ruelles",
-      "Description": "Ayant grandi au cœur des ruelles et des faubourgs, il connaît les codes tacites de la survie urbaine.\n\nVictime de nombreuses privations, il n’est pas pénalisé par la [faim](/regles/aventure/environnement/alimentation), ni par la [soif](/regles/aventure/environnement/alimentation).\n\nIl se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) lorsqu’il tente de trouver ou d’éviter les représentants de la loi et/ou les criminels dans les centres urbains."
+      "Description": "Ayant grandi au cœur des ruelles et des faubourgs, il connaît les codes tacites de la survie urbaine.\n\nVictime de nombreuses privations, il n’est pas pénalisé par la [faim](/regles/aventure/environnement/alimentation), ni par la [soif](/regles/aventure/environnement/alimentation).\n\nIl se voit également conférer un bonus égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1) à ses [tests](/regles/competences/tests) effectués afin de trouver ou d’éviter les représentants de la loi et/ou les criminels lorsqu’il se trouve dans un centre urbain."
     },
     "Summary": "Enfant des ruelles, agile et rusé, il a appris à survivre sans règles.",
     "MetaDescription": "Découvrez l’éducation *Dans la rue*, forgée par la faim et l’instinct. Souple et débrouillard, l’enfant des ruelles survit parmi les faubourgs et la misère.",
@@ -143,9 +143,14 @@
       "Slug": "orientation",
       "Name": "Orientation"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "981b0947-5a63-4052-8bb6-5b08967a537f",
+      "IsPublished": true,
+      "Name": "Conseiller avisé",
+      "Description": "La nature calme et analytique du personnage lui permet d’être reconnu rapidement pour son jugement sûr.\n\nIl peut ajouter un bonus égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1) à ses [tests](/regles/competences/tests) d’[Intuition](/regles/competences/intuition) ou d’[Investigation](/regles/competences/investigation) effectués afin de comprendre un plan, évaluer un risque ou choisir la meilleure approche de manière objective.\n\nÉgalement, il ajoute également ce bonus à ses tests de [Diplomatie](/regles/competences/diplomatie) effectués afin de convaincre un individue rationnel."
+    },
+    "Summary": "Esprit posé et analytique, prêt à guider par des décisions avisées.",
+    "MetaDescription": "Découvrez l’éducation Judicieux, une formation qui forge un esprit calme, analytique et expert en décisions éclairées.",
     "Description": "Peu importe le mode de vie dans lequel il a été élevé, le personnage prend des décisions sensées et éclairées au moment opportun.\n\nIl saisit les opportunités et on lui demande souvent conseil.\n\nIl sait mettre en exécution des plans complexes et trier les informations pertinentes."
   },
   {
@@ -182,9 +187,14 @@
       "Slug": "tromperie",
       "Name": "Tromperie"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "e111632f-19a1-4f98-a492-e22e27ba1c95",
+      "IsPublished": true,
+      "Name": "Mensonge instinctif",
+      "Description": "En grandissant à contourner les interdits et à dissimuler ses incartades, le personnage a développé une aisance naturelle pour brouiller les pistes.\n\nIl peut ajouter un bonus égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1) à ses [tests](/regles/competences/tests) de [Tromperie](/regles/competences/tromperie) lorsqu’il tente de s’éviter des ennuis en détournant l’attention ou en masquant une action suspecte.\n\nIl peut également ajouter ce bonus à ses tests de Tromperie effectués afin de dissimuler ses réelles intentions et d’éviter les soupçons."
+    },
+    "Summary": "Esprit frondeur, expert en mensonge et en diversion subtile.",
+    "MetaDescription": "Découvrez l’éducation Rebelle, centrée sur la ruse, l’esquive et l’art de brouiller les pistes pour échapper aux ennuis.",
     "Description": "Malgré les efforts de ses parents à tenter d’élever un enfant calme et discipliné, le personnage désirait voler de ses propres ailes et faire ses expériences.\n\nIl a pu se soustraire à la surveillance de ses parents en camouflant ses méfaits par le mensonge, dupant ses parents ou les adultes qui l’ont pris la main dans le sac."
   },
   {
@@ -199,9 +209,14 @@
       "Slug": "furtivite",
       "Name": "Furtivité"
     },
-    "Feature": null,
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
+    "Feature": {
+      "Id": "1b042423-2a30-4ef6-9fbb-4170c02b2d57",
+      "IsPublished": true,
+      "Name": "Vie en coulisses",
+      "Description": "Ayant grandi sous une supervision constante, le personnage a développé l’art de s’effacer lorsqu’il doit préserver sa tranquillité ou ses secrets face à l’autorité.\n\nIl se voit conférer un bonus égal à son [tiers](/regles/personnages/progression/tiers) (minimum 1) à ses [tests](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) effectués afin de se soustraire d’une figure d’autorité.\n\nIl peut également ajouter ce bonus à ses tests de [Tromperie](/regles/competences/tromperie) effectués afin de persuader qu’il est innocent alors que c’est faux, sans toutefois rejeter le blâme sur quelqu’un d’autre."
+    },
+    "Summary": "Enfant surveillé devenu expert pour s’effacer et dissimuler ses actions.",
+    "MetaDescription": "Découvrez l’éducation Sous contrainte, forgée par la surveillance stricte et l’art d’agir en silence pour préserver sa tranquillité et ses secrets.",
     "Description": "Le personnage a vécu sous une supervision étroite au sein d’une famille stricte.\n\nIl s’est conformé aux demandes de ses parents et a coopéré lorsqu’il le jugeait nécessaire.\n\nIl a appris à dissimuler ses erreurs et fautes de parcours, et mène une double-vie dont ses parents n’en savent rien."
   }
 ]
