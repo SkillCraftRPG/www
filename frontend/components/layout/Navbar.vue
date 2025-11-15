@@ -27,7 +27,13 @@
           <!-- Dark mode selector, which is a simple dropdown menu with Light, Dark and Auto -->
           <li class="nav-item">
             <div class="dropdown" data-bs-theme="dark">
-              <button class="btn btn-flat btn-sm mt-1 mx-1 dropdown-toggle btn-dark" type="button" id="themeSelector" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="btn btn-flat btn-sm mt-1 mx-1 dropdown-toggle btn-dark"
+                type="button"
+                id="themeSelector"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 <font-awesome-icon icon="fas fa-moon" width="16px" v-if="theme.currentTheme === 'dark'" />
                 <font-awesome-icon icon="fas fa-sun" width="16px" v-else-if="theme.currentTheme === 'light'" />
                 <font-awesome-icon icon="fas fa-adjust" width="16px" v-else />

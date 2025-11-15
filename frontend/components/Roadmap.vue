@@ -84,7 +84,7 @@ function getDateClasses(index: number): string[] {
   border-radius: 10px;
 }
 
-[data-bs-theme=dark] .roadmap {
+[data-bs-theme="dark"] .roadmap {
   background-color: #2c2c2c;
   border: 1px solid #444444;
 }
@@ -93,7 +93,7 @@ function getDateClasses(index: number): string[] {
   border-top: 3px solid #cccccc;
 }
 
-[data-bs-theme=dark] .horizontal-timeline .items {
+[data-bs-theme="dark"] .horizontal-timeline .items {
   border-top: 3px solid #444444;
 }
 
@@ -113,7 +113,7 @@ function getDateClasses(index: number): string[] {
   top: 0;
 }
 
-[data-bs-theme=dark] .horizontal-timeline .items .items-list:before {
+[data-bs-theme="dark"] .horizontal-timeline .items .items-list:before {
   border-right: 2px dashed #444444;
 }
 
