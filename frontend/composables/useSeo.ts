@@ -18,7 +18,7 @@ export function useSeo(meta?: SeoMeta): void {
       description: meta.description ?? undefined,
       ogTitle: meta.title ?? undefined,
       ogDescription: meta.description ?? undefined,
-      ogImage: undefined, // TODO(fpion): OpenGraph Image
+      ogImage: config.public.baseUrl + "/og-image.jpg",
       ogUrl: href,
       ogLocale: locale,
       ogSiteName: "SkillCraft",
