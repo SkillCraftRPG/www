@@ -15,6 +15,14 @@
       <li><strong>Perforant.</strong> Pénétration par pointes ou projectiles comme les flèches, carreaux, lances, aiguillons ou épieux.</li>
       <li><strong>Tranchant.</strong> Entailles causées par lames et outils coupants tels que sabres, haches, faucilles ou scies.</li>
     </ul>
+    <h6>Dégâts magiques</h6>
+    <p>
+      Les <NuxtLink to="/regles/equipement/armes">armes</NuxtLink> magiques et certaines capacités, tel le talent
+      <NuxtLink to="/regles/talents/attaque-magique">Attaque magique</NuxtLink>, permettent d’infliger des points de dégâts <strong>magiques</strong>. Les
+      dégâts magiques ignorent la <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink>, la
+      <NuxtLink to="/regles/combat/degats/efficacite">vulnérabilité</NuxtLink> et l’<NuxtLink to="/regles/combat/degats/soins">immunité</NuxtLink> aux dégâts
+      physiques.
+    </p>
     <h6>Dégâts spéciaux</h6>
     <ul>
       <li><strong>Acide.</strong> Brûlures corrosives dues à des substances chimiques comme la chaux vive, le vitriol ou d’autres agents caustiques.</li>
@@ -44,6 +52,4 @@ useSeo({
   title,
   description: "Découvrez les différents types de dégâts physiques et spéciaux, avec exemples d’impacts, pour enrichir vos combats et varier les menaces.",
 });
-
-// TODO(fpion): parler des dégâts magiques
 </script>
