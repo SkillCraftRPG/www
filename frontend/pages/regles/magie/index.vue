@@ -48,7 +48,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/magie/artefacts",
     title: "Artefacts magiques",
-    description: "Artefacts offrant pouvoirs uniques, avec règles d’harmonisation, port et usage.",
+    description: "Artefacts offrant pouvoirs uniques : harmonisation, port et utilisation.",
   },
 ];
 
