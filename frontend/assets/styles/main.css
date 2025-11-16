@@ -21,7 +21,7 @@ button:disabled {
   cursor: pointer;
 }
 
-[data-bs-theme=dark] .clickable:hover {
+[data-bs-theme="dark"] .clickable:hover {
   background-color: #2a2a2a;
 }
 

@@ -1,0 +1,83 @@
+{
+  "id": "90bee741-7895-43b3-a8de-ad30a7ac2363",
+  "slug": "guerison",
+  "name": "Guérison",
+  "tier": 1,
+  "summary": "🚧",
+  "metaDescription": "🚧",
+  "description": "🚧 Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante, et celle-ci [récupère](/regles/combat/degats/soins) 1d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à sa [Puissance](/regles/statistiques/puissance)."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "La [guérison](/regles/combat/degats/soins) augmente à 4d8 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche un nombre de créatures consentantes inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 0,
+      "name": "Mot de guérison",
+      "castingTime": "1",
+      "duration": 0,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage prononce un mot de guérison en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision) et celle-ci [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 1,
+      "name": "Mot de guérison",
+      "castingTime": "1",
+      "duration": 0,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "La [guérison](/regles/combat/degats/soins) augmente à 4d4 additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 2,
+      "name": "Mot de guérison",
+      "castingTime": "1",
+      "duration": 0,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage prononce un mot de guérison en direction des créatures qu’il peut [voir](/regles/aventure/environnement/vision).\n\nCe nombre doit être inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+    }
+  ]
+}

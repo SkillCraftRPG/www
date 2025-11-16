@@ -1,0 +1,47 @@
+{
+  "id": "fcb318ed-1d70-4879-b5e1-64faac6f3408",
+  "slug": "flamme-sacree",
+  "name": "Flamme sacrée",
+  "tier": 0,
+  "summary": "🚧",
+  "metaDescription": "🚧",
+  "description": "🚧",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage tente de châtier une créature en lui projetant une flamme sacrée. La cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties).\n\nEn cas d’échec, elle reçoit 1d6 [points de dégâts radiants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage.\n\nElle émet également une faible lumière divine qui confère l’[avantage](/regles/competences/tests/avantage-desavantage) au [test](/regles/competences/tests) de la prochaine [attaque](/regles/combat/attaque) dirigée contre la cible jusqu’à la fin du [tour](/regles/combat/deroulement/tour) du personnage."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 18,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Les [points de dégâts](/regles/combat/degats) infligés augmentent à 2d6 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage, et la faible lumière divine dure jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) du personnage."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 24,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Les [points de dégâts](/regles/combat/degats) infligés augmentent à 4d6 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage, et la faible lumière divine dure jusqu’à la fin du prochain [tour](/regles/combat/deroulement/tour) du personnage."
+    }
+  ]
+}

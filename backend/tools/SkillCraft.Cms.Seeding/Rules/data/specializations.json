@@ -612,7 +612,7 @@
           "Id": "41bf8836-a50c-4bd4-9e10-e41dc1b8efdf",
           "IsPublished": true,
           "Name": "Adepte d’artefacts",
-          "Description": "La [limite d’artefacts magiques](#) auxquels il peut s’harmoniser simultanément augmente à 4.\n\nLorsque son [tiers](/regles/personnages/progression/tiers) atteint 3, ce nombre augmente à 5 et il ignore les requis de [spécialisations](/regles/specialisations) et d’[espèces](/regles/especes) lorsqu’il s’harmonise à un artefact magique.\n\nÉgalement, lorsqu’il fabrique un artefact magique de rareté commune ou peu fréquente, il réduit de moitié le temps et les matériaux nécessaires à la fabrication."
+          "Description": "Le personnage peut s’[harmoniser](/regles/magie/artefacts/harmonisation) à un [artefact magique](/regles/magie/artefacts) supplémentaire.\n\nLorsque son [tiers](/regles/personnages/progression/tiers) atteint 3, ce nombre augmente à deux artefacts supplémentaires, et il ignore les [prérequis](/regles/magie/artefacts/harmonisation) (par exemple d’[espèce](/regles/especes) ou de [spécialisation](/regles/specialisations)) lorsqu’il s’harmonise à un artefact magique.\n\nÉgalement, lorsqu’il fabrique un artefact magique de rareté commune ou peu fréquente, il réduit de moitié le temps et les matériaux nécessaires à la fabrication."
         },
         {
           "Id": "cccd3f97-57f7-4deb-a8cd-5a0acccd9f54",
