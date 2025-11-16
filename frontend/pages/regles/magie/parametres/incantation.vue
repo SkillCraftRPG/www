@@ -47,8 +47,8 @@
               to="/regles/statistiques/energie"
               >Énergie</NuxtLink
             >
-            n’est engendrée, les <NuxtLink to="/regles/magie/parametres/composantes">composantes matérielles</NuxtLink> ne sont pas perdues, mais la créature
-            doit recommencer la canalisation depuis le début.
+            n’est engendrée, les composantes <NuxtLink to="/regles/magie/parametres/composantes">Matériel</NuxtLink> ne sont pas perdues, mais la créature doit
+            recommencer la canalisation depuis le début.
           </td>
         </tr>
       </tbody>
