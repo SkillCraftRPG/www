@@ -16,7 +16,7 @@
           v-for="(effect, index) in group.effects"
           :key="index"
           :effect="effect"
-          :title="group.effects.length ? (effect.name ?? spell.name) : undefined"
+          :title="group.effects.length > 1 ? (effect.name ?? spell.name) : undefined"
         />
       </template>
     </template>

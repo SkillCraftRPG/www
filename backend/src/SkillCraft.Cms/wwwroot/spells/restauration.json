@@ -29,7 +29,7 @@
       "material": null,
       "somatic": true,
       "verbal": true,
-      "description": "Le personnage touche une créature consentante et retire une malédiction l’affligeant.\n\nSi la source de la malédiction est un [artefact magique](/regles/magie/artefacts), l’artefact reste maudit, mais le [pouvoir](/regles/magie/pouvoirs) met fin à l’[harmonisation](/regles/magie/artefacts/harmonisation).\n\nLa créature est ainsi libérée de la malédiction, ce qui lui permet de se débarrasser de l’objet si elle le désire."
+      "description": "Le personnage touche une créature consentante et retire une malédiction l’affligeant. Si la source de la malédiction est un [artefact magique](/regles/magie/artefacts), l’artefact reste maudit, mais le [pouvoir](/regles/magie/pouvoirs) met fin à l’[harmonisation](/regles/magie/artefacts/harmonisation). La créature est ainsi libérée de la malédiction, ce qui lui permet de se débarrasser de l’objet si elle le désire."
     },
     {
       "level": 2,
