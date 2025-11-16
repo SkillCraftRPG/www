@@ -3,9 +3,9 @@
   "slug": "flamme-sacree",
   "name": "Flamme sacrée",
   "tier": 0,
-  "summary": "🚧",
-  "metaDescription": "🚧",
-  "description": "🚧",
+  "summary": "Frappe une cible d’une flamme divine et facilite la prochaine attaque.",
+  "metaDescription": "Découvrez une flamme divine qui châtie une cible à distance, inflige des dégâts radiants croissants et confère un avantage à la prochaine attaque contre elle.",
+  "description": "Une flamme divine frappe une cible à distance, lui infligeant des dégâts radiants croissants selon le niveau et offrant un avantage à la prochaine attaque dirigée contre elle.",
   "effects": [
     {
       "level": 0,

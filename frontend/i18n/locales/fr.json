@@ -55,12 +55,14 @@
     "light": "Clair"
   },
   "unit": {
+    "action": "action | action | actions",
     "centimeter": "centimètre | centimètre | centimètres",
     "inch": "pouce | pouce | pouces",
     "kilogram": "kilogramme | kilogramme | kilogrammes",
     "foot": "pied | pied | pieds",
     "meter": "mètre | mètre | mètres",
     "pound": "livre | livre | livres",
+    "second": "seconde | seconde | secondes",
     "year": "an | an | ans"
   },
   "users": {
