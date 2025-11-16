@@ -1,0 +1,47 @@
+{
+  "id": "6b18209d-e3d7-47ee-ad3c-6bb496bc1382",
+  "slug": "lumiere",
+  "name": "Lumière",
+  "tier": 0,
+  "summary": "Illumine un objet ou crée une sphère de lumière mobile.",
+  "metaDescription": "Découvrez un pouvoir qui illumine un objet ou crée une sphère lumineuse étendue, offrant clarté et pénombre selon le niveau employé.",
+  "description": "Ce pouvoir éclaire durablement un objet ou génère une large sphère lumineuse, offrant clarté et pénombre pour révéler l’environnement selon le niveau.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 3600,
+      "range": 1,
+      "focus": "De la mousse phosphorescente ou une luciole.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche un objet dont les dimensions sont inférieures à celle d’un cube de 3 mètres d’arête.\n\nL’objet dégage de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 6 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 6 mètres additionnels. La lumière ne peut traverser un objet opaque telle une couverture.\n\nUne seule lumière peut être active à la fois, et le personnage peut éteindre la lumière par une [action](/regles/combat/deroulement/tour).\n\nS’il cible un objet tenu ou porté par une créature ennemie, celle-ci peut effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) afin d’éviter les effets du [pouvoir](/regles/magie/pouvoirs)."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 3600,
+      "range": 1,
+      "focus": "De la mousse phosphorescente ou une luciole.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "La lumière dégagée par l’objet augmente à 12 mètres de [clarté](/regles/aventure/environnement/vision) et 12 mètres additionnels de [pénombre](/regles/aventure/environnement/vision).\n\nSi le personnage cible un objet tenu ou porté par une créature ennemie, celle-ci échoue automatiquement le [jet de sauvegarde](/regles/competences/tests/sauvegarde)."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 600,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage fait apparaître une sphère de lumière centrée sur un point qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLa sphère émet de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 18 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 18 mètres additionnels.\n\nSi le point se trouve sur un objet qui est tenu mais qui n’est pas porté, la sphère se déplace avec l’objet. La lumière ne peut traverser un objet opaque telle une couverture."
+    }
+  ]
+}

@@ -3,9 +3,9 @@
   "slug": "guerison",
   "name": "Guérison",
   "tier": 1,
-  "summary": "🚧",
-  "metaDescription": "🚧",
-  "description": "🚧 Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir.",
+  "summary": "Guérit une ou plusieurs créatures au toucher ou par un mot à distance.",
+  "metaDescription": "Découvrez un pouvoir de guérison flexible permettant de soigner une ou plusieurs créatures, au toucher ou à distance, selon le niveau utilisé.",
+  "description": "Pouvoir de guérison permettant de restaurer la Vitalité d’une ou plusieurs créatures, au toucher ou à distance. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir.",
   "effects": [
     {
       "level": 0,
