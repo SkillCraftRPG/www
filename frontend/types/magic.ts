@@ -14,6 +14,7 @@ export type SpellEffect = {
   name?: string | null;
   castingTime: string;
   duration?: number | null;
+  concentration: boolean;
   range: number;
   focus?: string | null;
   material?: string | null;

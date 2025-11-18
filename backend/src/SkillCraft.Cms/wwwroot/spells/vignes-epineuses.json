@@ -1,0 +1,49 @@
+{
+  "id": "b0e4a483-963e-4d00-ac40-ecf3955dfc8d",
+  "slug": "vignes-epineuses",
+  "name": "Vignes épineuses",
+  "tier": 0,
+  "summary": "Fouet de ronces, zone entravante ou ronces camouflées infligeant des dégâts.",
+  "metaDescription": "Découvrez Vignes épineuses, un pouvoir druidique qui fouette, entrave ou blesse les créatures grâce à des ronces et plantes animées surgissant du sol.",
+  "description": "Pouvoir végétal invoquant un fouet épineux, des vignes saisissantes ou des ronces camouflées qui ralentissent, restreignent ou blessent les créatures prises dans la zone.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 6,
+      "focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage fait apparaître un long fouet constitué d’une vigne épineuse dans une de ses mains libres, puis [attaque](/regles/magie/effets/attaque) une créature.\n\nSi l’attaque réussit, la créature reçoit [1d6 points de dégâts](/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage.\n\nSi la [taille](/regles/especes/taille) de la cible est d’au plus une catégorie supérieure à celle du personnage, alors la cible est rapprochée de 3 mètres en direction du personnage.\n\nLe fouet disparaît à la suite à l’attaque dans un nuage de poussière de bois."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 18,
+      "focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision).\n\nUn carré de 6 mètres de côté centré sur ce point se remplit d’herbes et de vignes saisissantes, et la zone devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n\nToute créature se trouvant à l’intérieur du carré lorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Athlétisme](/regles/competences/athletisme).\n\nEn cas d’échec, elle est [restreinte](/regles/combat/conditions/restreint) par les herbes et les vignes.\n\nUne fois par [tour](/regles/combat/deroulement/tour), elle peut tenter de [s’échapper](/regles/combat/activites/echapper) et tentant le jet de sauvegarde à nouveau. Les plantes disparaissent lorsque le pouvoir prend fin."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 600,
+      "concentration": true,
+      "range": 30,
+      "focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision). Des ronces et racines épineuses poussent dans un rayon de 6 mètres centré sur ce point.\n\nCes plantes sont camouflées et semblent naturelles, une créature doit donc réussir un [test](/regles/competences/tests) de [Perception](/regles/competences/perception) [opposé](/regles/competences/tests/oppose) au test d’[Occultisme](/regles/competences/occultisme) du personnage afin de détecter leur présence.\n\nLa zone devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile), et une créature reçoit [3d4 points de dégâts](/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) pour chaque case traversée dans la zone."
+    }
+  ]
+}

@@ -77,7 +77,7 @@
       "material": null,
       "somatic": false,
       "verbal": true,
-      "description": "Le personnage prononce un mot de guérison en direction des créatures qu’il peut [voir](/regles/aventure/environnement/vision).\n\nCe nombre doit être inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      "description": "Le personnage prononce un mot de guérison en direction de créatures qu’il peut [voir](/regles/aventure/environnement/vision).\n\nCe nombre doit être inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
     }
   ]
 }

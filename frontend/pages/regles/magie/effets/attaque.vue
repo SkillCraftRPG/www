@@ -5,7 +5,7 @@
     <p>Certains pouvoirs agissent comme une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>.</p>
     <p>
       Dans le cas échéant, le résultat du
-      <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’ <NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink> est comparé à la
+      <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink> est comparé à la
       <NuxtLink to="/regles/combat/attaque/defense">Défense</NuxtLink> des cibles.
     </p>
     <p>Une cible est affectée par le pouvoir si le résultat du test est supérieur ou égal à sa Défense.</p>
