@@ -1,0 +1,76 @@
+﻿{
+  "id": "fc022bd0-f93d-4aef-94b6-c18c49ff4436",
+  "slug": "benediction",
+  "name": "Bénédiction",
+  "tier": 0,
+  "summary": "Octroie un bonus sacré aux alliés ou inflige un malus maudit aux ennemis.",
+  "metaDescription": "Découvrez Bénédiction, un pouvoir sacré offrant un bonus aux tests, ou sa version maudite qui affaiblit et entrave les adversaires.",
+  "description": "Sort lumineux ou occulte qui améliore les tests d’alliés ou réduit ceux des ennemis, selon qu’il s’agisse d’une bénédiction protectrice ou d’une malédiction affaiblissante.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante qu’il peut [voir](/regles/aventure/environnement/vision) et celle-ci peut ajouter 1d4 à un [test](/regles/competences/tests) de [compétence](/regles/competences) de son choix avant d’en connaître le résultat. Le pouvoir prend ensuite fin."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 6,
+      "focus": null,
+      "material": "De l’eau bénite.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage bénit jusqu’à 3 créatures qu’il peut [voir](/regles/aventure/environnement/vision). Jusqu’à la fin du pouvoir, une créature bénite peut ajouter 1d4 à tous ses [tests](/regles/competences/tests) de [compétence](/regles/competences)."
+    },
+    {
+      "level": 1,
+      "name": "Malédiction",
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 6,
+      "focus": null,
+      "material": "Une goutte de sang.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage maudit jusqu’à 3 créatures qu’il peut [voir](/regles/aventure/environnement/vision). Chaque créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline). En cas d’échec, une créature est maudite, et elle retire 1d4 à tous ses [tests](/regles/competences/tests) de [compétence](/regles/competences)."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 6,
+      "focus": null,
+      "material": "Une ou plusieurs petites bandes de tissu blanc imbibé d’eau bénite.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage bénit jusqu’à 3 créatures qu’il peut [voir](/regles/aventure/environnement/vision). Une bande de tissu est consommée pour chaque créature bénite.\n\nJusqu’à la fin du pouvoir, une créature bénite peut ajouter 1d6 à tous ses [tests](/regles/competences/tests) de [compétence](/regles/competences).\n\nElle se voit également conférer un nombre de [points de Vitalité temporaires](/regles/combat/degats/temporaire) égal à 5 + [Sens](/regles/attributs/sens) du personnage (minimum 5)."
+    },
+    {
+      "level": 2,
+      "name": "Malédiction",
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 6,
+      "focus": null,
+      "material": "Une ou plusieurs petites bandes de tissu noir imbibé de sang.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage maudit jusqu’à 3 créatures qu’il peut [voir](/regles/aventure/environnement/vision). Une bande de tissu est consommée pour chaque créature maudite.\n\nChaque créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline).\n\nEn cas d’échec, une créature est maudite, et elle retire 1d6 à tous ses [tests](/regles/competences/tests) de [compétence](/regles/competences).\n\nLes points de [Vitalité](/regles/statistiques/vitalite) maximale d’une créature maudite sont également réduits de 5 + [Sens](/regles/attributs/sens) du personnage (minimum 5)."
+    }
+  ]
+}

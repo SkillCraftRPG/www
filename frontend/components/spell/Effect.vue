@@ -75,15 +75,29 @@ const duration = computed<string>(() => {
   } else if (!Number.isInteger(props.effect.duration)) {
     throw new Error(`Invalid spell duration: ${props.effect.duration}`);
   }
+  const concentration: string = props.effect.concentration ? "concentration, jusqu’à " : "";
+  let duration: string = "";
   switch (props.effect.duration) {
     case 0:
-      return "Instantanée";
+      duration = "Instantanée";
+      break;
+    case 6:
+      duration = "1 round";
+      break;
+    case 60:
+      duration = "1 minute";
+      break;
     case 600:
-      return "10 minutes";
+      duration = "10 minutes";
+      break;
     case 3600:
-      return "1 heure";
+      duration = "1 heure";
+      break;
+    default:
+      duration = [props.effect.duration, $t("unit.second", props.effect.duration)].join(" ");
+      break;
   }
-  return [props.effect.duration, $t("unit.second", props.effect.duration)].join(" ");
+  return concentration + duration;
 });
 const range = computed<string>(() => {
   switch (props.effect.range) {
