@@ -1,0 +1,49 @@
+﻿{
+  "id": "5055aaf8-516c-497c-84d5-a3b0b096c1ae",
+  "slug": "augmentation-naturelle",
+  "name": "Augmentation naturelle",
+  "tier": 1,
+  "summary": "Bénédictions animales variées, respiration aquatique et formes druidiques puissantes.",
+  "metaDescription": "Découvrez Augmentation naturelle, un pouvoir versatile offrant bénédictions animales, respiration aquatique ou formes druidiques renforçant les capacités physiques et mentales.",
+  "description": "Pouvoir polyvalent accordant des atouts inspirés des animaux, la respiration sous l’eau ou une métamorphose druidique offrant force, défense, sens accrus et énergie temporaire.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 3600,
+      "concentration": true,
+      "range": 1,
+      "focus": null,
+      "material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante afin de lui insuffler un des effets suivants.\n\n- _Endurance de l’ours._ Confère l’[avantage](/regles/competences/tests/avantage-desavantage) aux [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance). Sa [taille](/regles/especes/taille) est considérée comme étant d’une catégorie supérieure pour l’[encombrement](/regles/equipement/encombrement).\n- _Férocité du dragon._ Confère l’avantage aux tests de [Discipline](/regles/competences/discipline) et d’[Occultisme](/regles/competences/occultisme) ainsi que 2d6 + moitié de la [Puissance](/regles/statistiques/puissance) du personnage points de [Vitalité](/regles/statistiques/vitalite) et d’[Énergie](/regles/statistiques/energie) [temporaires](/regles/combat/degats/temporaire).\n- _Grâce féline._ Confère l’avantage aux tests d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite), et elle retire 6 mètres à la hauteur des [chutes](/regles/aventure/environnement/chute) qu’elle subit dans le calcul des [points de dégâts](/regles/combat/degats) lorsqu’elle n’est pas [incapable](/regles/combat/conditions/incapable).\n- _Habileté du raton laveur._ Confère l’avantage aux tests d’[Artisanat](/regles/competences/artisanat), d’[Orientation](/regles/competences/orientation) et de [Roublardise](/regles/competences/roublardise). Lorsqu’elle travaille en manipulant des [outils](/regles/equipement/outils), par exemple par un test d’Artisanat ou de Roublardise, elle réduit de moitié le temps nécessaire à sa tâche.\n- _Peau d’écorce._ Sa peau durcit, prenant une texture similaire à celle de l’écorce, et sa [Défense](/regles/combat/attaque/defense) prend la valeur de 20, ignorant son [armure](/regles/equipement/armures) (mais pas son [bouclier](/regles/equipement/boucliers)).\n- _Ruse du renard._ Confère l’avantage aux tests de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) et de [Médecine](/regles/competences/medecine), ainsi qu’un bonus égal à son [tiers](/regles/personnages/progression/tiers) à tous ses tests de [compétence](/regles/competences).\n- _Sagesse du hibou._ Confère l’avantage aux tests d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie), et permet de relancer le dé lors d’un test d’[Initiative](/regles/combat/deroulement/initiative) et d’utiliser le résultat de son choix.\n- _Splendeur de l’aigle._ Confère l’avantage aux tests de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation) et de [Tromperie](/regles/competences/tromperie), ainsi qu’un bonus (+5) aux [tests passifs](/regles/competences/tests/passif) afin de déterminer l’[attitude initiale](/regles/aventure/interaction-sociale) des personnages non joueurs."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 86400,
+      "range": 6,
+      "focus": null,
+      "material": "Des écailles de poisson.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage désigne un nombre de créatures qu’il peut [voir](/regles/aventure/environnement/vision) inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Une écaille est consommée pour chaque créature désignée. Les créatures désignées acquièrent la capacité à [respirer sous l’eau](/regles/aventure/environnement/suffocation) pour la durée du pouvoir."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "1",
+      "duration": 60,
+      "concentration": true,
+      "range": 0,
+      "focus": null,
+      "material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage s’insuffle la puissance d’un gardien de la nature.\n\n- _Bête primitive._ Le corps du personnage se couvre de fourrure, de plumes ou d’écailles, et ses traits deviennent ceux d’une créature sauvage. Il acquiert les capacités suivantes :\n  - Bonus de [2 points de mouvement](/regles/aventure/mouvement/vitesse).\n  - [Vision dans le noir](/regles/aventure/environnement/vision) de 36 mètres.\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance).\n  - Bonus de 1d6 + moitié de sa [Puissance](/regles/statistiques/puissance) [points de dégâts magiques](/regles/combat/degats/types) à ses [attaques](/regles/combat/attaque) physiques.\n- _Grand arbre._ Le corps du personnage se couvre d’écorce et ses feuilles poussent dans ses cheveux. Il acquiert les capacités suivantes :\n  - Il acquiert un nombre de points d’[Énergie](/regles/statistiques/energie) et de [Vitalité](/regles/statistiques/vitalite) [temporaires](/regles/combat/degats/temporaire) égal à sa [Puissance](/regles/statistiques/puissance).\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline), d’[Occultisme](/regles/competences/occultisme) et d’[Orientation](/regles/competences/orientation).\n  - Le sol dans un rayon de 4,5 mètres autour de lui devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile) pour les créatures de son choix.\n  - Il ne peut être [renversé](/regles/combat/conditions/renverse), ni déplacé contre son gré."
+    }
+  ]
+}

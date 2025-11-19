@@ -75,7 +75,7 @@ const duration = computed<string>(() => {
   } else if (!Number.isInteger(props.effect.duration)) {
     throw new Error(`Invalid spell duration: ${props.effect.duration}`);
   }
-  const concentration: string = props.effect.concentration ? "concentration, jusqu’à " : "";
+  const concentration: string = props.effect.concentration ? "Concentration, jusqu’à " : "";
   let duration: string = "";
   switch (props.effect.duration) {
     case 0:

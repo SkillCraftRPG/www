@@ -1,0 +1,48 @@
+﻿{
+  "id": "03474178-1d88-4850-b571-8438499b9d11",
+  "slug": "protection-contre-les-poisons-et-maladies",
+  "name": "Protection contre les poisons et maladies",
+  "tier": 1,
+  "summary": "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
+  "metaDescription": "Découvrez un pouvoir qui détecte poisons et maladies, purifie aliments et crée eau et nourriture pour subvenir aux besoins d’un groupe entier.",
+  "description": "Pouvoir utilitaire détectant poisons et maladies, purifiant repas et breuvages, et créant eau fraîche et nourriture pour nourrir efficacement plusieurs créatures.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 600,
+      "concentration": true,
+      "range": 0,
+      "focus": "Une feuille d’if.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage détecte la présence et l’emplacement précis des [poisons](/regles/herboristerie/poisons), venins et maladies situés à 9 mètres ou moins de sa position. Il peut également identifier la nature du poison, du venin ou de la maladie. Le pouvoir pénètre la plupart des barrières, mais il est arrêté par 30 centimètres de pierre, 3 centimètres de métal ou 1 mètre de bois ou de saleté.\n\nLorsqu’il perd ou lâche sa [concentration](/regles/magie/parametres/duree), le personnage peut également purifier tout breuvage et toute nourriture de tout poison, venin ou maladie. Les breuvages et la nourriture doivent se trouver dans une sphère de 1,5 mètres de rayon centré sur un point que le personnage peut [voir](/regles/aventure/environnement/vision)."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 6,
+      "focus": null,
+      "material": "Une feuille d’if.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage crée 10 kilogrammes de nourriture et 50 litres d’eau fraîche sur le sol ou dans des [contenants](/regles/equipement/general/contenants) qu’il peut voir, ce qui permet de [nourrir](/regles/aventure/environnement/alimentation) et d’[abreuver](/regles/aventure/environnement/alimentation) jusqu’à&nbsp;10 humanoïdes pour une journée.\n\nLa nourriture est fade mais nourrissante et disparaît après [24 heures](/regles/aventure/temps) si elle n’est pas consommée. L’eau reste fraîche et propre même après cette période.\n\nLa nourriture et l’eau peuvent également abreuver et nourrir une monture, mais cette monture mange et boit la même quantité que 5 humanoïdes."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 6,
+      "focus": null,
+      "material": "Une feuille d’if.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage crée 20 kilogrammes de nourriture et 100 litres d’eau fraîche sur le sol ou dans des [contenants](/regles/equipement/general/contenants) qu’il peut voir, ce qui permet de [nourrir](/regles/aventure/environnement/alimentation) et d’[abreuver](/regles/aventure/environnement/alimentation) jusqu’à 20&nbsp;humanoïdes pour une journée."
+    }
+  ]
+}
