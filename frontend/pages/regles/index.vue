@@ -163,7 +163,7 @@ const tiles = computed<Tile[]>(() => [
   {
     icon: "fas fa-book",
     text: "Annexes",
-    to: "#",
+    to: "/regles/annexes",
     progress: data.value?.annexes ?? 0,
   },
 ]);
