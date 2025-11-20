@@ -2795,7 +2795,7 @@
     },
     "Summary": "Lie le personnage à un domaine sacré et révèle ses premiers dons.",
     "MetaDescription": "Découvrez le talent Spiritualité, qui relie le personnage à un domaine divin ou animiste et lui accorde ses premiers pouvoirs sacrés.",
-    "Description": "Le personnage sélectionne un [domaine divin](#) ou un [domaine d’animisme](#).\n\nL’animisme est l’ensemble des croyances consistant à octroyer une âme aux objets et aux animaux.\n\nLes domaines divins sont quant à eux associés à une ou plusieurs divinités, et relèvent de cultes et de religions.\n\nLe personnage peut désormais acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 0 associés à ce domaine, et il acquiert gratuitement un de ces pouvoirs.\n\nIl acquiert également une capacité spécifique au domaine qu’il a sélectionné."
+    "Description": "Le personnage sélectionne un [domaine divin](/regles/domaines/divins) ou un [domaine d’animisme](/regles/domaines/animisme).\n\nL’animisme est l’ensemble des croyances consistant à octroyer une âme aux objets et aux animaux.\n\nLes domaines divins sont quant à eux associés à une ou plusieurs divinités, et relèvent de cultes et de religions.\n\nLe personnage peut désormais acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 0 associés à ce domaine, et il acquiert gratuitement un de ces pouvoirs.\n\nIl acquiert également une capacité spécifique au domaine qu’il a sélectionné."
   },
   {
     "Id": "619e0540-95ba-4bf5-be23-c4a7b1f70b0c",

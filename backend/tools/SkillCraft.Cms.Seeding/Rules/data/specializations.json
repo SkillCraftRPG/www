@@ -16,7 +16,7 @@
         "Name": "Spiritualité"
       },
       "Other": [
-        "Le personnage doit avoir sélectionné un [domaine d’animisme](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+        "Le personnage doit avoir sélectionné un [domaine d’animisme](/regles/domaines/animisme) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
       ]
     },
     "Options": {
@@ -81,8 +81,8 @@
     "ReservedTalent": {
       "Name": "Animisme",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il acquiert une capacité de tiers 1 spécifique à son [domaine d’animisme](#)."
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une capacité de tiers 1 spécifique à son [domaine d’animisme](/regles/domaines/animisme)."
       ],
       "DiscountedTalents": [],
       "Features": [
@@ -1315,7 +1315,7 @@
       "Other": [
         "Le personnage doit avoir acquis la spécialisation [Animiste](/regles/specialisations/animiste).",
         "Il ne doit pas avoir acquis la spécialisation [Druide](/regles/specialisations/druide).",
-        "Il doit avoir sélectionné un [domaine d’animisme spirituel](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+        "Il doit avoir sélectionné un [domaine d’animisme spirituel](/regles/domaines/animisme) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
       ]
     },
     "Options": {
@@ -1388,14 +1388,14 @@
         }
       ],
       "Other": [
-        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](/regles/domaines/animisme)."
       ]
     },
     "ReservedTalent": {
       "Name": "Chamanisme",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](#)."
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](/regles/domaines/animisme)."
       ],
       "DiscountedTalents": [],
       "Features": [
@@ -1426,7 +1426,7 @@
       },
       "Other": [
         "Le personnage ne doit pas avoir acquis la spécialisation [Prêtre](/regles/specialisations/pretre).",
-        "Il doit avoir acquis le talent [Spiritualité](/regles/talents/spiritualite), et doit avoir sélectionné un [domaine divin](#) lorsqu’il a acquis ce talent."
+        "Il doit avoir acquis le talent [Spiritualité](/regles/talents/spiritualite), et doit avoir sélectionné un [domaine divin](/regles/domaines/divins) lorsqu’il a acquis ce talent."
       ]
     },
     "Options": {
@@ -1529,7 +1529,7 @@
         }
       ],
       "Other": [
-        "Un [pouvoir](/regles/magie/pouvoirs) de tiers 1 associé à son [domaine divin](#)."
+        "Un [pouvoir](/regles/magie/pouvoirs) de tiers 1 associé à son [domaine divin](/regles/domaines/divins)."
       ]
     },
     "ReservedTalent": {
@@ -1566,13 +1566,13 @@
           "Id": "f7d0fce8-bfed-4d69-a3da-3aa41fc2189d",
           "IsPublished": true,
           "Name": "Pouvoir divin",
-          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine divin](#).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nS’il a acquis la spécialisation [Clerc](/regles/specialisations/clerc), il s’agit de la même capacité et possède désormais deux utilisations par jour."
+          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine divin](/regles/domaines/divins).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nS’il a acquis la spécialisation [Clerc](/regles/specialisations/clerc), il s’agit de la même capacité et possède désormais deux utilisations par jour."
         },
         {
           "Id": "44820c12-61b1-495c-9e01-3595670ffafa",
           "IsPublished": true,
           "Name": "Châtiment divin",
-          "Description": "Lorsque le personnage réussit une [attaque de mêlée](/regles/combat/attaque/melee), il peut immédiatement dépenser une, deux ou trois tranches de 10 points d’[Énergie](/regles/statistiques/energie) afin d’infuser son [arme](/regles/equipement/armes) d’énergie divine et d’infliger des [points de dégâts](/regles/combat/degats) supplémentaires.\n\nLe [type](/regles/combat/degats/types) des dégâts dépend du [domaine divin](#) du personnage, telle l’[Attaque divine](/regles/specialisations/pretre) du [Prêtre](/regles/specialisations/pretre).\n\nLe nombre de points de dégâts ajoutés est égal à 1d12 par tranche de points d’Énergie dépensés, additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+          "Description": "Lorsque le personnage réussit une [attaque de mêlée](/regles/combat/attaque/melee), il peut immédiatement dépenser une, deux ou trois tranches de 10 points d’[Énergie](/regles/statistiques/energie) afin d’infuser son [arme](/regles/equipement/armes) d’énergie divine et d’infliger des [points de dégâts](/regles/combat/degats) supplémentaires.\n\nLe [type](/regles/combat/degats/types) des dégâts dépend du [domaine divin](/regles/domaines/divins) du personnage, telle l’[Attaque divine](/regles/specialisations/pretre) du [Prêtre](/regles/specialisations/pretre).\n\nLe nombre de points de dégâts ajoutés est égal à 1d12 par tranche de points d’Énergie dépensés, additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
         }
       ]
     }
@@ -1770,7 +1770,7 @@
         "Name": "Spiritualité"
       },
       "Other": [
-        "Le personnage doit avoir sélectionné un [domaine divin](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+        "Le personnage doit avoir sélectionné un [domaine divin](/regles/domaines/divins) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
       ]
     },
     "Options": {
@@ -1835,8 +1835,8 @@
     "ReservedTalent": {
       "Name": "Clergé",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il acquiert une capacité de tiers 1 spécifique à son [domaine divin](#)."
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](/regles/domaines/divins) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une capacité de tiers 1 spécifique à son [domaine divin](/regles/domaines/divins)."
       ],
       "DiscountedTalents": [],
       "Features": [
@@ -1844,7 +1844,7 @@
           "Id": "3b91802e-596b-4a16-a490-c1f020f55117",
           "IsPublished": true,
           "Name": "Pouvoir divin",
-          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine divin](#).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+          "Description": "Une fois par jour, le personnage peut invoquer un pouvoir divin spécifique à son [domaine divin](/regles/domaines/divins).\n\nIl doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
         }
       ]
     }
@@ -1990,7 +1990,7 @@
       "Other": [
         "Le personnage doit avoir acquis la spécialisation [Animiste](/regles/specialisations/animiste).",
         "Il ne doit pas avoir acquis la spécialisation [Chaman](/regles/specialisations/chaman).",
-        "Il doit avoir sélectionné un [domaine d’animisme naturel](#) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
+        "Il doit avoir sélectionné un [domaine d’animisme naturel](/regles/domaines/animisme) lorsqu’il a acquis le talent [Spiritualité](/regles/talents/spiritualite)."
       ]
     },
     "Options": {
@@ -2063,14 +2063,14 @@
         }
       ],
       "Other": [
-        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine d’animisme](/regles/domaines/animisme)."
       ]
     },
     "ReservedTalent": {
       "Name": "Druidisme",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](#).",
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](/regles/domaines/animisme).",
         "Il peut maintenant assumer sa [forme sauvage](/regles/specialisations/animiste) deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations. Également, il peut maintenant prendre la forme d’une bête de niveau inférieur ou égal à 1, et celle-ci peut [voler](/regles/aventure/mouvement/types)."
       ],
       "DiscountedTalents": [],
@@ -3393,14 +3393,14 @@
         }
       ],
       "Other": [
-        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](#)."
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à son [domaine divin](/regles/domaines/divins)."
       ]
     },
     "ReservedTalent": {
       "Name": "Prêtrise",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine divin](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il acquiert une capacité de tiers 2 spécifique à son [domaine divin](#).",
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine divin](/regles/domaines/divins) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert une capacité de tiers 2 spécifique à son [domaine divin](/regles/domaines/divins).",
         "Il peut maintenant invoquer un [pouvoir divin](/regles/specialisations/clerc) deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
       ],
       "DiscountedTalents": [],
@@ -3409,7 +3409,7 @@
           "Id": "49022307-f9f6-4da4-a58f-8ca1fa376fda",
           "IsPublished": true,
           "Name": "Attaque divine",
-          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des dégâts du type associé à son domaine divin."
+          "Description": "Lorsque le personnage effectue une [Attaque magique](/regles/talents/attaque-magique), alors il peut substituer les [dégâts magiques](/regles/combat/degats/types) par des dégâts du type associé à son [domaine divin](/regles/domaines/divins)."
         }
       ]
     }
