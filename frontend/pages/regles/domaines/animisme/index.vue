@@ -1,0 +1,131 @@
+<template>
+  <main class="container">
+    <h1>{{ title }}</h1>
+    <AppBreadcrumb :active="title" :parent="parent" />
+    <p>
+      Lorsque le personnage acquiert le talent <NuxtLink to="/regles/talents/spiritualite">Spiritualité</NuxtLink>, il peut sélectionner un
+      <NuxtLink to="/regles/domaines/divins">domaine divin</NuxtLink> ou un <strong>domaine d'animisme</strong>. Il ne peut acquérir qu’un seul de ces domaines
+      et ne peut jamais changer celui-ci.
+    </p>
+    <p>
+      Lorsqu’il sélectionne un domaine d’animisme, il acquiert la capacité de <NuxtLink to="/regles/personnages/progression/tiers">tiers 0</NuxtLink> de ce
+      domaine, un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> associé à celui-ci, et peut désormais acquérir les pouvoirs de tiers 0 de ce domaine.
+    </p>
+    <p>
+      Lorsqu’il acquiert la spécialisation <NuxtLink to="/regles/specialisations/animiste">Animiste</NuxtLink>, il acquiert la capacité de tiers 1 de ce domaine
+      d’animisme. Les domaines d’animisme se divisent en deux catégories : les domaines&nbsp;spirituels ainsi que les domaines&nbsp;naturels.
+    </p>
+    <ul>
+      <li>
+        Les domaines spirituels lui permettent d’acquérir les spécialisations <NuxtLink to="/regles/specialisations/chaman">Chaman</NuxtLink> et
+        <NuxtLink to="/regles/specialisations/totem">Totem</NuxtLink>, qui lui confèrent respectivement une capacité de tiers 2 et deux capacités de tiers 3
+        associées à ce domaine.
+      </li>
+      <li>
+        Les domaines naturels lui permettent d’acquérir les spécialisations <NuxtLink to="/regles/specialisations/druide">Druide</NuxtLink> et
+        <NuxtLink to="/regles/specialisations/archidruide">Archidruide</NuxtLink>, qui lui confèrent respectivement une capacité de tiers 2 et deux capacités de
+        tiers 3 associées à ce domaine.
+      </li>
+    </ul>
+    <h2 class="h3">Liste des domaines</h2>
+    <!-- <h3 class="h5">Domaines naturels</h3>
+    <div class="row">
+      <div v-for="(item, index) in domains.natural" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
+    <h3 class="h5">Domaines spirituels</h3> -->
+    <div class="row">
+      <div v-for="(item, index) in domains.spiritual" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      </div>
+    </div>
+    <h2 class="h3">Liste des pouvoirs</h2>
+    <h3 class="h5">Pouvoirs de tiers 0</h3>
+    <div class="row">
+      <div v-for="(spell, index) in spells.tier0" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
+      </div>
+    </div>
+    <h3 class="h5">Pouvoirs de tiers 1</h3>
+    <div class="row">
+      <div v-for="(spell, index) in spells.tier1" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
+      </div>
+    </div>
+  </main>
+</template>
+
+<script setup lang="ts">
+import type { Breadcrumb } from "~/types/components";
+
+const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
+const title: string = "Domaines d’animisme";
+
+type MenuItem = {
+  path: string;
+  title: string;
+  description: string;
+};
+
+type Domains = {
+  natural: MenuItem[];
+  spiritual: MenuItem[];
+};
+const domains: Domains = {
+  natural: [],
+  spiritual: [
+    {
+      path: "/regles/domaines/animisme/berger",
+      title: "Berger",
+      description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
+    },
+  ],
+};
+
+type Spells = {
+  tier0: MenuItem[];
+  tier1: MenuItem[];
+};
+const spells: Spells = {
+  tier0: [
+    {
+      path: "/regles/magie/pouvoirs/frisson",
+      title: "Frisson",
+      description: "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/souffle-empoisonne",
+      title: "Souffle empoisonné",
+      description: "Souffle toxique infligeant du poison, purge l’empoisonnement ou frappe en cône.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/vignes-epineuses",
+      title: "Vignes épineuses",
+      description: "Fouet de ronces, zone entravante ou ronces camouflées infligeant des dégâts.",
+    },
+  ],
+  tier1: [
+    {
+      path: "/regles/magie/pouvoirs/augmentation-naturelle",
+      title: "Augmentation naturelle",
+      description: "Bénédictions animales variées, respiration aquatique et formes druidiques puissantes.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
+      title: "Protection contre les poisons et maladies",
+      description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/restauration",
+      title: "Restauration",
+      description: "Purifie une créature en levant maladies, malédictions ou afflictions.",
+    },
+  ],
+};
+
+useSeo({
+  title,
+  description: "🚧",
+});
+</script>
