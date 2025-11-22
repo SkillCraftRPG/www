@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque le personnage acquiert le talent <NuxtLink to="/regles/talents/spiritualite">Spiritualité</NuxtLink>, il peut sélectionner un
-      <NuxtLink to="/regles/domaines/divins">domaine divin</NuxtLink> ou un <strong>domaine d'animisme</strong>. Il ne peut acquérir qu’un seul de ces domaines
+      <NuxtLink to="/regles/domaines/divins">domaine divin</NuxtLink> ou un <strong>domaine d’animisme</strong>. Il ne peut acquérir qu’un seul de ces domaines
       et ne peut jamais changer celui-ci.
     </p>
     <p>
@@ -28,13 +28,13 @@
       </li>
     </ul>
     <h2 class="h3">Liste des domaines</h2>
-    <!-- <h3 class="h5">Domaines naturels</h3>
+    <h3 class="h5">Domaines naturels</h3>
     <div class="row">
       <div v-for="(item, index) in domains.natural" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h3 class="h5">Domaines spirituels</h3> -->
+    <h3 class="h5">Domaines spirituels</h3>
     <div class="row">
       <div v-for="(item, index) in domains.spiritual" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
@@ -73,7 +73,13 @@ type Domains = {
   spiritual: MenuItem[];
 };
 const domains: Domains = {
-  natural: [],
+  natural: [
+    {
+      path: "/regles/domaines/animisme/mycetes",
+      title: "Mycètes",
+      description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
+    },
+  ],
   spiritual: [
     {
       path: "/regles/domaines/animisme/berger",

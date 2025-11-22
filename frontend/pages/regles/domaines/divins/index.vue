@@ -61,6 +61,11 @@ const items: MenuItem[] = [
     title: "Forge",
     description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale inspirée du métal.",
   },
+  {
+    path: "/regles/domaines/divins/supercherie",
+    title: "Supercherie",
+    description: "Ruse, illusions, ombres et charmes : les pouvoirs maîtres du domaine de Supercherie.",
+  },
 ];
 
 type Spells = {
