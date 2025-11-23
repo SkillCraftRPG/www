@@ -1,0 +1,59 @@
+﻿{
+  "id": "f3a12477-3f86-4303-9792-35249545207e",
+  "slug": "preversation",
+  "name": "Préservation",
+  "tier": 0,
+  "summary": "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
+  "metaDescription": "Découvrez Préservation, un pouvoir protecteur stabilisant les mourants, préservant les corps et feignant la mort pour protéger une créature des dangers.",
+  "description": "Pouvoir axé sur la survie : stabilisation immédiate, conservation prolongée des corps, imitation parfaite de la mort et garde vitale empêchant l’agonie fatale.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature [agonisante](/regles/combat/conditions/agonisant) et [stabilise](/regles/combat/activites/stabiliser) celle-ci. Les morts-vivants et constructions ne sont pas affectés par ce pouvoir."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 864000,
+      "range": 1,
+      "focus": null,
+      "material": "Une pincée de sel et un centime placé dans chaque œil de la cible.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche un cadavre, protégeant celui-ci de la décomposition et des effets créant un mort-vivant. Le pouvoir ajoute également 10 jours à la limite de [temps](/regles/aventure/temps) imposée par le talent [Réanimation](/regles/talents/reanimation) et par les pouvoirs [Réincarnation](/regles/magie/pouvoirs/reincarnation) et [Résurrection](/regles/magie/pouvoirs/resurrection)."
+    },
+    {
+      "level": 2,
+      "name": "Feindre la mort",
+      "castingTime": "2",
+      "duration": 3600,
+      "range": 1,
+      "focus": null,
+      "material": "Une pincée de terre issue d’un cimetière.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante et la place dans un état cataleptique indistinguable de la [mort](/regles/combat/mort-agonie), même par [magie](/regles/magie).\n\nL’effet dure [une heure](), ou jusqu’à ce que le personnage le dissipe par une [action](/regles/combat/deroulement/tour) en touchant la cible.\n\nLa cible est [aveuglée](/regles/combat/conditions/aveugle), [incapable](/regles/combat/conditions/incapable), et sa [vitesse](/regles/aventure/mouvement/vitesse) tombe nulle.\n\nElle devient [résistante](/regles/combat/degats/efficacite) à tout [dégât](/regles/combat/degats), à l’exception des dégâts [psychiques](/regles/combat/degats/types).\n\nSi elle est affligée par une maladie ou par un [poison](/regles/herboristerie/poisons), alors elle n’est pas affectée pendant la durée du pouvoir."
+    },
+    {
+      "level": 2,
+      "name": "Garde vitale",
+      "castingTime": "2",
+      "duration": 28800,
+      "range": 1,
+      "focus": null,
+      "material": "Une pincée de terre issue d’un cimetière.",
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante et lui place une garde contre la [mort](/regles/combat/mort-agonie). Si les points de [Vitalité](/regles/statistiques/vitalite) de la cible chutent à 0 pendant la durée du pouvoir, celle-ci [récupère](/regles/combat/degats/soins) instantanément 1 point de Vitalité, évitant la mort. Le pouvoir prend ensuite fin. Une créature ne peut bénéficier que d’une seule garde vitale à la fois."
+    }
+  ]
+}

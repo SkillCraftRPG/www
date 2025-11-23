@@ -41,7 +41,7 @@ const props = defineProps<{
 }>();
 
 const castingTime = computed<string>(() => {
-  const formatted: string = props.effect.castingTime.trim().toUpperCase();
+  const formatted: string = props.effect.castingTime.trim();
   switch (formatted) {
     case "1":
     case "2":
@@ -49,6 +49,12 @@ const castingTime = computed<string>(() => {
       return [actions, $t("unit.action", actions)].join(" ");
     case "R":
       return "Réaction";
+    case "1m":
+      return "1 minute";
+    case "10m":
+      return "10 minutes";
+    case "8h":
+      return "8 heures";
     default:
       throw new Error(`Invalid spell casting time: ${props.effect.castingTime}`);
   }
@@ -92,6 +98,15 @@ const duration = computed<string>(() => {
       break;
     case 3600:
       duration = "1 heure";
+      break;
+    case 28800:
+      duration = "8 heures";
+      break;
+    case 864000:
+      duration = "10 jours";
+      break;
+    case 31557600:
+      duration = "1 an";
       break;
     default:
       duration = [props.effect.duration, $t("unit.second", props.effect.duration)].join(" ");

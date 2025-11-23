@@ -61,6 +61,11 @@ const items: MenuItem[] = [
     title: "Forge",
     description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale inspirée du métal.",
   },
+  {
+    path: "/regles/domaines/divins/supercherie",
+    title: "Supercherie",
+    description: "Ruse, illusions, ombres et charmes : les pouvoirs maîtres du domaine de Supercherie.",
+  },
 ];
 
 type Spells = {
@@ -83,6 +88,16 @@ const spells: Spells = {
       path: "/regles/magie/pouvoirs/lumiere",
       title: "Lumière",
       description: "Illumine un objet ou crée une sphère de lumière mobile.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/preservation",
+      title: "Préservation",
+      description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/thaumaturgie",
+      title: "Thaumaturgie",
+      description: "Effets mineurs, réparation d’objets et prières soignantes pour plusieurs alliés.",
     },
   ],
   tier1: [
