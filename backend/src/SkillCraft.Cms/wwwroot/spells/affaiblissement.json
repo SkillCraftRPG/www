@@ -1,0 +1,60 @@
+﻿{
+  "id": "525e6460-2f96-4296-a2b1-7664532d768a",
+  "slug": "affaiblissement",
+  "name": "Affaiblissement",
+  "tier": 0,
+  "summary": "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
+  "metaDescription": "Découvrez Affaiblissement, un pouvoir nécrotique qui épuise la vitalité, empoisonne, aveugle ou assourdit ses cibles, jusqu’à réduire leur force à néant.",
+  "description": "Pouvoir offensif cumulant dégâts nécrotiques, poison, cécité ou surdité, et pouvant même réduire la force d’une créature à zéro tout en maintenant un empoisonnement persistant.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage tente de toucher une créature qu’il peut [voir](/regles/aventure/environnement/vision). Si l’[attaque](/regles/magie/effets/attaque) réussit, elle inflige [3d10 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 0,
+      "name": "Rayon d’affaiblissement",
+      "castingTime": "2",
+      "duration": 0,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage projette un rayon d’énergie verdâtre en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision). Si l’[attaque](/regles/magie/effets/attaque) réussit, elle inflige [2d8 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage, et la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance). En cas d’échec, la cible est [empoisonnée](/regles/combat/conditions/empoisonne) jusqu’à la fin du prochain [tour](/regles/combat/deroulement/tour) du personnage."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "range": 6,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage prononce un mot maudit signifiant « Surdité » ou « Cécité » en désignant une créature qu’il peut [voir](/regles/aventure/environnement/vision). Celle-ci doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance). En cas d’échec, la cible est [assourdie](/regles/combat/conditions/assourdi) ou [aveuglée](/regles/combat/conditions/aveugle) pendant la durée du pouvoir. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses [tours](/regles/combat/deroulement/tour)."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 12,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage projette un rayon d’énergie verdâtre en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision). Si l’[attaque](/regles/magie/effets/attaque) réussit, elle inflige [2d8 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage, et la [Force](/regles/statistiques/force) de la cible chute à 0. De plus, la cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance). En cas d’échec, la cible est [empoisonnée](/regles/combat/conditions/empoisonne) pendant la durée du pouvoir. La cible peut répéter le jet de sauvegarde à la fin de chacun de ses tours. Si elle réussit, le pouvoir prend fin."
+    }
+  ]
+}

@@ -23,7 +23,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/herboristerie",
     title: "Herboristerie",
-    description: "🚧",
+    description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
   },
   {
     path: "/regles/domaines/divins",

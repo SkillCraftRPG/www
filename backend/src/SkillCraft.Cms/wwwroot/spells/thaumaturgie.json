@@ -1,0 +1,59 @@
+﻿{
+  "id": "525e6460-2f96-4296-a2b1-7664532d768a",
+  "slug": "thaumaturgie",
+  "name": "Thaumaturgie",
+  "tier": 0,
+  "summary": "Effets mineurs, réparation d’objets et prières soignantes pour plusieurs alliés.",
+  "metaDescription": "Découvrez Thaumaturgie, un pouvoir polyvalent permettant petits miracles, réparations fines et prières de guérison affectant plusieurs alliés.",
+  "description": "Pouvoir polyvalent offrant effets surnaturels mineurs, réparation précise d’objets et prières de guérison pouvant restaurer de nombreux alliés selon la puissance du lanceur.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 0,
+      "range": 6,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage crée un effet surnaturel et inoffensif parmi la liste suivante.\n\n- Sa voix est amplifiée pendant une minute.\n- Il fait vaciller, assombrir, éclaircir ou change la couleur de flammes pendant une minute.\n- Il fait vibrer doucement la terre pendant une minute.\n- Il crée un son instantané provenant d’un point de son choix, par exemple un grondement de tonnerre, le cri d’un oiseau ou des murmures sinistres.\n- Une porte ou une fenêtre non verrouillée s’ouvre ou se ferme violemment.\n- Le personnage modifie l’apparence de ses yeux pendant une minute."
+    },
+    {
+      "level": 0,
+      "name": "Réparation",
+      "castingTime": "1m",
+      "duration": 0,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": false,
+      "description": "Le personnage touche un objet afin de le réparer. La réparation ne laisse aucune trace. Si la taille de l’objet est supérieure à celle d’un cube de 30 centimètres d’arête, alors le pouvoir ne répare qu’une section pouvant être contenue dans un cube de cette taille."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "10m",
+      "duration": 0,
+      "range": 6,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage prononce une prière de guérison. Il sélectionne ensuite un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Il doit pouvoir [voir](/regles/aventure/environnement/vision) les créatures et celles-ci doivent avoir écouté consciemment la prière. Chaque créature [récupère](/regles/combat/degats/soins) 2d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "10m",
+      "duration": 0,
+      "range": 6,
+      "focus": null,
+      "material": null,
+      "somatic": false,
+      "verbal": true,
+      "description": "Le personnage prononce une prière de guérison. Il sélectionne ensuite un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Il doit pouvoir [voir](/regles/aventure/environnement/vision) les créatures et celles-ci doivent avoir écouté consciemment la prière. Chaque créature [récupère](/regles/combat/degats/soins) 3d10 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir."
+    }
+  ]
+}

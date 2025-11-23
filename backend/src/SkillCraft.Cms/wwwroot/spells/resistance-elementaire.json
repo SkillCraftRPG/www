@@ -1,0 +1,75 @@
+﻿{
+  "id": "d62420f1-bb81-475e-b660-057578eda600",
+  "slug": "resistance-elementaire",
+  "name": "Résistance élémentaire",
+  "tier": 0,
+  "summary": "Renforce les sauvegardes, absorbe l’élément reçu et confère une résistance durable.",
+  "metaDescription": "Découvrez Résistance élémentaire, un pouvoir protecteur qui renforce les sauvegardes, absorbe l’énergie élémentaire et confère une résistance durable aux dégâts.",
+  "description": "Pouvoir défensif modulable permettant d’améliorer un jet, d’absorber un élément pour riposter ou de conférer une résistance élémentaire, seul ou à un groupe entier.",
+  "effects": [
+    {
+      "level": 0,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 1,
+      "focus": "Une cape miniature.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante. Pendant la durée du pouvoir, la cible peut ajouter 1d4 à un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de son choix avant d’en connaître le résultat. Le pouvoir prend ensuite fin.\n\nSi elle ajoute 1d4 à un jet de sauvegarde contre un pouvoir élémentaire (infligeant des [points de dégâts](/regles/combat/degats) d’un des [types](/regles/combat/degats/types) suivants : acide, électricité, feu, froid ou tonnerre), alors elle se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) au jet de sauvegarde."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 60,
+      "concentration": true,
+      "range": 1,
+      "focus": "Une cape miniature.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante. La prochaine fois que la créature reçoit des [points de dégâts](/regles/combat/degats) élémentaires ([acide, électricité, feu, froid ou tonnerre](/regles/combat/degats/types)), elle absorbe une portion des points de dégâts reçus.\n\nElle devient [résistante](/regles/combat/degats/efficacite) à ce type de dégâts à partir du moment où le pouvoir prend effet et jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). Jusqu’à la fin de son prochain tour, la prochaine [attaque](/regles/combat/attaque) réussie par la cible inflige 1d6 points de dégâts supplémentaires du type absorbé, additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+    },
+    {
+      "level": 1,
+      "name": "Objection",
+      "castingTime": "R",
+      "duration": 0,
+      "range": 0,
+      "focus": "Une cape miniature.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Lorsque le personnage reçoit des [points de dégâts](/regles/combat/degats) élémentaires ([acide, électricité, feu, froid ou tonnerre](/regles/combat/degats/types)), il absorbe une portion des points de dégâts reçus.\n\nIl devient [résistant](/regles/combat/degats/efficacite) à ce type de dégâts à partir du moment où le pouvoir prend effet et jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). Jusqu’à la fin de son prochain tour, la prochaine [attaque](/regles/combat/attaque) qu’il réussit inflige 1d6 points de dégâts supplémentaires du type absorbé, additionnés à la moitié de sa [Puissance](/regles/statistiques/puissance)."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 3600,
+      "concentration": true,
+      "range": 1,
+      "focus": null,
+      "material": null,
+      "somatic": true,
+      "verbal": false,
+      "description": "Le personnage touche une créature consentante en sélectionnant un [type](/regles/combat/degats/types) de [dégâts](/regles/combat/degats) élémentaires (acide, électricité, feu, froid ou tonnerre), et lui confère la [résistance](/regles/combat/degats/efficacite) aux dégâts de ce type."
+    },
+    {
+      "level": 2,
+      "name": "Résistance collective",
+      "castingTime": "2",
+      "duration": 3600,
+      "concentration": true,
+      "range": 1,
+      "focus": "Une gemme associée à l’élément sélectionné d’une valeur d’au moins 25 deniers.",
+      "material": null,
+      "somatic": true,
+      "verbal": false,
+      "description": "Le personnage touche un nombre de créatures consentantes inférieur ou égal à ses [Sens](), et peut s’inclure dans ce nombre.\n\nIl sélectionne un [type](/regles/combat/degats/types) de [dégâts](/regles/combat/degats) élémentaires (acide, électricité, feu, froid ou tonnerre), et les créatures sélectionnées se voient conférer la [résistance](/regles/combat/degats/efficacite) aux dégâts de ce type.\n\n<table class=\"table table-striped text-center\"><thead><tr><th scope=\"col\" class=\"w-50\">Élément</th><th scope=\"col\" class=\"w-50\">Gemme</th></tr></thead><tbody><tr><td>Acide</td><td>Émeraude</td></tr><tr><td>Électricité</td><td>Topaze</td></tr><tr><td>Feu</td><td>Rubis</td></tr><tr><td>Froid</td><td>Saphir</td></tr><tr><td>Tonnerre</td><td>Ambre</td></tr></tbody></table>"
+    }
+  ]
+}

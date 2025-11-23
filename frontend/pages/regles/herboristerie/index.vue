@@ -38,17 +38,18 @@ const items: MenuItem[] = [
   {
     path: "/regles/herboristerie/remedes",
     title: "Remèdes",
-    description: "🚧",
+    description: "Remèdes naturels pour soigner poisons, blessures, fatigue et afflictions.",
   },
   {
     path: "/regles/herboristerie/poisons",
     title: "Poisons",
-    description: "🚧",
+    description: "Poisons variés infligeant douleur, paralysie, folie, affaiblissement ou mort.",
   },
 ];
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez l’Herboristerie : apprenez à concocter remèdes et poisons, de base ou avancés, selon votre rang en Médecine et vos talents d’artisan des plantes.",
 });
 </script>

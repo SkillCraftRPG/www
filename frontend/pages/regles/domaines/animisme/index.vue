@@ -96,9 +96,29 @@ type Spells = {
 const spells: Spells = {
   tier0: [
     {
+      path: "/regles/magie/pouvoirs/flammes-feeriques",
+      title: "Flammes féériques",
+      description: "Feux féeriques, auras révélatrices et flammes radiantes poursuivant les cibles.",
+    },
+    {
       path: "/regles/magie/pouvoirs/frisson",
       title: "Frisson",
       description: "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/habiletes-feeriques",
+      title: "Habiletés féériques",
+      description: "Effets féeriques, réparation d’objets, vision nocturne et croissance végétale.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/preservation",
+      title: "Préservation",
+      description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/resistance-elementaire",
+      title: "Résistance élémentaire",
+      description: "Renforce les sauvegardes, absorbe l’élément reçu et confère une résistance durable.",
     },
     {
       path: "/regles/magie/pouvoirs/souffle-empoisonne",
@@ -112,6 +132,11 @@ const spells: Spells = {
     },
   ],
   tier1: [
+    {
+      path: "/regles/magie/pouvoirs/affaiblissement",
+      title: "Affaiblissement",
+      description: "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
+    },
     {
       path: "/regles/magie/pouvoirs/augmentation-naturelle",
       title: "Augmentation naturelle",
