@@ -1,11 +1,12 @@
 ﻿using FluentValidation;
 using SkillCraft.Core.Permissions;
-using SkillCraft.Core.Storage;
+using SkillCraft.Core.Storages;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Core.Worlds.Validators;
 
 namespace SkillCraft.Core.Worlds.Commands;
 
+/// <exception cref="NotEnoughAvailableStorageException"></exception>
 /// <exception cref="PermissionDeniedException"></exception>
 /// <exception cref="ValidationException"></exception>
 internal record CreateOrReplaceWorldCommand(CreateOrReplaceWorldPayload Payload, Guid? Id) : ICommand<CreateOrReplaceWorldResult>;
