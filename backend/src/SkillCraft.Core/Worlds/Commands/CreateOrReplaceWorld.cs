@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using SkillCraft.Core.Permissions;
+using SkillCraft.Core.Storage;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Core.Worlds.Validators;
 
@@ -13,13 +14,20 @@ internal class CreateOrReplaceWorldCommandHandler : ICommandHandler<CreateOrRepl
 {
   private readonly IContext _context;
   private readonly IPermissionService _permissionService;
+  private readonly IStorageService _storageService;
   private readonly IWorldQuerier _worldQuerier;
   private readonly IWorldRepository _worldRepository;
 
-  public CreateOrReplaceWorldCommandHandler(IContext context, IPermissionService permissionService, IWorldQuerier worldQuerier, IWorldRepository worldRepository)
+  public CreateOrReplaceWorldCommandHandler(
+    IContext context,
+    IPermissionService permissionService,
+    IStorageService storageService,
+    IWorldQuerier worldQuerier,
+    IWorldRepository worldRepository)
   {
     _context = context;
     _permissionService = permissionService;
+    _storageService = storageService;
     _worldQuerier = worldQuerier;
     _worldRepository = worldRepository;
   }
@@ -57,9 +65,10 @@ internal class CreateOrReplaceWorldCommandHandler : ICommandHandler<CreateOrRepl
     world.Description = Description.TryCreate(payload.Description);
 
     world.Update(userId);
-    // TODO(fpion): ensure enough storage
+
+    await _storageService.EnsureAvailableAsync(world, cancellationToken);
     await _worldRepository.SaveAsync(world, cancellationToken);
-    // TODO(fpion): update storage
+    await _storageService.UpdateAsync(world, cancellationToken);
 
     WorldModel model = await _worldQuerier.ReadAsync(world, cancellationToken);
     return new CreateOrReplaceWorldResult(model, created);
