@@ -1,0 +1,79 @@
+﻿using Microsoft.Extensions.DependencyInjection;
+using SkillCraft.Core.Worlds;
+
+namespace SkillCraft.Core.Permissions;
+
+public interface IPermissionService
+{
+  Task CheckAsync(ActionKind action, CancellationToken cancellationToken = default);
+  Task CheckAsync(string action, CancellationToken cancellationToken = default);
+  Task CheckAsync(ActionKind action, object? resource, CancellationToken cancellationToken = default);
+  Task CheckAsync(string action, object? resource, CancellationToken cancellationToken = default);
+}
+
+internal class PermissionService : IPermissionService
+{
+  public static void Register(IServiceCollection services)
+  {
+    services.AddTransient<IPermissionService, PermissionService>();
+  }
+
+  private readonly IContext _context;
+  private readonly IWorldQuerier _worldQuerier;
+
+  public PermissionService(IContext context, IWorldQuerier worldQuerier)
+  {
+    _context = context;
+    _worldQuerier = worldQuerier;
+  }
+
+  public async Task CheckAsync(ActionKind action, CancellationToken cancellationToken)
+  {
+    await CheckAsync(action.ToString(), cancellationToken);
+  }
+  public async Task CheckAsync(string action, CancellationToken cancellationToken)
+  {
+    await CheckAsync(action, instance: null, cancellationToken);
+  }
+  public async Task CheckAsync(ActionKind action, object? instance, CancellationToken cancellationToken)
+  {
+    await CheckAsync(action.ToString(), instance, cancellationToken);
+  }
+  public async Task CheckAsync(string action, object? instance, CancellationToken cancellationToken)
+  {
+    bool isAllowed = false;
+    Resource? resource = null;
+
+    if (instance is null)
+    {
+      isAllowed = await IsAllowedAsync(action, cancellationToken);
+    }
+    else if (instance is World world)
+    {
+      resource = new(EntityKind.World, world.Id.ToGuid().ToString());
+      isAllowed = await IsAllowedAsync(action, world, cancellationToken);
+    }
+
+    if (!isAllowed)
+    {
+      throw new PermissionDeniedException(_context.UserId, action, resource);
+    }
+  }
+
+  private async Task<bool> IsAllowedAsync(string action, CancellationToken cancellationToken)
+  {
+    if (action != "CreateWorld")
+    {
+      return false;
+    }
+
+    int count = await _worldQuerier.CountAsync(cancellationToken);
+    return count < 3; // TODO(fpion): configuration/environment
+  }
+
+  private Task<bool> IsAllowedAsync(string action, World world, CancellationToken _) => action switch
+  {
+    "Update" => Task.FromResult(world.UserId == _context.UserId),
+    _ => Task.FromResult(false),
+  };
+}

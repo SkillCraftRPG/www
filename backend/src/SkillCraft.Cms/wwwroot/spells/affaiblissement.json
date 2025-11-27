@@ -2,7 +2,7 @@
   "id": "525e6460-2f96-4296-a2b1-7664532d768a",
   "slug": "affaiblissement",
   "name": "Affaiblissement",
-  "tier": 0,
+  "tier": 1,
   "summary": "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
   "metaDescription": "Découvrez Affaiblissement, un pouvoir nécrotique qui épuise la vitalité, empoisonne, aveugle ou assourdit ses cibles, jusqu’à réduire leur force à néant.",
   "description": "Pouvoir offensif cumulant dégâts nécrotiques, poison, cécité ou surdité, et pouvant même réduire la force d’une créature à zéro tout en maintenant un empoisonnement persistant.",
