@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.Core.Worlds;
 
 namespace SkillCraft.Core.Permissions;
@@ -15,15 +16,18 @@ internal class PermissionService : IPermissionService
 {
   public static void Register(IServiceCollection services)
   {
+    services.AddSingleton(serviceProvider => PermissionSettings.Initialize(serviceProvider.GetRequiredService<IConfiguration>()));
     services.AddTransient<IPermissionService, PermissionService>();
   }
 
   private readonly IContext _context;
+  private readonly PermissionSettings _settings;
   private readonly IWorldQuerier _worldQuerier;
 
-  public PermissionService(IContext context, IWorldQuerier worldQuerier)
+  public PermissionService(IContext context, PermissionSettings settings, IWorldQuerier worldQuerier)
   {
     _context = context;
+    _settings = settings;
     _worldQuerier = worldQuerier;
   }
 
@@ -68,7 +72,7 @@ internal class PermissionService : IPermissionService
     }
 
     int count = await _worldQuerier.CountAsync(cancellationToken);
-    return count < 3; // TODO(fpion): configuration/environment
+    return count < _settings.WorldLimit;
   }
 
   private Task<bool> IsAllowedAsync(string action, World world, CancellationToken _) => action switch
