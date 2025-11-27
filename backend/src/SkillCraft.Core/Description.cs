@@ -5,6 +5,7 @@ namespace SkillCraft.Core;
 public record Description
 {
   public string Value { get; }
+  public int Size => Value.Length;
 
   public Description(string value)
   {

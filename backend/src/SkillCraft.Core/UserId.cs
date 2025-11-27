@@ -6,17 +6,23 @@ namespace SkillCraft.Core;
 public readonly struct UserId
 {
   private const char Separator = ':';
+  private const string Type = "User";
 
   public ActorId ActorId { get; }
   public string Value => ActorId.Value;
 
   public UserId(ActorId actorId)
   {
-    if (actorId.Value.Split(Separator).First() != "User")
+    if (actorId.Value.Split(Separator).First() != Type)
     {
       throw new ArgumentException($"{actorId} is not a valid user ID.", nameof(actorId));
     }
     ActorId = actorId;
+  }
+
+  public UserId(Guid id)
+  {
+    ActorId = new(string.Join(Separator, Type, Convert.ToBase64String(id.ToByteArray()).ToUriSafeBase64()));
   }
 
   public UserId(string value)

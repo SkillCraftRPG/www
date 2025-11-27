@@ -39,6 +39,8 @@ public class World : AggregateRoot
     }
   }
 
+  public long Size => Name.Size + (Description?.Size ?? 0);
+
   public World() : base()
   {
   }
