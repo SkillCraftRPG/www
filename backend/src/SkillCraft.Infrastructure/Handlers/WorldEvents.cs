@@ -27,41 +27,40 @@ internal class WorldEvents : IEventHandler<WorldCreated>, IEventHandler<WorldDel
     WorldEntity? world = await _context.Worlds.AsNoTracking().SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
     if (world is not null)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new InvalidOperationException($"World entity was not expected to be found, but was found at version {world.Version}.");
     }
 
     world = new WorldEntity(@event);
     _context.Worlds.Add(world);
 
     await _context.SaveChangesAsync(cancellationToken);
-    // TODO(fpion): implement
   }
 
   public async Task HandAsync(WorldDeleted @event, CancellationToken cancellationToken)
   {
     WorldEntity? world = await _context.Worlds.SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
-    if (world is null || world.Version != (@event.Version - 1))
+    long expectedVersion = @event.Version - 1;
+    if (world is null || world.Version != expectedVersion)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new InvalidOperationException($"World entiyt was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
     }
 
     _context.Worlds.Remove(world);
 
     await _context.SaveChangesAsync(cancellationToken);
-    // TODO(fpion): implement
   }
 
   public async Task HandAsync(WorldUpdated @event, CancellationToken cancellationToken)
   {
     WorldEntity? world = await _context.Worlds.SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
-    if (world is null || world.Version != (@event.Version - 1))
+    long expectedVersion = @event.Version - 1;
+    if (world is null || world.Version != expectedVersion)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new InvalidOperationException($"World entiyt was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
     }
 
     world.Update(@event);
 
     await _context.SaveChangesAsync(cancellationToken);
-    // TODO(fpion): implement
   }
 }
