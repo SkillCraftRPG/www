@@ -3,7 +3,6 @@ using Krakenar.Infrastructure;
 using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
-using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
 using SkillCraft.Cms.Seeding.Rules;
 using SkillCraft.Cms.Seeding.Rules.Tasks;
@@ -31,9 +30,6 @@ internal class Startup
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
         services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
-        break;
-      case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
         break;
       default:
         throw new DatabaseProviderNotSupportedException(databaseProvider);

@@ -22,8 +22,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms", "src\Skill
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure", "src\SkillCraft.Cms.Infrastructure\SkillCraft.Cms.Infrastructure.csproj", "{EC62397F-607F-452E-82BA-C06A8C3A2637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.SqlServer", "src\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj", "{71D012C4-2528-4736-80B5-7643C7032975}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.PostgreSQL", "src\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj", "{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Seeding", "tools\SkillCraft.Cms.Seeding\SkillCraft.Cms.Seeding.csproj", "{9611E491-E17E-4932-BA63-AB3779C430ED}"
@@ -37,6 +35,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Tools.Shared", "tools\SkillCraft.Tools.Shared\SkillCraft.Tools.Shared.csproj", "{45248989-64A7-41A2-830E-766259C726DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Infrastructure", "src\SkillCraft.Infrastructure\SkillCraft.Infrastructure.csproj", "{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Infrastructure.PostgreSQL", "src\SkillCraft.Infrastructure.PostgreSQL\SkillCraft.Infrastructure.PostgreSQL.csproj", "{EA0B696D-1210-4754-9AE1-9DD42254A548}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,10 +60,6 @@ Global
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.Build.0 = Release|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -92,6 +88,10 @@ Global
 		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

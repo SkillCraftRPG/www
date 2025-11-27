@@ -9,7 +9,6 @@ using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Extensions;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
-using SkillCraft.Cms.Infrastructure.SqlServer;
 
 namespace SkillCraft.Cms;
 
@@ -46,11 +45,6 @@ internal class Startup : StartupBase
     {
       case DatabaseProvider.EntityFrameworkCorePostgreSQL:
         services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
-        healthChecks.AddDbContextCheck<EventContext>();
-        healthChecks.AddDbContextCheck<KrakenarContext>();
-        break;
-      case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
         healthChecks.AddDbContextCheck<EventContext>();
         healthChecks.AddDbContextCheck<KrakenarContext>();
         break;
