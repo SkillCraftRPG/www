@@ -20,5 +20,17 @@ public interface ICommandHandler<TCommand, TResult> where TCommand : ICommand<TR
 
 public interface IEventHandler<TEvent>
 {
-  Task HandAsync(TEvent @event, CancellationToken cancellationToken = default);
+  Task HandleAsync(TEvent @event, CancellationToken cancellationToken = default);
+}
+
+public interface IQuery<TResult>;
+
+public interface IQueryBus
+{
+  Task<TResult> ExecuteAsync<TResult>(IQuery<TResult> query, CancellationToken cancellationToken = default);
+}
+
+public interface IQueryHandler<TQuery, TResult> where TQuery : IQuery<TResult>
+{
+  Task<TResult> HandleAsync(TQuery query, CancellationToken cancellationToken = default);
 }

@@ -6,7 +6,7 @@ using SkillCraft.Core.Worlds;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Caching;
 using SkillCraft.Infrastructure.Handlers;
-using SkillCraft.Infrastructure.Queries;
+using SkillCraft.Infrastructure.Queriers;
 using SkillCraft.Infrastructure.Repositories;
 
 namespace SkillCraft.Infrastructure;

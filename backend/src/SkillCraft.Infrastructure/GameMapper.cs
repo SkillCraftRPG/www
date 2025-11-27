@@ -5,7 +5,7 @@ using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Infrastructure.Entities;
 using AggregateModel = Krakenar.Contracts.Aggregate;
 
-namespace SkillCraft.Infrastructure.Queries;
+namespace SkillCraft.Infrastructure;
 
 internal class GameMapper
 {

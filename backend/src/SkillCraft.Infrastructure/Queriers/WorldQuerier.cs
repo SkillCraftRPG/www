@@ -7,7 +7,7 @@ using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Entities;
 
-namespace SkillCraft.Infrastructure.Queries;
+namespace SkillCraft.Infrastructure.Queriers;
 
 internal class WorldQuerier : IWorldQuerier
 {

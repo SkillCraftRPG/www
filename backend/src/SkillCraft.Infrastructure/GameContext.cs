@@ -11,6 +11,8 @@ public class GameContext : DbContext
   {
   }
 
+  internal DbSet<StorageDetail> StorageDetail => Set<StorageDetail>();
+  internal DbSet<StorageSummary> StorageSummary => Set<StorageSummary>();
   internal DbSet<WorldEntity> Worlds => Set<WorldEntity>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,5 +1,4 @@
-﻿using Logitar;
-using Logitar.EventSourcing;
+﻿using Logitar.EventSourcing;
 
 namespace SkillCraft.Core.Storages;
 
@@ -18,7 +17,7 @@ public readonly struct StorageId
 
   public StorageId(UserId userId)
   {
-    StreamId = new(string.Join(Separator, Type, Convert.ToBase64String(userId.ToGuid().ToByteArray()).ToUriSafeBase64()));
+    StreamId = IdHelper.Construct(Type, userId.ToGuid());
   }
 
   public StorageId(string value)
@@ -26,11 +25,7 @@ public readonly struct StorageId
     StreamId = new(value);
   }
 
-  public UserId ToUserId()
-  {
-    string[] parts = Value.Split(Separator);
-    return new(new Guid(Convert.FromBase64String(parts[1].FromUriSafeBase64())));
-  }
+  public UserId ToUserId() => new(IdHelper.Deconstruct(StreamId, Type).Item1);
 
   public static bool operator ==(StorageId left, StorageId right) => left.Equals(right);
   public static bool operator !=(StorageId left, StorageId right) => !(left == right);

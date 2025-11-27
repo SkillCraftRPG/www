@@ -1,6 +1,8 @@
 ﻿namespace SkillCraft.Core;
 
-internal static class EntityKind
+public static class EntityKind
 {
+  public const int MaximumLength = 16;
+
   public const string World = "World";
 }

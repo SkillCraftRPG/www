@@ -1,5 +1,4 @@
-﻿using Logitar;
-using Logitar.EventSourcing;
+﻿using Logitar.EventSourcing;
 
 namespace SkillCraft.Core.Worlds;
 
@@ -17,7 +16,7 @@ public readonly struct WorldId
 
   public WorldId(Guid id)
   {
-    StreamId = new(string.Join(Separator, EntityKind.World, Convert.ToBase64String(id.ToByteArray()).ToUriSafeBase64()));
+    StreamId = IdHelper.Construct(EntityKind.World, id);
   }
 
   public WorldId(string value)
@@ -27,11 +26,7 @@ public readonly struct WorldId
 
   public static WorldId NewId() => new(Guid.NewGuid());
 
-  public Guid ToGuid()
-  {
-    string[] parts = Value.Split(Separator);
-    return new Guid(Convert.FromBase64String(parts[1].FromUriSafeBase64()));
-  }
+  public Guid ToGuid() => IdHelper.Deconstruct(StreamId, EntityKind.World).Item1;
 
   public static bool operator ==(WorldId left, WorldId right) => left.Equals(right);
   public static bool operator !=(WorldId left, WorldId right) => !left.Equals(right);

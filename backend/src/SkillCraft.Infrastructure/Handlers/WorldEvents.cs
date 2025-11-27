@@ -22,7 +22,7 @@ internal class WorldEvents : IEventHandler<WorldCreated>, IEventHandler<WorldDel
     _context = context;
   }
 
-  public async Task HandAsync(WorldCreated @event, CancellationToken cancellationToken)
+  public async Task HandleAsync(WorldCreated @event, CancellationToken cancellationToken)
   {
     WorldEntity? world = await _context.Worlds.AsNoTracking().SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
     if (world is not null)
@@ -36,13 +36,13 @@ internal class WorldEvents : IEventHandler<WorldCreated>, IEventHandler<WorldDel
     await _context.SaveChangesAsync(cancellationToken);
   }
 
-  public async Task HandAsync(WorldDeleted @event, CancellationToken cancellationToken)
+  public async Task HandleAsync(WorldDeleted @event, CancellationToken cancellationToken)
   {
     WorldEntity? world = await _context.Worlds.SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
     long expectedVersion = @event.Version - 1;
     if (world is null || world.Version != expectedVersion)
     {
-      throw new InvalidOperationException($"World entiyt was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
+      throw new InvalidOperationException($"World entity was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
     }
 
     _context.Worlds.Remove(world);
@@ -50,13 +50,13 @@ internal class WorldEvents : IEventHandler<WorldCreated>, IEventHandler<WorldDel
     await _context.SaveChangesAsync(cancellationToken);
   }
 
-  public async Task HandAsync(WorldUpdated @event, CancellationToken cancellationToken)
+  public async Task HandleAsync(WorldUpdated @event, CancellationToken cancellationToken)
   {
     WorldEntity? world = await _context.Worlds.SingleOrDefaultAsync(x => x.StreamId == @event.StreamId.Value, cancellationToken);
     long expectedVersion = @event.Version - 1;
     if (world is null || world.Version != expectedVersion)
     {
-      throw new InvalidOperationException($"World entiyt was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
+      throw new InvalidOperationException($"World entity was expected to be found at version {expectedVersion}, but was found at version {world?.Version ?? 0}.");
     }
 
     world.Update(@event);
