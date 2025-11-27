@@ -19,6 +19,11 @@ public readonly struct UserId
     ActorId = actorId;
   }
 
+  public UserId(string value)
+  {
+    ActorId = new(value);
+  }
+
   public Guid ToGuid()
   {
     string[] parts = Value.Split(Separator);

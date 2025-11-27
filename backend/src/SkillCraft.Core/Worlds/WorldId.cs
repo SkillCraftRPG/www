@@ -20,6 +20,11 @@ public readonly struct WorldId
     StreamId = new(string.Join(Separator, EntityKind.World, Convert.ToBase64String(id.ToByteArray()).ToUriSafeBase64()));
   }
 
+  public WorldId(string value)
+  {
+    StreamId = new(value);
+  }
+
   public static WorldId NewId() => new(Guid.NewGuid());
 
   public Guid ToGuid()

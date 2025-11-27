@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
@@ -35,6 +35,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Rules.Extractor", "tools\SkillCraft.Rules.Extractor\SkillCraft.Rules.Extractor.csproj", "{DC7808E2-7E3F-448C-A434-EB0C608D67A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Tools.Shared", "tools\SkillCraft.Tools.Shared\SkillCraft.Tools.Shared.csproj", "{45248989-64A7-41A2-830E-766259C726DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Infrastructure", "src\SkillCraft.Infrastructure\SkillCraft.Infrastructure.csproj", "{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{45248989-64A7-41A2-830E-766259C726DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45248989-64A7-41A2-830E-766259C726DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45248989-64A7-41A2-830E-766259C726DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C61A1A6-DCD1-434D-9E3A-61127715E5C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
