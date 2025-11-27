@@ -27,6 +27,7 @@ public static class DependencyInjectionExtensions
 
   private static IServiceCollection AddEventHandlers(this IServiceCollection services)
   {
+    StorageEvents.Register(services);
     WorldEvents.Register(services);
     return services;
   }

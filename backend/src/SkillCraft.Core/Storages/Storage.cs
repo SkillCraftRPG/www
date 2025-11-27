@@ -32,10 +32,10 @@ public class Storage : AggregateRoot
   public void EnsureAvailable(string key, long size)
   {
     _ = _storedEntities.TryGetValue(key, out long existingSize);
-    size -= existingSize;
-    if (size > AvailableBytes)
+    long requiredBytes = size - existingSize;
+    if (requiredBytes > 0 && requiredBytes > AvailableBytes)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new NotEnoughAvailableStorageException(this, requiredBytes);
     }
   }
 
