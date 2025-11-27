@@ -17,3 +17,8 @@ public interface ICommandHandler<TCommand, TResult> where TCommand : ICommand<TR
 {
   Task<TResult> HandleAsync(TCommand command, CancellationToken cancellationToken = default);
 }
+
+public interface IEventHandler<TEvent>
+{
+  Task HandAsync(TEvent @event, CancellationToken cancellationToken = default);
+}
