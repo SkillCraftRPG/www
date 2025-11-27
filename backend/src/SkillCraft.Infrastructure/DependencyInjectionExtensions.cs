@@ -1,6 +1,7 @@
 ﻿using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using Logitar.EventSourcing.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
+using SkillCraft.Core.Storages;
 using SkillCraft.Core.Worlds;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Caching;
@@ -37,6 +38,8 @@ public static class DependencyInjectionExtensions
 
   private static IServiceCollection AddRepositories(this IServiceCollection services)
   {
-    return services.AddScoped<IWorldRepository, WorldRepository>();
+    return services
+      .AddScoped<IStorageRepository, StorageRepository>()
+      .AddScoped<IWorldRepository, WorldRepository>();
   }
 }
