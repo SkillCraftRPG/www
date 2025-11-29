@@ -40,7 +40,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Infrastructure.P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cms", "Cms", "{BEFBA7D3-D8E9-4430-BF7C-BB6BEA53F0A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft", "src\SkillCraft\SkillCraft.csproj", "{053BDF44-930C-4355-A5CA-21D628400E79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Api", "src\SkillCraft.Api\SkillCraft.Api.csproj", "{453AA54F-860E-4917-A43C-D5D98D6F494A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,10 +96,10 @@ Global
 		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0B696D-1210-4754-9AE1-9DD42254A548}.Release|Any CPU.Build.0 = Release|Any CPU
-		{053BDF44-930C-4355-A5CA-21D628400E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{053BDF44-930C-4355-A5CA-21D628400E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{053BDF44-930C-4355-A5CA-21D628400E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{053BDF44-930C-4355-A5CA-21D628400E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453AA54F-860E-4917-A43C-D5D98D6F494A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453AA54F-860E-4917-A43C-D5D98D6F494A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453AA54F-860E-4917-A43C-D5D98D6F494A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453AA54F-860E-4917-A43C-D5D98D6F494A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
