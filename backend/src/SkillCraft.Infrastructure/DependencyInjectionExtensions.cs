@@ -1,10 +1,12 @@
 ﻿using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using Logitar.EventSourcing.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
+using SkillCraft.Core;
 using SkillCraft.Core.Storages;
 using SkillCraft.Core.Worlds;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Caching;
+using SkillCraft.Infrastructure.Commands;
 using SkillCraft.Infrastructure.Handlers;
 using SkillCraft.Infrastructure.Queriers;
 using SkillCraft.Infrastructure.Repositories;
@@ -22,7 +24,8 @@ public static class DependencyInjectionExtensions
       .AddEventHandlers()
       .AddQueriers()
       .AddRepositories()
-      .AddSingleton<IEventSerializer, EventSerializer>();
+      .AddSingleton<IEventSerializer, EventSerializer>()
+      .AddTransient<ICommandHandler<MigrateDatabaseCommand>, MigrateDatabaseCommandHandler>();
   }
 
   private static IServiceCollection AddEventHandlers(this IServiceCollection services)
