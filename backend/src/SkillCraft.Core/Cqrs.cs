@@ -34,3 +34,15 @@ public interface IQueryHandler<TQuery, TResult> where TQuery : IQuery<TResult>
 {
   Task<TResult> HandleAsync(TQuery query, CancellationToken cancellationToken = default);
 }
+
+internal class CommandBus : ICommandBus
+{
+  public async Task ExecuteAsync(ICommand command, CancellationToken cancellationToken)
+  {
+  }
+
+  public async Task<TResult> ExecuteAsync<TResult>(ICommand<TResult> command, CancellationToken cancellationToken)
+  {
+    return default!;
+  }
+}

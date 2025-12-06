@@ -12,6 +12,6 @@ public static class DependencyInjectionExtensions
     PermissionService.Register(services);
     StorageService.Register(services);
     WorldService.Register(services);
-    return services;
+    return services.AddTransient<ICommandBus, CommandBus>();
   }
 }

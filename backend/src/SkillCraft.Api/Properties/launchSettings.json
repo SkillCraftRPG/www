@@ -1,6 +1,8 @@
 {
   "profiles": {
     "http": {
+      "launchBrowser": true,
+      "launchUrl": "swagger",
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -9,6 +11,8 @@
       "applicationUrl": "http://localhost:5288"
     },
     "https": {
+      "launchBrowser": true,
+      "launchUrl": "swagger",
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -17,8 +21,9 @@
       "applicationUrl": "https://localhost:7156;http://localhost:5288"
     },
     "Container (Dockerfile)": {
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "commandName": "Docker",
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080"

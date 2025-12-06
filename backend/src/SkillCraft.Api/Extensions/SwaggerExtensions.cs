@@ -1,5 +1,5 @@
 ﻿using Krakenar.Contracts.Constants;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using SkillCraft.Api.Settings;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -55,24 +55,24 @@ internal static class SwaggerExtensions
       Scheme = Schemes.ApiKey,
       Type = SecuritySchemeType.ApiKey
     });
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-      {
-        new OpenApiSecurityScheme
-        {
-          In = ParameterLocation.Header,
-          Name = Headers.ApiKey,
-          Reference = new OpenApiReference
-          {
-            Id = Schemes.ApiKey,
-            Type = ReferenceType.SecurityScheme
-          },
-          Scheme = Schemes.ApiKey,
-          Type = SecuritySchemeType.ApiKey
-        },
-        new List<string>()
-      }
-    });
+    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    //{
+    //  {
+    //    new OpenApiSecurityScheme
+    //    {
+    //      In = ParameterLocation.Header,
+    //      Name = Headers.ApiKey,
+    //      Reference = new OpenApiReference
+    //      {
+    //        Id = Schemes.ApiKey,
+    //        Type = ReferenceType.SecurityScheme
+    //      },
+    //      Scheme = Schemes.ApiKey,
+    //      Type = SecuritySchemeType.ApiKey
+    //    },
+    //    new List<string>()
+    //  }
+    //}); // TODO(fpion): fix once Swashbuckle has been fixed.
 
     options.AddSecurityDefinition(Schemes.Basic, new OpenApiSecurityScheme
     {
@@ -82,24 +82,24 @@ internal static class SwaggerExtensions
       Scheme = Schemes.Basic,
       Type = SecuritySchemeType.Http
     });
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-      {
-        new OpenApiSecurityScheme
-        {
-          In = ParameterLocation.Header,
-          Name = Headers.Authorization,
-          Reference = new OpenApiReference
-          {
-            Id = Schemes.Basic,
-            Type = ReferenceType.SecurityScheme
-          },
-          Scheme = Schemes.Basic,
-          Type = SecuritySchemeType.Http
-        },
-        new List<string>()
-      }
-    });
+    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    //{
+    //  {
+    //    new OpenApiSecurityScheme
+    //    {
+    //      In = ParameterLocation.Header,
+    //      Name = Headers.Authorization,
+    //      Reference = new OpenApiReference
+    //      {
+    //        Id = Schemes.Basic,
+    //        Type = ReferenceType.SecurityScheme
+    //      },
+    //      Scheme = Schemes.Basic,
+    //      Type = SecuritySchemeType.Http
+    //    },
+    //    new List<string>()
+    //  }
+    //}); // TODO(fpion): fix once Swashbuckle has been fixed.
 
     options.AddSecurityDefinition(Schemes.Bearer, new OpenApiSecurityScheme
     {
@@ -109,23 +109,23 @@ internal static class SwaggerExtensions
       Scheme = Schemes.Bearer,
       Type = SecuritySchemeType.Http
     });
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-      {
-        new OpenApiSecurityScheme
-        {
-          In = ParameterLocation.Header,
-          Name =  Headers.Authorization,
-          Reference = new OpenApiReference
-          {
-            Id = Schemes.Bearer,
-            Type = ReferenceType.SecurityScheme
-          },
-          Scheme = Schemes.Bearer,
-          Type = SecuritySchemeType.Http
-        },
-        new List<string>()
-      }
-    });
+    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    //{
+    //  {
+    //    new OpenApiSecurityScheme
+    //    {
+    //      In = ParameterLocation.Header,
+    //      Name =  Headers.Authorization,
+    //      Reference = new OpenApiReference
+    //      {
+    //        Id = Schemes.Bearer,
+    //        Type = ReferenceType.SecurityScheme
+    //      },
+    //      Scheme = Schemes.Bearer,
+    //      Type = SecuritySchemeType.Http
+    //    },
+    //    new List<string>()
+    //  }
+    //}); // TODO(fpion): fix once Swashbuckle has been fixed.
   }
 }
