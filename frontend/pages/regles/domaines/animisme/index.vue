@@ -79,6 +79,11 @@ const domains: Domains = {
       title: "Mycètes",
       description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
     },
+    {
+      path: "/regles/domaines/animisme/terre",
+      title: "Terre",
+      description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
+    },
   ],
   spiritual: [
     {
