@@ -1,0 +1,61 @@
+﻿{
+  "id": "5cdf64cf-b772-44f4-8ce7-fa79464ac558",
+  "slug": "liberte",
+  "name": "Liberté",
+  "tier": 1,
+  "summary": "Mobilité accrue, évasion totale et déplacement sans contraintes.",
+  "metaDescription": "Découvrez Liberté : un pouvoir de mobilité qui amplifie les sauts, efface les traces, ignore le terrain difficile et confère nage, évasion et vol temporaire.",
+  "description": "Ce pouvoir décuple la mobilité : sauts amplifiés, furtivité sans traces, ignorance du terrain difficile, évasion des entraves et même vol temporaire selon le niveau utilisé.",
+  "effects": [
+    {
+      "level": 0,
+      "name": "Sauterelle",
+      "castingTime": "2",
+      "duration": 60,
+      "range": 1,
+      "focus": "Une patte arrière de sauterelle.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante. La distance des [sauts](/regles/aventure/mouvement/types) de la cible est triplée et celle-ci se voit conférer un bonus (+2) de [points de mouvement](/regles/aventure/mouvement/vitesse)."
+    },
+    {
+      "level": 0,
+      "name": "Passage naturel",
+      "castingTime": "2",
+      "duration": 3600,
+      "concentration": true,
+      "range": 1,
+      "focus": "Un brin d’épinette.",
+      "material": "Des cendres de feuille de gui.",
+      "somatic": true,
+      "verbal": false,
+      "description": "Le personnage touche un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et doit s’inclure dans ce nombre. Les cibles se voient conférer un bonus (+10) à leurs [tests](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) et ne peuvent être pistées par des moyens non magiques. Lorsqu’elles se [déplacent](/regles/combat/activites/deplacement), elles ne laissent aucune trace derrière elles."
+    },
+    {
+      "level": 1,
+      "name": null,
+      "castingTime": "2",
+      "duration": 3600,
+      "range": 1,
+      "focus": "Un fragment de toile de navire attaché à une jambe de la cible par une sangle de cuir.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante. Pendant la durée du pouvoir, elle n’est pas affectée par le [terrain difficile](/regles/aventure/mouvement/terrain-difficile), sa [vitesse](/regles/aventure/mouvement/vitesse) ne peut être réduite et elle ne peut être [paralysée](/regles/combat/conditions/paralyse) ni [restreinte](/regles/combat/conditions/restreint). Elle peut également dépenser un [point de mouvement](/regles/aventure/mouvement/vitesse) afin de s’échapper de n’importe quelle contrainte non magique, elle acquiert une vitesse de [nage](/regles/aventure/mouvement/types) égale à sa vitesse de [marche](/regles/aventure/mouvement/types) et elle n’est affligée d’aucune pénalité lorsqu’elle [combat sous l’eau](/regles/combat/sous-eau)."
+    },
+    {
+      "level": 2,
+      "name": null,
+      "castingTime": "2",
+      "duration": 600,
+      "concentration": true,
+      "range": 1,
+      "focus": "Une plume d’aile d’oiseau attachée à un bras de la cible par une sangle de cuir.",
+      "material": null,
+      "somatic": true,
+      "verbal": true,
+      "description": "Le personnage touche une créature consentante. Celle-ci acquiert une [vitesse](/regles/aventure/mouvement/vitesse) de [vol](/regles/aventure/mouvement/types) de 3 mètres par seconde (12 points de mouvement par [action](/regles/combat/deroulement/tour)). Elle se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) afin d’éviter d’être [agrippée](/regles/combat/conditions/agrippe), [paralysée](/regles/combat/conditions/paralyse) ou [restreinte](/regles/combat/conditions/restreint). Lorsque le pouvoir prend fin, la cible [chute](/regles/aventure/environnement/chute) si elle se trouve dans les airs et qu’elle n’a aucun moyen d’arrêter cette chute."
+    }
+  ]
+}

@@ -148,6 +148,11 @@ const spells: Spells = {
       description: "Bénédictions animales variées, respiration aquatique et formes druidiques puissantes.",
     },
     {
+      path: "/regles/magie/pouvoirs/liberte",
+      title: "Liberté",
+      description: "Mobilité accrue, évasion totale et déplacement sans contraintes.",
+    },
+    {
       path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
       title: "Protection contre les poisons et maladies",
       description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
