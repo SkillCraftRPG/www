@@ -79,6 +79,11 @@ const domains: Domains = {
       title: "Mycètes",
       description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
     },
+    {
+      path: "/regles/domaines/animisme/terre",
+      title: "Terre",
+      description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
+    },
   ],
   spiritual: [
     {
@@ -141,6 +146,11 @@ const spells: Spells = {
       path: "/regles/magie/pouvoirs/augmentation-naturelle",
       title: "Augmentation naturelle",
       description: "Bénédictions animales variées, respiration aquatique et formes druidiques puissantes.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/liberte",
+      title: "Liberté",
+      description: "Mobilité accrue, évasion totale et déplacement sans contraintes.",
     },
     {
       path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
