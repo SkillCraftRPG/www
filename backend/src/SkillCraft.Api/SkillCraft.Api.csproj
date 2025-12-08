@@ -30,6 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SkillCraft.Infrastructure\SkillCraft.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="System.Net.Mime" />
     <Using Include="System.Text.Json.Serialization" />
   </ItemGroup>
