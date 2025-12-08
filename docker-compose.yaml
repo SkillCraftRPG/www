@@ -23,6 +23,18 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql
 
+  skillcraft_api:
+    build:
+      context: ./backend
+      dockerfile: /src/SkillCraft.Api/Dockerfile
+    image: skillcraft_api
+    container_name: SkillCraft_api
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_Environment: Development
+    ports:
+      - 8088:8080
+
   skillcraft_cms:
     build:
       context: ./backend

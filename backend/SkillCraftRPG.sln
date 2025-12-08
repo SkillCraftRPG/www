@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15 d18.0
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
@@ -35,6 +35,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Tools.Shared", "tools\SkillCraft.Tools.Shared\SkillCraft.Tools.Shared.csproj", "{45248989-64A7-41A2-830E-766259C726DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cms", "Cms", "{A63506EB-CE29-4002-ACC1-A4BC0597F6E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Api", "src\SkillCraft.Api\SkillCraft.Api.csproj", "{2A7E3F96-24B4-4BD0-B392-3A8753E7F704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +84,10 @@ Global
 		{45248989-64A7-41A2-830E-766259C726DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45248989-64A7-41A2-830E-766259C726DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45248989-64A7-41A2-830E-766259C726DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7E3F96-24B4-4BD0-B392-3A8753E7F704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7E3F96-24B4-4BD0-B392-3A8753E7F704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7E3F96-24B4-4BD0-B392-3A8753E7F704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7E3F96-24B4-4BD0-B392-3A8753E7F704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
