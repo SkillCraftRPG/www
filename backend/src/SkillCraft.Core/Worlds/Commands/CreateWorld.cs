@@ -5,6 +5,7 @@ using SkillCraft.Core.Worlds.Validators;
 
 namespace SkillCraft.Core.Worlds.Commands;
 
+/// <exception cref="PermissionDeniedException"></exception>
 /// <exception cref="ValidationException"></exception>
 internal record CreateWorldCommand(CreateWorldPayload Payload, Guid? Id) : ICommand<WorldModel>;
 
