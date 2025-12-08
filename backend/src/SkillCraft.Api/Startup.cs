@@ -1,6 +1,7 @@
 ﻿using SkillCraft.Api.Extensions;
 using SkillCraft.Api.Settings;
 using SkillCraft.Core;
+using SkillCraft.Infrastructure;
 
 namespace SkillCraft.Api;
 
@@ -18,6 +19,7 @@ internal class Startup : StartupBase
     base.ConfigureServices(services);
 
     services.AddSkillCraftCore();
+    services.AddSkillCraftInfrastructure(_configuration);
 
     services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
