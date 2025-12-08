@@ -12,7 +12,7 @@ public record ApiSettings
   {
     ApiSettings settings = configuration.GetSection(SectionKey).Get<ApiSettings>() ?? new();
 
-    // TODO(fpion): environment variables
+    // TASK: [SKILLCRAFT-10](https://logitar.atlassian.net/browse/SKILLCRAFT-10)
 
     return settings;
   }

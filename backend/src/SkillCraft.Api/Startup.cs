@@ -30,7 +30,7 @@ internal class Startup : StartupBase
     }
 
     services.AddApplicationInsightsTelemetry();
-    services.AddHealthChecks()/*.AddDbContextCheck<RulesContext>()*/; // TODO(fpion): implement
+    services.AddHealthChecks()/*.AddDbContextCheck<RulesContext>()*/; // TASK: [SKILLCRAFT-8](https://logitar.atlassian.net/browse/SKILLCRAFT-8)
   }
 
   public override void Configure(IApplicationBuilder builder)
@@ -50,7 +50,7 @@ internal class Startup : StartupBase
 
     application.UseHttpsRedirection();
     application.UseCors();
-    //application.UseExceptionHandler(); // TODO(fpion): implement
+    //application.UseExceptionHandler(); // TASK: [SKILLCRAFT-7](https://logitar.atlassian.net/browse/SKILLCRAFT-7)
     application.UseAuthentication();
     application.UseAuthorization();
 

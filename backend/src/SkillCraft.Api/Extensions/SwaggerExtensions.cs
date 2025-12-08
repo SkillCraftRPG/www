@@ -11,7 +11,7 @@ internal static class SwaggerExtensions
     services.AddEndpointsApiExplorer();
     services.AddSwaggerGen(config =>
     {
-      //config.AddSecurity(); // TODO(fpion): implement
+      //config.AddSecurity(); // TASK: [SKILLCRAFT-5](https://logitar.atlassian.net/browse/SKILLCRAFT-5)
       config.OperationFilterDescriptors.Add(new FilterDescriptor
       {
         Arguments = [],

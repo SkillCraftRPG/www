@@ -12,6 +12,6 @@ internal class AddHeaderParameters : IOperationFilter
     //  In = ParameterLocation.Header,
     //  Name = Headers.World,
     //  Description = "Enter your world ID or unique slug in the input below:"
-    //}); // TODO(fpion): implement
+    //}); // TASK: [SKILLCRAFT-4](https://logitar.atlassian.net/browse/SKILLCRAFT-4)
   }
 }
