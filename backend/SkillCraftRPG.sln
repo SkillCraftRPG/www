@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,8 +21,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms", "src\SkillCraft.Cms\SkillCraft.Cms.csproj", "{3C5C2B4F-EA6E-468F-8760-C7417010D06A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure", "src\SkillCraft.Cms.Infrastructure\SkillCraft.Cms.Infrastructure.csproj", "{EC62397F-607F-452E-82BA-C06A8C3A2637}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.SqlServer", "src\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj", "{71D012C4-2528-4736-80B5-7643C7032975}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.PostgreSQL", "src\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj", "{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}"
 EndProject
@@ -58,10 +56,6 @@ Global
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.Build.0 = Release|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
