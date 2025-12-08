@@ -15,6 +15,20 @@ public readonly struct UserId
     ActorId = actorId;
   }
 
+  public UserId(Guid id)
+  {
+    ActorId = new(IdHelper.Combine(EntityKind, id));
+  }
+
+  public UserId(string value)
+  {
+    IdHelper.Validate(value, EntityKind);
+    ActorId = new(value);
+  }
+
+  public static UserId NewId() => new(Guid.NewGuid());
+  public Guid ToGuid() => IdHelper.Parse(Value, EntityKind).Item1;
+
   public static bool operator ==(UserId left, UserId right) => left.Equals(right);
   public static bool operator !=(UserId left, UserId right) => !left.Equals(right);
 
