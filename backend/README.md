@@ -15,7 +15,6 @@ All the following environment variables are optional.
 - `AUTHENTICATION_ENABLE_BASIC`: a boolean value indicating whether or not to enable Basic authentication. API keys should be preferred in Production environment for security purposes. Defaults to `false`.
 - `AUTHENTICATION_SILENT_AUTHENTICATED_EVENT`: a boolean value indicating whether or not authenticated events are silent. Silent events are not stored, nor published through Event Sourcing. Defaults to `false`.
 - `CACHING_ACTOR_LIFETIME`: the lifetime of cached actors. A string representing a [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-9.0), ex.: `3.00:00:00` (3 days) or `00:15:00` (15 minutes).
-- `DATABASE_PROVIDER`: the database provider to use. Its value should be one of the `DatabaseProvider` enumeration value. Defaults to `EntityFrameworkCorePostgreSQL`.
 - `ENCRYPTION_KEY`: the encryption key used by the platform. It should be 32-characters long (256 bits), including lowercase and uppercase letters, digits and special characters as well.
 - `ERROR_EXPOSE_DETAIL`: a boolean value indicating whether or not to expose detail for `500 Internal Server Error`. Should not be enabled in Production environment for security purposes.
 - `MONGOCONNSTR_Krakenar`: the MongoDB server connection string. This is currently only used for logging.
@@ -32,4 +31,3 @@ All the following environment variables are optional.
 - `RETRY_MAXIMUM_RETRIES`: the maximum number of retries, excluding the initial attempt. When 0 or negative, no limit is applied, which can result in infinite loops. Defaults to 0.
 - `RETRY_MAXIMUM_DELAY`: the maximum retry delay in milliseconds (inclusive). When 0 or negative, no limit is applied, which can result in infinite loops. Defaults to 0.
 - `RETRY_RANDOM_VARIATION`: the random variation (±) used for random retries. When 0 or negative, no retry will be executed when algorithm is `Random`. Defaults to 0.
-- `SQLCONNSTR_Krakenar`: the Microsoft SQL Server connection string.

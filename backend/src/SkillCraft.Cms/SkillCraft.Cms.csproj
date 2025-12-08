@@ -33,7 +33,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj" />
-    <ProjectReference Include="..\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
