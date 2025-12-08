@@ -4,7 +4,7 @@ namespace SkillCraft.Core;
 
 public record Name
 {
-  public const int MaximumLength = 0; // TODO(fpion): implement
+  public const int MaximumLength = byte.MaxValue;
 
   public string Value { get; }
 

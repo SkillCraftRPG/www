@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using SkillCraft.Core.Validators;
 
 namespace SkillCraft.Core;
 
@@ -16,6 +17,6 @@ internal static class ValidationExtensions
 
   public static IRuleBuilderOptions<T, string> Slug<T>(this IRuleBuilder<T, string> ruleBuilder)
   {
-    return ruleBuilder.NotEmpty().MaximumLength(Core.Slug.MaximumLength); // TODO(fpion): format validator
+    return ruleBuilder.NotEmpty().MaximumLength(Core.Slug.MaximumLength).SetValidator(new SlugValidator<T>());
   }
 }

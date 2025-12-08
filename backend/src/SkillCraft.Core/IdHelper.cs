@@ -19,7 +19,7 @@ public static class IdHelper
     string[] values = value.Split(Separator);
     if (values.Length < 1 || values.Length > 2)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new ArgumentException($"The value '{value}' is not a valid identifier.", nameof(value));
     }
 
     WorldId? worldId = values.Length > 1 ? new(values.First()) : null;
@@ -27,7 +27,7 @@ public static class IdHelper
     string[] entity = values.Last().Split(EntitySeparator);
     if (entity.Length != 2)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new ArgumentException($"The value '{values.Last()}' is not a valid entity.", nameof(value));
     }
     string entityType = entity.First();
     Guid entityId = new(Convert.FromBase64String(entity.Last().FromUriSafeBase64()));
@@ -39,7 +39,7 @@ public static class IdHelper
     Tuple<string, Guid, WorldId?> parsed = Parse(value);
     if (parsed.Item1 != expectedType)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new ArgumentOutOfRangeException(nameof(value), $"The entity kind '{expectedType}' was expected, but '{parsed.Item1}' was received.");
     }
     return new Tuple<Guid, WorldId?>(parsed.Item2, parsed.Item3);
   }
@@ -49,7 +49,7 @@ public static class IdHelper
     Tuple<string, Guid, WorldId?> parsed = Parse(value);
     if (parsed.Item1 != expectedType)
     {
-      throw new NotImplementedException(); // TODO(fpion): implement
+      throw new ArgumentOutOfRangeException(nameof(value), $"The entity kind '{expectedType}' was expected, but '{parsed.Item1}' was received.");
     }
   }
 }
