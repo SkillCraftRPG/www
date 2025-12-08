@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,8 +22,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms", "src\Skill
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure", "src\SkillCraft.Cms.Infrastructure\SkillCraft.Cms.Infrastructure.csproj", "{EC62397F-607F-452E-82BA-C06A8C3A2637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.SqlServer", "src\SkillCraft.Cms.Infrastructure.SqlServer\SkillCraft.Cms.Infrastructure.SqlServer.csproj", "{71D012C4-2528-4736-80B5-7643C7032975}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Infrastructure.PostgreSQL", "src\SkillCraft.Cms.Infrastructure.PostgreSQL\SkillCraft.Cms.Infrastructure.PostgreSQL.csproj", "{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Cms.Seeding", "tools\SkillCraft.Cms.Seeding\SkillCraft.Cms.Seeding.csproj", "{9611E491-E17E-4932-BA63-AB3779C430ED}"
@@ -35,6 +33,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Rules.Extractor", "tools\SkillCraft.Rules.Extractor\SkillCraft.Rules.Extractor.csproj", "{DC7808E2-7E3F-448C-A434-EB0C608D67A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillCraft.Tools.Shared", "tools\SkillCraft.Tools.Shared\SkillCraft.Tools.Shared.csproj", "{45248989-64A7-41A2-830E-766259C726DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cms", "Cms", "{A63506EB-CE29-4002-ACC1-A4BC0597F6E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,10 +58,6 @@ Global
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC62397F-607F-452E-82BA-C06A8C3A2637}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71D012C4-2528-4736-80B5-7643C7032975}.Release|Any CPU.Build.0 = Release|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -92,7 +88,11 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ECA10CEC-5CA2-4719-8F52-970BA11271E5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3C5C2B4F-EA6E-468F-8760-C7417010D06A} = {A63506EB-CE29-4002-ACC1-A4BC0597F6E7}
+		{EC62397F-607F-452E-82BA-C06A8C3A2637} = {A63506EB-CE29-4002-ACC1-A4BC0597F6E7}
+		{492DD4B5-EC72-4490-888E-2D4F92E6BC7D} = {A63506EB-CE29-4002-ACC1-A4BC0597F6E7}
 		{9611E491-E17E-4932-BA63-AB3779C430ED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8614253E-0B12-4A5F-8D93-044AC3A0DE0A} = {A63506EB-CE29-4002-ACC1-A4BC0597F6E7}
 		{DC7808E2-7E3F-448C-A434-EB0C608D67A4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{45248989-64A7-41A2-830E-766259C726DD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection

@@ -1,15 +1,11 @@
-﻿using Krakenar.EntityFrameworkCore.Relational;
-using Krakenar.Infrastructure;
-using Krakenar.MongoDB;
+﻿using Krakenar.MongoDB;
 using Krakenar.Web;
 using Krakenar.Web.Middlewares;
 using Krakenar.Web.Settings;
-using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Extensions;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
-using SkillCraft.Cms.Infrastructure.SqlServer;
 
 namespace SkillCraft.Cms;
 
@@ -26,11 +22,8 @@ internal class Startup : StartupBase
   {
     base.ConfigureServices(services);
 
-    services.AddApplicationInsightsTelemetry();
-
-    services.AddSkillCraftCmsCore();
-    services.AddSkillCraftCmsInfrastructure();
     services.AddKrakenarWeb(_configuration);
+    services.AddKrakenarMongoDB(_configuration);
 
     AdminSettings? adminSettings = services.Where(x => x.ServiceType.Equals(typeof(AdminSettings)) && x.ImplementationInstance is AdminSettings)
       .FirstOrDefault()?.ImplementationInstance as AdminSettings
@@ -40,33 +33,12 @@ internal class Startup : StartupBase
       services.AddKrakenarSwagger(adminSettings);
     }
 
-    IHealthChecksBuilder healthChecks = services.AddHealthChecks();
-    DatabaseProvider databaseProvider = GetDatabaseProvider();
-    switch (databaseProvider)
-    {
-      case DatabaseProvider.EntityFrameworkCorePostgreSQL:
-        services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
-        healthChecks.AddDbContextCheck<EventContext>();
-        healthChecks.AddDbContextCheck<KrakenarContext>();
-        break;
-      case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
-        healthChecks.AddDbContextCheck<EventContext>();
-        healthChecks.AddDbContextCheck<KrakenarContext>();
-        break;
-      default:
-        throw new DatabaseProviderNotSupportedException(databaseProvider);
-    }
-    services.AddKrakenarMongoDB(_configuration);
-  }
-  private DatabaseProvider GetDatabaseProvider()
-  {
-    string? value = Environment.GetEnvironmentVariable("DATABASE_PROVIDER");
-    if (!string.IsNullOrWhiteSpace(value) && Enum.TryParse(value.Trim(), ignoreCase: true, out DatabaseProvider provider))
-    {
-      return provider;
-    }
-    return _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCorePostgreSQL;
+    services.AddSkillCraftCmsCore();
+    services.AddSkillCraftCmsInfrastructure();
+    services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
+
+    services.AddApplicationInsightsTelemetry();
+    services.AddHealthChecks().AddDbContextCheck<RulesContext>();
   }
 
   public override void Configure(IApplicationBuilder builder)

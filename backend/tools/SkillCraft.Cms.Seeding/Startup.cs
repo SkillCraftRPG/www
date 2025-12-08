@@ -1,9 +1,7 @@
 ﻿using Krakenar.Core;
-using Krakenar.Infrastructure;
 using SkillCraft.Cms.Core;
 using SkillCraft.Cms.Infrastructure;
 using SkillCraft.Cms.Infrastructure.PostgreSQL;
-using SkillCraft.Cms.Infrastructure.SqlServer;
 using SkillCraft.Cms.Seeding.Krakenar.Tasks;
 using SkillCraft.Cms.Seeding.Rules;
 using SkillCraft.Cms.Seeding.Rules.Tasks;
@@ -26,32 +24,12 @@ internal class Startup
 
     services.AddSkillCraftCmsCore();
     services.AddSkillCraftCmsInfrastructure();
-    DatabaseProvider databaseProvider = GetDatabaseProvider();
-    switch (databaseProvider)
-    {
-      case DatabaseProvider.EntityFrameworkCorePostgreSQL:
-        services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
-        break;
-      case DatabaseProvider.EntityFrameworkCoreSqlServer:
-        services.AddSkillCraftCmsInfrastructureSqlServer(_configuration);
-        break;
-      default:
-        throw new DatabaseProviderNotSupportedException(databaseProvider);
-    }
+    services.AddSkillCraftCmsInfrastructurePostgreSQL(_configuration);
     services.AddSingleton<IApplicationContext, SeedingApplicationContext>();
 
     services.AddHostedService<SeedingWorker>();
     services.AddScoped<IFeatureService, FeatureService>();
     AddCommandHandlers(services);
-  }
-  private DatabaseProvider GetDatabaseProvider()
-  {
-    string? value = Environment.GetEnvironmentVariable("DATABASE_PROVIDER");
-    if (!string.IsNullOrWhiteSpace(value) && Enum.TryParse(value.Trim(), ignoreCase: true, out DatabaseProvider provider))
-    {
-      return provider;
-    }
-    return _configuration.GetValue<DatabaseProvider?>("DatabaseProvider") ?? DatabaseProvider.EntityFrameworkCorePostgreSQL;
   }
 
   private static void AddCommandHandlers(IServiceCollection services)
