@@ -1,10 +1,10 @@
-﻿using Logitar.EventSourcing.EntityFrameworkCore.PostgreSQL;
+﻿using Logitar.CQRS;
+using Logitar.EventSourcing.EntityFrameworkCore.PostgreSQL;
 using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using Logitar.EventSourcing.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SkillCraft.Core;
 using SkillCraft.Core.Worlds;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Caching;
@@ -34,7 +34,7 @@ public static class DependencyInjectionExtensions
       .AddRepositories()
       .AddSingleton<IEventSerializer, EventSerializer>()
       .AddScoped<IEventBus, EventBus>()
-      .AddTransient<ICommandHandler<MigrateDatabaseCommand>, MigrateDatabaseCommandHandler>();
+      .AddTransient<ICommandHandler<MigrateDatabaseCommand, Unit>, MigrateDatabaseCommandHandler>();
   }
 
   private static IServiceCollection AddEventHandlers(this IServiceCollection services)

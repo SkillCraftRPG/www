@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Logitar.CQRS;
 using SkillCraft.Core.Permissions;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Core.Worlds.Validators;

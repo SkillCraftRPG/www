@@ -1,4 +1,5 @@
-﻿using Logitar.EventSourcing;
+﻿using Logitar.CQRS;
+using Logitar.EventSourcing;
 using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.Core.Permissions;
 using SkillCraft.Core.Worlds;
@@ -9,9 +10,10 @@ public static class DependencyInjectionExtensions
 {
   public static IServiceCollection AddSkillCraftCore(this IServiceCollection services)
   {
-    // TODO(fpion): CQRS
     PermissionService.Register(services);
     WorldService.Register(services);
-    return services.AddLogitarEventSourcing();
+    return services
+      .AddLogitarEventSourcing()
+      .AddLogitarCQRS();
   }
 }

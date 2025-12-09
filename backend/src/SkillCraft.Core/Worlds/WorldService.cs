@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Logitar.CQRS;
+using Microsoft.Extensions.DependencyInjection;
 using SkillCraft.Core.Worlds.Commands;
 using SkillCraft.Core.Worlds.Models;
 
