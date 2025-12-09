@@ -29,10 +29,10 @@ internal class WorldManager : IWorldManager
       }
     }
 
-    // TODO(fpion): ensure enough storage is available
+    // TASK: [SKILLCRAFT-12](https://logitar.atlassian.net/browse/SKILLCRAFT-12)
 
     await _worldRepository.SaveAsync(world, cancellationToken);
 
-    // TODO(fpion): update storage
+    // TASK: [SKILLCRAFT-12](https://logitar.atlassian.net/browse/SKILLCRAFT-12)
   }
 }
