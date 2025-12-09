@@ -6,7 +6,6 @@ using SkillCraft.Core.Worlds.Validators;
 
 namespace SkillCraft.Core.Worlds.Commands;
 
-/// <exception cref="IdAlreadyUsedException{T}"></exception>
 /// <exception cref="PermissionDeniedException"></exception>
 /// <exception cref="SlugAlreadyUsedException"></exception>
 /// <exception cref="ValidationException"></exception>
