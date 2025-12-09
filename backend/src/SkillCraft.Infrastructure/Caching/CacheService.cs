@@ -3,7 +3,7 @@ using Logitar.EventSourcing;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SkillCraft.Core;
+using SkillCraft.Core.Actors;
 using SkillCraft.Core.Caching;
 
 namespace SkillCraft.Infrastructure.Caching;
@@ -38,8 +38,8 @@ internal class CacheService : ICacheService
   }
   public void SetActor(Actor actor)
   {
-    string key = GetActorKey(actor.GetActorId());
+    string key = GetActorKey(ActorHelper.GetActorId(actor));
     _memoryCache.Set(key, actor, _settings.ActorLifetime);
   }
-  private static string GetActorKey(ActorId id) => $"Actor:Id:{id}";
+  private static string GetActorKey(ActorId id) => $"Actor.Id={id}";
 }

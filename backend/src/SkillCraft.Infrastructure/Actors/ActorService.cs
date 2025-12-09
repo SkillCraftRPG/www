@@ -1,6 +1,9 @@
 ﻿using Krakenar.Contracts.Actors;
+using Krakenar.Contracts.Search;
+using Krakenar.Contracts.Users;
 using Logitar.EventSourcing;
 using Microsoft.Extensions.DependencyInjection;
+using SkillCraft.Core.Actors;
 using SkillCraft.Core.Caching;
 
 namespace SkillCraft.Infrastructure.Actors;
@@ -18,10 +21,12 @@ internal class ActorService : IActorService
   }
 
   private readonly ICacheService _cacheService;
+  private readonly IUserService _userService;
 
-  public ActorService(ICacheService cacheService)
+  public ActorService(ICacheService cacheService, IUserService userService)
   {
     _cacheService = cacheService;
+    _userService = userService;
   }
 
   public async Task<IReadOnlyDictionary<ActorId, Actor>> FindAsync(IEnumerable<ActorId> actorIds, CancellationToken cancellationToken)
@@ -45,7 +50,23 @@ internal class ActorService : IActorService
 
     if (missing.Count > 0)
     {
-      // TODO(fpion): fetch from Krakenar
+      SearchUsersPayload payload = new();
+      foreach (ActorId actorId in missing)
+      {
+        Actor actor = ActorHelper.ToActor(actorId);
+        if (actor.RealmId.HasValue && actor.Type == ActorType.User)
+        {
+          payload.Ids.Add(actor.Id);
+        }
+      }
+
+      SearchResults<User> users = await _userService.SearchAsync(payload, cancellationToken);
+      foreach (User user in users.Items)
+      {
+        Actor actor = new(user);
+        ActorId actorId = ActorHelper.GetActorId(actor);
+        actors[actorId] = actor;
+      }
     }
 
     foreach (Actor actor in actors.Values)
