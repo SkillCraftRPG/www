@@ -7,7 +7,7 @@ namespace SkillCraft.Core.Worlds;
 
 public interface IWorldService
 {
-  Task<WorldModel> CreateAsync(CreateWorldPayload payload, Guid? id = null, CancellationToken cancellationToken = default);
+  Task<WorldModel> CreateAsync(CreateWorldPayload payload, CancellationToken cancellationToken = default);
 }
 
 internal class WorldService : IWorldService
@@ -26,9 +26,9 @@ internal class WorldService : IWorldService
     _commandBus = commandBus;
   }
 
-  public async Task<WorldModel> CreateAsync(CreateWorldPayload payload, Guid? id, CancellationToken cancellationToken)
+  public async Task<WorldModel> CreateAsync(CreateWorldPayload payload, CancellationToken cancellationToken)
   {
-    CreateWorldCommand command = new(payload, id);
+    CreateWorldCommand command = new(payload);
     return await _commandBus.ExecuteAsync(command, cancellationToken);
   }
 }

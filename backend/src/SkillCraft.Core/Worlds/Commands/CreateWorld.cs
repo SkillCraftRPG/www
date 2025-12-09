@@ -10,7 +10,7 @@ namespace SkillCraft.Core.Worlds.Commands;
 /// <exception cref="PermissionDeniedException"></exception>
 /// <exception cref="SlugAlreadyUsedException"></exception>
 /// <exception cref="ValidationException"></exception>
-internal record CreateWorldCommand(CreateWorldPayload Payload, Guid? Id) : ICommand<WorldModel>;
+internal record CreateWorldCommand(CreateWorldPayload Payload) : ICommand<WorldModel>;
 
 internal class CreateWorldCommandHandler : ICommandHandler<CreateWorldCommand, WorldModel>
 {
@@ -41,22 +41,10 @@ internal class CreateWorldCommandHandler : ICommandHandler<CreateWorldCommand, W
 
     await _permissionService.CheckAsync("CreateWorld", cancellationToken);
 
-    WorldId worldId = WorldId.NewId();
-    World? world;
-    if (command.Id.HasValue)
-    {
-      worldId = new(command.Id.Value);
-      world = await _worldRepository.LoadAsync(worldId, cancellationToken);
-      if (world is not null)
-      {
-        throw new IdAlreadyUsedException<World>(command.Id.Value);
-      }
-    }
-
     UserId userId = _applicationContext.UserId;
     Slug slug = new(payload.Slug);
     Name name = new(payload.Name);
-    world = new(userId, slug, name, worldId)
+    World world = new(userId, slug, name)
     {
       Description = Description.TryCreate(payload.Description)
     };
