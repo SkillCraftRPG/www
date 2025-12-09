@@ -6,7 +6,9 @@ using SkillCraft.Core.Worlds.Validators;
 
 namespace SkillCraft.Core.Worlds.Commands;
 
+/// <exception cref="IdAlreadyUsedException{T}"></exception>
 /// <exception cref="PermissionDeniedException"></exception>
+/// <exception cref="SlugAlreadyUsedException"></exception>
 /// <exception cref="ValidationException"></exception>
 internal record CreateWorldCommand(CreateWorldPayload Payload, Guid? Id) : ICommand<WorldModel>;
 
@@ -47,7 +49,7 @@ internal class CreateWorldCommandHandler : ICommandHandler<CreateWorldCommand, W
       world = await _worldRepository.LoadAsync(worldId, cancellationToken);
       if (world is not null)
       {
-        throw new NotImplementedException(); // TODO(fpion): 409 Conflict
+        throw new IdAlreadyUsedException<World>(command.Id.Value);
       }
     }
 

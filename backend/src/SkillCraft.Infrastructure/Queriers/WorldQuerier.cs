@@ -6,6 +6,7 @@ using SkillCraft.Core.Worlds;
 using SkillCraft.Core.Worlds.Models;
 using SkillCraft.Infrastructure.Actors;
 using SkillCraft.Infrastructure.Entities;
+using SkillCraft.Infrastructure.GameDb;
 
 namespace SkillCraft.Infrastructure.Queriers;
 
@@ -26,6 +27,16 @@ internal class WorldQuerier : IWorldQuerier
   {
     Guid userId = _applicationContext.UserId.ToGuid();
     return await _worlds.AsNoTracking().Where(x => x.UserId == userId).CountAsync(cancellationToken);
+  }
+
+  public async Task<WorldId?> FindIdAsync(Slug slug, CancellationToken cancellationToken)
+  {
+    string slugNormalized = Helper.Normalize(slug);
+    string? streamId = await _worlds.AsNoTracking()
+      .Where(x => x.SlugNormalized == slugNormalized)
+      .Select(x => x.StreamId)
+      .SingleOrDefaultAsync(cancellationToken);
+    return string.IsNullOrWhiteSpace(streamId) ? null : new WorldId(streamId);
   }
 
   public async Task<WorldModel> ReadAsync(World world, CancellationToken cancellationToken)

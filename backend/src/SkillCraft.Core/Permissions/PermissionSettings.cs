@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Logitar;
+using Microsoft.Extensions.Configuration;
 
 namespace SkillCraft.Core.Permissions;
 
@@ -11,7 +12,9 @@ internal record PermissionSettings
   public static PermissionSettings Initialize(IConfiguration configuration)
   {
     PermissionSettings settings = configuration.GetSection(SectionKey).Get<PermissionSettings>() ?? new();
-    // TODO(fpion): Environment Variable Override
+
+    settings.WorldLimit = EnvironmentHelper.GetInt32("PERMISSION_WORLD_LIMIT", settings.WorldLimit);
+
     return settings;
   }
 }

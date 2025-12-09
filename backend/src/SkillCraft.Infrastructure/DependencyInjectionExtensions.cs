@@ -1,4 +1,5 @@
-﻿using Logitar.CQRS;
+﻿using Logitar;
+using Logitar.CQRS;
 using Logitar.EventSourcing.EntityFrameworkCore.PostgreSQL;
 using Logitar.EventSourcing.EntityFrameworkCore.Relational;
 using Logitar.EventSourcing.Infrastructure;
@@ -19,7 +20,10 @@ public static class DependencyInjectionExtensions
 {
   public static IServiceCollection AddSkillCraftInfrastructure(this IServiceCollection services, IConfiguration configuration)
   {
-    throw new NotImplementedException(); // TODO(fpion): implement
+    string? connectionString = EnvironmentHelper.TryGetString("POSTGRESQLCONNSTR_SkillCraft")
+      ?? configuration.GetConnectionString("PostgreSQL")?.CleanTrim()
+      ?? throw new ArgumentException("The PostgreSQL connection string could not be found.", nameof(configuration));
+    return services.AddSkillCraftInfrastructure(connectionString);
   }
   public static IServiceCollection AddSkillCraftInfrastructure(this IServiceCollection services, string connectionString)
   {
