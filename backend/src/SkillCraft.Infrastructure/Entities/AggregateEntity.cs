@@ -49,4 +49,8 @@ internal abstract class AggregateEntity
     UpdatedBy = @event.ActorId?.Value;
     UpdatedOn = @event.OccurredOn.AsUniversalTime();
   }
+
+  public override bool Equals(object? obj) => obj is AggregateEntity aggregate && aggregate.GetType().Equals(GetType()) && aggregate.StreamId == StreamId;
+  public override int GetHashCode() => HashCode.Combine(GetType(), StreamId);
+  public override string ToString() => $"{GetType()} (StreamId={StreamId})";
 }
