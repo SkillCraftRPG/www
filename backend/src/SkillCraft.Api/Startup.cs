@@ -1,5 +1,8 @@
-﻿using SkillCraft.Api.Extensions;
+﻿using Krakenar.Client;
+using SkillCraft.Api.Extensions;
 using SkillCraft.Api.Settings;
+using SkillCraft.Core;
+using SkillCraft.Infrastructure;
 
 namespace SkillCraft.Api;
 
@@ -15,6 +18,12 @@ internal class Startup : StartupBase
   public override void ConfigureServices(IServiceCollection services)
   {
     base.ConfigureServices(services);
+
+    services.AddSkillCraftCore();
+    services.AddSkillCraftInfrastructure(_configuration);
+    services.AddSingleton<IApplicationContext, HttpApplicationContext>();
+
+    services.AddKrakenarClient(_configuration);
 
     services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 

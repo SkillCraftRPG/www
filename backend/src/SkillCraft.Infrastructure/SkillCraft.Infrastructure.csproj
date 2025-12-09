@@ -15,19 +15,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="12.1.1" />
-    <PackageReference Include="Krakenar.Contracts" Version="1.1.0" />
-    <PackageReference Include="Logitar.CQRS" Version="10.0.0" />
-    <PackageReference Include="Logitar.EventSourcing" Version="10.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.0" />
+    <PackageReference Include="Logitar.EventSourcing.EntityFrameworkCore.PostgreSQL" Version="10.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkillCraft.Contracts\SkillCraft.Contracts.csproj" />
+    <ProjectReference Include="..\SkillCraft.Core\SkillCraft.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="System.Diagnostics.CodeAnalysis" />
+    <Using Include="System.Globalization" />
+    <Using Include="System.Reflection" />
+    <Using Include="System.Text" />
+    <Using Include="System.Text.Json" />
+    <Using Include="System.Text.Json.Serialization" />
   </ItemGroup>
 
   <ItemGroup>
