@@ -1,81 +1,44 @@
 [
   {
-    "id": "8dce1738-fb46-4a52-b335-2d65dcb797a0",
-    "date": "2025-10-01T12:00:00Z",
-    "title": "Moteur de jeu",
-    "summary": "Règles de base et génériques, avec hyperliens entre les pages, et contenu de base pour démarrer une aventure, exécuter des combats.",
+    "id": "bbfd1621-e170-4a5c-98a4-6c0c0ebca68a",
+    "date": "2026-01-31T23:59:59Z",
+    "title": "Règles de base",
+    "summary": "Règles permettant de créer un personnage de base et de progresser jusqu’au niveau 100, ajustements minimaux.",
     "detail": [
-      "Création et progression de personnage",
-      "Attributs, statistiques et compétences",
-      "Espèces (explications et exemples)",
-      "Langues et alphabets (explications et exemples)",
-      "Talents de tiers 0 et associés à une compétence",
-      "Spécialisations (explications et exemples)",
-      "Équipement",
-      "Aventure",
-      "Combat",
-      "Magie"
-    ]
-  },
-  {
-    "id": "a9e878bb-268b-4977-9ee1-b583cfccea54",
-    "date": "2025-11-01T12:00:00Z",
-    "title": "Options minimales",
-    "summary": "Sélection minimale de création et de progression de personnage jusqu’au tiers 1. Astromancie et domaines divins.",
-    "detail": [
-      "Dons et handicaps",
-      "Castes et éducations",
-      "Espèces, langues et alphabets génériques",
-      "Talents de tiers 1",
-      "Spécialisations de tiers 1",
-      "Astromancie",
-      "Domaines divins"
-    ]
-  },
-  {
-    "id": "96a7c503-558a-4c71-9ac8-d9f67e2bf751",
-    "date": "2025-12-01T12:00:00Z",
-    "title": "Options intermédiaires",
-    "summary": "Sélection de création et de progression de personnage jusqu’au tiers 2. Herboristerie et manœuvres de combat.",
-    "detail": [
-      "Dons et handicaps",
-      "Éducations",
-      "Espèces génériques",
-      "Langues et alphabets génériques, avec explications",
-      "Talents de tiers 2",
-      "Spécialisations de tiers 2",
-      "Herboristerie",
-      "Manœuvres de combat"
-    ]
-  },
-  {
-    "id": "952d2fd0-99ae-436c-bb4f-cfcda2f28498",
-    "date": "2026-01-01T12:00:00Z",
-    "title": "Options avancées",
-    "summary": "Sélection avancée de création et de progression de personnage jusqu’au tiers 3. Options de personnalisation et magie.",
-    "detail": [
-      "Espèces, langues et alphabets classiques",
-      "Talents de tiers 3",
-      "Spécialisations de tiers 3",
+      "Tous les talents",
+      "Espèces et ethnies de base",
+      "Spécialisations de tiers 3 de base (8)",
+      "Herboristerie, Apothicairerie et Toxicologie",
       "Traits de personnalité, idéaux et défauts",
-      "Animisme",
-      "Astromancie",
-      "Domaines divins",
-      "Élémentarisme"
+      "Jeu de rôle"
     ]
   },
   {
-    "id": "6c1ce886-3ea6-47b3-8840-32707de39a38",
-    "date": "2026-02-01T12:00:00Z",
-    "title": "Options complètes",
-    "summary": "Sélection complète de création et de progression de personnage, explication des schémas de jeu de rôle et proactif.",
-    "detail": ["Espèces, langues et alphabets spécialisées", "Infusions magiques", "Invocations mystérieuses", "Jeu de rôle proactif", "Schémas de jeu de rôle"]
+    "id": "2a7ccab9-14c8-4452-8ad7-61eb8ec3c6d1",
+    "date": "2026-02-28T23:59:59Z",
+    "title": "Règles avancées",
+    "summary": "Règles permettant de créer un personnage et de progresser jusqu’au niveau 100 avec des options avancées.",
+    "detail": ["Espèces et ethnies avancées", "Spécialisations de tiers 3 avancées (10)"]
+  },
+  {
+    "id": "903e74db-c3e6-42ed-8fd2-7bca71829771",
+    "date": "2026-03-31T23:59:59Z",
+    "title": "Règles exotiques",
+    "summary": "Règles permettant de créer un personnage et de progresser jusqu’au niveau 100 avec des options exotiques.",
+    "detail": ["Espèces et ethnies exotiques", "Spécialisations de tiers 3 complètes (10)"]
+  },
+  {
+    "id": "cc291351-57c7-4bda-9ba9-e9a88aafcfba",
+    "date": "2026-04-30T23:59:59Z",
+    "title": "🚧TODO",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non velit erat. Cras id tortor dignissim pharetra.",
+    "detail": ["Langues et alphabets", "Animisme", "Astromancie", "Domaines divins", "Élémentarisme", "Infusions magiques", "Invocations mystérieuses"]
   },
   {
     "id": "1c8f2dfc-7957-4cfd-a01c-b86acee3f579",
-    "date": "2027-01-01T12:00:00Z",
+    "date": "2026-12-31T23:59:59Z",
     "title": "Grimoire",
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non velit erat. Cras id tortor dignissim pharetra.",
-    "detail": ["Grimoire"]
+    "detail": []
   }
 ]
