@@ -254,6 +254,131 @@
     }
   },
   {
+    "Id": "31dec60c-1ea5-4d7f-8e00-6516e02219ae",
+    "IsPublished": true,
+    "Slug": "archidruide",
+    "Name": "Archidruide",
+    "Tier": 3,
+    "Summary": "Druide maître de l’animisme et des pouvoirs naturels ultimes.",
+    "MetaDescription": "Découvrez l’Archidruide : maître suprême de l’animisme, fondateur de cercle, capable de pouvoirs naturels de tiers 3 et de magie en forme sauvage.",
+    "Description": "Très rare est le druide qui peut atteindre le rang d’Archidruide et ainsi accéder aux pouvoirs naturels les plus puissants. Pour se faire, il doit dédier sa vie à un ou plusieurs éléments naturels, s’élevant parmi les siens et fondant son propre cercle druidique. Il détermine les préceptes de son cercle, choisit ses recrues et élabore un rite de passage pour son cercle.",
+    "Requirements": {
+      "Talent": null,
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Druide](/regles/specialisations/druide).",
+        "Il ne doit pas avoir acquis la spécialisation [Gardien](/regles/specialisations/gardien).",
+        "Il doit avoir acquis un [pouvoir](/regles/magie/pouvoirs) de tiers 2 associé à son [domaine d’animisme](/regles/domaines/animisme). Les pouvoirs acquis gratuitement ne satisfont pas cette condition."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "d1b6ecc3-1a12-4be6-91ac-adcdf4e5ac96",
+          "IsPublished": true,
+          "Slug": "bricolage-naturel",
+          "Name": "Bricolage naturel"
+        },
+        {
+          "Id": "32cfc88b-c313-49fd-8ac5-70e54b67b0a0",
+          "IsPublished": true,
+          "Slug": "endurance-superieure",
+          "Name": "Endurance supérieure"
+        },
+        {
+          "Id": "db16d90c-099e-45ce-8321-c174eeb38a0b",
+          "IsPublished": true,
+          "Slug": "optimisation-magique",
+          "Name": "Optimisation magique"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "f7157b4f-b65e-4eff-a66e-58d0a5c7f7be",
+          "IsPublished": true,
+          "Slug": "extraction-du-poison",
+          "Name": "Extraction du poison"
+        },
+        {
+          "Id": "c2a0e512-521c-485d-a7e4-784b74e37e40",
+          "IsPublished": true,
+          "Slug": "destruction",
+          "Name": "Destruction"
+        },
+        {
+          "Id": "398cfada-90d4-4e78-ad70-8a96c3f301cc",
+          "IsPublished": true,
+          "Slug": "apothicairerie",
+          "Name": "Apothicairerie"
+        },
+        {
+          "Id": "0b64a74b-9acf-4187-93e8-6c457fe1aa93",
+          "IsPublished": true,
+          "Slug": "toxicologie",
+          "Name": "Toxicologie"
+        },
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "0fa21f56-552e-48cb-b504-fbfa078fce12",
+          "IsPublished": true,
+          "Slug": "chasse-mage",
+          "Name": "Chasse-mage"
+        },
+        {
+          "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+          "IsPublished": true,
+          "Slug": "erudition",
+          "Name": "Érudition"
+        },
+        {
+          "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+          "IsPublished": true,
+          "Slug": "resilience",
+          "Name": "Résilience"
+        },
+        {
+          "Id": "959ac693-3553-4cc0-90ac-f892250d1f77",
+          "IsPublished": true,
+          "Slug": "monture-de-combat",
+          "Name": "Monture de combat"
+        },
+        {
+          "Id": "1d2d6d96-7eb5-49f1-aa90-2d5a4aa0fc1b",
+          "IsPublished": true,
+          "Slug": "obeissance-animale",
+          "Name": "Obéissance animale"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine d’animisme](/regles/domaines/animisme)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Incantation sauvage",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 3 associés à son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert deux capacités de tiers 3 spécifiques à son [domaine d’animisme](/regles/domaines/animisme).",
+        "Il peut désormais assumer sa [forme sauvage](/regles/specialisations/animiste) trois fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations. Également, il peut canaliser des [pouvoirs](/regles/magie/pouvoirs) lorsqu’il assume sa forme sauvage. S’il est en mesure d’émettre des sons et qu’il n’est pas immobilisé, alors il peut ignorer les [composantes](/regles/magie/parametres/composantes) Focus, Somatique et Verbal."
+      ],
+      "DiscountedTalents": [],
+      "Features": []
+    }
+  },
+  {
     "Id": "5dee7c12-f29d-4a09-b828-38b8ca102ed7",
     "IsPublished": true,
     "Slug": "astromancien",
@@ -342,7 +467,7 @@
           "Id": "9a5b7bff-374e-40cc-80ac-0e8c1e39691a",
           "IsPublished": true,
           "Name": "Ascendant",
-          "Description": "Le nombre maximal de [signes astrologiques](#) qu’il peut apprendre augmente de 21 à 35, suivant la formule 2 + [Intellect](/regles/attributs/intellect) + (2 × [rang](/regles/competences/rang) d’[Occultisme](/regles/competences/occultisme)).\n\nÉgalement, le temps et les matériaux nécessaires à la transcription d’un signe astrologique sont réduits de moitié."
+          "Description": "Le nombre maximal de [signes astrologiques](#) qu’il peut apprendre augmente de 21 à 35, suivant la formule 2 + [Intellect](/regles/attributs/intellect) + (2 × [rang](/regles/competences/rang) d’[Occultisme](/regles/competences/occultisme)).\n\nÉgalement, le temps et les matériaux nécessaires à la [transcription](/regles/talents/astrologie) d’un signe astrologique dans son grimoire sont réduits de moitié."
         }
       ]
     }
@@ -622,9 +747,9 @@
         },
         {
           "Id": "8ee28c82-497b-4cb3-9c2e-8f05a314a96c",
-          "IsPublished": true,
+          "IsPublished": false,
           "Name": "Accumulateur magique",
-          "Description": "Le personnage peut entreposer un [bricoleur magique](#) dans une [arme](/regles/equipement/armes) ou un objet approprié en le [canalisant](/regles/magie/pouvoirs/canalisation).\n\nIl doit ensuite compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nLe [pouvoir](/regles/magie/pouvoirs) doit être de tiers 0, et l’[incantation](/regles/magie/parametres/incantation) doit être exactement de [deux actions](/regles/combat/deroulement/tour).\n\nIl peut [Faire 10](/regles/competences/tests/faire-10) à son [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) s’il le désire.\n\nUne créature peut activer l’[objet](/regles/combat/activites/objet) par deux actions afin de [canaliser](/regles/combat/activites/canaliser) le pouvoir au [niveau](/regles/magie/pouvoirs/niveau) entreposé.\n\nElle ne dépense aucun point d’[Énergie](/regles/statistiques/energie), la canalisation ne requiert aucune [composante](/regles/magie/parametres/composantes), et elle réutilise le résultat du test d’Occultisme du personnage.\n\nSi le pouvoir requiert la [concentration](/regles/magie/parametres/duree), la créature doit [se concentrer](/regles/combat/activites/concentration) sur le pouvoir.\n\nL’objet peut être activé un nombre de fois égal à l’[Intellect](/regles/attributs/intellect) (minimum 1) du personnage, puis le pouvoir disparaît. Le pouvoir disparaît également si le personnage entrepose un pouvoir dans un autre objet.\n\nCe nombre d’activations est doublé lorsque le personnage atteint le [tiers 3](/regles/personnages/progression/tiers)."
+          "Description": "Le personnage peut entreposer un [bricolage magique](#) dans une [arme](/regles/equipement/armes) ou un objet approprié en le [canalisant](/regles/magie/pouvoirs/canalisation).\n\nIl doit ensuite compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nLe [pouvoir](/regles/magie/pouvoirs) doit être de tiers 0, et l’[incantation](/regles/magie/parametres/incantation) doit être exactement de [deux actions](/regles/combat/deroulement/tour).\n\nIl peut [Faire 10](/regles/competences/tests/faire-10) à son [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) s’il le désire.\n\nUne créature peut activer l’[objet](/regles/combat/activites/objet) par deux actions afin de [canaliser](/regles/combat/activites/canaliser) le pouvoir au [niveau](/regles/magie/pouvoirs/niveau) entreposé.\n\nElle ne dépense aucun point d’[Énergie](/regles/statistiques/energie), la canalisation ne requiert aucune [composante](/regles/magie/parametres/composantes), et elle réutilise le résultat du test d’Occultisme du personnage.\n\nSi le pouvoir requiert la [concentration](/regles/magie/parametres/duree), la créature doit [se concentrer](/regles/combat/activites/concentration) sur le pouvoir.\n\nL’objet peut être activé un nombre de fois égal à l’[Intellect](/regles/attributs/intellect) (minimum 1) du personnage, puis le pouvoir disparaît. Le pouvoir disparaît également si le personnage entrepose un pouvoir dans un autre objet.\n\nCe nombre d’activations est doublé lorsque le personnage atteint le [tiers 3](/regles/personnages/progression/tiers)."
         }
       ]
     }
@@ -1394,7 +1519,7 @@
     "ReservedTalent": {
       "Name": "Chamanisme",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
         "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](/regles/domaines/animisme)."
       ],
       "DiscountedTalents": [],
@@ -2069,7 +2194,7 @@
     "ReservedTalent": {
       "Name": "Druidisme",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 de son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine d’animisme](/regles/domaines/animisme) et acquiert gratuitement un de ces pouvoirs.",
         "Il acquiert une capacité de tiers 2 spécifique à son [domaine d’animisme](/regles/domaines/animisme).",
         "Il peut désormais assumer sa [forme sauvage](/regles/specialisations/animiste) deux fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations. Également, il peut prendre la forme d’une bête de niveau inférieur ou égal à 1, et celle-ci peut être dotée d’une [vitesse](/regles/aventure/mouvement/vitesse) de [nage](/regles/aventure/mouvement/types) et de [vol](/regles/aventure/mouvement/types)."
       ],
@@ -2918,7 +3043,7 @@
     "Requirements": {
       "Talent": {
         "Id": "650d5c63-6463-4a39-aaab-626f45789784",
-        "IsPublished": false,
+        "IsPublished": true,
         "Slug": "initiation-magique",
         "Name": "Initiation magique"
       },
@@ -3004,7 +3129,7 @@
       "Name": "Magie raffinée",
       "Description": [
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) et acquiert gratuitement un de ces pouvoirs.",
-        "Il sélectionne un des cercles de magie pour lequel il a acquis le talent [Initiation magique](/regles/talents/initiation-magique) et il acquiert la capacité de tiers 2 spécifique à ce cercle."
+        "Il sélectionne un des [cercles de magie](/regles/astromancie) pour lequel il a acquis le talent [Initiation magique](/regles/talents/initiation-magique) et il acquiert la capacité de tiers 2 spécifique à ce cercle."
       ],
       "DiscountedTalents": [
         {
@@ -3147,7 +3272,7 @@
       "Name": "Magie de combat",
       "Description": [
         "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) appartenant au cercle d’Abjuration.",
-        "S’il [acquiert](/regles/talents/acquisition) le talent [Magie guerrière](/regles/talents/magie-guerriere), alors il acquiert gratuitement le talent [Attaque magique](/regles/talents/attaque-magique) au même moment."
+        "Lorsqu’il [acquiert](/regles/talents/acquisition) le talent [Magie guerrière](/regles/talents/magie-guerriere), alors il acquiert gratuitement le talent [Attaque magique](/regles/talents/attaque-magique)."
       ],
       "DiscountedTalents": [],
       "Features": [
@@ -3744,7 +3869,7 @@
     "Requirements": {
       "Talent": {
         "Id": "6fd1c3b5-4a26-4cc1-942a-9f8d844e3027",
-        "IsPublished": false,
+        "IsPublished": true,
         "Slug": "meta-magie",
         "Name": "Méta-magie"
       },
@@ -3890,13 +4015,13 @@
           "Id": "1f9d60f2-b727-4bbe-9eeb-7519ec860670",
           "IsPublished": true,
           "Name": "Manipulation du chaos",
-          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), avant de savoir si le test est réussi ou échoué, il peut dépenser un [point d’essence élémentaire](#) associé à l’Esprit en [action libre](/regles/combat/deroulement/tour) afin de rejouer le test, et doit utiliser le nouveau résultat.\n\nIl peut également utiliser cette capacité en [réaction](/regles/combat/deroulement/tour) lorsqu’il voit une autre créature située à 18 mètres ou moins de sa position effectuer un test de compétence afin de lui conférer un bonus ou une pénalité (1d10), au choix."
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), avant de savoir si le test est réussi ou échoué, il peut dépenser un [point d’essence élémentaire](#) associé à l’Esprit en [action libre](/regles/combat/deroulement/tour) afin de rejouer le test, et doit utiliser le nouveau résultat.\n\nIl peut également utiliser cette capacité en [réaction](/regles/combat/deroulement/tour) lorsqu’il [voit](/regles/aventure/environnement/vision) une autre créature située à 18 mètres ou moins de sa position effectuer un test de compétence afin de lui conférer un bonus ou une pénalité (1d10), au choix."
         },
         {
           "Id": "9c9d7317-b6bb-4f3e-87b7-95764e0c3804",
           "IsPublished": true,
           "Name": "Surtension magique",
-          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage [canalise](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs) infligeant des [points de dégâts](/regles/combat/degats), alors il peut dépenser un [point d’essence élémentaire](#) afin d’infliger un nombre de points de dégâts de force supplémentaires égal à sa [Puissance](/regles/statistiques/puissance).\n\nÉgalement, lorsqu’il met fin à un pouvoir en canalisant [Protection contre la magie](#), il acquiert un nombre de points d’essence élémentaire égal au tiers du pouvoir."
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage [canalise](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs) infligeant des [points de dégâts](/regles/combat/degats), alors il peut dépenser un [point d’essence élémentaire](#) afin d’infliger un nombre de points de dégâts de [force](/regles/combat/degats/types) supplémentaires égal à sa [Puissance](/regles/statistiques/puissance).\n\nÉgalement, lorsqu’il met fin à un pouvoir en canalisant [Protection contre la magie](#), il acquiert un nombre de points d’essence élémentaire égal au tiers du pouvoir (minimum 0)."
         }
       ]
     }
