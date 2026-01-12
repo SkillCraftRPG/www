@@ -48,6 +48,12 @@
         </tr>
       </tbody>
     </table>
+    <h2 class="h3">Remplacer une option</h2>
+    <p>Vous pouvez remplacer un talent optionnel d’une spécialisation que vous convoitez par n’importe quel autre talent du même tiers.</p>
+    <p>Cette règle ne permet pas de remplacer un pouvoir par un talent et vice-versa.</p>
+    <p>
+      Cette règle ne s’applique que si l’acquisition de la spécialisation augmente votre <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>.
+    </p>
     <h2 class="h3">Exemples</h2>
     <p>Voici des exemples qui vous aideront à comprendre comment fonctionne l’acquisition de spécialisations.</p>
     <h3 class="h5">Clerc</h3>
