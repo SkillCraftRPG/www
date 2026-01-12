@@ -159,7 +159,8 @@
     "name": "Outils de voleur",
     "price": 25,
     "weight": 0.5,
-    "description": "Ces outils comprennent une petite lime, un jeu de crochetage, un petit miroir monté sur une tige métallique, une paire de ciseaux à lame étroite et des pinces."
+    "description": "Ces outils comprennent une petite lime, un jeu de crochetage, un petit miroir monté sur une tige métallique, une paire de ciseaux à lame étroite et des pinces.",
+    "talents": ["roublardise:Roublardise"]
   },
   {
     "id": "48467058-8584-41e4-afc5-8abb67629fd4",
@@ -168,7 +169,8 @@
     "name": "Trousse de déguisement",
     "price": 25,
     "weight": 1.5,
-    "description": "Cette trousse contient du maquillage, de la teinture pour cheveux, de petits accessoires et quelques morceaux de vêtements."
+    "description": "Cette trousse contient du maquillage, de la teinture pour cheveux, de petits accessoires et quelques morceaux de vêtements.",
+    "talents": ["tromperie:Tromperie", "trousses:Trousses"]
   },
   {
     "id": "5dcaa536-e15b-4389-8359-04e688f45462",
@@ -177,7 +179,8 @@
     "name": "Trousse de falsification",
     "price": 15,
     "weight": 2.5,
-    "description": "Cette trousse contient plusieurs plumes à écrire de différent calibre, différentes qualités et couleurs d’encre, une variété de papiers et parchemins, de la cire à cacheter, des sceaux, des feuilles d’argent et d’or très fines, et de petits outils pour sculpter la cire à cacheter afin d’imiter un sceau."
+    "description": "Cette trousse contient plusieurs plumes à écrire de différent calibre, différentes qualités et couleurs d’encre, une variété de papiers et parchemins, de la cire à cacheter, des sceaux, des feuilles d’argent et d’or très fines, et de petits outils pour sculpter la cire à cacheter afin d’imiter un sceau.",
+    "talents": ["linguistique:Linguistique", "trousses:Trousses"]
   },
   {
     "id": "916244fd-d05a-40e8-9813-ec93b25271d2",
@@ -186,7 +189,8 @@
     "name": "Trousse de premiers soins",
     "price": 5,
     "weight": 1.5,
-    "description": "Cette trousse contient des bandages, des baumes, des attelles, des pincettes et un couteau de précision. Elle contient 10 charges. Lorsque toutes les charges sont utilisées, la trousse doit être remplacée au complet par mesures d’hygiène."
+    "description": "Cette trousse contient des bandages, des baumes, des attelles, des pincettes et un couteau de précision. Elle contient 10 charges. Lorsque toutes les charges sont utilisées, la trousse doit être remplacée au complet par mesures d’hygiène.",
+    "talents": ["medecine:Médecine"]
   },
   {
     "id": "61a03f28-68c4-4ac1-b8cb-73996172aaff",
@@ -204,7 +208,8 @@
     "name": "Trousse d’empoisonneur",
     "price": 50,
     "weight": 1,
-    "description": "Cette trousse contient des fioles en verre, un mortier et un pilon, une tige en verre et des réactifs communs."
+    "description": "Cette trousse contient des fioles en verre, un mortier et un pilon, une tige en verre et des réactifs communs.",
+    "talents": ["herboristerie:Herboristerie"]
   },
   {
     "id": "6f84c17a-e578-4861-8588-f08627f9f3be",
@@ -213,7 +218,8 @@
     "name": "Trousse d’herboristerie",
     "price": 5,
     "weight": 1.5,
-    "description": "Cette trousse contient des sachets pour entreposer des herbes, un mortier et un pilon, des bocaux de verre, ainsi que de gants et des sécateurs permettant de collecter des herbes."
+    "description": "Cette trousse contient des sachets pour entreposer des herbes, un mortier et un pilon, des bocaux de verre, ainsi que de gants et des sécateurs permettant de collecter des herbes.",
+    "talents": ["herboristerie:Herboristerie"]
   },
   {
     "id": "6d23fcba-4c0d-499d-9442-12d1a42f61a6",

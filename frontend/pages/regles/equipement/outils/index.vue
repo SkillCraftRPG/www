@@ -8,8 +8,12 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h2 id="artisanat-trousses" class="h3">Outils d’artisanat et trousses</h2>
-    <ItemList :items="crafting" />
+    <h2 class="h3">Outils d’artisanat et trousses</h2>
+    <p>Le talent <NuxtLink to="/regles/talents/artisanat">Artisanat</NuxtLink> permet de se former pour les outils et trousses suivants.</p>
+    <ItemList :items="artisan" />
+    <h2 class="h3">Autres outils et trousses</h2>
+    <p>La formation aux outils et trousses suivants nécessite un talent spécifique.</p>
+    <ItemSpecialToolList :items="special" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
@@ -47,9 +51,15 @@ const items: MenuItem[] = [
 
 const tools = ref<Tool[]>(getTools());
 
-const crafting = computed<Tool[]>(() =>
+const artisan = computed<Tool[]>(() =>
   orderBy(
-    tools.value.filter(({ category }) => category === "Crafting"),
+    tools.value.filter(({ category, talents }) => category === "Crafting" && (!talents || !talents.length)),
+    "slug",
+  ),
+);
+const special = computed<Tool[]>(() =>
+  orderBy(
+    tools.value.filter(({ category, talents }) => category === "Crafting" && talents && talents.length),
     "slug",
   ),
 );
