@@ -28,10 +28,7 @@
       en possède.
     </p>
     <h2 class="h3">Limite</h2>
-    <p>
-      Un personnage peut être harmonisé à un nombre d’artefacts magiques inférieur ou égal à son
-      <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>.
-    </p>
+    <p>Un personnage peut être harmonisé à un maximum de 3 artefacts magiques.</p>
     <p>Une fois cette limite atteinte, toute tentative de créer un lien supplémentaire échoue automatiquement tant qu’un lien existant n’a pas été rompu.</p>
     <h2 class="h3">Perte d’un lien</h2>
     <p>

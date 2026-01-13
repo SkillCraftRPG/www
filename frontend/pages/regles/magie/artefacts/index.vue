@@ -48,4 +48,6 @@ useSeo({
   description:
     "Découvrez les artefacts magiques : harmonisation, port approprié et règles d’utilisation, offrant des pouvoirs uniques et des effets extraordinaires aux aventuriers.",
 });
+
+// TODO(fpion): Spell Scrolls; https://roll20.net/compendium/dnd5e/Spell%20Scroll#content
 </script>

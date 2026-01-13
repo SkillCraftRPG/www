@@ -379,6 +379,170 @@
     }
   },
   {
+    "Id": "6ac040b1-ce86-4577-970c-b12bf4d4c9cc",
+    "IsPublished": true,
+    "Slug": "assassin",
+    "Name": "Assassin",
+    "Tier": 3,
+    "Summary": "Égorgeur furtif, spécialiste des attaques surprises et de l’élimination.",
+    "MetaDescription": "Découvrez l’Assassin : maître de la dissimulation et des attaques surprises, expert en poisons, sournoiseries et éliminations rapides et fatales.",
+    "Description": "L’assassin maîtrise l’art de la dissimulation, se tapissant dans l’ombre avec une discrétion inégalée. Il maîtrise également les sournoiseries, n’hésitant pas à utiliser des moyens considérés déshonorables mais très efficaces, par l’exemple l’usage de poisons ou encore d’attaques surprises. Certains assassins sont si efficaces qu’on leur attribue des facultés ou une origine mystique alors qu’ils sont autant mortels que leurs victimes.",
+    "Requirements": {
+      "Talent": {
+        "Id": "3a318dfc-40ef-4d1c-ae76-9ca8c2a35565",
+        "IsPublished": true,
+        "Slug": "attaque-sanglante",
+        "Name": "Attaque sanglante"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "74548cb7-c65b-4882-b353-5bbb0d760a7a",
+          "IsPublished": true,
+          "Slug": "fourberie",
+          "Name": "Fourberie"
+        },
+        {
+          "Id": "4db1e8cf-f0f0-41e9-8023-2a4db68d56c1",
+          "IsPublished": true,
+          "Slug": "embuscade",
+          "Name": "Embuscade"
+        },
+        {
+          "Id": "09a52559-3dd9-4556-a4e8-c222585b3b2f",
+          "IsPublished": true,
+          "Slug": "tir-precis",
+          "Name": "Tir précis"
+        },
+        {
+          "Id": "6c169831-5295-45ee-a1fc-f77d8ee92b23",
+          "IsPublished": true,
+          "Slug": "escamotage",
+          "Name": "Escamotage"
+        },
+        {
+          "Id": "f7157b4f-b65e-4eff-a66e-58d0a5c7f7be",
+          "IsPublished": true,
+          "Slug": "extraction-du-poison",
+          "Name": "Extraction du poison"
+        },
+        {
+          "Id": "ea127043-238b-46d6-aab8-809a908f3c75",
+          "IsPublished": true,
+          "Slug": "repli-defensif",
+          "Name": "Repli défensif"
+        },
+        {
+          "Id": "4791665a-cdab-406d-a938-1cfc0fea2e23",
+          "IsPublished": true,
+          "Slug": "derobade",
+          "Name": "Dérobade"
+        },
+        {
+          "Id": "55be09ee-01f1-4ed4-a3e7-ef44c4619f2f",
+          "IsPublished": true,
+          "Slug": "acceleration",
+          "Name": "Accélération"
+        },
+        {
+          "Id": "9d6b0831-d4c7-4218-9a25-2e91f31370c2",
+          "IsPublished": true,
+          "Slug": "chargement-rapide",
+          "Name": "Chargement rapide"
+        },
+        {
+          "Id": "0b64a74b-9acf-4187-93e8-6c457fe1aa93",
+          "IsPublished": true,
+          "Slug": "toxicologie",
+          "Name": "Toxicologie"
+        },
+        {
+          "Id": "3acd933a-0e0d-44ce-ab18-0a4966734307",
+          "IsPublished": true,
+          "Slug": "attaques-multiples",
+          "Name": "Attaques multiples"
+        },
+        {
+          "Id": "dc53c886-b804-46fd-8d0c-86e5e0079a58",
+          "IsPublished": true,
+          "Slug": "double-attaque",
+          "Name": "Double attaque"
+        },
+        {
+          "Id": "268502a7-a973-4741-874b-61354c9b3610",
+          "IsPublished": true,
+          "Slug": "critique-superieur",
+          "Name": "Critique supérieur"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Égorgement",
+      "Description": [],
+      "DiscountedTalents": [
+        {
+          "Id": "d801c31b-ae74-4f12-ba4e-8869f68453f4",
+          "IsPublished": true,
+          "Slug": "disparition",
+          "Name": "Disparition"
+        },
+        {
+          "Id": "43774d2a-52d3-4b69-b75a-4432a0ef3b56",
+          "IsPublished": true,
+          "Slug": "attaque-mortelle",
+          "Name": "Attaque mortelle"
+        },
+        {
+          "Id": "0c29208b-a5b4-4876-b53a-65ea25ec0ffb",
+          "IsPublished": true,
+          "Slug": "critique-extraordinaire",
+          "Name": "Critique extraordinaire"
+        },
+        {
+          "Id": "54221c09-acc1-48d6-a39f-1c7a4bcbb572",
+          "IsPublished": true,
+          "Slug": "desarconnement",
+          "Name": "Désarçonnement"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "6da9a1c2-c977-4e1e-be48-967189df17ec",
+          "IsPublished": true,
+          "Name": "Meurtrier",
+          "Description": "Lorsque le personnage effectue une [attaque sournoise](/regles/talents/attaque-sournoise), il ajoute [2d6 points de dégâts](/regles/combat/degats/jet) supplémentaires, et les [points de dégâts](/regles/combat/degats) infligés par l’[hémorragie](/regles/talents/attaque-sanglante) augmentent à 3d6."
+        },
+        {
+          "Id": "eef7017f-7ad1-46ac-b017-dd1368c39aa7",
+          "IsPublished": true,
+          "Name": "Souricière",
+          "Description": "Pendant le premier [tour](/regles/combat/deroulement/tour) d’un [combat](/regles/combat), lorsque le personnage réussit une [attaque](/regles/combat/attaque) contre une créature, alors le [test](/regles/competences/tests) de toute attaque dirigée contre cette créature se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) jusqu’au début du prochain tour du personnage."
+        },
+        {
+          "Id": "326e4df7-38c9-4471-a210-df5fe812f839",
+          "IsPublished": true,
+          "Name": "Embuscade magique",
+          "Description": "Lorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs) contre une créature tout en étant [dissimulé](/regles/combat/attaque/dissimulee) de celle-ci, alors tout [jet de sauvegarde](/regles/competences/tests/sauvegarde) de cette créature contre le pouvoir est affligé du [désavantage](/regles/competences/tests/avantage-desavantage)."
+        },
+        {
+          "Id": "4706bbc2-2c6f-41f1-b176-eb503ee19ba2",
+          "IsPublished": true,
+          "Name": "Empoisonneur",
+          "Description": "Si le personnage a acquis le talent [Trousses](/regles/talents/trousses), ou dès qu’il l’acquiert, alors il acquiert les capacités suivantes :\n\n- Il est formé à l’utilisation de la [trousse d’empoisonneur](/regles/equipement/outils), qui lui permet de concocter des [poisons](/regles/herboristerie/poisons) à partir de ressources naturelles telles du venin ou des plantes vénéneuses qu’il peut acheter, cultiver lui-même ou récolter dans la nature. L’acquisition de ce talent ne lui permet pas d’extraire le venin d’une créature morte ou vivante.\n- Il peut apprendre les poisons de base.\n- Il peut apprendre un nombre de poisons égal à son [rang](/regles/competences/rang) de [Roublardise](/regles/competences/roublardise).\n- Il peut identifier un poison qu’il connait par un [test](/regles/competences/tests) de [Médecine](/regles/competences/medecine) de [difficulté faible](/regles/competences/tests/difficulte). S’il ne connait pas le remède ou le poison, la difficulté est élevée. Il peut également tenter de la même manière d’identifier les herbes vénéneuses, ainsi que les créatures venimeuses.\n- Lorsqu’il identifie ou manipule un poison, il peut substituer un test de Médecine par un test de Roublardise."
+        }
+      ]
+    }
+  },
+  {
     "Id": "5dee7c12-f29d-4a09-b828-38b8ca102ed7",
     "IsPublished": true,
     "Slug": "astromancien",
@@ -737,7 +901,7 @@
           "Id": "41bf8836-a50c-4bd4-9e10-e41dc1b8efdf",
           "IsPublished": true,
           "Name": "Adepte d’artefacts",
-          "Description": "Le personnage peut s’[harmoniser](/regles/magie/artefacts/harmonisation) à un [artefact magique](/regles/magie/artefacts) supplémentaire.\n\nLorsque son [tiers](/regles/personnages/progression/tiers) atteint 3, ce nombre augmente à deux artefacts supplémentaires, et il ignore les [prérequis](/regles/magie/artefacts/harmonisation) (par exemple d’[espèce](/regles/especes) ou de [spécialisation](/regles/specialisations)) lorsqu’il s’harmonise à un artefact magique.\n\nÉgalement, lorsqu’il fabrique un artefact magique de rareté commune ou peu fréquente, il réduit de moitié le temps et les matériaux nécessaires à la fabrication."
+          "Description": "Le personnage peut s’[harmoniser](/regles/magie/artefacts/harmonisation) à un [artefact magique](/regles/magie/artefacts) supplémentaire.\n\nLorsqu’il atteint le [tiers 3](/regles/personnages/progression/tiers), ce nombre augmente à deux artefacts supplémentaires, et il ignore les [prérequis](/regles/magie/artefacts/harmonisation) (par exemple d’[espèce](/regles/especes) ou de [spécialisation](/regles/specialisations)) lorsqu’il s’harmonise à un artefact magique.\n\nÉgalement, lorsqu’il fabrique un artefact magique de rareté commune ou peu fréquente, il réduit de moitié le temps et les matériaux nécessaires à la fabrication."
         },
         {
           "Id": "cccd3f97-57f7-4deb-a8cd-5a0acccd9f54",
@@ -746,10 +910,10 @@
           "Description": "Lorsqu’il voit un allié situé à 9 mètres ou moins de sa position effectuer un [test](/regles/competences/tests) de [compétence](/regles/competences), il peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’ajouter au test un bonus égal à son [Intellect](/regles/attributs/intellect) (minimum&nbsp;1).\n\nIl peut utiliser cette capacité un nombre de fois égal à son Intellect (minimum 1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
         },
         {
-          "Id": "8ee28c82-497b-4cb3-9c2e-8f05a314a96c",
-          "IsPublished": false,
-          "Name": "Accumulateur magique",
-          "Description": "Le personnage peut entreposer un [bricolage magique](#) dans une [arme](/regles/equipement/armes) ou un objet approprié en le [canalisant](/regles/magie/pouvoirs/canalisation).\n\nIl doit ensuite compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité.\n\nLe [pouvoir](/regles/magie/pouvoirs) doit être de tiers 0, et l’[incantation](/regles/magie/parametres/incantation) doit être exactement de [deux actions](/regles/combat/deroulement/tour).\n\nIl peut [Faire 10](/regles/competences/tests/faire-10) à son [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) s’il le désire.\n\nUne créature peut activer l’[objet](/regles/combat/activites/objet) par deux actions afin de [canaliser](/regles/combat/activites/canaliser) le pouvoir au [niveau](/regles/magie/pouvoirs/niveau) entreposé.\n\nElle ne dépense aucun point d’[Énergie](/regles/statistiques/energie), la canalisation ne requiert aucune [composante](/regles/magie/parametres/composantes), et elle réutilise le résultat du test d’Occultisme du personnage.\n\nSi le pouvoir requiert la [concentration](/regles/magie/parametres/duree), la créature doit [se concentrer](/regles/combat/activites/concentration) sur le pouvoir.\n\nL’objet peut être activé un nombre de fois égal à l’[Intellect](/regles/attributs/intellect) (minimum 1) du personnage, puis le pouvoir disparaît. Le pouvoir disparaît également si le personnage entrepose un pouvoir dans un autre objet.\n\nCe nombre d’activations est doublé lorsque le personnage atteint le [tiers 3](/regles/personnages/progression/tiers)."
+          "Id": "3f078896-d3a1-4ceb-8af6-7a956c975554",
+          "IsPublished": true,
+          "Name": "Escamotage magique",
+          "Description": "Lorsque le personnage canalise le pouvoir [Main magique](/regles/magie/pouvoirs/main-magique) au [niveau 1](/regles/magie/pouvoirs/niveau), alors il peut faire effectuer des activités supplémentaires à la main par une [action](/regles/combat/deroulement/tour) :\n\n- Ranger un objet tenu par la main dans un [contenant](/regles/equipement/general/contenants) porté ou tenu par une autre créature.\n- Récupérer un objet d’un contenant porté ou tenu par une autre créature.\n- Utiliser des [outils de voleur](/regles/equipement/outils) afin de crocheter une serrure ou de désamorcer un piège à distance.\n\nIl peut également peut remplacer le [test](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) par un test de [Roublardise](/regles/competences/roublardise) lorsqu’il tente de [dissimuler](/regles/combat/activites/cacher) la main et ses actions.\n\nLorsqu’il atteint le [tiers 3](/regles/personnages/progression/tiers), le personnage peut rendre la main [invisible](/regles/combat/conditions/invisible) en [action libre](/regles/combat/deroulement/tour). Par une [action](/regles/combat/deroulement/tour), il peut également utiliser la main afin de distraire une créature jusqu’à la fin de son [tour](/regles/combat/deroulement/tour), ce qui confère l’[avantage](/regles/competences/tests/avantage-desavantage) au test de ses [attaques](/regles/combat/attaque) dirigées contre cette créature."
         }
       ]
     }
@@ -3151,7 +3315,14 @@
           "Name": "Magie précise"
         }
       ],
-      "Features": []
+      "Features": [
+        {
+          "Id": "546bc9ff-4b57-4b4d-b6e5-03055babcf74",
+          "IsPublished": true,
+          "Name": "Inscription magique",
+          "Description": "Une fois par jour, le personnage peut créer un parchemin de pouvoir. Pour se faire, il doit posséder le [matériel](/regles/equipement/general) suivant : de l’encre, une plume à écrire, ainsi qu’une feuille de papier ou un parchemin.\n\nIl inscrit sur le parchemin un [pouvoir](/regles/magie/pouvoirs) de tiers 1 ou moindre qu’il a acquis, dont l’[incantation](/regles/magie/parametres/incantation) est de [2 actions](/regles/combat/deroulement/tour), et qui ne spécifie aucune composante [Matériel](/regles/magie/parametres/composantes) indiquant un prix.\n\nCette inscription nécessite un nombre de [minutes](/regles/aventure/temps) égal à 1 + [niveau](/regles/magie/pouvoirs/niveau) du pouvoir. Il doit posséder son [grimoire](/regles/talents/astrologie) en tout temps pendant le processus.\n\nSeul le personnage peut lire et utiliser le parchemin de pouvoir. Le parchemin est réduit en cendres lorsqu’il est utilisé, si le personnage crée un nouveau parchemin, ou 24 heures après sa création.\n\nLe personnage doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de créer un nouveau parchemin par cette capacité."
+        }
+      ]
     }
   },
   {
@@ -3280,7 +3451,7 @@
           "Id": "c7a6b7e5-b851-4df2-bd23-2cee8492b3a7",
           "IsPublished": true,
           "Name": "Rituel martial",
-          "Description": "Le personnage peut effectuer un rituel d’une durée d’[une heure](/regles/aventure/temps) en tenant une de ses [armes](/regles/equipement/armes) de mêlée. Il peut effectuer ce rituel pendant une [halte](/regles/aventure/repos/halte).\n\nLe rituel crée un lien magique entre le personnage et cette arme. Il peut créer un nombre maximal de liens égal à son [tiers](/regles/personnages/progression/tiers). S’il effectue le rituel en ayant atteint cette limite, alors il doit briser un lien avec une autre arme.\n\nLorsqu’il manie une arme avec laquelle il a créé un lien, il ne peut être [désarmé](/regles/combat/activites/desarmer) de cette arme, même par [magie](/regles/magie), sauf s’il est [incapable](/regles/combat/conditions/incapable).\n\nSi l’arme et le personnage se trouvent dans la même dimension et qu’il a une main libre, alors il peut l’invoquer par une [action](/regles/combat/deroulement/tour). L’arme se téléporte alors instantanément dans sa main libre.\n\nIl acquiert également les capacités suivantes lorsqu’il manie une de ces armes.\n\n- Lorsqu’il effectue une [Charge](/regles/talents/charge), il peut se téléporter au lieu de courir. Le nombre d’[actions](/regles/combat/deroulement/tour) utilisées et la distance à parcourir restent les mêmes, mais le personnage évite les dangers dus à ce [déplacement](/regles/aventure/mouvement), tels les pièges, les [attaques d’opportunité](/regles/combat/attaque/opportunite) et le [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n- Lorsqu’il réussit une [attaque](/regles/combat/attaque), s’il a acquis le talent [Magie puissante](/regles/talents/magie-puissante), alors le prochain [jet de sauvegarde](/regles/competences/tests/sauvegarde) de la cible contre un [pouvoir](/regles/magie/pouvoirs) canalisé par le personnage avant la fin de son prochain [tour](/regles/combat/deroulement/tour) se voit affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Magie guerrière](/regles/talents/magie-guerriere), alors cette activité ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite), peu importe la [portée](/regles/magie/parametres/portee) du pouvoir.\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Attaque magique](/regles/talents/attaque-magique) et qu’il a utilisé [deux actions](/regles/combat/deroulement/tour) afin de canaliser le pouvoir, alors il peut effectuer une [Attaque magique](/regles/talents/attaque-magique) en [action libre](/regles/combat/deroulement/tour) immédiatement après avoir canalisé le pouvoir."
+          "Description": "Le personnage peut effectuer un rituel d’une durée d’[une heure](/regles/aventure/temps) en tenant une de ses [armes](/regles/equipement/armes) de mêlée. Il peut effectuer ce rituel pendant une [halte](/regles/aventure/repos/halte).\n\nLe rituel crée un lien magique entre le personnage et cette arme. Il peut créer un nombre maximal de liens égal à son [tiers](/regles/personnages/progression/tiers). S’il effectue le rituel en ayant atteint cette limite, alors il doit briser un lien avec une autre arme.\n\nLorsqu’il manie une arme avec laquelle il a créé un lien, il ne peut être [désarmé](/regles/combat/activites/desarmer) de cette arme, même par [magie](/regles/magie), sauf s’il est [incapable](/regles/combat/conditions/incapable).\n\nPar une [action](/regles/combat/deroulement/tour), le personnage peut invoquer une arme avec laquelle il est lié. Si l’arme se trouve dans la même dimension que le personnage, alors celle-ci se téléporte instantanément dans sa main libre.\n\nIl acquiert également les capacités suivantes lorsqu’il manie une de ces armes.\n\n- Lorsqu’il effectue une [Charge](/regles/talents/charge), il peut se téléporter au lieu de courir. Le nombre d’[actions](/regles/combat/deroulement/tour) utilisées et la distance à parcourir restent les mêmes, mais le personnage évite les dangers dus à ce [déplacement](/regles/aventure/mouvement), tels les pièges, les [attaques d’opportunité](/regles/combat/attaque/opportunite) et le [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n- Lorsqu’il réussit une [attaque](/regles/combat/attaque), s’il a acquis le talent [Magie puissante](/regles/talents/magie-puissante), alors le prochain [jet de sauvegarde](/regles/competences/tests/sauvegarde) de la cible contre un [pouvoir](/regles/magie/pouvoirs) canalisé par le personnage avant la fin de son prochain [tour](/regles/combat/deroulement/tour) se voit affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Magie guerrière](/regles/talents/magie-guerriere), alors cette activité ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite), peu importe la [portée](/regles/magie/parametres/portee) du pouvoir.\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser) par [deux actions](/regles/combat/deroulement/tour), s’il a acquis le talent [Attaque magique](/regles/talents/attaque-magique), alors il peut effectuer une [Attaque magique](/regles/talents/attaque-magique) en [action libre](/regles/combat/deroulement/tour) immédiatement après la canalisation."
         }
       ]
     }
@@ -3986,9 +4157,9 @@
     "ReservedTalent": {
       "Name": "Sorcellerie",
       "Description": [
-        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) dès qu’il l’acquiert la spécialisation [Astromancien](/regles/specialisations/astromancien).",
-        "Il peut acquérir les pouvoirs de tiers 2 associés à l’[élément Esprit](#) dès qu’il l’acquiert la spécialisation [Élémentariste](/regles/specialisations/elementariste), si sa spécialité élémentaire est l’Esprit.",
-        "Il peut utiliser une capacité de [Méta-magie](/regles/talents/meta-magie) en dépensant des [points d’essence élémentaire](#) associés à l’Esprit plutôt que des points d’[Énergie](/regles/statistiques/energie). Lorsqu’il en fait ainsi, il dépense un point d’essence élémentaire pour chaque tranche de 10 points d’Énergie dépensée par cette capacité."
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) dès qu’il acquiert la spécialisation [Astromancien](/regles/specialisations/astromancien).",
+        "Il peut acquérir les pouvoirs de tiers 2 associés à l’[élément Esprit](#) dès qu’il acquiert la spécialisation [Élémentariste](/regles/specialisations/elementariste), si sa spécialité élémentaire est l’Esprit.",
+        "Il peut utiliser une capacité de [Méta-magie](/regles/talents/meta-magie) en dépensant des [points d’essence élémentaire](#) associés à l’Esprit plutôt que des points d’[Énergie](/regles/statistiques/energie). Lorsqu’il en fait ainsi, il peut remplacer une ou plusieurs tranches de 10 points d’Énergie par un point d’essence élémentaire par tranche."
       ],
       "DiscountedTalents": [
         {
@@ -4015,13 +4186,13 @@
           "Id": "1f9d60f2-b727-4bbe-9eeb-7519ec860670",
           "IsPublished": true,
           "Name": "Manipulation du chaos",
-          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), avant de savoir si le test est réussi ou échoué, il peut dépenser un [point d’essence élémentaire](#) associé à l’Esprit en [action libre](/regles/combat/deroulement/tour) afin de rejouer le test, et doit utiliser le nouveau résultat.\n\nIl peut également utiliser cette capacité en [réaction](/regles/combat/deroulement/tour) lorsqu’il [voit](/regles/aventure/environnement/vision) une autre créature située à 18 mètres ou moins de sa position effectuer un test de compétence afin de lui conférer un bonus ou une pénalité (1d10), au choix."
+          "Description": "Lorsque le personnage effectue un [test](/regles/competences/tests) de [compétence](/regles/competences), avant d’en connaître le résultat, il peut dépenser un ou deux [points d’essence élémentaire](#) associés à l’Esprit en [action libre](/regles/combat/deroulement/tour) afin de jeter à nouveau [un ou deux dés](/regles/competences/tests/2d10). Cette capacité ne s’applique pas aux [attaques](/regles/combat/attaque), ni aux [jets de sauvegarde](/regles/competences/tests/sauvegarde). Il doit utiliser le nouveau résultat. S’il dépense trois points d’essence élémentaire, alors il peut conserver le résultat de son choix. \n\nÉgalement, lorsqu’il [voit](/regles/aventure/environnement/vision) une autre créature effectuer un test, incluant les attaques et les jets de sauvegarde, il peut utiliser sa [réaction](/regles/combat/deroulement/tour) et dépenser deux points d’essence élémentaire afin de lui conférer un bonus ou de lui affliger une pénalité (1d10), au choix. Il doit utiliser cette capacité avant que le résultat du test ne prenne effet."
         },
         {
           "Id": "9c9d7317-b6bb-4f3e-87b7-95764e0c3804",
           "IsPublished": true,
           "Name": "Surtension magique",
-          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage [canalise](/regles/combat/activites/canaliser) un [pouvoir](/regles/magie/pouvoirs) infligeant des [points de dégâts](/regles/combat/degats), alors il peut dépenser un [point d’essence élémentaire](#) afin d’infliger un nombre de points de dégâts de [force](/regles/combat/degats/types) supplémentaires égal à sa [Puissance](/regles/statistiques/puissance).\n\nÉgalement, lorsqu’il met fin à un pouvoir en canalisant [Protection contre la magie](#), il acquiert un nombre de points d’essence élémentaire égal au tiers du pouvoir (minimum 0)."
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage inflige des [points de dégâts](/regles/combat/degats) en [canalisant](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs), alors il peut dépenser un [point d’essence élémentaire](#) associé à l’Esprit afin d’infliger à une seule créature un nombre de points de dégâts supplémentaires de [force](/regles/combat/degats/types) égal à la moitié de sa [Puissance](/regles/statistiques/puissance).\n\nLorsqu’il atteint le [tiers 3](/regles/personnages/progression/tiers), il peut dépenser deux points d’essence élémentaire plutôt qu’un seul afin d’infliger un nombre de points de dégâts supplémentaires de force égal à sa Puissance.\n\nÉgalement, lorsqu’il met fin à un [pouvoir](/regles/magie/pouvoirs) en utilisant [Protection contre la magie](/regles/magie/pouvoirs/protection-contre-la-magie), il acquiert un nombre de points d’essence élémentaire associés à l’Esprit égal au tiers du pouvoir interrompu (minimum&nbsp;1)."
         }
       ]
     }

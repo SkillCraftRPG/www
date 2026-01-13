@@ -125,6 +125,7 @@ export type ShipPassageCost = {
 
 export type Tool = Item & {
   category: ToolCategory;
+  talents?: string[] | null;
 };
 
 export type ToolCategory = "Crafting" | "PlayingSet" | "MusicalInstrument";
