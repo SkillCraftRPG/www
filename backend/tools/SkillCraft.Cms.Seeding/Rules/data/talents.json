@@ -2540,9 +2540,9 @@
       "Slug": "frappe-precise",
       "Name": "Frappe précise"
     },
-    "Summary": "\uD83D\uDEA7",
-    "MetaDescription": "\uD83D\uDEA7",
-    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il inflige désormais 1d10 + [Force](/regles/statistiques/force) ou [Précision](/regles/statistiques/precision) [points de dégâts](/regles/combat/degats) [contondants](/regles/combat/degats/types) [non létaux](/regles/combat/degats/letalite) lorsqu’il [combat à mains nues](/regles/combat/attaque/mains-nues).\n- Il obtient une [réussite critique](/regles/competences/tests/critique) lorsqu'il effectue une frappe précise contre une créature [prise au dépourvu](/regles/combat/deroulement/depourvu)."
+    "Summary": "Maîtrise avancée du combat à mains nues et du contrôle adverse.",
+    "MetaDescription": "Découvrez Point de conscience : talent martial de haut niveau renforçant le combat à mains nues, les frappes critiques et l’assommement tactique.",
+    "Description": "Le personnage acquiert les capacités suivantes :\n\n- Il inflige désormais 1d10 + [Force](/regles/statistiques/force) ou [Précision](/regles/statistiques/precision) [points de dégâts](/regles/combat/degats) [contondants](/regles/combat/degats/types) [non létaux](/regles/combat/degats/letalite) lorsqu’il [combat à mains nues](/regles/combat/attaque/mains-nues).\n- Il obtient une [réussite critique](/regles/competences/tests/critique) lorsqu'il effectue une [frappe précise](/regles/talents/frappe-precise) contre une créature [prise au dépourvu](/regles/combat/deroulement/depourvu).\n- Lorsqu’il effectue une [frappe puissante](/regles/talents/frappe-puissante), il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) supplémentaires. Si la cible échoue le [jet de sauvegarde](/regles/competences/tests/sauvegarde), alors elle est [assommée](/regles/combat/conditions/assomme) jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) du personnage."
   },
   {
     "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
