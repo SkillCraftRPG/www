@@ -14,16 +14,42 @@
     </p>
     <ul>
       <li>En cas de réussite, le pouvoir prend effet et les points d’Énergie sont dépensés.</li>
-      <li>En cas d’échec, le pouvoir n’est pas canalisé, et les points d’Énergie sont perdus.</li>
+      <li>
+        En cas d’échec, le pouvoir n’est pas canalisé, et les composantes <NuxtLink to="/regles/magie/parametres/composantes">Matériel</NuxtLink> ne sont pas
+        dépensées. Les conséquences suivantes remplacent les <NuxtLink to="/regles/competences/esperance-damnation">points de Damnation</NuxtLink>.
+        <ul>
+          <li><i>Échec avec Espérance.</i> Aucun point d’Énergie n’est dépensé.</li>
+          <li><i>Échec avec Damnation.</i> La moitié des points d’Énergie sont dépensés.</li>
+          <li><i>Échec critique.</i> La moitié des points d’Énergie sont dépensés, et la créature subit une <strong>mésaventure magique</strong> aléatoire.</li>
+        </ul>
+      </li>
     </ul>
     <p>
       Une créature peut canaliser plusieurs pouvoirs dans un même <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>. Chaque test d’Occultisme est
       effectué indépendamment, et chaque canalisation engendre une dépense en points d’Énergie. Par exemple, une créature pourrait :
     </p>
     <ul>
-      <li>Canaliser jusqu’à trois fois un pouvoir dont l’<NuxtLink to="/regles/magie/parametres/incantation">incantation</NuxtLink> est d’une seule action.</li>
-      <li>Canaliser un pouvoir dont l’incantation est d’une seule action ainsi qu’un pouvoir dont l’incantation est de deux actions.</li>
+      <li>
+        Canaliser jusqu’à trois fois un pouvoir dont l’<NuxtLink to="/regles/magie/parametres/incantation">incantation</NuxtLink> est d’une seule
+        <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink>.
+      </li>
+      <li>
+        Canaliser un pouvoir dont l’incantation est d’une seule action ainsi qu’un pouvoir dont l’incantation est de deux
+        <NuxtLink to="/regles/combat/deroulement/tour">actions</NuxtLink>.
+      </li>
     </ul>
+    <h2 class="h3">Mésaventures magiques</h2>
+    <p>La liste suivante présente des mésaventures magiques. Pour déterminer une mésaventure magique aléatoirement, 🚧</p>
+    <ol>
+      <li>
+        Pendant la prochaine <NuxtLink to="/regles/aventure/temps">minute</NuxtLink>, au début de chacun de vos
+        <NuxtLink to="/regles/combat/deroulement/tour">tours</NuxtLink>, vous subissez une mésaventure aléatoire. Ignorez ce résultat.
+      </li>
+      <li class="text-danger">
+        Pendant la prochaine minute, vous pouvez <NuxtLink to="/regles/aventure/environnement/vision">voir</NuxtLink> les créatures et objets
+        <NuxtLink to="/regles/combat/conditions/invisible">invisibles</NuxtLink>.
+      </li>
+    </ol>
   </main>
 </template>
 
@@ -40,9 +66,4 @@ useSeo({
   title,
   description: "Découvrez comment canaliser un pouvoir via un test d’Occultisme, réussissez ou perdez vos points d’Énergie.",
 });
-
-// TODO(fpion): réussite avec Damnation
-// TODO(fpion): échec avec Damnation
-// TODO(fpion): échec critique
-// TODO(fpion): Sorcier — Manipulation du chaos
 </script>
