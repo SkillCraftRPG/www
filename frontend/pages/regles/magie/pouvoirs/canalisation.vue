@@ -12,17 +12,15 @@
       Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> du test est égal au nombre de
       <NuxtLink to="/regles/magie/pouvoirs/energie">points d’Énergie dépensés</NuxtLink>.
     </p>
+    <p>En cas de réussite, le pouvoir prend effet et les points d’Énergie sont dépensés.</p>
+    <p>
+      En cas d’échec, le pouvoir n’est pas canalisé, et les composantes <NuxtLink to="/regles/magie/parametres/composantes">Matériel</NuxtLink> ne sont pas
+      dépensées. Les conséquences suivantes remplacent les <NuxtLink to="/regles/competences/esperance-damnation">points de Damnation</NuxtLink>.
+    </p>
     <ul>
-      <li>En cas de réussite, le pouvoir prend effet et les points d’Énergie sont dépensés.</li>
-      <li>
-        En cas d’échec, le pouvoir n’est pas canalisé, et les composantes <NuxtLink to="/regles/magie/parametres/composantes">Matériel</NuxtLink> ne sont pas
-        dépensées. Les conséquences suivantes remplacent les <NuxtLink to="/regles/competences/esperance-damnation">points de Damnation</NuxtLink>.
-        <ul>
-          <li><i>Échec avec Espérance.</i> Aucun point d’Énergie n’est dépensé.</li>
-          <li><i>Échec avec Damnation.</i> La moitié des points d’Énergie sont dépensés.</li>
-          <li><i>Échec critique.</i> La moitié des points d’Énergie sont dépensés, et la créature subit une <strong>mésaventure magique</strong> aléatoire.</li>
-        </ul>
-      </li>
+      <li><i>Échec avec Espérance.</i> Aucun point d’Énergie n’est dépensé.</li>
+      <li><i>Échec avec Damnation.</i> La moitié des points d’Énergie sont dépensés.</li>
+      <li><i>Échec critique.</i> La moitié des points d’Énergie sont dépensés, et la créature subit une <strong>mésaventure magique</strong> aléatoire.</li>
     </ul>
     <p>
       Une créature peut canaliser plusieurs pouvoirs dans un même <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>. Chaque test d’Occultisme est
