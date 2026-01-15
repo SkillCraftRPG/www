@@ -3187,6 +3187,112 @@
     }
   },
   {
+    "Id": "3a9d33b0-6e52-4dd6-bca5-77a945c1e450",
+    "IsPublished": true,
+    "Slug": "haut-mage",
+    "Name": "Haut Mage",
+    "Tier": 3,
+    "Summary": "Maîtrise érudite d’un cercle magique et accès aux secrets arcaniques majeurs.",
+    "MetaDescription": "Découvrez le Haut Mage : maître érudit d’un cercle de magie, détenteur de secrets avancés d’astromancie et d’une maîtrise magique exceptionnelle.",
+    "Description": "Lorsqu’un mage maîtrise suffisamment le corpus d’un Cercle de Magie afin de pouvoir l’enseigner, alors il peut tenter l’examen qui lui permettra de devenir Haut Mage s’il le réussit. Cet examen est particulièrement difficile puisqu’il est composé d’épreuves surprises auxquelles on peut difficilement s’y préparer. De plus, après un certain nombre de tentatives échouées, le mage ne peut plus tenter cet examen à sa Tour de Magie. En devenant Haut Mage, il acquiert le respect de ses collègues et accède aux secrets de son Cercle de Magie.",
+    "Requirements": {
+      "Talent": {
+        "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+        "IsPublished": true,
+        "Slug": "magie-precise",
+        "Name": "Magie précise"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Mage](/regles/specialisations/mage).",
+        "Il ne doit pas avoir acquis la spécialisation [Archimage](/regles/specialisations/archimage).",
+        "Il doit également avoir acquis un [pouvoir](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) associé à son [cercle de magie. Les pouvoirs acquis gratuitement ne satisfont pas cette condition."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "32cfc88b-c313-49fd-8ac5-70e54b67b0a0",
+          "IsPublished": true,
+          "Slug": "endurance-superieure",
+          "Name": "Endurance supérieure"
+        },
+        {
+          "Id": "db16d90c-099e-45ce-8321-c174eeb38a0b",
+          "IsPublished": true,
+          "Slug": "optimisation-magique",
+          "Name": "Optimisation magique"
+        },
+        {
+          "Id": "c0763232-4170-4b97-a2d8-3fcd55ea5814",
+          "IsPublished": true,
+          "Slug": "synergie-alphabetique",
+          "Name": "Synergie alphabétique"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "3b6590da-409b-4c4d-94a0-648630de73da",
+          "IsPublished": true,
+          "Slug": "mener-par-l-exemple",
+          "Name": "Mener par l’exemple"
+        },
+        {
+          "Id": "bd4005cc-0689-4c5c-8436-fe10f06c1edc",
+          "IsPublished": true,
+          "Slug": "attaque-magique",
+          "Name": "Attaque magique"
+        },
+        {
+          "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+          "IsPublished": true,
+          "Slug": "erudition",
+          "Name": "Érudition"
+        },
+        {
+          "Id": "d3042400-af91-41df-b7ce-2c36ed19df6e",
+          "IsPublished": true,
+          "Slug": "mythologie",
+          "Name": "Mythologie"
+        },
+        {
+          "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+          "IsPublished": true,
+          "Slug": "resilience",
+          "Name": "Résilience"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 2 d’[astromancie](#) associés à son cercle de magie."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Haute magie",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 3 d’[astromancie](#) et acquiert gratuitement un de ces pouvoirs.",
+        "Il acquiert les deux capacités de tiers 3 spécifiques au [cercle de magie](#) sélectionné lorsqu’il a acquis la spécialisation [Mage](/regles/specialisations/mage)."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "e33273ff-96d6-4731-b55f-661a1d2b9bcc",
+          "IsPublished": true,
+          "Name": "Maîtrise magique",
+          "Description": "Le personnage sélectionne un [pouvoir](/regles/magie/pouvoirs) d’[astromancie](/regles/astromancie) de tiers 0 ou 1 qu’il connaît.\n\nLorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) ce pouvoir au [niveau](/regles/magie/pouvoirs/niveau) 2 ou moins, il ne [dépense](/regles/magie/pouvoirs/energie) qu’un seul point d’[Énergie](/regles/statistiques/energie), et son [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage).\n\nIl peut changer ce pouvoir lorsqu’il complète une [nuit de sommeil](/regles/aventure/repos/sommeil), ou en étudiant un autre pouvoir pendant [8 heures](/regles/aventure/temps) consécutives, sans interruption. Il peut effectuer cette analyse à la [halte](/regles/aventure/repos/halte) et en [méditant](/regles/talents/meditation)."
+        }
+      ]
+    }
+  },
+  {
     "Id": "031d639d-26cc-4ffe-ab94-c81e2ab7dfb4",
     "IsPublished": true,
     "Slug": "illusionniste",
@@ -3588,6 +3694,142 @@
           "IsPublished": true,
           "Name": "Rituel martial",
           "Description": "Le personnage peut effectuer un rituel d’une durée d’[une heure](/regles/aventure/temps) en tenant une de ses [armes](/regles/equipement/armes) de mêlée. Il peut effectuer ce rituel pendant une [halte](/regles/aventure/repos/halte).\n\nLe rituel crée un lien magique entre le personnage et cette arme. Il peut créer un nombre maximal de liens égal à son [tiers](/regles/personnages/progression/tiers). S’il effectue le rituel en ayant atteint cette limite, alors il doit briser un lien avec une autre arme.\n\nLorsqu’il manie une arme avec laquelle il a créé un lien, il ne peut être [désarmé](/regles/combat/activites/desarmer) de cette arme, même par [magie](/regles/magie), sauf s’il est [incapable](/regles/combat/conditions/incapable).\n\nPar une [action](/regles/combat/deroulement/tour), le personnage peut invoquer une arme avec laquelle il est lié. Si l’arme se trouve dans la même dimension que le personnage, alors celle-ci se téléporte instantanément dans sa main libre.\n\nIl acquiert également les capacités suivantes lorsqu’il manie une de ces armes.\n\n- Lorsqu’il effectue une [Charge](/regles/talents/charge), il peut se téléporter au lieu de courir. Le nombre d’[actions](/regles/combat/deroulement/tour) utilisées et la distance à parcourir restent les mêmes, mais le personnage évite les dangers dus à ce [déplacement](/regles/aventure/mouvement), tels les pièges, les [attaques d’opportunité](/regles/combat/attaque/opportunite) et le [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n- Lorsqu’il réussit une [attaque](/regles/combat/attaque), s’il a acquis le talent [Magie puissante](/regles/talents/magie-puissante), alors le prochain [jet de sauvegarde](/regles/competences/tests/sauvegarde) de la cible contre un [pouvoir](/regles/magie/pouvoirs) canalisé par le personnage avant la fin de son prochain [tour](/regles/combat/deroulement/tour) se voit affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser), s’il a acquis le talent [Magie guerrière](/regles/talents/magie-guerriere), alors cette activité ne déclenche pas d’[attaque d’opportunité](/regles/combat/attaque/opportunite), peu importe la [portée](/regles/magie/parametres/portee) du pouvoir.\n- Lorsqu’il effectue l’activité [Canaliser](/regles/combat/activites/canaliser) par [deux actions](/regles/combat/deroulement/tour), s’il a acquis le talent [Attaque magique](/regles/talents/attaque-magique), alors il peut effectuer une [Attaque magique](/regles/talents/attaque-magique) en [action libre](/regles/combat/deroulement/tour) immédiatement après la canalisation."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "0d5c14d0-d968-4091-be46-3d6ac3446cee",
+    "IsPublished": true,
+    "Slug": "maitre-elementaire",
+    "Name": "Maître-élémentaire",
+    "Tier": 3,
+    "Summary": "Maîtrise totale d’un élément et accès aux pouvoirs élémentaires suprêmes.",
+    "MetaDescription": "Découvrez le Maître-élémentaire : élémancien de tiers 3 ayant atteint la maîtrise absolue d’un élément et capable de déchaîner des pouvoirs élémentaires ultime…",
+    "Description": "Le maître-élémentaire est un Élémancien ayant parfait sa faculté à contrôler l’énergie d’un élément. Cette maîtrise lui permet d’accéder les pouvoirs élémentaires les plus puissants. L’atteinte de cette maîtrise est un exploit en soi, puisqu’il nécessite une grande puissante brute et une maîtrise de soi, talents qui sont rarement distribués au même individu.",
+    "Requirements": {
+      "Talent": {
+        "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+        "IsPublished": true,
+        "Slug": "magie-guerriere",
+        "Name": "Magie guerrière"
+      },
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Élémancien](/regles/specialisations/elemancien).",
+        "Il ne doit pas avoir acquis la spécialisation [Éthermancien](/regles/specialisations/ethermancien)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "74548cb7-c65b-4882-b353-5bbb0d760a7a",
+          "IsPublished": true,
+          "Slug": "fourberie",
+          "Name": "Fourberie"
+        },
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
+          "IsPublished": true,
+          "Slug": "provocation",
+          "Name": "Provocation"
+        },
+        {
+          "Id": "2c09d822-56f7-45bc-a6c7-8a281013e682",
+          "IsPublished": true,
+          "Slug": "robustesse-superieure",
+          "Name": "Robustesse supérieure"
+        },
+        {
+          "Id": "32cfc88b-c313-49fd-8ac5-70e54b67b0a0",
+          "IsPublished": true,
+          "Slug": "endurance-superieure",
+          "Name": "Endurance supérieure"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "5b25e5de-53dc-443a-b9e0-71e3c251c3c5",
+          "IsPublished": true,
+          "Slug": "maitre-artisan",
+          "Name": "Maître-artisan"
+        },
+        {
+          "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+          "IsPublished": true,
+          "Slug": "magie-precise",
+          "Name": "Magie précise"
+        },
+        {
+          "Id": "bd4005cc-0689-4c5c-8436-fe10f06c1edc",
+          "IsPublished": true,
+          "Slug": "attaque-magique",
+          "Name": "Attaque magique"
+        },
+        {
+          "Id": "9f0c90cc-29b8-4fb6-b4c8-fe930b3042d7",
+          "IsPublished": true,
+          "Slug": "attaque-precise",
+          "Name": "Attaque précise"
+        },
+        {
+          "Id": "0fa21f56-552e-48cb-b504-fbfa078fce12",
+          "IsPublished": true,
+          "Slug": "chasse-mage",
+          "Name": "Chasse-mage"
+        },
+        {
+          "Id": "69c6a792-9570-4acb-a081-ba9fa11f2c1e",
+          "IsPublished": true,
+          "Slug": "frappe-precise",
+          "Name": "Frappe précise"
+        },
+        {
+          "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+          "IsPublished": true,
+          "Slug": "resilience",
+          "Name": "Résilience"
+        },
+        {
+          "Id": "2bfa4236-95c0-4128-aee4-2bc68e4b330e",
+          "IsPublished": true,
+          "Slug": "hostilite-perturbatrice",
+          "Name": "Hostilité perturbatrice"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 1 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Maîtrise élémentaire",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 3 associés à sa [spécialité élémentaire](/regles/specialisations/elementariste) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut également acquérir les pouvoirs de tiers 3 associés à une [combinaison élémentaire](#) incluant sa spécialité.",
+        "Il peut utiliser de puissantes [capacités élémentaires](#) de tiers 3."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "187a2842-754d-49d8-a5ba-6dccb51f943c",
+          "IsPublished": true,
+          "Name": "Union élémentaire",
+          "Description": "La première fois que le personnage acquiert le talent [Fermeté élémentaire](/regles/talents/fermete-elementaire) en sélectionnant l’élément de sa [spécialité élémentaire](/regles/specialisations/elementariste), il le fait au coût de [2 points de talent](/regles/talents/points) seulement.\n\nIl peut également acquérir [à rabais](/regles/talents/points) un talent en fonction de sa spécialité élémentaire.\n\n- Air : [Mythomane](/regles/talents/mythomane)\n- Eau : [Conjecture](/regles/talents/conjecture)\n- Feu : [Poigne de fer](/regles/talents/poigne-de-fer)\n- Terre : [Robustesse extraordinaire](/regles/talents/robustesse-extraordinaire)"
+        },
+        {
+          "Id": "db565775-3e5f-440e-bf22-6c976a8a3fda",
+          "IsPublished": true,
+          "Name": "Brûlure élémentaire",
+          "Description": "Lorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs) associé à sa [spécialité élémentaire](/regles/specialisations/elementariste), il peut dépenser des points d’[essence élémentaire](#) en [action libre](/regles/combat/deroulement/tour). Pour chaque point d’essence élémentaire dépensé :\n\n- La [dépense d’Énergie](/regles/magie/pouvoirs/energie) est réduite de 10 points.\n- Le [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) se voit conférer un [avantage](/regles/competences/tests/avantage-desavantage).\n- Si le pouvoir inflige des [points de dégâts](/regles/combat/degats), alors il inflige [1d4 points de dégâts](/regles/combat/degats/jet) supplémentaires."
         }
       ]
     }
