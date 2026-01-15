@@ -73,6 +73,10 @@ button:disabled {
   width: 80% !important;
 }
 
+.w-90 {
+  width: 90% !important;
+}
+
 .w-eighth {
   width: 12.5% !important;
 }

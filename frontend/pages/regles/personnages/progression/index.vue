@@ -29,18 +29,17 @@ const items: MenuItem[] = [
   {
     path: "/regles/personnages/progression/experience",
     title: "Expérience",
-    description: "La mesure la plus spécifique, elle est acquise lorsque certains objectifs sont atteints.",
+    description: "La mesure la plus spécifique, elle est obtenue lorsque certains objectifs sont atteints.",
   },
   {
     path: "/regles/personnages/progression/niveau",
     title: "Niveau",
-    description:
-      "Une mesure plus générale, le niveau augmente lorsque l’expérience atteint un certain seuil. En montant de niveau, le personnage peut améliorer ses capacités ou en acquérir de nouvelles.",
+    description: "Une mesure plus générale, le niveau augmente lorsque l’expérience atteint un certain seuil.",
   },
   {
     path: "/regles/personnages/progression/tiers",
     title: "Tiers",
-    description: "La mesure la plus globale, elle augmente lorsque le personnage se spécialise. Le tiers limite la puissante maximale de ses capacités.",
+    description: "La mesure la plus globale, elle limite la puissance maximale des capacités.",
   },
 ];
 

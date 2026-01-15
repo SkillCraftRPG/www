@@ -2921,6 +2921,142 @@
     }
   },
   {
+    "Id": "98239036-9dd2-4738-8bed-e9f52a0b1ed0",
+    "IsPublished": true,
+    "Slug": "grand-pretre",
+    "Name": "Grand-Prêtre",
+    "Tier": 3,
+    "Summary": "Canal suprême de la volonté divine et de pouvoirs sacrés majeurs.",
+    "MetaDescription": "Découvrez le Grand-Prêtre : élu divin de tiers 3, canal de la volonté de sa divinité, capable d’invocations sacrées et d’interventions divines décisives.",
+    "Description": "Seuls les prêtres les plus fervents de leur divinité peuvent atteindre le titre de Grand-Prêtre. La dédication nécessaire afin d’y accéder est si grande qu’ils sont considérés comme des élus de leur divinité au sein de leur clergé. La puissance issue de la relation entre le Grand-Prêtre et sa divinité est souvent crainte et appréhendée, mais cette puissance reste néanmoins précieuse dans de nombreuses situations.",
+    "Requirements": {
+      "Talent": null,
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Prêtre](/regles/specialisations/).",
+        "Il doit également avoir acquis un [pouvoir](/regles/magie/pouvoirs) de tiers 2 associé à son [domaine divin](/regles/domaines/divins). Les pouvoirs acquis gratuitement ne satisfont pas cette condition."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
+          "IsPublished": true,
+          "Slug": "provocation",
+          "Name": "Provocation"
+        },
+        {
+          "Id": "32cfc88b-c313-49fd-8ac5-70e54b67b0a0",
+          "IsPublished": true,
+          "Slug": "endurance-superieure",
+          "Name": "Endurance supérieure"
+        },
+        {
+          "Id": "db16d90c-099e-45ce-8321-c174eeb38a0b",
+          "IsPublished": true,
+          "Slug": "optimisation-magique",
+          "Name": "Optimisation magique"
+        },
+        {
+          "Id": "c0763232-4170-4b97-a2d8-3fcd55ea5814",
+          "IsPublished": true,
+          "Slug": "synergie-alphabetique",
+          "Name": "Synergie alphabétique"
+        },
+        {
+          "Id": "3b6590da-409b-4c4d-94a0-648630de73da",
+          "IsPublished": true,
+          "Slug": "mener-par-l-exemple",
+          "Name": "Mener par l’exemple"
+        },
+        {
+          "Id": "f7157b4f-b65e-4eff-a66e-58d0a5c7f7be",
+          "IsPublished": true,
+          "Slug": "extraction-du-poison",
+          "Name": "Extraction du poison"
+        },
+        {
+          "Id": "398cfada-90d4-4e78-ad70-8a96c3f301cc",
+          "IsPublished": true,
+          "Slug": "apothicairerie",
+          "Name": "Apothicairerie"
+        },
+        {
+          "Id": "3a4edafe-1fab-4e58-9e2c-19602869caee",
+          "IsPublished": true,
+          "Slug": "magie-guerriere",
+          "Name": "Magie guerrière"
+        },
+        {
+          "Id": "e6626de7-06c5-41e9-8853-3917a829cf8d",
+          "IsPublished": true,
+          "Slug": "magie-precise",
+          "Name": "Magie précise"
+        },
+        {
+          "Id": "bd4005cc-0689-4c5c-8436-fe10f06c1edc",
+          "IsPublished": true,
+          "Slug": "attaque-magique",
+          "Name": "Attaque magique"
+        },
+        {
+          "Id": "0fa21f56-552e-48cb-b504-fbfa078fce12",
+          "IsPublished": true,
+          "Slug": "chasse-mage",
+          "Name": "Chasse-mage"
+        },
+        {
+          "Id": "d3042400-af91-41df-b7ce-2c36ed19df6e",
+          "IsPublished": true,
+          "Slug": "mythologie",
+          "Name": "Mythologie"
+        },
+        {
+          "Id": "194bc5f5-6951-47c1-b618-9272c0dc3711",
+          "IsPublished": true,
+          "Slug": "resilience",
+          "Name": "Résilience"
+        },
+        {
+          "Id": "2bfa4236-95c0-4128-aee4-2bc68e4b330e",
+          "IsPublished": true,
+          "Slug": "hostilite-perturbatrice",
+          "Name": "Hostilité perturbatrice"
+        }
+      ],
+      "Other": [
+        "[Pouvoirs](/regles/magie/pouvoirs) de tiers 2 associés à son [domaine divin](/regles/domaines/divins)."
+      ]
+    },
+    "ReservedTalent": {
+      "Name": "Élu divin",
+      "Description": [
+        "Il peut acquérir les [pouvoirs](/regles/magie/pouvoirs) de tiers 3 associés à son [domaine divin](/regles/domaines/divins) et acquiert gratuitement un de ces pouvoirs.",
+        "Il peut maintenant invoquer un [pouvoir divin](/regles/specialisations/clerc) trois fois par jour. Il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+      ],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "e8257110-377c-4ce1-a80f-4ca1ca72fb38",
+          "IsPublished": true,
+          "Name": "Intervention divine",
+          "Description": "Le personnage peut implorer l’aide de sa divinité par une prière personnalisée d’une durée minimale d’[une minute](/regles/aventure/temps) afin de formuler une requête.\n\nLe maître de jeu décide si la divinité lui accorde sa requête, l’ignore, ou laisse le hasard décider en jetant 1d100 (la divinité intervient si le résultat est inférieur ou égal au [niveau](/regles/personnages/progression/niveau) du personnage).\n\nSi la divinité intervient, le personnage ne peut réutiliser cette capacité pendant les 7 prochains jours. Sinon, il doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+        },
+        {
+          "Id": "339611b3-edfc-4cb2-bf8b-80edd1997598",
+          "IsPublished": true,
+          "Name": "Magie suprême",
+          "Description": "Une fois par [tour](/regles/combat/deroulement/tour), lorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) un [pouvoir](/regles/magie/pouvoirs) associé à son [domaine divin](/regles/domaines/divins) et infligeant des [points de dégâts](/regles/combat/degats), il peut ajouter ses [Sens](/regles/attributs/sens) (minimum&nbsp;1) aux points de dégâts infligés."
+        }
+      ]
+    }
+  },
+  {
     "Id": "9a72eb55-a360-4ccb-b62b-069810f171fe",
     "IsPublished": true,
     "Slug": "haruspice",

@@ -35,6 +35,11 @@ const items: MenuItem[] = [
     title: "Domaines d’animisme",
     description: "🚧",
   },
+  {
+    path: "/regles/elementarisme",
+    title: "Élémentarisme",
+    description: "🚧",
+  },
 ];
 
 useSeo({

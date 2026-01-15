@@ -27,7 +27,7 @@
     "Kind": "Gift",
     "Summary": "Permet de communiquer et d’interagir plus facilement avec les animaux.",
     "MetaDescription": "Découvrez Affinité animale, un don permettant de communiquer avec les bêtes, comprendre leur comportement et leur donner des ordres simples.",
-    "Description": "En interagissant ou en observant un animal pendant au moins [une minute](/regles/aventure/temps), permet au personnage de communiquer des idées simples à l’animal, et de comprendre son comportement et ses réactions.\n\nÉgalement, une fois par [tour](/regles/combat/deroulement/tour), il peut donner un ordre à un animal qu’il a dressé en [action libre](/regles/combat/deroulement/tour)."
+    "Description": "En interagissant ou en observant un animal pendant au moins [une minute](/regles/aventure/temps), permet au personnage de communiquer des idées simples à l’animal, et de comprendre son comportement et ses réactions.\n\nÉgalement, il peut donner un ordre en [action libre](/regles/combat/deroulement/tour) à un animal qu’il a [dressé](/regles/talents/dressage) un nombre de fois par [tour](/regles/combat/deroulement/tour) égal à son [tiers](/regles/personnages/progression/tiers)."
   },
   {
     "Id": "b85b4be7-8002-4637-8735-cfb744e08f6f",
