@@ -7,37 +7,43 @@
       <NuxtLink to="/regles/domaines/divins">domaine divin</NuxtLink> ou un <strong>domaine d’animisme</strong>. Il ne peut acquérir qu’un seul de ces domaines
       et ne peut jamais changer celui-ci.
     </p>
-    <p>
-      Lorsqu’il sélectionne un domaine d’animisme, il acquiert la capacité de <NuxtLink to="/regles/personnages/progression/tiers">tiers 0</NuxtLink> de ce
-      domaine, un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> associé à celui-ci, et peut désormais acquérir les pouvoirs de tiers 0 de ce domaine.
-    </p>
-    <p>
-      Lorsqu’il acquiert la spécialisation <NuxtLink to="/regles/specialisations/animiste">Animiste</NuxtLink>, il acquiert la capacité de tiers 1 de ce domaine
-      d’animisme. Les domaines d’animisme se divisent en deux catégories : les domaines&nbsp;spirituels ainsi que les domaines&nbsp;naturels.
-    </p>
+    <p>Les domaines d’animisme sont associés à une ou deux catégories : <strong>naturel</strong> et <strong>spirituel</strong>.</p>
     <ul>
-      <li>
-        Les domaines spirituels lui permettent d’acquérir les spécialisations <NuxtLink to="/regles/specialisations/chaman">Chaman</NuxtLink> et
-        <NuxtLink to="/regles/specialisations/totem">Totem</NuxtLink>, qui lui confèrent respectivement une capacité de tiers 2 et deux capacités de tiers 3
-        associées à ce domaine.
-      </li>
       <li>
         Les domaines naturels lui permettent d’acquérir les spécialisations <NuxtLink to="/regles/specialisations/druide">Druide</NuxtLink> et
         <NuxtLink to="/regles/specialisations/archidruide">Archidruide</NuxtLink>, qui lui confèrent respectivement une capacité de tiers 2 et deux capacités de
         tiers 3 associées à ce domaine.
       </li>
+      <li>
+        Les domaines spirituels lui permettent d’acquérir les spécialisations <NuxtLink to="/regles/specialisations/chaman">Chaman</NuxtLink> et
+        <NuxtLink to="/regles/specialisations/totem">Totem</NuxtLink>, qui lui confèrent respectivement une capacité de tiers 2 et deux capacités de tiers 3
+        associées à ce domaine.
+      </li>
     </ul>
+    <p>
+      Lorsque le personnage sélectionne un domaine d’animisme, il doit sélectionner une des catégories associées à ce domaine. Il ne peut sélectionner qu’une
+      seule catégorie et ne peut jamais changer celle-ci.
+    </p>
+    <p>
+      Il acquiert la capacité de <NuxtLink to="/regles/personnages/progression/tiers">tiers 0</NuxtLink> associée à ce domaine. Il peut désormais acquérir les
+      <NuxtLink to="/regles/magie/pouvoirs">pouvoirs</NuxtLink> de tiers 0 associés à la catégorie sélectionnée et acquiert gratuitement un de ces pouvoirs.
+    </p>
+    <p>
+      Lorsqu’il acquiert la spécialisation <NuxtLink to="/regles/specialisations/animiste">Animiste</NuxtLink>, le personnage acquiert la capacité de tiers 1
+      associée à ce domaine d’animisme.
+    </p>
     <h2 class="h3">Liste des domaines</h2>
-    <h3 class="h5">Domaines naturels</h3>
+    <p>Les domaines suivants sont associés aux deux catégories (naturel et spirituel).</p>
     <div class="row">
-      <div v-for="(item, index) in domains.natural" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      <div v-for="(domain, index) in genericDomains" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="domain.title" :to="domain.path" />
       </div>
     </div>
-    <h3 class="h5">Domaines spirituels</h3>
+    <h3 class="h5">Domaines spécifiques</h3>
+    <p>Les domaines suivants sont associés à une seule catégorie.</p>
     <div class="row">
-      <div v-for="(item, index) in domains.spiritual" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+      <div v-for="(domain, index) in specificDomains" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="`${domain.title} (${domain.category})`" :to="domain.path" />
       </div>
     </div>
     <h2 class="h3">Liste des pouvoirs</h2>
@@ -57,10 +63,13 @@
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+
 import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Domaines d’animisme";
+const { orderBy } = arrayUtils;
 
 type MenuItem = {
   path: string;
@@ -68,31 +77,63 @@ type MenuItem = {
   description: string;
 };
 
-type Domains = {
-  natural: MenuItem[];
-  spiritual: MenuItem[];
+type Domain = MenuItem & {
+  category?: "Naturel" | "Spirituel";
 };
-const domains: Domains = {
-  natural: [
-    {
-      path: "/regles/domaines/animisme/mycetes",
-      title: "Mycètes",
-      description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
-    },
-    {
-      path: "/regles/domaines/animisme/terre",
-      title: "Terre",
-      description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
-    },
-  ],
-  spiritual: [
-    {
-      path: "/regles/domaines/animisme/berger",
-      title: "Berger",
-      description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
-    },
-  ],
-};
+const domains = ref<Domain[]>([
+  {
+    path: "#",
+    title: "Ancêtres",
+    description: "🚧",
+  },
+  {
+    path: "#",
+    title: "Astres",
+    description: "🚧",
+  },
+  {
+    path: "/regles/domaines/animisme/berger",
+    title: "Berger",
+    description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
+  },
+  {
+    path: "#",
+    title: "Feu",
+    description: "🚧",
+    category: "Spirituel",
+  },
+
+  {
+    path: "#",
+    title: "Lune",
+    description: "🚧",
+  },
+  {
+    path: "/regles/domaines/animisme/mycetes",
+    title: "Mycètes",
+    description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
+  },
+
+  {
+    path: "#",
+    title: "Rêves",
+    description: "🚧",
+    category: "Naturel",
+  },
+  {
+    path: "/regles/domaines/animisme/terre",
+    title: "Terre",
+    description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
+  },
+]);
+const genericDomains = orderBy(
+  domains.value.filter(({ category }) => typeof category !== "string"),
+  "title",
+);
+const specificDomains = orderBy(
+  domains.value.filter(({ category }) => typeof category === "string"),
+  "title",
+);
 
 type Spells = {
   tier0: MenuItem[];
