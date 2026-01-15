@@ -35,15 +35,15 @@
     <h2 class="h3">Liste des domaines</h2>
     <p>Les domaines suivants sont associés aux deux catégories (naturel et spirituel).</p>
     <div class="row">
-      <div v-for="(domain, index) in genericDomains" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(domain, index) in domains.generic" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="domain.title" :to="domain.path" />
       </div>
     </div>
     <h3 class="h5">Domaines spécifiques</h3>
     <p>Les domaines suivants sont associés à une seule catégorie.</p>
     <div class="row">
-      <div v-for="(domain, index) in specificDomains" :key="index" class="col-xs-12 col-sm-6 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="`${domain.title} (${domain.category})`" :to="domain.path" />
+      <div v-for="(domain, index) in domains.specific" :key="index" class="col-xs-12 col-sm-6 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="domain.title" :to="domain.path" />
       </div>
     </div>
     <h2 class="h3">Liste des pouvoirs</h2>
@@ -63,13 +63,10 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
-
 import type { Breadcrumb } from "~/types/components";
 
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Domaines d’animisme";
-const { orderBy } = arrayUtils;
 
 type MenuItem = {
   path: string;
@@ -80,60 +77,56 @@ type MenuItem = {
 type Domain = MenuItem & {
   category?: "Naturel" | "Spirituel";
 };
-const domains = ref<Domain[]>([
-  {
-    path: "#",
-    title: "Ancêtres",
-    description: "🚧",
-  },
-  {
-    path: "#",
-    title: "Astres",
-    description: "🚧",
-  },
-  {
-    path: "/regles/domaines/animisme/berger",
-    title: "Berger",
-    description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
-  },
-  {
-    path: "#",
-    title: "Feu",
-    description: "🚧",
-    category: "Spirituel",
-  },
-
-  {
-    path: "#",
-    title: "Lune",
-    description: "🚧",
-  },
-  {
-    path: "/regles/domaines/animisme/mycetes",
-    title: "Mycètes",
-    description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
-  },
-
-  {
-    path: "#",
-    title: "Rêves",
-    description: "🚧",
-    category: "Naturel",
-  },
-  {
-    path: "/regles/domaines/animisme/terre",
-    title: "Terre",
-    description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
-  },
-]);
-const genericDomains = orderBy(
-  domains.value.filter(({ category }) => typeof category !== "string"),
-  "title",
-);
-const specificDomains = orderBy(
-  domains.value.filter(({ category }) => typeof category === "string"),
-  "title",
-);
+type Domains = {
+  generic: Domain[];
+  specific: Domain[];
+};
+const domains: Domains = {
+  generic: [
+    {
+      path: "#",
+      title: "Ancêtres",
+      description: "🚧",
+    },
+    {
+      path: "#",
+      title: "Astres",
+      description: "🚧",
+    },
+    {
+      path: "/regles/domaines/animisme/berger",
+      title: "Berger",
+      description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
+    },
+    {
+      path: "#",
+      title: "Lune",
+      description: "🚧",
+    },
+    {
+      path: "/regles/domaines/animisme/mycetes",
+      title: "Mycètes",
+      description: "Spores nécrotiques, forme fongique, zombification et nuages toxiques des Mycètes.",
+    },
+    {
+      path: "/regles/domaines/animisme/terre",
+      title: "Terre",
+      description: "Sérénité, déplacements fluides, immunités et harmonie avec la nature sauvage.",
+    },
+  ],
+  specific: [
+    {
+      path: "#",
+      title: "Feu (Spirituel)",
+      description: "🚧",
+    },
+    {
+      path: "#",
+      title: "Rêves (Naturel)",
+      description: "🚧",
+    },
+  ],
+};
 
 type Spells = {
   tier0: MenuItem[];
@@ -141,26 +134,26 @@ type Spells = {
 };
 const spells: Spells = {
   tier0: [
-    {
-      path: "/regles/magie/pouvoirs/flammes-feeriques",
-      title: "Flammes féériques",
-      description: "Feux féeriques, auras révélatrices et flammes radiantes poursuivant les cibles.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/frisson",
-      title: "Frisson",
-      description: "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/habiletes-feeriques",
-      title: "Habiletés féériques",
-      description: "Effets féeriques, réparation d’objets, vision nocturne et croissance végétale.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/preservation",
-      title: "Préservation",
-      description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
-    },
+    // {
+    //   path: "/regles/magie/pouvoirs/flammes-feeriques",
+    //   title: "Flammes féériques",
+    //   description: "Feux féeriques, auras révélatrices et flammes radiantes poursuivant les cibles.",
+    // }, // Naturel
+    // {
+    //   path: "/regles/magie/pouvoirs/frisson",
+    //   title: "Frisson",
+    //   description: "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
+    // }, // Spirituel
+    // {
+    //   path: "/regles/magie/pouvoirs/habiletes-feeriques",
+    //   title: "Habiletés féériques",
+    //   description: "Effets féeriques, réparation d’objets, vision nocturne et croissance végétale.",
+    // }, // Naturel
+    // {
+    //   path: "/regles/magie/pouvoirs/preservation",
+    //   title: "Préservation",
+    //   description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
+    // }, // Spirituel
     {
       path: "/regles/magie/pouvoirs/resistance-elementaire",
       title: "Résistance élémentaire",
@@ -178,11 +171,11 @@ const spells: Spells = {
     },
   ],
   tier1: [
-    {
-      path: "/regles/magie/pouvoirs/affaiblissement",
-      title: "Affaiblissement",
-      description: "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
-    },
+    // {
+    //   path: "/regles/magie/pouvoirs/affaiblissement",
+    //   title: "Affaiblissement",
+    //   description: "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
+    // }, // Spirituel
     {
       path: "/regles/magie/pouvoirs/augmentation-naturelle",
       title: "Augmentation naturelle",
@@ -192,6 +185,11 @@ const spells: Spells = {
       path: "/regles/magie/pouvoirs/liberte",
       title: "Liberté",
       description: "Mobilité accrue, évasion totale et déplacement sans contraintes.",
+    },
+    {
+      path: "/regles/magie/pouvoirs/protection-contre-la-magie",
+      title: "Protection contre la magie",
+      description: "Détection, dissipation et interruption des effets magiques adverses.",
     },
     {
       path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
