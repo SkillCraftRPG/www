@@ -108,6 +108,11 @@ const spells: Spells = {
       description: "Guérit une ou plusieurs créatures au toucher ou par un mot à distance.",
     },
     {
+      path: "/regles/magie/pouvoirs/protection-contre-la-magie",
+      title: "Protection contre la magie",
+      description: "Détection, dissipation et interruption des effets magiques adverses.",
+    },
+    {
       path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
       title: "Protection contre les poisons et maladies",
       description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
