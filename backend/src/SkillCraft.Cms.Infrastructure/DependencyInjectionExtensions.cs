@@ -12,6 +12,7 @@ using SkillCraft.Cms.Core.Lineages;
 using SkillCraft.Cms.Core.Scripts;
 using SkillCraft.Cms.Core.Skills;
 using SkillCraft.Cms.Core.Specializations;
+using SkillCraft.Cms.Core.Spells;
 using SkillCraft.Cms.Core.Statistics;
 using SkillCraft.Cms.Core.Talents;
 using SkillCraft.Cms.Infrastructure.Handlers;
@@ -44,6 +45,7 @@ public static class DependencyInjectionExtensions
       .AddScoped<IScriptQuerier, ScriptQuerier>()
       .AddScoped<ISkillQuerier, SkillQuerier>()
       .AddScoped<ISpecializationQuerier, SpecializationQuerier>()
+      .AddScoped<ISpellQuerier, SpellQuerier>()
       .AddScoped<IStatisticQuerier, StatisticQuerier>()
       .AddScoped<ITalentQuerier, TalentQuerier>();
   }

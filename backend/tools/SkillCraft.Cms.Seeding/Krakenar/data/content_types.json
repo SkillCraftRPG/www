@@ -1228,5 +1228,239 @@
         "Placeholder": null
       }
     ]
+  },
+  {
+    "Id": "6dac306f-662a-464e-a7ea-848db431f40b",
+    "IsInvariant": false,
+    "UniqueName": "Spell",
+    "DisplayName": "Pouvoir",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "787b81bd-f434-4be5-b9e6-a830ab11510d",
+        "FieldType": "TalentTier",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Tier",
+        "DisplayName": "Tiers",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "9ed1e05f-62af-48d8-a87e-7e734cddf6a4",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "2ae1456a-c063-4642-8b99-de3d4538d449",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "557f2b70-b5d3-4f03-98a3-0383bb6ccb2c",
+        "FieldType": "Summary",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Summary",
+        "DisplayName": "Résumé",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "a85ab1a1-814f-4f99-b794-044c5ca5511b",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "7d8f12b5-2399-4fed-a3b6-b7a914637a94",
+    "IsInvariant": false,
+    "UniqueName": "SpellLevel",
+    "DisplayName": "Niveau de pouvoir",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "c5f8e6cd-3570-4948-968e-21f6ae7f14dd",
+        "FieldType": "Spell",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Spell",
+        "DisplayName": "Pouvoir",
+        "Description": null,
+        "Placeholder": "Sélectionnez un pouvoir"
+      },
+      {
+        "Id": "8ddbd97a-6022-492c-b2b9-06acdc429f8b",
+        "FieldType": "SpellLevel",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Level",
+        "DisplayName": "Niveau",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7f0a87a7-0c00-48ab-ad03-4e3f51af37b5",
+        "FieldType": "CastingTime",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "CastingTime",
+        "DisplayName": "Incantation",
+        "Description": null,
+        "Placeholder": "Sélectionnez une durée d’incantation"
+      },
+      {
+        "Id": "3c74f8ce-8fb5-4913-a455-5648571b4513",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "IsRitual",
+        "DisplayName": "Rituel",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "f6a7e448-ee6d-43af-b34d-470aa937a268",
+        "FieldType": "SpellDuration",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Duration",
+        "DisplayName": "Durée",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "aa591d35-69a3-486a-b7ac-c0e6a93f23f9",
+        "FieldType": "TimeUnit",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "DurationUnit",
+        "DisplayName": "Durée (unité)",
+        "Description": null,
+        "Placeholder": "Sélectionnez une unité de durée"
+      },
+      {
+        "Id": "519074db-01cf-495b-abce-8ab3b139e35d",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "IsConcentration",
+        "DisplayName": "Concentration",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "fdf89bf7-9913-4580-8fa7-e2f5af9711f0",
+        "FieldType": "Range",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Range",
+        "DisplayName": "Portée",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "ed580e17-80eb-43e5-ae11-7fca8b277993",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "IsSomatic",
+        "DisplayName": "Somatique",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "b9a8af5d-b327-49e5-8ebc-c19eebb49c55",
+        "FieldType": "Boolean",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "IsVerbal",
+        "DisplayName": "Verbal",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "2fcafd59-bb70-418e-b53a-b213f85d84e8",
+        "FieldType": "SpellIngredients",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Focus",
+        "DisplayName": "Focus",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "4bdc1744-71c0-4aab-b1f2-e800412b148d",
+        "FieldType": "SpellIngredients",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Material",
+        "DisplayName": "Matériel",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "7cc8f159-2013-483f-a06f-6a9ee2c453cc",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
   }
 ]

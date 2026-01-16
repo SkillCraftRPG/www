@@ -57,12 +57,20 @@
   "unit": {
     "action": "action | action | actions",
     "centimeter": "centimètre | centimètre | centimètres",
+    "Day": "jour | jour | jours",
+    "Hour": "heure | heure | heures",
     "inch": "pouce | pouce | pouces",
     "kilogram": "kilogramme | kilogramme | kilogrammes",
     "foot": "pied | pied | pieds",
     "meter": "mètre | mètre | mètres",
+    "Minute": "minute | minute | minutes",
+    "Month": "mois | mois | mois",
     "pound": "livre | livre | livres",
+    "Round": "round | round | rounds",
     "second": "seconde | seconde | secondes",
+    "Second": "seconde | seconde | secondes",
+    "Week": "semaine | semaine | semaines",
+    "Year": "an | an | ans",
     "year": "an | an | ans"
   },
   "users": {

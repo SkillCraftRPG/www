@@ -12,6 +12,7 @@ using SkillCraft.Cms.Core.Lineages.Models;
 using SkillCraft.Cms.Core.Scripts.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
+using SkillCraft.Cms.Core.Spells.Models;
 using SkillCraft.Cms.Core.Statistics.Models;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
@@ -376,6 +377,64 @@ internal class RulesMapper
     }
 
     MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public SpellModel ToSpell(SpellEntity source)
+  {
+    SpellModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Tier = source.Tier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    foreach (SpellLevelEntity level in source.Levels)
+    {
+      if (level.IsPublished)
+      {
+        destination.Abilities.Add(ToSpellAbility(level));
+      }
+    }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+  public static SpellAbilityModel ToSpellAbility(SpellLevelEntity source)
+  {
+    SpellAbilityModel destination = new()
+    {
+      Level = source.Level,
+      Name = source.Name
+    };
+
+    destination.Casting.Time = source.CastingTime;
+    destination.Casting.Ritual = source.IsRitual;
+
+    if (source.Duration.HasValue && source.DurationUnit.HasValue)
+    {
+      destination.Duration = new SpellDurationModel
+      {
+        Value = source.Duration.Value,
+        Unit = source.DurationUnit.Value,
+        Concentration = source.IsConcentration
+      };
+    }
+
+    destination.Range = source.Range;
+
+    destination.Components.Focus = source.Focus;
+    destination.Components.Material = source.Material;
+    destination.Components.Somatic = source.IsSomatic;
+    destination.Components.Verbal = source.IsVerbal;
+
+    destination.Description = source.Description;
 
     return destination;
   }
