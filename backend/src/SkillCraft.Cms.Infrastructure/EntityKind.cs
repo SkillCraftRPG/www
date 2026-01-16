@@ -14,6 +14,7 @@ internal enum EntityKind
   Skill,
   Specialization,
   Spell,
+  SpellLevel,
   Statistic,
   Talent
 }

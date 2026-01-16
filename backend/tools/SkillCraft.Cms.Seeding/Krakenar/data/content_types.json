@@ -1438,7 +1438,7 @@
         "Placeholder": null
       },
       {
-        "Id": "2fcafd59-bb70-418e-b53a-b213f85d84e8",
+        "Id": "4bdc1744-71c0-4aab-b1f2-e800412b148d",
         "FieldType": "SpellIngredients",
         "IsInvariant": false,
         "IsRequired": false,
@@ -1450,7 +1450,7 @@
         "Placeholder": null
       },
       {
-        "Id": "2fcafd59-bb70-418e-b53a-b213f85d84e8",
+        "Id": "7cc8f159-2013-483f-a06f-6a9ee2c453cc",
         "FieldType": "HtmlContent",
         "IsInvariant": false,
         "IsRequired": false,

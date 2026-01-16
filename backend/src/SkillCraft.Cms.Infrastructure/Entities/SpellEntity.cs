@@ -26,6 +26,8 @@ internal class SpellEntity : AggregateEntity
   public string? MetaDescription { get; set; }
   public string? Description { get; set; }
 
+  public List<SpellLevelEntity> Levels { get; private set; } = [];
+
   public SpellEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;
