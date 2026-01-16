@@ -3,7 +3,7 @@
   "slug": "esprits-gardiens",
   "name": "Esprits gardiens",
   "tier": 2,
-  "summary": "Invocation d’esprits protecteurs infligeant des dégâts et entravant les ennemis.",
+  "summary": "Esprits protecteurs infligeant des dégâts et entravant les ennemis.",
   "metaDescription": "Découvrez Esprits gardiens : pouvoir divin invoquant des entités protectrices infligeant des dégâts sacrés, ralentissant les ennemis et contrôlant la zone.",
   "description": "Pouvoir divin invoquant des esprits gardiens qui protègent le lanceur, ralentissent les ennemis proches et infligent des dégâts sacrés ou nécrotiques selon le niveau.",
   "effects": [
