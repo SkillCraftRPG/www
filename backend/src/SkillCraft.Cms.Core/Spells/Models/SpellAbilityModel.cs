@@ -1,6 +1,6 @@
 ﻿namespace SkillCraft.Cms.Core.Spells.Models;
 
-public class SpellLevelModel
+public class SpellAbilityModel
 {
   public int Level { get; set; }
   public string? Name { get; set; }

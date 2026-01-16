@@ -398,7 +398,7 @@ internal class RulesMapper
     {
       if (level.IsPublished)
       {
-        destination.Levels.Add(ToSpellLevel(level));
+        destination.Abilities.Add(ToSpellAbility(level));
       }
     }
 
@@ -406,9 +406,9 @@ internal class RulesMapper
 
     return destination;
   }
-  public static SpellLevelModel ToSpellLevel(SpellLevelEntity source)
+  public static SpellAbilityModel ToSpellAbility(SpellLevelEntity source)
   {
-    SpellLevelModel destination = new()
+    SpellAbilityModel destination = new()
     {
       Level = source.Level,
       Name = source.Name
@@ -429,10 +429,10 @@ internal class RulesMapper
 
     destination.Range = source.Range;
 
-    destination.Components.IsSomatic = source.IsSomatic;
-    destination.Components.IsVerbal = source.IsVerbal;
     destination.Components.Focus = source.Focus;
     destination.Components.Material = source.Material;
+    destination.Components.Somatic = source.IsSomatic;
+    destination.Components.Verbal = source.IsVerbal;
 
     destination.Description = source.Description;
 
