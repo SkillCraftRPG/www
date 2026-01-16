@@ -6,5 +6,5 @@ public record SpellDurationModel
 {
   public int Value { get; set; }
   public DurationUnit Unit { get; set; }
-  public bool IsConcentration { get; set; }
+  public bool Concentration { get; set; }
 }

@@ -415,7 +415,7 @@ internal class RulesMapper
     };
 
     destination.Casting.Time = source.CastingTime;
-    destination.Casting.IsRitual = source.IsRitual;
+    destination.Casting.Ritual = source.IsRitual;
 
     if (source.Duration.HasValue && source.DurationUnit.HasValue)
     {
@@ -423,7 +423,7 @@ internal class RulesMapper
       {
         Value = source.Duration.Value,
         Unit = source.DurationUnit.Value,
-        IsConcentration = source.IsConcentration
+        Concentration = source.IsConcentration
       };
     }
 
