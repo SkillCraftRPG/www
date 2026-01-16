@@ -12,6 +12,7 @@ using SkillCraft.Cms.Core.Lineages.Models;
 using SkillCraft.Cms.Core.Scripts.Models;
 using SkillCraft.Cms.Core.Skills.Models;
 using SkillCraft.Cms.Core.Specializations.Models;
+using SkillCraft.Cms.Core.Spells.Models;
 using SkillCraft.Cms.Core.Statistics.Models;
 using SkillCraft.Cms.Core.Talents.Models;
 using SkillCraft.Cms.Infrastructure.Entities;
@@ -374,6 +375,24 @@ internal class RulesMapper
         }
       }
     }
+
+    MapAggregate(source, destination);
+
+    return destination;
+  }
+
+  public SpellModel ToSpell(SpellEntity source)
+  {
+    SpellModel destination = new()
+    {
+      Id = source.Id,
+      Slug = source.Slug,
+      Name = source.Name,
+      Tier = source.Tier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
 
     MapAggregate(source, destination);
 
