@@ -102,6 +102,9 @@ const duration = computed<string>(() => {
     case 28800:
       duration = "8 heures";
       break;
+    case 86400:
+      duration = "1 jour";
+      break;
     case 864000:
       duration = "10 jours";
       break;
