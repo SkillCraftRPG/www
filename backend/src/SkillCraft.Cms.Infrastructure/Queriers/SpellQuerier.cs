@@ -28,6 +28,7 @@ internal class SpellQuerier : ISpellQuerier
   public async Task<SpellModel?> ReadAsync(Guid id, CancellationToken cancellationToken)
   {
     SpellEntity? spell = await _spells.AsNoTracking()
+      .Include(x => x.Levels)
       .SingleOrDefaultAsync(x => x.Id == id && x.IsPublished, cancellationToken);
     return spell is null ? null : await MapAsync(spell, cancellationToken);
   }
@@ -36,6 +37,7 @@ internal class SpellQuerier : ISpellQuerier
     string slugNormalized = Helper.Normalize(slug);
 
     SpellEntity? spell = await _spells.AsNoTracking()
+      .Include(x => x.Levels)
       .SingleOrDefaultAsync(x => x.SlugNormalized == slugNormalized && x.IsPublished, cancellationToken);
     return spell is null ? null : await MapAsync(spell, cancellationToken);
   }
@@ -61,7 +63,8 @@ internal class SpellQuerier : ISpellQuerier
       builder.Where(RulesDb.Spells.Tier, Operators.IsIn(tiers));
     }
 
-    IQueryable<SpellEntity> query = _spells.FromQuery(builder).AsNoTracking();
+    IQueryable<SpellEntity> query = _spells.FromQuery(builder).AsNoTracking()
+      .Include(x => x.Levels);
 
     long total = await query.LongCountAsync(cancellationToken);
 

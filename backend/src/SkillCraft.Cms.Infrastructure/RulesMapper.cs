@@ -394,7 +394,47 @@ internal class RulesMapper
       Description = source.Description
     };
 
+    foreach (SpellLevelEntity level in source.Levels)
+    {
+      if (level.IsPublished)
+      {
+        destination.Levels.Add(ToSpellLevel(level));
+      }
+    }
+
     MapAggregate(source, destination);
+
+    return destination;
+  }
+  public static SpellLevelModel ToSpellLevel(SpellLevelEntity source)
+  {
+    SpellLevelModel destination = new()
+    {
+      Level = source.Level,
+      Name = source.Name
+    };
+
+    destination.Casting.Time = source.CastingTime;
+    destination.Casting.IsRitual = source.IsRitual;
+
+    if (source.Duration.HasValue && source.DurationUnit.HasValue)
+    {
+      destination.Duration = new SpellDurationModel
+      {
+        Value = source.Duration.Value,
+        Unit = source.DurationUnit.Value,
+        IsConcentration = source.IsConcentration
+      };
+    }
+
+    destination.Range = source.Range;
+
+    destination.Components.IsSomatic = source.IsSomatic;
+    destination.Components.IsVerbal = source.IsVerbal;
+    destination.Components.Focus = source.Focus;
+    destination.Components.Material = source.Material;
+
+    destination.Description = source.Description;
 
     return destination;
   }

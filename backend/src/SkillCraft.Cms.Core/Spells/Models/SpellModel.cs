@@ -12,4 +12,6 @@ public class SpellModel : Aggregate
   public string? Summary { get; set; }
   public string? MetaDescription { get; set; }
   public string? Description { get; set; }
+
+  public List<SpellLevelModel> Levels { get; set; } = [];
 }
