@@ -9,28 +9,10 @@ export type SpellNew = Aggregate & {
   summary?: string | null;
   metaDescription?: string | null;
   description?: string | null;
-  levels: SpellLevel[];
+  abilities: SpellAbility[];
 }; // TODO(fpion): rename this class
 
-export type SpellCasting = {
-  time: string;
-  isRitual: boolean;
-};
-
-export type SpellComponents = {
-  isSomatic: boolean;
-  isVerbal: boolean;
-  focus?: string | null;
-  material?: string | null;
-};
-
-export type SpellDuration = {
-  value: number;
-  unit: DurationUnit;
-  isConcentration: boolean;
-};
-
-export type SpellLevel = {
+export type SpellAbility = {
   level: number;
   name?: string | null;
   casting: SpellCasting;
@@ -38,6 +20,24 @@ export type SpellLevel = {
   range: number;
   components: SpellComponents;
   description?: string | null;
+};
+
+export type SpellCasting = {
+  time: string;
+  ritual: boolean;
+};
+
+export type SpellComponents = {
+  focus?: string | null;
+  material?: string | null;
+  somatic: boolean;
+  verbal: boolean;
+};
+
+export type SpellDuration = {
+  value: number;
+  unit: DurationUnit;
+  concentration: boolean;
 };
 
 // TODO(fpion): LEGACY; remove the following
@@ -65,3 +65,5 @@ export type SpellEffect = {
   verbal: boolean;
   description?: string | null;
 };
+
+// TODO(fpion): refactor units for PascalCase.
