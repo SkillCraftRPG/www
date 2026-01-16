@@ -36,6 +36,41 @@
     "Boolean": {}
   },
   {
+    "Id": "9f5af0c9-e79c-4db5-84b7-52579e0c86b8",
+    "UniqueName": "CastingTime",
+    "DisplayName": null,
+    "Description": null,
+    "Select": {
+      "IsMultiple": false,
+      "Options": [
+        {
+          "Text": "1 action",
+          "Value": "1"
+        },
+        {
+          "Text": "2 actions",
+          "Value": "2"
+        },
+        {
+          "Text": "Réaction",
+          "Value": "R"
+        },
+        {
+          "Text": "1 minute",
+          "Value": "1m"
+        },
+        {
+          "Text": "10 minutes",
+          "Value": "10m"
+        },
+        {
+          "Text": "8 heures",
+          "Value": "8h"
+        }
+      ]
+    }
+  },
+  {
     "Id": "2fc39270-4ef5-4699-b1bd-ca6dc550a7e0",
     "UniqueName": "ExtraLanguages",
     "DisplayName": null,
@@ -142,6 +177,17 @@
     }
   },
   {
+    "Id": "74e3a033-4c7f-471a-b8f9-90591792403a",
+    "UniqueName": "MetaDescription",
+    "DisplayName": null,
+    "Description": null,
+    "RichText": {
+      "ContentType": "text/plain",
+      "MinimumLength": null,
+      "MaximumLength": 160
+    }
+  },
+  {
     "Id": "37ba5fb4-044e-44bc-8e3e-13def5295d92",
     "UniqueName": "Name",
     "DisplayName": null,
@@ -161,6 +207,17 @@
       "MinimumLength": null,
       "MaximumLength": 100,
       "Pattern": null
+    }
+  },
+  {
+    "Id": "8f4d0f59-4452-4643-a213-8168723a1a0d",
+    "UniqueName": "Range",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 0,
+      "MaximumValue": 1000,
+      "Step": 1
     }
   },
   {
@@ -260,6 +317,49 @@
     }
   },
   {
+    "Id": "53c3527b-6cf3-44f6-9f30-0e534a86195a",
+    "UniqueName": "Spell",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "6dac306f-662a-464e-a7ea-848db431f40b",
+      "IsMultiple": false
+    }
+  },
+  {
+    "Id": "697e3eb4-11ac-4f1f-b324-d0c18d84ac62",
+    "UniqueName": "SpellDuration",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 0,
+      "MaximumValue": null,
+      "Step": 1
+    }
+  },
+  {
+    "Id": "408ecf38-ca7e-4215-88c6-4153878d6354",
+    "UniqueName": "SpellIngredients",
+    "DisplayName": null,
+    "Description": null,
+    "String": {
+      "MinimumLength": null,
+      "MaximumLength": 100,
+      "Pattern": null
+    }
+  },
+  {
+    "Id": "216104e0-5ba2-4697-bb78-74e74db74fd6",
+    "UniqueName": "SpellLevel",
+    "DisplayName": null,
+    "Description": null,
+    "Number": {
+      "MinimumValue": 0,
+      "MaximumValue": 2,
+      "Step": 1
+    }
+  },
+  {
     "Id": "c9cf3897-d14e-4ae7-ae32-2357c440b32a",
     "UniqueName": "Summary",
     "DisplayName": null,
@@ -299,6 +399,49 @@
       "MinimumValue": 0,
       "MaximumValue": 3,
       "Step": 1
+    }
+  },
+  {
+    "Id": "8bd24ac4-6070-4636-897e-612d858c59e7",
+    "UniqueName": "TimeUnit",
+    "DisplayName": null,
+    "Description": null,
+    "Select": {
+      "IsMultiple": false,
+      "Options": [
+        {
+          "Text": "Round(s)",
+          "Value": "Round"
+        },
+        {
+          "Text": "Seconde(s)",
+          "Value": "Second"
+        },
+        {
+          "Text": "Minute(s)",
+          "Value": "Minute"
+        },
+        {
+          "Text": "Heure(s)",
+          "Value": "Hour"
+        },
+        {
+          "Text": "Jour(s)",
+          "Value": "Day"
+        },
+        {
+          "Text": "Semaine(s)",
+          "Value": "Week"
+        },
+        {
+          "Text": "Mois",
+          "Value": "Month"
+        },
+        {
+          "Text": "Année(s)",
+          "Value": "Year"
+        }
+      ]
     }
   },
   {
