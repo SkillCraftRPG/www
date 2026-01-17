@@ -411,7 +411,9 @@ internal class RulesMapper
     SpellAbilityModel destination = new()
     {
       Level = source.Level,
-      Name = source.Name
+      Name = source.Name,
+      Range = source.Range,
+      Description = source.Description
     };
 
     destination.Casting.Time = source.CastingTime;
@@ -427,14 +429,10 @@ internal class RulesMapper
       };
     }
 
-    destination.Range = source.Range;
-
     destination.Components.Focus = source.Focus;
     destination.Components.Material = source.Material;
     destination.Components.Somatic = source.IsSomatic;
     destination.Components.Verbal = source.IsVerbal;
-
-    destination.Description = source.Description;
 
     return destination;
   }
