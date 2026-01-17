@@ -226,6 +226,58 @@ internal static class ExtractionMapper
     return destination;
   }
 
+  public static SpellDto ToSpell(SpellEntity source)
+  {
+    SpellDto destination = new()
+    {
+      Id = source.Id,
+      IsPublished = source.IsPublished,
+      Slug = source.Slug,
+      Name = source.Name,
+      Tier = source.Tier,
+      Summary = source.Summary,
+      MetaDescription = source.MetaDescription,
+      Description = source.Description
+    };
+
+    foreach (SpellLevelEntity level in source.Levels)
+    {
+      destination.Abilities.Add(ToSpellAbility(level));
+    }
+
+    return destination;
+  }
+  public static SpellAbilityDto ToSpellAbility(SpellLevelEntity source)
+  {
+    SpellAbilityDto destination = new()
+    {
+      Level = source.Level,
+      Name = source.Name,
+      Range = source.Range,
+      Description = source.Description
+    };
+
+    destination.Casting.Time = source.CastingTime;
+    destination.Casting.Ritual = source.IsRitual;
+
+    if (source.Duration.HasValue && source.DurationUnit.HasValue)
+    {
+      destination.Duration = new SpellDurationDto
+      {
+        Value = source.Duration.Value,
+        Unit = source.DurationUnit.Value,
+        Concentration = source.IsConcentration
+      };
+    }
+
+    destination.Components.Focus = source.Focus;
+    destination.Components.Material = source.Material;
+    destination.Components.Somatic = source.IsSomatic;
+    destination.Components.Verbal = source.IsVerbal;
+
+    return destination;
+  }
+
   public static StatisticDto ToStatistic(StatisticEntity source)
   {
     if (source.Attribute is null)
