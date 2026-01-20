@@ -7,16 +7,16 @@
     </p>
     <ol>
       <li>
-        <a href="#">Trait de personnalité.</a> Une caractéristique marquante du tempérament de votre personnage. Elle décrit comment il agit, pense ou réagit
-        dans la vie de tous les jours.
+        <NuxtLink to="/regles/personnages/creation/personnalite">rait de personnalité.</NuxtLink> Une caractéristique marquante du tempérament de votre
+        personnage. Elle décrit comment il agit, pense ou réagit dans la vie de tous les jours.
       </li>
       <li>
-        <a href="#">Idéal.</a> Une valeur ou un principe qui guide votre personnage. Son idéal reflète ce qu’il croit être juste, important ou digne d’être
-        défendu.
+        <NuxtLink to="/regles/personnages/creation/ideaux">Idéal.</NuxtLink> Une valeur ou un principe qui guide votre personnage. Son idéal reflète ce qu’il
+        croit être juste, important ou digne d’être défendu.
       </li>
       <li>
-        <a href="#">Défaut.</a> C’est une faiblesse, une faille ou un travers de votre personnage. Le défaut introduit des contradictions ou des obstacles qui
-        enrichissent son rôle et son réalisme.
+        <NuxtLink to="/regles/personnages/creation/defauts">Défaut.</NuxtLink> C’est une faiblesse, une faille ou un travers de votre personnage. Le défaut
+        introduit des contradictions ou des obstacles qui enrichissent son rôle et son réalisme.
       </li>
     </ol>
     <p>

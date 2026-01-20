@@ -767,6 +767,154 @@
     }
   },
   {
+    "Id": "e43f655e-3634-47f1-a001-c2fd2ac02e76",
+    "IsPublished": true,
+    "Slug": "barde",
+    "Name": "Barde",
+    "Tier": 3,
+    "Summary": "Gardien du savoir, inspirateur et conseiller influent des sociétés.",
+    "MetaDescription": "Découvrez le Barde : gardien du savoir et maître de l’oralité, capable d’inspirer, conseiller et influencer les alliés comme les ennemis.",
+    "Description": "Bien plus qu’un artiste ambulant ou employé à la cour des plus hauts nobles, le barde est un véritable gardien du savoir. Il est responsable de la transmission de ce savoir par voie orale. Il est également convoité dans plusieurs domaines, sa grande sagesse lui permettant d’agir en tant que conseiller au niveau administratif, judiciaire, géopolitique, et parfois même scientifique.",
+    "Requirements": {
+      "Talent": null,
+      "Other": [
+        "Le personnage doit avoir acquis la spécialisation [Troubadour](/regles/specialisations/troubadour).",
+        "Il doit également avoir acquis un des deux talents suivants : [Hostilité perturbatrice](/regles/talents/hostilite-perturbatrice) ou [Provocation](/regles/talents/provocation)."
+      ]
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "5d05b6c8-3aed-471c-8748-228dd3bbb875",
+          "IsPublished": true,
+          "Slug": "tolerance-a-l-alcool-iii",
+          "Name": "Tolérance à l’alcool III"
+        },
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "74548cb7-c65b-4882-b353-5bbb0d760a7a",
+          "IsPublished": true,
+          "Slug": "fourberie",
+          "Name": "Fourberie"
+        },
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
+          "IsPublished": true,
+          "Slug": "provocation",
+          "Name": "Provocation"
+        },
+        {
+          "Id": "4db1e8cf-f0f0-41e9-8023-2a4db68d56c1",
+          "IsPublished": true,
+          "Slug": "embuscade",
+          "Name": "Embuscade"
+        },
+        {
+          "Id": "c0763232-4170-4b97-a2d8-3fcd55ea5814",
+          "IsPublished": true,
+          "Slug": "synergie-alphabetique",
+          "Name": "Synergie alphabétique"
+        },
+        {
+          "Id": "6c169831-5295-45ee-a1fc-f77d8ee92b23",
+          "IsPublished": true,
+          "Slug": "escamotage",
+          "Name": "Escamotage"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "3b6590da-409b-4c4d-94a0-648630de73da",
+          "IsPublished": true,
+          "Slug": "mener-par-l-exemple",
+          "Name": "Mener par l’exemple"
+        },
+        {
+          "Id": "ea127043-238b-46d6-aab8-809a908f3c75",
+          "IsPublished": true,
+          "Slug": "repli-defensif",
+          "Name": "Repli défensif"
+        },
+        {
+          "Id": "c2a0e512-521c-485d-a7e4-784b74e37e40",
+          "IsPublished": true,
+          "Slug": "destruction",
+          "Name": "Destruction"
+        },
+        {
+          "Id": "dc53c886-b804-46fd-8d0c-86e5e0079a58",
+          "IsPublished": true,
+          "Slug": "double-attaque",
+          "Name": "Double attaque"
+        },
+        {
+          "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+          "IsPublished": true,
+          "Slug": "erudition",
+          "Name": "Érudition"
+        },
+        {
+          "Id": "d3042400-af91-41df-b7ce-2c36ed19df6e",
+          "IsPublished": true,
+          "Slug": "mythologie",
+          "Name": "Mythologie"
+        },
+        {
+          "Id": "2bfa4236-95c0-4128-aee4-2bc68e4b330e",
+          "IsPublished": true,
+          "Slug": "hostilite-perturbatrice",
+          "Name": "Hostilité perturbatrice"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Exaltation",
+      "Description": [
+        "Il peut acquérir le talent [Savoir légendaire](/regles/talents/savoir-legendaire) au coût de [3 points de talent](/regles/talents/points) seulement.",
+        "Lorsqu’il dépense 15 points d’[Énergie](/regles/statistiques/energie) afin d’[améliorer](/regles/specialisations/troubadour) sa [Berceuse apaisante](/regles/specialisations/menestrel), alors il ajoute la totalité de son [Stratagème](/regles/statistiques/stratageme) aux points de [Vitalité](/regles/statistiques/vitalite) [récupérés](/regles/combat/degats/soins) plutôt que la moitié.",
+        "Lorsqu’une créature inspirée par le [Boléro héroïque](/regles/specialisations/menestrel) ajoute le d10 à un [test](/regles/competences/tests) et échoue le test, alors elle conserve le dé."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "76600f51-f0e5-4544-bc0c-31fba6698164",
+          "IsPublished": true,
+          "Slug": "ovation",
+          "Name": "Ovation"
+        },
+        {
+          "Id": "36d6b4b3-1ce4-4aa4-8382-d08596c338d8",
+          "IsPublished": true,
+          "Slug": "intrepide",
+          "Name": "Intrépide"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "51a3f358-50d7-4588-a20c-80b26f84d3ce",
+          "IsPublished": true,
+          "Name": "Contre-charme",
+          "Description": "Par une [action](/regles/combat/deroulement/tour), le personnage dépense 5 points d’[Énergie](/regles/statistiques/energie) afin de jouer une mélodie protectrice.\n\nJusqu’au début de son prochain [tour](/regles/combat/deroulement/tour), le personnage ainsi que toute créature de son choix qui peut l’entendre et située à 9 mètres ou moins de sa position se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets de [peur](/regles/combat/conditions/apeure) et contre les [charmes](/regles/combat/conditions/charme).\n\nLa performance cesse si le personnage devient [incapable](/regles/combat/conditions/incapable), [inconscient](/regles/combat/conditions/inconscient), ou est réduit au silence.\n\nIl peut arrêter la performance à tout moment en [action libre](/regles/combat/deroulement/tour)."
+        }
+      ]
+    }
+  },
+  {
     "Id": "da1297f8-8a85-48e8-83da-e5c6c90d5dfd",
     "IsPublished": true,
     "Slug": "bricoleur",
@@ -2016,12 +2164,6 @@
       ],
       "Features": [
         {
-          "Id": "25f9e852-3246-4713-8b22-ba47885d8c1b",
-          "IsPublished": true,
-          "Name": "Escampette",
-          "Description": "Le personnage peut utiliser sa [réaction](/regles/combat/deroulement/tour) contre une [attaque d’opportunité](/regles/combat/attaque/opportunite) le ciblant.\n\nLorsqu’il en fait ainsi, le [test](/regles/competences/tests) de cette [attaque](/regles/combat/attaque) et de toute attaque d’opportunité dirigée contre lui jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour) est affligé du [désavantage](/regles/competences/tests/avantage-desavantage).\n\nIl peut également utiliser sa réaction lorsqu’une créature réussit une attaque dirigée contre lui.\n\nLorsqu’il en fait ainsi, il ajoute à son [Esquive](/regles/statistiques/esquive) un bonus égal à son [Adresse](/regles/attributs/adresse) (minimum 1) jusqu’à la fin du tour de cette créature."
-        },
-        {
           "Id": "f797177f-a741-4733-8a46-4414996efbe3",
           "IsPublished": true,
           "Name": "Fouler la terre",
@@ -2031,13 +2173,13 @@
           "Id": "757cd5ab-a409-43b4-9598-3f1a208aee61",
           "IsPublished": true,
           "Name": "Proie privilégiée",
-          "Description": "Si le personnage possède la capacité [Cible privilégiée](/regles/specialisations/eclaireur), alors il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les [charmes](/regles/combat/conditions/charme) et les effets de [peur](/regles/combat/conditions/apeure) provenant de sa cible privilégiée.\n\nÉgalement, lorsqu’il utilise cette capacité, les [d4](/regles/combat/degats/jet) de [dégâts](/regles/combat/degats) supplémentaires sont remplacés par des d8 si la [Vitalité](/regles/statistiques/vitalite) courante de la cible est égale à sa Vitalité maximale."
+          "Description": "Lorsqu’il attaque sa [cible privilégiée](/regles/specialisations/eclaireur), il ajoute [1d8 points de dégâts](/regles/combat/degats/jet) supplémentaires plutôt que 1d4.\n\nÉgalement, il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les [charmes](/regles/combat/conditions/charme) et les effets de [peur](/regles/combat/conditions/apeure) provenant de sa cible privilégiée."
         },
         {
           "Id": "1322e149-27f2-4767-a388-b471721a03d9",
           "IsPublished": true,
           "Name": "Sens primitifs",
-          "Description": "Lorsqu’il ne se trouve pas en milieu urbain, le personnage peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) par une [action](/regles/combat/deroulement/tour) afin d’observer son [environnement](/regles/aventure/environnement).\n\nIl observe par exemple les traces au sol, de l’écorce griffée, une ou plusieurs carcasses, les mouvements de la faune ou encore le climat général.\n\nPour chacun des types suivants, il détermine si une créature appartenant à ce type se trouve à 1 kilomètre ou moins de sa position : aberration, célestiel, dragon, élémentaire, fée, infernal et mort-vivant.\n\nIl ne détermine pas l’emplacement de ces créatures ; seulement si elles sont présentes ou non."
+          "Description": "Lorsqu’il ne se trouve pas en milieu urbain, le personnage peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) par une [action](/regles/combat/deroulement/tour) afin d’observer son [environnement](/regles/aventure/environnement).\n\nIl observe par exemple les traces au sol, de l’écorce griffée, une ou plusieurs carcasses, les mouvements de la faune ou encore le climat général.\n\nPour chacun des types suivants, il détermine si une créature appartenant à ce type se trouve à 1,5 kilomètres ou moins de sa position : aberration, célestiel, dragon, élémentaire, fée, infernal et mort-vivant.\n\nIl détermine seulement la présence de ces créatures, pas leur emplacement."
         }
       ]
     }
@@ -2249,13 +2391,140 @@
           "Id": "f53708e7-c7ac-412f-96c4-2c312301c14b",
           "IsPublished": true,
           "Name": "Second souffle",
-          "Description": "En situation de [combat](/regles/combat), permet au personnage de récupérer des points de [Vitalité](/regles/statistiques/vitalite) en [action libre](/regles/combat/deroulement/tour).\n\nIl récupère 1d10 + [Santé](/regles/attributs/sante) (minimum 1) points de Vitalité et dépense un nombre égal de points d’[Énergie](/regles/statistiques/energie).\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+          "Description": "En situation de [combat](/regles/combat), permet au personnage de [récupérer](/regles/combat/degats/soins) des points de [Vitalité](/regles/statistiques/vitalite) en [action libre](/regles/combat/deroulement/tour) pendant son [tour](/regles/combat/deroulement/tour).\n\nIl récupère 1d10 + [Santé](/regles/attributs/sante) (minimum&nbsp;1) points de Vitalité et dépense un nombre égal de points d’[Énergie](/regles/statistiques/energie).\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
         },
         {
           "Id": "77112879-b794-45a8-adf7-37857b958b4c",
           "IsPublished": true,
           "Name": "Indomptable",
           "Description": "Lorsqu’il échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde), il peut rejouer le jet de sauvegarde en dépensant 25 points d’[Énergie](/regles/statistiques/energie) et doit conserver le nouveau résultat.\n\nIl peut utiliser cette capacité un nombre de fois égal à son [tiers](/regles/personnages/progression/tiers) de personnage et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+        }
+      ]
+    }
+  },
+  {
+    "Id": "6b1903bc-0f68-4e80-bc9e-710635808787",
+    "IsPublished": true,
+    "Slug": "commandant",
+    "Name": "Commandant",
+    "Tier": 3,
+    "Summary": "Stratège militaire coordonnant les alliés et influençant le combat.",
+    "MetaDescription": "Découvrez le Commandant : stratège de terrain et meneur d’hommes, expert en coordination tactique, ralliement des troupes et influence diplomatique.",
+    "Description": "L’espérance de vie des soldats n’est généralement pas très élevée. Néanmoins, certains réussissent mieux que d’autres, lorsqu’ils utilisent autant leurs facultés physiques qu’intellectuelles. Ces facultés, lorsque couplées à une expérience, permet à une poignée de soldats d’atteindre le rang de commandant au sein de leur armée. Le commandant est responsable du déploiement et de la coordination de ses troupes, et il n’est pas rare de le voir prendre un rôle de diplomate ou d’ambassadeur.",
+    "Requirements": {
+      "Talent": {
+        "Id": "a9309936-48c7-4f01-be61-e0efb8525b7a",
+        "IsPublished": true,
+        "Slug": "poigne-de-fer",
+        "Name": "Poigne de fer"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "ccb1a675-010b-4e51-b140-8cb7309438a9",
+          "IsPublished": true,
+          "Slug": "discernement",
+          "Name": "Discernement"
+        },
+        {
+          "Id": "e86f2803-1bca-4b1b-bbe9-e8a27ffcfe78",
+          "IsPublished": true,
+          "Slug": "provocation",
+          "Name": "Provocation"
+        },
+        {
+          "Id": "2c09d822-56f7-45bc-a6c7-8a281013e682",
+          "IsPublished": true,
+          "Slug": "robustesse-superieure",
+          "Name": "Robustesse supérieure"
+        },
+        {
+          "Id": "ea127043-238b-46d6-aab8-809a908f3c75",
+          "IsPublished": true,
+          "Slug": "repli-defensif",
+          "Name": "Repli défensif"
+        },
+        {
+          "Id": "5b25e5de-53dc-443a-b9e0-71e3c251c3c5",
+          "IsPublished": true,
+          "Slug": "maitre-artisan",
+          "Name": "Maître-artisan"
+        },
+        {
+          "Id": "9f0c90cc-29b8-4fb6-b4c8-fe930b3042d7",
+          "IsPublished": true,
+          "Slug": "attaque-precise",
+          "Name": "Attaque précise"
+        },
+        {
+          "Id": "3acd933a-0e0d-44ce-ab18-0a4966734307",
+          "IsPublished": true,
+          "Slug": "attaques-multiples",
+          "Name": "Attaques multiples"
+        },
+        {
+          "Id": "dc53c886-b804-46fd-8d0c-86e5e0079a58",
+          "IsPublished": true,
+          "Slug": "double-attaque",
+          "Name": "Double attaque"
+        },
+        {
+          "Id": "f49126be-c2f2-49f3-8d2e-20cc0c140200",
+          "IsPublished": true,
+          "Slug": "protection",
+          "Name": "Protection"
+        },
+        {
+          "Id": "fff4d66c-fbbb-44ba-a1f6-609d642f32bc",
+          "IsPublished": true,
+          "Slug": "sentinelle",
+          "Name": "Sentinelle"
+        },
+        {
+          "Id": "73bf30d0-02e8-4b97-ab9e-d07408a5b675",
+          "IsPublished": true,
+          "Slug": "initiative-superieure",
+          "Name": "Initiative supérieure"
+        },
+        {
+          "Id": "959ac693-3553-4cc0-90ac-f892250d1f77",
+          "IsPublished": true,
+          "Slug": "monture-de-combat",
+          "Name": "Monture de combat"
+        },
+        {
+          "Id": "c9abbe04-b581-4fc3-a815-8a7fe62c2dcb",
+          "IsPublished": true,
+          "Slug": "otage",
+          "Name": "Otage"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Stratège militaire",
+      "Description": [],
+      "DiscountedTalents": [],
+      "Features": [
+        {
+          "Id": "79c27e73-25aa-414e-9e9f-408b31e327e8",
+          "IsPublished": true,
+          "Name": "Ambassadeur",
+          "Description": "Le personnage peut acquérir le talent [Commandement](/regles/talents/commandement) au coût de [2 points de talent](/regles/talents/points) seulement.\n\nIl peut également acquérir [à rabais](/regles/talents/points) le talent [Expertise](/regles/talents/expertise) pour la compétence [Diplomatie](/regles/competences/diplomatie).\n\nIl peut acquérir à rabais les talents suivants :\n\n- [Diplomatie](/regles/talents/diplomatie)\n- [Emboîter le pas](/regles/talents/emboiter-le-pas)\n- [Mener par l’exemple](/regles/talents/mener-par-l-exemple)\n- [Langue d’argent](/regles/talents/langue-d-argent)\n\nS'il a déjà acquis un ou plusieurs de ces talents, alors le rabais est transféré en priorité aux talents [Commandement](/regles/talents/commandement) et [Expertise](/regles/talents/expertise) pour la compétence [Diplomatie](/regles/competences/diplomatie)."
+        },
+        {
+          "Id": "f1d278cd-ca5b-4fae-ac30-f94818ccb27e",
+          "IsPublished": true,
+          "Name": "Ralliement",
+          "Description": "Le personnage peut pousser un cri de ralliement lorsqu’il utilise une des capacités suivantes. L’effet du cri dépend de la capacité utilisée.\n\nIl doit avoir acquis la spécialisation lui permettant d’utiliser cette capacité.\n\nAfin de bénéficier des effets du cri, une créature doit être située à 18 mètres ou moins du personnage, elle doit pouvoir l’entendre, le personnage doit la [voir](/regles/aventure/environnement/vision), et cette créature ne doit être ni [incapable](/regles/combat/conditions/incapable), ni [inconsciente](/regles/combat/conditions/inconscient).\n\n- [Ardeur au combat](/regles/specialisations/soldat). Le personnage désigne une créature alliée. Celle-ci peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) et utiliser sa [réaction](/regles/combat/deroulement/tour) afin d’effectuer une [action](/regles/combat/deroulement/tour) de son choix.\n- [Indomptable](/regles/specialisations/combattant). Le personnage désigne une créature alliée ayant échoué un [jet de sauvegarde](/regles/competences/tests/sauvegarde). Celle-ci peut dépenser 25 points d’[Énergie](/regles/statistiques/energie) en [action libre](/regles/combat/deroulement/tour) afin de rejouer le jet de sauvegarde, et elle doit utiliser le nouveau résultat.\n- [Second souffle](/regles/specialisations/combattant). Le personnage désigne un nombre de créatures alliées inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum&nbsp;1). Chaque créature peut dépenser le même nombre de points d’[Énergie](/regles/statistiques/energie) que le personnage en [action libre](/regles/combat/deroulement/tour) afin de [récupérer](/regles/combat/degats/soins) un nombre égal de points de [Vitalité](/regles/statistiques/vitalite)."
         }
       ]
     }
@@ -2674,13 +2943,13 @@
           "Id": "c968fa05-5d67-4ac4-ae6f-321d094d3091",
           "IsPublished": true,
           "Name": "Cible privilégiée",
-          "Description": "Lorsqu’il réussit une [attaque](/regles/combat/attaque) contre une créature, il peut diriger toute son attention sur cette créature pendant la prochaine [minute](/regles/aventure/temps).\n\nAfin de maintenir son attention, il doit [se concentrer](/regles/magie/parametres/duree) sur cette créature, comme s’il maintenait un [pouvoir](/regles/magie/pouvoirs).\n\nUne fois par [tour](/regles/combat/deroulement/tour), lorsqu’il réussit une attaque contre la créature sur laquelle il dirige son attention, il peut ajouter [1d4 points de dégâts](/regles/combat/degats/jet) supplémentaires par [tiers](/regles/personnages/progression/tiers) de personnage.\n\nIl peut utiliser cette capacité (diriger son attention sur une créature) un nombre de fois égal à ses [Sens](/regles/attributs/sens) (minimum 1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
+          "Description": "Lorsqu’il réussit une [attaque](/regles/combat/attaque) contre une créature, il peut diriger toute son attention sur cette créature pendant la prochaine [minute](/regles/aventure/temps). Afin de maintenir son attention, il doit [se concentrer](/regles/magie/parametres/duree) sur cette créature, comme s’il maintenait un [pouvoir](/regles/magie/pouvoirs).\n\nLorsqu’il utilise cette capacité, ainsi qu’une fois par [tour](/regles/combat/deroulement/tour) pendant les [rounds](/regles/combat/deroulement) subséquents lorsqu’il réussit une attaque contre la créature sur laquelle il dirige son attention, il peut ajouter [1d4 points de dégâts](/regles/combat/degats/jet) supplémentaires.\n\nIl peut utiliser cette capacité (diriger son attention sur une créature) un nombre de fois égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1) et doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
         },
         {
           "Id": "a0bc7b66-8b55-44fa-a7d0-f9f9d660e9d5",
           "IsPublished": true,
-          "Name": "Sens aiguisés",
-          "Description": "Lorsqu’il n’est pas [aveuglé](/regles/combat/conditions/aveugle), [assourdi](/regles/combat/conditions/assourdi) ou [incapable](/regles/combat/conditions/incapable), il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) s’il voit le déclencheur, par exemple un piège.\n\nÉgalement, lorsqu’une créature qu’il peut voir, et dont la [taille](/regles/especes/taille) est supérieure d’au moins une catégorie à la sienne, échoue une [attaque](/regles/combat/attaque) dirigée contre lui, alors il peut immédiatement effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite) en [réaction](/regles/combat/deroulement/tour)."
+          "Name": "Sens du danger",
+          "Description": "Lorsqu’il n’est pas [aveuglé](/regles/combat/conditions/aveugle), [assourdi](/regles/combat/conditions/assourdi), ni [incapable](/regles/combat/conditions/incapable), il se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) lorsqu’il [voit](/regles/aventure/environnement/vision) le déclencheur, par exemple un piège.\n\nÉgalement, lorsqu’il voit une créature dont la [taille](/regles/especes/taille) est supérieure d’au moins une catégorie à la sienne échouer une [attaque](/regles/combat/attaque) dirigée contre lui, alors il peut immédiatement effectuer une [attaque d’opportunité](/regles/combat/attaque/opportunite) en [réaction](/regles/combat/deroulement/tour)."
         }
       ]
     }
@@ -3192,7 +3461,7 @@
     "Slug": "haut-mage",
     "Name": "Haut Mage",
     "Tier": 3,
-    "Summary": "Maîtrise érudite d’un cercle magique et accès aux secrets arcaniques majeurs.",
+    "Summary": "Maîtrise érudite d’un cercle magique et accès aux arcanes majeurs.",
     "MetaDescription": "Découvrez le Haut Mage : maître érudit d’un cercle de magie, détenteur de secrets avancés d’astromancie et d’une maîtrise magique exceptionnelle.",
     "Description": "Lorsqu’un mage maîtrise suffisamment le corpus d’un Cercle de Magie afin de pouvoir l’enseigner, alors il peut tenter l’examen qui lui permettra de devenir Haut Mage s’il le réussit. Cet examen est particulièrement difficile puisqu’il est composé d’épreuves surprises auxquelles on peut difficilement s’y préparer. De plus, après un certain nombre de tentatives échouées, le mage ne peut plus tenter cet examen à sa Tour de Magie. En devenant Haut Mage, il acquiert le respect de ses collègues et accède aux secrets de son Cercle de Magie.",
     "Requirements": {
@@ -3965,7 +4234,7 @@
           "Id": "a304cfeb-1041-4328-94e5-26cc4f15b4b0",
           "IsPublished": true,
           "Name": "Berceuse apaisante",
-          "Description": "Il peut jouer une douce berceuse pendant une [halte](/regles/aventure/repos/halte). Il dépense 15 points d’[Énergie](/regles/statistiques/energie) et sélectionne un nombre de créatures inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum 1).\n\nIl doit voir ces créatures, celles-ci doivent l’entendre, et elles doivent être situées à 4,5 mètres ou moins de sa position. Il peut se désigner lui-même comme cible.\n\nÀ la fin de la halte, chaque cible récupère 1d10 [points de Vitalité](/regles/statistiques/vitalite). Il doit jouer de manière continue, et la halte ne doit pas être interrompue.\n\nLorsqu’il atteint le [tiers 2](/regles/personnages/progression/tiers), le personnage peut dépenser 30 points d’Énergie afin d’augmenter à 2d10 les points de Vitalité récupérés.\n\nLorsqu’il atteint le tiers 3, il peut dépenser 45 points d’Énergie afin d’augmenter à 3d10 les points de Vitalité récupérés.\n\nLe personnage doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de réutiliser cette capacité."
+          "Description": "Le personnage peut jouer une douce berceuse aux propriétés régénératrices pendant une [halte](/regles/aventure/repos/halte). Il doit jouer de manière continue, et la halte ne doit pas être interrompue.\n\nIl dépense 15 points d’[Énergie](/regles/statistiques/energie) et sélectionne un nombre de créatures inférieur ou égal à son [Intellect](/regles/attributs/intellect) (minimum&nbsp;1). Il doit voir ces créatures, celles-ci doivent l’entendre, et elles doivent être situées à 4,5 mètres ou moins de sa position. Il peut se désigner lui-même comme cible.\n\nÀ la fin de la halte, chaque cible récupère 1d10 [points de Vitalité](/regles/statistiques/vitalite). Une créature doit compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de pouvoir bénéficier à nouveau de cette capacité.\n\nLorsqu’il atteint le [tiers 2](/regles/personnages/progression/tiers), le personnage peut dépenser 30 points d’Énergie afin d’augmenter à 2d10 les points de Vitalité récupérés. Lorsqu’il atteint le tiers 3, il peut dépenser 45 points d’Énergie afin d’augmenter à 3d10 les points de Vitalité récupérés."
         },
         {
           "Id": "82f46d82-efbd-4ba0-84ba-5125f8420509",
@@ -4396,12 +4665,6 @@
           "IsPublished": true,
           "Name": "Déduction guerrière",
           "Description": "Lorsqu’il n’est pas en situation de [combat](/regles/combat), le personnage peut observer ou interagir avec une créature pendant [une minute](/regles/aventure/temps).\n\nCela lui permet de déterminer si les caractéristiques suivantes de cette créature sont supérieures, inférieures ou égales aux siennes, à la discrétion du maître de jeu :\n\n- [Adresse](/regles/attributs/adresse)\n- [Santé](/regles/attributs/sante)\n- [Vigueur](/regles/attributs/vigueur)\n- [Vitalité courante et maximale](/regles/statistiques/vitalite)\n- [Énergie courante et maximale](/regles/statistiques/energie)\n- [Esquive](/regles/combat/attaque/esquive)\n- [Défense](/regles/combat/attaque/defense)"
-        },
-        {
-          "Id": "db649337-0beb-4869-a785-a704fe5e68e2",
-          "IsPublished": true,
-          "Name": "Supériorité martiale",
-          "Description": "Le personnage peut désormais effectuer un nombre de [manœuvres de combat](/regles/talents/manoeuvres-de-combat) égal au double de son [tiers](/regles/personnages/progression/tiers).\n\nIl doit faire [halte](/regles/aventure/repos/halte) ou compléter une [nuit de sommeil](/regles/aventure/repos/sommeil) afin de récupérer ces utilisations."
         }
       ]
     }
@@ -4576,6 +4839,160 @@
     }
   },
   {
+    "Id": "2ff6fde0-056e-4bf5-8996-10a6bf3ffaac",
+    "IsPublished": true,
+    "Slug": "traqueur",
+    "Name": "Traqueur",
+    "Tier": 3,
+    "Summary": "Chasseur méthodique aux sens affûtés, traquant sans relâche.",
+    "MetaDescription": "Découvrez le Traqueur, chasseur implacable spécialisé dans le pistage, l’embuscade et l’analyse des proies, capable de frapper puis disparaître.",
+    "Description": "Le traqueur est redouté pour son approche silencieuse et méthodique. Il arpente aussi bien les terres sauvages que les ruines et les grandes cités, traquant ses cibles avec une précision implacable. Employé comme chasseur de primes ou tueur de monstres, aucune proie ne lui échappe grâce à ses sens aiguisés semblables à ceux d’un prédateur. Il sait comment pister ses proies, peut identifier leurs forces et faiblesses, et sait également s’éclipser en cas de danger afin de revenir à la charge mieux préparé.",
+    "Requirements": {
+      "Talent": {
+        "Id": "7f59aab9-2398-4b3d-be64-3be095114f51",
+        "IsPublished": true,
+        "Slug": "attaque-incapacitante",
+        "Name": "Attaque incapacitante"
+      },
+      "Other": []
+    },
+    "Options": {
+      "Talents": [
+        {
+          "Id": "a2e6a255-f877-4929-8c73-226557bdffea",
+          "IsPublished": true,
+          "Slug": "focus",
+          "Name": "Focus"
+        },
+        {
+          "Id": "4db1e8cf-f0f0-41e9-8023-2a4db68d56c1",
+          "IsPublished": true,
+          "Slug": "embuscade",
+          "Name": "Embuscade"
+        },
+        {
+          "Id": "d1b6ecc3-1a12-4be6-91ac-adcdf4e5ac96",
+          "IsPublished": true,
+          "Slug": "bricolage-naturel",
+          "Name": "Bricolage naturel"
+        },
+        {
+          "Id": "09a52559-3dd9-4556-a4e8-c222585b3b2f",
+          "IsPublished": true,
+          "Slug": "tir-precis",
+          "Name": "Tir précis"
+        },
+        {
+          "Id": "208f05b5-cf04-4640-ab8c-92d540a65fc4",
+          "IsPublished": true,
+          "Slug": "prediction",
+          "Name": "Prédiction"
+        },
+        {
+          "Id": "f7157b4f-b65e-4eff-a66e-58d0a5c7f7be",
+          "IsPublished": true,
+          "Slug": "extraction-du-poison",
+          "Name": "Extraction du poison"
+        },
+        {
+          "Id": "ea127043-238b-46d6-aab8-809a908f3c75",
+          "IsPublished": true,
+          "Slug": "repli-defensif",
+          "Name": "Repli défensif"
+        },
+        {
+          "Id": "55be09ee-01f1-4ed4-a3e7-ef44c4619f2f",
+          "IsPublished": true,
+          "Slug": "acceleration",
+          "Name": "Accélération"
+        },
+        {
+          "Id": "9d6b0831-d4c7-4218-9a25-2e91f31370c2",
+          "IsPublished": true,
+          "Slug": "chargement-rapide",
+          "Name": "Chargement rapide"
+        },
+        {
+          "Id": "0b64a74b-9acf-4187-93e8-6c457fe1aa93",
+          "IsPublished": true,
+          "Slug": "toxicologie",
+          "Name": "Toxicologie"
+        },
+        {
+          "Id": "3acd933a-0e0d-44ce-ab18-0a4966734307",
+          "IsPublished": true,
+          "Slug": "attaques-multiples",
+          "Name": "Attaques multiples"
+        },
+        {
+          "Id": "fff4d66c-fbbb-44ba-a1f6-609d642f32bc",
+          "IsPublished": true,
+          "Slug": "sentinelle",
+          "Name": "Sentinelle"
+        },
+        {
+          "Id": "73bf30d0-02e8-4b97-ab9e-d07408a5b675",
+          "IsPublished": true,
+          "Slug": "initiative-superieure",
+          "Name": "Initiative supérieure"
+        },
+        {
+          "Id": "846e2d4a-7885-4d51-bc3b-58abc9242465",
+          "IsPublished": true,
+          "Slug": "erudition",
+          "Name": "Érudition"
+        }
+      ],
+      "Other": []
+    },
+    "ReservedTalent": {
+      "Name": "Battue",
+      "Description": [
+        "Lorsque le personnage porte un [camouflage naturel](/regles/talents/bricolage-naturel), alors il se voit conférer un bonus (+10) supplémentaire à ses [tests](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite)."
+      ],
+      "DiscountedTalents": [
+        {
+          "Id": "d801c31b-ae74-4f12-ba4e-8869f68453f4",
+          "IsPublished": true,
+          "Slug": "disparition",
+          "Name": "Disparition"
+        },
+        {
+          "Id": "6b0985c6-4e77-403e-b1a3-9c8473b6ed12",
+          "IsPublished": true,
+          "Slug": "rigueur-mentale",
+          "Name": "Rigueur mentale"
+        },
+        {
+          "Id": "619e0540-95ba-4bf5-be23-c4a7b1f70b0c",
+          "IsPublished": true,
+          "Slug": "surveillance",
+          "Name": "Surveillance"
+        },
+        {
+          "Id": "73bf30d0-02e8-4b97-ab9e-d07408a5b675",
+          "IsPublished": true,
+          "Slug": "initiative-superieure",
+          "Name": "Initiative supérieure"
+        }
+      ],
+      "Features": [
+        {
+          "Id": "25f9e852-3246-4713-8b22-ba47885d8c1b",
+          "IsPublished": true,
+          "Name": "Escampette",
+          "Description": "Lorsqu’un des déclencheurs suivants se produit, le personnage peut utiliser sa [réaction](/regles/combat/deroulement/tour) afin de bénéficier d’une capacité spécifique au déclencheur.\n\n<table class=\"table table-scoped text-center\">\n  <thead>\n    <tr>\n      <th scope=\"col\" class=\"w-50\">Déclencheur</th>\n      <th scope=\"col\" class=\"w-50\">Capacité</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Il est ciblé par une <a href=\"/regles/combat/attaque/opportunite\">attaque d’opportunité</a>.</td>\n      <td>\n        Le <a href=\"/regles/competences/tests\">test</a> des attaques d’opportunité dirigées contre lui est affligé du\n        <a href=\"/regles/competences/tests/avantage-desavantage\">désavantage</a> jusqu’au début de son prochain\n        <a href=\"/regles/combat/deroulement/tour\">tour</a>, incluant l’attaque ayant provoqué le déclencheur.\n      </td>\n    </tr>\n    <tr>\n      <td>Une <a href=\"/regles/combat/attaque\">attaque</a> dirigée contre lui réussit, pendant le tour d’une autre créature.</td>\n      <td>Bonus (+5) à l’<a href=\"/regles/statistiques/esquive\">Esquive</a> jusqu’à la fin du tour de cette créature.</td>\n    </tr>\n    <tr>\n      <td>Une <a href=\"/regles/combat/attaque/melee\">attaque de mêlée</a> dirigée contre le lui échoue.</td>\n      <td>Il redirige cette attaque contre une autre créature dans la portée de l’attaque. Le résultat du test est réutilisé.</td>\n    </tr>\n  </tbody>\n</table>"
+        },
+        {
+          "Id": "b74c52e7-65f0-4b18-aa23-9847ff86587d",
+          "IsPublished": true,
+          "Name": "Proie ultime",
+          "Description": "Lorsqu’il attaque sa [proie privilégiée](/regles/specialisations/chasseur), il ajoute [1d12 points de dégâts](/regles/combat/degats/jet) supplémentaires plutôt que 1d8.\n\nÉgalement, par une [action](/regles/combat/deroulement/tour), il peut étudier sa [proie privilégiée](/regles/specialisations/chasseur) afin d’acquérir les capacités suivantes. Il doit [voir](/regles/aventure/environnement/vision) la cible, et celle-ci doit se trouver à 18 mètres ou moins de sa position.\n\n- Il découvre les [résistances](/regles/combat/degats/efficacite), [vulnérabilités](/regles/combat/degats/efficacite) et [immunités](/regles/combat/degats/efficacite) de la cible. Si celle-ci est protégée contre les [pouvoirs](/regles/magie/pouvoirs) de [Divination](#), le personnage découvre qu’elle n’a aucune immunité, résistance ni vulnérabilité.\n- Il ajoute 1d10 à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les capacités de la cible, ainsi qu’à ses [tests](/regles/competences/tests) effectués afin de [s’en échapper](/regles/combat/activites/echapper).\n- \uD83D\uDEA7"
+        }
+      ]
+    }
+  },
+  {
     "Id": "e4133c80-ce3f-4816-a576-8bb851a519ab",
     "IsPublished": true,
     "Slug": "troubadour",
@@ -4702,8 +5119,8 @@
       "Name": "Fascination",
       "Description": [
         "Il peut [acquérir](/regles/talents/acquisition) [à rabais](/regles/talents/points) trois [talents](/regles/talents) parmi la liste suivante : [Érudition](/regles/talents/erudition), [Hostilité perturbatrice](/regles/talents/hostilite-perturbatrice), [Mythologie](/regles/talents/mythologie) et [Provocation](/regles/talents/provocation).",
-        "Lorsqu’il joue une [Berceuse apaisante](/regles/specialisations/menestrel), il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) supplémentaires afin d’ajouter la moitié de sa [Puissance](/regles/statistiques/puissance) aux points de [Vitalité](/regles/statistiques/vitalite) [récupérés](/regles/combat/degats/soins). Lorsqu’il en fait ainsi, il ne peut réutiliser cette capacité pendant les [7 prochains jours](/regles/aventure/temps).",
-        "Lorsqu’il joue un [Boléro héroïque](/regles/specialisations/menestrel), la cible peut utiliser le d10 autrement. Elle peut l’ajouter aux [points de dégâts](/regles/combat/degats) infligés par une [attaque](/regles/combat/attaque) ou un [pouvoir](/regles/magie/pouvoirs). Elle peut également utiliser sa [réaction](/regles/combat/deroulement/tour) afin de l’ajouter à son [Esquive](/regles/combat/attaque/esquive) lorsqu’elle est ciblée par une attaque avant de savoir si l’attaque réussit ou échoue."
+        "Lorsqu’il joue une [Berceuse apaisante](/regles/specialisations/menestrel), il peut dépenser 15 points d’[Énergie](/regles/statistiques/energie) supplémentaires afin d’ajouter la moitié de son [Stratagème](/regles/statistiques/stratageme) aux points de [Vitalité](/regles/statistiques/vitalite) [récupérés](/regles/combat/degats/soins).",
+        "Lorsqu’il joue un [Boléro héroïque](/regles/specialisations/menestrel), la cible peut utiliser le d10 autrement. Elle peut l’ajouter aux [points de dégâts](/regles/combat/degats) infligés par une [attaque](/regles/combat/attaque) ou un [pouvoir](/regles/magie/pouvoirs) à une seule créature. Elle peut également utiliser sa [réaction](/regles/combat/deroulement/tour) afin de l’ajouter à son [Esquive](/regles/combat/attaque/esquive) lorsqu’elle est ciblée par une attaque avant de savoir si l’attaque réussit ou échoue."
       ],
       "DiscountedTalents": [],
       "Features": [

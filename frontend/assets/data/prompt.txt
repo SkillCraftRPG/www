@@ -1,7 +1,0 @@
-Conserver les 100 meilleurs éléments
-Introduire mon propre style d'écriture, que tu vas dans de nombreuses captures d'écran
-Lorsque plusieurs se ressemblent trop, fusionne-les
-Traduire en français
-Élimine les doublons
-Élimine les références directes à D&D qui pourraient me mettre légalement dans le trouble
-Éliminer ceux qui sont trop spécifiques, on veut des éléments qui peuvent généraux et qui peuvent convenir à la majorité des personnages
