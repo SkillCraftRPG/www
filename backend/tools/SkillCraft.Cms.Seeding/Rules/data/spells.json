@@ -286,5 +286,155 @@
         "Description": "Le personnage s’insuffle la puissance d’un gardien de la nature.\n\n- _Bête primitive._ Le corps du personnage se couvre de fourrure, de plumes ou d’écailles, et ses traits deviennent ceux d’une créature sauvage. Il acquiert les capacités suivantes :\n  - Bonus de [2 points de mouvement](/regles/aventure/mouvement/vitesse).\n  - [Vision dans le noir](/regles/aventure/environnement/vision) de 36 mètres.\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance).\n  - Bonus de 1d6 + moitié de sa [Puissance](/regles/statistiques/puissance) [points de dégâts magiques](/regles/combat/degats/types) à ses [attaques](/regles/combat/attaque) physiques.\n- _Grand arbre._ Le corps du personnage se couvre d’écorce et ses feuilles poussent dans ses cheveux. Il acquiert les capacités suivantes :\n  - Il acquiert un nombre de points d’[Énergie](/regles/statistiques/energie) et de [Vitalité](/regles/statistiques/vitalite) [temporaires](/regles/combat/degats/temporaire) égal à sa [Puissance](/regles/statistiques/puissance).\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline), d’[Occultisme](/regles/competences/occultisme) et d’[Orientation](/regles/competences/orientation).\n  - Le sol dans un rayon de 4,5 mètres autour de lui devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile) pour les créatures de son choix.\n  - Il ne peut être [renversé](/regles/combat/conditions/renverse), ni déplacé contre son gré."
       }
     ]
+  },
+  {
+    "Id": "04939981-ec6a-4ea7-b917-946120cb0863",
+    "IsPublished": true,
+    "Slug": "flamme-sacree",
+    "Name": "Flamme sacrée",
+    "Tier": 0,
+    "Summary": "Frappe une cible d’une flamme divine et facilite la prochaine attaque.",
+    "MetaDescription": "Découvrez une flamme divine qui châtie une cible à distance, inflige des dégâts radiants croissants et confère un avantage à la prochaine attaque contre elle.",
+    "Description": "Une flamme divine frappe une cible à distance, lui infligeant des dégâts radiants croissants selon le niveau et offrant un avantage à la prochaine attaque dirigée contre elle.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage tente de châtier une créature en lui projetant une flamme sacrée. La cible doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties).\n\nEn cas d’échec, elle reçoit 1d6 [points de dégâts radiants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage.\n\nElle émet également une faible lumière divine qui confère l’[avantage](/regles/competences/tests/avantage-desavantage) au [test](/regles/competences/tests) de la prochaine [attaque](/regles/combat/attaque) dirigée contre la cible jusqu’à la fin du [tour](/regles/combat/deroulement/tour) du personnage."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 18,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Les [points de dégâts](/regles/combat/degats) infligés augmentent à 2d6 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage, et la faible lumière divine dure jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) du personnage."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 24,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Les [points de dégâts](/regles/combat/degats) infligés augmentent à 4d6 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage, et la faible lumière divine dure jusqu’à la fin du prochain [tour](/regles/combat/deroulement/tour) du personnage."
+      }
+    ]
+  },
+  {
+    "Id": "9477c73d-443e-41b2-9896-0561572876c3",
+    "IsPublished": true,
+    "Slug": "frisson",
+    "Name": "Frisson",
+    "Tier": 0,
+    "Summary": "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
+    "MetaDescription": "Découvrez Frisson, un pouvoir spectral alliant main glaciale entravant la vitalité, mot d’effroi terrifiant et onde nécrotique drainant vie ou soignant.",
+    "Description": "Pouvoir spectral mêlant attaque nécrotique, entrave de la régénération, terreur ciblée et onde de vie ou de mort capable d’infliger de lourds dégâts ou de soigner.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 24,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée une main spectrale et squelettique, qui [attaque](/regles/magie/effets/attaque) une cible.\n\nSi l’attaque réussit, la créature reçoit [1d6 points de dégâts](a/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage.\n\nDe plus, la main s’accroche sur la cible jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) du personnage. La cible ne peut [récupérer](/regles/combat/degats/soins) de points de [Vitalité](/regles/statistiques/vitalite) pendant cette durée.\n\nSi la cible est un mort-vivant, le test de ses [attaques](/regles/combat/attaque) dirigées contre le personnage se voit affligé du [désavantage](/regles/competences/tests/avantage-desavantage) pendant cette durée."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage évoque un mot d’effroi en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLes morts-vivants, constructions et créatures immunisées à la peur ne sont pas affectées.\n\nSi la cible échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline), alors elle est [apeurée](/regles/combat/conditions/apeure) par le personnage pendant la durée du pouvoir.\n\nElle peut répéter le jet de sauvegarde à la fin de chacun de ses [tours](/regles/combat/deroulement/tour), mettant fin à l’effet si elle réussit."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": "Une vigne flétrie tordue en une boucle.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision) et invoque les forces de la vie et de la mort dans une sphère de 3 mètres centrée sur ce point.\n\nToute créature de son choix dans la zone doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance).\n\nEn cas d’échec, une créature reçoit [3d6 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Elle ne reçoit que la moitié des [points de dégâts](/regles/combat/degats) en cas de réussite.\n\nLe personnage peut également désigner une créature dans la zone. Cette créature [récupère](/regles/combat/degats/soins) un nombre de points de [Vitalité](/regles/statistiques/vitalite) égal aux points de dégâts infligés.\n\nToute végétation non magique dans la zone fane. Les morts-vivants et constructions ne sont pas affectés par ce pouvoir."
+      }
+    ]
   }
 ]
