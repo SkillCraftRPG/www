@@ -223,27 +223,6 @@
     "Description": "Pouvoir polyvalent accordant des atouts inspirés des animaux, la respiration sous l’eau ou une métamorphose druidique offrant force, défense, sens accrus et énergie temporaire.",
     "Abilities": [
       {
-        "Level": 0,
-        "Name": null,
-        "Casting": {
-          "Time": "2",
-          "Ritual": false
-        },
-        "Duration": {
-          "Value": 1,
-          "Unit": "Hour",
-          "Concentration": true
-        },
-        "Range": 1,
-        "Components": {
-          "Focus": null,
-          "Material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
-          "Somatic": true,
-          "Verbal": true
-        },
-        "Description": "Le personnage touche une créature consentante afin de lui insuffler un des effets suivants.\n\n- _Endurance de l’ours._ Confère l’[avantage](/regles/competences/tests/avantage-desavantage) aux [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance). Sa [taille](/regles/especes/taille) est considérée comme étant d’une catégorie supérieure pour l’[encombrement](/regles/equipement/encombrement).\n- _Férocité du dragon._ Confère l’avantage aux tests de [Discipline](/regles/competences/discipline) et d’[Occultisme](/regles/competences/occultisme) ainsi que 2d6 + moitié de la [Puissance](/regles/statistiques/puissance) du personnage points de [Vitalité](/regles/statistiques/vitalite) et d’[Énergie](/regles/statistiques/energie) [temporaires](/regles/combat/degats/temporaire).\n- _Grâce féline._ Confère l’avantage aux tests d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite), et elle retire 6 mètres à la hauteur des [chutes](/regles/aventure/environnement/chute) qu’elle subit dans le calcul des [points de dégâts](/regles/combat/degats) lorsqu’elle n’est pas [incapable](/regles/combat/conditions/incapable).\n- _Habileté du raton laveur._ Confère l’avantage aux tests d’[Artisanat](/regles/competences/artisanat), d’[Orientation](/regles/competences/orientation) et de [Roublardise](/regles/competences/roublardise). Lorsqu’elle travaille en manipulant des [outils](/regles/equipement/outils), par exemple par un test d’Artisanat ou de Roublardise, elle réduit de moitié le temps nécessaire à sa tâche.\n- _Peau d’écorce._ Sa peau durcit, prenant une texture similaire à celle de l’écorce, et sa [Défense](/regles/combat/attaque/defense) prend la valeur de 20, ignorant son [armure](/regles/equipement/armures) (mais pas son [bouclier](/regles/equipement/boucliers)).\n- _Ruse du renard._ Confère l’avantage aux tests de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) et de [Médecine](/regles/competences/medecine), ainsi qu’un bonus égal à son [tiers](/regles/personnages/progression/tiers) à tous ses tests de [compétence](/regles/competences).\n- _Sagesse du hibou._ Confère l’avantage aux tests d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie), et permet de relancer le dé lors d’un test d’[Initiative](/regles/combat/deroulement/initiative) et d’utiliser le résultat de son choix.\n- _Splendeur de l’aigle._ Confère l’avantage aux tests de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation) et de [Tromperie](/regles/competences/tromperie), ainsi qu’un bonus (+5) aux [tests passifs](/regles/competences/tests/passif) afin de déterminer l’[attitude initiale](/regles/aventure/interaction-sociale) des personnages non joueurs."
-      },
-      {
         "Level": 1,
         "Name": null,
         "Casting": {
@@ -263,6 +242,27 @@
           "Verbal": true
         },
         "Description": "Le personnage désigne un nombre de créatures qu’il peut [voir](/regles/aventure/environnement/vision) inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Une écaille est consommée pour chaque créature désignée. Les créatures désignées acquièrent la capacité à [respirer sous l’eau](/regles/aventure/environnement/suffocation) pour la durée du pouvoir."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante afin de lui insuffler un des effets suivants.\n\n- _Endurance de l’ours._ Confère l’[avantage](/regles/competences/tests/avantage-desavantage) aux [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance). Sa [taille](/regles/especes/taille) est considérée comme étant d’une catégorie supérieure pour l’[encombrement](/regles/equipement/encombrement).\n- _Férocité du dragon._ Confère l’avantage aux tests de [Discipline](/regles/competences/discipline) et d’[Occultisme](/regles/competences/occultisme) ainsi que 2d6 + moitié de la [Puissance](/regles/statistiques/puissance) du personnage points de [Vitalité](/regles/statistiques/vitalite) et d’[Énergie](/regles/statistiques/energie) [temporaires](/regles/combat/degats/temporaire).\n- _Grâce féline._ Confère l’avantage aux tests d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite), et elle retire 6 mètres à la hauteur des [chutes](/regles/aventure/environnement/chute) qu’elle subit dans le calcul des [points de dégâts](/regles/combat/degats) lorsqu’elle n’est pas [incapable](/regles/combat/conditions/incapable).\n- _Habileté du raton laveur._ Confère l’avantage aux tests d’[Artisanat](/regles/competences/artisanat), d’[Orientation](/regles/competences/orientation) et de [Roublardise](/regles/competences/roublardise). Lorsqu’elle travaille en manipulant des [outils](/regles/equipement/outils), par exemple par un test d’Artisanat ou de Roublardise, elle réduit de moitié le temps nécessaire à sa tâche.\n- _Peau d’écorce._ Sa peau durcit, prenant une texture similaire à celle de l’écorce, et sa [Défense](/regles/combat/attaque/defense) prend la valeur de 20, ignorant son [armure](/regles/equipement/armures) (mais pas son [bouclier](/regles/equipement/boucliers)).\n- _Ruse du renard._ Confère l’avantage aux tests de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) et de [Médecine](/regles/competences/medecine), ainsi qu’un bonus égal à son [tiers](/regles/personnages/progression/tiers) à tous ses tests de [compétence](/regles/competences).\n- _Sagesse du hibou._ Confère l’avantage aux tests d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie), et permet de relancer le dé lors d’un test d’[Initiative](/regles/combat/deroulement/initiative) et d’utiliser le résultat de son choix.\n- _Splendeur de l’aigle._ Confère l’avantage aux tests de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation) et de [Tromperie](/regles/competences/tromperie), ainsi qu’un bonus (+5) aux [tests passifs](/regles/competences/tests/passif) afin de déterminer l’[attitude initiale](/regles/aventure/interaction-sociale) des personnages non joueurs."
       },
       {
         "Level": 2,
@@ -373,6 +373,27 @@
     "Description": "Pouvoir spectral mêlant attaque nécrotique, entrave de la régénération, terreur ciblée et onde de vie ou de mort capable d’infliger de lourds dégâts ou de soigner.",
     "Abilities": [
       {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": "Une vigne flétrie tordue en une boucle.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision) et invoque les forces de la vie et de la mort dans une sphère de 3 mètres centrée sur ce point.\n\nToute créature de son choix dans la zone doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance).\n\nEn cas d’échec, une créature reçoit [3d6 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Elle ne reçoit que la moitié des [points de dégâts](/regles/combat/degats) en cas de réussite.\n\nLe personnage peut également désigner une créature dans la zone. Cette créature [récupère](/regles/combat/degats/soins) un nombre de points de [Vitalité](/regles/statistiques/vitalite) égal aux points de dégâts infligés.\n\nToute végétation non magique dans la zone fane. Les morts-vivants et constructions ne sont pas affectés par ce pouvoir."
+      },
+      {
         "Level": 0,
         "Name": null,
         "Casting": {
@@ -413,9 +434,192 @@
           "Verbal": true
         },
         "Description": "Le personnage évoque un mot d’effroi en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLes morts-vivants, constructions et créatures immunisées à la peur ne sont pas affectées.\n\nSi la cible échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline), alors elle est [apeurée](/regles/combat/conditions/apeure) par le personnage pendant la durée du pouvoir.\n\nElle peut répéter le jet de sauvegarde à la fin de chacun de ses [tours](/regles/combat/deroulement/tour), mettant fin à l’effet si elle réussit."
+      }
+    ]
+  },
+  {
+    "Id": "2f31e9f8-4123-4c7c-8332-68db49ecddd2",
+    "IsPublished": true,
+    "Slug": "flammes-feeriques",
+    "Name": "Flammes féériques",
+    "Tier": 0,
+    "Summary": "Feux féeriques, auras révélatrices et flammes radiantes poursuivant les cibles.",
+    "MetaDescription": "Découvrez Flammes féériques, un pouvoir lumineux invoquant feux arc-en-ciel, auras révélatrices et flammes radiantes traquant même les métamorphes.",
+    "Description": "Pouvoir féerique créant des flammes colorées, révélant les créatures, illuminant les invisibles et infligeant de lourds dégâts radiants, surtout contre les métamorphes.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée un feu de camp dans un espace cubique de 1,5 mètres d’arête qu’il peut [voir](/regles/aventure/environnement/vision). Toute créature se trouvant dans la zone lorsque les flammes apparaissent doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties). Une créature doit également effectuer le jet de sauvegarde lorsqu’elle entre dans la zone pour la première fois pendant son [tour](/regles/combat/deroulement/tour), ou si elle y termine son tour. En cas d’échec, une créature reçoit [1d6 points de dégâts](/regles/combat/degats/jet) de [feu](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Les flammes illuminent d’une ou de plusieurs couleurs de l’arc-en-ciel, au choix du personnage au moment où il [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir. Les objets dans la zone qui ne sont pas tenus ni portés s’enflamment."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision), et un cube de 6 mètres d’arête de lumière féérique apparaît centré sur ce point. Toute créature située à l’intérieur du cube au moment où il apparaît doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties). En cas d’échec, une aura de 3 mètres de pénombre colorée (bleue, verte ou violette, au choix du personnage) émane de la créature, ce qui confère l’[avantage](/regles/competences/tests/avantage-desavantage) au [test](/regles/competences/tests) des [attaques](/regles/combat/attaque) ciblant la créature. Une aura colorée émane également des objets se trouvant dans la zone. Un objet ou une créature [invisible](/regles/combat/conditions/invisible) émanant cette aura ne bénéficie pas des effets de l’invisibilité."
       },
       {
         "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 24,
+        "Components": {
+          "Focus": "Un feldspath opalescent.",
+          "Material": "Une semence de ménispermacée.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision). Un cylindre de 1,5 mètres de rayon et de 12 mètres de hauteur de [pénombre](/regles/aventure/environnement/vision) argentée émane, centré sur ce point. Une fois par [tour](/regles/combat/deroulement/tour), par une [action](/regles/combat/deroulement/tour), le personnage peut déplacer le cylindre de 18 mètres dans n’importe quelle direction.\n\nLorsqu’une créature débute son tour dans la zone ou qu’elle y entre pour la première fois pendant son tour, elle s’immole de douloureuses flammes féériques et doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance). En cas d’échec, elle reçoit [2d12 points de dégâts](/regles/combat/degats/jet) [radiants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. En cas de réussite, elle ne reçoit que la moitié des points de dégâts.\n\nSi la créature est un métamorphe, son jet de sauvegarde est effectué avec [désavantage](/regles/competences/tests/avantage-desavantage), les [points de dégâts](/regles/combat/degats) reçus sont doublés, et elle reprend instantanément sa forme d’origine si elle échoue le jet de sauvegarde. Une créature ne peut se métamorphoser à l’intérieur de la zone."
+      }
+    ]
+  },
+  {
+    "Id": "cba08313-bd3f-4529-b474-2dce47309769",
+    "IsPublished": true,
+    "Slug": "lumiere",
+    "Name": "Lumière",
+    "Tier": 0,
+    "Summary": "Illumine un objet ou crée une sphère de lumière mobile.",
+    "MetaDescription": "Découvrez un pouvoir qui illumine un objet ou crée une sphère lumineuse étendue, offrant clarté et pénombre selon le niveau employé.",
+    "Description": "Ce pouvoir éclaire durablement un objet ou génère une large sphère lumineuse, offrant clarté et pénombre pour révéler l’environnement selon le niveau.",
+    "Abilities": [
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage fait apparaître une sphère de lumière centrée sur un point qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLa sphère émet de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 18 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 18 mètres additionnels.\n\nSi le point se trouve sur un objet qui est tenu mais qui n’est pas porté, la sphère se déplace avec l’objet. La lumière ne peut traverser un objet opaque telle une couverture."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "De la mousse phosphorescente ou une luciole.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "La lumière dégagée par l’objet augmente à 12 mètres de [clarté](/regles/aventure/environnement/vision) et 12 mètres additionnels de [pénombre](/regles/aventure/environnement/vision).\n\nSi le personnage cible un objet tenu ou porté par une créature ennemie, celle-ci échoue automatiquement le [jet de sauvegarde](/regles/competences/tests/sauvegarde)."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "De la mousse phosphorescente ou une luciole.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche un objet dont les dimensions sont inférieures à celle d’un cube de 3 mètres d’arête.\n\nL’objet dégage de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 6 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 6 mètres additionnels. La lumière ne peut traverser un objet opaque telle une couverture.\n\nUne seule lumière peut être active à la fois, et le personnage peut éteindre la lumière par une [action](/regles/combat/deroulement/tour).\n\nS’il cible un objet tenu ou porté par une créature ennemie, celle-ci peut effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) afin d’éviter les effets du [pouvoir](/regles/magie/pouvoirs)."
+      }
+    ]
+  },
+  {
+    "Id": "4e58d109-8f36-40cd-9d6f-646b0d0d4256",
+    "IsPublished": true,
+    "Slug": "vignes-epineuses",
+    "Name": "Vignes épineuses",
+    "Tier": 0,
+    "Summary": "Fouet de ronces, zone entravante ou ronces camouflées infligeant des dégâts.",
+    "MetaDescription": "Découvrez Vignes épineuses, un pouvoir druidique qui fouette, entrave ou blesse les créatures grâce à des ronces et plantes animées surgissant du sol.",
+    "Description": "Pouvoir végétal invoquant un fouet épineux, des vignes saisissantes ou des ronces camouflées qui ralentissent, restreignent ou blessent les créatures prises dans la zone.",
+    "Abilities": [
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 18,
+        "Components": {
+          "Focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision).\n\nUn carré de 6 mètres de côté centré sur ce point se remplit d’herbes et de vignes saisissantes, et la zone devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile).\n\nToute créature se trouvant à l’intérieur du carré lorsque le personnage [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Athlétisme](/regles/competences/athletisme).\n\nEn cas d’échec, elle est [restreinte](/regles/combat/conditions/restreint) par les herbes et les vignes.\n\nUne fois par [tour](/regles/combat/deroulement/tour), elle peut tenter de [s’échapper](/regles/combat/activites/echapper) et tentant le jet de sauvegarde à nouveau. Les plantes disparaissent lorsque le pouvoir prend fin."
+      },
+      {
+        "Level": 0,
         "Name": null,
         "Casting": {
           "Time": "2",
@@ -426,14 +630,35 @@
           "Unit": "Round",
           "Concentration": false
         },
-        "Range": 12,
+        "Range": 6,
         "Components": {
-          "Focus": "Une vigne flétrie tordue en une boucle.",
+          "Focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
           "Material": null,
           "Somatic": true,
           "Verbal": true
         },
-        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision) et invoque les forces de la vie et de la mort dans une sphère de 3 mètres centrée sur ce point.\n\nToute créature de son choix dans la zone doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance).\n\nEn cas d’échec, une créature reçoit [3d6 points de dégâts](/regles/combat/degats/jet) [nécrotiques](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Elle ne reçoit que la moitié des [points de dégâts](/regles/combat/degats) en cas de réussite.\n\nLe personnage peut également désigner une créature dans la zone. Cette créature [récupère](/regles/combat/degats/soins) un nombre de points de [Vitalité](/regles/statistiques/vitalite) égal aux points de dégâts infligés.\n\nToute végétation non magique dans la zone fane. Les morts-vivants et constructions ne sont pas affectés par ce pouvoir."
+        "Description": "Le personnage fait apparaître un long fouet constitué d’une vigne épineuse dans une de ses mains libres, puis [attaque](/regles/magie/effets/attaque) une créature.\n\nSi l’attaque réussit, la créature reçoit [1d6 points de dégâts](/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage.\n\nSi la [taille](/regles/especes/taille) de la cible est d’au plus une catégorie supérieure à celle du personnage, alors la cible est rapprochée de 3 mètres en direction du personnage.\n\nLe fouet disparaît à la suite à l’attaque dans un nuage de poussière de bois."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 30,
+        "Components": {
+          "Focus": "La tige d’une plante épineuse dont l’une des extrémités a été aiguisée en pointe.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision). Des ronces et racines épineuses poussent dans un rayon de 6 mètres centré sur ce point.\n\nCes plantes sont camouflées et semblent naturelles, une créature doit donc réussir un [test](/regles/competences/tests) de [Perception](/regles/competences/perception) [opposé](/regles/competences/tests/oppose) au test d’[Occultisme](/regles/competences/occultisme) du personnage afin de détecter leur présence.\n\nLa zone devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile), et une créature reçoit [3d4 points de dégâts](/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) pour chaque case traversée dans la zone."
       }
     ]
   }
