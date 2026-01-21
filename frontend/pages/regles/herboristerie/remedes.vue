@@ -27,9 +27,9 @@
         d’<NuxtLink to="/regles/combat/conditions/assourdi">assourdissement</NuxtLink> une heure après son application.
       </li>
       <li>
-        <strong>Médicament.</strong> Ce remède supprime les effets d’une maladie pendant les 24 prochaines heures. La maladie prend fin après 7 jours
-        consécutifs de consommation du remède, même si sa durée est plus longue que 7 jours. Il est composé d’un mélange d’herbes : échinacée, ail, gingembre,
-        curcuma ou sureau, et réglisse.
+        <strong>Médicament.</strong> Ce remède supprime les effets d’une maladie pendant les
+        <NuxtLink to="/regles/aventure/temps">24 prochaines heures</NuxtLink>. La maladie prend fin après 7 jours consécutifs de consommation du remède, même si
+        sa durée est plus longue que 7 jours. Il est composé d’un mélange d’herbes : échinacée, ail, gingembre, curcuma ou sureau, et réglisse.
       </li>
       <li>
         <strong> Œil-de-pirate. </strong> Des gouttes pour les yeux, appliquées sous un cache-œil porté pendant une heure afin de retirer un effet d’<NuxtLink
@@ -77,7 +77,8 @@
         <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink>.
       </li>
       <li>
-        <strong>Tonus.</strong> Cette concoction médicinale permet à une créature de récupérer instantanément 3+3d4 points de
+        <strong>Tonus.</strong> Cette concoction médicinale permet à une créature de
+        <NuxtLink to="/regles/combat/degats/soins">récupérer</NuxtLink> instantanément 3+3d4 points de
         <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> ou d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink>. À la fin de sa
         prochaine heure de <NuxtLink to="/regles/aventure/repos/halte">halte</NuxtLink> ou de <NuxtLink to="/regles/aventure/repos/sommeil">sommeil</NuxtLink>,
         elle récupère également 15 points de Vitalité ou d’Énergie. La créature ne peut ensuite pas bénéficier des effets de cette concoction pendant les 24
