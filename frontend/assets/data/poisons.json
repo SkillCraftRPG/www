@@ -1,0 +1,82 @@
+[
+  {
+    "id": "a4cfefbd-4ef2-4d8e-92b6-7a9962f27603",
+    "slug": "fausse-oronge",
+    "name": "Fausse oronge",
+    "category": "Advanced",
+    "trigger": "Inhaled",
+    "description": "Les spores de ce champignon provoquent une puissante furie incontrôlable. Une créature qui en inhale les spores doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas d’échec, elle est tombe dans l’état léthargique décrit ci-dessous. Si le résultat du jet de sauvegarde est inférieur à 20, elle est plutôt prise d’une rage meurtrière. Elle se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme) et de [Mêlée](/regles/competences/melee), inflige [1d8 points de dégâts](/regles/combat/degats/jet) supplémentaires, [résiste](/regles/combat/degats/efficacite) aux [dégâts physiques](/regles/combat/degats/types), et se voit conférer un bonus de [points de mouvement](/regles/aventure/mouvement/vitesse) égal à son [tiers](/regles/personnages/progression/tiers). Elle ne peut [canaliser](/regles/magie/pouvoirs/canalisation) de [pouvoir](/regles/magie/pouvoirs), et perd instantanément sa [concentration](/regles/magie/parametres/duree). Elle ne distingue pas ses alliés de ses ennemis, et [attaque](/regles/combat/attaque) la créature la plus proche qu’elle peut [voir](/regles/aventure/environnement/vision). La rage prend fin lorsque la créature tombe [inconsciente](/regles/combat/conditions/inconscient) ou [agonisante](/regles/combat/conditions/agonisant), ou lorsqu’il ne lui reste aucune cible à attaquer. Lorsque la rage prend fin, la créature tombe dans un état léthargique pendant la prochaine [heure](/regles/aventure/temps). Elle est [empoisonnée](/regles/combat/conditions/empoisonne), [étourdie](/regles/combat/conditions/etourdi), et sa [vitesse](/regles/aventure/mouvement/vitesse) est réduite de moitié."
+  },
+  {
+    "id": "447aa920-440e-4bdd-86bc-d1f990de1c35",
+    "slug": "graisse-allergene",
+    "name": "Graisse allergène",
+    "category": "Basic",
+    "trigger": "Contact",
+    "description": "Au contact de cette graisse, une créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté élevée](/regles/competences/tests/difficulte). En cas d’échec, le corps de la créature enfle, et elle est [empoisonnée](/regles/combat/conditions/empoisonne) pendant 1d4 [heures](/regles/aventure/temps). De plus, si le résultat du jet de sauvegarde est inférieur à 15, ses tympans enflent dangereusement, ce qui la rend [sourde](/regles/combat/conditions/assourdi) pendant la durée du poison, et lui inflige [4d4 points de dégâts](/regles/combat/degats/jet) [psychiques](/regles/combat/degats/types) au début de chaque heure. Ce poison est obtenu à partir de sumac vénéneux, d’ortie commune ou de dentelaire, et d’un corps graisseux, par exemple de la graisse animale ou encore du miel."
+  },
+  {
+    "id": "ba21673e-ef26-4415-863c-c20c08fca362",
+    "slug": "larmes-de-minuit",
+    "name": "Larmes de minuit",
+    "category": "Advanced",
+    "trigger": "Ingested",
+    "description": "Lorsque ingéré, ce poison ne provoque aucun effet jusqu’à minuit. Si le poison n’a pas été neutralisé à ce moment, la créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas de réussite, elle ne reçoit que la moitié des [points de dégâts](/regles/combat/degats). En cas d’échec, elle reçoit [13d6 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types). De plus, si le résultat du jet de sauvegarde est inférieur à 20, la [Vitalité](/regles/statistiques/vitalite) maximale de la créature est réduite de ce nombre pendant les [24 prochaines heures](/regles/aventure/temps). Une créature tombant à l’[agonie](/regles/combat/conditions/agonisant) à cause de ce poison [meurt](/regles/combat/mort-agonie) instantanément. Ce venin doit être extrait d’un animal [mort](/regles/combat/conditions/mort) ou [incapable](/regles/combat/conditions/incapable), telle la méduse-boîte, la pieuvre à anneaux bleus, l’escargot cône marin, un serpent (elapidae ou cobra royal), scorpion (rôdeur mortel) ou une araignée (atracidae ou veuve noire) très venimeuse, le poisson-pierre, la rascasse ou la raie pastenague à taches bleues."
+  },
+  {
+    "id": "fb640954-9831-470d-8182-a5c053c1bb30",
+    "slug": "malice",
+    "name": "Malice",
+    "category": "Basic",
+    "trigger": "Inhaled",
+    "description": "Une créature qui inhale ce poison doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté élevée](/regles/competences/tests/difficulte). En cas d’échec, la créature est [empoisonnée](/regles/combat/conditions/empoisonne) pendant 1d4 [heures](/regles/aventure/temps). De plus, si le résultat du jet de sauvegarde est inférieur à 15, la cible est [aveuglée](/regles/combat/conditions/aveugle) pendant la durée du poison. Ce poison peut être obtenu à partir de panais sauvage ou de ricin commun, réduit en poudre."
+  },
+  {
+    "id": "42768cdf-54e3-41b0-bdd7-9267808e933a",
+    "slug": "reduction-naturelle",
+    "name": "Réduction naturelle",
+    "category": "Advanced",
+    "trigger": "Contact",
+    "description": "Ce poison prend la forme d’un baume qui doit être appliqué sur la peau. Un ingrédient variant selon l’effet désiré entre dans sa composition : un fluide d’un animal ou d’une créature, déterminant l’[attribut](/regles/attributs) affecté. Cet ingrédient peut être inspiré par le [niveau 2](/regles/magie/pouvoirs/niveau) du pouvoir [Augmentation naturelle](/regles/magie/pouvoirs/augmentation-naturelle), à la discrétion du maître de jeu. Au contact de ce poison, une créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas d’échec, la créature subit une pénalité (-2) à l’attribut affecté pendant les [24 prochaines heures](/regles/aventure/temps)."
+  },
+  {
+    "id": "823a69bd-a508-4547-9ac5-02029b2fc182",
+    "slug": "sang-d-assassin",
+    "name": "Sang d’assassin",
+    "category": "Basic",
+    "trigger": "Ingested",
+    "description": "Une créature qui ingère ce poison doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté moyenne](/regles/competences/tests/difficulte). En cas d’échec, la créature reçoit [1d20 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types) et est [empoisonnée](/regles/combat/conditions/empoisonne) pendant [24 heures](/regles/aventure/temps). De plus, la créature tombe [inconsciente](/regles/combat/conditions/inconscient) pendant une heure si le résultat du jet de sauvegarde est inférieur à 10, ou si elle échoue le jet de sauvegarde et que son [dé de Damnation](/regles/competences/tests/2d10) est supérieur à son [dé d’Espérance](/regles/competences/tests/2d10). Elle se réveille si elle reçoit quelconque [point de dégâts](/regles/combat/degats), ou si une autre créature la réveille par une [action](/regles/combat/deroulement/tour). En cas de réussite, la créature ne reçoit que la moitié des points de dégâts, et elle ne sait pas qu’on a tenté de l’empoisonner. Ce poison est produit à partir de mildiou, un champignon associé à la pomme de terre."
+  },
+  {
+    "id": "0d9acc70-b46e-4ab8-985d-8bd3b0186f7f",
+    "slug": "torpeur",
+    "name": "Torpeur",
+    "category": "Advanced",
+    "trigger": "Ingested",
+    "description": "Une créature qui ingère ce poison doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas d’échec, la créature est [empoisonnée](/regles/combat/conditions/empoisonne) pendant 4d6 [heures](/regles/aventure/temps). De plus, si le résultat du jet de sauvegarde est inférieur à 20, la créature tombe [incapable](/regles/combat/conditions/incapable) pendant la durée du poison. Ce poison est concocté à partir de puissantes toxines végétales, par exemple celle de l’abrus à chapelet, l’Agératine élevée, de la cicutaire ou encore du laurier-rose."
+  },
+  {
+    "id": "466fbe12-54a2-4c17-a486-4d9cd0b168c7",
+    "slug": "vapeur-de-verite",
+    "name": "Vapeur de vérité",
+    "category": "Advanced",
+    "trigger": "Inhaled",
+    "description": "Lorsqu’une créature inhale ce poison, elle doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas d’échec, il lui est impossible de mentir volontairement pendant la prochaine [heure](/regles/aventure/temps). De plus, si le résultat du jet de sauvegarde est inférieur à 20, la créature est [empoisonnée](/regles/combat/conditions/empoisonne) pendant la durée du poison. Ce poison est produit à partir d’alcool et de solanacées, par exemple la jusquiame noire, le stramoine (datura) ou la belladone."
+  },
+  {
+    "id": "f39b3e84-12a2-4517-aef3-2bdb4bce0059",
+    "slug": "venin-de-serpent",
+    "name": "Venin de serpent",
+    "category": "Basic",
+    "trigger": "Injury",
+    "description": "Ce venin est extrait d’un serpent venimeux [mort](/regles/combat/conditions/mort) ou [incapable](/regles/combat/conditions/incapable), par exemple une vipère ou un cobra. Une créature [blessée](/regles/combat/degats) par ce venin doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté élevée](/regles/competences/tests/difficulte). En cas de réussite, la créature ne reçoit que la moitié des [points de dégâts](/regles/combat/degats). En cas d’échec, la créature reçoit [4d6 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types). De plus, si le résultat du jet de sauvegarde est inférieur à 15, la créature est [paralysée](/regles/combat/conditions/paralyse) pendant [une minute](/regles/aventure/temps). Elle peut répéter le jet de sauvegarde au début de chacun de ses [tours](/regles/combat/deroulement/tour), et n’est plus paralysée si elle réussit."
+  },
+  {
+    "id": "888b8ecf-035c-4270-b87e-9c4670d19f03",
+    "slug": "venin-de-vouivre",
+    "name": "Venin de vouivre",
+    "category": "Advanced",
+    "trigger": "Injury",
+    "description": "Ce venin est extrait d’une vouivre [morte](/regles/combat/conditions/mort) ou [incapable](/regles/combat/conditions/incapable). Une créature blessée par ce venin doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance) de [difficulté très élevée](/regles/competences/tests/difficulte). En cas de réussite, la créature ne reçoit que la moitié des [points de dégâts](/regles/combat/degats). En cas d’échec, la créature reçoit [10d6 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types). De plus, si le résultat du jet de sauvegarde est inférieur à 20, la créature est [paralysée](/regles/combat/conditions/paralyse) pendant [une minute](/regles/aventure/temps). Elle peut répéter le jet de sauvegarde au début de chacun de ses [tours](/regles/combat/deroulement/tour), et n’est plus paralysée si elle réussit."
+  }
+]
