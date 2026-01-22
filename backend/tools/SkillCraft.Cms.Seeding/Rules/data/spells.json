@@ -10,27 +10,6 @@
     "Description": "Sort lumineux ou occulte qui améliore les tests d’alliés ou réduit ceux des ennemis, selon qu’il s’agisse d’une bénédiction protectrice ou d’une malédiction affaiblissante.",
     "Abilities": [
       {
-        "Level": 0,
-        "Name": null,
-        "Casting": {
-          "Time": "2",
-          "Ritual": false
-        },
-        "Duration": {
-          "Value": 1,
-          "Unit": "Minute",
-          "Concentration": true
-        },
-        "Range": 1,
-        "Components": {
-          "Focus": null,
-          "Material": null,
-          "Somatic": true,
-          "Verbal": true
-        },
-        "Description": "Le personnage touche une créature consentante qu’il peut [voir](/regles/aventure/environnement/vision) et celle-ci peut ajouter 1d4 à un [test](/regles/competences/tests) de [compétence](/regles/competences) de son choix avant d’en connaître le résultat. Le pouvoir prend ensuite fin."
-      },
-      {
         "Level": 1,
         "Name": null,
         "Casting": {
@@ -71,6 +50,27 @@
           "Verbal": true
         },
         "Description": "Le personnage maudit jusqu’à 3 créatures qu’il peut [voir](/regles/aventure/environnement/vision). Chaque créature doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline). En cas d’échec, une créature est maudite, et elle retire 1d4 à tous ses [tests](/regles/competences/tests) de [compétence](/regles/competences)."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante qu’il peut [voir](/regles/aventure/environnement/vision) et celle-ci peut ajouter 1d4 à un [test](/regles/competences/tests) de [compétence](/regles/competences) de son choix avant d’en connaître le résultat. Le pouvoir prend ensuite fin."
       },
       {
         "Level": 2,
@@ -223,25 +223,25 @@
     "Description": "Pouvoir polyvalent accordant des atouts inspirés des animaux, la respiration sous l’eau ou une métamorphose druidique offrant force, défense, sens accrus et énergie temporaire.",
     "Abilities": [
       {
-        "Level": 1,
+        "Level": 2,
         "Name": null,
         "Casting": {
-          "Time": "2",
-          "Ritual": true
+          "Time": "1",
+          "Ritual": false
         },
         "Duration": {
-          "Value": 24,
-          "Unit": "Hour",
-          "Concentration": false
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
         },
-        "Range": 6,
+        "Range": 0,
         "Components": {
           "Focus": null,
-          "Material": "Des écailles de poisson.",
+          "Material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
           "Somatic": true,
           "Verbal": true
         },
-        "Description": "Le personnage désigne un nombre de créatures qu’il peut [voir](/regles/aventure/environnement/vision) inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Une écaille est consommée pour chaque créature désignée. Les créatures désignées acquièrent la capacité à [respirer sous l’eau](/regles/aventure/environnement/suffocation) pour la durée du pouvoir."
+        "Description": "Le personnage s’insuffle la puissance d’un gardien de la nature.\n\n- _Bête primitive._ Le corps du personnage se couvre de fourrure, de plumes ou d’écailles, et ses traits deviennent ceux d’une créature sauvage. Il acquiert les capacités suivantes :\n  - Bonus de [2 points de mouvement](/regles/aventure/mouvement/vitesse).\n  - [Vision dans le noir](/regles/aventure/environnement/vision) de 36 mètres.\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance).\n  - Bonus de 1d6 + moitié de sa [Puissance](/regles/statistiques/puissance) [points de dégâts magiques](/regles/combat/degats/types) à ses [attaques](/regles/combat/attaque) physiques.\n- _Grand arbre._ Le corps du personnage se couvre d’écorce et ses feuilles poussent dans ses cheveux. Il acquiert les capacités suivantes :\n  - Il acquiert un nombre de points d’[Énergie](/regles/statistiques/energie) et de [Vitalité](/regles/statistiques/vitalite) [temporaires](/regles/combat/degats/temporaire) égal à sa [Puissance](/regles/statistiques/puissance).\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline), d’[Occultisme](/regles/competences/occultisme) et d’[Orientation](/regles/competences/orientation).\n  - Le sol dans un rayon de 4,5 mètres autour de lui devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile) pour les créatures de son choix.\n  - Il ne peut être [renversé](/regles/combat/conditions/renverse), ni déplacé contre son gré."
       },
       {
         "Level": 0,
@@ -265,25 +265,25 @@
         "Description": "Le personnage touche une créature consentante afin de lui insuffler un des effets suivants.\n\n- _Endurance de l’ours._ Confère l’[avantage](/regles/competences/tests/avantage-desavantage) aux [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance). Sa [taille](/regles/especes/taille) est considérée comme étant d’une catégorie supérieure pour l’[encombrement](/regles/equipement/encombrement).\n- _Férocité du dragon._ Confère l’avantage aux tests de [Discipline](/regles/competences/discipline) et d’[Occultisme](/regles/competences/occultisme) ainsi que 2d6 + moitié de la [Puissance](/regles/statistiques/puissance) du personnage points de [Vitalité](/regles/statistiques/vitalite) et d’[Énergie](/regles/statistiques/energie) [temporaires](/regles/combat/degats/temporaire).\n- _Grâce féline._ Confère l’avantage aux tests d’[Acrobaties](/regles/competences/acrobaties) et de [Furtivité](/regles/competences/furtivite), et elle retire 6 mètres à la hauteur des [chutes](/regles/aventure/environnement/chute) qu’elle subit dans le calcul des [points de dégâts](/regles/combat/degats) lorsqu’elle n’est pas [incapable](/regles/combat/conditions/incapable).\n- _Habileté du raton laveur._ Confère l’avantage aux tests d’[Artisanat](/regles/competences/artisanat), d’[Orientation](/regles/competences/orientation) et de [Roublardise](/regles/competences/roublardise). Lorsqu’elle travaille en manipulant des [outils](/regles/equipement/outils), par exemple par un test d’Artisanat ou de Roublardise, elle réduit de moitié le temps nécessaire à sa tâche.\n- _Peau d’écorce._ Sa peau durcit, prenant une texture similaire à celle de l’écorce, et sa [Défense](/regles/combat/attaque/defense) prend la valeur de 20, ignorant son [armure](/regles/equipement/armures) (mais pas son [bouclier](/regles/equipement/boucliers)).\n- _Ruse du renard._ Confère l’avantage aux tests de [Connaissance](/regles/competences/connaissance), d’[Investigation](/regles/competences/investigation), de [Linguistique](/regles/competences/linguistique) et de [Médecine](/regles/competences/medecine), ainsi qu’un bonus égal à son [tiers](/regles/personnages/progression/tiers) à tous ses tests de [compétence](/regles/competences).\n- _Sagesse du hibou._ Confère l’avantage aux tests d’[Intuition](/regles/competences/intuition), de [Perception](/regles/competences/perception) et de [Survie](/regles/competences/survie), et permet de relancer le dé lors d’un test d’[Initiative](/regles/combat/deroulement/initiative) et d’utiliser le résultat de son choix.\n- _Splendeur de l’aigle._ Confère l’avantage aux tests de [Diplomatie](/regles/competences/diplomatie), de [Représentation](/regles/competences/representation) et de [Tromperie](/regles/competences/tromperie), ainsi qu’un bonus (+5) aux [tests passifs](/regles/competences/tests/passif) afin de déterminer l’[attitude initiale](/regles/aventure/interaction-sociale) des personnages non joueurs."
       },
       {
-        "Level": 2,
+        "Level": 1,
         "Name": null,
         "Casting": {
-          "Time": "1",
-          "Ritual": false
+          "Time": "2",
+          "Ritual": true
         },
         "Duration": {
-          "Value": 1,
-          "Unit": "Minute",
-          "Concentration": true
+          "Value": 24,
+          "Unit": "Hour",
+          "Concentration": false
         },
-        "Range": 0,
+        "Range": 6,
         "Components": {
           "Focus": null,
-          "Material": "Des poils, des plumes ou des écailles de l’animal sélectionné, ou de l’écorce de chêne.",
+          "Material": "Des écailles de poisson.",
           "Somatic": true,
           "Verbal": true
         },
-        "Description": "Le personnage s’insuffle la puissance d’un gardien de la nature.\n\n- _Bête primitive._ Le corps du personnage se couvre de fourrure, de plumes ou d’écailles, et ses traits deviennent ceux d’une créature sauvage. Il acquiert les capacités suivantes :\n  - Bonus de [2 points de mouvement](/regles/aventure/mouvement/vitesse).\n  - [Vision dans le noir](/regles/aventure/environnement/vision) de 36 mètres.\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) d’[Athlétisme](/regles/competences/athletisme), de [Mêlée](/regles/competences/melee) et de [Résistance](/regles/competences/resistance).\n  - Bonus de 1d6 + moitié de sa [Puissance](/regles/statistiques/puissance) [points de dégâts magiques](/regles/combat/degats/types) à ses [attaques](/regles/combat/attaque) physiques.\n- _Grand arbre._ Le corps du personnage se couvre d’écorce et ses feuilles poussent dans ses cheveux. Il acquiert les capacités suivantes :\n  - Il acquiert un nombre de points d’[Énergie](/regles/statistiques/energie) et de [Vitalité](/regles/statistiques/vitalite) [temporaires](/regles/combat/degats/temporaire) égal à sa [Puissance](/regles/statistiques/puissance).\n  - [Avantage](/regles/competences/tests/avantage-desavantage) à ses [tests](/regles/competences/tests) de [Discipline](/regles/competences/discipline), d’[Occultisme](/regles/competences/occultisme) et d’[Orientation](/regles/competences/orientation).\n  - Le sol dans un rayon de 4,5 mètres autour de lui devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile) pour les créatures de son choix.\n  - Il ne peut être [renversé](/regles/combat/conditions/renverse), ni déplacé contre son gré."
+        "Description": "Le personnage désigne un nombre de créatures qu’il peut [voir](/regles/aventure/environnement/vision) inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum 1) et peut s’inclure dans ce nombre. Une écaille est consommée pour chaque créature désignée. Les créatures désignées acquièrent la capacité à [respirer sous l’eau](/regles/aventure/environnement/suffocation) pour la durée du pouvoir."
       }
     ]
   },
@@ -448,27 +448,6 @@
     "Description": "Pouvoir féerique créant des flammes colorées, révélant les créatures, illuminant les invisibles et infligeant de lourds dégâts radiants, surtout contre les métamorphes.",
     "Abilities": [
       {
-        "Level": 0,
-        "Name": null,
-        "Casting": {
-          "Time": "2",
-          "Ritual": false
-        },
-        "Duration": {
-          "Value": 1,
-          "Unit": "Minute",
-          "Concentration": true
-        },
-        "Range": 12,
-        "Components": {
-          "Focus": null,
-          "Material": null,
-          "Somatic": true,
-          "Verbal": true
-        },
-        "Description": "Le personnage crée un feu de camp dans un espace cubique de 1,5 mètres d’arête qu’il peut [voir](/regles/aventure/environnement/vision). Toute créature se trouvant dans la zone lorsque les flammes apparaissent doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties). Une créature doit également effectuer le jet de sauvegarde lorsqu’elle entre dans la zone pour la première fois pendant son [tour](/regles/combat/deroulement/tour), ou si elle y termine son tour. En cas d’échec, une créature reçoit [1d6 points de dégâts](/regles/combat/degats/jet) de [feu](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Les flammes illuminent d’une ou de plusieurs couleurs de l’arc-en-ciel, au choix du personnage au moment où il [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir. Les objets dans la zone qui ne sont pas tenus ni portés s’enflamment."
-      },
-      {
         "Level": 1,
         "Name": null,
         "Casting": {
@@ -488,6 +467,27 @@
           "Verbal": true
         },
         "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision), et un cube de 6 mètres d’arête de lumière féérique apparaît centré sur ce point. Toute créature située à l’intérieur du cube au moment où il apparaît doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties). En cas d’échec, une aura de 3 mètres de pénombre colorée (bleue, verte ou violette, au choix du personnage) émane de la créature, ce qui confère l’[avantage](/regles/competences/tests/avantage-desavantage) au [test](/regles/competences/tests) des [attaques](/regles/combat/attaque) ciblant la créature. Une aura colorée émane également des objets se trouvant dans la zone. Un objet ou une créature [invisible](/regles/combat/conditions/invisible) émanant cette aura ne bénéficie pas des effets de l’invisibilité."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée un feu de camp dans un espace cubique de 1,5 mètres d’arête qu’il peut [voir](/regles/aventure/environnement/vision). Toute créature se trouvant dans la zone lorsque les flammes apparaissent doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties). Une créature doit également effectuer le jet de sauvegarde lorsqu’elle entre dans la zone pour la première fois pendant son [tour](/regles/combat/deroulement/tour), ou si elle y termine son tour. En cas d’échec, une créature reçoit [1d6 points de dégâts](/regles/combat/degats/jet) de [feu](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Les flammes illuminent d’une ou de plusieurs couleurs de l’arc-en-ciel, au choix du personnage au moment où il [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir. Les objets dans la zone qui ne sont pas tenus ni portés s’enflamment."
       },
       {
         "Level": 2,
@@ -544,27 +544,6 @@
         "Description": "Le personnage fait apparaître une sphère de lumière centrée sur un point qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLa sphère émet de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 18 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 18 mètres additionnels.\n\nSi le point se trouve sur un objet qui est tenu mais qui n’est pas porté, la sphère se déplace avec l’objet. La lumière ne peut traverser un objet opaque telle une couverture."
       },
       {
-        "Level": 1,
-        "Name": null,
-        "Casting": {
-          "Time": "2",
-          "Ritual": false
-        },
-        "Duration": {
-          "Value": 1,
-          "Unit": "Hour",
-          "Concentration": false
-        },
-        "Range": 1,
-        "Components": {
-          "Focus": "De la mousse phosphorescente ou une luciole.",
-          "Material": null,
-          "Somatic": true,
-          "Verbal": true
-        },
-        "Description": "La lumière dégagée par l’objet augmente à 12 mètres de [clarté](/regles/aventure/environnement/vision) et 12 mètres additionnels de [pénombre](/regles/aventure/environnement/vision).\n\nSi le personnage cible un objet tenu ou porté par une créature ennemie, celle-ci échoue automatiquement le [jet de sauvegarde](/regles/competences/tests/sauvegarde)."
-      },
-      {
         "Level": 0,
         "Name": null,
         "Casting": {
@@ -584,6 +563,27 @@
           "Verbal": true
         },
         "Description": "Le personnage touche un objet dont les dimensions sont inférieures à celle d’un cube de 3 mètres d’arête.\n\nL’objet dégage de la [clarté](/regles/aventure/environnement/vision) dans un rayon de 6 mètres et de la [pénombre](/regles/aventure/environnement/vision) dans un rayon de 6 mètres additionnels. La lumière ne peut traverser un objet opaque telle une couverture.\n\nUne seule lumière peut être active à la fois, et le personnage peut éteindre la lumière par une [action](/regles/combat/deroulement/tour).\n\nS’il cible un objet tenu ou porté par une créature ennemie, celle-ci peut effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/competences/acrobaties) afin d’éviter les effets du [pouvoir](/regles/magie/pouvoirs)."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "De la mousse phosphorescente ou une luciole.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "La lumière dégagée par l’objet augmente à 12 mètres de [clarté](/regles/aventure/environnement/vision) et 12 mètres additionnels de [pénombre](/regles/aventure/environnement/vision).\n\nSi le personnage cible un objet tenu ou porté par une créature ennemie, celle-ci échoue automatiquement le [jet de sauvegarde](/regles/competences/tests/sauvegarde)."
       }
     ]
   },
@@ -659,6 +659,1062 @@
           "Verbal": true
         },
         "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision). Des ronces et racines épineuses poussent dans un rayon de 6 mètres centré sur ce point.\n\nCes plantes sont camouflées et semblent naturelles, une créature doit donc réussir un [test](/regles/competences/tests) de [Perception](/regles/competences/perception) [opposé](/regles/competences/tests/oppose) au test d’[Occultisme](/regles/competences/occultisme) du personnage afin de détecter leur présence.\n\nLa zone devient du [terrain difficile](/regles/aventure/mouvement/terrain-difficile), et une créature reçoit [3d4 points de dégâts](/regles/combat/degats/jet) [perçants](/regles/combat/degats/types) pour chaque case traversée dans la zone."
+      }
+    ]
+  },
+  {
+    "Id": "39a1638c-734b-4aab-97d4-9a4af948efac",
+    "IsPublished": true,
+    "Slug": "habiletes-feeriques",
+    "Name": "Habiletés féériques",
+    "Tier": 0,
+    "Summary": "Effets féeriques, réparation d’objets, vision nocturne et croissance végétale.",
+    "MetaDescription": "Découvrez les Habiletés féériques, un pouvoir versatile alliant effets naturels, petites réparations, vision nocturne et croissance végétale magique.",
+    "Description": "Pouvoir féerique mêlant présages naturels, floraison magique, petites réparations, vision dans le noir et contrôle de la végétation, jusqu’à enrichir durablement un territoire.",
+    "Abilities": [
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 30,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage désigne un point qu’il peut [voir](/regles/aventure/environnement/vision). Il peut exclure certaines zones qui ne seront pas envahies lorsqu’il [canalise](/regles/magie/pouvoirs/canalisation) le pouvoir. Toute plante non magique située à 30 mètres ou moins de ce point pousse et envahit la zone. Une créature désirant [se déplacer](/regles/combat/activites/deplacement) dans une zone envahie voit sa [vitesse](/regles/aventure/mouvement/vitesse) réduite à un quart de sa vitesse normale."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée un effet surnaturel et inoffensif parmi la liste suivante.\n\n- Il crée un effet sensoriel permettant de prédire la météo des [24 prochaines heures](/regles/aventure/temps). L’effet pourrait se manifester par exemple par un orbe doré pour un ciel dégagé, un nuage pour de la pluie, des flocons de neige pour une chute de neige. L’effet dure quelques secondes.\n- Il fait fleurir une fleur ou un bourgeon, ou fait éclore une graine.\n- Il fait tomber les feuilles d’un arbre, provoque un souffle de vent, crée un effet sensoriel instantané provenant d’un point de son choix, par exemple le bruit d’un petit animal ou l’odeur distante d’une moufette.\n- Il allume ou éteint une chandelle, une torche ou un petit feu de camp."
+      },
+      {
+        "Level": 0,
+        "Name": "Réparation",
+        "Casting": {
+          "Time": "1m",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Le personnage touche un objet afin de le réparer. La réparation ne laisse aucune trace. Si la taille de l’objet est supérieure à celle d’un cube de 30 centimètres d’arête, alors le pouvoir ne répare qu’une section pouvant être contenue dans un cube de cette taille."
+      },
+      {
+        "Level": 1,
+        "Name": "Focus",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 8,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une agate.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante, et celle-ci acquiert une [vision dans le noir](/regles/aventure/environnement/vision) à une distance de 18 mètres."
+      },
+      {
+        "Level": 1,
+        "Name": "Matériel",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 8,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "Une carotte.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante, et celle-ci acquiert une [vision dans le noir](/regles/aventure/environnement/vision) à une distance de 18 mètres."
+      },
+      {
+        "Level": 2,
+        "Name": "Croissance végétale",
+        "Casting": {
+          "Time": "8h",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Year",
+          "Concentration": false
+        },
+        "Range": 30,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage enrichit le sol autour d’un point qu’il peut [voir](/regles/aventure/environnement/vision). Toute plante située dans un cercle de 1 kilomètre de rayon centré sur ce point est enchantée, et sa production est doublée."
+      }
+    ]
+  },
+  {
+    "Id": "67cb93d4-a102-4217-8890-b1402eb5d5e3",
+    "IsPublished": true,
+    "Slug": "thaumaturgie",
+    "Name": "Thaumaturgie",
+    "Tier": 0,
+    "Summary": "Effets mineurs, réparation d’objets et prières soignantes pour plusieurs alliés.",
+    "MetaDescription": "Découvrez Thaumaturgie, un pouvoir polyvalent permettant petits miracles, réparations fines et prières de guérison affectant plusieurs alliés.",
+    "Description": "Pouvoir polyvalent offrant effets surnaturels mineurs, réparation précise d’objets et prières de guérison pouvant restaurer de nombreux alliés selon la puissance du lanceur.",
+    "Abilities": [
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "10m",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage prononce une prière de guérison. Il sélectionne ensuite un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1) et peut s’inclure dans ce nombre. Il doit pouvoir [voir](/regles/aventure/environnement/vision) les créatures et celles-ci doivent avoir écouté consciemment la prière. Chaque créature [récupère](/regles/combat/degats/soins) 2d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir."
+      },
+      {
+        "Level": 0,
+        "Name": "Réparation",
+        "Casting": {
+          "Time": "1m",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Le personnage touche un objet afin de le réparer. La réparation ne laisse aucune trace. Si la taille de l’objet est supérieure à celle d’un cube de 30 centimètres d’arête, alors le pouvoir ne répare qu’une section pouvant être contenue dans un cube de cette taille."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée un effet surnaturel et inoffensif parmi la liste suivante.\n\n- Sa voix est amplifiée pendant [une minute](/regles/aventure/temps).\n- Il fait vaciller, assombrir, éclaircir ou change la couleur de flammes pendant une minute.\n- Il fait vibrer doucement la terre pendant une minute.\n- Il crée un son instantané provenant d’un point de son choix, par exemple un grondement de tonnerre, le cri d’un oiseau ou des murmures sinistres.\n- Une porte ou une fenêtre non verrouillée s’ouvre ou se ferme violemment.\n- Le personnage modifie l’apparence de ses yeux pendant une minute."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "10m",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage prononce une prière de guérison. Il sélectionne ensuite un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1) et peut s’inclure dans ce nombre. Il doit pouvoir [voir](/regles/aventure/environnement/vision) les créatures et celles-ci doivent avoir écouté consciemment la prière. Chaque créature [récupère](/regles/combat/degats/soins) 3d10 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir."
+      }
+    ]
+  },
+  {
+    "Id": "885ad842-47ea-43b5-9cd3-361fee8631d6",
+    "IsPublished": true,
+    "Slug": "preservation",
+    "Name": "Préservation",
+    "Tier": 0,
+    "Summary": "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
+    "MetaDescription": "Découvrez Préservation, un pouvoir protecteur stabilisant les mourants, préservant les corps et feignant la mort pour protéger une créature des dangers.",
+    "Description": "Pouvoir axé sur la survie : stabilisation immédiate, conservation prolongée des corps, imitation parfaite de la mort et garde vitale empêchant l’agonie fatale.",
+    "Abilities": [
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": true
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Day",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "Une pincée de sel et un centime placé dans chaque œil de la cible.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche un cadavre, protégeant celui-ci de la décomposition et des effets créant un mort-vivant. Le pouvoir ajoute également 10 jours à la limite de [temps](/regles/aventure/temps) imposée par le talent [Réanimation](/regles/talents/reanimation) et par les pouvoirs [Réincarnation](/regles/magie/pouvoirs/reincarnation) et [Résurrection](/regles/magie/pouvoirs/resurrection)."
+      },
+      {
+        "Level": 2,
+        "Name": "Garde vitale",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 8,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "Une pincée de terre issue d’un cimetière.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante et lui place une garde contre la [mort](/regles/combat/mort-agonie). Si les points de [Vitalité](/regles/statistiques/vitalite) de la cible chutent à 0 pendant la durée du pouvoir, celle-ci [récupère](/regles/combat/degats/soins) instantanément 1 point de Vitalité, évitant la mort. Le pouvoir prend ensuite fin. Une créature ne peut bénéficier que d’une seule garde vitale à la fois."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature [agonisante](/regles/combat/conditions/agonisant) et [stabilise](/regles/combat/activites/stabiliser) celle-ci. Les morts-vivants et constructions ne sont pas affectés par ce pouvoir."
+      },
+      {
+        "Level": 2,
+        "Name": "Feindre la mort",
+        "Casting": {
+          "Time": "2",
+          "Ritual": true
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "Une pincée de terre issue d’un cimetière.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante et la place dans un état cataleptique indistinguable de la [mort](/regles/combat/mort-agonie), même par [magie](/regles/magie).\n\nL’effet dure [une heure](/regles/aventure/temps), ou jusqu’à ce que le personnage le dissipe par une [action](/regles/combat/deroulement/tour) en touchant la cible.\n\nLa cible est [aveuglée](/regles/combat/conditions/aveugle), [incapable](/regles/combat/conditions/incapable), et sa [vitesse](/regles/aventure/mouvement/vitesse) tombe nulle.\n\nElle devient [résistante](/regles/combat/degats/efficacite) à tout [dégât](/regles/combat/degats), à l’exception des dégâts [psychiques](/regles/combat/degats/types).\n\nSi elle est affligée par une maladie ou par un [poison](/regles/herboristerie/poisons), alors elle n’est pas affectée pendant la durée du pouvoir."
+      }
+    ]
+  },
+  {
+    "Id": "aff74ada-a168-48b2-9929-a79b9d17c9b4",
+    "IsPublished": true,
+    "Slug": "souffle-empoisonne",
+    "Name": "Souffle empoisonné",
+    "Tier": 0,
+    "Summary": "Souffle toxique infligeant du poison, purge l’empoisonnement ou frappe en cône.",
+    "MetaDescription": "Découvrez Souffle empoisonné, un pouvoir toxique qui inflige des dégâts de poison, neutralise l’empoisonnement ou libère un cône venimeux dévastateur.",
+    "Description": "Pouvoir toxique variant entre souffle ciblé, purification d’un empoisonnement et exhalation en cône infligeant de lourds dégâts de poison aux créatures touchées.",
+    "Abilities": [
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "1",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage acquiert la capacité d’expirer un souffle empoisonné par une [action](/regles/combat/deroulement/tour) une fois par [tour](/regles/combat/deroulement/tour).\n\nLorsqu’il en fait ainsi, il exhale un souffle empoisonné dans un cône de 4,5 mètres. Toute créature se trouvant dans le cône doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance).\n\nEn cas d’échec, une créature reçoit [2d12 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage. En cas de réussite, elle ne reçoit que la moitié des [dégâts](/regles/combat/degats)."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 2,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage expire un souffle empoisonné en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision). Si la créature échoue un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Résistance](/regles/competences/resistance), elle reçoit [1d12 points de dégâts](/regles/combat/degats/jet) de [poison](/regles/combat/degats/types) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 2,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage inspire le souffle d’une créature [empoisonnée](/regles/combat/conditions/empoisonne) dans la portée du pouvoir, retirant un effet d’empoisonnement. Il peut également se cibler.\n\nSi un ou plusieurs poisons affectent la cible, un de ces poisons est neutralisé, au choix du personnage s’il a identifié ces poisons, sinon un poison est choisi aléatoirement par le maître de jeu.\n\nPendant la durée du pouvoir, la cible est [résistante](/regles/combat/degats/efficacite) aux [dégâts](/regles/combat/degats) de [poison](/regles/combat/degats/types) et se voit conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) contre les effets de poison."
+      }
+    ]
+  },
+  {
+    "Id": "044b648d-005a-4ec4-9996-de338d8e5138",
+    "IsPublished": true,
+    "Slug": "resistance-elementaire",
+    "Name": "Résistance élémentaire",
+    "Tier": 0,
+    "Summary": "Renforce les sauvegardes, absorbe l’élément reçu et confère une résistance durable.",
+    "MetaDescription": "Découvrez Résistance élémentaire, un pouvoir protecteur qui renforce les sauvegardes, absorbe énergie élémentaire et confère une résistance durable aux dégâts.",
+    "Description": "Pouvoir défensif modulable permettant d’améliorer un jet, d’absorber un élément pour riposter ou de conférer une résistance élémentaire, seul ou à un groupe entier.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une cape miniature.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante. Pendant la durée du pouvoir, la cible peut ajouter 1d4 à un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de son choix avant d’en connaître le résultat. Le pouvoir prend ensuite fin.\n\nSi elle ajoute 1d4 à un jet de sauvegarde contre un pouvoir élémentaire (infligeant des [points de dégâts](/regles/combat/degats) d’un des [types](/regles/combat/degats/types) suivants : acide, électricité, feu, froid ou tonnerre), alors elle se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) au jet de sauvegarde."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une cape miniature.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante. La prochaine fois que la créature reçoit des [points de dégâts](/regles/combat/degats) élémentaires ([acide, électricité, feu, froid ou tonnerre](/regles/combat/degats/types)), elle absorbe une portion des points de dégâts reçus.\n\nElle devient [résistante](/regles/combat/degats/efficacite) à ce type de dégâts à partir du moment où le pouvoir prend effet et jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). Jusqu’à la fin de son prochain tour, la prochaine [attaque](/regles/combat/attaque) réussie par la cible inflige 1d6 points de dégâts supplémentaires du type absorbé, additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 1,
+        "Name": "Objection",
+        "Casting": {
+          "Time": "R",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": "Une cape miniature.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Lorsque le personnage reçoit des [points de dégâts](/regles/combat/degats) élémentaires ([acide, électricité, feu, froid ou tonnerre](/regles/combat/degats/types)), il absorbe une portion des points de dégâts reçus.\n\nIl devient [résistant](/regles/combat/degats/efficacite) à ce type de dégâts à partir du moment où le pouvoir prend effet et jusqu’au début de son prochain [tour](/regles/combat/deroulement/tour). Jusqu’à la fin de son prochain tour, la prochaine [attaque](/regles/combat/attaque) qu’il réussit inflige 1d6 points de dégâts supplémentaires du type absorbé, additionnés à la moitié de sa [Puissance](/regles/statistiques/puissance)."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Le personnage touche une créature consentante en sélectionnant un [type](/regles/combat/degats/types) de [dégâts](/regles/combat/degats) élémentaires (acide, électricité, feu, froid ou tonnerre), et lui confère la [résistance](/regles/combat/degats/efficacite) aux dégâts de ce type."
+      },
+      {
+        "Level": 2,
+        "Name": "Résistance collective",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une gemme associée à l’élément sélectionné d’une valeur d’au moins 25 deniers.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Le personnage touche un nombre de créatures consentantes inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1), et peut s’inclure dans ce nombre.\n\nIl sélectionne un [type](/regles/combat/degats/types) de [dégâts](/regles/combat/degats) élémentaires (acide, électricité, feu, froid ou tonnerre), et les créatures sélectionnées se voient conférer la [résistance](/regles/combat/degats/efficacite) aux dégâts de ce type.\n\n<table class=\"table table-striped text-center\">\n  <thead>\n    <tr>\n      <th scope=\"col\" class=\"w-50\">Élément</th>\n      <th scope=\"col\" class=\"w-50\">Gemme</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acide</td>\n      <td>Émeraude</td>\n    </tr>\n    <tr>\n      <td>Électricité</td>\n      <td>Topaze</td>\n    </tr>\n    <tr>\n      <td>Feu</td>\n      <td>Rubis</td>\n    </tr>\n    <tr>\n      <td>Froid</td>\n      <td>Saphir</td>\n    </tr>\n    <tr>\n      <td>Tonnerre</td>\n      <td>Ambre</td>\n    </tr>\n  </tbody>\n</table>"
+      }
+    ]
+  },
+  {
+    "Id": "df0e01f9-bdcd-4a2f-9ea7-a09407bf3336",
+    "IsPublished": true,
+    "Slug": "guerison",
+    "Name": "Guérison",
+    "Tier": 1,
+    "Summary": "Guérit une ou plusieurs créatures au toucher ou par un mot à distance.",
+    "MetaDescription": "Découvrez un pouvoir de guérison flexible permettant de soigner une ou plusieurs créatures, au toucher ou à distance, selon le niveau utilisé.",
+    "Description": "Pouvoir de guérison permettant de restaurer la Vitalité d’une ou plusieurs créatures, au toucher ou à distance. Les morts-vivants et les constructions ne sont pas affectés par ce pouvoir.",
+    "Abilities": [
+      {
+        "Level": 2,
+        "Name": "Mot de guérison",
+        "Casting": {
+          "Time": "1",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage prononce un mot de guérison en direction de créatures qu’il peut [voir](/regles/aventure/environnement/vision).\n\nCe nombre doit être inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante, et celle-ci [récupère](/regles/combat/degats/soins) 1d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "La [guérison](/regles/combat/degats/soins) augmente à 4d8 additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche un nombre de créatures consentantes inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1), et il peut s’inclure dans ce nombre.\n\nChaque créature [récupère](/regles/combat/degats/soins) 1d8 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 0,
+        "Name": "Mot de guérison",
+        "Casting": {
+          "Time": "1",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "Le personnage prononce un mot de guérison en direction d’une créature qu’il peut [voir](/regles/aventure/environnement/vision) et celle-ci [récupère](/regles/combat/degats/soins) 1d4 points de [Vitalité](/regles/statistiques/vitalite) additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      },
+      {
+        "Level": 1,
+        "Name": "Mot de guérison",
+        "Casting": {
+          "Time": "1",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 12,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": false,
+          "Verbal": true
+        },
+        "Description": "La [guérison](/regles/combat/degats/soins) augmente à 4d4 additionnés à la moitié de la [Puissance](/regles/statistiques/puissance) du personnage."
+      }
+    ]
+  },
+  {
+    "Id": "e48cbe2c-80d9-463f-b777-9e6be9e08d50",
+    "IsPublished": true,
+    "Slug": "restauration",
+    "Name": "Restauration",
+    "Tier": 1,
+    "Summary": "Purifie une créature en levant maladies, malédictions ou afflictions.",
+    "MetaDescription": "Découvrez un pouvoir sacré qui libère une créature des maladies, malédictions et afflictions graves, dissipant conditions, malédictions et réductions nuisibles.",
+    "Description": "Ce pouvoir purifie une créature consentante en supprimant maladies, malédictions et conditions majeures, et peut aussi restaurer attributs, Vitalité maximale ou effets nuisibles persistants.",
+    "Abilities": [
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "De la poussière de diamant d’une valeur supérieure ou égale à 100 deniers.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante et retire une malédiction l’affligeant. Si la source de la malédiction est un [artefact magique](/regles/magie/artefacts), l’artefact reste maudit, mais le [pouvoir](/regles/magie/pouvoirs) met fin à l’[harmonisation](/regles/magie/artefacts/harmonisation). La créature est ainsi libérée de la malédiction, ce qui lui permet de se débarrasser de l’objet si elle le désire."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": null,
+          "Material": "De la poussière de diamant d’une valeur supérieure ou égale à 100 deniers.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage répand la poussière de diamant sur une créature consentante et met fin à un des effets suivants l’affligeant.\n\n- Un niveau de [Fatigue](/regles/combat/conditions/fatigue) ;\n- Un [charme](/regles/combat/conditions/charme) ou une [pétrification](/regles/combat/conditions/petrifie) ;\n- Toute réduction ciblant un même [attribut](/regles/attributs) ;\n- Une réduction de points de [Vitalité](/regles/statistiques/vitalite) maximum."
+      },
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "De la poussière de diamant d’une valeur supérieure ou égale à 100 deniers.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante et met fin à une maladie ou une [condition](/regles/combat/conditions) l’affligeant. La condition peut être [aveuglé](/regles/combat/conditions/aveugle), [assourdi](/regles/combat/conditions/assourdi), [empoisonné](/regles/combat/conditions/empoisonne) ou [paralysé](/regles/combat/conditions/paralyse)."
+      }
+    ]
+  },
+  {
+    "Id": "ace29da4-7f8f-4188-b83b-257df2361551",
+    "IsPublished": true,
+    "Slug": "protection-contre-la-magie",
+    "Name": "Protection contre la magie",
+    "Tier": 1,
+    "Summary": "Détection, dissipation et interruption des effets magiques adverses.",
+    "MetaDescription": "Découvrez Protection contre la magie : pouvoir polyvalent permettant de détecter la magie, dissiper les enchantements et interrompre les incantations ennemies.",
+    "Description": "Pouvoir défensif et utilitaire permettant de détecter la magie, dissiper les effets surnaturels actifs et interrompre les incantations ennemies en réaction.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": true
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage détecte la présence et l’emplacement précis de la magie située à 9 mètres ou moins de sa position. Une fois par [tour](/regles/combat/deroulement/tour), il peut utiliser une [action](/regles/combat/deroulement/tour) afin de voir une faible aura autour des créatures et objets magiques dans la zone. Lorsqu’il en fait ainsi, il apprend le [cercle de magie](#) associé aux effets surnaturels actifs et aux objets magiques détectés, s’il y en a un. Le pouvoir pénètre la plupart des barrières, mais il est arrêté par 30 centimètres de pierre, 3 centimètres de métal ou 1 mètre de bois ou de saleté."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 24,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Ce pouvoir peut être [canalisé](/regles/magie/pouvoirs/canalisation) à un [niveau](/regles/magie/pouvoirs/niveau) compris entre 3 et 7, si le [tiers](/regles/personnages/progression/tiers) du personnage le permet.\n\nLe personnage désigne une créature, un objet ou un effet surnaturel dont il est certain de l’existence.\n\nTout [pouvoir](/regles/magie/pouvoirs) affectant le cible, dont le niveau est inférieur ou égal au niveau canalisé de ce pouvoir, est dissipé et prend immédiatement fin.\n\nPour chaque pouvoir de niveau supérieur, le personnage effectue un [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) de [difficulté](/regles/competences/tests/difficulte) égale à 20 + niveau du pouvoir. En cas de réussite, le pouvoir est dissipé et prend immédiatement fin."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "R",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 18,
+        "Components": {
+          "Focus": null,
+          "Material": null,
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Ce pouvoir peut être [canalisé](/regles/magie/pouvoirs/canalisation) à un [niveau](/regles/magie/pouvoirs/niveau) compris entre 4 et 7, si le [tiers](/regles/personnages/progression/tiers) du personnage le permet.\n\nLe personnage tente d’interrompre la canalisation d’une créature qu’il peut [voir](/regles/aventure/environnement/vision).\n\nSi le niveau du pouvoir canalisé par la créature est inférieur ou égal au niveau canalisé de ce pouvoir, alors la canalisation est interrompue.\n\nSinon, la canalisation est interrompue si le résultat du [test](/regles/competences/tests) d’[Occultisme](/regles/competences/occultisme) du personnage dépasse celui de la créature d’un certain nombre. Ce nombre varie en fonction de la différence de niveau de pouvoir :\n\n- 2 pour une différence d’un niveau\n- 5 pour une différence de 2 niveaux\n- 10 pour une différence de 3 niveaux\n\nSi la canalisation est interrompue, le pouvoir ne prend jamais effet. La créature perd les [actions](/regles/combat/deroulement/tour), [composantes](/regles/magie/parametres/composantes) et points d’[Énergie](/regles/statistiques/energie) dépensés."
+      }
+    ]
+  },
+  {
+    "Id": "5552740d-a6ae-4279-9cf9-8d1d30ce1421",
+    "IsPublished": true,
+    "Slug": "protection-contre-les-poisons-et-maladies",
+    "Name": "Protection contre les poisons et maladies",
+    "Tier": 1,
+    "Summary": "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
+    "MetaDescription": "Découvrez un pouvoir qui détecte poisons et maladies, purifie aliments et crée eau et nourriture pour subvenir aux besoins d’un groupe entier.",
+    "Description": "Pouvoir utilitaire détectant poisons et maladies, purifiant repas et breuvages, et créant eau fraîche et nourriture pour nourrir efficacement plusieurs créatures.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": true
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": "Une feuille d’if.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage détecte la présence et l’emplacement précis des [poisons](/regles/herboristerie/poisons), venins et maladies situés à 9 mètres ou moins de sa position. Il peut également identifier la nature du poison, du venin ou de la maladie. Le pouvoir pénètre la plupart des barrières, mais il est arrêté par 30 centimètres de pierre, 3 centimètres de métal ou 1 mètre de bois ou de saleté.\n\nLorsqu’il perd ou lâche sa [concentration](/regles/magie/parametres/duree), le personnage peut également purifier tout breuvage et toute nourriture de tout poison, venin ou maladie. Les breuvages et la nourriture doivent se trouver dans une sphère de 1,5 mètres de rayon centré sur un point que le personnage peut [voir](/regles/aventure/environnement/vision)."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": "Une feuille d’if.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée 20 kilogrammes de nourriture et 100 litres d’eau fraîche sur le sol ou dans des [contenants](/regles/equipement/general/contenants) qu’il peut voir, ce qui permet de [nourrir](/regles/aventure/environnement/alimentation) et d’[abreuver](/regles/aventure/environnement/alimentation) jusqu’à 20&nbsp;humanoïdes pour une journée."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 0,
+          "Unit": "Round",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": null,
+          "Material": "Une feuille d’if.",
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage crée 10 kilogrammes de nourriture et 50 litres d’eau fraîche sur le sol ou dans des [contenants](/regles/equipement/general/contenants) qu’il peut voir, ce qui permet de [nourrir](/regles/aventure/environnement/alimentation) et d’[abreuver](/regles/aventure/environnement/alimentation) jusqu’à 10&nbsp;humanoïdes pour une journée.\n\nLa nourriture est fade mais nourrissante et disparaît après [24 heures](/regles/aventure/temps) si elle n’est pas consommée. L’eau reste fraîche et propre même après cette période.\n\nLa nourriture et l’eau peuvent également abreuver et nourrir une monture, mais cette monture mange et boit la même quantité que 5 humanoïdes."
+      }
+    ]
+  },
+  {
+    "Id": "7c19f9ee-7079-471c-b601-504fba54dbfc",
+    "IsPublished": true,
+    "Slug": "liberte",
+    "Name": "Liberté",
+    "Tier": 1,
+    "Summary": "Mobilité accrue, évasion totale et déplacement sans contraintes.",
+    "MetaDescription": "Découvrez Liberté : un pouvoir de mobilité qui amplifie les sauts, efface les traces, ignore le terrain difficile et confère nage, évasion et vol temporaire.",
+    "Description": "Ce pouvoir décuple la mobilité : sauts amplifiés, furtivité sans traces, ignorance du terrain difficile, évasion des entraves et même vol temporaire selon le niveau utilisé.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": "Sauterelle",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une patte arrière de sauterelle.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante. La distance des [sauts](/regles/aventure/mouvement/types) de la cible est triplée et celle-ci se voit conférer un bonus (+2) de [points de mouvement](/regles/aventure/mouvement/vitesse)."
+      },
+      {
+        "Level": 0,
+        "Name": "Passage naturel",
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Un brin d’épinette.",
+          "Material": "Des cendres de feuille de gui.",
+          "Somatic": true,
+          "Verbal": false
+        },
+        "Description": "Le personnage touche un nombre de créatures inférieur ou égal à ses [Sens](/regles/attributs/sens) (minimum&nbsp;1) et doit s’inclure dans ce nombre. Les cibles se voient conférer un bonus (+10) à leurs [tests](/regles/competences/tests) de [Furtivité](/regles/competences/furtivite) et ne peuvent être pistées par des moyens non magiques. Lorsqu’elles se [déplacent](/regles/combat/activites/deplacement), elles ne laissent aucune trace derrière elles."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Un fragment de toile de navire attaché à une jambe de la cible par une sangle de cuir.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante. Pendant la durée du pouvoir, elle n’est pas affectée par le [terrain difficile](/regles/aventure/mouvement/terrain-difficile), sa [vitesse](/regles/aventure/mouvement/vitesse) ne peut être réduite et elle ne peut être [paralysée](/regles/combat/conditions/paralyse) ni [restreinte](/regles/combat/conditions/restreint). Elle peut également dépenser un [point de mouvement](/regles/aventure/mouvement/vitesse) afin de s’échapper de n’importe quelle contrainte non magique, elle acquiert une vitesse de [nage](/regles/aventure/mouvement/types) égale à sa vitesse de [marche](/regles/aventure/mouvement/types) et elle n’est affligée d’aucune pénalité lorsqu’elle [combat sous l’eau](/regles/combat/sous-eau)."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 1,
+        "Components": {
+          "Focus": "Une plume d’aile d’oiseau attachée à un bras de la cible par une sangle de cuir.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage touche une créature consentante. Celle-ci acquiert une [vitesse](/regles/aventure/mouvement/vitesse) de [vol](/regles/aventure/mouvement/types) de 3 mètres par seconde (12 points de mouvement par [action](/regles/combat/deroulement/tour)). Elle se voit également conférer l’[avantage](/regles/competences/tests/avantage-desavantage) à ses [jets de sauvegarde](/regles/competences/tests/sauvegarde) afin d’éviter d’être [agrippée](/regles/combat/conditions/agrippe), [paralysée](/regles/combat/conditions/paralyse) ou [restreinte](/regles/combat/conditions/restreint). Lorsque le pouvoir prend fin, la cible [chute](/regles/aventure/environnement/chute) si elle se trouve dans les airs et qu’elle n’a aucun moyen d’arrêter cette chute."
+      }
+    ]
+  },
+  {
+    "Id": "459daeec-d147-4cea-8d5f-df0bb9a3a375",
+    "IsPublished": true,
+    "Slug": "esprits-gardiens",
+    "Name": "Esprits gardiens",
+    "Tier": 2,
+    "Summary": "Esprits protecteurs infligeant des dégâts et entravant les ennemis.",
+    "MetaDescription": "Découvrez Esprits gardiens : pouvoir divin invoquant des entités protectrices infligeant des dégâts sacrés, ralentissant les ennemis et contrôlant la zone.",
+    "Description": "Pouvoir divin invoquant des esprits gardiens qui protègent le lanceur, ralentissent les ennemis proches et infligent des dégâts sacrés ou nécrotiques selon le niveau.",
+    "Abilities": [
+      {
+        "Level": 0,
+        "Name": null,
+        "Casting": {
+          "Time": "1",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 1,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": "Un symbole divin.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage invoque des esprits invulnérables et intangibles qui flottent autour de lui.\n\nIl sélectionne un des [types de dégâts](/regles/combat/degats/types) suivants : froid, nécrotique ou radiant.\n\nLorsqu’il réussit une [attaque](/regles/combat/attaque) ciblant une créature située à 3 mètres ou moins de sa position, alors il inflige [1d12 points de dégâts](/regles/combat/degats/jet) supplémentaires de ce type, et cette créature ne peut [récupérer](/regles/combat/degats/soins) de points de [Vitalité](/regles/statistiques/vitalite) jusqu’au début du prochain [tour](/regles/combat/deroulement/tour) du personnage.\n\nÉgalement, toute créature désignée par le personnage débutant son tour à 3 mètres ou moins de celui-ci voit sa [vitesse](/regles/aventure/mouvement/vitesse) réduite de 2 points de mouvement (-0,5 mètres par seconde)."
+      },
+      {
+        "Level": 1,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 10,
+          "Unit": "Minute",
+          "Concentration": true
+        },
+        "Range": 0,
+        "Components": {
+          "Focus": "Un symbole divin.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage invoque des esprits invulnérables et intangibles qui flottent autour de lui dans un rayon de 4,5 mètres. Ces esprits prennent une forme appropriée aux croyances du personnage, par exemple des célestiels, des infernaux, ou des fées.\n\nLe personnage désigne toutes les créatures de son choix qui ne sont pas affectées par ce pouvoir.\n\nLorsqu’une créature affectée entre volontairement dans la zone ou y débute son [tour](/regles/combat/deroulement/tour), elle doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) de [Discipline](/regles/competences/discipline).\n\nEn cas d’échec, sa [vitesse](/regles/aventure/mouvement/vitesse) est réduite de moitié lorsqu’elle se trouve dans la zone, et elle reçoit \uD83D\uDEA7.\n\nEn cas de réussite, sa vitesse n’est pas affectée, et elle ne reçoit que la moitié des [points de dégâts](/regles/combat/degats)."
+      },
+      {
+        "Level": 2,
+        "Name": null,
+        "Casting": {
+          "Time": "2",
+          "Ritual": false
+        },
+        "Duration": {
+          "Value": 8,
+          "Unit": "Hour",
+          "Concentration": false
+        },
+        "Range": 6,
+        "Components": {
+          "Focus": "Un symbole divin.",
+          "Material": null,
+          "Somatic": true,
+          "Verbal": true
+        },
+        "Description": "Le personnage invoque un gardien spirituel de [grande taille](/regles/especes/taille), invulnérable et intangible, dans un espace libre de son choix qu’il peut [voir](/regles/aventure/environnement/vision).\n\nLe gardien [occupe](/regles/aventure/mouvement/espace-occupe) l’espace dans lequel il se trouve, mais il est [invisible](/regles/combat/conditions/invisible). On peut toutefois voir luire une arme et un bouclier arborant le symbole divin utilisé afin de canaliser le pouvoir.\n\nToute créature hostile envers le personnage [se déplaçant](/regles/combat/activites/deplacement) à 3 mètres ou moins du gardien pour la première fois pendant son [tour](/regles/combat/deroulement/tour) doit effectuer un [jet de sauvegarde](/regles/competences/tests/sauvegarde) d’[Acrobaties](/regles/talents/acrobaties).\n\nEn cas d’échec, elle reçoit \uD83D\uDEA720 [points de dégâts](/regles/combat/degats) [radiants](/regles/combat/degats/types) ou [nécrotiques](/regles/combat/degats/types), selon les croyances du personnage.\n\nElle ne reçoit que la moitié des points de dégâts en cas de réussite.\n\nLe gardien disparaît lorsqu’il a infligé \uD83D\uDEA760 points de dégâts ou plus."
       }
     ]
   }
