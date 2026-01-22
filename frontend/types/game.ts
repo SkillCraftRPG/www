@@ -124,6 +124,19 @@ export type Language = Aggregate & {
   description?: string | null;
 };
 
+export type Poison = {
+  id: string;
+  slug: string;
+  name: string;
+  category: PoisonCategory;
+  trigger: PoisonTrigger;
+  description: string;
+};
+
+export type PoisonCategory = "Basic" | "Advanced";
+
+export type PoisonTrigger = "Contact" | "Ingested" | "Inhaled" | "Injury";
+
 export type Script = Aggregate & {
   slug: string;
   name: string;
