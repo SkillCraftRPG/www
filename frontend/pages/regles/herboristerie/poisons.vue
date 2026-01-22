@@ -10,7 +10,6 @@
         >une action</NuxtLink
       >).
     </p>
-    <!-- TODO(fpion): manière d’augmenter (+5) la difficulté -->
     <h2 class="h3">Table des matières</h2>
     <ul>
       <li>
