@@ -1,0 +1,79 @@
+[
+  {
+    "id": "803ad452-4c2b-4f24-b26a-877d02473686",
+    "slug": "antidote",
+    "name": "Antidote",
+    "category": "Basic",
+    "description": "Ce remède qui retire un effet d’[empoisonnement](/regles/combat/conditions/empoisonne) lorsque consommé. Il est produit par la combustion de la bonne quantité de plusieurs matériaux : tourbe, charbon et poix (résine produite par la distillation du bois de pin ou de bouleau), ainsi qu’une des herbes suivantes (aneth, figuier, livèche ou vigne commune)."
+  },
+  {
+    "id": "3df50f4c-88c5-479f-8812-9e8c03964123",
+    "slug": "deliant-musculaire",
+    "name": "Déliant musculaire",
+    "category": "Basic",
+    "description": "Cette injection musculaire retire instantanément un effet de [paralysie](/regles/combat/conditions/paralyse). Il est produit en mélangeant du ginseng et de l’orpin rose (racine d’or ou racine hyperboréenne)."
+  },
+  {
+    "id": "1271ed93-9638-410d-a861-4a41c0c32f80",
+    "slug": "fortifiant",
+    "name": "Fortifiant",
+    "category": "Advanced",
+    "description": "Cette infusion médicinale permet d’annuler une réduction de [Vitalité](/regles/statistiques/vitalite) maximale ou d’augmenter la Vitalité maximale d’une créature, en fonction de ses ingrédients. Elle prend effet à la fin de la prochaine heure de [halte](/regles/aventure/repos/halte) ou [nuit de sommeil](/regles/aventure/repos/sommeil). Lorsque utilisée afin de contrer une réduction de Vitalité maximale, elle permet de soustraire jusqu’à 6d6 (21) points de cette réduction. Lorsque utilisée afin d’augmenter la Vitalité maximale, elle réduit de 2d6 par [tiers](/regles/personnages/progression/tiers) (7, 14 ou 21) l’[Énergie](/regles/statistiques/energie) maximale de la créature, mais augmente sa Vitalité maximale du même nombre pendant les huit prochaines heures. La créature ne peut ensuite pas bénéficier des effets de cette infusion pendant les 24 prochaines heures. Les ingrédients la composant sont du millepertuis ou de l’armoise, de la fleur de sang ainsi que du khat."
+  },
+  {
+    "id": "15b22ef2-e864-4ba6-a293-e35340945f6c",
+    "slug": "huile-minerale",
+    "name": "Huile minérale",
+    "category": "Basic",
+    "description": "Cette huile issue de la distillation de la houille peut être appliquée dans les oreilles afin de retirer un effet d’[assourdissement](/regles/combat/conditions/assourdi) une heure après son application."
+  },
+  {
+    "id": "762f1a80-5dcc-4ac6-b10e-8aa9cdbdaf61",
+    "slug": "medicament",
+    "name": "Médicament",
+    "category": "Basic",
+    "description": "Ce remède supprime les effets d’une maladie pendant les [24 prochaines heures](/regles/aventure/temps). La maladie prend fin après 7 jours consécutifs de consommation du remède, même si sa durée est plus longue que 7 jours. Il est composé d’un mélange d’herbes : échinacée, ail, gingembre, curcuma ou sureau, et réglisse."
+  },
+  {
+    "id": "ef310793-bca6-49c3-9989-d746b35cb030",
+    "slug": "oeil-de-pirate",
+    "name": "Œil-de-pirate",
+    "category": "Basic",
+    "description": "Des gouttes pour les yeux, appliquées sous un cache-œil porté pendant une heure afin de retirer un effet d’[aveuglement](/regles/combat/conditions/aveugle). Elles sont obtenues à partir de foie de morue ou de bœuf, et de patates douces, de carottes ou de citrouille."
+  },
+  {
+    "id": "422c63e9-d04c-404f-8f0a-7d5777d57992",
+    "slug": "pommade-miracle",
+    "name": "Pommade miracle",
+    "category": "Advanced",
+    "description": "Cette pommade permet d’annuler une réduction à un [attribut](/regles/attributs). Elle est appliquée sur la peau et prend effet dix minutes plus tard. Elle est composée de réglisse, d’une plante rare (ashwagandha, sureau ou tagète), ainsi que d’un fluide d’un animal ou d’une créature déterminant l’attribut affecté. Cet ingrédient peut être inspiré par le [niveau 2](/regles/magie/pouvoirs/niveau) du pouvoir [Augmentation naturelle](/regles/magie/pouvoirs/augmentation-naturelle), à la discrétion du maître de jeu."
+  },
+  {
+    "id": "318fabff-13f8-472d-98a6-ab1d75182c0e",
+    "slug": "stimulant",
+    "name": "Stimulant",
+    "category": "Advanced",
+    "description": "Cette injection musculaire retire instantanément un niveau de [Fatigue](/regles/combat/conditions/fatigue). La créature ne peut ensuite pas bénéficier des effets de cette injection pendant les 24 prochaines heures. Elle contient du ginseng ou de l’orpin rose, de l’onagre bisannuelle ainsi que du khat."
+  },
+  {
+    "id": "80f2b989-c7f7-4595-af38-155ef1d024bc",
+    "slug": "tisane-d-ardeur",
+    "name": "Tisane d’ardeur",
+    "category": "Advanced",
+    "description": "Cette infusion de camomille contient également de l’échinacée, une herbe odorante (coriandre, lavande ou menthe poivrée), un mélange d’épices (basilic, curcuma, romarin et thym) ainsi qu’une des plantes rares suivantes : ashwagandha, sureau ou tagète. Elle quadruple la [régénération](/regles/aventure/repos) de [Vitalité](/regles/statistiques/vitalite) du personnage pendant les 24 prochaines heures. Elle est généralement consommée avant une [nuit de sommeil](/regles/aventure/repos/sommeil)."
+  },
+  {
+    "id": "fc4e02bd-d282-440f-9f17-fa56e0af1a2e",
+    "slug": "tisane-de-sante",
+    "name": "Tisane de santé",
+    "category": "Basic",
+    "description": "Cette infusion de camomille double la [régénération](/regles/aventure/repos) de [Vitalité](/regles/statistiques/vitalite) du personnage pendant les 8 prochaines heures. Elle est généralement consommée avant une [nuit de sommeil](/regles/aventure/repos/sommeil)."
+  },
+  {
+    "id": "b74f55c6-bef7-4db1-b2e2-fe531bb23150",
+    "slug": "tonus",
+    "name": "Tonus",
+    "category": "Advanced",
+    "description": "Cette concoction à base d’herbes contient du millepertuis, de l’armoise, une herbe odorante (coriandre, lavande ou menthe poivrée), un mélange d’épices (basilic, curcuma, romarin et thym), ainsi qu’une des plantes exceptionnellement rares suivantes en fonction de l’effet escompté : de la fleur de sang (Vitalité) ou de l’onagre bisannuelle (Énergie). Elle permet à une créature de [récupérer](/regles/combat/degats/soins) instantanément 3+3d4 points de [Vitalité](/regles/statistiques/vitalite) ou d’[Énergie](/regles/statistiques/energie). À la fin de sa prochaine heure de [halte](/regles/aventure/repos/halte) ou de [nuit de sommeil](/regles/aventure/repos/sommeil), elle récupère 15 points de Vitalité ou d’Énergie supplémentaires. La créature ne peut ensuite pas bénéficier des effets de cette concoction pendant les 24 prochaines heures."
+  }
+]

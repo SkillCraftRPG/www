@@ -32,6 +32,16 @@
       }
     }
   },
+  "herbalism": {
+    "trigger": {
+      "options": {
+        "Contact": "Contact",
+        "Ingested": "Ingestion",
+        "Inhaled": "Inhalation",
+        "Injury": "Blessure"
+      }
+    }
+  },
   "loading": "Chargement…",
   "no": "Non",
   "size": {
