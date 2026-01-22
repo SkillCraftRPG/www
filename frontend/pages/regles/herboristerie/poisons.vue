@@ -5,7 +5,10 @@
     <p>
       Au contraire des <NuxtLink to="/regles/herboristerie/remedes">remèdes</NuxtLink>, le rôle des poisons est d’infliger une certaine
       <NuxtLink to="/regles/combat/degats">douleur</NuxtLink>, une nuisance, ou même d’apporter la <NuxtLink to="/regles/combat/mort-agonie">mort</NuxtLink> à
-      leurs victimes. Ils sont considérés comme une source naturelle, ils peuvent donc être guéris par les remèdes.
+      leurs victimes. Ils sont considérés comme une source naturelle, ils peuvent donc être guéris par les remèdes. L’application d’un poison s’effectue
+      généralement par l’activité <NuxtLink to="/regles/combat/activites/objet">Objet</NuxtLink> (<NuxtLink to="/regles/combat/deroulement/tour"
+        >une action</NuxtLink
+      >).
     </p>
     <!-- TODO(fpion): manière d’augmenter (+5) la difficulté -->
     <h2 class="h3">Table des matières</h2>
