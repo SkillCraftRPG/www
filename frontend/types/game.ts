@@ -114,6 +114,8 @@ export type GameSkill =
 
 export type GameStatistic = "Dodge" | "Encumbrance" | "Initiative" | "Learning" | "Power" | "Precision" | "Stamina" | "Stratagem" | "Strength" | "Vitality";
 
+export type HerbalismCategory = "Basic" | "Advanced";
+
 export type Language = Aggregate & {
   slug: string;
   name: string;
@@ -128,14 +130,20 @@ export type Poison = {
   id: string;
   slug: string;
   name: string;
-  category: PoisonCategory;
+  category: HerbalismCategory;
   trigger: PoisonTrigger;
   description: string;
 };
 
-export type PoisonCategory = "Basic" | "Advanced";
-
 export type PoisonTrigger = "Contact" | "Ingested" | "Inhaled" | "Injury";
+
+export type Remedy = {
+  id: string;
+  slug: string;
+  name: string;
+  category: HerbalismCategory;
+  description: string;
+};
 
 export type Script = Aggregate & {
   slug: string;
