@@ -34,7 +34,9 @@ internal class PublishCollectionCommandHandler : ICommandHandler<PublishCollecti
       _context.Collections.Add(caste);
     }
 
-    caste.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
+    caste.Key = locale.UniqueName.Value;
+    caste.Name = locale.DisplayName?.Value;
+    caste.Description = locale.Description?.Value;
 
     caste.Publish(@event);
 
