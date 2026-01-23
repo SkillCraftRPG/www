@@ -1,5 +1,15 @@
 ﻿[
   {
+    "Id": "27cef932-5c9b-4d3c-a6ef-bfd70ce5ee5e",
+    "UniqueName": "Article",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "5f763b66-c578-400c-8fbd-a0df8fb94919",
+      "IsMultiple": false
+    }
+  },
+  {
     "Id": "e430b460-475f-40b0-8b93-e7a32f031582",
     "UniqueName": "Attribute",
     "DisplayName": null,
@@ -68,6 +78,16 @@
           "Value": "8h"
         }
       ]
+    }
+  },
+  {
+    "Id": "09fc08ec-e4b1-41db-99b8-be4a29497eee",
+    "UniqueName": "Collection",
+    "DisplayName": null,
+    "Description": null,
+    "RelatedContent": {
+      "ContentTypeId": "2f2c92d2-7bcb-4dfe-abf0-f583313df79f",
+      "IsMultiple": false
     }
   },
   {
