@@ -1462,5 +1462,95 @@
         "Placeholder": null
       }
     ]
+  },
+  {
+    "Id": "2f2c92d2-7bcb-4dfe-abf0-f583313df79f",
+    "IsInvariant": false,
+    "UniqueName": "Collection",
+    "DisplayName": "Collection",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "cb661c7b-c209-4f28-93f1-226b7c4bec67",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": true,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
+  },
+  {
+    "Id": "5f763b66-c578-400c-8fbd-a0df8fb94919",
+    "IsInvariant": false,
+    "UniqueName": "Article",
+    "DisplayName": "Article",
+    "Description": null,
+    "Fields": [
+      {
+        "Id": "dbdf75ca-6612-4800-8c24-f2894ed2474a",
+        "FieldType": "Collection",
+        "IsInvariant": true,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Collection",
+        "DisplayName": "Collection",
+        "Description": null,
+        "Placeholder": "Sélectionnez une collection d’articles"
+      },
+      {
+        "Id": "d00026b9-4139-4180-a9cb-5ca1c791da51",
+        "FieldType": "Article",
+        "IsInvariant": true,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Parent",
+        "DisplayName": "Parent",
+        "Description": null,
+        "Placeholder": "Sélectionnez un article parent"
+      },
+      {
+        "Id": "9d2b9c1b-230c-4dcb-aced-bd7680955bbd",
+        "FieldType": "Slug",
+        "IsInvariant": false,
+        "IsRequired": true,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "Slug",
+        "DisplayName": "Alias",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "38cd4bde-0299-4beb-94e5-f013a403ace5",
+        "FieldType": "HtmlContent",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "HtmlContent",
+        "DisplayName": "Contenu HTML",
+        "Description": null,
+        "Placeholder": null
+      },
+      {
+        "Id": "fce7e603-f036-430d-92e1-6f441662775a",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)",
+        "Description": null,
+        "Placeholder": null
+      }
+    ]
   }
 ]
