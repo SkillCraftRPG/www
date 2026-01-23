@@ -1481,6 +1481,18 @@
         "DisplayName": "Alias",
         "Description": null,
         "Placeholder": null
+      },
+      {
+        "Id": "59bcf5e8-cca4-4ed9-a73d-915e9092e52d",
+        "FieldType": "MetaDescription",
+        "IsInvariant": false,
+        "IsRequired": false,
+        "IsIndexed": false,
+        "IsUnique": false,
+        "UniqueName": "MetaDescription",
+        "DisplayName": "Description (méta)",
+        "Description": null,
+        "Placeholder": null
       }
     ]
   },

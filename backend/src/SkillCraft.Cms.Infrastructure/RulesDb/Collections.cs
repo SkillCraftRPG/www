@@ -1,0 +1,25 @@
+﻿using Logitar.Data;
+using SkillCraft.Cms.Infrastructure.Entities;
+
+namespace SkillCraft.Cms.Infrastructure.RulesDb;
+
+internal static class Collections
+{
+  public static readonly TableId Table = new(RulesContext.Schema, nameof(RulesContext.Collections), alias: null);
+
+  public static readonly ColumnId CreatedBy = new(nameof(CollectionEntity.CreatedBy), Table);
+  public static readonly ColumnId CreatedOn = new(nameof(CollectionEntity.CreatedOn), Table);
+  public static readonly ColumnId StreamId = new(nameof(CollectionEntity.StreamId), Table);
+  public static readonly ColumnId UpdatedBy = new(nameof(CollectionEntity.UpdatedBy), Table);
+  public static readonly ColumnId UpdatedOn = new(nameof(CollectionEntity.UpdatedOn), Table);
+  public static readonly ColumnId Version = new(nameof(CollectionEntity.Version), Table);
+
+  public static readonly ColumnId CollectionId = new(nameof(CollectionEntity.CollectionId), Table);
+  public static readonly ColumnId Description = new(nameof(CollectionEntity.Notes), Table);
+  public static readonly ColumnId Id = new(nameof(CollectionEntity.Id), Table);
+  public static readonly ColumnId IsPublished = new(nameof(CollectionEntity.IsPublished), Table);
+  public static readonly ColumnId MetaDescription = new(nameof(CollectionEntity.MetaDescription), Table);
+  public static readonly ColumnId Name = new(nameof(CollectionEntity.Name), Table);
+  public static readonly ColumnId Slug = new(nameof(CollectionEntity.Slug), Table);
+  public static readonly ColumnId SlugNormalized = new(nameof(CollectionEntity.SlugNormalized), Table);
+}
