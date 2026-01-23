@@ -2,6 +2,7 @@
 
 internal enum EntityKind
 {
+  Article,
   Attribute,
   Caste,
   Collection,

@@ -22,8 +22,10 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<IEventHandler<ContentLocalePublished>, ContentMaterializationEvents>();
     services.AddTransient<IEventHandler<ContentLocaleUnpublished>, ContentMaterializationEvents>();
 
+    services.AddTransient<ICommandHandler<PublishArticleCommand, CommandResult>, PublishArticleCommandHandler>();
     services.AddTransient<ICommandHandler<PublishAttributeCommand, CommandResult>, PublishAttributeCommandHandler>();
     services.AddTransient<ICommandHandler<PublishCasteCommand, CommandResult>, PublishCasteCommandHandler>();
+    services.AddTransient<ICommandHandler<PublishCollectionCommand, CommandResult>, PublishCollectionCommandHandler>();
     services.AddTransient<ICommandHandler<PublishCustomizationCommand, CommandResult>, PublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishEducationCommand, CommandResult>, PublishEducationCommandHandler>();
     services.AddTransient<ICommandHandler<PublishFeatureCommand, CommandResult>, PublishFeatureCommandHandler>();
@@ -36,8 +38,10 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
     services.AddTransient<ICommandHandler<PublishSpellLevelCommand, CommandResult>, PublishSpellLevelCommandHandler>();
     services.AddTransient<ICommandHandler<PublishStatisticCommand, CommandResult>, PublishStatisticCommandHandler>();
     services.AddTransient<ICommandHandler<PublishTalentCommand, CommandResult>, PublishTalentCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishArticleCommand, CommandResult>, UnpublishArticleCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishAttributeCommand, CommandResult>, UnpublishAttributeCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishCasteCommand, CommandResult>, UnpublishCasteCommandHandler>();
+    services.AddTransient<ICommandHandler<UnpublishCollectionCommand, CommandResult>, UnpublishCollectionCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishCustomizationCommand, CommandResult>, UnpublishCustomizationCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishEducationCommand, CommandResult>, UnpublishEducationCommandHandler>();
     services.AddTransient<ICommandHandler<UnpublishFeatureCommand, CommandResult>, UnpublishFeatureCommandHandler>();
@@ -178,6 +182,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
 
     switch (kind)
     {
+      case EntityKind.Article:
+        await _commandBus.ExecuteAsync(new PublishArticleCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
+        break;
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new PublishAttributeCommand(@event, publishedInvariant, publishedLocale), cancellationToken);
         break;
@@ -272,6 +279,9 @@ internal class ContentMaterializationEvents : IEventHandler<ContentLocalePublish
 
     switch (kind)
     {
+      case EntityKind.Article:
+        await _commandBus.ExecuteAsync(new UnpublishArticleCommand(@event), cancellationToken);
+        break;
       case EntityKind.Attribute:
         await _commandBus.ExecuteAsync(new UnpublishAttributeCommand(@event), cancellationToken);
         break;

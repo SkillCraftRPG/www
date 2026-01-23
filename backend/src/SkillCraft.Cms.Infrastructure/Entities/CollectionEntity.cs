@@ -21,6 +21,8 @@ internal class CollectionEntity : AggregateEntity
   public string? Name { get; set; }
   public string? Description { get; set; }
 
+  public List<ArticleEntity> Articles { get; private set; } = [];
+
   public CollectionEntity(ContentLocalePublished @event) : base(@event)
   {
     Id = new ContentId(@event.StreamId).EntityId;

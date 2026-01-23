@@ -11,6 +11,7 @@ public class RulesContext : DbContext
   {
   }
 
+  internal DbSet<ArticleEntity> Articles => Set<ArticleEntity>();
   internal DbSet<AttributeEntity> Attributes => Set<AttributeEntity>();
   internal DbSet<CasteEntity> Castes => Set<CasteEntity>();
   internal DbSet<CollectionEntity> Collections => Set<CollectionEntity>();

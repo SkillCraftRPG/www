@@ -23,14 +23,14 @@ internal class UnpublishCollectionCommandHandler : ICommandHandler<UnpublishColl
   {
     ContentLocaleUnpublished @event = command.Event;
     string streamId = @event.StreamId.Value;
-    CollectionEntity? caste = await _context.Collections.SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
-    if (caste is null)
+    CollectionEntity? collection = await _context.Collections.SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
+    if (collection is null)
     {
       _logger.LogWarning("The caste 'StreamId={StreamId}' was not found.", streamId);
     }
     else
     {
-      caste.Unpublish(@event);
+      collection.Unpublish(@event);
 
       await _context.SaveChangesAsync(cancellationToken);
       _logger.LogInformation("The caste 'StreamId={StreamId}' has been unpublished.", streamId);

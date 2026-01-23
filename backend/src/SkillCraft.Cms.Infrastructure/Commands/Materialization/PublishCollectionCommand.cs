@@ -27,21 +27,21 @@ internal class PublishCollectionCommandHandler : ICommandHandler<PublishCollecti
     ContentLocale locale = command.Locale;
 
     string streamId = @event.StreamId.Value;
-    CollectionEntity? caste = await _context.Collections.SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
-    if (caste is null)
+    CollectionEntity? collection = await _context.Collections.SingleOrDefaultAsync(x => x.StreamId == streamId, cancellationToken);
+    if (collection is null)
     {
-      caste = new CollectionEntity(command.Event);
-      _context.Collections.Add(caste);
+      collection = new CollectionEntity(command.Event);
+      _context.Collections.Add(collection);
     }
 
-    caste.Key = locale.UniqueName.Value;
-    caste.Name = locale.DisplayName?.Value;
-    caste.Description = locale.Description?.Value;
+    collection.Key = locale.UniqueName.Value;
+    collection.Name = locale.DisplayName?.Value;
+    collection.Description = locale.Description?.Value;
 
-    caste.Publish(@event);
+    collection.Publish(@event);
 
     await _context.SaveChangesAsync(cancellationToken);
-    _logger.LogInformation("The caste '{Collection}' has been published.", caste);
+    _logger.LogInformation("The caste '{Collection}' has been published.", collection);
 
     return new CommandResult();
   }
