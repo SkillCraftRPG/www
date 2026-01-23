@@ -1469,32 +1469,7 @@
     "UniqueName": "Collection",
     "DisplayName": "Collection",
     "Description": null,
-    "Fields": [
-      {
-        "Id": "cb661c7b-c209-4f28-93f1-226b7c4bec67",
-        "FieldType": "Slug",
-        "IsInvariant": false,
-        "IsRequired": true,
-        "IsIndexed": false,
-        "IsUnique": true,
-        "UniqueName": "Slug",
-        "DisplayName": "Alias",
-        "Description": null,
-        "Placeholder": null
-      },
-      {
-        "Id": "59bcf5e8-cca4-4ed9-a73d-915e9092e52d",
-        "FieldType": "MetaDescription",
-        "IsInvariant": false,
-        "IsRequired": false,
-        "IsIndexed": false,
-        "IsUnique": false,
-        "UniqueName": "MetaDescription",
-        "DisplayName": "Description (méta)",
-        "Description": null,
-        "Placeholder": null
-      }
-    ]
+    "Fields": []
   },
   {
     "Id": "5f763b66-c578-400c-8fbd-a0df8fb94919",

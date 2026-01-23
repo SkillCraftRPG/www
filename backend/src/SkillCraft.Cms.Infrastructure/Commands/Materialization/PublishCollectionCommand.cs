@@ -3,7 +3,6 @@ using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SkillCraft.Cms.Infrastructure.Contents;
 using SkillCraft.Cms.Infrastructure.Entities;
 
 namespace SkillCraft.Cms.Infrastructure.Commands.Materialization;
@@ -35,11 +34,7 @@ internal class PublishCollectionCommandHandler : ICommandHandler<PublishCollecti
       _context.Collections.Add(caste);
     }
 
-    caste.Slug = locale.GetString(Collections.Slug);
     caste.Name = locale.DisplayName?.Value ?? locale.UniqueName.Value;
-
-    caste.MetaDescription = locale.TryGetString(Collections.MetaDescription);
-    caste.Notes = locale.Description?.Value;
 
     caste.Publish(@event);
 

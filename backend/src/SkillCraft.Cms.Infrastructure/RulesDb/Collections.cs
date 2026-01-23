@@ -15,11 +15,7 @@ internal static class Collections
   public static readonly ColumnId Version = new(nameof(CollectionEntity.Version), Table);
 
   public static readonly ColumnId CollectionId = new(nameof(CollectionEntity.CollectionId), Table);
-  public static readonly ColumnId Description = new(nameof(CollectionEntity.Notes), Table);
   public static readonly ColumnId Id = new(nameof(CollectionEntity.Id), Table);
   public static readonly ColumnId IsPublished = new(nameof(CollectionEntity.IsPublished), Table);
-  public static readonly ColumnId MetaDescription = new(nameof(CollectionEntity.MetaDescription), Table);
   public static readonly ColumnId Name = new(nameof(CollectionEntity.Name), Table);
-  public static readonly ColumnId Slug = new(nameof(CollectionEntity.Slug), Table);
-  public static readonly ColumnId SlugNormalized = new(nameof(CollectionEntity.SlugNormalized), Table);
 }

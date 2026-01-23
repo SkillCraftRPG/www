@@ -1,6 +1,5 @@
 ﻿using Krakenar.Core.Contents;
 using Krakenar.Core.Contents.Events;
-using Krakenar.EntityFrameworkCore.Relational.KrakenarDb;
 using AggregateEntity = Krakenar.EntityFrameworkCore.Relational.Entities.Aggregate;
 
 namespace SkillCraft.Cms.Infrastructure.Entities;
@@ -12,16 +11,10 @@ internal class CollectionEntity : AggregateEntity
 
   public bool IsPublished { get; private set; }
 
-  public string Slug { get; set; } = string.Empty;
-  public string SlugNormalized
-  {
-    get => Helper.Normalize(Slug);
-    private set { }
-  }
+  // TODO(fpion): UniqueName
+  // TODO(fpion): DisplayName
+  // TODO(fpion): Description
   public string Name { get; set; } = string.Empty;
-
-  public string? MetaDescription { get; set; }
-  public string? Notes { get; set; }
 
   public CollectionEntity(ContentLocalePublished @event) : base(@event)
   {
