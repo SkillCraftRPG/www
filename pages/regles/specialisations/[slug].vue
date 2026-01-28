@@ -4,10 +4,10 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <SpecializationInfo :specialization="specialization" />
-      <MarkdownContent v-if="specialization.description" :text="specialization.description" />
+      <MarkdownContent v-if="specialization.htmlContent" :text="specialization.htmlContent" />
       <SpecializationRequirements v-if="hasRequirements" :specialization="specialization" />
       <SpecializationOptions v-if="hasOptions" :specialization="specialization" />
-      <SpecializationReservedTalent v-if="specialization.reservedTalent" :talent="specialization.reservedTalent" />
+      <SpecializationDoctrine v-if="specialization.doctrine" :talent="specialization.doctrine" />
     </template>
   </main>
 </template>

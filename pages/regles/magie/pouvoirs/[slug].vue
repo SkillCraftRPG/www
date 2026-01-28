@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <SpellInfo :spell="spell" />
-      <MarkdownContent v-if="spell.description" :text="spell.description" />
+      <MarkdownContent v-if="spell.htmlContent" :text="spell.htmlContent" />
       <template v-for="group in abilities" :key="group.level">
         <div class="d-flex align-items-center gap-3">
           <h2 class="h3">Niveau {{ group.level }}</h2>

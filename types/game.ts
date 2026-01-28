@@ -37,11 +37,11 @@ export type Aggregate = {
 export type Attribute = Aggregate & {
   slug: string;
   name: string;
-  category?: AttributeCategory | null;
   value: GameAttribute;
-  summary?: string | null;
+  category?: AttributeCategory | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
   statistics: Statistic[];
   skills: Skill[];
 };
@@ -54,18 +54,18 @@ export type Caste = Aggregate & {
   wealthRoll?: string | null;
   skill?: Skill | null;
   feature?: Feature | null;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
 };
 
 export type Customization = Aggregate & {
   slug: string;
   name: string;
   kind: CustomizationKind;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
 };
 
 export type CustomizationKind = "Disability" | "Gift";
@@ -74,7 +74,7 @@ export type DamageType = "Bludgeoning" | "Piercing" | "Slashing";
 
 export type Feature = {
   name: string;
-  description?: string | null;
+  htmlContent?: string | null;
 };
 
 export type Education = Aggregate & {
@@ -83,9 +83,9 @@ export type Education = Aggregate & {
   wealthMultiplier?: number | null;
   skill?: Skill | null;
   feature?: Feature | null;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
 };
 
 export type GameAttribute = "Dexterity" | "Health" | "Intellect" | "Senses" | "Vigor";
@@ -121,9 +121,9 @@ export type Language = Aggregate & {
   name: string;
   script?: Script | null;
   typicalSpeakers?: string | null;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
 };
 
 export type Poison = {
@@ -148,10 +148,10 @@ export type Remedy = {
 export type Script = Aggregate & {
   slug: string;
   name: string;
-  languages: Language[];
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
+  languages: Language[];
 };
 
 export type SearchResults<T> = {
@@ -164,22 +164,22 @@ export type SizeCategory = "Diminutive" | "Tiny" | "Small" | "Medium" | "Large" 
 export type Skill = Aggregate & {
   slug: string;
   name: string;
-  attribute?: Attribute | null;
   value: GameSkill;
-  summary?: string | null;
+  attribute?: Attribute | null;
   metaDescription?: string | null;
-  description?: string | null;
-  talents?: Talent[] | null;
+  summary?: string | null;
+  htmlContent?: string | null;
+  talents: Talent[];
 };
 
 export type Statistic = Aggregate & {
   slug: string;
   name: string;
-  attribute: Attribute;
   value: GameStatistic;
-  summary?: string | null;
+  attribute: Attribute;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
 };
 
 export type Talent = Aggregate & {
@@ -188,9 +188,9 @@ export type Talent = Aggregate & {
   tier: number;
   allowMultiplePurchases: boolean;
   skill?: Skill | null;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
   requiredTalent?: Talent | null;
   requiringTalents: Talent[];
 };

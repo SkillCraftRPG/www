@@ -5,7 +5,6 @@ export type Age = {
   adult: number;
   mature: number;
   venerable: number;
-  text?: string | null;
 };
 
 export type Languages = {
@@ -19,13 +18,13 @@ export type Lineage = Aggregate & {
   name: string;
   languages: Languages;
   names: Names;
-  summary?: string | null;
-  metaDescription?: string | null;
-  description?: string | null;
   speeds: Speeds;
   size: Size;
   weight: Weight;
   age: Age;
+  metaDescription?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
   parent?: Lineage | null;
   children: Lineage[];
   features: Feature[];
@@ -37,18 +36,17 @@ export type NameCategory = {
 };
 
 export type Names = {
-  text?: string | null;
   family: string[];
   female: string[];
   male: string[];
   unisex: string[];
   custom: NameCategory[];
+  text?: string | null;
 };
 
 export type Size = {
   category: SizeCategory;
   roll?: string | null;
-  text?: string | null;
 };
 
 export type Speeds = {
@@ -66,5 +64,4 @@ export type Weight = {
   normal?: string | null;
   overweight?: string | null;
   obese?: string | null;
-  text?: string | null;
 };

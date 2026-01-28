@@ -28,7 +28,7 @@
         </tr>
       </tbody>
     </table>
-    <MarkdownContent v-if="ability.description" :text="ability.description" />
+    <MarkdownContent v-if="ability.htmlContent" :text="ability.htmlContent" />
   </div>
 </template>
 
@@ -46,7 +46,7 @@ const castingTime = computed<string>(() => {
     case "1":
     case "2":
       const actions: number = Number(formatted);
-      return [actions, $t("unit.action", actions)].join(" ");
+      return [actions, $t("unit.Action", actions)].join(" ");
     case "R":
       return "Réaction";
     case "1m":
@@ -98,6 +98,6 @@ const range = computed<string>(() => {
     throw new Error(`Invalid spell range: ${props.ability.range}`);
   }
   const meters: number = props.ability.range * 1.5;
-  return `${props.ability.range} (${[meters, $t("unit.meter", Math.floor(meters))].join(" ")})`;
+  return `${props.ability.range} (${[meters, $t("unit.Meter", Math.floor(meters))].join(" ")})`;
 });
 </script>

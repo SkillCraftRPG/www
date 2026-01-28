@@ -3,7 +3,7 @@
     <template v-if="statistic">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="statistic.description" :text="statistic.description" />
+      <MarkdownContent v-if="statistic.htmlContent" :text="statistic.htmlContent" />
       <StatisticAttribute :attribute="statistic.attribute" />
     </template>
   </main>

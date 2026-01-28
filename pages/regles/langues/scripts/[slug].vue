@@ -3,7 +3,7 @@
     <template v-if="script">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="script.description" :text="script.description" />
+      <MarkdownContent v-if="script.htmlContent" :text="script.htmlContent" />
       <ScriptLanguages v-if="script.languages" :languages="script.languages" />
     </template>
   </main>

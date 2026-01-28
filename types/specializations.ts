@@ -1,15 +1,22 @@
 import type { Aggregate, Feature, Talent } from "./game";
 
+export type Doctrine = {
+  name: string;
+  description: string[];
+  discountedTalents: Talent[];
+  features: Feature[];
+};
+
 export type Specialization = Aggregate & {
   slug: string;
   name: string;
   tier: number;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
   requirements: Requirements;
   options: Options;
-  reservedTalent?: ReservedTalent | null;
+  doctrine?: Doctrine | null;
 };
 
 export type Options = {
@@ -20,11 +27,4 @@ export type Options = {
 export type Requirements = {
   talent?: Talent | null;
   other: string[];
-};
-
-export type ReservedTalent = {
-  name: string;
-  description: string[];
-  discountedTalents: Talent[];
-  features: Feature[];
 };
