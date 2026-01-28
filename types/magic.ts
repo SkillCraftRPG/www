@@ -39,5 +39,3 @@ export type SpellDuration = {
   unit: DurationUnit;
   concentration: boolean;
 };
-
-// TODO(fpion): refactor units for PascalCase.

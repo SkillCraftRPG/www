@@ -2,8 +2,8 @@
   <div>
     <h2 class="h3">Physique</h2>
     <p v-if="age.adult && age.venerable">
-      Ils atteignent l’âge adulte à {{ age.adult }} {{ $t("unit.year", age.adult) }} et leur espérance de vie moyenne est de {{ age.venerable }}
-      {{ $t("unit.year", age.venerable) }}.
+      Ils atteignent l’âge adulte à {{ age.adult }} {{ $t("unit.Year", age.adult) }} et leur espérance de vie moyenne est de {{ age.venerable }}
+      {{ $t("unit.Year", age.venerable) }}.
     </p>
     <table class="table table-striped text-center">
       <tbody>
@@ -12,27 +12,27 @@
           <td :class="classes">
             <NuxtLink to="/regles/especes/taille">{{ $t(`size.category.options.${size.category}`) }}</NuxtLink>
           </td>
-          <td v-if="size.roll" :class="classes">{{ size.roll }} centimètres</td>
+          <td v-if="size.roll" :class="classes">{{ size.roll }} {{ $t("unit.Centimeter", 100) }}</td>
         </tr>
         <tr v-if="minHeight">
           <th scope="row">Hauteur minimale</th>
-          <td>{{ $n(minHeight, "decimal") }} {{ $t("unit.meter", Math.floor(minHeight)) }}</td>
+          <td>{{ $n(minHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(minHeight)) }}</td>
           <td>{{ minHeightImperial }}</td>
         </tr>
         <tr v-if="maxHeight">
           <th scope="row">Hauteur maximale</th>
-          <td>{{ $n(maxHeight, "decimal") }} {{ $t("unit.meter", Math.floor(maxHeight)) }}</td>
+          <td>{{ $n(maxHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(maxHeight)) }}</td>
           <td>{{ maxHeightImperial }}</td>
         </tr>
         <tr v-if="minWeight">
           <th scope="row">Poids minimal</th>
-          <td>{{ $n(minWeight, "weight") }} {{ $t("unit.kilogram", Math.floor(minWeight)) }}</td>
-          <td>{{ $n(minWeightImperial, "integer") }} {{ $t("unit.pound", Math.round(minWeightImperial)) }}</td>
+          <td>{{ $n(minWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(minWeight)) }}</td>
+          <td>{{ $n(minWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(minWeightImperial)) }}</td>
         </tr>
         <tr v-if="maxWeight">
           <th scope="row">Poids maximal</th>
-          <td>{{ $n(maxWeight, "weight") }} {{ $t("unit.kilogram", Math.floor(maxWeight)) }}</td>
-          <td>{{ $n(maxWeightImperial, "integer") }} {{ $t("unit.pound", Math.round(maxWeightImperial)) }}</td>
+          <td>{{ $n(maxWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(maxWeight)) }}</td>
+          <td>{{ $n(maxWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(maxWeightImperial)) }}</td>
         </tr>
       </tbody>
     </table>
@@ -59,7 +59,7 @@ const minHeight = computed<number>(() => {
 });
 const minHeightImperial = computed<string>(() => {
   const feetInches: number[] = metersToFeetInches(minHeight.value);
-  return [$n(feetInches[0], "integer"), $t("unit.foot", feetInches[0]), $n(feetInches[1], "integer"), $t("unit.inch", Math.round(feetInches[1]))].join(" ");
+  return [$n(feetInches[0], "integer"), $t("unit.Foot", feetInches[0]), $n(feetInches[1], "integer"), $t("unit.Inch", Math.round(feetInches[1]))].join(" ");
 });
 const maxHeight = computed<number>(() => {
   if (!size.value.roll) {
@@ -71,7 +71,7 @@ const maxHeight = computed<number>(() => {
 });
 const maxHeightImperial = computed<string>(() => {
   const feetInches: number[] = metersToFeetInches(maxHeight.value);
-  return [$n(feetInches[0], "integer"), $t("unit.foot", feetInches[0]), $n(feetInches[1], "integer"), $t("unit.inch", Math.round(feetInches[1]))].join(" ");
+  return [$n(feetInches[0], "integer"), $t("unit.Foot", feetInches[0]), $n(feetInches[1], "integer"), $t("unit.Inch", Math.round(feetInches[1]))].join(" ");
 });
 
 const weight = computed<Weight>(() => props.lineage.weight);

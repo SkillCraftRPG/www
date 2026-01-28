@@ -65,23 +65,21 @@
     "light": "Clair"
   },
   "unit": {
-    "action": "action | action | actions",
-    "centimeter": "centimètre | centimètre | centimètres",
+    "Action": "action | action | actions",
+    "Centimeter": "centimètre | centimètre | centimètres",
     "Day": "jour | jour | jours",
     "Hour": "heure | heure | heures",
-    "inch": "pouce | pouce | pouces",
-    "kilogram": "kilogramme | kilogramme | kilogrammes",
-    "foot": "pied | pied | pieds",
-    "meter": "mètre | mètre | mètres",
+    "Inch": "pouce | pouce | pouces",
+    "Kilogram": "kilogramme | kilogramme | kilogrammes",
+    "Foot": "pied | pied | pieds",
+    "Meter": "mètre | mètre | mètres",
     "Minute": "minute | minute | minutes",
     "Month": "mois | mois | mois",
-    "pound": "livre | livre | livres",
+    "Pound": "livre | livre | livres",
     "Round": "round | round | rounds",
-    "second": "seconde | seconde | secondes",
     "Second": "seconde | seconde | secondes",
     "Week": "semaine | semaine | semaines",
-    "Year": "an | an | ans",
-    "year": "an | an | ans"
+    "Year": "an | an | ans"
   },
   "users": {
     "signIn": {
