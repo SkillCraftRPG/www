@@ -1,0 +1,32 @@
+name: Build SkillCraftRPG Frontend
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build SkillCraftRPG Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      - name: Install dependencies
+        run: npm clean-install
+
+      - name: Build for Production
+        run: npm run build
+
+      # - name: Run Tests & Coverage
+      #   run: npm run test
