@@ -3,7 +3,7 @@
     <template v-if="lineage">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="lineage.description" :text="lineage.description" />
+      <MarkdownContent v-if="lineage.htmlContent" :text="lineage.htmlContent" />
       <LineageChildren v-if="lineage.children.length" :children="lineage.children" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
       <LineageNames v-if="showNames" :names="lineage.names" />

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 class="h5">{{ feature.name }}</h3>
-    <MarkdownContent v-if="feature.description" :text="feature.description" />
+    <MarkdownContent v-if="feature.htmlContent" :text="feature.htmlContent" />
   </div>
 </template>
 

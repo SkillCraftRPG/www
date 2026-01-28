@@ -28,7 +28,7 @@
         </tr>
       </tbody>
     </table>
-    <MarkdownContent v-if="ability.description" :text="ability.description" />
+    <MarkdownContent v-if="ability.htmlContent" :text="ability.htmlContent" />
   </div>
 </template>
 

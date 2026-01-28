@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <EducationInfo :education="education" />
-      <MarkdownContent v-if="education.description" :text="education.description" />
+      <MarkdownContent v-if="education.htmlContent" :text="education.htmlContent" />
       <EducationSkill v-if="education.skill" :skill="education.skill" />
       <EducationFeature v-if="education.feature" :feature="education.feature" />
     </template>

@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <TalentInfo :talent="talent" />
-      <MarkdownContent v-if="talent.description" :text="talent.description" />
+      <MarkdownContent v-if="talent.htmlContent" :text="talent.htmlContent" />
       <TalentSkill v-if="talent.skill" :skill="talent.skill" :training="talent.name === talent.skill.name" />
       <TalentRequired v-if="talent.requiredTalent" :talent="talent.requiredTalent" />
     </template>

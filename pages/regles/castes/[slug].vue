@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <CasteInfo :caste="caste" />
-      <MarkdownContent v-if="caste.description" :text="caste.description" />
+      <MarkdownContent v-if="caste.htmlContent" :text="caste.htmlContent" />
       <CasteSkill v-if="caste.skill" :skill="caste.skill" />
       <CasteFeature v-if="caste.feature" :feature="caste.feature" />
     </template>

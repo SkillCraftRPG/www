@@ -4,7 +4,7 @@
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
       <CustomizationInfo :customization="customization" />
-      <MarkdownContent v-if="customization.description" :text="customization.description" />
+      <MarkdownContent v-if="customization.htmlContent" :text="customization.htmlContent" />
     </template>
   </main>
 </template>

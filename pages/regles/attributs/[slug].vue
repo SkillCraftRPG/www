@@ -3,7 +3,7 @@
     <template v-if="attribute">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="attribute.description" :text="attribute.description" />
+      <MarkdownContent v-if="attribute.htmlContent" :text="attribute.htmlContent" />
       <AttributeStatistics v-if="attribute.statistics.length > 0" :attribute="attribute" />
       <AttributeSkills v-if="attribute.skills.length > 0" :attribute="attribute" />
     </template>

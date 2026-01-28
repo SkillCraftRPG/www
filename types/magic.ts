@@ -6,9 +6,9 @@ export type Spell = Aggregate & {
   slug: string;
   name: string;
   tier: number;
-  summary?: string | null;
   metaDescription?: string | null;
-  description?: string | null;
+  summary?: string | null;
+  htmlContent?: string | null;
   abilities: SpellAbility[];
 };
 
@@ -19,7 +19,7 @@ export type SpellAbility = {
   duration?: SpellDuration | null;
   range: number;
   components: SpellComponents;
-  description?: string | null;
+  htmlContent?: string | null;
 };
 
 export type SpellCasting = {
