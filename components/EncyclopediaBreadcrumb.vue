@@ -21,7 +21,7 @@ const props = withDefaults(
   },
 );
 
-const active = computed<string>(() => props.article?.title ?? props.collection?.name ?? props.collection?.key ?? ""); // TODO(fpion): collection name should be mandatory
+const active = computed<string>(() => props.article?.title ?? props.collection?.name ?? "");
 
 const parent = computed<Breadcrumb[]>(() => {
   const parent: Breadcrumb[] = [];
@@ -31,7 +31,7 @@ const parent = computed<Breadcrumb[]>(() => {
       parent.push({ text: current.title, to: current.slug });
       current = current.parent;
     }
-    parent.push({ text: props.article.collection.name ?? props.article.collection.key, to: `/${props.article.collection.key}` }); // TODO(fpion): collection name should be mandatory, and collection key should be slug
+    parent.push({ text: props.article.collection.name, to: `/${props.article.collection.slug}` });
     parent.reverse();
     for (let i = 1; i < parent.length; i++) {
       parent[i].to = `${parent[i - 1].to}/${parent[i].to}`;

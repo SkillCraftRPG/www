@@ -11,15 +11,15 @@
 <script setup lang="ts">
 import type { Article } from "~/types/encyclopedia";
 
-const collection: string = "ungar";
 const config = useRuntimeConfig();
 const route = useRoute();
+const slug: string = "ungar";
 
 const path = computed<string>(() => (Array.isArray(route.params.slugs) ? route.params.slugs.join("/") : route.params.slugs));
 const { data } = await useAsyncData<Article>(
-  `article:${collection}:${path.value}`,
+  `article:${slug}:${path.value}`,
   () =>
-    $fetch(`/api/collections/key:${collection}/articles/${path.value}`, {
+    $fetch(`/api/collections/slug:${slug}/articles/${path.value}`, {
       baseURL: config.public.apiBaseUrl,
     }),
   { watch: [path] },
