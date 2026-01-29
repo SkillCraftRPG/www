@@ -72,7 +72,8 @@ export type CustomizationKind = "Disability" | "Gift";
 
 export type DamageType = "Bludgeoning" | "Piercing" | "Slashing";
 
-export type Feature = {
+export type Feature = Aggregate & {
+  key: string;
   name: string;
   htmlContent?: string | null;
 };
