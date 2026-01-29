@@ -7,7 +7,7 @@
     </p>
     <ol>
       <li>
-        <NuxtLink to="/regles/personnages/creation/personnalite">rait de personnalité.</NuxtLink> Une caractéristique marquante du tempérament de votre
+        <NuxtLink to="/regles/personnages/creation/personnalite">Trait de personnalité.</NuxtLink> Une caractéristique marquante du tempérament de votre
         personnage. Elle décrit comment il agit, pense ou réagit dans la vie de tous les jours.
       </li>
       <li>
