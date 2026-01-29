@@ -11,7 +11,9 @@ export type Article = Aggregate & {
 };
 
 export type Collection = Aggregate & {
-  key: string;
-  name?: string;
+  slug: string;
+  name: string;
+  metaDescription?: string | null;
+  htmlContent?: string | null;
   articles: Article[];
 };
