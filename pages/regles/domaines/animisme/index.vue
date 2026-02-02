@@ -59,6 +59,12 @@
         <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
       </div>
     </div>
+    <h3 class="h5">Pouvoirs de tiers 2</h3>
+    <div class="row">
+      <div v-for="(spell, index) in spells.tier2" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
+      </div>
+    </div>
   </main>
 </template>
 
@@ -131,6 +137,7 @@ const domains: Domains = {
 type Spells = {
   tier0: MenuItem[];
   tier1: MenuItem[];
+  tier2: MenuItem[];
 };
 const spells: Spells = {
   tier0: [
@@ -200,6 +207,13 @@ const spells: Spells = {
       path: "/regles/magie/pouvoirs/restauration",
       title: "Restauration",
       description: "Purifie une créature en levant maladies, malédictions ou afflictions.",
+    },
+  ],
+  tier2: [
+    {
+      path: "/regles/magie/pouvoirs/presence-primordiale",
+      title: "Présence primordiale",
+      description: "Aura primordiale soignant, apaisant ou drainant selon le niveau canalisé.",
     },
   ],
 };
