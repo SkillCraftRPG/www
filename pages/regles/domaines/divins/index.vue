@@ -64,6 +64,11 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
+    path: "/regles/domaines/divins/arcanes",
+    title: "Arcanes",
+    description: "Domaine divin dédié à la magie, aux mystères et à la maîtrise des secrets arcaniques.",
+  },
+  {
     path: "/regles/domaines/divins/forge",
     title: "Forge",
     description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale inspirée du métal.",

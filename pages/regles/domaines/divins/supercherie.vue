@@ -3,8 +3,8 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Les divinités appartenant à ce domaine sont intéressées par aux subterfuges, aux farces et à la ruse. Leurs disciples sont bien souvent des espions, des
-      voleurs, des assassins et des libérateurs. Ces divinités sont parfois associées à la nuit, à l’obscurité et à Lune.
+      Les divinités appartenant à ce domaine s’intéressent aux subterfuges, aux farces et à la ruse. Leurs disciples sont bien souvent des espions, des voleurs,
+      des assassins et des libérateurs. Ces divinités sont parfois associées à la nuit, à l’obscurité et à Lune.
     </p>
     <p>
       Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">froid</NuxtLink>
