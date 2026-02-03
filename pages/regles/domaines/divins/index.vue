@@ -74,6 +74,11 @@ const items: MenuItem[] = [
     description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale inspirée du métal.",
   },
   {
+    path: "/regles/domaines/divins/guerre",
+    title: "Guerre",
+    description: "Domaine divin martial offrant bonus et prières de combat.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Ruse, illusions, ombres et charmes : les pouvoirs maîtres du domaine de Supercherie.",
