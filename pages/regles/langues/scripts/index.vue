@@ -2,7 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>
+      Les systèmes d’écriture définissent la forme écrite des langues et servent à consigner le savoir, les lois, les traditions et les récits. Certaines
+      langues disposent d’une écriture codifiée et largement diffusée, tandis que d’autres n’existent que sous forme orale et ne peuvent être transcrites.
+    </p>
     <ScriptList v-if="scripts.length" :items="scripts" />
   </main>
 </template>
@@ -30,6 +33,6 @@ const scripts = computed<Script[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les alphabets utilisés pour écrire les langues de l’univers, leur rôle culturel et les langues qui ne possèdent aucune forme écrite.",
 });
 </script>
