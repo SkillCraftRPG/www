@@ -58,6 +58,6 @@ const title: string = "Essence élémentaire";
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez l’essence élémentaire, une ressource permettant de créer des orbes magiques et d’activer de puissants effets élémentaires.",
 });
 </script>
