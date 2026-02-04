@@ -34,7 +34,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/elementarisme/essence",
     title: "Essence élémentaire",
-    description: "🚧",
+    description: "Essence élémentaire, création d’orbes et effets magiques.",
   },
   {
     path: "/regles/elementarisme/capacites",

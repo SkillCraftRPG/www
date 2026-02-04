@@ -1,19 +1,5 @@
 [
   {
-    "id": "bbfd1621-e170-4a5c-98a4-6c0c0ebca68a",
-    "date": "2026-01-31T23:59:59Z",
-    "title": "Règles de base",
-    "summary": "Règles permettant de créer un personnage de base et de progresser jusqu’au niveau 100, ajustements minimaux.",
-    "detail": [
-      "Tous les talents",
-      "Espèces et ethnies de base",
-      "Spécialisations de tiers 3 de base (8)",
-      "Herboristerie, Apothicairerie et Toxicologie",
-      "Traits de personnalité, idéaux et défauts",
-      "Jeu de rôle"
-    ]
-  },
-  {
     "id": "2a7ccab9-14c8-4452-8ad7-61eb8ec3c6d1",
     "date": "2026-02-28T23:59:59Z",
     "title": "Règles avancées",
@@ -30,9 +16,18 @@
   {
     "id": "cc291351-57c7-4bda-9ba9-e9a88aafcfba",
     "date": "2026-04-30T23:59:59Z",
-    "title": "🚧TODO",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non velit erat. Cras id tortor dignissim pharetra.",
-    "detail": ["Langues et alphabets", "Animisme", "Astromancie", "Domaines divins", "Élémentarisme", "Infusions magiques", "Invocations mystérieuses"]
+    "title": "Annexes",
+    "summary": "Langues et alphabets, toutes les annexes pour personnages variés, et définition des schémas de jeu de rôle.",
+    "detail": [
+      "Langues et alphabets",
+      "Animisme",
+      "Astromancie",
+      "Domaines divins",
+      "Élémentarisme",
+      "Infusions magiques",
+      "Invocations mystérieuses",
+      "Jeu de rôle"
+    ]
   },
   {
     "id": "1c8f2dfc-7957-4cfd-a01c-b86acee3f579",
