@@ -79,6 +79,11 @@ const items: MenuItem[] = [
     description: "Domaine divin martial offrant bonus et prières de combat.",
   },
   {
+    path: "/regles/domaines/divins/lumiere",
+    title: "Lumière",
+    description: "Domaine divin radiant dédié à la purification et à la protection.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Ruse, illusions, ombres et charmes : les pouvoirs maîtres du domaine de Supercherie.",
