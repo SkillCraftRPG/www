@@ -22,7 +22,7 @@
               <NuxtLink :to="`/regles/specialisations/${specialization.slug}`">{{ specialization.name }}</NuxtLink>
             </td>
             <td>
-              <template v-if="specialization.reservedTalent">{{ specialization.reservedTalent.name }}</template>
+              <template v-if="specialization.doctrine">{{ specialization.doctrine.name }}</template>
               <span v-else class="text-muted">{{ "—" }}</span>
             </td>
             <td>
