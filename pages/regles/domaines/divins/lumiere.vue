@@ -44,7 +44,7 @@
     </div>
     <p>
       Le personnage présente son <NuxtLink to="/regles/equipement/general">symbole divin</NuxtLink> par une
-      <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink> et en récitant une prière lumineuse. Le personnage dissipe les
+      <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink> et récite une prière lumineuse. Il dissipe les
       <NuxtLink to="/regles/aventure/environnement/vision">ténèbres</NuxtLink> dans un rayon de 9 mètres centré sur sa position. Il effectue également un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink> et désigne toutes les
       créatures de son choix situées dans cette zone. Chaque cible doit effectuer un

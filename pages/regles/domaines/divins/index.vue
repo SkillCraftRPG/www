@@ -84,9 +84,14 @@ const items: MenuItem[] = [
     description: "Domaine divin radiant dédié à la purification et à la protection.",
   },
   {
+    path: "/regles/domaines/divins/mort",
+    title: "Mort",
+    description: "Domaine divin lié au cycle de la vie et aux pouvoirs nécrotiques.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
-    description: "Ruse, illusions, ombres et charmes : les pouvoirs maîtres du domaine de Supercherie.",
+    description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
   },
 ];
 
