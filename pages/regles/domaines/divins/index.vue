@@ -25,7 +25,7 @@
     </ul>
     <h2 class="h3">Liste des domaines</h2>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -66,12 +66,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/domaines/divins/arcanes",
     title: "Arcanes",
-    description: "Domaine divin dédié à la magie, aux mystères et à la maîtrise des secrets arcaniques.",
+    description: "Domaine divin dédié à la magie, aux mystères et à la maîtrise des secrets.",
   },
   {
     path: "/regles/domaines/divins/forge",
     title: "Forge",
-    description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale inspirée du métal.",
+    description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale.",
   },
   {
     path: "/regles/domaines/divins/guerre",
