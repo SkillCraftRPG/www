@@ -89,6 +89,11 @@ const items: MenuItem[] = [
     description: "Domaine divin lié au cycle de la vie et aux pouvoirs nécrotiques.",
   },
   {
+    path: "/regles/domaines/divins/nature",
+    title: "Nature",
+    description: "Domaine divin dédié à la nature, l’animisme et la protection.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
