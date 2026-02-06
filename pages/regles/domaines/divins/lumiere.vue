@@ -28,7 +28,7 @@
     </div>
     <p>
       Lorsque le personnage <NuxtLink to="/regles/aventure/environnement/vision">voit</NuxtLink> une créature située à 9 mètres ou moins diriger une
-      <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> envers lui, il peut dégager un éclair de lumière vive en
+      <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink> envers lui, il peut émettre un éclair de lumière vive en
       <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink>. L’éclair afflige du
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink> le <NuxtLink to="/regles/competences/tests">test</NuxtLink> de
       l’attaque. Une créature immunisée à l’<NuxtLink to="/regles/combat/conditions/aveugle">aveuglement</NuxtLink> n’est pas affectée par cette capacité. Le
