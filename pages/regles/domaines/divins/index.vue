@@ -94,6 +94,11 @@ const items: MenuItem[] = [
     description: "Domaine divin dédié à la nature, l’animisme et la protection.",
   },
   {
+    path: "/regles/domaines/divins/obscurite",
+    title: "Obscurité",
+    description: "Domaine divin du crépuscule, du repos et de la pénombre.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
