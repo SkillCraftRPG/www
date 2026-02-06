@@ -36,7 +36,7 @@
     </p>
     <p>
       Une fois par <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, par une action, le personnage peut déplacer l’esprit d’une distance maximale
-      de 18 mètres. L’esprit dégage une aura de 9 mètres de rayon centrée sur sa position.
+      de 18 mètres. Une aura de 9 mètres de rayon émane centrée sur la position de l’esprit.
     </p>
     <ul>
       <li>
