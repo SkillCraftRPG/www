@@ -99,6 +99,11 @@ const items: MenuItem[] = [
     description: "Domaine divin du crépuscule, du repos et de la pénombre.",
   },
   {
+    path: "/regles/domaines/divins/ordre",
+    title: "Ordre",
+    description: "Domaine divin de la loi, de la paix, de l’union et de l’autorité.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
