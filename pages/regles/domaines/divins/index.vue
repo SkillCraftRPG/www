@@ -104,6 +104,11 @@ const items: MenuItem[] = [
     description: "Domaine divin de la loi, de la paix, de l’union et de l’autorité.",
   },
   {
+    path: "/regles/domaines/divins/savoir",
+    title: "Savoir",
+    description: "Domaine divin de la connaissance, de la mémoire et de l’apprentissage.",
+  },
+  {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
