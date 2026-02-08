@@ -155,6 +155,11 @@ const spells: Spells = {
       description: "Détection, dissipation et interruption des effets magiques adverses.",
     },
     {
+      path: "/regles/magie/pouvoirs/protection-contre-le-bien-et-le-mal",
+      title: "Protection contre le bien et le mal",
+      description: "Détection et protection contre les créatures surnaturelles hostiles.",
+    },
+    {
       path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
       title: "Protection contre les poisons et maladies",
       description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
