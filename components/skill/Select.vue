@@ -36,6 +36,7 @@ const anySkill: Skill = {
   slug: "",
   value: "" as GameSkill,
   name: "N’importe laquelle",
+  talents: [],
 };
 const noneSkill: Skill = {
   id: "none",
@@ -47,6 +48,7 @@ const noneSkill: Skill = {
   slug: "",
   value: "" as GameSkill,
   name: "Aucune",
+  talents: [],
 };
 
 const props = withDefaults(
