@@ -113,6 +113,11 @@ const items: MenuItem[] = [
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
   },
+  {
+    path: "/regles/domaines/divins/tempete",
+    title: "Tempête",
+    description: "Domaine divin axé sur la foudre, la riposte et la force des tempêtes.",
+  },
 ];
 
 type Spells = {
