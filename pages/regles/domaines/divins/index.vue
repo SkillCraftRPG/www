@@ -150,6 +150,11 @@ const spells: Spells = {
   ],
   tier1: [
     {
+      path: "/regles/magie/pouvoirs/coercition",
+      title: "Coercition",
+      description: "Pouvoir mental d’ordres, de charme et d’apaisement émotionnel.",
+    },
+    {
       path: "/regles/magie/pouvoirs/guerison",
       title: "Guérison",
       description: "Guérit une ou plusieurs créatures au toucher ou par un mot à distance.",
