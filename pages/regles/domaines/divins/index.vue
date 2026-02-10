@@ -118,6 +118,11 @@ const items: MenuItem[] = [
     title: "Tempête",
     description: "Domaine divin axé sur la foudre, la riposte et la force des tempêtes.",
   },
+  {
+    path: "/regles/domaines/divins/vie",
+    title: "Vie",
+    description: "Domaine divin axé sur la guérison, la vitalité et la protection des vivants.",
+  },
 ];
 
 type Spells = {
