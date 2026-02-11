@@ -7,13 +7,22 @@ export type Age = {
   venerable: number;
 };
 
+export type Ethnicity = LineageBase & {
+  species?: Species | null;
+};
+
 export type Languages = {
   items: Language[];
   extra: number;
   text?: string | null;
 };
 
-export type Lineage = Aggregate & {
+export type Lineage = LineageBase & {
+  parent?: Lineage | null;
+  children: Lineage[];
+};
+
+export type LineageBase = Aggregate & {
   slug: string;
   name: string;
   languages: Languages;
@@ -25,8 +34,6 @@ export type Lineage = Aggregate & {
   metaDescription?: string | null;
   summary?: string | null;
   htmlContent?: string | null;
-  parent?: Lineage | null;
-  children: Lineage[];
   features: Feature[];
 };
 
@@ -47,6 +54,10 @@ export type Names = {
 export type Size = {
   category: SizeCategory;
   roll?: string | null;
+};
+
+export type Species = LineageBase & {
+  ethnicities: Ethnicity[];
 };
 
 export type Speeds = {

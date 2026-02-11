@@ -10,12 +10,12 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Feature } from "~/types/game";
-import type { Lineage } from "~/types/lineages";
+import type { LineageBase } from "~/types/lineages";
 
 const { orderBy } = arrayUtils;
 
 const props = defineProps<{
-  lineage: Lineage;
+  lineage: LineageBase;
 }>();
 
 const features = computed<Feature[]>(() => orderBy(props.lineage.features, "name"));

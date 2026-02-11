@@ -40,10 +40,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Age, Lineage, Size, Weight } from "~/types/lineages";
+import type { Age, LineageBase, Size, Weight } from "~/types/lineages";
 
 const props = defineProps<{
-  lineage: Lineage;
+  lineage: LineageBase;
 }>();
 
 const classes = computed<string>(() => (size.value.roll ? "w-third" : "w-50"));

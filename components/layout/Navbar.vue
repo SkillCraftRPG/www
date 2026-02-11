@@ -87,11 +87,11 @@
               </ul>
             </li>
           </template>
-          <template v-else>
+          <!-- <template v-else>
             <li class="nav-item">
               <NuxtLink to="/connexion" class="nav-link"><font-awesome-icon icon="fas fa-arrow-right-to-bracket" /> {{ $t("users.signIn.title") }}</NuxtLink>
             </li>
-          </template>
+          </template> -->
         </ul>
       </div>
     </div>

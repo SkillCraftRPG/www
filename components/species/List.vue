@@ -1,8 +1,8 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div v-for="lineage in lineages" :key="lineage.id" :class="classes">
-        <LineageCard class="d-flex flex-column h-100" :lineage="lineage" />
+      <div v-for="species in lineages" :key="species.id" :class="classes">
+        <SpeciesCard class="d-flex flex-column h-100" :species="species" />
       </div>
     </div>
   </ClientOnly>
@@ -11,13 +11,13 @@
 <script setup lang="ts">
 import { parsingUtils } from "logitar-js";
 
-import type { Lineage } from "~/types/lineages";
+import type { Species } from "~/types/lineages";
 
 const { parseNumber } = parsingUtils;
 
 const props = defineProps<{
   cols?: number | string | null;
-  items: Lineage[];
+  items: Species[];
 }>();
 
 const classes = computed<string[]>(() => {
@@ -34,5 +34,5 @@ const classes = computed<string[]>(() => {
   }
   return classes;
 });
-const lineages = computed<Lineage[]>(() => props.items);
+const lineages = computed<Species[]>(() => props.items);
 </script>
