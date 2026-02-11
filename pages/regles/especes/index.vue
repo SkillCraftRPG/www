@@ -55,7 +55,7 @@
       sociale dans la majorité des régions. Malgré une forte cohésion sociale, ces sociétés sont néanmoins pensées d’abord et avant tout pour ces espèces. Les
       autres espèces peuvent donc ressentir un profond décalage culture et structurel, allant jusqu’à l’exclusion.
     </p>
-    <LineageList cols="4" :items="commonLineages" />
+    <SpeciesList cols="4" :items="commonSpecies" />
     <h2 id="crossed" class="h3">Espèces croisées</h2>
     <p>
       Les espèces dites croisées sont issues de l’union de deux lignées distinctes. Leur héritage multiple leur confère des traits physiques, culturels ou
@@ -64,7 +64,7 @@
       place, pris entre des normes sociales, biologiques ou symboliques parfois incompatibles. Leur identité se construit donc davantage par le vécu personnel
       que par l’appartenance collective.
     </p>
-    <LineageList cols="3" :items="crossedLineages" />
+    <SpeciesList cols="3" :items="crossedSpecies" />
     <h2 id="animals" class="h3">Hommes-animaux</h2>
     <p>
       Les hommes-animaux sont les autochtones de la région. Autrefois maîtres d’un vaste territoire, ils ont vu leurs terres se réduire au fil des siècles, sous
@@ -72,7 +72,7 @@
       établies afin de préserver leurs valeurs et traditions millénaires. D’autres se sont intégrés, volontairement ou sous contrainte, au prix d’une érosion
       parfois profonde de leur culture ancestrale. Cette fracture marque encore aujourd’hui l’identité et le destin de ces peuples.
     </p>
-    <LineageList cols="3" :items="animalLineages" />
+    <SpeciesList cols="3" :items="animalSpecies" />
     <h2 id="fairies" class="h3">Fées</h2>
     <p>
       Les fées sont issues d’autres dimensions, lumineuses ou ombrageuses, et entretiennent un lien étroit avec les forces qui imprègnent le monde. Leur
@@ -80,7 +80,7 @@
       plutôt autour de lieux de pouvoir, véritables sources naturelles de magie. Elles y veillent avant tout à la préservation de ces sites et à l’équilibre des
       forces qui s’y manifestent, agissant selon des logiques qui leur sont propres et souvent étrangères aux enjeux des sociétés du continent.
     </p>
-    <LineageList :items="fairyLineages" />
+    <SpeciesList :items="fairySpecies" />
     <h2 id="elementals" class="h3">Élémentaires</h2>
     <p>
       Les élémentaires tirent leur origine de la présence d’esprits élémentaires venus d’autres dimensions. Leur existence est intimement liée à des lieux
@@ -88,7 +88,7 @@
       cultures. De ce fait, ils demeurent généralement neutres dans les conflits militaires et politiques. Leurs actions sont guidées avant tout par l’intérêt
       de leur espèce et la préservation de leur habitat, quitte à ignorer ou contrarier les enjeux des peuples qui les entourent.
     </p>
-    <LineageList cols="4" :items="elementalLineages" />
+    <SpeciesList cols="4" :items="elementalSpecies" />
     <h2 id="horde" class="h3">Horde</h2>
     <p>
       La Horde désigne une confédération tribale aux contours flous et changeants, composée d’espèces habituellement considérées comme monstrueuses. Son
@@ -97,7 +97,7 @@
       Les motivations qui les animent sont tout aussi hétérogènes : accumulation de richesses, contrôle de territoires ou de peuples, quête de prestige, défis
       personnels ou autres ambitions propres à chaque individu.
     </p>
-    <LineageList :items="hordeLineages" />
+    <SpeciesList :items="hordeSpecies" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
@@ -105,16 +105,16 @@
 </template>
 
 <script setup lang="ts">
-import type { Lineage } from "~/types/lineages";
 import type { SearchResults } from "~/types/game";
+import type { Species } from "~/types/lineages";
 
 const config = useRuntimeConfig();
 const title: string = "Espèces";
 
-const { data } = await useLazyAsyncData<SearchResults<Lineage>>(
-  "lineages",
+const { data } = await useLazyAsyncData<SearchResults<Species>>(
+  "species",
   () =>
-    $fetch("/api/lineages?sort=Slug", {
+    $fetch("/api/species?sort=Slug", {
       baseURL: config.public.apiBaseUrl,
     }),
   {
@@ -122,25 +122,25 @@ const { data } = await useLazyAsyncData<SearchResults<Lineage>>(
   },
 );
 
-const lineages = computed<Lineage[]>(() => data.value?.items ?? []);
+const allSpecies = computed<Species[]>(() => data.value?.items ?? []);
 
 const animalSlugs: Set<string> = new Set(["amphydre", "centaure", "harseme", "minotaure", "sarne", "skame"]);
-const animalLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => animalSlugs.has(slug)));
+const animalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => animalSlugs.has(slug)));
 
 const commonSlugs: Set<string> = new Set(["elfe", "humain", "nain", "petit-gens"]);
-const commonLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => commonSlugs.has(slug)));
+const commonSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => commonSlugs.has(slug)));
 
 const crossedSlugs: Set<string> = new Set(["celestin", "demi-elfe", "demi-orque", "dhampir", "infernon", "sang-dragon"]);
-const crossedLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => crossedSlugs.has(slug)));
+const crossedSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => crossedSlugs.has(slug)));
 
 const elementalSlugs: Set<string> = new Set(["gnome", "salamandre", "sylphe", "triton"]);
-const elementalLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => elementalSlugs.has(slug)));
+const elementalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => elementalSlugs.has(slug)));
 
 const fairySlugs: Set<string> = new Set(["satyre"]);
-const fairyLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => fairySlugs.has(slug)));
+const fairySpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => fairySlugs.has(slug)));
 
 const hordeSlugs: Set<string> = new Set(["gobelin"]);
-const hordeLineages = computed<Lineage[]>(() => lineages.value.filter(({ slug }) => hordeSlugs.has(slug)));
+const hordeSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => hordeSlugs.has(slug)));
 
 useSeo({
   title,

@@ -16,7 +16,13 @@
         <TalentCard class="d-flex flex-column h-100" :talent="talent" />
       </div>
     </div>
-    <LanguageList v-if="languages.length" :items="languages" />
+    <template v-if="languages.length">
+      <h2 class="h3">Liste des langues</h2>
+      <LanguageList v-if="languages.length" :items="languages" />
+    </template>
+    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
+      <font-awesome-icon icon="fas fa-arrow-up" />
+    </button>
   </main>
 </template>
 

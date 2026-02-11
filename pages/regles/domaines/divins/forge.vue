@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
     <p>
-      Les divinités appartement à ce domaine s’intéressent aux <NuxtLink to="/regles/equipement/marchandise">métaux</NuxtLink> et au métier de forgeron. Elles
+      Les divinités appartenant à ce domaine s’intéressent aux <NuxtLink to="/regles/equipement/marchandise">métaux</NuxtLink> et au métier de forgeron. Elles
       s’associent à la patience et aux œuvres créatrices et artisanales.
     </p>
     <p>
