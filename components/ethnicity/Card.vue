@@ -7,14 +7,14 @@ import type { Ethnicity, Species } from "~/types/lineages";
 
 const props = defineProps<{
   ethnicity: Ethnicity;
-  species?: Species | null;
+  species?: Species;
 }>();
 
 const to = computed<string>(() => {
-  const species: string | undefined = props.species?.slug ?? props.ethnicity.species?.slug;
+  const species: Species | undefined = props.species ?? props.ethnicity.species ?? undefined;
   if (!species) {
     throw new Error(`A species is required for ethnicity "${props.ethnicity.name} (Id=${props.ethnicity.id})".`);
   }
-  return `/regles/especes/${species}/${props.ethnicity.slug}`;
+  return `/regles/especes/${species.slug}/${props.ethnicity.slug}`;
 });
 </script>
