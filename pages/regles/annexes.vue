@@ -28,17 +28,17 @@ const items: MenuItem[] = [
   {
     path: "/regles/domaines/divins",
     title: "Domaines divins",
-    description: "🚧",
+    description: "Choisissez un domaine divin et ses pouvoirs sacrés associés.",
   },
   {
     path: "/regles/domaines/animisme",
     title: "Domaines d’animisme",
-    description: "🚧",
+    description: "Choisissez un domaine animiste et sa catégorie associée.",
   },
   {
     path: "/regles/elementarisme",
     title: "Élémentarisme",
-    description: "🚧",
+    description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
   },
 ];
 

@@ -90,9 +90,9 @@ type Domains = {
 const domains: Domains = {
   generic: [
     {
-      path: "#",
+      path: "/regles/domaines/animisme/ancetres",
       title: "Ancêtres",
-      description: "🚧",
+      description: "Domaine animiste lié aux ancêtres et au compagnon primordial.",
     },
     {
       path: "#",
@@ -220,6 +220,7 @@ const spells: Spells = {
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les Domaines d’animisme, liés aux forces naturelles et spirituelles, et choisissez la voie qui façonne vos pouvoirs et votre lien au monde.",
 });
 </script>

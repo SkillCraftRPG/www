@@ -45,6 +45,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez l’Élémentarisme et maîtrisez l’essence de l’Air, de l’Eau, du Feu, de la Terre ou de l’Esprit pour déployer de puissantes capacités.",
 });
 </script>

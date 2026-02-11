@@ -201,6 +201,6 @@ const spells: Spells = {
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les Domaines divins, sources de pouvoirs sacrés et d’attaques divines, liés aux principes majeurs façonnant foi, magie et destinée.",
 });
 </script>
