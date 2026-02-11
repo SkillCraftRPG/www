@@ -4,7 +4,7 @@
     <AppBreadcrumb :active="title" />
     <p>
       Une espèce représente un regroupement d’individus présentant des caractéristiques communes, comme la forme du corps, la couleur de peau, de yeux et de
-      cheveux, les comportements sociaux et l’espérance de vie. Plusieurs espèces se décomposent en plusieurs ethnies, associés à un territoire, une
+      cheveux, les comportements sociaux et l’espérance de vie. Certaines espèces se décomposent en plusieurs ethnies, associés à un territoire, une
       organisation géopolitique et un ensemble de mœurs et coutumes.
     </p>
     <p>
