@@ -11,7 +11,10 @@ const props = defineProps<{
 }>();
 
 const to = computed<string>(() => {
-  const species: string = props.species?.slug ?? props.ethnicity.species?.slug ?? "";
+  const species: string | undefined = props.species?.slug ?? props.ethnicity.species?.slug;
+  if (!species) {
+    throw new Error(`A species is required for ethnicity "${props.ethnicity.name} (Id=${props.ethnicity.id})".`);
+  }
   return `/regles/especes/${species}/${props.ethnicity.slug}`;
 });
 </script>
