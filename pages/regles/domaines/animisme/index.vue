@@ -95,9 +95,9 @@ const domains: Domains = {
       description: "Domaine animiste lié aux ancêtres et au compagnon primordial.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/astres",
       title: "Astres",
-      description: "🚧",
+      description: "Domaine animiste des étoiles et constellations, forme étoilée et divination.",
     },
     {
       path: "/regles/domaines/animisme/berger",
