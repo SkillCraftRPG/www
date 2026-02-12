@@ -36,10 +36,10 @@
         >Acrobaties</NuxtLink
       >
       de <NuxtLink to="/regles/competences/tests/difficulte">difficulté</NuxtLink> égale au résultat du test. En cas d’échec, la cible reçoit
-      <NuxtLink to="/regles/combat/degats/jet">1d8</NuxtLink>&nbsp;+&nbsp;<NuxtLink to="/regles/statistiques/puissance">Puissance</NuxtLink>
-      <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> de <NuxtLink to="/regles/combat/degats/types">foudre</NuxtLink> ou de
-      <NuxtLink to="/regles/combat/degats/types">tonnerre</NuxtLink>, au choix du personnage, ou seulement la moitié en cas de réussite. Le personnage peut
-      utiliser cette capacité un nombre de fois égal à ses <NuxtLink to="/regles/attributs/sens">Sens</NuxtLink> (minimum&nbsp;1) et doit compléter une
+      <NuxtLink to="/regles/statistiques/puissance">Puissance</NuxtLink>&nbsp;+&nbsp;<NuxtLink to="/regles/combat/degats/jet">1d8 points de dégâts</NuxtLink> de
+      <NuxtLink to="/regles/combat/degats/types">foudre</NuxtLink> ou de <NuxtLink to="/regles/combat/degats/types">tonnerre</NuxtLink>, au choix du personnage,
+      ou seulement la moitié en cas de réussite. Le personnage peut utiliser cette capacité un nombre de fois égal à ses
+      <NuxtLink to="/regles/attributs/sens">Sens</NuxtLink> (minimum&nbsp;1) et doit compléter une
       <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink> afin de récupérer ces utilisations.
     </p>
     <!-- Courroux destructif (Pouvoir divin) -->
@@ -85,4 +85,6 @@ useSeo({
   title,
   description: "Découvrez le domaine divin de la Tempête, dédié aux cieux et aux cataclysmes, offrant foudre, ripostes électriques et puissance destructrice.",
 });
+
+// TODO(fpion): Furie de la tempête, 2 hyperliens collés
 </script>
