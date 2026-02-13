@@ -105,9 +105,9 @@ const domains: Domains = {
       description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/lune",
       title: "Lune",
-      description: "🚧",
+      description: "Domaine animiste lunaire axé sur métamorphose et nuit.",
     },
     {
       path: "/regles/domaines/animisme/mycetes",
