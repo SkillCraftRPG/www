@@ -95,9 +95,9 @@ const domains: Domains = {
       description: "Domaine animiste lié aux ancêtres et au compagnon primordial.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/astres",
       title: "Astres",
-      description: "🚧",
+      description: "Domaine animiste des étoiles et constellations, forme étoilée et divination.",
     },
     {
       path: "/regles/domaines/animisme/berger",
@@ -105,9 +105,9 @@ const domains: Domains = {
       description: "Totems animaux, auras protectrices et invocations puissantes au service du Berger.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/lune",
       title: "Lune",
-      description: "🚧",
+      description: "Domaine animiste lunaire axé sur métamorphose et nuit.",
     },
     {
       path: "/regles/domaines/animisme/mycetes",
