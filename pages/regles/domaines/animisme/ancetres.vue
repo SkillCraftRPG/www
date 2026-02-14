@@ -53,16 +53,17 @@
     <p>
       Plutôt que d’assumer une <NuxtLink to="/regles/specialisations/animiste">forme sauvage</NuxtLink>, le personnage peut invoquer une bête ancestrale
       (préhistorique ou primitive) dans un <NuxtLink to="/regles/aventure/mouvement/espace-occupe">espace inoccupé</NuxtLink> de son choix qu’il peut
-      <NuxtLink to="/regles/aventure/environnement/vision">voir</NuxtLink> situé à 9&nbsp;mètres ou moins de sa position. La bête est
+      <NuxtLink to="/regles/aventure/environnement/vision">voir</NuxtLink> et situé à 9&nbsp;mètres ou moins de sa position. La bête est
       <NuxtLink to="/regles/aventure/interaction-sociale">amicale</NuxtLink> envers le personnage et ses compagnons, et obéit à ses commandes.
     </p>
     <p>
       En situation de <NuxtLink to="/regles/combat">combat</NuxtLink>, la bête possède son propre
-      <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, mais celui-ci est effectué immédiatement après celui du personnage. Elle peut
+      <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, qui est effectué immédiatement après celui du personnage. Elle peut
       <NuxtLink to="/regles/combat/activites/deplacement">se déplacer</NuxtLink> et utiliser sa
       <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink> par elle-même. Si elle ne reçoit aucune commande, elle se place en
       <NuxtLink to="/regles/combat/activites/defense">position défensive</NuxtLink>, sauf si le personnage est
-      <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>, dans quel cas elle peut agir comme bon lui semble. Une fois par tour, par une
+      <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>, dans quel cas elle peut
+      <NuxtLink to="/regles/combat/activites">agir</NuxtLink> comme bon lui semble. Une fois par tour, par une
       <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink>, le personnage peut donner des commandes à la bête, qui fera de son mieux pour les
       accomplir pendant son tour.
     </p>
