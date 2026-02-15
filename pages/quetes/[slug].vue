@@ -9,6 +9,9 @@
           <BreadcrumbItem active>{{ title }}</BreadcrumbItem>
         </Breadcrumb>
         <MarkdownContent v-if="questLog.htmlContent" :text="questLog.htmlContent" />
+        <p v-if="totalLevels" class="text-primary">
+          <strong>Niveaux acquis : {{ $n(acquiredLevels, "integer") }}</strong>
+        </p>
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -41,6 +44,10 @@ const quest = ref<Quest | undefined>();
 const questLog = computed<QuestLog | undefined>(() => data.value ?? undefined);
 const title = computed<string>(() => questLog.value?.title ?? "");
 const description = computed<string>(() => questLog.value?.metaDescription ?? "");
+const acquiredLevels = computed<number>(
+  () => questLog.value?.quests.reduce((sum, quest) => sum + Math.floor(quest.grantedLevels * quest.progressRatio), 0) ?? 0,
+);
+const totalLevels = computed<number>(() => questLog.value?.quests.reduce((sum, quest) => sum + quest.grantedLevels, 0) ?? 0);
 
 useSeo({ title, description });
 </script>
