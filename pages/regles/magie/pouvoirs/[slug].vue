@@ -68,7 +68,13 @@ const abilities = computed<GroupedAbilities[]>(() => {
     map.set(level, abilities);
   });
   return orderBy(
-    Array.from(map.entries()).map(([level, abilities]) => ({ level: level + tier + (tier < 3 ? 1 : 2), abilities: orderBy(abilities, "name") })),
+    Array.from(map.entries()).map(([level, abilities]) => ({
+      level: level + tier + (tier < 3 ? 1 : 2),
+      abilities: orderBy(
+        abilities.map((ability) => ({ ...ability, sort: ability.name ? unaccent(ability.name) : ability.name })),
+        "sort",
+      ),
+    })),
     "level",
   );
 });

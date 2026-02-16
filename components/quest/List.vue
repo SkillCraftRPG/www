@@ -58,7 +58,7 @@ const sort = ref<string>("title_asc");
 const groupedQuests = computed<GroupedQuests[]>(() => {
   const map: Map<string, Quest[]> = new Map();
   props.quests.forEach((quest) => {
-    const key: string = quest.group?.name ?? "";
+    const key: string = quest.group ? unaccent(quest.group.name) : "";
     const quests: Quest[] | undefined = map.get(key);
     if (quests) {
       quests.push(quest);

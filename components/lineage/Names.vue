@@ -59,7 +59,12 @@ const props = defineProps<{
 
 const selection = ref<Map<string, string>>(new Map());
 
-const categories = computed<NameCategory[]>(() => orderBy(props.names.custom, "category"));
+const categories = computed<NameCategory[]>(() =>
+  orderBy(
+    props.names.custom.map((custom) => ({ ...custom, sort: unaccent(custom.category) })),
+    "sort",
+  ),
+);
 const hasNames = computed<boolean>(
   () =>
     props.names.family.length > 0 ||
