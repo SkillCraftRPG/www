@@ -127,9 +127,9 @@ const domains: Domains = {
       description: "Esprit incendiaire, flammes sacrées et renouveau par la destruction.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/reves",
       title: "Rêves (Naturel)",
-      description: "🚧",
+      description: "Magie féérique, ombres et voyages à travers les rêves.",
     },
   ],
 };

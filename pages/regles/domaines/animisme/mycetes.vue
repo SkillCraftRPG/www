@@ -104,8 +104,8 @@
       <strong>Forme spongieuse</strong>.
     </p>
     <p>
-      Lorsqu’une créature débute son tour dans la zone ou qu’elle s’y <NuxtLink to="/combat/activites/deplacement">déplace</NuxtLink> volontairement, elle est
-      affligée par les effets des spores de <strong>Putréfaction</strong>. Une créature ne peut recevoir ces
+      Lorsqu’une créature débute son tour dans la zone ou qu’elle s’y <NuxtLink to="/regles/combat/activites/deplacement">déplace</NuxtLink> volontairement,
+      elle est affligée par les effets des spores de <strong>Putréfaction</strong>. Une créature ne peut recevoir ces
       <NuxtLink to="/regles/combat/degats">points de dégâts</NuxtLink> qu’une seule fois par <NuxtLink to="/regles/combat/deroulement">round</NuxtLink>.
       Néanmoins, lorsque ses spores ne sont pas centrées sur lui, le personnage ne peut utiliser sa
       <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink> afin d’affliger une créature des effets de ses spores de <strong>Putréfaction</strong>.
