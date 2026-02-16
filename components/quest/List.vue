@@ -1,11 +1,11 @@
 <template>
   <div>
-    <TarSelect class="mb-4" floating id="sort" label="Tri" :options="sortOptions" v-model="sort">
+    <TarSelect class="mb-4" floating id="sort" label="Tri" :options="sortOptions" v-model="store.sortOption">
       <template #after>
-        <TarCheckbox id="group" label="Grouper" switch v-model="group" />
+        <TarCheckbox id="group" label="Grouper" switch v-model="store.isGrouping" />
       </template>
     </TarSelect>
-    <template v-if="group">
+    <template v-if="store.isGrouping">
       <div v-for="grouped in groupedQuests" :key="grouped.group" class="mb-4">
         <h2 class="h4">{{ grouped.group }}</h2>
         <div v-for="quest in grouped.quests" :key="quest.id" class="mb-2">
@@ -41,6 +41,7 @@ const sortOptions: SelectOption[] = [
   { text: "Progression (croissant)", value: "progress_asc" },
   { text: "Progression (décroissant)", value: "progress_desc" },
 ];
+const store = useQuestStore();
 const { orderBy, orderByDescending } = arrayUtils;
 
 const props = defineProps<{
@@ -51,9 +52,6 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: "selected", quest: Quest | undefined): void;
 }>();
-
-const group = ref<boolean>(false);
-const sort = ref<string>("title_asc");
 
 const groupedQuests = computed<GroupedQuests[]>(() => {
   const map: Map<string, Quest[]> = new Map();
@@ -74,7 +72,7 @@ const groupedQuests = computed<GroupedQuests[]>(() => {
 const sortedQuests = computed<Quest[]>(() => sortQuests(props.quests));
 
 function sortQuests(quests: Quest[]): Quest[] {
-  const options: string[] = sort.value.split("_");
+  const options: string[] = store.sortOption.split("_");
   if (options.length === 2) {
     const sortable: SortableQuest[] = quests.map((quest) => toSortable(quest, options[0]));
     switch (options[1]) {
