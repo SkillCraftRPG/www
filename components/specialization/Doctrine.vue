@@ -36,6 +36,11 @@ const props = defineProps<{
   talent: Doctrine;
 }>();
 
-const features = computed<Feature[]>(() => orderBy(props.talent.features, "name"));
+const features = computed<Feature[]>(() =>
+  orderBy(
+    props.talent.features.map((feature) => ({ ...feature, sort: unaccent(feature.name) })),
+    "sort",
+  ),
+);
 const talents = computed<Talent[]>(() => orderBy(props.talent.discountedTalents, "slug"));
 </script>

@@ -18,5 +18,10 @@ const props = defineProps<{
   lineage: LineageBase;
 }>();
 
-const features = computed<Feature[]>(() => orderBy(props.lineage.features, "name"));
+const features = computed<Feature[]>(() =>
+  orderBy(
+    props.lineage.features.map((feature) => ({ ...feature, sort: unaccent(feature.name) })),
+    "sort",
+  ),
+);
 </script>

@@ -92,12 +92,12 @@ const domains: Domains = {
     {
       path: "/regles/domaines/animisme/ancetres",
       title: "Ancêtres",
-      description: "Domaine animiste lié aux ancêtres et au compagnon primordial.",
+      description: "Esprits ancestraux, rites funéraires et lien sacré avec le compagnon primordial.",
     },
     {
       path: "/regles/domaines/animisme/astres",
       title: "Astres",
-      description: "Domaine animiste des étoiles et constellations, forme étoilée et divination.",
+      description: "Constellations vivantes, forme étoilée et présages guidés par le ciel nocturne.",
     },
     {
       path: "/regles/domaines/animisme/berger",
@@ -107,7 +107,7 @@ const domains: Domains = {
     {
       path: "/regles/domaines/animisme/lune",
       title: "Lune",
-      description: "Domaine animiste lunaire axé sur métamorphose et nuit.",
+      description: "Métamorphoses bestiales, puissance nocturne et formes sauvages lunaires.",
     },
     {
       path: "/regles/domaines/animisme/mycetes",
@@ -122,14 +122,14 @@ const domains: Domains = {
   ],
   specific: [
     {
-      path: "#",
+      path: "/regles/domaines/animisme/feu",
       title: "Feu (Spirituel)",
-      description: "🚧",
+      description: "Esprit incendiaire, flammes sacrées et renouveau par la destruction.",
     },
     {
-      path: "#",
+      path: "/regles/domaines/animisme/reves",
       title: "Rêves (Naturel)",
-      description: "🚧",
+      description: "Magie féérique, ombres et voyages à travers les rêves.",
     },
   ],
 };

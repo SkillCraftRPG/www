@@ -89,4 +89,15 @@ const showSpeeds = computed<boolean>(() =>
 );
 
 useSeo({ title, description });
+
+/*
+ * Structure:
+ * - Morphologie / apparence physique
+ * - Mental / intellectuel
+ * - Histoire (récente)
+ * - Situation géographique
+ * - Organisation politique
+ * - Culture & traditions
+ * - Relations avec les autres espèces & ethnies
+ */
 </script>
