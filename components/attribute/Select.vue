@@ -61,8 +61,8 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() => {
   const options: SelectOption[] = orderBy(
-    props.attributes.map(({ id, name }) => ({ text: name, value: id })),
-    "text",
+    props.attributes.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    "sort",
   );
   if (parseBoolean(props.variable)) {
     options.push({ text: variableAttribute.name, value: variableAttribute.id });

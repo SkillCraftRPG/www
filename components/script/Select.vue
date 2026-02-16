@@ -38,8 +38,8 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() =>
   orderBy(
-    props.scripts.map(({ id, name }) => ({ text: name, value: id })),
-    "text",
+    props.scripts.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    "sort",
   ),
 );
 

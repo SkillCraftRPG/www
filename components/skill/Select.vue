@@ -72,8 +72,8 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() => {
   const options: SelectOption[] = orderBy(
-    props.skills.map(({ id, name }) => ({ text: name, value: id })),
-    "text",
+    props.skills.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    "sort",
   );
   if (parseBoolean(props.extended)) {
     options.splice(0, 0, { text: noneSkill.name, value: noneSkill.id }, { text: anySkill.name, value: anySkill.id });
