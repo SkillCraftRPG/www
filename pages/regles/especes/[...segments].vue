@@ -3,13 +3,14 @@
     <template v-if="lineage">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="lineage.htmlContent" :text="lineage.htmlContent" />
+      <MarkdownContent v-if="lineage.htmlContent.overview" :text="lineage.htmlContent.overview" />
       <SpeciesEthnicities v-if="species && species.ethnicities.length" :species="species" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
       <LineageNames v-if="showNames" :names="lineage.names" />
       <LineagePhysical :lineage="lineage" />
       <LineageSpeeds v-if="showSpeeds" :speeds="lineage.speeds" />
       <LineageFeatures v-if="lineage.features.length" :lineage="lineage" />
+      <LineageContent v-if="showContent" :content="lineage.htmlContent" />
     </template>
   </main>
 </template>
@@ -67,6 +68,18 @@ const parent = computed<Breadcrumb[]>(() => {
   return parent;
 });
 
+const showContent = computed<boolean>(() =>
+  Boolean(
+    lineage.value &&
+      (lineage.value.htmlContent.morphology ||
+        lineage.value.htmlContent.psychology ||
+        lineage.value.htmlContent.culture ||
+        lineage.value.htmlContent.history ||
+        lineage.value.htmlContent.geography ||
+        lineage.value.htmlContent.politics ||
+        lineage.value.htmlContent.relations),
+  ),
+);
 const showLanguages = computed<boolean>(() =>
   Boolean(lineage.value && (lineage.value.languages.items.length || lineage.value.languages.extra > 0 || lineage.value.languages.text)),
 );
@@ -89,15 +102,4 @@ const showSpeeds = computed<boolean>(() =>
 );
 
 useSeo({ title, description });
-
-/*
- * Structure:
- * - Morphologie / apparence physique
- * - Mental / intellectuel
- * - Histoire (récente)
- * - Situation géographique
- * - Organisation politique
- * - Culture & traditions
- * - Relations avec les autres espèces & ethnies
- */
 </script>
