@@ -85,6 +85,4 @@ useSeo({
   title,
   description: "Découvrez le domaine divin de la Tempête, dédié aux cieux et aux cataclysmes, offrant foudre, ripostes électriques et puissance destructrice.",
 });
-
-// TODO(fpion): Furie de la tempête, 2 hyperliens collés
 </script>
