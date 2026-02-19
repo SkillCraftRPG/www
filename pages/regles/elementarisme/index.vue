@@ -39,7 +39,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/elementarisme/capacites",
     title: "Capacités élémentaires",
-    description: "🚧",
+    description: "Capacités élémentaires de tiers 1 à 3 et effets planaires.",
   },
 ];
 

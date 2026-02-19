@@ -34,6 +34,12 @@
         <a href="#tiers-3">Capacités de tiers 3</a>
         <ul>
           <li>
+            <a href="#alteration">Altération élémentaire</a>
+          </li>
+          <li>
+            <a href="#convoi">Convoi élémentaire</a>
+          </li>
+          <li>
             <a href="#incarnation-majeure">Incarnation élémentaire majeure</a>
           </li>
         </ul>

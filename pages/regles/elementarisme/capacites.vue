@@ -2,7 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>🚧</p>
+    <p>
+      Les capacités élémentaires permettent à l’<NuxtLink to="/regles/specialisations/elementariste">Élémentariste</NuxtLink> d’incarner, invoquer, altérer et
+      manipuler les forces de sa dimension à travers des capacités progressives de <NuxtLink to="/regles/personnages/progression/tiers">tiers 1 à 3</NuxtLink>.
+    </p>
     <ElementalismContents />
     <h2 id="tiers-1" class="h3">Capacités de tiers 1</h2>
     <ElementalismMinorForm />
@@ -13,6 +16,8 @@
     <ElementalismExpelling />
     <ElementalismMediumForm />
     <h2 id="tiers-3" class="h3">Capacités de tiers 3</h2>
+    <ElementalismAltering />
+    <ElementalismConvoy />
     <ElementalismMajorForm />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
@@ -31,6 +36,6 @@ const title: string = "Capacités élémentaires";
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les capacités élémentaires : incarnations, invocations, exils planaires et altérations liées aux dimensions élémentaires.",
 });
 </script>
