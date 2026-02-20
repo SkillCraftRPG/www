@@ -80,7 +80,7 @@
       plutôt autour de lieux de pouvoir, véritables sources naturelles de magie. Elles y veillent avant tout à la préservation de ces sites et à l’équilibre des
       forces qui s’y manifestent, agissant selon des logiques qui leur sont propres et souvent étrangères aux enjeux des sociétés du continent.
     </p>
-    <SpeciesList :items="fairySpecies" />
+    <SpeciesList cols="4" :items="fairySpecies" />
     <h2 id="elementals" class="h3">Élémentaires</h2>
     <p>
       Les élémentaires tirent leur origine de la présence d’esprits élémentaires venus d’autres dimensions. Leur existence est intimement liée à des lieux
@@ -97,7 +97,7 @@
       Les motivations qui les animent sont tout aussi hétérogènes : accumulation de richesses, contrôle de territoires ou de peuples, quête de prestige, défis
       personnels ou autres ambitions propres à chaque individu.
     </p>
-    <SpeciesList :items="hordeSpecies" />
+    <SpeciesList cols="3" :items="hordeSpecies" />
     <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
       <font-awesome-icon icon="fas fa-arrow-up" />
     </button>
