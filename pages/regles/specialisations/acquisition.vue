@@ -116,9 +116,6 @@
       </li>
       <li>Si votre personnage est au tiers 1, alors il augmente au tiers 2.</li>
     </ul>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

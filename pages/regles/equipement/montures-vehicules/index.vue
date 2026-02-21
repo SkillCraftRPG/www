@@ -18,9 +18,6 @@
     <h3 id="accessoires" class="h5">Accessoires</h3>
     <p>Des accessoires indispensables pour équiper, contrôler et transporter avec vos montures.</p>
     <ItemMountAccessoryList :items="mountAccessories" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

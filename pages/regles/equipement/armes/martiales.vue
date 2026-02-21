@@ -4,9 +4,6 @@
     <AppBreadcrumb active="Martiales" :parent="parent" />
     <p>Des armes puissantes et spécialisées pour guerriers aguerris et combattants d’élite.</p>
     <ItemWeaponList :items="weapons" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

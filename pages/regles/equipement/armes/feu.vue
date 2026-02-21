@@ -86,9 +86,6 @@
     <h2 id="martiales" class="h3">Armes martiales</h2>
     <p>Armes martiales à feu puissantes et variées, exigeant entraînement et maîtrise.</p>
     <ItemWeaponList :items="martial" multiple />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

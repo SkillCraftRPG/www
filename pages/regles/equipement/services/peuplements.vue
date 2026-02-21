@@ -46,9 +46,6 @@
       <font-awesome-icon icon="fas fa-triangle-exclamation" /> Toute ville portuaire comprend au moins un shipchandler, même si sa population est inférieure au
       nombre d’habitants.
     </p>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

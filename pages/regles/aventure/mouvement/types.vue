@@ -176,9 +176,6 @@
     <p>Une créature dotée d’une vitesse de creusage peut se déplacer sous terre, dans des surfaces friables tel le sable, la terre, la boue ou la glace.</p>
     <p>Elle ne peut néanmoins se déplacer dans des surfaces solides telle la pierre, sauf indication contraire.</p>
     <p>Les créatures souterraines, tels les vers, peuvent être dotées d’une vitesse de creusage.</p>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

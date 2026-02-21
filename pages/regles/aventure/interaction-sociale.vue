@@ -159,9 +159,6 @@
       qu’on a tenté de la manipuler en cas d’échec.
     </p>
     <p>Il devient donc plus difficile voire impossible de réessayer ces tests de compétences.</p>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 
