@@ -6,10 +6,10 @@
 
 <script setup lang="ts">
 useHead({
-  titleTemplate: (chunk) => (chunk ? `${chunk} %separator %brand` : "%brand"),
-  templateParams: {
-    brand: $t("brand"),
-    separator: "·",
+  titleTemplate: (chunk) => {
+    const brand: string = $t("brand");
+    const separator: string = "·";
+    return chunk ? `${chunk} ${separator} ${brand}` : brand;
   },
 });
 </script>
