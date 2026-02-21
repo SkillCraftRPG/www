@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-dark">
-    <div class="fluid">
-      <NuxtLink to="/" class="text-light">
+    <div class="container-fluid text-center py-3">
+      <NuxtLink to="/">
         <img src="@/assets/img/logo.png" :alt="`${$t('brand')} Logo`" height="32" />
       </NuxtLink>
       {{ " " }}
@@ -19,11 +19,6 @@ const version = computed<string>(() => config.public.version);
 
 <style scoped>
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
 }
 </style>
