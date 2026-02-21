@@ -7,35 +7,51 @@
         <button
           v-if="showScrollTop"
           type="button"
-          class="btn btn-lg btn-primary btn-scroll position-fixed bottom-0 end-0 m-3 rounded-circle shadow"
+          class="btn btn-lg btn-primary btn-scroll position-fixed end-0 m-3 rounded-circle shadow"
+          :style="{ bottom: `${footerOverlap}px` }"
           @click="scrollToTop"
         >
           <font-awesome-icon icon="fas fa-arrow-up" />
         </button>
       </Transition>
     </div>
-    <LayoutFooter />
+    <LayoutFooter id="footer" />
   </div>
 </template>
 
 <script setup lang="ts">
+const footerOverlap = ref<number>(0);
 const showScrollTop = ref<boolean>(false);
-
-function onScroll(): void {
-  showScrollTop.value = window.scrollY > 200;
-}
 
 function scrollToTop(): void {
   window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search);
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 }
 
+function update(): void {
+  showScrollTop.value = window.scrollY > 200;
+
+  const footer: HTMLElement | null = document.getElementById("footer");
+  if (footer) {
+    const footerTop: number = footer.getBoundingClientRect().top + window.scrollY;
+    const viewportBottom: number = window.scrollY + window.innerHeight;
+    const overlap: number = viewportBottom - footerTop;
+    footerOverlap.value = Math.max(0, Math.min(footer.offsetHeight, overlap));
+  } else {
+    footerOverlap.value = 0;
+    return;
+  }
+}
+
 onMounted(() => {
-  window.addEventListener("scroll", onScroll, { passive: true });
+  update();
+  window.addEventListener("resize", update);
+  window.addEventListener("scroll", update, { passive: true });
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", onScroll);
+  window.removeEventListener("resize", update);
+  window.removeEventListener("scroll", update);
 });
 </script>
 
