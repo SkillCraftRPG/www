@@ -39,7 +39,6 @@ function update(): void {
     footerOverlap.value = Math.max(0, Math.min(footer.offsetHeight, overlap));
   } else {
     footerOverlap.value = 0;
-    return;
   }
 }
 
