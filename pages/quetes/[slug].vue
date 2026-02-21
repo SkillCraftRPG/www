@@ -15,8 +15,8 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <QuestList class="col-3" :quests="questLog.quests" :selected="quest" @selected="quest = $event" />
-          <QuestInfo v-if="quest" class="col-9" :quest="quest" />
+          <QuestList class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4" :quests="questLog.quests" :selected="quest" @selected="quest = $event" />
+          <QuestInfo v-if="quest" class="col-12 col-md-6 col-lg-8 col-xl-9 mb-4" :quest="quest" />
         </div>
       </div>
     </template>
@@ -51,3 +51,9 @@ const totalLevels = computed<number>(() => questLog.value?.quests.reduce((sum, q
 
 useSeo({ title, description });
 </script>
+
+<style scoped>
+.container-fluid {
+  max-width: 1920px;
+}
+</style>
