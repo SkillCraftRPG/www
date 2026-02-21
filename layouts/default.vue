@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="d-flex flex-column min-vh-100">
     <LayoutNavbar />
-    <div class="my-3">
+    <div class="flex-grow-1 py-3">
       <slot></slot>
     </div>
     <LayoutFooter />
