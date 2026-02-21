@@ -71,13 +71,13 @@ const parent = computed<Breadcrumb[]>(() => {
 const showContent = computed<boolean>(() =>
   Boolean(
     lineage.value &&
-      (lineage.value.htmlContent.morphology ||
-        lineage.value.htmlContent.psychology ||
-        lineage.value.htmlContent.culture ||
-        lineage.value.htmlContent.history ||
-        lineage.value.htmlContent.geography ||
-        lineage.value.htmlContent.politics ||
-        lineage.value.htmlContent.relations),
+    (lineage.value.htmlContent.morphology ||
+      lineage.value.htmlContent.psychology ||
+      lineage.value.htmlContent.culture ||
+      lineage.value.htmlContent.history ||
+      lineage.value.htmlContent.geography ||
+      lineage.value.htmlContent.politics ||
+      lineage.value.htmlContent.relations),
   ),
 );
 const showLanguages = computed<boolean>(() =>
@@ -86,18 +86,18 @@ const showLanguages = computed<boolean>(() =>
 const showNames = computed<boolean>(() =>
   Boolean(
     lineage.value &&
-      (lineage.value.names.text ||
-        lineage.value.names.family.length > 0 ||
-        lineage.value.names.female.length > 0 ||
-        lineage.value.names.male.length > 0 ||
-        lineage.value.names.unisex.length > 0 ||
-        lineage.value.names.custom.length > 0),
+    (lineage.value.names.text ||
+      lineage.value.names.family.length > 0 ||
+      lineage.value.names.female.length > 0 ||
+      lineage.value.names.male.length > 0 ||
+      lineage.value.names.unisex.length > 0 ||
+      lineage.value.names.custom.length > 0),
   ),
 );
 const showSpeeds = computed<boolean>(() =>
   Boolean(
     lineage.value &&
-      (lineage.value.speeds.walk || lineage.value.speeds.climb || lineage.value.speeds.swim || lineage.value.speeds.fly || lineage.value.speeds.burrow),
+    (lineage.value.speeds.walk || lineage.value.speeds.climb || lineage.value.speeds.swim || lineage.value.speeds.fly || lineage.value.speeds.burrow),
   ),
 );
 
