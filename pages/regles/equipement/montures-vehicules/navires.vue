@@ -38,9 +38,6 @@
       <font-awesome-icon icon="fas fa-triangle-exclamation" /> Le navire de guerre a une surcharge de frais d’entretien à cause de son équipement militaire. Il
       a donc les mêmes frais d’entretien que la galère malgré son prix moins élevé.
     </p>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

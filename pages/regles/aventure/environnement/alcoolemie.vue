@@ -233,9 +233,6 @@
       La régénération d’une créature est réduite de moitié si elle <NuxtLink to="/regles/aventure/repos">se repose</NuxtLink> en étant affligée de la
       <NuxtLink to="/regles/combat/conditions/gueule-bois">gueule de bois</NuxtLink>, ou si elle en sera affligée prochainement.
     </p>
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

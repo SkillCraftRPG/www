@@ -14,9 +14,6 @@
     <h2 class="h3">Autres outils et trousses</h2>
     <p>La formation aux outils et trousses suivants nécessite un talent spécifique.</p>
     <ItemSpecialToolList :items="special" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

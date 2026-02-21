@@ -129,9 +129,6 @@
     <ItemShieldList :items="medium" />
     <h3 id="lourds" class="h5">Boucliers lourds</h3>
     <ItemShieldList :items="heavy" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 

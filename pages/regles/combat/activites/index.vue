@@ -21,9 +21,6 @@
     </ul>
     <h2 class="h3">Liste des activités</h2>
     <BattleActivityList :items="activities" />
-    <button class="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle" @click="scrollToTop">
-      <font-awesome-icon icon="fas fa-arrow-up" />
-    </button>
   </main>
 </template>
 
