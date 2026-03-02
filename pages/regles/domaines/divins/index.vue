@@ -38,6 +38,7 @@
 import type { Breadcrumb } from "~/types/components";
 import type { SearchResults } from "~/types/game";
 import type { Spell } from "~/types/magic";
+import { SpellCategories } from "~/types/constants";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
@@ -111,7 +112,7 @@ const items: MenuItem[] = [
   },
 ];
 
-const category: string = "6bd0b0bf-a81e-4abb-a77c-6801c02a0bf4";
+const category: string = SpellCategories.Divine;
 const { data } = await useLazyAsyncData<SearchResults<Spell>>(
   `spells:${category}`,
   () =>

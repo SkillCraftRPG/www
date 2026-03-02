@@ -57,6 +57,7 @@
 import type { Breadcrumb } from "~/types/components";
 import type { SearchResults } from "~/types/game";
 import type { Spell } from "~/types/magic";
+import { SpellCategories } from "~/types/constants";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
@@ -124,7 +125,7 @@ const domains: Domains = {
   ],
 };
 
-const category: string = "57852c8a-1baa-4e67-9a63-feff494ce5bc";
+const category: string = SpellCategories.Animism;
 const { data } = await useLazyAsyncData<SearchResults<Spell>>(
   `spells:${category}`,
   () =>
