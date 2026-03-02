@@ -43,34 +43,22 @@
     <p>Les domaines suivants sont associés à une seule catégorie.</p>
     <div class="row">
       <div v-for="(domain, index) in domains.specific" :key="index" class="col-xs-12 col-sm-6 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="domain.title" :to="domain.path" />
+        <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="`${domain.title} (${domain.category})`" :to="domain.path" />
       </div>
     </div>
-    <h2 class="h3">Liste des pouvoirs</h2>
-    <h3 class="h5">Pouvoirs de tiers 0</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier0" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
-    <h3 class="h5">Pouvoirs de tiers 1</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier1" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
-    <h3 class="h5">Pouvoirs de tiers 2</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier2" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
+    <template v-if="spells.length">
+      <h2 class="h3">Liste des pouvoirs</h2>
+      <SpellList :category="category" :items="spells" />
+    </template>
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
+import type { SearchResults } from "~/types/game";
+import type { Spell } from "~/types/magic";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Domaines d’animisme";
 
@@ -123,100 +111,32 @@ const domains: Domains = {
   specific: [
     {
       path: "/regles/domaines/animisme/feu",
-      title: "Feu (Spirituel)",
+      title: "Feu",
+      category: "Spirituel",
       description: "Esprit incendiaire, flammes sacrées et renouveau par la destruction.",
     },
     {
       path: "/regles/domaines/animisme/reves",
-      title: "Rêves (Naturel)",
+      title: "Rêves",
+      category: "Naturel",
       description: "Magie féérique, ombres et voyages à travers les rêves.",
     },
   ],
 };
 
-type Spells = {
-  tier0: MenuItem[];
-  tier1: MenuItem[];
-  tier2: MenuItem[];
-};
-const spells: Spells = {
-  tier0: [
-    // {
-    //   path: "/regles/magie/pouvoirs/flammes-feeriques",
-    //   title: "Flammes féériques",
-    //   description: "Feux féeriques, auras révélatrices et flammes radiantes poursuivant les cibles.",
-    // }, // Naturel
-    // {
-    //   path: "/regles/magie/pouvoirs/frisson",
-    //   title: "Frisson",
-    //   description: "Main spectrale, mot d’effroi ou onde vitale infligeant peur, drains ou soins.",
-    // }, // Spirituel
-    // {
-    //   path: "/regles/magie/pouvoirs/habiletes-feeriques",
-    //   title: "Habiletés féériques",
-    //   description: "Effets féeriques, réparation d’objets, vision nocturne et croissance végétale.",
-    // }, // Naturel
-    // {
-    //   path: "/regles/magie/pouvoirs/preservation",
-    //   title: "Préservation",
-    //   description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
-    // }, // Spirituel
-    {
-      path: "/regles/magie/pouvoirs/resistance-elementaire",
-      title: "Résistance élémentaire",
-      description: "Renforce les sauvegardes, absorbe l’élément reçu et confère une résistance durable.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/souffle-empoisonne",
-      title: "Souffle empoisonné",
-      description: "Souffle toxique infligeant du poison, purge l’empoisonnement ou frappe en cône.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/vignes-epineuses",
-      title: "Vignes épineuses",
-      description: "Fouet de ronces, zone entravante ou ronces camouflées infligeant des dégâts.",
-    },
-  ],
-  tier1: [
-    // {
-    //   path: "/regles/magie/pouvoirs/affaiblissement",
-    //   title: "Affaiblissement",
-    //   description: "Attaques nécrotiques affaiblissant, empoisonnant ou privant une cible de sens.",
-    // }, // Spirituel
-    {
-      path: "/regles/magie/pouvoirs/augmentation-naturelle",
-      title: "Augmentation naturelle",
-      description: "Bénédictions animales variées, respiration aquatique et formes druidiques puissantes.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/liberte",
-      title: "Liberté",
-      description: "Mobilité accrue, évasion totale et déplacement sans contraintes.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/protection-contre-la-magie",
-      title: "Protection contre la magie",
-      description: "Détection, dissipation et interruption des effets magiques adverses.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
-      title: "Protection contre les poisons et maladies",
-      description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/restauration",
-      title: "Restauration",
-      description: "Purifie une créature en levant maladies, malédictions ou afflictions.",
-    },
-  ],
-  tier2: [
-    {
-      path: "/regles/magie/pouvoirs/presence-primordiale",
-      title: "Présence primordiale",
-      description: "Aura primordiale soignant, apaisant ou drainant selon le niveau canalisé.",
-    },
-  ],
-};
+const category: string = "57852c8a-1baa-4e67-9a63-feff494ce5bc";
+const { data } = await useLazyAsyncData<SearchResults<Spell>>(
+  `spells:${category}`,
+  () =>
+    $fetch(`/api/spells?category=${category}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

@@ -89,6 +89,14 @@ button:disabled {
   width: 33.333333% !important;
 }
 
+.w-twelfth {
+  width: 8.333333% !important;
+}
+
+.w-two-thirds {
+  width: 66.666667% !important;
+}
+
 @media (min-width: 1200px) {
   .col-fifth {
     flex: 0 0 auto;
