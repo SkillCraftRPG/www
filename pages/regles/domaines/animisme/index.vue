@@ -46,10 +46,7 @@
         <LinkCard class="d-flex flex-column h-100" :text="domain.description" :title="`${domain.title} (${domain.category})`" :to="domain.path" />
       </div>
     </div>
-    <template v-if="spells.length">
-      <h2 class="h3">Liste des pouvoirs</h2>
-      <SpellList :category="category" :items="spells" />
-    </template>
+    <SpellList v-if="spells.length" :items="spells" :scope="category" />
   </main>
 </template>
 
