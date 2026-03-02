@@ -29,8 +29,10 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h2 class="h3">Liste des pouvoirs</h2>
-    <SpellList :items="spells" />
+    <template v-if="spells.length">
+      <h2 class="h3">Liste des pouvoirs</h2>
+      <SpellList :items="spells" />
+    </template>
   </main>
 </template>
 
