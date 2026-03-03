@@ -7,8 +7,8 @@ export const Icons: Record<string, string> = {
 };
 
 export const SpellCategories = {
-  Animism: "57852c8a-1baa-4e67-9a63-feff494ce5bc",
-  Divine: "6bd0b0bf-a81e-4abb-a77c-6801c02a0bf4",
+  Animism: "ffed3a54-a461-4135-934c-7e4859d08e72",
+  Divine: "d86fed43-66fa-4a52-9d83-a878196b83a8",
 };
 
 export const System: Actor = {
