@@ -29,31 +29,17 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
-    <h2 class="h3">Liste des pouvoirs</h2>
-    <h3 class="h5">Pouvoirs de tiers 0</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier0" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
-    <h3 class="h5">Pouvoirs de tiers 1</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier1" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
-    <h3 class="h5">Pouvoirs de tiers 2</h3>
-    <div class="row">
-      <div v-for="(spell, index) in spells.tier2" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="spell.description" :title="spell.title" :to="spell.path" />
-      </div>
-    </div>
+    <SpellList v-if="spells.length" :items="spells" :scope="category" />
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
+import type { SearchResults } from "~/types/game";
+import type { Spell } from "~/types/magic";
+import { SpellCategories } from "~/types/constants";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Domaines divins";
 
@@ -125,79 +111,19 @@ const items: MenuItem[] = [
   },
 ];
 
-type Spells = {
-  tier0: MenuItem[];
-  tier1: MenuItem[];
-  tier2: MenuItem[];
-};
-const spells: Spells = {
-  tier0: [
-    {
-      path: "/regles/magie/pouvoirs/benediction",
-      title: "Bénédiction",
-      description: "Octroie un bonus sacré aux alliés ou inflige un malus maudit aux ennemis.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/flamme-sacree",
-      title: "Flamme sacrée",
-      description: "Frappe une cible d’une flamme divine et facilite la prochaine attaque.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/lumiere",
-      title: "Lumière",
-      description: "Illumine un objet ou crée une sphère de lumière mobile.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/preservation",
-      title: "Préservation",
-      description: "Stabilise un mourant, préserve un corps ou simule la mort pour protéger.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/thaumaturgie",
-      title: "Thaumaturgie",
-      description: "Effets mineurs, réparation d’objets et prières soignantes pour plusieurs alliés.",
-    },
-  ],
-  tier1: [
-    {
-      path: "/regles/magie/pouvoirs/coercition",
-      title: "Coercition",
-      description: "Pouvoir mental d’ordres, de charme et d’apaisement émotionnel.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/guerison",
-      title: "Guérison",
-      description: "Guérit une ou plusieurs créatures au toucher ou par un mot à distance.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/protection-contre-la-magie",
-      title: "Protection contre la magie",
-      description: "Détection, dissipation et interruption des effets magiques adverses.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/protection-contre-le-bien-et-le-mal",
-      title: "Protection contre le bien et le mal",
-      description: "Détection et protection contre les créatures surnaturelles hostiles.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/protection-contre-les-poisons-et-maladies",
-      title: "Protection contre les poisons et maladies",
-      description: "Détecte et purge toxines, puis crée eau et nourriture pour tout un groupe.",
-    },
-    {
-      path: "/regles/magie/pouvoirs/restauration",
-      title: "Restauration",
-      description: "Purifie une créature en levant maladies, malédictions ou afflictions.",
-    },
-  ],
-  tier2: [
-    {
-      path: "/regles/magie/pouvoirs/esprits-gardiens",
-      title: "Esprits gardiens",
-      description: "Esprits protecteurs infligeant des dégâts et entravant les ennemis.",
-    },
-  ],
-};
+const category: string = SpellCategories.Divine;
+const { data } = await useLazyAsyncData<SearchResults<Spell>>(
+  `spells:${category}`,
+  () =>
+    $fetch(`/api/spells?category=${category}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

@@ -7,7 +7,7 @@
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
         <SkillSelect extended label="Filtrer par compétence" :model-value="skill?.id" placeholder="Tous" :skills="skills" @selected="skill = $event" />
       </div>
-      <div class="col-sm-12 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
         <ListMode v-model="mode" />
       </div>
     </div>

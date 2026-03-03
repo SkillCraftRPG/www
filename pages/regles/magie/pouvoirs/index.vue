@@ -10,12 +10,16 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
+    <SpellList v-if="spells.length" :items="spells" />
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
+import type { SearchResults } from "~/types/game";
+import type { Spell } from "~/types/magic";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Magie", to: "/regles/magie" }];
 const title: string = "Pouvoirs";
 
@@ -51,6 +55,19 @@ const items: MenuItem[] = [
     description: "Canalisation en rituel, avec une dépense minime et réussite automatique.",
   },
 ];
+
+const { data } = await useLazyAsyncData<SearchResults<Spell>>(
+  "spells",
+  () =>
+    $fetch("/api/spells", {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,

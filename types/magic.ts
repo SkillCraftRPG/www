@@ -10,6 +10,7 @@ export type Spell = Aggregate & {
   summary?: string | null;
   htmlContent?: string | null;
   abilities: SpellAbility[];
+  categories: SpellCategory[];
 };
 
 export type SpellAbility = {
@@ -25,6 +26,14 @@ export type SpellAbility = {
 export type SpellCasting = {
   time: string;
   ritual: boolean;
+};
+
+export type SpellCategory = {
+  id: string;
+  key: string;
+  name: string;
+  parent?: SpellCategory | null;
+  children: SpellCategory[];
 };
 
 export type SpellComponents = {
