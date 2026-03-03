@@ -45,6 +45,11 @@ const items: MenuItem[] = [
     title: "Infusions magiques",
     description: "🚧",
   },
+  {
+    path: "/regles/annexes/invocations-mysterieuses",
+    title: "Invocations mystérieuses",
+    description: "🚧",
+  },
 ];
 
 useSeo({
