@@ -133,7 +133,7 @@ const crossedSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug
 const elementalSlugs: Set<string> = new Set(["gnome", "salamandre", "sylphe", "triton"]);
 const elementalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => elementalSlugs.has(slug)));
 
-const fairySlugs: Set<string> = new Set(["satyre"]);
+const fairySlugs: Set<string> = new Set(["fir-bolg", "nemedien", "satyre", "spriggan"]);
 const fairySpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => fairySlugs.has(slug)));
 
 const hordeSlugs: Set<string> = new Set(["gobelin"]);
@@ -143,4 +143,6 @@ useSeo({
   title,
   description: "Découvrez les espèces et leurs ethnies : un regroupement d’individus aux traits physiques, sociaux et culturels communs dans le jeu.",
 });
+
+// TODO(fpion): replace slugs by category (Select?)
 </script>
