@@ -2,10 +2,10 @@
   <main class="container">
     <h1>{{ title }}</h1>
     <AppBreadcrumb :active="title" :parent="parent" />
-    <p>L’élémentarisme est la faculté de faire appel à la puissance des éléments : l’Air, l’Eau, le Feu, la Terre et l’Esprit.</p>
-    <p>Le talent <NuxtLink to="/regles/competences/elementarisme">Élémentarisme</NuxtLink> permet au personnage de s’initier à la manipulation d’un élément.</p>
     <p>
-      La spécialisation <NuxtLink to="/regles/specialisations/elementariste">Élémentariste</NuxtLink> permet à un personnage de convertir de l’<NuxtLink
+      L’élémentarisme est la faculté de faire appel à la puissance des éléments : l’Air, l’Eau, le Feu, la Terre et l’Esprit. Le talent
+      <NuxtLink to="/regles/competences/elementarisme">Élémentarisme</NuxtLink> permet au personnage de s’initier à la manipulation d’un élément. La
+      spécialisation <NuxtLink to="/regles/specialisations/elementariste">Élémentariste</NuxtLink> permet à un personnage de convertir de l’<NuxtLink
         to="/regles/statistiques/energie"
         >Énergie</NuxtLink
       >
@@ -16,12 +16,17 @@
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
+    <SpellList v-if="spells.length" :items="spells" :scope="category" />
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/components";
+import type { SearchResults } from "~/types/game";
+import type { Spell } from "~/types/magic";
+import { SpellCategories } from "~/types/constants";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Élémentarisme";
 
@@ -42,6 +47,20 @@ const items: MenuItem[] = [
     description: "Capacités élémentaires de tiers 1 à 3 et effets planaires.",
   },
 ];
+
+const category: string = SpellCategories.Elementalism;
+const { data } = await useLazyAsyncData<SearchResults<Spell>>(
+  `spells:${category}`,
+  () =>
+    $fetch(`/api/spells?category=${category}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+
+const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,
