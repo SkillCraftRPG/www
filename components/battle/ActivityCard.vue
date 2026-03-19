@@ -1,11 +1,11 @@
 <template>
   <LinkCard class="d-flex flex-column h-100" :text="activity.summary" :title="activity.name" :to="activity.path">
     <template #subtitle-override>
-      <h3 v-if="hasSubtitle" class="card-subtitle h6 mb-2 text-body-secondary">
-        <IconAction v-for="index in activity.actions.mandatory" :key="index" class="me-1" />
-        <IconAction v-for="index in activity.actions.optional" :key="index" class="me-1" optional />
-        <IconReaction v-if="activity.actions.reaction" class="me-1" />
-        <IconOpportunity v-if="activity.threatening" class="me-1" :variable="mayBeThreatening" />
+      <h3 v-if="hasSubtitle" class="card-subtitle h6 text-body-secondary d-flex flex-wrap gap-1 mb-2">
+        <IconAction v-for="index in activity.actions.mandatory" :key="index" />
+        <IconAction v-for="index in activity.actions.optional" :key="index" optional />
+        <IconReaction v-if="activity.actions.reaction" />
+        <IconOpportunity v-if="activity.threatening" :variable="mayBeThreatening" />
       </h3>
     </template>
   </LinkCard>
