@@ -1,5 +1,5 @@
 <template>
-  <TarBadge><font-awesome-icon icon="fas fa-shield" />&nbsp;{{ text }}</TarBadge>
+  <InfusionItem icon="fas fa-shield" :text="text" />
 </template>
 
 <script setup lang="ts">

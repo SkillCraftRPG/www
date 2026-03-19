@@ -26,6 +26,8 @@
     </p>
     <InfusionContents />
     <InfusionTier1 />
+    <InfusionTier2 />
+    <InfusionTier3 />
   </main>
 </template>
 
