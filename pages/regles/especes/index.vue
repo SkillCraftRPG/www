@@ -130,7 +130,7 @@ const commonSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug 
 const crossedSlugs: Set<string> = new Set(["celestin", "demi-elfe", "demi-orque", "dhampir", "infernon", "sang-dragon"]);
 const crossedSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => crossedSlugs.has(slug)));
 
-const elementalSlugs: Set<string> = new Set(["gnome", "salamandre", "sylphe", "triton"]);
+const elementalSlugs: Set<string> = new Set(["gnome", "ondin", "salamandre", "sylphe"]);
 const elementalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => elementalSlugs.has(slug)));
 
 const fairySlugs: Set<string> = new Set(["fir-bolg", "nemedien", "satyre", "spriggan"]);

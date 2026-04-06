@@ -7,7 +7,7 @@
       <SpeciesEthnicities v-if="species && species.ethnicities.length" :species="species" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
       <LineageNames v-if="showNames" :names="lineage.names" />
-      <LineagePhysical :lineage="lineage" />
+      <LineagePhysical v-if="species && !ethnicity" :species="species" />
       <LineageSpeeds v-if="showSpeeds" :speeds="lineage.speeds" />
       <LineageFeatures v-if="lineage.features.length" :lineage="lineage" />
       <LineageContent v-if="showContent" :content="lineage.htmlContent" />
