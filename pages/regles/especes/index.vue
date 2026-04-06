@@ -29,120 +29,52 @@
     </ul>
     <h2 class="h3">Table des matières</h2>
     <ul>
-      <li>
-        <a href="#common">Espèces communes</a>
-      </li>
-      <li>
-        <a href="#crossed">Espèces croisées</a>
-      </li>
-      <li>
-        <a href="#animals">Hommes-animaux</a>
-      </li>
-      <li>
-        <a href="#fairies">Fées</a>
-      </li>
-      <li>
-        <a href="#elementals">Élémentaires</a>
-      </li>
-      <li>
-        <a href="#horde">Horde</a>
+      <li v-for="category in categories" :key="category.id">
+        <a :href="`#${category.key}`">{{ category.name }}</a>
       </li>
     </ul>
-    <h2 id="common" class="h3">Espèces communes</h2>
-    <p>
-      Ces espèces sont répandues aux quatre coins du continent. Cette présence universelle fait d’elles sont la norme démographique, culturelle et politique du
-      continent. Leurs sociétés ont façonné les peuplements, les routes, les institutions et l’économie locale, en plus de servir de référence linguistique et
-      sociale dans la majorité des régions. Malgré une forte cohésion sociale, ces sociétés sont néanmoins pensées d’abord et avant tout pour ces espèces. Les
-      autres espèces peuvent donc ressentir un profond décalage culture et structurel, allant jusqu’à l’exclusion.
-    </p>
-    <SpeciesList cols="4" :items="commonSpecies" />
-    <h2 id="crossed" class="h3">Espèces croisées</h2>
-    <p>
-      Les espèces dites croisées sont issues de l’union de deux lignées distinctes. Leur héritage multiple leur confère des traits physiques, culturels ou
-      surnaturels variables, qui ne se manifestent jamais de manière uniforme. Leur degré d’intégration aux sociétés des espèces communes varie fortement en
-      fonction de l’individu. Certains s’insèrent aisément dans les sociétés de l’un ou l’autre de leurs parents, tandis que d’autres peinent à trouver leur
-      place, pris entre des normes sociales, biologiques ou symboliques parfois incompatibles. Leur identité se construit donc davantage par le vécu personnel
-      que par l’appartenance collective.
-    </p>
-    <SpeciesList cols="3" :items="crossedSpecies" />
-    <h2 id="animals" class="h3">Hommes-animaux</h2>
-    <p>
-      Les hommes-animaux sont les autochtones de la région. Autrefois maîtres d’un vaste territoire, ils ont vu leurs terres se réduire au fil des siècles, sous
-      la pression de l’expansion des autres peuples. Face à ce recul, deux voies se sont imposées. Certains ont choisi le repli, vivant en marge des sociétés
-      établies afin de préserver leurs valeurs et traditions millénaires. D’autres se sont intégrés, volontairement ou sous contrainte, au prix d’une érosion
-      parfois profonde de leur culture ancestrale. Cette fracture marque encore aujourd’hui l’identité et le destin de ces peuples.
-    </p>
-    <SpeciesList cols="3" :items="animalSpecies" />
-    <h2 id="fairies" class="h3">Fées</h2>
-    <p>
-      Les fées sont issues d’autres dimensions, lumineuses ou ombrageuses, et entretiennent un lien étroit avec les forces qui imprègnent le monde. Leur
-      existence ne s’organise ni autour des peuples mortels ni autour de leurs structures politiques, culturelles ou religieuses. Leurs territoires s’articulent
-      plutôt autour de lieux de pouvoir, véritables sources naturelles de magie. Elles y veillent avant tout à la préservation de ces sites et à l’équilibre des
-      forces qui s’y manifestent, agissant selon des logiques qui leur sont propres et souvent étrangères aux enjeux des sociétés du continent.
-    </p>
-    <SpeciesList cols="4" :items="fairySpecies" />
-    <h2 id="elementals" class="h3">Élémentaires</h2>
-    <p>
-      Les élémentaires tirent leur origine de la présence d’esprits élémentaires venus d’autres dimensions. Leur existence est intimement liée à des lieux
-      fortement marqués par leur élément, auxquels ils s’attachent bien davantage qu’à des frontières, des organisations politiques, des religions ou des
-      cultures. De ce fait, ils demeurent généralement neutres dans les conflits militaires et politiques. Leurs actions sont guidées avant tout par l’intérêt
-      de leur espèce et la préservation de leur habitat, quitte à ignorer ou contrarier les enjeux des peuples qui les entourent.
-    </p>
-    <SpeciesList cols="4" :items="elementalSpecies" />
-    <h2 id="horde" class="h3">Horde</h2>
-    <p>
-      La Horde désigne une confédération tribale aux contours flous et changeants, composée d’espèces habituellement considérées comme monstrueuses. Son
-      organisation varie fortement d’un clan à l’autre, sans autorité centrale durable ni structure politique unifiée. Arrivée récemment dans la région depuis
-      l’Est lointain du continent, la Horde se manifeste par des conquêtes et des raids dont la violence et la brutalité diffèrent selon l’espèce et le clan.
-      Les motivations qui les animent sont tout aussi hétérogènes : accumulation de richesses, contrôle de territoires ou de peuples, quête de prestige, défis
-      personnels ou autres ambitions propres à chaque individu.
-    </p>
-    <SpeciesList cols="3" :items="hordeSpecies" />
+    <div v-for="category in categories" :key="category.id">
+      <h2 :id="category.key" class="h3">{{ category.name }}</h2>
+      <MarkdownContent v-if="category.htmlContent" :text="category.htmlContent" />
+      <SpeciesList :cols="category.columns" :items="category.species" />
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
+import { arrayUtils } from "logitar-js";
+
 import type { SearchResults } from "~/types/game";
-import type { Species } from "~/types/lineages";
+import type { Species, SpeciesCategory } from "~/types/lineages";
 
 const config = useRuntimeConfig();
 const title: string = "Espèces";
+const { orderBy } = arrayUtils;
 
 const { data } = await useLazyAsyncData<SearchResults<Species>>(
   "species",
   () =>
-    $fetch("/api/species?sort=Slug", {
+    $fetch("/api/species", {
       baseURL: config.public.apiBaseUrl,
     }),
   {
     server: false,
   },
 );
-
-const allSpecies = computed<Species[]>(() => data.value?.items ?? []);
-
-const animalSlugs: Set<string> = new Set(["amphydre", "centaure", "harseme", "minotaure", "sarne", "skame"]);
-const animalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => animalSlugs.has(slug)));
-
-const commonSlugs: Set<string> = new Set(["elfe", "humain", "nain", "petit-gens"]);
-const commonSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => commonSlugs.has(slug)));
-
-const crossedSlugs: Set<string> = new Set(["celestin", "demi-elfe", "demi-orque", "dhampir", "infernon", "sang-dragon"]);
-const crossedSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => crossedSlugs.has(slug)));
-
-const elementalSlugs: Set<string> = new Set(["gnome", "ondin", "salamandre", "sylphe"]);
-const elementalSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => elementalSlugs.has(slug)));
-
-const fairySlugs: Set<string> = new Set(["fir-bolg", "nemedien", "satyre", "spriggan"]);
-const fairySpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => fairySlugs.has(slug)));
-
-const hordeSlugs: Set<string> = new Set(["gobelin"]);
-const hordeSpecies = computed<Species[]>(() => allSpecies.value.filter(({ slug }) => hordeSlugs.has(slug)));
+const categories = computed<SpeciesCategory[]>(() => {
+  const species: Species[] = data.value?.items ?? [];
+  const categories: Map<string, SpeciesCategory> = new Map();
+  species.forEach((species) => {
+    const category: SpeciesCategory | undefined = categories.get(species.category.id) ?? species.category;
+    category.species.push(species);
+    categories.set(category.id, category);
+  });
+  [...categories.values()].forEach((category) => (category.species = orderBy(category.species, "slug")));
+  return orderBy([...categories.values()], "order");
+});
 
 useSeo({
   title,
   description: "Découvrez les espèces et leurs ethnies : un regroupement d’individus aux traits physiques, sociaux et culturels communs dans le jeu.",
 });
-
-// TODO(fpion): replace slugs by category (Select?)
 </script>
