@@ -42,14 +42,14 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/aventure/repos/sommeil",
-    title: "Sommeil",
-    description: "Règles du sommeil et effets d’une nuit complète.",
-  },
-  {
     path: "/regles/aventure/repos/halte",
     title: "Halte",
     description: "Récupération par halte et activités légères.",
+  },
+  {
+    path: "/regles/aventure/repos/sommeil",
+    title: "Sommeil",
+    description: "Règles du sommeil et effets d’une nuit complète.",
   },
 ];
 

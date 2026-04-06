@@ -1,7 +1,7 @@
 <template>
-  <div class="h3 mb-3">
-    <TarBadge class="me-1" variant="secondary">Tiers&nbsp;:&nbsp;{{ $n(talent.tier, "integer") }}</TarBadge>
-    <TarBadge class="ms-1" variant="secondary">Achats&nbsp;multiples&nbsp;:&nbsp;<font-awesome-icon :icon="icon" />&nbsp;{{ text }}</TarBadge>
+  <div class="h3 d-flex flex-wrap gap-2 mb-3">
+    <TarBadge variant="secondary">Tiers&nbsp;:&nbsp;{{ $n(talent.tier, "integer") }}</TarBadge>
+    <TarBadge variant="secondary">Achats&nbsp;multiples&nbsp;:&nbsp;<font-awesome-icon :icon="icon" />&nbsp;{{ text }}</TarBadge>
   </div>
 </template>
 

@@ -40,6 +40,16 @@ const items: MenuItem[] = [
     title: "Élémentarisme",
     description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
   },
+  {
+    path: "/regles/annexes/infusions-magiques",
+    title: "Infusions magiques",
+    description: "🚧",
+  },
+  {
+    path: "/regles/annexes/invocations-mysterieuses",
+    title: "Invocations mystérieuses",
+    description: "🚧",
+  },
 ];
 
 useSeo({

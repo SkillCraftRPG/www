@@ -29,12 +29,12 @@
           <td>
             <NuxtLink :to="activity.path">{{ activity.name }}</NuxtLink>
           </td>
-          <td>
+          <td class="d-flex flex-wrap gap-1 justify-content-center">
             <template v-if="hasActions(activity)">
-              <IconAction v-for="index in activity.actions.mandatory" :key="index" class="me-1" />
-              <IconAction v-for="index in activity.actions.optional" :key="index" class="me-1" optional />
-              <IconReaction v-if="activity.actions.reaction" class="me-1" />
-              <IconOpportunity v-if="activity.threatening" class="me-1" :variable="mayBeThreatening(activity)" />
+              <IconAction v-for="index in activity.actions.mandatory" :key="index" />
+              <IconAction v-for="index in activity.actions.optional" :key="index" optional />
+              <IconReaction v-if="activity.actions.reaction" />
+              <IconOpportunity v-if="activity.threatening" :variable="mayBeThreatening(activity)" />
             </template>
             <span v-else class="text-muted">{{ "—" }}</span>
           </td>
