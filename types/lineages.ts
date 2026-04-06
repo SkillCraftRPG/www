@@ -28,9 +28,6 @@ export type LineageBase = Aggregate & {
   languages: Languages;
   names: Names;
   speeds: Speeds;
-  size: Size;
-  weight: Weight;
-  age: Age;
   metaDescription?: string | null;
   summary?: string | null;
   htmlContent: LineageContent;
@@ -68,7 +65,20 @@ export type Size = {
 };
 
 export type Species = LineageBase & {
+  category: SpeciesCategory;
+  size: Size;
+  weight: Weight;
+  age: Age;
   ethnicities: Ethnicity[];
+};
+
+export type SpeciesCategory = Aggregate & {
+  key: string;
+  name: string;
+  order: number;
+  columns: number;
+  htmlContent?: string | null;
+  species: Species[];
 };
 
 export type Speeds = {

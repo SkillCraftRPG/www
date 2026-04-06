@@ -40,15 +40,15 @@
 </template>
 
 <script setup lang="ts">
-import type { Age, LineageBase, Size, Weight } from "~/types/lineages";
+import type { Age, Size, Species, Weight } from "~/types/lineages";
 
 const props = defineProps<{
-  lineage: LineageBase;
+  species: Species;
 }>();
 
 const classes = computed<string>(() => (size.value.roll ? "w-third" : "w-50"));
 
-const size = computed<Size>(() => props.lineage.size);
+const size = computed<Size>(() => props.species.size);
 const minHeight = computed<number>(() => {
   if (!size.value.roll) {
     return 0;
@@ -74,7 +74,7 @@ const maxHeightImperial = computed<string>(() => {
   return [$n(feetInches[0], "integer"), $t("unit.Foot", feetInches[0]), $n(feetInches[1], "integer"), $t("unit.Inch", Math.round(feetInches[1]))].join(" ");
 });
 
-const weight = computed<Weight>(() => props.lineage.weight);
+const weight = computed<Weight>(() => props.species.weight);
 const minWeight = computed<number>(() => {
   if (!minHeight.value || !weight.value.skinny) {
     return 0;
@@ -94,5 +94,5 @@ const maxWeight = computed<number>(() => {
 });
 const maxWeightImperial = computed<number>(() => kilogramsToPounds(maxWeight.value));
 
-const age = computed<Age>(() => props.lineage.age);
+const age = computed<Age>(() => props.species.age);
 </script>
