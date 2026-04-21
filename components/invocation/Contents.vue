@@ -23,6 +23,15 @@
       <li>
         <a href="#cristallisation">Cristallisation</a>
       </li>
+      <li>
+        <a href="#desastre">Désastre</a>
+      </li>
+      <li>
+        <a href="#don-abyssal">Don abyssal</a>
+      </li>
+      <li>
+        <a href="#epouvante">Épouvante</a>
+      </li>
     </ul>
   </section>
 </template>
