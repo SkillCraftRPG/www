@@ -32,6 +32,12 @@
       <li>
         <a href="#epouvante">Épouvante</a>
       </li>
+      <li>
+        <a href="#gambade">Gambade</a>
+      </li>
+      <li>
+        <a href="#gardien-runique">Gardien runique</a>
+      </li>
     </ul>
   </section>
 </template>
