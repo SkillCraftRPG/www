@@ -21,6 +21,7 @@
     <InvocationA />
     <InvocationBC />
     <InvocationDEG />
+    <InvocationLM />
   </main>
 </template>
 

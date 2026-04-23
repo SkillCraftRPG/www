@@ -38,6 +38,9 @@
       <li>
         <a href="#gardien-runique">Gardien runique</a>
       </li>
+      <li>
+        <a href="#liaison-mentale">Liaison mentale</a>
+      </li>
     </ul>
   </section>
 </template>
