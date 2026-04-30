@@ -23,8 +23,8 @@
     <InvocationDEFG />
     <InvocationLM />
     <InvocationOP />
-    <InvocationSU />
-    <InvocationV />
+    <InvocationST />
+    <InvocationUV />
   </main>
 </template>
 

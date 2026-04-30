@@ -18,7 +18,10 @@
       <NuxtLink to="/regles/magie/pouvoirs/migraine">Migraine</NuxtLink> en prononçant un mot d’épouvante.
     </p>
     <h3 id="faveur-infernale" class="h5">Faveur infernale</h3>
-    <p>Le personnage acquiert une <NuxtLink to="/regles/aventure/environnement/vision">vision dans le noir</NuxtLink> à une distance de 36 mètres.</p>
+    <p>
+      Le personnage acquiert une <NuxtLink to="/regles/aventure/environnement/vision">vision dans le noir</NuxtLink> à une distance de 36 mètres. Cette vision
+      permet également de voir au travers des <NuxtLink to="/regles/aventure/environnement/vision">ténèbres</NuxtLink>.
+    </p>
     <h3 id="gambade" class="h5">Gambade</h3>
     <p>
       Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir

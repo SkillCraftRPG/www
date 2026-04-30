@@ -45,6 +45,9 @@
         <a href="#liaison-mentale">Liaison mentale</a>
       </li>
       <li>
+        <a href="#maitre-cadences">Maître des cadences</a>
+      </li>
+      <li>
         <a href="#malefice">Maléfice</a>
       </li>
       <li>
@@ -70,6 +73,9 @@
       </li>
       <li>
         <a href="#sortilege-acharne">Sortilège acharné</a>
+      </li>
+      <li>
+        <a href="#talisman">Talisman</a>
       </li>
       <li>
         <a href="#union-ombres">Union des ombres</a>

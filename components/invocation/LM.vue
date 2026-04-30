@@ -10,6 +10,17 @@
       <NuxtLink to="/regles/aventure/environnement">environnement</NuxtLink>. Au début de ses tours subséquents, il peut utiliser une action afin de maintenir
       la liaison jusqu’à la fin de son prochain tour. La liaison est rompue si le personnage ou la cible ne sont plus dans la même dimension.
     </p>
+    <h3 id="maitre-cadences" class="h5">Maître des cadences</h3>
+    <p>
+      Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
+      <NuxtLink to="/regles/magie/pouvoirs/temporalite">Temporalité</NuxtLink>. Une fois par jour, il peut également canaliser le pouvoir
+      <NuxtLink to="/regles/magie/pouvoirs/temporalite">Temporalité</NuxtLink> à un niveau supérieur. S’il canalise le niveau 3 sans fournir la composante
+      <NuxtLink to="/regles/magie/parametres/composantes">Focus</NuxtLink>, la portée est réduite à
+      <NuxtLink to="/regles/magie/parametres/portee">Toucher</NuxtLink>, et la durée est réduite à 1d4
+      <NuxtLink to="/regles/combat/deroulement">rounds</NuxtLink>. S’il canalise le niveau 4 sans fournir la composante
+      <NuxtLink to="/regles/magie/parametres/composantes">Focus</NuxtLink>, alors il ne peut cibler qu’une seule créature.
+    </p>
+    <p class="text-danger"></p>
     <h3 id="malefice" class="h5">Maléfice</h3>
     <p>
       Lorsque le personnage inflige une malédiction à une créature, par exemple par les

@@ -9,7 +9,10 @@
       personnage.
     </p>
     <h3 id="paroles-envouteuses" class="h5">Paroles envoûteuses</h3>
-    <p>🚧</p>
+    <p>
+      Une fois par jour, le personnage peut canaliser le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 4</NuxtLink> du pouvoir
+      <NuxtLink to="/regles/magie/pouvoirs/obligation">Obligation</NuxtLink> (<i>🚧Compulsion</i>) en fredonnant une mélodie énigmatique.
+    </p>
     <h3 id="pestilence" class="h5">Pestilence</h3>
     <p>
       Une fois par <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, par une <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink>, le
@@ -31,3 +34,7 @@
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+// TODO(fpion): Compulsion
+</script>

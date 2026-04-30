@@ -1,5 +1,14 @@
 <template>
   <div>
+    <h3 id="union-ombres" class="h5">Union des ombres</h3>
+    <p>
+      Lorsque le personnage se trouve dans la <NuxtLink to="/regles/aventure/environnement/vision">pénombre</NuxtLink> ou dans l’<NuxtLink
+        to="/regles/aventure/environnement/vision"
+        >obscurité</NuxtLink
+      >, il peut devenir <NuxtLink to="/regles/combat/conditions/invisible">invisible</NuxtLink> par une
+      <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink>. L’effet prend fin lorsqu’il utilise sa
+      <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink> ou une autre action.
+    </p>
     <h3 id="valse-morts" class="h5">Valse des morts</h3>
     <p>
       Une fois par jour, le personnage peut canaliser le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 3</NuxtLink> du pouvoir
@@ -23,7 +32,8 @@
     <h3 id="voleur-destin" class="h5">Voleur de destin</h3>
     <p>
       Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
-      <NuxtLink to="/regles/magie/pouvoirs/benediction">Bénédiction</NuxtLink> (<i>Malédiction</i>).
+      <NuxtLink to="/regles/magie/pouvoirs/benediction">Bénédiction</NuxtLink> (<i>Malédiction</i>). Une fois par jour, il peut également canaliser le niveau 3
+      du pouvoir <NuxtLink to="/regles/magie/pouvoirs/calamite">Calamité</NuxtLink>.
     </p>
   </div>
 </template>
