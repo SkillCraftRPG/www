@@ -43,12 +43,12 @@ const items: MenuItem[] = [
   {
     path: "/regles/annexes/infusions-magiques",
     title: "Infusions magiques",
-    description: "🚧",
+    description: "Propriétés magiques extraordinaires à imprégner dans des objets banals.",
   },
   {
     path: "/regles/annexes/invocations-mysterieuses",
     title: "Invocations mystérieuses",
-    description: "🚧",
+    description: "Capacités ésotériques et secrètes réservées au Conjurateur.",
   },
 ];
 

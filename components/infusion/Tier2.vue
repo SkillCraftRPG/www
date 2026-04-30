@@ -56,7 +56,7 @@
       </p>
     </InfusionInfo>
     <!-- Armure de résistance -->
-    <InfusionInfo armor attunement id="armure-de-resistance" name="Armure de résistance">
+    <InfusionInfo armor attunement id="armure-resistance" name="Armure de résistance">
       <p>
         Cette <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> confère à son porteur la
         <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink> aux <NuxtLink to="/regles/combat/degats/types">dégâts</NuxtLink> d’un des
@@ -76,7 +76,7 @@
       </p>
     </InfusionInfo>
     <!-- Bouclier de répulsion -->
-    <InfusionInfo armor="Bouclier" attunement id="bouclier-de-repulsion" name="Bouclier de répulsion">
+    <InfusionInfo armor="Bouclier" attunement id="bouclier-repulsion" name="Bouclier de répulsion">
       <p>
         Confère un bonus (+1) à la <NuxtLink to="/regles/combat/attaque/defense">Défense</NuxtLink> de son porteur. Le
         <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> est doté de 4 charges et récupère 1d4 charges à l’aube. Immédiatement après avoir été

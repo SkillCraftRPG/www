@@ -2,14 +2,8 @@
   <div>
     <h3 id="bourbier-mental" class="h5">Bourbier mental</h3>
     <p>
-      Une fois par jour, le personnage peut <NuxtLink to="/regles/magie/pouvoirs/canalisation">canaliser</NuxtLink> le
-      <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 4</NuxtLink> du pouvoir <NuxtLink to="/regles/magie/pouvoirs/temporalite">Temporalité</NuxtLink> en
-      prononçant des syllabes ne faisant aucun sens. Il n’a pas besoin de composante <NuxtLink to="/regles/magie/parametres/composantes">Focus</NuxtLink> ni
-      <NuxtLink to="/regles/magie/parametres/composantes">Somatique</NuxtLink> lorsqu’il en fait ainsi, réussit automatiquement le
-      <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink> et ne
-      <NuxtLink to="/regles/magie/pouvoirs/energie">dépense aucun point d’Énergie</NuxtLink>. Il n’a pas besoin d’avoir acquis le
-      <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> afin d’utiliser cette capacité. Il doit compléter une
-      <NuxtLink to="/regles/aventure/repos/sommeil">nuit de sommeil</NuxtLink> afin de réutiliser cette capacité.
+      Une fois par jour, le personnage peut canaliser le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 4</NuxtLink> du pouvoir
+      <NuxtLink to="/regles/magie/pouvoirs/migraine">Migraine</NuxtLink> en prononçant des syllabes ne faisant aucun sens.
     </p>
     <h3 id="contemplation" class="h5">Contemplation</h3>
     <p>
