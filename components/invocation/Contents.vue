@@ -6,10 +6,10 @@
         <a href="#acuite-surnaturelle">Acuité surnaturelle</a>
       </li>
       <li>
-        <a href="#apparitions-des-brumes">Apparitions des brumes</a>
+        <a href="#agent-chaos">Agent du chaos</a>
       </li>
       <li>
-        <a href="#agent-du-chaos">Agent du chaos</a>
+        <a href="#apparitions-brumes">Apparitions des brumes</a>
       </li>
       <li>
         <a href="#armure-personnelle">Armure personnelle</a>

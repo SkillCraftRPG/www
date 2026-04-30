@@ -5,12 +5,7 @@
       Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
       <NuxtLink to="/regles/magie/pouvoirs/protection-contre-la-magie">Protection contre la magie</NuxtLink>.
     </p>
-    <h3 id="apparitions-des-brumes" class="h5">Apparitions des brumes</h3>
-    <p>
-      Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
-      <NuxtLink to="/regles/magie/pouvoirs/images">Images</NuxtLink>.
-    </p>
-    <h3 id="agent-du-chaos" class="h5">Agent du chaos</h3>
+    <h3 id="agent-chaos" class="h5">Agent du chaos</h3>
     <p>
       Une fois par jour, par une <NuxtLink to="/regles/combat/deroulement/tour">action</NuxtLink>, le personnage peut dépenser 20 points d’<NuxtLink
         to="/regles/statistiques/energie"
@@ -63,6 +58,11 @@
         </tr>
       </tbody>
     </table>
+    <h3 id="apparitions-brumes" class="h5">Apparitions des brumes</h3>
+    <p>
+      Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
+      <NuxtLink to="/regles/magie/pouvoirs/images">Images</NuxtLink>.
+    </p>
     <h3 id="armure-personnelle" class="h5">Armure personnelle</h3>
     <p>
       Le personnage peut canaliser à volonté le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 2</NuxtLink> du pouvoir
