@@ -1,27 +1,20 @@
 [
   {
-    "id": "903e74db-c3e6-42ed-8fd2-7bca71829771",
-    "date": "2026-04-30T23:59:59Z",
+    "id": "e677ab31-37cb-4483-8fce-771e4108d47c",
+    "date": "2026-05-31T23:59:59Z",
     "title": "Règles exotiques",
     "summary": "Règles permettant de créer un personnage et de progresser jusqu’au niveau 100 avec toutes les options, modèles de jeu de rôle.",
-    "detail": [
-      "Espèces et ethnies complètes",
-      "Spécialisations de tiers 3 complètes (10)",
-      "Astromancie",
-      "Infusions magiques",
-      "Invocations mystérieuses",
-      "Jeu de rôle"
-    ]
+    "detail": ["Descriptions des espèces et ethnies complètes", "Spécialisations de tiers 3 complètes (10)", "Astromancie", "Jeu de rôle"]
   },
   {
-    "id": "54318bb1-7fa8-4b6c-b5f7-582db2d8b974",
-    "date": "2026-06-30T23:59:59Z",
+    "id": "50639d91-6615-4ffc-a229-4214a4192a7e",
+    "date": "2026-08-30T23:59:59Z",
     "title": "Application Web",
     "summary": "Gestionnaire de monde et de fiches de personnages avec accès joueurs, importation de données depuis le site Web et aides de jeu.",
     "detail": []
   },
   {
-    "id": "1c8f2dfc-7957-4cfd-a01c-b86acee3f579",
+    "id": "c1dc2b76-7bfc-49df-b7f8-d0cdeca52d6b",
     "date": "2026-12-31T23:59:59Z",
     "title": "Grimoire",
     "summary": "Liste des pouvoirs pour tous les domaines de magie et toutes les spécialisations, paramètres et descriptions des effets des pouvoirs.",
