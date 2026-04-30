@@ -1,10 +1,5 @@
 <template>
   <div>
-    <!-- <h3 id="bourbier-mental" class="h5">Bourbier mental</h3>
-    <p>
-      Une fois par jour, le personnage peut canaliser le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 4</NuxtLink> du pouvoir
-      <NuxtLink to="/regles/magie/pouvoirs/temporalite">Temporalité</NuxtLink> en prononçant des syllabes ne faisant aucun sens.
-    </p> -->
     <h3 id="bourbier-mental" class="h5">Bourbier mental</h3>
     <p>
       Une fois par jour, le personnage peut canaliser le <NuxtLink to="/regles/magie/pouvoirs/niveau">niveau 4</NuxtLink> du pouvoir
