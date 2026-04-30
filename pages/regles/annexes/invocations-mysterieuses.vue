@@ -20,8 +20,11 @@
     </p>
     <InvocationA />
     <InvocationBC />
-    <InvocationDEG />
+    <InvocationDEFG />
     <InvocationLM />
+    <InvocationOP />
+    <InvocationSU />
+    <InvocationV />
   </main>
 </template>
 
