@@ -36,6 +36,7 @@ const title: string = "Invocations mystérieuses";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les invocations mystérieuses du Conjurateur : des capacités ésotériques pour canaliser des pouvoirs, altérer le destin et manipuler les ombres.",
 });
 </script>

@@ -48,7 +48,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/annexes/invocations-mysterieuses",
     title: "Invocations mystérieuses",
-    description: "🚧",
+    description: "Capacités ésotériques et secrètes réservées au Conjurateur.",
   },
 ];
 
