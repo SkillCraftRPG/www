@@ -39,6 +39,7 @@ const title: string = "Infusions magiques";
 
 useSeo({
   title,
-  description: "🚧",
+  description:
+    "Découvrez les infusions magiques : des procédés extraordinaires pour imprégner des objets banals de propriétés magiques utiles aux personnages.",
 });
 </script>

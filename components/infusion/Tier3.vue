@@ -2,7 +2,7 @@
   <div>
     <h2 id="tiers-3" class="h3">Infusions de tiers 3</h2>
     <!-- Carapace de propulsion -->
-    <InfusionInfo armor attunement id="Carapace de propulsion" name="Carapace de propulsion">
+    <InfusionInfo armor attunement id="carapace-propulsion" name="Carapace de propulsion">
       <p>L’<NuxtLink to="/regles/equipement/armures">armure</NuxtLink> confère les capacités suivantes à son porteur.</p>
       <ul>
         <li>Bonus d’un <NuxtLink to="/regles/aventure/mouvement/vitesse">point de mouvement</NuxtLink> (0,25 mètres par seconde).</li>
@@ -23,7 +23,7 @@
       </ul>
     </InfusionInfo>
     <!-- Casque de conscience -->
-    <InfusionInfo armor="Casque" attunement id="casque-de-conscience" name="Casque de conscience">
+    <InfusionInfo armor="Casque" attunement id="casque-conscience" name="Casque de conscience">
       <p>
         Lorsque son porteur effectue un test d’<NuxtLink to="/regles/combat/deroulement/initiative">Initiative</NuxtLink>, il peut jeter 2d10 et conserver le dé
         de son choix. Également, il ne peut être <NuxtLink to="/regles/combat/deroulement/surprise">surpris</NuxtLink> s’il n’est pas
@@ -31,7 +31,7 @@
       </p>
     </InfusionInfo>
     <!-- Réplication d’artefact -->
-    <InfusionInfo id="replication-d-artefact" name="Réplication d’artefact">
+    <InfusionInfo id="replication-artefact" name="Réplication d’artefact">
       <p>
         Le personnage peut apprendre cette infusion plusieurs fois. Chaque fois qu’il en fait ainsi, il choisit un
         <NuxtLink to="/regles/magie/artefacts">artefact magique</NuxtLink> différent (à la discrétion du maître de jeu), et peut répliquer celui-ci en utilisant

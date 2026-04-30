@@ -17,6 +17,9 @@
           <li>
             <a href="#reveil">Réveil</a>
           </li>
+          <li>
+            <a href="#serviteur-homuncule">Serviteur homuncule</a>
+          </li>
         </ul>
       </li>
       <li>
@@ -35,13 +38,13 @@
             <a href="#armement-formidable">Armement formidable</a>
           </li>
           <li>
-            <a href="#armure-de-resistance">Armure de résistance</a>
+            <a href="#armure-resistance">Armure de résistance</a>
           </li>
           <li>
             <a href="#bottes-rembobineuses">Bottes rembobineuses</a>
           </li>
           <li>
-            <a href="#bouclier-de-repulsion">Bouclier de répulsion</a>
+            <a href="#bouclier-repulsion">Bouclier de répulsion</a>
           </li>
           <li>
             <a href="#protection-merveilleuse">Protection merveilleuse</a>
@@ -52,13 +55,13 @@
         <a href="#tiers-3">Infusions de tiers 3</a>
         <ul>
           <li>
-            <a href="#carapace-de-propulsion">Carapace de propulsion</a>
+            <a href="#carapace-propulsion">Carapace de propulsion</a>
           </li>
           <li>
-            <a href="#casque-de-conscience">Casque de conscience</a>
+            <a href="#casque-conscience">Casque de conscience</a>
           </li>
           <li>
-            <a href="#replication-d-artefact">Réplication d’artefact</a>
+            <a href="#replication-artefact">Réplication d’artefact</a>
           </li>
         </ul>
       </li>
