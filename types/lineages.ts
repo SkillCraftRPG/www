@@ -30,19 +30,8 @@ export type LineageBase = Aggregate & {
   speeds: Speeds;
   metaDescription?: string | null;
   summary?: string | null;
-  htmlContent: LineageContent;
+  htmlContent?: string | null;
   features: Feature[];
-};
-
-export type LineageContent = {
-  overview?: string | null;
-  morphology?: string | null;
-  psychology?: string | null;
-  culture?: string | null;
-  history?: string | null;
-  geography?: string | null;
-  politics?: string | null;
-  relations?: string | null;
 };
 
 export type NameCategory = {
