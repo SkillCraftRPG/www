@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les marchandises sont les ressources et éléments utiles aux roturiers, paysans et ouvriers. Elles sont généralement troquées, mais les aventuriers peuvent
       parfois les acheter en cas de besoin.
@@ -108,7 +108,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Goods } from "~/types/items";
 import { getGoodsItems } from "~/services/items";
 

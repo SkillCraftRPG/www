@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Vous cessez de vous <NuxtLink to="/regles/combat/activites/concentration">concentrer</NuxtLink> sur un
       <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> que vous maintenez actif. Les effets du pouvoir prennent instantanément fin.
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

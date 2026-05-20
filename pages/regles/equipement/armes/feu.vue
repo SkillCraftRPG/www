@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les armes à feu sont une technologie avancée permettant de tirer des <NuxtLink to="/regles/equipement/armes/munitions">projectiles</NuxtLink> à grande
       vitesse grâce à une explosion produite avec de la poudre noire. Grâce à cette vitesse fulgurante, les projectiles des armes à feu ignorent la propriété
@@ -92,7 +92,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Weapon } from "~/types/items";
 import { getFirearms } from "~/services/items";
 

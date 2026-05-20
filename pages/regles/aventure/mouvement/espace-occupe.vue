@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Une créature occupe un espace déterminé en fonction de sa <NuxtLink to="/regles/especes/taille">taille</NuxtLink>, tel qu’illustré dans le tableau
       ci-dessous.
@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

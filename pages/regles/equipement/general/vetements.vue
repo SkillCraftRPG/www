@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Des vêtements adaptés à chaque occasion, du quotidien modeste aux tenues nobles.</p>
     <ItemList :items="clothing" />
   </main>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Item } from "~/types/items";
 import { getClothingItems } from "~/services/items";
 

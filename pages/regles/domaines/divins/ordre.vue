@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les divinités appartenant à ce domaine s’intéressent à la discipline, à la philosophie, à la justice et à la paix. Leurs fervents sont associés aux
       institutions législatives, aux tribunaux et à la diplomatie.
@@ -101,7 +101,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

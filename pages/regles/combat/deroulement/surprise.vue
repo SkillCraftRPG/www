@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>La <strong>surprise</strong> survient lorsqu’un des deux camps ignore la présence de l’autre en début de combat, par exemple lors d’une embuscade.</p>
     <p>Cette condition peut aussi survenir si la cible de l’action hostile ne suspectait pas qu’elle serait victime d’une action de telle sorte.</p>
     <p>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>
       Les spécialisations représentent les possibilités d’avancement d’un personnage au travers des
       <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink>. Chaque spécialisation ne peut être acquise qu’une seule fois.

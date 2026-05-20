@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Certaines situations vous permettent de réussir un test automatiquement sans <NuxtLink to="/regles/competences/tests/2d10">jeter de dé</NuxtLink>.</p>
     <p>Lorsque les conditions suivantes sont respectées, vous pouvez <i>Faire 20</i>, et l’action entreprise est réussie.</p>
     <p><i>Faire 20</i> signifie que votre personnage prend le temps d’obtenir le meilleur résultat possible.</p>
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },

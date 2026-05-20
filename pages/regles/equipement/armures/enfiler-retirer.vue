@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Enfiler ou retirer" :parent="parent" />
+    <RulesBreadcrumb active="Enfiler ou retirer" :parent="parent" />
     <p>
       Enfiler ou retirer une pièce d’armure nécessite un certain <NuxtLink to="/regles/aventure/temps">temps</NuxtLink> en fonction de la catégorie de celle-ci.
     </p>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Certaines capacités ou situations peuvent affliger une créature d’un ou plusieurs niveaux de Fatigue.</p>
     <p>
       La <NuxtLink to="/regles/aventure/environnement/alimentation">soif et la sécheresse</NuxtLink>, le
@@ -63,7 +63,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Une créature peut tenir une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> à une main dans chacune de ses mains. Si une de ces armes n’est pas
       dotée de la propriété <NuxtLink to="/regles/equipement/armes/proprietes">Légère</NuxtLink>, alors tous les
@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

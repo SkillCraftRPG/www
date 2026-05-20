@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>
       Les compétences sont des aptitudes et savoir-faire des personnages et créatures. Elles régissent leurs actions en jeu, influençant leur probabilité de
       réussite.

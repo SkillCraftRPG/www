@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Jet" :parent="parent" />
+    <RulesBreadcrumb active="Jet" :parent="parent" />
     <p>
       Les <NuxtLink to="/regles/equipement/armes">armes</NuxtLink>, <NuxtLink to="/regles/magie/pouvoirs">pouvoirs</NuxtLink> et capacités offensives spécifient
       les dégâts infligés.
@@ -54,7 +54,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Propriétés" :parent="parent" />
+    <RulesBreadcrumb active="Propriétés" :parent="parent" />
     <p>La plupart des armes sont dotées d’au moins une propriété.</p>
     <p>Ces propriétés sont décrites ci-dessous, et elles sont toutes compatibles entre elles.</p>
     <ul>
@@ -82,7 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Distance" :parent="parent" />
+    <RulesBreadcrumb active="Distance" :parent="parent" />
     <p>
       Une attaque à distance s’effectue en lançant une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> de
       <NuxtLink to="/regles/equipement/armes/proprietes">Jet</NuxtLink> ou en tirant d’une arme à
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

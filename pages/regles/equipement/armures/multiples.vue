@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Multiples" :parent="parent" />
+    <RulesBreadcrumb active="Multiples" :parent="parent" />
     <p>Un personnage possédant la formation appropriée peut porter deux armures simultanément.</p>
     <p>Il est impossible de porter deux couches d’armure appartenant à la même catégorie.</p>
     <p>
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Types" :parent="parent" />
+    <RulesBreadcrumb active="Types" :parent="parent" />
     <p>Chaque source de dégâts est associée à un ou plusieurs types.</p>
     <p>
       Les différents types de dégâts n’ont pas de règles spécifiques s’appliquant à chacun. Cependant, certains types de dégâts n’ont pas la même
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

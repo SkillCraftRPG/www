@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque le personnage acquiert le talent <NuxtLink to="/regles/talents/spiritualite">Spiritualité</NuxtLink>, il peut sélectionner un
       <strong>domaine divin</strong> ou un <NuxtLink to="/regles/domaines/animisme">domaine d’animisme</NuxtLink>. Il ne peut acquérir qu’un seul de ces
@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults } from "~/types/game";
 import type { Spell } from "~/types/magic";
 import { SpellCategories } from "~/types/constants";

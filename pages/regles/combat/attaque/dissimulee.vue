@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Dissimulée" :parent="parent" />
+    <RulesBreadcrumb active="Dissimulée" :parent="parent" />
     <p>
       Lorsqu’une créature tente d’attaquer une cible qu’elle ne peut pas voir, son <NuxtLink to="/regles/competences/tests">test</NuxtLink> est affligé du
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>. Cette pénalité s’applique même si l’attaquant entend sa cible ou
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Attentif" :parent="parent" />
+    <RulesBreadcrumb active="Attentif" :parent="parent" />
     <p>Une créature peut être attentive à son environnement pendant un déplacement.</p>
     <ul>
       <li>
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

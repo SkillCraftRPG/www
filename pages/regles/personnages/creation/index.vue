@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Création" :parent="parent" />
+    <RulesBreadcrumb active="Création" :parent="parent" />
     <p>Avant de commencer à jouer, vous devez créer un personnage.</p>
     <p>Utilisez les étapes ci-dessous ainsi que votre imagination afin de créer le personnage que vous désirez incarner.</p>
     <p>Vous concevrez les différentes facettes de votre personnage, notamment son apparence, sa personnalité et son historique.</p>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Personnages", to: "/regles/personnages" }];
 const title: string = "Création de personnage";

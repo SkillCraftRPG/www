@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Le personnage est formé pour une <NuxtLink to="/regles/competences">compétence</NuxtLink> lorsqu’il acquiert le
       <NuxtLink to="/regles/talents">talent</NuxtLink> portant le même nom que celle-ci.
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
 const title: string = "Formation";

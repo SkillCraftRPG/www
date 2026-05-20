@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les esprits appartenant à ce domaine sont associés aux forêts, ainsi qu’à la faune et à la flore de ces milieux naturels. Les animistes de ce domaine sont
       des protecteurs des forêts, et ils se rencontrent loin de la civilisation, dans des bosquets et clairières naturels.
@@ -118,7 +118,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Les talents réservés sont des capacités uniques à leur spécialisation.</p>
     <p>Lorsque vous acquérez le talent réservé d’une spécialisation, vous acquérez par le fait même cette spécialisation.</p>
     <p>
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Spécialisations", to: "/regles/specialisations" }];
 const title: string = "Talent réservé";

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Cette page liste les activités pouvant être effectuées en combat.</p>
     <h2 class="h3">Légende</h2>
     <ul>
@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 import type { Activity } from "~/types/game";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import { getActivities } from "~/services/battle";
 
 const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];

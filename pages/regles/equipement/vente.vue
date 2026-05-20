@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Vente" :parent="parent" />
+    <RulesBreadcrumb active="Vente" :parent="parent" />
     <p>
       Au fil de ses aventures, les personnages acquerront probablement des trésors ou des objets qu’ils désireront vendre ou échanger contre d’autres biens.
     </p>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Vente d’équipement";

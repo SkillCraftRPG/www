@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>La magie est l’art de produire des phénomènes surnaturels par des procédés occultes.</p>
     <p>
       Elle peut avoir une fonction importante dans le jeu de rôle puisque plusieurs types de personnages peuvent utiliser la magie, par exemple les sorciers ou

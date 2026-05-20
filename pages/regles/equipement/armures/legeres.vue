@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Légères" :parent="parent" />
+    <RulesBreadcrumb active="Légères" :parent="parent" />
     <p>Des armures souples offrant protection et confort sans sacrifier la mobilité.</p>
     <ItemArmorList :items="armor" />
   </main>
@@ -11,7 +11,7 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Armor } from "~/types/items";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import { getArmor } from "~/services/items";
 
 const parent: Breadcrumb[] = [

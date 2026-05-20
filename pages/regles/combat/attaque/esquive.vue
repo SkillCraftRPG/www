@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Toute créature est dotée d’une valeur d’<NuxtLink to="/regles/statistiques/esquive">Esquive</NuxtLink>. Lorsqu’une créature est la cible d’une attaque,
       l’attaque échoue si le résultat du <NuxtLink to="/regles/competences/tests">test</NuxtLink> est inférieur à l’Esquive de la cible.
@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

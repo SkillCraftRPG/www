@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Certains artefacts magiques exigent une action particulière afin d’être utilisés, comme les tenir en main ou prononcer une formule dédiée.</p>
     <p>Chaque artefact ou famille d’artefact précise la manière dont il doit être utilisé.</p>
     <p>
@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Multiples" :parent="parent" />
+    <RulesBreadcrumb active="Multiples" :parent="parent" />
     <p>Pendant son <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, une créature peut effectuer une attaque par membre de son corps.</p>
     <p>Par exemple, un personnage doté de deux bras et de deux jambes peut effectuer un attaque avec chacun de ses bras, ainsi qu’avec une de ses jambes.</p>
     <p>
@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

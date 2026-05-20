@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Terrestres" :parent="parent" />
+    <RulesBreadcrumb active="Terrestres" :parent="parent" />
     <p>Des véhicules terrestres variés pour transporter marchandises et voyageurs.</p>
     <ItemList :items="vehicles" />
   </main>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Item } from "~/types/items";
 import { getVehicles } from "~/services/items";
 

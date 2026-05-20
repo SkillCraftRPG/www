@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Un test de groupe survient lorsque l’ensemble des créatures ou personnages d’un groupe doit effectuer simultanément un même test.</p>
     <p>
       De manière générale, les tests de groupe n’octroient pas de
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Vous remettez votre <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> à plus tard dans le round. Vous ne pouvez pas retarder votre tour si
       vous avez déjà effectué une action ou plus.
@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

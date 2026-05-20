@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="customization">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <CustomizationInfo :customization="customization" />
       <MarkdownContent v-if="customization.htmlContent" :text="customization.htmlContent" />
     </template>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Customization } from "~/types/game";
 
 const config = useRuntimeConfig();

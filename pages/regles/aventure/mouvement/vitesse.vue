@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       La vitesse d’une créature est la distance qu’elle peut parcourir pendant une période de <NuxtLink to="/regles/aventure/temps">temps</NuxtLink> donnée en
       situation de combat ou de tour-par-tour. Cette vitesse est déterminée par la <NuxtLink to="/regles/especes/taille">taille</NuxtLink> et parfois
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

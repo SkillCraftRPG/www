@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque le personnage acquiert le talent <NuxtLink to="/regles/talents/herboristerie">Herboristerie</NuxtLink>, il apprend un nombre de remèdes et de
       poisons de base égal à son <NuxtLink to="/regles/competences/rang">rang</NuxtLink> de <NuxtLink to="/regles/competences/medecine">Médecine</NuxtLink>.
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Annexes", to: "/regles/annexes" }];
 const title: string = "Herboristerie";

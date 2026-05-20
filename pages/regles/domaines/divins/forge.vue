@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les divinités appartenant à ce domaine s’intéressent aux <NuxtLink to="/regles/equipement/marchandise">métaux</NuxtLink> et au métier de forgeron. Elles
       s’associent à la patience et aux œuvres créatrices et artisanales.
@@ -115,7 +115,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

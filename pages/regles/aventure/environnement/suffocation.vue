@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Une créature peut retenir son souffle pendant un nombre de rounds (d’une durée de <NuxtLink to="/regles/aventure/temps">6 secondes</NuxtLink>) en fonction
       de sa <NuxtLink to="/regles/attributs/sante">Santé</NuxtLink> (minimum 2 rounds) :
@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

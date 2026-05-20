@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque votre <NuxtLink to="/regles/combat/monte">monture</NuxtLink> est <NuxtLink to="/regles/">renversée</NuxtLink>, que vous êtes renversés alors que
       vous la montez, ou que votre monture est déplacée contre son gré, vous la démontez et retombez sur vos jambes.
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

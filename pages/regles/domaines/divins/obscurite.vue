@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les divinités appartenant à ce domaine s’intéressent à l’obscurité, aux pâles lueurs nocturnes ainsi qu’au clair de lune, au silence et à la quiétude
       apportés par la nuit et nécessaires au repos et au sommeil. Elles sont souvent associés à l’astre lunaire, et se présentent comme des protectrices contre
@@ -85,7 +85,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

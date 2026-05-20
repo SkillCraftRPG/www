@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Intrépides et impétueux, les aventuriers affronteront de nombreux obstacles variés au fil de leurs expéditions.</p>
     <p>Les divers rebondissements qu’ils vivront toucheront à un des piliers du jeu, soit l’exploration, l’interaction sociale et le combat.</p>
     <p>Ces aventures éprouvantes exigeront d’eux qu’ils se reposent afin de maximiser leur potentiel.</p>

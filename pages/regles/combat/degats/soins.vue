@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Les dégâts ne sont jamais permanents. Ils peuvent être soignés par certaines capacités physiques ou surnaturelles.</p>
     <p>
       Une créature <NuxtLink to="/regles/combat/conditions/agonisant">agonisante</NuxtLink> peut être soignée, mais si elle est instable, elle est stabilisée et
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Butins et trésors sont souvent les motivations des jeunes aventuriers intrépides.</p>
     <p>Sur leur route, ils trouveront des objets de valeur multiple et auront besoin d’équipement adapté à leurs voyages.</p>
     <p>Armes et armures, objets magiques, marchandises et autres objets de valeur pourront être troqués ou achetés à différents endroits.</p>

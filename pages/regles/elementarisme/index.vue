@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       L’élémentarisme est la faculté de faire appel à la puissance des éléments : l’Air, l’Eau, le Feu, la Terre et l’Esprit. Le talent
       <NuxtLink to="/regles/competences/elementarisme">Élémentarisme</NuxtLink> permet au personnage de s’initier à la manipulation d’un élément. La
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults } from "~/types/game";
 import type { Spell } from "~/types/magic";
 import { SpellCategories } from "~/types/constants";

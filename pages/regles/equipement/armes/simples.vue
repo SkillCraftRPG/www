@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Simples" :parent="parent" />
+    <RulesBreadcrumb active="Simples" :parent="parent" />
     <p>Des armes basiques accessibles à tous, du bâton à l’arbalète légère.</p>
     <ItemWeaponList :items="weapons" />
   </main>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Weapon } from "~/types/items";
 import { getWeapons } from "~/services/items";
 

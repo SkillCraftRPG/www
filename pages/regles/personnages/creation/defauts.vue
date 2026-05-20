@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Voici des suggestions de défauts que vous pouvez utiliser afin de décrire les faiblesses et obstacles auxquels votre personnage fait face. Vous pouvez
       choisir aléatoirement un défaut en jetant 1d100.
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Personnages", to: "/regles/personnages" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       La table ci-dessous spécifie les munitions nécessaires pour les armes dotées de la propriété
       <NuxtLink to="/regles/equipement/armes/proprietes">Munition</NuxtLink>, ainsi que le contenant pour ces munitions.
@@ -16,7 +16,7 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Ammunition } from "~/types/items";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import { getAmmunition } from "~/services/items";
 
 const parent: Breadcrumb[] = [

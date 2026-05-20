@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="attribute">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <MarkdownContent v-if="attribute.htmlContent" :text="attribute.htmlContent" />
       <AttributeStatistics v-if="attribute.statistics.length > 0" :attribute="attribute" />
       <AttributeSkills v-if="attribute.skills.length > 0" :attribute="attribute" />
@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import type { Attribute } from "~/types/game";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Attributs", to: "/regles/attributs" }];

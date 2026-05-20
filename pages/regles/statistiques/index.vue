@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Les statistiques sont d’autres nombres qui déterminent et influencent les capacités, forces et faiblesses des personnages et créatures.</p>
     <p>
       Les statistiques sont le résultat d’un calcul mathématique. Chaque statistique est gouvernée par un <NuxtLink to="/regles/attributs">attribut</NuxtLink>,

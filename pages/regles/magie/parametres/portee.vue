@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>La cible d’un pouvoir est généralement un point dans l’espace, ou une ou plusieurs autres créatures.</p>
     <p>Chaque cible doit se trouver dans une distance inférieure ou égale à la portée indiquée par le pouvoir.</p>
     <p>Il existe certaines portées spéciales :</p>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

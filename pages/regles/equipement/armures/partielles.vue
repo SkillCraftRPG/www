@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Partielles" :parent="parent" />
+    <RulesBreadcrumb active="Partielles" :parent="parent" />
     <p>
       Les armures sont composées de plusieurs morceaux. À des fins de simplification, on peut diviser la majorité des armures en six morceaux : tête, torse,
       deux bras ainsi que deux jambes.
@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

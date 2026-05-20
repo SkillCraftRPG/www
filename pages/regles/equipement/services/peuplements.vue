@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>En Ouespéro, il existe quatre types de peuplements. Ils sont détaillés ci-dessous.</p>
     <p>
       La majorité des royaumes sont composés d’une poignée de cité, dont la capitale, de quelques centres urbains (villes), et d’une multitude de villages
@@ -50,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

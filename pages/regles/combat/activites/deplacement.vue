@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Vous effectuez un déplacement en respectant votre <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink>.</p>
     <p>
       Votre déplacement peut appartenir à plusieurs <NuxtLink to="/regles/aventure/mouvement/types">types de mouvement</NuxtLink>. Par exemple, vous traversez à
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Dès que le combat commence, toute créature y participant est <strong>prise au dépourvu</strong>.</p>
     <p>Dès qu’elle prend son premier <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, la condition cesse.</p>
     <p>Une créature prise au dépourvu ne peut utiliser sa réaction.</p>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },
