@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Acquisition" :parent="parent" />
+    <RulesBreadcrumb active="Acquisition" :parent="parent" />
     <p>Afin d’acquérir une spécialisation, vous devez acquérir son <NuxtLink to="/regles/specialisations/talent-reserve">talent réservé</NuxtLink>.</p>
     <p>Lorsque vous respectez toutes les conditions ci-dessous, vous pouvez acquérir ce talent.</p>
     <ol>
@@ -120,7 +120,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Spécialisations", to: "/regles/specialisations" }];
 const title: string = "Acquisition de spécialisation";

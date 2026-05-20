@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque votre personnage n’explore pas des terres sauvages, un réseau de cavernes ou un vaste océan, il peut adopter un style de vie afin de couvrir ses
       besoins de logis et de nourriture.
@@ -89,7 +89,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Dépenses";

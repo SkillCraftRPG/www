@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Les pouvoirs représentent les facultés surnaturelles des personnages.</p>
     <p>Ils regroupent autant les sorts canalisés par les utilisateurs de magie que les capacités uniques de certaines espèces ou types de personnages.</p>
     <p>L’action d’utiliser un pouvoir est appelée <NuxtLink to="/regles/combat/activites/canaliser">Canaliser</NuxtLink>.</p>
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults } from "~/types/game";
 import type { Spell } from "~/types/magic";
 

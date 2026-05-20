@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Un des importants piliers du jeu est le combat.</p>
     <p>Simple escarmouche ou bataille décisive d’une guerre, le combat est un pur alliage d’adrénaline, de brutalité et de chaos.</p>
     <p>Rare est l’aventurier qui n’expérimente pas le danger du combat au fil de ses voyages.</p>

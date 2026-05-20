@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       La taille d’une créature représente son envergure physique, incluant sa hauteur, sa largeur et son volume global. Elle est divisée en huit catégories
       distinctes, allant des plus petites entités jusqu’aux créatures colossales.
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const title: string = "Taille";
 const parent: Breadcrumb[] = [{ text: "Espèces", to: "/regles/especes" }];

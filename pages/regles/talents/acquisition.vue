@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Acquisition" :parent="parent" />
+    <RulesBreadcrumb active="Acquisition" :parent="parent" />
     <p>Afin d’acquérir un talent, un personnage doit satisfaire les conditions suivantes.</p>
     <ul>
       <li>Son <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> de personnage doit être supérieur ou égal au tiers du talent.</li>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Talents", to: "/regles/talents" }];
 const title: string = "Acquisition de talent";

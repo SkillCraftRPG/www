@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’un personnage fait une dépense immatérielle, il achète un service plutôt qu’un produit. Tout comme un produit, un service peut être acquis par le
       troc ou payé en argent.
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Services";

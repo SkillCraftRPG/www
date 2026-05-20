@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>La plupart des pouvoirs nécessitent la sélection d’une ou plusieurs cibles.</p>
     <p>
       Une cible peut ne pas se rendre compte qu’elle est affectée par un pouvoir, ce qui est le cas des
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

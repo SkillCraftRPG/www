@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Le prix d’un passage de navire varie en fonction de plusieurs facteurs : le
       <NuxtLink to="/regles/equipement/montures-vehicules">navire</NuxtLink> employé, le trajet et le nombre de passagers. Le capitaine suit les étapes
@@ -61,7 +61,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Ship } from "~/types/items";
 import { getShips } from "~/services/items";
 

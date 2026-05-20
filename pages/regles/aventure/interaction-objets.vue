@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>L’action d’un personnage peut cibler un objet. Il peut par exemple actionner un levier, ouvrir une porte ou déplacer un livre dans une bibliothèque.</p>
     <p>
       Le joueur décrit les actions entreprises par son personnage et le maître de jeu explique les résultats de ces actions. Un
@@ -180,7 +180,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Aventure", to: "/regles/aventure" }];
 const title: string = "Interaction avec les objets";

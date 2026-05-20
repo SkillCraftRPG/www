@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Un personnage peut affûter une arme afin de lui conférer un bonus temporaire de points de <NuxtLink to="/regles/combat/degats/jet">dégâts</NuxtLink>.</p>
     <p>
       Cet affûtage peut être effectué sur une arme non magique simple ou martiale, tant qu’elle n’est pas
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

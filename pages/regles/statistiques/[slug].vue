@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="statistic">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <MarkdownContent v-if="statistic.htmlContent" :text="statistic.htmlContent" />
       <StatisticAttribute :attribute="statistic.attribute" />
     </template>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Statistic } from "~/types/game";
 
 const config = useRuntimeConfig();

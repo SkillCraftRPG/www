@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Certains pouvoirs agissent comme une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>.</p>
     <p>
       Dans le cas échéant, le résultat du
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

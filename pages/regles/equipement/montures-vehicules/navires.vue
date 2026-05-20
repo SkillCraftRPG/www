@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Des navires variés pour le commerce, la guerre, l’exploration ou le voyage.</p>
     <p>
       Le nœud est l’unité de mesure de la vitesse des navires maritimes. Il correspond à un mille nautique par heure. Le mille nautique équivaut à 1 852 mètres.
@@ -44,7 +44,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Ship } from "~/types/items";
 import { getShips } from "~/services/items";
 

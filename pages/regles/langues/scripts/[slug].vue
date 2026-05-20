@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="script">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <MarkdownContent v-if="script.htmlContent" :text="script.htmlContent" />
       <ScriptLanguages v-if="script.languages" :languages="script.languages" />
     </template>
@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Language, Script, SearchResults } from "~/types/game";
 
 const config = useRuntimeConfig();

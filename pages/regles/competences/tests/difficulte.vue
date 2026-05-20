@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Le degré de difficulté est une valeur à laquelle le résultat d’un <NuxtLink to="/regles/competences/tests">test</NuxtLink> est comparé. Plus il est élevé,
       moins il est probable que l’action réussisse. Inversement, plus il est faible, plus grandes sont les chances de réussir.
@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Au contraire des <NuxtLink to="/regles/herboristerie/remedes">remèdes</NuxtLink>, le rôle des poisons est d’infliger une certaine
       <NuxtLink to="/regles/combat/degats">douleur</NuxtLink>, une nuisance, ou même d’apporter la <NuxtLink to="/regles/combat/mort-agonie">mort</NuxtLink> à
@@ -79,7 +79,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Poison } from "~/types/game";
 import { getPoisons } from "~/services/herbalism";
 

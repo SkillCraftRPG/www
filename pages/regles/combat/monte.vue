@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Monté" :parent="parent" />
+    <RulesBreadcrumb active="Monté" :parent="parent" />
     <p>
       Vous pouvez monter une créature consentante d’une <NuxtLink to="/regles/especes/taille">catégorie de taille</NuxtLink> supérieure ou plus à la vôtre et
       possédant une anatomie appropriée.
@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

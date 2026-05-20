@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les composantes sont des conditions ou des options influençant la manière dont un pouvoir est
       <NuxtLink to="/regles/magie/pouvoirs/canalisation">canalisé</NuxtLink>.
@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Sous l’eau" :parent="parent" />
+    <RulesBreadcrumb active="Sous l’eau" :parent="parent" />
     <p>
       Combattre sous l’eau inflige des pénalités pour les créatures terrestres ou aériennes. Les créatures aquatiques (dotées d’une
       <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> de <NuxtLink to="/regles/aventure/mouvement/vitesse">nage</NuxtLink>) en sont
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];
 const title: string = "Combat sous l’eau";

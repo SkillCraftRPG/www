@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       La fortune des aventuriers s’exprime de diverses manières : monnaie ou argent, pierres précieuses, œuvres d’art, ressources, immobiliers, etc. La forme la
       plus courante de richesse est la monnaie.
@@ -133,7 +133,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Système de monnaie";

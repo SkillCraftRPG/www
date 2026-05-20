@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Opportunité" :parent="parent" />
+    <RulesBreadcrumb active="Opportunité" :parent="parent" />
     <p>
       Certaines <NuxtLink to="/regles/combat/activites">activités</NuxtLink> en combat exposent une ou plusieurs de vos faiblesses. Les créatures autour de vous
       peuvent alors utiliser leur <NuxtLink to="/regles/combat/deroulement/tour">réaction</NuxtLink> et saisir l’opportunité de vous attaquer.
@@ -43,7 +43,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

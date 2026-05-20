@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Professionnels" :parent="parent" />
+    <RulesBreadcrumb active="Professionnels" :parent="parent" />
     <p>Des services variés : transport, soins, mercenaires, palefreniers et messagers.</p>
     <table class="table table-striped text-center">
       <thead>
@@ -116,7 +116,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

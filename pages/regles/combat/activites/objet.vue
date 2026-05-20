@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Vous utilisez ou activer un objet. Cette activité peut nécessiter 2 <NuxtLink to="/regles/combat/deroulement/tour">actions</NuxtLink> ou plus.</p>
     <p>
       Vous pouvez également rengainer une <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> ou un
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

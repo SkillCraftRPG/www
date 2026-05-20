@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’un personnage subit une chute, il reçoit des points de <NuxtLink to="/regles/combat/degats">dégâts</NuxtLink>{{ " "
       }}<NuxtLink to="/regles/combat/degats/types">contondants</NuxtLink>{{ " " }}<NuxtLink to="/regles/combat/degats/letalite">létaux</NuxtLink> et tombe en
@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

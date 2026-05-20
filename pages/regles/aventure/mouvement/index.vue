@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Les mouvements en jeu peuvent être représentés par une grille carrée ou hexagonale.</p>
     <ul>
       <li>L’arête de chaque case de la grille carrée mesure <strong>1,5 mètres</strong>.</li>
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Aventure", to: "/regles/aventure" }];
 const title: string = "Mouvement";

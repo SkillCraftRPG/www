@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Vous tentez de trouver une créature <NuxtLink to="/regles/combat/activites/cacher">dissimulée</NuxtLink> ou
       <NuxtLink to="/regles/combat/conditions/invisible">invisible</NuxtLink>, ou un objet caché, par exemple un piège ou un passage secret.
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="lineage">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <MarkdownContent v-if="lineage.htmlContent" :text="lineage.htmlContent" />
       <SpeciesEthnicities v-if="species && species.ethnicities.length" :species="species" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Ethnicity, LineageBase, Species } from "~/types/lineages";
 import type { SearchResults } from "~/types/game";
 

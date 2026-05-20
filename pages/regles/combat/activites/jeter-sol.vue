@@ -1,14 +1,14 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Vous vous jetez au sol, en position <NuxtLink to="/regles/combat/conditions/renverse">renversée</NuxtLink>.</p>
     <p>Vous ne subissez pas de <NuxtLink to="/regles/aventure/environnement/chute">chute</NuxtLink>, sauf si le sol se brise sous vos pieds.</p>
   </main>
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

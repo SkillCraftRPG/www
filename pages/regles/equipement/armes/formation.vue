@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Formation" :parent="parent" />
+    <RulesBreadcrumb active="Formation" :parent="parent" />
     <p>
       Lorsqu’un personnage effectue une <NuxtLink to="/regles/combat/attaque">attaque</NuxtLink>, il doit effectuer un
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> de <NuxtLink to="/regles/competences">compétence</NuxtLink>.
@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

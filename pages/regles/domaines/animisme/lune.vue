@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les esprits appartenant à ce domaine sont associés à la Lune, à la nuit et à l’obscurité. Les animistes s’identifiant à ce domaine se rencontrent lors de
       la pleine lune. Ils sont souvent des ermites vivant en profonde nature.
@@ -87,7 +87,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

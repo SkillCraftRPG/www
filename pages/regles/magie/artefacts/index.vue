@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Artefacts" :parent="parent" />
+    <RulesBreadcrumb active="Artefacts" :parent="parent" />
     <p>
       Les objets magiques, trouvés dans les trésors de monstres vaincus ou dans des lieux oubliés, offrent à un personnage des capacités autrement inaccessibles
       ou renforcent les siennes de façon extraordinaire.
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Magie", to: "/regles/magie" }];
 const title: string = "Artefacts magiques";

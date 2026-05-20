@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="caste">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <CasteInfo :caste="caste" />
       <MarkdownContent v-if="caste.htmlContent" :text="caste.htmlContent" />
       <CasteSkill v-if="caste.skill" :skill="caste.skill" />
@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Caste } from "~/types/game";
 
 const config = useRuntimeConfig();

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Mêlée" :parent="parent" />
+    <RulesBreadcrumb active="Mêlée" :parent="parent" />
     <p>
       Les créatures sont dotées pour le plupart d’une portée de mêlée de 1,5 mètres. Les attaques de certaines créatures sont dotées d’une portée supérieure.
     </p>
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

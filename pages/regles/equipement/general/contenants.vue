@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Des contenants variés pour transporter monnaie, vivres, outils et ressources.</p>
     <p>
       La colonne <i>Capacité</i> correspond à la masse maximale qu’un contenant peut supporter, en kilogrammes. Si son contenu excède cette capacité, le
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Item } from "~/types/items";
 import { getContainers } from "~/services/items";
 

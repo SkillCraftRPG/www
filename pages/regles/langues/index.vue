@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>
       Les langues qu’un personnage maîtrise proviennent surtout de son <NuxtLink to="/regles/especes">espèce</NuxtLink> et de son origine, mais peuvent évoluer
       au fil de son parcours. Certaines sont courantes, d’autres plus rares ou réservées à des cercles précis, et il existe des langues regroupant plusieurs

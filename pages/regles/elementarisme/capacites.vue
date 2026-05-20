@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les capacités élémentaires permettent à l’<NuxtLink to="/regles/specialisations/elementariste">Élémentariste</NuxtLink> d’incarner, invoquer, altérer et
       manipuler les forces de sa dimension à travers des capacités progressives de <NuxtLink to="/regles/personnages/progression/tiers">tiers 1 à 3</NuxtLink>.
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

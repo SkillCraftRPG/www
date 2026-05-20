@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Renforcées" :parent="parent" />
+    <RulesBreadcrumb active="Renforcées" :parent="parent" />
     <p>Un personnage peut renforcer une armure afin d’augmenter ses points de <NuxtLink to="/regles/equipement/resistance">Résistance</NuxtLink>.</p>
     <p>Ce renforcement peut être effectué sur toute armure non magique ainsi que sur un <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink>.</p>
     <p>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

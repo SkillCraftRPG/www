@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Les dons et handicaps sont une manière additionnelle de personnaliser son personnage.</p>
     <p>Ils sont complètement optionnels : un joueur peut très bien créer un personnage sans don ni handicap.</p>
     <p>

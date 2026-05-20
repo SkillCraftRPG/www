@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Une créature incapable ne peut effectuer aucune <NuxtLink to="/regles/combat/deroulement/tour">action, ni action libre ou réaction</NuxtLink>.</p>
     <p>
       Lorsqu’elle devient incapable, elle perd sa <NuxtLink to="/regles/magie/parametres/duree">Concentration</NuxtLink> si elle maintenait un
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

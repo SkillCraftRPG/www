@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Un personnage portant un <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> ou un
       <NuxtLink to="/regles/equipement/boucliers">bouclier</NuxtLink> en bon état se voit conférer un bonus à la
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Défense";

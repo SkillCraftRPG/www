@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>L’alchimie est une branche de l’occultisme née de techniques gardées secrètes et de spéculations mystiques.</p>
     <p>À l’origine, l’objectif des alchimistes était de transformer un métal impur en or ou en un autre métal pur.</p>
     <p>
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Magie", to: "/regles/magie" }];
 const title: string = "Alchimie";

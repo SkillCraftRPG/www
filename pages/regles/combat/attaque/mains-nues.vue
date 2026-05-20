@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Une créature combat à mains nues lorsqu’elle attaque avec ses mains, pieds, ou tout autre membre de son corps.</p>
     <p>
       Elle effectue une <NuxtLink to="/regles/combat/attaque/melee">attaque de mêlée</NuxtLink> (<NuxtLink to="/regles/competences/tests">test</NuxtLink> de
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

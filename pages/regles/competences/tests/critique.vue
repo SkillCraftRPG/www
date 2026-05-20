@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <h2 class="h3">Réussite critique</h2>
     <p>
       Lorsque vos dés <NuxtLink to="/regles/competences/tests/2d10">d’Espérance et de Damnation</NuxtLink> tombent sur la même face et que cette face est 6, 7,
@@ -60,7 +60,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Types" :parent="parent" />
+    <RulesBreadcrumb active="Types" :parent="parent" />
     <p>
       Il existe plusieurs types de mouvement. Une créature peut avoir une <NuxtLink to="/regles/aventure/mouvement/vitesse">vitesse</NuxtLink> différente pour
       chaque type de mouvement. Certains types de mouvement sont réservés à certaines créatures, et ne sont donc pas disponibles à toutes.
@@ -180,7 +180,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

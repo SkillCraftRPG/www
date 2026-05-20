@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="specialization">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <SpecializationInfo :specialization="specialization" />
       <MarkdownContent v-if="specialization.htmlContent" :text="specialization.htmlContent" />
       <SpecializationRequirements v-if="hasRequirements" :specialization="specialization" />
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Specialization } from "~/types/specializations";
 
 const config = useRuntimeConfig();

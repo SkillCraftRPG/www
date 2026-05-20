@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>
       Une des facettes de la <NuxtLink to="/regles/personnages/progression">progression</NuxtLink> de personnage se matérialise par des talents, des capacités
       acquises au fil de ses aventures.

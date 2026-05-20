@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Une créature agonisante est <NuxtLink to="/regles/combat/conditions/inconscient">inconsciente</NuxtLink>. Son état peut être stable ou instable.</p>
     <p>La condition prend fin lorsque ses points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> remontent à une valeur supérieure à 0.</p>
     <h2 class="h3">Instable</h2>
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

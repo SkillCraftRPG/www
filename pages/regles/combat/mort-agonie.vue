@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsque vos points de <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> chutent à 0, vous tombez à l’<NuxtLink
         to="/regles/combat/conditions/agonisant"
@@ -120,7 +120,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Combat", to: "/regles/combat" }];
 const title: string = "Mort et agonie";

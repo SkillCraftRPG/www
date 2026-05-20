@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’un personnage débute l’aventure, celui-ci est doté d’un équipement de départ. Une des étapes de la
       <NuxtLink to="/regles/personnages/creation#step-10">création de personnage</NuxtLink> consiste à déterminer cet équipement de départ.
@@ -100,7 +100,7 @@
 import { arrayUtils, parsingUtils } from "logitar-js";
 
 import selections from "~/assets/data/items/selections.json";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Item, SelectionItem } from "~/types/items";
 import { getClothingItems, getContainers, getGeneralItems, getTools } from "~/services/items";
 

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Formation" :parent="parent" />
+    <RulesBreadcrumb active="Formation" :parent="parent" />
     <p>Tout personnage peut revêtir une armure. Néanmoins, une formation est nécessaire afin d’être protégé convenablement.</p>
     <h2 class="h3">Talents</h2>
     <p>Les talents suivants forment le personnage au port des armures d’une certaine catégorie :</p>
@@ -55,7 +55,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

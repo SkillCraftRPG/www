@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       On désigne par <strong>terrain difficile</strong> une surface entravant les déplacements. Cette entrave peut être constituée d’un ou de plusieurs éléments
       parmi la liste suivant :
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

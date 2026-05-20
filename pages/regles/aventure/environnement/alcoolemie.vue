@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Un personnage peut ingérer une <NuxtLink to="/regles/equipement/services/gite-couvert">boisson alcoolisée</NuxtLink> par plaisir, pour gagner un concours,
       pour augmenter ses capacités ou noyer ses émotions négatives.
@@ -239,7 +239,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();

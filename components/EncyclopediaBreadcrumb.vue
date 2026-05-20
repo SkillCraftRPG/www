@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import type { Article, Collection } from "~/types/encyclopedia";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const props = withDefaults(
   defineProps<{

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Zones" :parent="parent" />
+    <RulesBreadcrumb active="Zones" :parent="parent" />
     <p>Certains pouvoirs affectent toutes les créatures se trouvant dans une zone d’effet.</p>
     <p>L’origine de la zone d’effet correspond généralement à la cible du pouvoir, soit le personnage, une créature, ou un point dans l’espace.</p>
     <p>Les différentes zones d’effet sont décrites ci-dessous.</p>
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="language">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <MarkdownContent v-if="language.htmlContent" :text="language.htmlContent" />
       <LanguageScript v-if="language.script" :script="language.script" />
       <LanguageSpeakers v-if="language.typicalSpeakers" :text="language.typicalSpeakers" />
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Language } from "~/types/game";
 
 const config = useRuntimeConfig();

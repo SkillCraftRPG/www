@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Réparation" :parent="parent" />
+    <RulesBreadcrumb active="Réparation" :parent="parent" />
     <p>
       L’équipement des personnages n’est pas éternel, et peut être brisé. La réparation d’un équipement est toujours moins onéreuse que l’achat d’un nouvel
       exemplaire.
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Équipement", to: "/regles/equipement" }];
 const title: string = "Réparation d’équipement";

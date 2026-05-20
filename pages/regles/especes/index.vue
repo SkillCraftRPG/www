@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>
       Une espèce représente un regroupement d’individus présentant des caractéristiques communes, comme la forme du corps, la couleur de peau, de yeux et de
       cheveux, les comportements sociaux et l’espérance de vie. Certaines espèces se décomposent en plusieurs ethnies, associés à un territoire, une

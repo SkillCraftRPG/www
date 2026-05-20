@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       En Ouespéro, on compte en moyenne une <NuxtLink to="/regles/equipement/services/peuplements">auberge pour 2000 habitants</NuxtLink>. On ne trouvera donc
       aucune auberge dans un village, une seule auberge dans une ville, et plusieurs auberges dans une cité. Les auberges offrent des services de gîte, de
@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import services from "~/assets/data/items/services.json";
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

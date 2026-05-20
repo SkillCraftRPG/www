@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Occultes" :parent="parent" />
+    <RulesBreadcrumb active="Occultes" :parent="parent" />
     <p>
       Il peut être rare et complexe, toutefois possible, de trouver des services d’occultisme, c’est-à-dire un temple ou un emplacement canalisant certains
       <NuxtLink to="/regles/magie/pouvoirs">pouvoirs</NuxtLink>.
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Équipement", to: "/regles/equipement" },

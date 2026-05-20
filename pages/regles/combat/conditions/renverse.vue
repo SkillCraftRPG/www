@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Une créature renversée ne peut <NuxtLink to="/regles/combat/activites/deplacement">se déplacer</NuxtLink> qu’en
       <NuxtLink to="/regles/aventure/mouvement/types">rampant</NuxtLink>. Elle met fin à la condition en
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

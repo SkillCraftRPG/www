@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les <NuxtLink to="/regles/competences/tests">tests</NuxtLink> d’une créature empoisonnée sont affligés du
       <NuxtLink to="/regles/competences/tests/avantage-desavantage">désavantage</NuxtLink>, à l’exception des
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

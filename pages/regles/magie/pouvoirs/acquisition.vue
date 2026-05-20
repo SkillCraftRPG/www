@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Acquisition" :parent="parent" />
+    <RulesBreadcrumb active="Acquisition" :parent="parent" />
     <p>
       Un personnage peut dépenser les <NuxtLink to="/regles/talents/points">points de talent</NuxtLink> obtenus à chaque
       <NuxtLink to="/regles/personnages/progression/niveau">gain de niveau</NuxtLink> afin d’acquérir de nouveaux pouvoirs.
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Magie", to: "/regles/magie" },

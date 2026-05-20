@@ -2,7 +2,7 @@
   <main class="container">
     <template v-if="spell">
       <h1>{{ title }}</h1>
-      <AppBreadcrumb :active="title" :parent="parent" />
+      <RulesBreadcrumb :active="title" :parent="parent" />
       <SpellInfo :spell="spell" />
       <MarkdownContent v-if="spell.htmlContent" :text="spell.htmlContent" />
       <template v-for="group in abilities" :key="group.level">
@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Spell, SpellAbility } from "~/types/magic";
 
 const config = useRuntimeConfig();

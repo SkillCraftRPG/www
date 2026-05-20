@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>Règles</h1>
-    <AppBreadcrumb active="Règles" />
+    <RulesBreadcrumb />
     <p>Les rubriques suivantes regroupent les règles du jeu. Elles sont classées par thème afin de faciliter la prise en main du système.</p>
     <p>
       Les rubriques sont également présentées en ordre logique d’utilisation : d’abord, la création et progression des personnages, puis les règles en

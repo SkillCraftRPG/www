@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Le repos consiste en un moyen naturel pour les aventuriers de récupérer leur <NuxtLink to="/regles/statistiques/vitalite">Vitalité</NuxtLink> ainsi que
       leur <NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink>.
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Aventure", to: "/regles/aventure" }];
 const title: string = "Repos";

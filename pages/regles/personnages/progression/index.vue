@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Progression" :parent="parent" />
+    <RulesBreadcrumb active="Progression" :parent="parent" />
     <p>
       Au fil de ses aventures, un personnage suit une progression croissante qui lui permet d’améliorer ses capacités existantes ou d’en obtenir des nouvelles.
     </p>
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [{ text: "Personnages", to: "/regles/personnages" }];
 const title: string = "Progression de personnage";

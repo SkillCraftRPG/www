@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’un personnage doit effectuer un test, mais que le joueur n’est pas au courant, et que le maître de jeu désire ne pas éveiller ses soupçons, il peut
       effectuer un test passif.
@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Compétences", to: "/regles/competences" },

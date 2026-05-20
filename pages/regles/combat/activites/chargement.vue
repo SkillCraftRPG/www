@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Vous chargez une <NuxtLink to="/regles/equipement/armes/munitions">munition</NuxtLink> dans une
       <NuxtLink to="/regles/equipement/armes">arme</NuxtLink> dotée de la propriété <NuxtLink to="/regles/equipement/armes/proprietes">Chargement</NuxtLink>.
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Combat", to: "/regles/combat" },

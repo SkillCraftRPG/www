@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb active="Général" :parent="parent" />
+    <RulesBreadcrumb active="Général" :parent="parent" />
     <p>Des articles pratiques et variés pour faciliter la vie quotidienne des aventuriers.</p>
     <div class="row">
       <div v-for="(item, index) in list" :key="index" class="col-xs-12 col-sm-6 mb-4">
@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Item } from "~/types/items";
 import { getGeneralItems } from "~/services/items";
 

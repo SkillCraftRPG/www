@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Lorsqu’un personnage parcourt une grande distance, se déplaçant sur une longue période de <NuxtLink to="/regles/aventure/temps">temps</NuxtLink> (en
       minutes, en heures ou en jours), on parle d’un voyage plutôt que d’un déplacement.
@@ -161,7 +161,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Aventure", to: "/regles/aventure" },

@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       Les esprits appartenant à ce domaine sont associés aux ancêtres, au passé et à la mémoire de la terre. Les animistes s’identifiant à ce domaine accordent
       de l’importance et protègent ces éléments, et se rencontrent à des endroits anciens et intouchés par la civilisation.
@@ -146,7 +146,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },

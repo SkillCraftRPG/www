@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Vous aidez une créature située à 1,5 mètres ou moins de votre position à accomplir une action quelconque.</p>
     <p>
       Pendant votre <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink>, vous vous préparez par une action. Vous utilisez ensuite votre réaction afin
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { SearchResults, Talent } from "~/types/game";
 
 const config = useRuntimeConfig();
