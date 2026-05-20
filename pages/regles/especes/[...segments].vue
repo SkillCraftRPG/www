@@ -3,14 +3,13 @@
     <template v-if="lineage">
       <h1>{{ title }}</h1>
       <AppBreadcrumb :active="title" :parent="parent" />
-      <MarkdownContent v-if="lineage.htmlContent.overview" :text="lineage.htmlContent.overview" />
+      <MarkdownContent v-if="lineage.htmlContent" :text="lineage.htmlContent" />
       <SpeciesEthnicities v-if="species && species.ethnicities.length" :species="species" />
       <LineageLanguages v-if="showLanguages" :languages="lineage.languages" />
       <LineageNames v-if="showNames" :names="lineage.names" />
       <LineagePhysical v-if="species && !ethnicity" :species="species" />
       <LineageSpeeds v-if="showSpeeds" :speeds="lineage.speeds" />
       <LineageFeatures v-if="lineage.features.length" :lineage="lineage" />
-      <LineageContent v-if="showContent" :content="lineage.htmlContent" />
     </template>
   </main>
 </template>
@@ -24,8 +23,7 @@ const config = useRuntimeConfig();
 const options = { baseURL: config.public.apiBaseUrl };
 const route = useRoute();
 
-const segments = computed<string[]>(() => (Array.isArray(route.params.segments) ? route.params.segments : [route.params.segments]));
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const segments = computed<string[]>(() => (Array.isArray(route.params.segments) ? route.params.segments : [route.params.segments ?? ""]));
 const { data } = await useAsyncData<LineageBase>(
   `lineage:${segments.value.join("/")}`,
   async () => {
@@ -41,7 +39,7 @@ const { data } = await useAsyncData<LineageBase>(
     }
     return species;
   },
-  { watch: [slug] },
+  { watch: [segments] },
 );
 
 const lineage = computed<LineageBase | undefined>(() => data.value ?? undefined);
@@ -68,18 +66,6 @@ const parent = computed<Breadcrumb[]>(() => {
   return parent;
 });
 
-const showContent = computed<boolean>(() =>
-  Boolean(
-    lineage.value &&
-    (lineage.value.htmlContent.morphology ||
-      lineage.value.htmlContent.psychology ||
-      lineage.value.htmlContent.culture ||
-      lineage.value.htmlContent.history ||
-      lineage.value.htmlContent.geography ||
-      lineage.value.htmlContent.politics ||
-      lineage.value.htmlContent.relations),
-  ),
-);
 const showLanguages = computed<boolean>(() =>
   Boolean(lineage.value && (lineage.value.languages.items.length || lineage.value.languages.extra > 0 || lineage.value.languages.text)),
 );
