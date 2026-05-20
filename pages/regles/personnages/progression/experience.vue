@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" :parent="parent" />
+    <RulesBreadcrumb :active="title" :parent="parent" />
     <p>
       La mesure la plus spécifique de progression est sans doute l’Expérience. Lorsqu’un personnage débute son aventure, il ne possède aucun point d’expérience.
       Il progresse en atteignant certains objectifs, et le maître de jeu lui octroie des points d’expérience. Lorsqu’un certain seuil est acquis, le
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Breadcrumb } from "~/types/components";
+import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
 const parent: Breadcrumb[] = [
   { text: "Personnages", to: "/regles/personnages" },

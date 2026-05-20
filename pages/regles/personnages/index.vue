@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1>{{ title }}</h1>
-    <AppBreadcrumb :active="title" />
+    <RulesBreadcrumb :active="title" />
     <p>Au cinéma comme dans la littérature, l’attention du public est centrée sur un ou plusieurs héros ou héroïnes.</p>
     <p>Dans le jeu de rôle, ce sont les personnages des joueurs qui sont les protagonistes de l’histoire.</p>
     <p>Leurs paroles et leurs actions donnent vie à l’intrigue racontée par le maître de jeu.</p>
