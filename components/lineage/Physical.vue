@@ -5,37 +5,73 @@
       Ils atteignent l’âge adulte à {{ age.adult }} {{ $t("unit.Year", age.adult) }} et leur espérance de vie moyenne est de {{ age.venerable }}
       {{ $t("unit.Year", age.venerable) }}.
     </p>
-    <table class="table table-striped text-center">
-      <tbody>
-        <tr>
-          <th scope="row" :class="classes">Taille</th>
-          <td :class="classes">
+    <div class="d-none d-md-block">
+      <table class="table table-striped text-center">
+        <tbody>
+          <tr>
+            <th scope="row" :class="classes">Taille</th>
+            <td :class="classes">
+              <NuxtLink to="/regles/especes/taille">{{ $t(`size.category.options.${size.category}`) }}</NuxtLink>
+            </td>
+            <td v-if="size.roll" :class="classes">{{ size.roll }} {{ $t("unit.Centimeter", 100) }}</td>
+          </tr>
+          <tr v-if="minHeight">
+            <th scope="row">Hauteur minimale</th>
+            <td>{{ $n(minHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(minHeight)) }}</td>
+            <td>{{ minHeightImperial }}</td>
+          </tr>
+          <tr v-if="maxHeight">
+            <th scope="row">Hauteur maximale</th>
+            <td>{{ $n(maxHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(maxHeight)) }}</td>
+            <td>{{ maxHeightImperial }}</td>
+          </tr>
+          <tr v-if="minWeight">
+            <th scope="row">Poids minimal</th>
+            <td>{{ $n(minWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(minWeight)) }}</td>
+            <td>{{ $n(minWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(minWeightImperial)) }}</td>
+          </tr>
+          <tr v-if="maxWeight">
+            <th scope="row">Poids maximal</th>
+            <td>{{ $n(maxWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(maxWeight)) }}</td>
+            <td>{{ $n(maxWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(maxWeightImperial)) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="d-md-none text-center">
+      <TarCard class="mb-3" title="Taille">
+        <div class="row">
+          <div class="col">
             <NuxtLink to="/regles/especes/taille">{{ $t(`size.category.options.${size.category}`) }}</NuxtLink>
-          </td>
-          <td v-if="size.roll" :class="classes">{{ size.roll }} {{ $t("unit.Centimeter", 100) }}</td>
-        </tr>
-        <tr v-if="minHeight">
-          <th scope="row">Hauteur minimale</th>
-          <td>{{ $n(minHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(minHeight)) }}</td>
-          <td>{{ minHeightImperial }}</td>
-        </tr>
-        <tr v-if="maxHeight">
-          <th scope="row">Hauteur maximale</th>
-          <td>{{ $n(maxHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(maxHeight)) }}</td>
-          <td>{{ maxHeightImperial }}</td>
-        </tr>
-        <tr v-if="minWeight">
-          <th scope="row">Poids minimal</th>
-          <td>{{ $n(minWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(minWeight)) }}</td>
-          <td>{{ $n(minWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(minWeightImperial)) }}</td>
-        </tr>
-        <tr v-if="maxWeight">
-          <th scope="row">Poids maximal</th>
-          <td>{{ $n(maxWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(maxWeight)) }}</td>
-          <td>{{ $n(maxWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(maxWeightImperial)) }}</td>
-        </tr>
-      </tbody>
-    </table>
+          </div>
+          <div v-if="size.roll" class="col">{{ size.roll }} {{ $t("unit.Centimeter", 100) }}</div>
+        </div>
+      </TarCard>
+      <TarCard v-if="minHeight" class="mb-3" title="Hauteur minimale">
+        <div class="row">
+          <div class="col">{{ $n(minHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(minHeight)) }}</div>
+          <div class="col">{{ minHeightImperial }}</div>
+        </div>
+      </TarCard>
+      <TarCard v-if="maxHeight" class="mb-3" title="Hauteur maximale">
+        <div class="row">
+          <div class="col">{{ $n(maxHeight, "decimal") }} {{ $t("unit.Meter", Math.floor(maxHeight)) }}</div>
+          <div class="col">{{ maxHeightImperial }}</div>
+        </div>
+      </TarCard>
+      <TarCard v-if="minWeight" class="mb-3" title="Poids minimal">
+        <div class="row">
+          <div class="col">{{ $n(minWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(minWeight)) }}</div>
+          <div class="col">{{ $n(minWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(minWeightImperial)) }}</div>
+        </div>
+      </TarCard>
+      <TarCard v-if="maxWeight" class="mb-3" title="Poids maximal">
+        <div class="row">
+          <div class="col">{{ $n(maxWeight, "weight") }} {{ $t("unit.Kilogram", Math.floor(maxWeight)) }}</div>
+          <div class="col">{{ $n(maxWeightImperial, "integer") }} {{ $t("unit.Pound", Math.round(maxWeightImperial)) }}</div>
+        </div>
+      </TarCard>
+    </div>
   </div>
 </template>
 

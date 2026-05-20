@@ -2,10 +2,10 @@
   <main class="container">
     <h1>Règles</h1>
     <RulesBreadcrumb />
-    <p>Les rubriques suivantes regroupent les règles du jeu. Elles sont classées par thème afin de faciliter la prise en main du système.</p>
     <p>
-      Les rubriques sont également présentées en ordre logique d’utilisation : d’abord, la création et progression des personnages, puis les règles en
-      découlant, et enfin les rubriques concernant le déroulement d’une partie de jeu.
+      Les rubriques suivantes regroupent les règles du jeu. Elles sont classées par thème afin de faciliter la prise en main du système. Les rubriques sont
+      également présentées en ordre logique d’utilisation : d’abord, la création et progression des personnages, puis les règles en découlant, et enfin les
+      rubriques concernant le déroulement d’une partie de jeu.
     </p>
     <div class="d-flex flex-column justify-content-center align-items-center">
       <div class="grid">
