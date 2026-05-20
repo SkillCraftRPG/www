@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   devServer: {
     port: 3030,
   },
-  modules: ["usebootstrap", "@nuxtjs/i18n", "@pinia/nuxt", "pinia-plugin-persistedstate/nuxt"],
-  css: ["@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
+  modules: ["@nuxtjs/i18n", "@pinia/nuxt", "pinia-plugin-persistedstate/nuxt"],
+  css: ["bootstrap/dist/css/bootstrap.min.css", "@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
   app: {
     head: {
       link: [
@@ -34,8 +34,18 @@ export default defineNuxtConfig({
   },
   vite: {
     optimizeDeps: {
-      include: ["bootstrap", "logitar-js", "marked", "md5", "nanoid"],
-      force: false,
+      include: [
+        "@fortawesome/fontawesome-svg-core",
+        "@fortawesome/free-solid-svg-icons",
+        "@fortawesome/vue-fontawesome",
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+        "bootstrap",
+        "logitar-js", // CJS
+        "marked",
+        "md5", // CJS
+        "nanoid",
+      ],
     },
     server: {
       watch: { ignored: ["**/.nuxt/**", "**/.output/**"] },
