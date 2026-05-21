@@ -22,9 +22,6 @@
         <LinkCard class="d-flex flex-column h-100" :text="circle.description" :title="circle.title" :to="circle.path" />
       </div>
     </div>
-    <!-- TODO(fpion):
-     * Rites initiatiques: Initiation, Allégeance, Élévation
-    -->
     <SpellList v-if="spells.length" :items="spells" :scope="category" />
   </main>
 </template>
