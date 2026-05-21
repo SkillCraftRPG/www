@@ -102,7 +102,6 @@ const { data } = await useLazyAsyncData<SearchResults<Spell>>(
     server: false,
   },
 );
-
 const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({

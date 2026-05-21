@@ -66,18 +66,35 @@
       faire oublier un temps moindre, et la période de temps de l’oubli ne peut excéder la <NuxtLink to="/regles/magie/parametres/duree">durée</NuxtLink> du
       pouvoir.
     </p>
-    <!-- TODO(fpion): Spell List -->
+    <SpellList v-if="spells.length" :items="spells" :scope="category" />
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
+import type { SearchResults } from "~/types/game";
+import type { Spell } from "~/types/magic";
+import { SpellCategories } from "~/types/constants";
 
+const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },
   { text: "Astromancie", to: "/regles/astromancie" },
 ];
 const title: string = "Cercle d’Envoûtement";
+
+const category: string = SpellCategories.Enchantment;
+const { data } = await useLazyAsyncData<SearchResults<Spell>>(
+  `spells:${category}`,
+  () =>
+    $fetch(`/api/spells?category=${category}`, {
+      baseURL: config.public.apiBaseUrl,
+    }),
+  {
+    server: false,
+  },
+);
+const spells = computed<Spell[]>(() => data.value?.items ?? []);
 
 useSeo({
   title,
