@@ -21,19 +21,14 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/herboristerie",
-    title: "Herboristerie",
-    description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
-  },
-  {
     path: "/regles/astromancie",
     title: "Astromancie",
-    description: "🚧",
+    description: "Art mystique liant astres, signes et pouvoirs pour altérer la réalité.",
   },
   {
-    path: "/regles/elementarisme",
-    title: "Élémentarisme",
-    description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
+    path: "/regles/domaines/animisme",
+    title: "Domaines d’animisme",
+    description: "Choisissez un domaine animiste et sa catégorie associée.",
   },
   {
     path: "/regles/domaines/divins",
@@ -41,9 +36,14 @@ const items: MenuItem[] = [
     description: "Choisissez un domaine divin et ses pouvoirs sacrés associés.",
   },
   {
-    path: "/regles/domaines/animisme",
-    title: "Domaines d’animisme",
-    description: "Choisissez un domaine animiste et sa catégorie associée.",
+    path: "/regles/elementarisme",
+    title: "Élémentarisme",
+    description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
+  },
+  {
+    path: "/regles/herboristerie",
+    title: "Herboristerie",
+    description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
   },
   {
     path: "/regles/annexes/infusions-magiques",
