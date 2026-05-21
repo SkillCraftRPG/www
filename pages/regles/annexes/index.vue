@@ -59,6 +59,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les annexes de SkillCraft : astromancie, animisme, domaines divins, élémentarisme, herboristerie, infusions et invocations.",
 });
 </script>
