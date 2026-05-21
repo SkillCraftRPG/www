@@ -60,8 +60,8 @@
       <p>
         Cette <NuxtLink to="/regles/equipement/armures">armure</NuxtLink> confère à son porteur la
         <NuxtLink to="/regles/combat/degats/efficacite">résistance</NuxtLink> aux <NuxtLink to="/regles/combat/degats/types">dégâts</NuxtLink> d’un des
-        <NuxtLink to="/regles/combat/degats/types">types</NuxtLink> suivants, sélectionné au moment où l’infusion est créée : acide, électricité, feu, force,
-        froid, nécrotique, poison, psychique, radiant, tonnerre.
+        <NuxtLink to="/regles/combat/degats/types">types</NuxtLink> suivants, sélectionné au moment où l’infusion est créée : acide, feu, force, foudre, froid,
+        nécrotique, poison, psychique, radiant, tonnerre.
       </p>
     </InfusionInfo>
     <!-- Bottes rembobineuses -->

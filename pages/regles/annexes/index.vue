@@ -26,6 +26,16 @@ const items: MenuItem[] = [
     description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
   },
   {
+    path: "/regles/astromancie",
+    title: "Astromancie",
+    description: "🚧",
+  },
+  {
+    path: "/regles/elementarisme",
+    title: "Élémentarisme",
+    description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
+  },
+  {
     path: "/regles/domaines/divins",
     title: "Domaines divins",
     description: "Choisissez un domaine divin et ses pouvoirs sacrés associés.",
@@ -34,11 +44,6 @@ const items: MenuItem[] = [
     path: "/regles/domaines/animisme",
     title: "Domaines d’animisme",
     description: "Choisissez un domaine animiste et sa catégorie associée.",
-  },
-  {
-    path: "/regles/elementarisme",
-    title: "Élémentarisme",
-    description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
   },
   {
     path: "/regles/annexes/infusions-magiques",
