@@ -21,14 +21,9 @@ type MenuItem = {
 };
 const items: MenuItem[] = [
   {
-    path: "/regles/herboristerie",
-    title: "Herboristerie",
-    description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
-  },
-  {
-    path: "/regles/domaines/divins",
-    title: "Domaines divins",
-    description: "Choisissez un domaine divin et ses pouvoirs sacrés associés.",
+    path: "/regles/astromancie",
+    title: "Astromancie",
+    description: "Art mystique liant astres, signes et pouvoirs pour altérer la réalité.",
   },
   {
     path: "/regles/domaines/animisme",
@@ -36,9 +31,19 @@ const items: MenuItem[] = [
     description: "Choisissez un domaine animiste et sa catégorie associée.",
   },
   {
+    path: "/regles/domaines/divins",
+    title: "Domaines divins",
+    description: "Choisissez un domaine divin et ses pouvoirs sacrés associés.",
+  },
+  {
     path: "/regles/elementarisme",
     title: "Élémentarisme",
     description: "Maîtrisez l’essence des éléments et activez leurs pouvoirs.",
+  },
+  {
+    path: "/regles/herboristerie",
+    title: "Herboristerie",
+    description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
   },
   {
     path: "/regles/annexes/infusions-magiques",
@@ -54,6 +59,6 @@ const items: MenuItem[] = [
 
 useSeo({
   title,
-  description: "🚧",
+  description: "Découvrez les annexes de SkillCraft : astromancie, animisme, domaines divins, élémentarisme, herboristerie, infusions et invocations.",
 });
 </script>

@@ -18,7 +18,10 @@
       de <NuxtLink to="/regles/equipement/monnaie">50 deniers</NuxtLink>.
     </p>
     <ul>
-      <li>Il acquiert gratuitement un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> d’<NuxtLink to="#">astromancie</NuxtLink> de tiers 0.</li>
+      <li>
+        Il acquiert gratuitement un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> d’<NuxtLink to="/regles/astromancie">astromancie</NuxtLink> de
+        tiers 0.
+      </li>
       <li>
         Il sélectionne un des <NuxtLink to="#">signes astrologiques</NuxtLink> associés à ce pouvoir et transcrit gratuitement ce signe dans son grimoire.
       </li>
@@ -32,9 +35,9 @@
       </div>
     </div>
     <p>
-      Le personnage sélectionne un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> d’<NuxtLink to="#">astromancie</NuxtLink> de tiers 1. S’il a déjà
-      transcrit dans son grimoire le <NuxtLink to="#">signe astrologique</NuxtLink> associé à ce pouvoir, alors il acquiert instantanément et gratuitement ce
-      pouvoir.
+      Le personnage sélectionne un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> d’<NuxtLink to="/regles/astromancie">astromancie</NuxtLink> de tiers
+      1. S’il a déjà transcrit dans son grimoire le <NuxtLink to="#">signe astrologique</NuxtLink> associé à ce pouvoir, alors il acquiert instantanément et
+      gratuitement ce pouvoir.
     </p>
     <p>
       Sinon, il doit utiliser son <NuxtLink to="/regles/specialisations/clerc">pouvoir divin</NuxtLink> afin d’effectuer un rituel divin d’une durée minimale
