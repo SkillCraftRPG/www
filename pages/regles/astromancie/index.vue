@@ -54,9 +54,9 @@ const circles: MenuItem[] = [
     description: "Pouvoirs pour voir le passé, le présent et l’avenir.",
   },
   {
-    path: "#",
+    path: "/regles/astromancie/envoutement",
     title: "Envoûtement",
-    description: "🚧",
+    description: "Pouvoirs pour charmer, tromper et contrôler l’esprit.",
   },
   {
     path: "/regles/astromancie/invocation",
