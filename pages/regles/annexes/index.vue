@@ -55,6 +55,11 @@ const items: MenuItem[] = [
     title: "Invocations mystérieuses",
     description: "Capacités ésotériques et secrètes réservées au Conjurateur.",
   },
+  {
+    path: "/regles/annexes/jeu-de-role",
+    title: "Jeu de rôle",
+    description: "Schéma classique et jeu proactif pour structurer les aventures de jeu.",
+  },
 ];
 
 useSeo({
