@@ -1,21 +1,21 @@
 [
   {
     "id": "1f2d0c01-c775-4ac4-85ed-3be1cca5128f",
-    "date": "2026-06-30T23:59:59Z",
+    "date": "2026-08-31T23:59:59Z",
     "title": "Règles exotiques",
     "summary": "Règles permettant de créer un personnage et de progresser jusqu’au niveau 100 avec toutes les options, modèles de jeu de rôle.",
     "detail": ["Spécialisations de tiers 3 complètes"]
   },
   {
     "id": "50639d91-6615-4ffc-a229-4214a4192a7e",
-    "date": "2026-08-30T23:59:59Z",
+    "date": "2026-12-31T23:59:59Z",
     "title": "Application Web",
     "summary": "Gestionnaire de monde et de fiches de personnages avec accès joueurs, importation de données depuis le site Web et aides de jeu.",
     "detail": []
   },
   {
     "id": "c1dc2b76-7bfc-49df-b7f8-d0cdeca52d6b",
-    "date": "2026-12-31T23:59:59Z",
+    "date": "2027-12-31T23:59:59Z",
     "title": "Grimoire",
     "summary": "Liste des pouvoirs pour tous les domaines de magie et toutes les spécialisations, paramètres et descriptions des effets des pouvoirs.",
     "detail": []
