@@ -53,8 +53,14 @@ const castingTime = computed<string>(() => {
       return "1 minute";
     case "10m":
       return "10 minutes";
+    case "1h":
+      return "1 heure";
     case "8h":
       return "8 heures";
+    case "12h":
+      return "12 heures";
+    case "24h":
+      return "24 heures";
     default:
       throw new Error(`Invalid spell casting time: ${props.ability.casting.time}`);
   }
