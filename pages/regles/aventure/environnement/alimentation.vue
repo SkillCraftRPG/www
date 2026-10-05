@@ -5,7 +5,7 @@
     <p>Les personnages et créatures doivent se nourrir et s’hydrater suffisamment afin d’éviter de mettre leur survie en jeu.</p>
     <h2 class="h3">Eau</h2>
     <p>
-      Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit boire au moins 2 litres d’eau par jour. Ce volume est doublé
+      Une créature de <NuxtLink to="/regles/especes/taille">taille moyenne</NuxtLink> doit boire au moins 4 litres d’eau par jour. Ce volume est doublé
       lorsqu’elle se trouve dans un climat très chaud ou sec.
     </p>
     <p>
