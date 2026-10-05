@@ -41,29 +41,31 @@ const props = defineProps<{
 }>();
 
 const castingTime = computed<string>(() => {
-  const formatted: string = props.ability.casting.time.trim();
-  switch (formatted) {
+  let formatted: string = "";
+  const trimmed: string = props.ability.casting.time.trim();
+  switch (trimmed) {
     case "1":
     case "2":
-      const actions: number = Number(formatted);
-      return [actions, $t("unit.Action", actions)].join(" ");
+      const actions: number = Number(trimmed);
+      formatted = [actions, $t("unit.Action", actions)].join(" ");
     case "R":
-      return "Réaction";
+      formatted = "Réaction";
     case "1m":
-      return "1 minute";
+      formatted = "1 minute";
     case "10m":
-      return "10 minutes";
+      formatted = "10 minutes";
     case "1h":
-      return "1 heure";
+      formatted = "1 heure";
     case "8h":
-      return "8 heures";
+      formatted = "8 heures";
     case "12h":
-      return "12 heures";
+      formatted = "12 heures";
     case "24h":
-      return "24 heures";
+      formatted = "24 heures";
     default:
       throw new Error(`Invalid spell casting time: ${props.ability.casting.time}`);
   }
+  return props.ability.casting.ritual ? `${formatted} (rituel)` : formatted;
 });
 const components = computed<string>(() => {
   const components: string[] = [];
