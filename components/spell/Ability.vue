@@ -48,20 +48,28 @@ const castingTime = computed<string>(() => {
     case "2":
       const actions: number = Number(trimmed);
       formatted = [actions, $t("unit.Action", actions)].join(" ");
+      break;
     case "R":
       formatted = "Réaction";
+      break;
     case "1m":
       formatted = "1 minute";
+      break;
     case "10m":
       formatted = "10 minutes";
+      break;
     case "1h":
       formatted = "1 heure";
+      break;
     case "8h":
       formatted = "8 heures";
+      break;
     case "12h":
       formatted = "12 heures";
+      break;
     case "24h":
       formatted = "24 heures";
+      break;
     default:
       throw new Error(`Invalid spell casting time: ${props.ability.casting.time}`);
   }
