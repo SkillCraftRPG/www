@@ -5,9 +5,14 @@
     <p>Plusieurs pouvoirs nécessitent un <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink> afin de résister à leurs effets.</p>
     <p>Les effets du pouvoir peuvent être altérés ou annulés en cas de réussite de ce jet de sauvegarde.</p>
     <p>
-      Le <NuxtLink to="/regles/competences/tests/difficulte">degré de difficulté</NuxtLink> du jet de sauvegarde est toujours égal au résultat du
+      Au cours du <NuxtLink to="/regles/combat/deroulement/tour">tour</NuxtLink> pendant lequel le pouvoir a été canalisé, la
+      <NuxtLink to="/regles/competences/tests/difficulte">difficulté</NuxtLink> du jet de sauvegarde est égale au résultat du
       <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink to="/regles/competences/occultisme">Occultisme</NuxtLink> de la créature ayant
       canalisé le pouvoir.
+    </p>
+    <p>
+      Au cours des tours subséquents, la difficulté est égale au résultat du <NuxtLink to="/regles/competences/tests/passif">test passif</NuxtLink> d’Occultisme
+      de la créature ayant canalisé le pouvoir.
     </p>
   </main>
 </template>
