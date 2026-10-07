@@ -1,5 +1,5 @@
 # Build Stage #
-FROM node:22-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /app
 
 RUN corepack enable
@@ -17,7 +17,7 @@ COPY . ./
 RUN npm run build
 
 # Build Stage 2
-FROM node:22-alpine
+FROM node:24-alpine
 WORKDIR /app
 
 # Only `.output` folder is needed from the build stage
