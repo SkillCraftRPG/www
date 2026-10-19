@@ -2,13 +2,13 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <BattleActionSelect v-model="actions" />
+        <BattleActionSelect :model-value="actions" @update:model-value="setQuery('actions', $event)" />
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <BattleThreateningSelect v-model="threatening" />
+        <BattleThreateningSelect :model-value="threatening" @update:model-value="setQuery('threatening', $event)" />
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <div v-if="mode === 'grid'" class="row">
@@ -49,17 +49,16 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Activity } from "~/types/game";
-import type { ListMode } from "~/types/components";
 
 const { orderBy } = arrayUtils;
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Activity[];
 }>();
 
-const actions = ref<string>("");
-const mode = ref<ListMode>("grid");
-const threatening = ref<string>("");
+const actions = computed<string>(() => getQuery("actions"));
+const threatening = computed<string>(() => getQuery("threatening"));
 
 const activities = computed<Activity[]>(() => {
   return orderBy(

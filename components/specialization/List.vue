@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <ListMode v-model="mode" />
+    <ListMode :model-value="mode" @update:model-value="setMode" />
     <template v-for="group in groups" :key="group.tier">
       <h3 class="h5">Spécialisations de tiers {{ group.tier }}</h3>
       <div v-if="mode === 'grid'" class="row">
@@ -39,7 +39,6 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { ListMode } from "~/types/components";
 import type { Specialization } from "~/types/specializations";
 
 type SpecializationGroup = {
@@ -48,12 +47,11 @@ type SpecializationGroup = {
 };
 
 const { orderBy } = arrayUtils;
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Specialization[];
 }>();
-
-const mode = ref<ListMode>("grid");
 
 const groups = computed<SpecializationGroup[]>(() => {
   const map = new Map<number, Specialization[]>();

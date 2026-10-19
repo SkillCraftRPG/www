@@ -2,10 +2,10 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 mb-4">
-        <CustomizationKindSelect label="Filtrer par type" placeholder="Tous" v-model="kind" />
+        <CustomizationKindSelect label="Filtrer par type" :model-value="kind" placeholder="Tous" @update:model-value="setQuery('kind', $event)" />
       </div>
       <div class="col-xs-12 col-sm-6 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <div v-if="mode === 'grid'" class="row">
@@ -41,20 +41,28 @@
 
 <script setup lang="ts">
 import type { Customization, CustomizationKind } from "~/types/game";
-import type { ListMode } from "~/types/components";
+
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Customization[];
 }>();
 
-const kind = ref<CustomizationKind>();
-const mode = ref<ListMode>("grid");
+const kind = computed<CustomizationKind | "">(() => {
+  switch (getQuery("kind").toLocaleLowerCase()) {
+    case "disability":
+      return "Disability";
+    case "gift":
+      return "Gift";
+    default:
+      return "";
+  }
+});
 
 const customizations = computed<Customization[]>(() => {
-  let customizations: Customization[] = [...props.items];
-  if (kind.value) {
-    customizations = customizations.filter((customization) => customization.kind === kind.value);
+  if (!kind.value) {
+    return props.items;
   }
-  return customizations;
+  return props.items.filter((customization) => customization.kind === kind.value);
 });
 </script>

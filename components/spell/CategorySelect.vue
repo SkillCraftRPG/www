@@ -38,7 +38,7 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() =>
   orderBy(
-    props.categories.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    props.categories.map(({ key, name }) => ({ text: name, value: key, sort: unaccent(name) })),
     "sort",
   ),
 );
@@ -53,7 +53,7 @@ function onModelValueUpdate(value?: string): void {
 
   let category: SpellCategory | undefined = undefined;
   if (value) {
-    category = props.categories.find(({ id }) => id === value);
+    category = props.categories.find(({ key }) => key === value);
   }
   emit("selected", category);
 }

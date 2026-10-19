@@ -71,7 +71,6 @@
 <script setup lang="ts">
 import { arrayUtils, parsingUtils } from "logitar-js";
 
-import type { ListMode } from "~/types/components";
 import type { Skill, Talent } from "~/types/game";
 
 type TalentGroup = {
@@ -79,9 +78,9 @@ type TalentGroup = {
   talents: Talent[];
 };
 
-const route = useRoute();
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Talent[];
@@ -89,14 +88,8 @@ const props = defineProps<{
 
 const skills = ref<Skill[]>([]);
 
-const allowMultiplePurchases = computed<boolean | undefined>(() =>
-  parseBoolean((Array.isArray(route.query.multiple) ? route.query.multiple[0] : route.query.multiple) ?? ""),
-);
-const mode = computed<ListMode>(() => {
-  const value: string = ((Array.isArray(route.query.mode) ? route.query.mode[0] : route.query.mode) ?? "").trim().toLocaleLowerCase();
-  return value === "list" ? "list" : "grid";
-});
-const skill = computed<string>(() => ((Array.isArray(route.query.skill) ? route.query.skill[0] : route.query.skill) ?? "").trim().toLocaleLowerCase());
+const allowMultiplePurchases = computed<boolean | undefined>(() => parseBoolean(getQuery("multiple")));
+const skill = computed<string>(() => getQuery("skill").toLocaleLowerCase());
 
 const groups = computed<TalentGroup[]>(() => {
   const map = new Map<number, Talent[]>();
@@ -104,17 +97,16 @@ const groups = computed<TalentGroup[]>(() => {
     if (typeof allowMultiplePurchases.value === "boolean" && allowMultiplePurchases.value !== talent.allowMultiplePurchases) {
       return;
     }
-    const skillValue: string = skill.value.trim().toLocaleLowerCase();
-    if (skillValue) {
-      if (skillValue === "any") {
+    if (skill.value) {
+      if (skill.value === "any") {
         if (!talent.skill) {
           return;
         }
-      } else if (skillValue === "none") {
+      } else if (skill.value === "none") {
         if (talent.skill) {
           return;
         }
-      } else if (skillValue !== talent.skill?.slug) {
+      } else if (skill.value !== talent.skill?.slug.toLocaleLowerCase()) {
         return;
       }
     }
@@ -135,10 +127,6 @@ const groups = computed<TalentGroup[]>(() => {
   }
   return groups;
 });
-
-function setMode(value: ListMode): void {
-  setQuery("mode", value === "grid" ? "" : value);
-}
 
 watch(
   () => props.items,

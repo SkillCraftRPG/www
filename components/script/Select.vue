@@ -38,7 +38,7 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() =>
   orderBy(
-    props.scripts.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    props.scripts.map(({ name, slug }) => ({ text: name, value: slug, sort: unaccent(name) })),
     "sort",
   ),
 );
@@ -53,7 +53,7 @@ function onModelValueUpdate(value?: string): void {
 
   let script: Script | undefined = undefined;
   if (value) {
-    script = props.scripts.find(({ id }) => id === value);
+    script = props.scripts.find(({ slug }) => slug === value);
   }
   emit("selected", script);
 }

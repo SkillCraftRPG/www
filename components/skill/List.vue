@@ -5,14 +5,14 @@
         <AttributeSelect
           :attributes="attributes"
           label="Filtrer par attribut"
-          :model-value="attribute?.id"
+          :model-value="attribute"
           placeholder="Tous"
           variable
-          @selected="attribute = $event"
+          @update:model-value="setQuery('attribute', $event)"
         />
       </div>
       <div class="col-xs-12 col-sm-6 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <div v-if="mode === 'grid'" class="row">
@@ -51,24 +51,23 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Attribute, Skill } from "~/types/game";
-import type { ListMode } from "~/types/components";
 
 const { orderBy } = arrayUtils;
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Skill[];
 }>();
 
-const attribute = ref<Attribute>();
 const attributes = ref<Attribute[]>([]);
-const mode = ref<ListMode>("grid");
+
+const attribute = computed<string>(() => getQuery("attribute").toLocaleLowerCase());
 
 const skills = computed<Skill[]>(() => {
-  let skills: Skill[] = [...props.items];
-  if (attribute.value) {
-    skills = skills.filter((skill) => (attribute.value?.id === "variable" ? !skill.attribute : skill.attribute?.id === attribute.value?.id));
+  if (!attribute.value) {
+    return props.items;
   }
-  return skills;
+  return props.items.filter((skill) => (attribute.value === "variable" ? !skill.attribute : skill.attribute?.slug.toLocaleLowerCase() === attribute.value));
 });
 
 watch(
