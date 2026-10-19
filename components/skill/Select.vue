@@ -33,7 +33,7 @@ const anySkill: Skill = {
   createdOn: now,
   updatedBy: actor,
   updatedOn: now,
-  slug: "",
+  slug: "any",
   value: "" as GameSkill,
   name: "N’importe laquelle",
   talents: [],
@@ -45,7 +45,7 @@ const noneSkill: Skill = {
   createdOn: now,
   updatedBy: actor,
   updatedOn: now,
-  slug: "",
+  slug: "none",
   value: "" as GameSkill,
   name: "Aucune",
   talents: [],
@@ -72,7 +72,7 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() => {
   const options: SelectOption[] = orderBy(
-    props.skills.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    props.skills.map(({ name, slug }) => ({ text: name, value: slug, sort: unaccent(name) })),
     "sort",
   );
   if (parseBoolean(props.extended)) {

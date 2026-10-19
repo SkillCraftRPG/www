@@ -2,13 +2,26 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <YesNoSelect id="allow-multiple-purchases" label="Achats multiples" placeholder="Tous" v-model="allowMultiplePurchases" />
+        <YesNoSelect
+          id="allow-multiple-purchases"
+          label="Achats multiples"
+          :model-value="allowMultiplePurchases"
+          placeholder="Tous"
+          @update:model-value="setQuery('multiple', $event)"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <SkillSelect extended label="Filtrer par compétence" :model-value="skill?.id" placeholder="Tous" :skills="skills" @selected="skill = $event" />
+        <SkillSelect
+          extended
+          label="Filtrer par compétence"
+          :model-value="skill"
+          placeholder="Tous"
+          :skills="skills"
+          @update:model-value="setQuery('skill', $event)"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <template v-for="group in groups" :key="group.tier">
@@ -56,7 +69,7 @@
 </template>
 
 <script setup lang="ts">
-import { arrayUtils } from "logitar-js";
+import { arrayUtils, parsingUtils } from "logitar-js";
 
 import type { ListMode } from "~/types/components";
 import type { Skill, Talent } from "~/types/game";
@@ -66,16 +79,24 @@ type TalentGroup = {
   talents: Talent[];
 };
 
+const route = useRoute();
 const { orderBy } = arrayUtils;
+const { parseBoolean } = parsingUtils;
 
 const props = defineProps<{
   items: Talent[];
 }>();
 
-const allowMultiplePurchases = ref<boolean>();
-const mode = ref<ListMode>("grid");
-const skill = ref<Skill>();
 const skills = ref<Skill[]>([]);
+
+const allowMultiplePurchases = computed<boolean | undefined>(() =>
+  parseBoolean((Array.isArray(route.query.multiple) ? route.query.multiple[0] : route.query.multiple) ?? ""),
+);
+const mode = computed<ListMode>(() => {
+  const value: string = ((Array.isArray(route.query.mode) ? route.query.mode[0] : route.query.mode) ?? "").trim().toLocaleLowerCase();
+  return value === "list" ? "list" : "grid";
+});
+const skill = computed<string>(() => ((Array.isArray(route.query.skill) ? route.query.skill[0] : route.query.skill) ?? "").trim().toLocaleLowerCase());
 
 const groups = computed<TalentGroup[]>(() => {
   const map = new Map<number, Talent[]>();
@@ -83,16 +104,17 @@ const groups = computed<TalentGroup[]>(() => {
     if (typeof allowMultiplePurchases.value === "boolean" && allowMultiplePurchases.value !== talent.allowMultiplePurchases) {
       return;
     }
-    if (typeof skill.value !== "undefined") {
-      if (skill.value.id === "any") {
+    const skillValue: string = skill.value.trim().toLocaleLowerCase();
+    if (skillValue) {
+      if (skillValue === "any") {
         if (!talent.skill) {
           return;
         }
-      } else if (skill.value.id === "none") {
+      } else if (skillValue === "none") {
         if (talent.skill) {
           return;
         }
-      } else if (skill.value.id !== talent.skill?.id) {
+      } else if (skillValue !== talent.skill?.slug) {
         return;
       }
     }
@@ -113,6 +135,10 @@ const groups = computed<TalentGroup[]>(() => {
   }
   return groups;
 });
+
+function setMode(value: ListMode): void {
+  setQuery("mode", value === "grid" ? "" : value);
+}
 
 watch(
   () => props.items,
