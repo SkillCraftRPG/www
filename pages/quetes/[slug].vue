@@ -29,7 +29,7 @@ import type { Quest, QuestLog } from "~/types/quests";
 const config = useRuntimeConfig();
 const route = useRoute();
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<QuestLog>(
   `quest-log:${slug.value}`,
   () =>

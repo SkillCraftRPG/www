@@ -19,7 +19,7 @@ const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Castes", to: "/regles/castes" }];
 const route = useRoute();
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Caste>(
   `caste:${slug.value}`,
   () =>

@@ -17,7 +17,7 @@ const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Statistiques", to: "/regles/statistiques" }];
 const route = useRoute();
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Statistic>(
   `statistic:${slug.value}`,
   () =>

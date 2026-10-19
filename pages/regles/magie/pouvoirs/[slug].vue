@@ -37,7 +37,7 @@ const parent: Breadcrumb[] = [
 const route = useRoute();
 const { orderBy } = arrayUtils;
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Spell>(
   `spell:${slug.value}`,
   () =>
