@@ -131,7 +131,7 @@ const baseTotal = computed<number>(() => baseSelection.value.reduce((sum, { quan
 
 function toSelectionItem(value: string): SelectionItem {
   const parts: string[] = value.split(":");
-  const slug: string = parts[0];
+  const slug: string = parts[0] ?? "";
   const item: Item | undefined = items.value.get(slug.toLowerCase());
   if (!item) {
     throw new Error(`The item "${slug}" was not found.`);

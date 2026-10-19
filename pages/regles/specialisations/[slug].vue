@@ -20,7 +20,7 @@ const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Spécialisations", to: "/regles/specialisations" }];
 const route = useRoute();
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Specialization>(
   `specialization:${slug.value}`,
   () =>

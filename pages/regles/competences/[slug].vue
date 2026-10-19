@@ -21,7 +21,7 @@ const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" 
 const route = useRoute();
 const { orderBy } = arrayUtils;
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Skill>(
   `skill:${slug.value}`,
   async () => {

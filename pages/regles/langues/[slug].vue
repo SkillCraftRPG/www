@@ -18,7 +18,7 @@ const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Langues", to: "/regles/langues" }];
 const route = useRoute();
 
-const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug));
+const slug = computed<string>(() => (Array.isArray(route.params.slug) ? route.params.slug[0] : route.params.slug) ?? "");
 const { data } = await useAsyncData<Language>(
   `language:${slug.value}`,
   () =>
