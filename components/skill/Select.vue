@@ -95,7 +95,7 @@ function onModelValueUpdate(value?: string): void {
   } else if (value === noneSkill.id) {
     skill = noneSkill;
   } else if (value) {
-    skill = props.skills.find(({ id }) => id === value);
+    skill = props.skills.find(({ slug }) => slug === value);
   }
   emit("selected", skill);
 }

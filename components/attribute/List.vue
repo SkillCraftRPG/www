@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <ListMode class="mb-4" v-model="mode" />
+    <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
     <div v-if="mode === 'grid'" class="row">
       <div v-for="attribute in attributes" :key="attribute.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-fifth mb-4">
         <AttributeDetailCard :attribute="attribute" class="d-flex flex-column h-100" />
@@ -48,15 +48,13 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Attribute, Skill, Statistic } from "~/types/game";
-import type { ListMode } from "~/types/components";
 
+const { mode, setMode } = useListMode();
 const { orderBy } = arrayUtils;
 
 const props = defineProps<{
   items: Attribute[];
 }>();
-
-const mode = ref<ListMode>("grid");
 
 const attributes = computed<Attribute[]>(() => props.items);
 

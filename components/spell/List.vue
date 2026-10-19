@@ -3,7 +3,13 @@
     <h2 class="h3">Liste des pouvoirs</h2>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <SpellCategorySelect v-if="categories.length" :categories="categories" :model-value="category?.id" placeholder="Toutes" @selected="selectCategory" />
+        <SpellCategorySelect
+          v-if="categories.length"
+          :categories="categories"
+          :model-value="category?.key ?? ''"
+          placeholder="Toutes"
+          @update:model-value="selectCategory"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <SpellCategorySelect
@@ -11,13 +17,13 @@
           :categories="subCategories"
           id="sub-category"
           label="Sous-catégorie"
-          :model-value="subCategory?.id"
+          :model-value="subCategory?.key ?? ''"
           placeholder="Toutes"
-          @selected="subCategory = $event"
+          @update:model-value="setQuery('subcategory', $event)"
         />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <template v-for="group in groups" :key="group.tier">
@@ -58,7 +64,6 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { ListMode } from "~/types/components";
 import type { Spell, SpellCategory } from "~/types/magic";
 
 type CategorizedSpell = Spell & {
@@ -69,6 +74,7 @@ type SpellGroup = {
   spells: CategorizedSpell[];
 };
 
+const { mode, setMode } = useListMode();
 const { orderBy } = arrayUtils;
 
 const props = defineProps<{
@@ -76,9 +82,8 @@ const props = defineProps<{
   scope?: string;
 }>();
 
-const category = ref<SpellCategory | undefined>();
-const mode = ref<ListMode>("grid");
-const subCategory = ref<SpellCategory | undefined>();
+const categoryKey = computed<string>(() => getQuery("category").toLocaleLowerCase());
+const subCategoryKey = computed<string>(() => getQuery("subcategory").toLocaleLowerCase());
 
 const categories = computed<SpellCategory[]>(() => {
   const map = new Map<string, SpellCategory>();
@@ -105,7 +110,9 @@ function register(category: SpellCategory, map: Map<string, SpellCategory>): voi
     register(category.parent, map);
   }
 }
+const category = computed<SpellCategory | undefined>(() => categories.value.find((item) => item.key.toLocaleLowerCase() === categoryKey.value));
 const subCategories = computed<SpellCategory[]>(() => orderBy(category.value?.children ?? [], "key"));
+const subCategory = computed<SpellCategory | undefined>(() => subCategories.value.find((item) => item.key.toLocaleLowerCase() === subCategoryKey.value));
 
 const groups = computed<SpellGroup[]>(() => {
   const map = new Map<number, Spell[]>();
@@ -154,8 +161,7 @@ function categorize(spell: Spell, parentId: string | undefined): CategorizedSpel
   return { ...spell, category: map.size === 1 ? [...map.values()][0] : undefined };
 }
 
-function selectCategory(value: SpellCategory | undefined): void {
-  subCategory.value = undefined;
-  category.value = value;
+function selectCategory(value?: string): void {
+  setQueries({ category: value, subcategory: undefined });
 }
 </script>

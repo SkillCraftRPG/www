@@ -2,10 +2,16 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 mb-4">
-        <AttributeSelect :attributes="attributes" label="Filtrer par attribut" :model-value="attribute?.id" placeholder="Tous" @selected="attribute = $event" />
+        <AttributeSelect
+          :attributes="attributes"
+          label="Filtrer par attribut"
+          :model-value="attribute"
+          placeholder="Tous"
+          @update:model-value="setQuery('attribute', $event)"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 mb-4">
-        <ListMode v-model="mode" />
+        <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <div v-if="mode === 'grid'" class="row">
@@ -44,24 +50,23 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Attribute, Statistic } from "~/types/game";
-import type { ListMode } from "~/types/components";
 
+const { mode, setMode } = useListMode();
 const { orderBy } = arrayUtils;
 
 const props = defineProps<{
   items: Statistic[];
 }>();
 
-const attribute = ref<Attribute>();
 const attributes = ref<Attribute[]>([]);
-const mode = ref<ListMode>("grid");
+
+const attribute = computed<string>(() => getQuery("attribute").toLocaleLowerCase());
 
 const statistics = computed<Statistic[]>(() => {
-  let statistics: Statistic[] = [...props.items];
-  if (attribute.value) {
-    statistics = statistics.filter((statistic) => statistic.attribute?.id === attribute.value?.id);
+  if (!attribute.value) {
+    return props.items;
   }
-  return statistics;
+  return props.items.filter((statistic) => statistic.attribute?.slug.toLocaleLowerCase() === attribute.value);
 });
 
 watch(

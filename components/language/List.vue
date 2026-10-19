@@ -2,10 +2,16 @@
   <ClientOnly>
     <div class="row">
       <div class="col-xs-12 col-sm-6 mb-4">
-        <ScriptSelect :scripts="scripts" label="Filtrer par alphabet" :model-value="script?.id" placeholder="Tous" @selected="script = $event" />
+        <ScriptSelect
+          :scripts="scripts"
+          label="Filtrer par alphabet"
+          :model-value="script"
+          placeholder="Tous"
+          @update:model-value="setQuery('script', $event)"
+        />
       </div>
       <div class="col-xs-12 col-sm-6 mb-4">
-        <ListMode class="mb-4" v-model="mode" />
+        <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
     <div v-if="mode === 'grid'" class="row">
@@ -44,24 +50,23 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Language, Script } from "~/types/game";
-import type { ListMode } from "~/types/components";
 
+const { mode, setMode } = useListMode();
 const { orderBy } = arrayUtils;
 
 const props = defineProps<{
   items: Language[];
 }>();
 
-const script = ref<Script>();
 const scripts = ref<Script[]>([]);
-const mode = ref<ListMode>("grid");
+
+const script = computed<string>(() => getQuery("script").toLocaleLowerCase());
 
 const languages = computed<Language[]>(() => {
-  let languages: Language[] = [...props.items];
-  if (script.value) {
-    languages = languages.filter((language) => language.script?.id === script.value?.id);
+  if (!script.value) {
+    return props.items;
   }
-  return languages;
+  return props.items.filter((language) => language.script?.slug.toLocaleLowerCase() === script.value);
 });
 
 watch(

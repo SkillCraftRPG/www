@@ -33,7 +33,7 @@ const variableAttribute: Attribute = {
   createdOn: now,
   updatedBy: actor,
   updatedOn: now,
-  slug: "",
+  slug: "variable",
   name: "Variable",
   value: "" as GameAttribute,
   statistics: [],
@@ -61,11 +61,11 @@ const props = withDefaults(
 
 const options = computed<SelectOption[]>(() => {
   const options: SelectOption[] = orderBy(
-    props.attributes.map(({ id, name }) => ({ text: name, value: id, sort: unaccent(name) })),
+    props.attributes.map(({ name, slug }) => ({ text: name, value: slug, sort: unaccent(name) })),
     "sort",
   );
   if (parseBoolean(props.variable)) {
-    options.push({ text: variableAttribute.name, value: variableAttribute.id });
+    options.push({ text: variableAttribute.name, value: variableAttribute.slug });
   }
   return options;
 });
@@ -79,10 +79,10 @@ function onModelValueUpdate(value?: string): void {
   emit("update:model-value", value);
 
   let attribute: Attribute | undefined = undefined;
-  if (value === variableAttribute.id) {
+  if (value === variableAttribute.slug) {
     attribute = variableAttribute;
   } else if (value) {
-    attribute = props.attributes.find(({ id }) => id === value);
+    attribute = props.attributes.find(({ slug }) => slug === value);
   }
   emit("selected", attribute);
 }

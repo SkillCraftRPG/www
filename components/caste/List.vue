@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <ListMode class="mb-4" v-model="mode" />
+    <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
     <div v-if="mode === 'grid'" class="row">
       <div v-for="caste in castes" :key="caste.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <CasteCard class="d-flex flex-column h-100" :caste="caste" />
@@ -40,13 +40,12 @@
 
 <script setup lang="ts">
 import type { Caste } from "~/types/game";
-import type { ListMode } from "~/types/components";
+
+const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Caste[];
 }>();
-
-const mode = ref<ListMode>("grid");
 
 const castes = computed<Caste[]>(() => props.items);
 </script>
