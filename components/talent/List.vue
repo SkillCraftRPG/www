@@ -78,9 +78,9 @@ type TalentGroup = {
   talents: Talent[];
 };
 
+const { mode, setMode } = useListMode();
 const { orderBy } = arrayUtils;
 const { parseBoolean } = parsingUtils;
-const { mode, setMode } = useListMode();
 
 const props = defineProps<{
   items: Talent[];

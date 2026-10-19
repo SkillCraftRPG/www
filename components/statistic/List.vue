@@ -51,8 +51,8 @@ import { arrayUtils } from "logitar-js";
 
 import type { Attribute, Statistic } from "~/types/game";
 
-const { orderBy } = arrayUtils;
 const { mode, setMode } = useListMode();
+const { orderBy } = arrayUtils;
 
 const props = defineProps<{
   items: Statistic[];

@@ -74,4 +74,6 @@ useSeo({
   description:
     "Découvrez les pouvoirs, capacités surnaturelles regroupant sorts canalisés et aptitudes uniques, avec règles d’apprentissage, niveaux et dépenses d’Énergie.",
 });
+
+// TODO(fpion): category and sub-category keys should be slugs!
 </script>
