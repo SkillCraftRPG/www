@@ -39,4 +39,6 @@ useSeo({
   description:
     "Découvrez les invocations mystérieuses du Conjurateur : des capacités ésotériques pour canaliser des pouvoirs, altérer le destin et manipuler les ombres.",
 });
+
+// TODO(fpion): repasser toutes les invocations mystérieuses pour associer le bon pouvoir, niveau et capacité.
 </script>

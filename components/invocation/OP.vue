@@ -34,7 +34,3 @@
     </p>
   </div>
 </template>
-
-<script setup lang="ts">
-// TODO(fpion): Compulsion
-</script>

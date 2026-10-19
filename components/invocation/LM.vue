@@ -46,8 +46,3 @@
     </p>
   </div>
 </template>
-
-<script setup lang="ts">
-// TODO(fpion): Disguise Self
-// TODO(fpion): Speak with Dead
-</script>
