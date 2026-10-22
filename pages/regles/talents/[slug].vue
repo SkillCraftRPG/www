@@ -7,6 +7,7 @@
       <MarkdownContent v-if="talent.htmlContent" :text="talent.htmlContent" />
       <TalentSkill v-if="talent.skill" :skill="talent.skill" :training="talent.name === talent.skill.name" />
       <TalentRequired v-if="talent.requiredTalent" :talent="talent.requiredTalent" />
+      <TalentTree :talent="talent" />
     </template>
   </main>
 </template>
@@ -34,6 +35,4 @@ const title = computed<string>(() => talent.value?.name ?? "");
 const description = computed<string>(() => talent.value?.metaDescription ?? "");
 
 useSeo({ title, description });
-
-// TODO(fpion): Talent Tree
 </script>

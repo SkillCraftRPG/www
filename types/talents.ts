@@ -20,6 +20,9 @@ export type TalentNode = {
   tier: number;
   slug: string;
   name: string;
+  allowMultiplePurchases: boolean;
+  skill?: string | null;
+  summary?: string | null;
 };
 
 export type TalentTree = {
