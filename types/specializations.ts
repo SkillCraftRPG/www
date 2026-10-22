@@ -8,6 +8,16 @@ export type Doctrine = {
   features: Feature[];
 };
 
+export type Options = {
+  talents: Talent[];
+  other: string[];
+};
+
+export type Requirements = {
+  talent?: Talent | null;
+  other: string[];
+};
+
 export type Specialization = Aggregate & {
   slug: string;
   name: string;
@@ -20,12 +30,17 @@ export type Specialization = Aggregate & {
   doctrine?: Doctrine | null;
 };
 
-export type Options = {
-  talents: Talent[];
-  other: string[];
+export type SpecializationNode = {
+  id: string;
+  parents: string[];
+  children: string[];
+  tier: number;
+  slug: string;
+  name: string;
+  doctrine?: string | null;
+  summary?: string | null;
 };
 
-export type Requirements = {
-  talent?: Talent | null;
-  other: string[];
+export type SpecializationTree = {
+  nodes: SpecializationNode[];
 };
