@@ -11,6 +11,7 @@
         </div>
         <MarkdownContent v-show="showMore" :text="additionalContent" />
       </template>
+      <SpecializationTree :specialization="specialization" />
       <SpecializationRequirements v-if="hasRequirements" :specialization="specialization" />
       <SpecializationOptions v-if="hasOptions" :specialization="specialization" />
       <SpecializationDoctrine v-if="specialization.doctrine" :talent="specialization.doctrine" />
@@ -63,6 +64,4 @@ const additionalContent = computed<string>(() => {
 });
 
 useSeo({ title, description });
-
-// TODO(fpion): Specialization Tree
 </script>
