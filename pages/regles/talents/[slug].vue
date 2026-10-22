@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
-import type { Talent } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Talents", to: "/regles/talents" }];

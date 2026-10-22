@@ -1,4 +1,5 @@
-import type { Aggregate, Feature, Talent } from "./game";
+import type { Aggregate, Feature } from "./game";
+import type { Talent } from "./talents";
 
 export type Doctrine = {
   name: string;

@@ -137,7 +137,8 @@ import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
 import type { Shield } from "~/types/items";
-import type { SearchResults, Talent } from "~/types/game";
+import type { SearchResults } from "~/types/game";
+import type { Talent } from "~/types/talents";
 import { getShields } from "~/services/items";
 
 const config = useRuntimeConfig();

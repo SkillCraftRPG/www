@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Talent } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const props = defineProps<{
   talent: Talent;

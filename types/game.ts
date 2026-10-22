@@ -1,3 +1,5 @@
+import type { Talent } from "./talents";
+
 export type Actions = {
   mandatory: number;
   optional: number;
@@ -181,17 +183,4 @@ export type Statistic = Aggregate & {
   metaDescription?: string | null;
   summary?: string | null;
   htmlContent?: string | null;
-};
-
-export type Talent = Aggregate & {
-  slug: string;
-  name: string;
-  tier: number;
-  allowMultiplePurchases: boolean;
-  skill?: Skill | null;
-  metaDescription?: string | null;
-  summary?: string | null;
-  htmlContent?: string | null;
-  requiredTalent?: Talent | null;
-  requiringTalents: Talent[];
 };

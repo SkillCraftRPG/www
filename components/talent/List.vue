@@ -71,7 +71,8 @@
 <script setup lang="ts">
 import { arrayUtils, parsingUtils } from "logitar-js";
 
-import type { Skill, Talent } from "~/types/game";
+import type { Skill } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 type TalentGroup = {
   tier: number;

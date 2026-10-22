@@ -14,7 +14,8 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
-import type { SearchResults, Skill, Talent } from "~/types/game";
+import type { SearchResults, Skill } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Compétences", to: "/regles/competences" }];
