@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="talents.length > 1">
     <h2 class="h3">Arbre de talents</h2>
     <div class="tree">
       <VueFlow
