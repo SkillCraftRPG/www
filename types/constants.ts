@@ -2,6 +2,7 @@ import type { Actor } from "./game";
 
 export const Icons: Record<string, string> = {
   attribute: "fas fa-chart-simple",
+  doctrine: "fas fa-yin-yang",
   skill: "fas fa-kitchen-set",
   talent: "fas fa-code-branch",
 };

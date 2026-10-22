@@ -47,6 +47,7 @@ import {
   faUser,
   faWandSparkles,
   faWheelchair,
+  faYinYang,
 } from "@fortawesome/free-solid-svg-icons";
 
 config.autoAddCss = false;
@@ -98,6 +99,7 @@ library.add(
   faUser,
   faWandSparkles,
   faWheelchair,
+  faYinYang,
 );
 
 export default defineNuxtPlugin((nuxtApp) => {
