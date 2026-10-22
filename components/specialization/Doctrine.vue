@@ -28,7 +28,8 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Doctrine } from "~/types/specializations";
-import type { Feature, Talent } from "~/types/game";
+import type { Feature } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const { orderBy } = arrayUtils;
 

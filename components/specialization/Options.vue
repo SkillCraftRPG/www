@@ -22,7 +22,7 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Specialization } from "~/types/specializations";
-import type { Talent } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const { orderBy } = arrayUtils;
 

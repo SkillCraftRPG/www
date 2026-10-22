@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 import { parsingUtils } from "logitar-js";
 
-import type { Talent } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const { parseBoolean } = parsingUtils;
 

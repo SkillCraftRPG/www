@@ -23,7 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import type { SearchResults, Talent } from "~/types/game";
+import type { SearchResults } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const title: string = "Talents";

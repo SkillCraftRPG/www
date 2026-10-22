@@ -8,7 +8,14 @@ export default defineNuxtConfig({
     port: 3030,
   },
   modules: ["@nuxtjs/i18n", "@pinia/nuxt", "pinia-plugin-persistedstate/nuxt"],
-  css: ["bootstrap/dist/css/bootstrap.min.css", "@fortawesome/fontawesome-svg-core/styles.css", "~/assets/styles/main.css"],
+  css: [
+    "bootstrap/dist/css/bootstrap.min.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+    "@vue-flow/core/dist/style.css",
+    "@vue-flow/core/dist/theme-default.css",
+    "@vue-flow/controls/dist/style.css",
+    "~/assets/styles/main.css",
+  ],
   app: {
     head: {
       link: [
@@ -27,7 +34,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "http://localhost:8888",
+      apiBaseUrl: "https://localhost:7175",
       baseUrl: "http://localhost:3030",
       version: pkg.version,
     },

@@ -50,7 +50,8 @@
 import { arrayUtils } from "logitar-js";
 
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
-import type { SearchResults, Talent } from "~/types/game";
+import type { SearchResults } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [

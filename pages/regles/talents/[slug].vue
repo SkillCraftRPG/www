@@ -7,13 +7,14 @@
       <MarkdownContent v-if="talent.htmlContent" :text="talent.htmlContent" />
       <TalentSkill v-if="talent.skill" :skill="talent.skill" :training="talent.name === talent.skill.name" />
       <TalentRequired v-if="talent.requiredTalent" :talent="talent.requiredTalent" />
+      <TalentTree :talent="talent" />
     </template>
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
-import type { Talent } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const parent: Breadcrumb[] = [{ text: "Talents", to: "/regles/talents" }];
@@ -34,6 +35,4 @@ const title = computed<string>(() => talent.value?.name ?? "");
 const description = computed<string>(() => talent.value?.metaDescription ?? "");
 
 useSeo({ title, description });
-
-// TODO(fpion): Talent Tree
 </script>

@@ -26,7 +26,8 @@
 <script setup lang="ts">
 import { arrayUtils } from "logitar-js";
 
-import type { Language, SearchResults, Talent } from "~/types/game";
+import type { Language, SearchResults } from "~/types/game";
+import type { Talent } from "~/types/talents";
 
 const config = useRuntimeConfig();
 const title: string = "Langues";
