@@ -15,6 +15,7 @@ export const SpellCategories = {
   Divine: "d86fed43-66fa-4a52-9d83-a878196b83a8",
   Elementalism: "5cb39d5d-e826-456f-946a-408a007857fb",
   Enchantment: "9bfed560-3230-456d-aa5b-1efe1e5ce24a",
+  Illusion: "a9afcc4b-9206-4964-8b97-052e6deda17f",
   Invocation: "962a99ed-bc33-4eb1-8f0e-f21363d08ac5",
   Transmutation: "59a3b5eb-79c7-46fc-b702-60a978307b46",
 };
