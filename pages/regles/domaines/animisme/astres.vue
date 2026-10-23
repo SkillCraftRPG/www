@@ -36,10 +36,11 @@
     </div>
     <p>
       Plutôt que d’assumer une <NuxtLink to="/regles/specialisations/animiste">forme sauvage</NuxtLink>, le personnage peut altérer sa forme et acquérir des
-      pouvoirs astraux. Lorsqu’il en fait ainsi, il choisit une des trois constellations suivantes. Le <NuxtLink to="#">signe astrologique</NuxtLink> associé
-      apparaît sur sa peau et se met à briller, émettant de la <NuxtLink to="/regles/aventure/environnement/vision">clarté</NuxtLink> dans un rayon de 3 mètres
-      et de la <NuxtLink to="/regles/aventure/environnement/vision">pénombre</NuxtLink> dans un rayon de 3 mètres additionnels. La forme prend fin si le
-      personnage réutilise cette capacité, y met fin en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>,
+      pouvoirs astraux. Lorsqu’il en fait ainsi, il choisit une des trois constellations suivantes. Le
+      <NuxtLink to="/regles/astromancie/signes">signe astrologique</NuxtLink> associé apparaît sur sa peau et se met à briller, émettant de la
+      <NuxtLink to="/regles/aventure/environnement/vision">clarté</NuxtLink> dans un rayon de 3 mètres et de la
+      <NuxtLink to="/regles/aventure/environnement/vision">pénombre</NuxtLink> dans un rayon de 3 mètres additionnels. La forme prend fin si le personnage
+      réutilise cette capacité, y met fin en <NuxtLink to="/regles/combat/deroulement/tour">action libre</NuxtLink>,
       <NuxtLink to="/regles/combat/mort-agonie">meurt</NuxtLink>, devient <NuxtLink to="/regles/combat/conditions/incapable">incapable</NuxtLink>, ou après
       <NuxtLink to="/regles/aventure/temps">10 minutes</NuxtLink>.
     </p>

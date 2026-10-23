@@ -61,7 +61,8 @@
     <ul>
       <li>
         <NuxtLink to="/regles/talents/acquisition">Acquérir</NuxtLink> le talent <NuxtLink to="/regles/talents/spiritualite">Spiritualité</NuxtLink>{{ " "
-        }}<strong>(talent obligatoire)</strong> et sélectionner un <a href="#">domaine divin</a>{{ " " }}<strong>(requis)</strong>.
+        }}<strong>(talent obligatoire)</strong> et sélectionner un <NuxtLink to="/regles/domaines/divins">domaine divin</NuxtLink>{{ " "
+        }}<strong>(requis)</strong>.
       </li>
       <li>
         <i>Clerc</i> étant une spécialisation de <NuxtLink to="/regles/personnages/progression/tiers">tiers 1</NuxtLink>, vous devez acquérir un total de 5

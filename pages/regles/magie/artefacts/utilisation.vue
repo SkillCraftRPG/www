@@ -18,10 +18,8 @@
     <h2 class="h3">Charges</h2>
     <p>Certains artefacts possèdent un nombre limité de charges nécessaires à l’utilisation de leurs propriétés.</p>
     <p>
-      Le nombre de charges restantes est révélé par un l’<NuxtLink to="#">Identification</NuxtLink> ou lorsqu’un personnage s’<NuxtLink
-        to="/regles/magie/artefacts/harmonisation"
-        >harmonise</NuxtLink
-      >
+      Le nombre de charges restantes est révélé par un l’<NuxtLink to="/regles/magie/pouvoirs/comprehension">Identification</NuxtLink> ou lorsqu’un personnage
+      s’<NuxtLink to="/regles/magie/artefacts/harmonisation">harmonise</NuxtLink>
       avec l’artefact.
     </p>
     <p>Lorsqu’un artefact perd ou gagne des charges, la créature harmonisée en est automatiquement informée.</p>

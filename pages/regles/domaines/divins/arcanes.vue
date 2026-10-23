@@ -23,7 +23,8 @@
         tiers 0.
       </li>
       <li>
-        Il sélectionne un des <NuxtLink to="#">signes astrologiques</NuxtLink> associés à ce pouvoir et transcrit gratuitement ce signe dans son grimoire.
+        Il sélectionne un des <NuxtLink to="/regles/astromancie/signes">signes astrologiques</NuxtLink> associés à ce pouvoir et transcrit gratuitement ce signe
+        dans son grimoire.
       </li>
       <li>Il transcrit également gratuitement le signe opposé au signe sélectionné.</li>
     </ul>
@@ -36,8 +37,8 @@
     </div>
     <p>
       Le personnage sélectionne un <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> d’<NuxtLink to="/regles/astromancie">astromancie</NuxtLink> de tiers
-      1. S’il a déjà transcrit dans son grimoire le <NuxtLink to="#">signe astrologique</NuxtLink> associé à ce pouvoir, alors il acquiert instantanément et
-      gratuitement ce pouvoir.
+      1. S’il a déjà transcrit dans son grimoire le <NuxtLink to="/regles/astromancie/signes">signe astrologique</NuxtLink> associé à ce pouvoir, alors il
+      acquiert instantanément et gratuitement ce pouvoir.
     </p>
     <p>
       Sinon, il doit utiliser son <NuxtLink to="/regles/specialisations/clerc">pouvoir divin</NuxtLink> afin d’effectuer un rituel divin d’une durée minimale
