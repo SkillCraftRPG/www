@@ -71,8 +71,9 @@
       </li>
       <li>
         Lorsque le personnage <NuxtLink to="/regles/magie/pouvoirs/canalisation">canalise</NuxtLink> un
-        <NuxtLink to="/regles/magie/pouvoirs">pouvoir</NuxtLink> associé à la <NuxtLink to="#">Nécromancie</NuxtLink> ciblant une seule créature, si la créature
-        maudite se trouve à 1,5 mètres ou moins de la position de la cible, alors la créature maudite est également affectée par le pouvoir.
+        <NuxtLink to="/regles/magie/pouvoirs?category=elementarisme&subcategory=necromancie">pouvoir</NuxtLink> associé à la
+        <NuxtLink to="/regles/elementarisme?category=necromancie">Nécromancie</NuxtLink> ciblant une seule créature, si la créature maudite se trouve à 1,5
+        mètres ou moins de la position de la cible, alors la créature maudite est également affectée par le pouvoir.
       </li>
     </ul>
     <!-- Cycle de la mort (Tiers 2) -->
