@@ -1,13 +1,16 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <BattleActionSelect :model-value="actions" @update:model-value="setQuery('actions', $event)" />
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <BattleThreateningSelect :model-value="threatening" @update:model-value="setQuery('threatening', $event)" />
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -58,6 +61,7 @@ const props = defineProps<{
 }>();
 
 const actions = computed<string>(() => getQuery("actions"));
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 const threatening = computed<string>(() => getQuery("threatening"));
 
 const activities = computed<Activity[]>(() => {
@@ -117,6 +121,9 @@ const activities = computed<Activity[]>(() => {
             return false;
           }
           break;
+      }
+      if (search.value && !activity.name.toLocaleLowerCase().includes(search.value) && !activity.summary.toLocaleLowerCase().includes(search.value)) {
+        return false;
       }
       return true;
     }),

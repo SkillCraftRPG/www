@@ -1,10 +1,13 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <CustomizationKindSelect label="Filtrer par type" :model-value="kind" placeholder="Tous" @update:model-value="setQuery('kind', $event)" />
       </div>
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -58,11 +61,21 @@ const kind = computed<CustomizationKind | "">(() => {
       return "";
   }
 });
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 
-const customizations = computed<Customization[]>(() => {
-  if (!kind.value) {
-    return props.items;
-  }
-  return props.items.filter((customization) => customization.kind === kind.value);
-});
+const customizations = computed<Customization[]>(() =>
+  props.items.filter((customization) => {
+    if (kind.value && customization.kind !== kind.value) {
+      return false;
+    }
+    if (
+      search.value &&
+      !customization.name.toLocaleLowerCase().includes(search.value) &&
+      !(customization.summary ?? "").toLocaleLowerCase().includes(search.value)
+    ) {
+      return false;
+    }
+    return true;
+  }),
+);
 </script>

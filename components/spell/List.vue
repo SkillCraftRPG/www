@@ -2,7 +2,10 @@
   <ClientOnly>
     <h2 class="h3">Liste des pouvoirs</h2>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <SpellCategorySelect
           v-if="categories.length"
           :categories="categories"
@@ -11,7 +14,7 @@
           @update:model-value="selectCategory"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <SpellCategorySelect
           v-if="subCategories.length"
           :categories="subCategories"
@@ -22,7 +25,7 @@
           @update:model-value="setQuery('subcategory', $event)"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -82,6 +85,7 @@ const props = defineProps<{
   scope?: string;
 }>();
 
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 const categoryKey = computed<string>(() => getQuery("category").toLocaleLowerCase());
 const subCategoryKey = computed<string>(() => getQuery("subcategory").toLocaleLowerCase());
 
@@ -117,6 +121,9 @@ const subCategory = computed<SpellCategory | undefined>(() => subCategories.valu
 const groups = computed<SpellGroup[]>(() => {
   const map = new Map<number, Spell[]>();
   props.items.forEach((spell) => {
+    if (search.value && !spell.name.toLocaleLowerCase().includes(search.value) && !(spell.summary ?? "").toLocaleLowerCase().includes(search.value)) {
+      return;
+    }
     if (subCategory.value && !spell.categories.some((cat) => cat.id === subCategory.value?.id)) {
       return;
     } else if (

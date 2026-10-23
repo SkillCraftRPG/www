@@ -1,7 +1,10 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <AttributeSelect
           :attributes="attributes"
           label="Filtrer par attribut"
@@ -11,7 +14,7 @@
           @update:model-value="setQuery('attribute', $event)"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -62,13 +65,19 @@ const props = defineProps<{
 const attributes = ref<Attribute[]>([]);
 
 const attribute = computed<string>(() => getQuery("attribute").toLocaleLowerCase());
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 
-const skills = computed<Skill[]>(() => {
-  if (!attribute.value) {
-    return props.items;
-  }
-  return props.items.filter((skill) => (attribute.value === "variable" ? !skill.attribute : skill.attribute?.slug.toLocaleLowerCase() === attribute.value));
-});
+const skills = computed<Skill[]>(() =>
+  props.items.filter((skill) => {
+    if (attribute.value && (attribute.value === "variable" ? !!skill.attribute : skill.attribute?.slug.toLocaleLowerCase() !== attribute.value)) {
+      return false;
+    }
+    if (search.value && !skill.name.toLocaleLowerCase().includes(search.value) && !(skill.summary ?? "").toLocaleLowerCase().includes(search.value)) {
+      return false;
+    }
+    return true;
+  }),
+);
 
 watch(
   () => props.items,

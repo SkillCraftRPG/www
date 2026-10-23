@@ -1,7 +1,10 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <YesNoSelect
           id="allow-multiple-purchases"
           label="Achats multiples"
@@ -10,7 +13,7 @@
           @update:model-value="setQuery('multiple', $event)"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <SkillSelect
           extended
           label="Filtrer par compétence"
@@ -20,7 +23,7 @@
           @update:model-value="setQuery('skill', $event)"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <ListMode :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -90,12 +93,16 @@ const props = defineProps<{
 const skills = ref<Skill[]>([]);
 
 const allowMultiplePurchases = computed<boolean | undefined>(() => parseBoolean(getQuery("multiple")));
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 const skill = computed<string>(() => getQuery("skill").toLocaleLowerCase());
 
 const groups = computed<TalentGroup[]>(() => {
   const map = new Map<number, Talent[]>();
   props.items.forEach((talent) => {
     if (typeof allowMultiplePurchases.value === "boolean" && allowMultiplePurchases.value !== talent.allowMultiplePurchases) {
+      return;
+    }
+    if (search.value && !talent.name.toLocaleLowerCase().includes(search.value) && !(talent.summary ?? "").toLocaleLowerCase().includes(search.value)) {
       return;
     }
     if (skill.value) {
