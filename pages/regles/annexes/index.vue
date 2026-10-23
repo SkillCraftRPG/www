@@ -46,6 +46,11 @@ const items: MenuItem[] = [
     description: "Apprenez et créez remèdes et poisons selon votre rang et vos talents.",
   },
   {
+    path: "/regles/annexes/illusions",
+    title: "Illusions",
+    description: "Découvrez les pouvoirs qui trompent les sens et manipulent la réalité.",
+  },
+  {
     path: "/regles/annexes/infusions-magiques",
     title: "Infusions magiques",
     description: "Propriétés magiques extraordinaires à imprégner dans des objets banals.",
