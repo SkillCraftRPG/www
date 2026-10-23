@@ -1,6 +1,13 @@
 <template>
   <ClientOnly>
-    <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <ListMode :model-value="mode" @update:model-value="setMode" />
+      </div>
+    </div>
     <div v-if="mode === 'grid'" class="row">
       <div v-for="education in educations" :key="education.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <EducationCard class="d-flex flex-column h-100" :education="education" />
@@ -47,5 +54,12 @@ const props = defineProps<{
   items: Education[];
 }>();
 
-const educations = computed<Education[]>(() => props.items);
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
+
+const educations = computed<Education[]>(() =>
+  props.items.filter(
+    (education) =>
+      !search.value || education.name.toLocaleLowerCase().includes(search.value) || (education.summary ?? "").toLocaleLowerCase().includes(search.value),
+  ),
+);
 </script>

@@ -1,7 +1,10 @@
 <template>
   <ClientOnly>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <ScriptSelect
           :scripts="scripts"
           label="Filtrer par alphabet"
@@ -10,7 +13,7 @@
           @update:model-value="setQuery('script', $event)"
         />
       </div>
-      <div class="col-xs-12 col-sm-6 mb-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
         <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
       </div>
     </div>
@@ -61,13 +64,19 @@ const props = defineProps<{
 const scripts = ref<Script[]>([]);
 
 const script = computed<string>(() => getQuery("script").toLocaleLowerCase());
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
 
-const languages = computed<Language[]>(() => {
-  if (!script.value) {
-    return props.items;
-  }
-  return props.items.filter((language) => language.script?.slug.toLocaleLowerCase() === script.value);
-});
+const languages = computed<Language[]>(() =>
+  props.items.filter((language) => {
+    if (script.value && language.script?.slug.toLocaleLowerCase() !== script.value) {
+      return false;
+    }
+    if (search.value && !language.name.toLocaleLowerCase().includes(search.value) && !(language.summary ?? "").toLocaleLowerCase().includes(search.value)) {
+      return false;
+    }
+    return true;
+  }),
+);
 
 watch(
   () => props.items,

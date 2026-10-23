@@ -1,6 +1,13 @@
 <template>
   <ClientOnly>
-    <ListMode class="mb-4" :model-value="mode" @update:model-value="setMode" />
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <ListMode :model-value="mode" @update:model-value="setMode" />
+      </div>
+    </div>
     <div v-if="mode === 'grid'" class="row">
       <div v-for="script in scripts" :key="script.id" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <ScriptCard class="d-flex flex-column h-100" :script="script" />
@@ -37,5 +44,11 @@ const props = defineProps<{
   items: Script[];
 }>();
 
-const scripts = computed<Script[]>(() => props.items);
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
+
+const scripts = computed<Script[]>(() =>
+  props.items.filter(
+    (script) => !search.value || script.name.toLocaleLowerCase().includes(search.value) || (script.summary ?? "").toLocaleLowerCase().includes(search.value),
+  ),
+);
 </script>

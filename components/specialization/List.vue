@@ -1,6 +1,13 @@
 <template>
   <ClientOnly>
-    <ListMode :model-value="mode" @update:model-value="setMode" />
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <SearchInput :model-value="search" @update:model-value="setQuery('search', $event)" />
+      </div>
+      <div class="col-xs-12 col-sm-6 mb-4">
+        <ListMode :model-value="mode" @update:model-value="setMode" />
+      </div>
+    </div>
     <template v-for="group in groups" :key="group.tier">
       <h3 class="h5">Spécialisations de tiers {{ group.tier }}</h3>
       <div v-if="mode === 'grid'" class="row">
@@ -53,9 +60,18 @@ const props = defineProps<{
   items: Specialization[];
 }>();
 
+const search = computed<string>(() => getQuery("search").trim().toLocaleLowerCase());
+
 const groups = computed<SpecializationGroup[]>(() => {
   const map = new Map<number, Specialization[]>();
   props.items.forEach((specialization) => {
+    if (
+      search.value &&
+      !specialization.name.toLocaleLowerCase().includes(search.value) &&
+      !(specialization.summary ?? "").toLocaleLowerCase().includes(search.value)
+    ) {
+      return;
+    }
     const specializations: Specialization[] | undefined = map.get(specialization.tier);
     if (specializations) {
       specializations.push(specialization);
