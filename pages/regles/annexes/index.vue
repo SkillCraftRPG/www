@@ -51,6 +51,11 @@ const items: MenuItem[] = [
     description: "Découvrez les pouvoirs qui trompent les sens et manipulent la réalité.",
   },
   {
+    path: "/regles/annexes/bricolages-magiques",
+    title: "Bricolages magiques",
+    description: "Modifiez les capacités d’objets et de créatures grâce aux bricolages magiques.",
+  },
+  {
     path: "/regles/annexes/infusions-magiques",
     title: "Infusions magiques",
     description: "Propriétés magiques extraordinaires à imprégner dans des objets banals.",
