@@ -6,10 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent au cycle de la vie et de la mort. Certaines protègent les cimetières et rites funéraires, tandis que
       d’autres sont fascinées par les morts-vivants.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">nécrotique</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">nécrotique</NuxtLink></p>
     <!-- Cycle de la vie (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Cycle de la vie</h2>

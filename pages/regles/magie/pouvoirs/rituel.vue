@@ -38,4 +38,6 @@ useSeo({
   description:
     "Découvrez les rituels : canalisez un pouvoir sans test d’Occultisme, avec un seul point d’Énergie, en suivant un temps et des composantes spécifiques.",
 });
+
+// TODO(fpion): move under incantation
 </script>

@@ -26,7 +26,11 @@
     <h2 class="h3">Liste des domaines</h2>
     <div class="row">
       <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
+        <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path">
+          <template #subtitle-override>
+            <h3 class="card-subtitle h6 mb-2 text-body-secondary"><font-awesome-icon icon="fas fa-bolt" />&nbsp;{{ item.damageType }}</h3>
+          </template>
+        </LinkCard>
       </div>
     </div>
     <SpellList v-if="spells.length" :items="spells" :scope="category" />
@@ -47,67 +51,80 @@ type MenuItem = {
   path: string;
   title: string;
   description: string;
+  damageType: string;
 };
 const items: MenuItem[] = [
   {
     path: "/regles/domaines/divins/arcanes",
     title: "Arcanes",
     description: "Domaine divin dédié à la magie, aux mystères et à la maîtrise des secrets.",
+    damageType: "Force",
   },
   {
     path: "/regles/domaines/divins/forge",
     title: "Forge",
     description: "Pouvoirs sacrés de forge, bénédictions d’armes et maîtrise artisanale.",
+    damageType: "Feu",
   },
   {
     path: "/regles/domaines/divins/guerre",
     title: "Guerre",
     description: "Domaine divin martial offrant bonus et prières de combat.",
+    damageType: "Tonnerre",
   },
   {
     path: "/regles/domaines/divins/lumiere",
     title: "Lumière",
     description: "Domaine divin radiant dédié à la purification et à la protection.",
+    damageType: "Radiant",
   },
   {
     path: "/regles/domaines/divins/mort",
     title: "Mort",
     description: "Domaine divin lié au cycle de la vie et aux pouvoirs nécrotiques.",
+    damageType: "Nécrotique",
   },
   {
     path: "/regles/domaines/divins/nature",
     title: "Nature",
     description: "Domaine divin dédié à la nature, l’animisme et la protection.",
+    damageType: "Poison",
   },
   {
     path: "/regles/domaines/divins/obscurite",
     title: "Obscurité",
     description: "Domaine divin du crépuscule, du repos et de la pénombre.",
+    damageType: "Froid",
   },
   {
     path: "/regles/domaines/divins/ordre",
     title: "Ordre",
     description: "Domaine divin de la loi, de la paix, de l’union et de l’autorité.",
+    damageType: "Psychique",
   },
   {
     path: "/regles/domaines/divins/savoir",
     title: "Savoir",
     description: "Domaine divin de la connaissance, de la mémoire et de l’apprentissage.",
+    damageType: "Acide",
   },
   {
     path: "/regles/domaines/divins/supercherie",
     title: "Supercherie",
     description: "Domaine divin lié à la ruse, aux illusions, aux ombres et aux charmes.",
+    damageType: "Psychique",
   },
   {
     path: "/regles/domaines/divins/tempete",
     title: "Tempête",
     description: "Domaine divin axé sur la foudre, la riposte et la force des tempêtes.",
+    damageType: "Foudre",
   },
   {
     path: "/regles/domaines/divins/vie",
     title: "Vie",
     description: "Domaine divin axé sur la guérison, la vitalité et la protection des vivants.",
+    damageType: "Radiant",
   },
 ];
 

@@ -6,10 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent à la violence et au combat, aux conflits armés, parfois à la cruauté, souvent au courage. Ses
       disciples sont bien souvent de grands guerriers.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">tonnerre</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">tonnerre</NuxtLink></p>
     <!-- Farouche guerrier (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Farouche guerrier</h2>

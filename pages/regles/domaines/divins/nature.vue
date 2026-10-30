@@ -6,9 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent à la nature, aux terres sauvages, à la faune et à la flore de ces environnements, et sont des
       protecteurs de ces éléments naturels.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">poison</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">poison</NuxtLink></p>
     <!-- Acolyte de la nature (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Acolyte de la nature</h2>

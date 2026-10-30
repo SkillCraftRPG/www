@@ -7,9 +7,7 @@
       apportés par la nuit et nécessaires au repos et au sommeil. Elles sont souvent associés à l’astre lunaire, et se présentent comme des protectrices contre
       les horreurs de la nuit et des ténèbres.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">froid</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">froid</NuxtLink></p>
     <!-- Grâce du vigile (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Grâce du vigile</h2>
