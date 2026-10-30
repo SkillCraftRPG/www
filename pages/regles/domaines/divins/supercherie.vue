@@ -6,10 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent aux subterfuges, aux farces et à la ruse. Leurs disciples sont bien souvent des espions, des voleurs,
       des assassins et des libérateurs.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">psychique</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">psychique</NuxtLink></p>
     <!-- Duperie (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Duperie</h2>

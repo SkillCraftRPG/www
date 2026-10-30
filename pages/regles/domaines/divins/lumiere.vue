@@ -7,10 +7,7 @@
       icônes de la vigilance, des sentinelles célestes perçant les ombres et châtiant les trompeurs. Elles sont souvent associés à l’astre solaire, et on les
       associe parfois au talent artistique, véritable véhicule de l’élévation de l’âme.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">radiant</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">radiant</NuxtLink></p>
     <!-- Incarnation de la Lumière (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Incarnation de la Lumière</h2>

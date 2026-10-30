@@ -6,9 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent à l’apprentissage et à la connaissance, et ses adeptes sont associés aux grandes universités et
       bibliothèques.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">acide</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">acide</NuxtLink></p>
     <!-- Grâce du savoir (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Grâce du savoir</h2>

@@ -3,9 +3,7 @@
     <h1>{{ title }}</h1>
     <RulesBreadcrumb :active="title" :parent="parent" />
     <p>Les divinités appartenant à ce domaine s’intéressent à la magie ainsi qu’à la connaissance des mystères et des secrets.</p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">force</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">force</NuxtLink></p>
     <!-- Astrologue novice (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Astrologue novice</h2>

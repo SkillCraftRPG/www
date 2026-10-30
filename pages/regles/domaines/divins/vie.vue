@@ -6,10 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent à la vie, la santé et la guérison. Leurs disciples protègent et viennent en aide à ceux dans le
       besoin et s’opposent aux forces de la mort et aux morts-vivants.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">radiant</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">radiant</NuxtLink></p>
     <!-- Protecteur de la vie (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Protecteur de la vie</h2>

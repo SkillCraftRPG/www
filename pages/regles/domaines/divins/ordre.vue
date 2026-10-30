@@ -6,10 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent à la discipline, à la philosophie, à la justice et à la paix. Leurs fervents sont associés aux
       institutions législatives, aux tribunaux et à la diplomatie.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> :
-      <NuxtLink to="/regles/combat/degats/types">psychique</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">psychique</NuxtLink></p>
     <!-- Héraut de la paix (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Héraut de la paix</h2>

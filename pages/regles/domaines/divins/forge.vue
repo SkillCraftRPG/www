@@ -6,9 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent aux <NuxtLink to="/regles/equipement/marchandise">métaux</NuxtLink> et au métier de forgeron. Elles
       s’associent à la patience et aux œuvres créatrices et artisanales.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">feu</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">feu</NuxtLink></p>
     <!-- Artisan divin (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Artisan divin</h2>

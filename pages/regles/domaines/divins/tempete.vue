@@ -6,9 +6,7 @@
       Les divinités appartenant à ce domaine s’intéressent aux cieux, aux mers, aux tempêtes et aux catastrophes naturelles tels les tremblements de terre. On
       leur attribue la responsabilité du climat et de la météo.
     </p>
-    <p>
-      Type de dégâts de l’<NuxtLink to="/regles/specialisations/pretre">Attaque divine</NuxtLink> : <NuxtLink to="/regles/combat/degats/types">foudre</NuxtLink>
-    </p>
+    <p>Type de dégâts associé : <NuxtLink to="/regles/combat/degats/types">foudre</NuxtLink></p>
     <!-- Guerrier agité (Tiers 0) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Guerrier agité</h2>
