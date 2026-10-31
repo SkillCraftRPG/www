@@ -53,14 +53,11 @@
       </div>
     </div>
     <p>
-      Lorsque le personnage utilise le talent <NuxtLink to="/regles/talents/renvoi-des-morts-vivants">Renvoi des morts-vivants</NuxtLink>, alors il peut cibler
-      une seule créature appartenant à un des types suivants plutôt que de cibler les morts-vivants : aberration, célestiel, élémentaire, fée ou infernal.
-    </p>
-    <p>
-      Lorsqu’il en fait ainsi, si la cible échoue le <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink>, que son niveau est
-      inférieur ou égal au <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> du personnage et qu’elle provient d’une autre dimension, alors
-      elle est bannie dans sa dimension d’origine pendant la prochaine <NuxtLink to="/regles/aventure/temps">minute</NuxtLink>. Le personnage n’a pas besoin de
-      maintenir sa <NuxtLink to="/regles/magie/parametres/duree">concentration</NuxtLink> contre une créature bannie.
+      Lorsque le personnage utilise le talent <NuxtLink to="/regles/talents/exorcisme">Exorcisme</NuxtLink> en désignant un type de créature différent de
+      mort-vivant, si une cible échoue le <NuxtLink to="/regles/competences/tests/sauvegarde">jet de sauvegarde</NuxtLink>, que son niveau est inférieur ou égal
+      au <NuxtLink to="/regles/personnages/progression/tiers">tiers</NuxtLink> du personnage et qu’elle provient d’une autre dimension, alors elle est bannie
+      dans sa dimension d’origine pendant la prochaine <NuxtLink to="/regles/aventure/temps">minute</NuxtLink>. Le personnage n’a pas besoin de maintenir sa
+      <NuxtLink to="/regles/magie/parametres/duree">concentration</NuxtLink> contre une créature bannie.
     </p>
     <!-- Briseur de sorts (Tiers 2) -->
     <div class="d-flex align-items-center gap-3">

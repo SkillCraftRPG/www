@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBaseUrl: "https://localhost:7175",
+      apiBaseUrl: "https://cms.skillcraftrpg.ca",
       baseUrl: "http://localhost:3030",
       version: pkg.version,
     },
