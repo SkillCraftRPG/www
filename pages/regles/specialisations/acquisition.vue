@@ -107,7 +107,7 @@
           <li>
             Vous pourriez compléter avec, par exemple, les <strong>talents optionnels</strong>{{ " "
             }}<NuxtLink to="/regles/talents/barriere-mentale">Barrière mentale</NuxtLink>, <NuxtLink to="/regles/talents/societe">Société</NuxtLink>, et
-            <NuxtLink to="/regles/talents/renvoi-des-morts-vivants">Renvoi des morts-vivants</NuxtLink>.
+            <NuxtLink to="/regles/talents/exorcisme">Exorcisme</NuxtLink>.
           </li>
         </ul>
       </li>

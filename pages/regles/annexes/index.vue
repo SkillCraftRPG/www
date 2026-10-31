@@ -26,6 +26,11 @@ const items: MenuItem[] = [
     description: "Art mystique liant astres, signes et pouvoirs pour altérer la réalité.",
   },
   {
+    path: "/regles/annexes/bricolages-magiques",
+    title: "Bricolages magiques",
+    description: "Modifiez les capacités d’objets et de créatures grâce aux bricolages magiques.",
+  },
+  {
     path: "/regles/domaines/animisme",
     title: "Domaines d’animisme",
     description: "Choisissez un domaine animiste et sa catégorie associée.",
@@ -51,11 +56,6 @@ const items: MenuItem[] = [
     description: "Découvrez les pouvoirs qui trompent les sens et manipulent la réalité.",
   },
   {
-    path: "/regles/annexes/bricolages-magiques",
-    title: "Bricolages magiques",
-    description: "Modifiez les capacités d’objets et de créatures grâce aux bricolages magiques.",
-  },
-  {
     path: "/regles/annexes/infusions-magiques",
     title: "Infusions magiques",
     description: "Propriétés magiques extraordinaires à imprégner dans des objets banals.",
@@ -69,6 +69,11 @@ const items: MenuItem[] = [
     path: "/regles/annexes/jeu-de-role",
     title: "Jeu de rôle",
     description: "Schéma classique et jeu proactif pour structurer les aventures de jeu.",
+  },
+  {
+    path: "/regles/domaines/serments",
+    title: "Serments sacrés",
+    description: "Choisissez un serment sacré et ses préceptes pour obtenir des pouvoirs divins.",
   },
 ];
 
