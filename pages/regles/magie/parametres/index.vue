@@ -26,7 +26,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/magie/parametres/incantation",
     title: "Incantation",
-    description: "Durée d’incantation : actions, réactions ou incantation prolongée.",
+    description: "Comprenez les durées d’incantation et les avantages des rituels magiques.",
   },
   {
     path: "/regles/magie/parametres/composantes",
