@@ -53,6 +53,23 @@
         </tr>
       </tbody>
     </table>
+    <h2 class="h3">Rituel</h2>
+    <p>
+      Certains pouvoir peuvent être <NuxtLink to="/regles/magie/pouvoirs/canalisation">canalisés</NuxtLink> en rituel, en plus de pouvoir être canalisés
+      normalement. Le rituel doit être d’une durée minimale de <NuxtLink to="/regles/aventure/temps">10 minutes</NuxtLink> additionnées à la durée de
+      canalisation normale du pouvoir.
+    </p>
+    <p>
+      Collaborez avec votre maître de jeu afin de déterminer en quoi consiste le rituel. N’oubliez pas d’inclure toutes les
+      <NuxtLink to="/regles/magie/parametres/composantes">composantes</NuxtLink> du pouvoir dans les étapes du rituel.
+    </p>
+    <p>
+      Lorsque vous canalisez un pouvoir en rituel, vous réussissez automatiquement le <NuxtLink to="/regles/competences/tests">test</NuxtLink> d’<NuxtLink
+        to="/regles/competences/occultisme"
+        >Occultisme</NuxtLink
+      >, et la canalisation ne vous coûte qu’un seul point d’<NuxtLink to="/regles/statistiques/energie">Énergie</NuxtLink>. Cette
+      <NuxtLink to="/regles/magie/pouvoirs/energie">dépense</NuxtLink> ne peut être réduite d’aucune manière.
+    </p>
   </main>
 </template>
 
@@ -67,7 +84,6 @@ const title: string = "Incantation";
 
 useSeo({
   title,
-  description:
-    "Découvrez l’incantation : durée nécessaire pour canaliser un pouvoir, selon actions, réactions ou concentration prolongée avec composantes matérielles.",
+  description: "Découvrez les règles d’incantation de SkillCraft, les durées de canalisation des pouvoirs et les rituels permettant d’économiser l’Énergie.",
 });
 </script>
