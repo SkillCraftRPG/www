@@ -16,21 +16,6 @@
       Éphémérides, des tables astronomiques consistant en des gravures à même la pierre. Ces gravures représentent les astres, leur position, les
       constellations, et toute information succincte et jugée pertinente par les mages.
     </p>
-    <!-- TODO(fpion): move to Ungar article
-      <h2 class="h3">Umyd Gaya</h2>
-      <p>
-        La plus ancienne tour de magie de l’Ouespéro se nomme <i>Umyd Gaya</i>, qui signifie « Vif-Espoir » dans la langue de ses fondateurs antiques. Elle est
-        située dans la cité-État de Narandar, une cité autonome et n’ayant jamais été conquise, administrée par sa tour de magie. Cette cité et sa tour de magie
-        ont été construites promptement à la suite du déclin de l’Ancien-Monde. Elles sont des copies conformes de la cité de Varbonie (signifie « harmonie » dans
-        la langue de l’Ancien-Monde) et de sa tour de magie, situées dans l’Ancien-Monde, et détruites peu avant la fondation de Narandar.
-      </p>
-      <p>
-        Narandar est la cité-sœur de Kaku, la capitale du royaume régnant sur la région englobant Narandar. Cette région se trouve à l’extrême-Est du continent,
-        au Sud des montagnes de Kroumir et au Nord du Haut-plateau Utarmien. Cette région se trouve à l’Ouest de la mer Morne et est bordée à l’Est par la mer
-        Abyssale. En raison de sa localisation, cette région accueille des visiteurs de partout dans le monde. Pour cette raison, elle est très prospère et
-        considérée comme essentielle à l’accumulation, la préservation et le partage des savoirs.
-      </p>
-    -->
     <h2 class="h3">Sept Maisons</h2>
     <p>
       En Ouespéro, les tours de magie sont organisées en <strong>sept maisons</strong>. Chaque maison joue un rôle précis au sein de sa tour de magie. Une
@@ -64,12 +49,30 @@
         la faire disparaître.
       </li>
     </ul>
+    <h2 class="h3">Umyd Gaya</h2>
+    <p>
+      La plus ancienne tour de magie de l’Ouespéro se nomme <i>Umyd Gaya</i>, qui signifie « Vif-Espoir » dans la langue de ses fondateurs antiques. Elle est
+      située dans la cité-État de Narandar, une cité autonome et n’ayant jamais été conquise, administrée par sa tour de magie. Cette cité et sa tour de magie
+      ont été construites promptement à la suite du déclin de l’Ancien-Monde. Elles sont des copies conformes de la cité de Varbonie (signifie « harmonie » dans
+      la langue de l’Ancien-Monde) et de sa tour de magie, situées dans l’Ancien-Monde, et détruites peu avant la fondation de Narandar.
+    </p>
+    <p>
+      Narandar est la cité-sœur de Kaku, la capitale du royaume régnant sur la région englobant Narandar. Cette région se trouve à l’extrême-Est du continent,
+      au Sud des montagnes de Kroumir et au Nord du Haut-plateau Utarmien. Cette région se trouve à l’Ouest de la mer Morne et est bordée à l’Est par la mer
+      Abyssale. En raison de sa localisation, cette région accueille des visiteurs de partout dans le monde. Pour cette raison, elle est très prospère et
+      considérée comme essentielle à l’accumulation, la préservation et le partage des savoirs.
+    </p>
+    <figure class="umyd-gaya mb-0">
+      <img :alt="alt" class="img-fluid" src="@/assets/img/umyd-gaya.jpg" />
+      <figcaption class="mt-2 text-center">{{ alt }} — Carolanne Lévesque, 2024</figcaption>
+    </figure>
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Breadcrumb } from "~/types/tar/breadcrumb";
 
+const alt: string = "Illustration de la tour d’Umyd Gaya et de la cité-État de Narandar";
 const parent: Breadcrumb[] = [
   { text: "Annexes", to: "/regles/annexes" },
   { text: "Astromancie", to: "/regles/astromancie" },
@@ -81,3 +84,14 @@ useSeo({
   description: "Découvrez les écoles de magie de l’Astromancie : tours de magie, observatoires et maisons qui structurent l’étude des signes astrologiques.",
 });
 </script>
+
+<style scoped>
+.umyd-gaya figcaption {
+  color: var(--bs-tertiary-color);
+  transition: color 0.15s ease-in-out;
+}
+
+.umyd-gaya:hover figcaption {
+  color: var(--bs-secondary-color);
+}
+</style>
