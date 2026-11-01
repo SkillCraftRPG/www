@@ -13,7 +13,10 @@
     <p>Un artefact reposant sur un mot de commande ne peut pas être utilisé dans une zone où le son est supprimé, comme sous un effet de silence.</p>
     <h2 class="h3">Consommables</h2>
     <p>Certains artefacts sont conçus pour être consommés lors de leur utilisation.</p>
-    <p>Les potions et élixirs doivent être bus, les huiles appliquées sur le corps, et les parchemins se consument en effaçant leur écriture lorsque lus.</p>
+    <p>
+      Les potions et élixirs doivent être bus, les huiles appliquées sur le corps, et les
+      <NuxtLink to="/regles/magie/artefacts/parchemins">parchemins</NuxtLink> se consument en effaçant leur écriture lorsque lus.
+    </p>
     <p>Une fois utilisés, ces artefacts perdent définitivement leur magie s’ils ne sont pas détruits.</p>
     <h2 class="h3">Charges</h2>
     <p>Certains artefacts possèdent un nombre limité de charges nécessaires à l’utilisation de leurs propriétés.</p>

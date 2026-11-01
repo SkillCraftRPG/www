@@ -7,7 +7,7 @@
       ou renforcent les siennes de façon extraordinaire.
     </p>
     <div class="row">
-      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+      <div v-for="(item, index) in items" :key="index" class="col-xs-12 col-sm-6 mb-4">
         <LinkCard class="d-flex flex-column h-100" :text="item.description" :title="item.title" :to="item.path" />
       </div>
     </div>
@@ -41,6 +41,11 @@ const items: MenuItem[] = [
     title: "Utilisation",
     description: "Guide sur l’usage des artefacts : actions, mots, charges, pouvoirs et limites.",
   },
+  {
+    path: "/regles/magie/artefacts/parchemins",
+    title: "Parchemins magiques",
+    description: "Canalisez des pouvoirs sans dépenser d’Énergie grâce aux parchemins magiques.",
+  },
 ];
 
 useSeo({
@@ -48,6 +53,4 @@ useSeo({
   description:
     "Découvrez les artefacts magiques : harmonisation, port approprié et règles d’utilisation, offrant des pouvoirs uniques et des effets extraordinaires aux aventuriers.",
 });
-
-// TODO(fpion): Spell Scrolls; https://roll20.net/compendium/dnd5e/Spell%20Scroll#content
 </script>

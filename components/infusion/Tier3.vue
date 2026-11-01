@@ -35,10 +35,8 @@
       <p>
         Le personnage peut apprendre cette infusion plusieurs fois. Chaque fois qu’il en fait ainsi, il choisit un
         <NuxtLink to="/regles/magie/artefacts">artefact magique</NuxtLink> différent (à la discrétion du maître de jeu), et peut répliquer celui-ci en utilisant
-        cette infusion. Il ne peut sélectionner une potion ni un parchemin magique. Si l’artefact requiert l’<NuxtLink
-          to="/regles/magie/artefacts/harmonisation"
-          >harmonisation</NuxtLink
-        >, alors l’infusion nécessite également l’harmonisation.
+        cette infusion. Il ne peut sélectionner une potion ni un <NuxtLink to="/regles/magie/artefacts/parchemins">parchemin magique</NuxtLink>. Si l’artefact
+        requiert l’<NuxtLink to="/regles/magie/artefacts/harmonisation">harmonisation</NuxtLink>, alors l’infusion nécessite également l’harmonisation.
       </p>
     </InfusionInfo>
   </div>
