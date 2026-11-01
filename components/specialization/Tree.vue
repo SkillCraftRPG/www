@@ -15,7 +15,7 @@
         @node-mouse-leave="onNodeMouseLeave"
       >
         <SpecializationTreeFlow />
-        <Controls :fit-view-params="{ padding: 0.2 }" />
+        <Controls :fit-view-params="{ padding: 0.2 }" :show-interactive="false" />
       </VueFlow>
     </div>
   </div>
