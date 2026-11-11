@@ -18,7 +18,7 @@ export type SpellAbility = {
   name?: string | null;
   casting: SpellCasting;
   duration?: SpellDuration | null;
-  range: number;
+  range?: number | null;
   components: SpellComponents;
   htmlContent?: string | null;
 };

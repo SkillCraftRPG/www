@@ -105,6 +105,9 @@ const duration = computed<string>(() => {
 });
 const range = computed<string>(() => {
   switch (props.ability.range) {
+    case undefined:
+    case null:
+      return "Illimitée";
     case 0:
       return "Soi";
     case 1:
