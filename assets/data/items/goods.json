@@ -108,6 +108,60 @@
     "description": "Une des plus vieilles épices, et des plus faciles à extraire. On l’utilise pour assaisonner et conserver la viande."
   },
   {
+    "id": "8c7e50ac-15e6-4a79-8967-32cb0080d13f",
+    "category": "Spice",
+    "slug": "coriandre",
+    "name": "Coriandre",
+    "price": 1,
+    "weight": 1,
+    "description": "Épice aux graines rondes et dorées, offrant des arômes frais, citronnés et légèrement poivrés."
+  },
+  {
+    "id": "46c85783-5463-42fa-848a-1d3854f4acec",
+    "category": "Spice",
+    "slug": "cumin",
+    "name": "Cumin",
+    "price": 2,
+    "weight": 1,
+    "description": "Graines allongées et brunâtres, au parfum puissant, terreux, chaud et légèrement amer."
+  },
+  {
+    "id": "13ac80df-4b3c-49f7-924a-535aacfbb469",
+    "category": "Spice",
+    "slug": "fenugrec",
+    "name": "Fenugrec",
+    "price": 0.75,
+    "weight": 1,
+    "description": "Petites graines jaunes et anguleuses, au goût amer, rappelant la noix et le sirop d’érable."
+  },
+  {
+    "id": "49576cd1-bc31-4cb4-bd1b-acb20764d16d",
+    "category": "Spice",
+    "slug": "moutarde-brune",
+    "name": "Moutarde brune",
+    "price": 4,
+    "weight": 1,
+    "description": "Petites graines sombres et piquantes, libérant une chaleur vive lorsqu’elles sont broyées."
+  },
+  {
+    "id": "f031f827-c1f7-4841-b6b7-3973a8fbcdbc",
+    "category": "Spice",
+    "slug": "sumac",
+    "name": "Sumac",
+    "price": 1,
+    "weight": 1,
+    "description": "Baies rouge foncé séchées et moulues, procurant une saveur acidulée, fruitée et citronnée."
+  },
+  {
+    "id": "0cb3a686-f696-4073-b561-cea1d3dcbba2",
+    "category": "Spice",
+    "slug": "sarriette",
+    "name": "Sarriette",
+    "price": 0.75,
+    "weight": 1,
+    "description": "Herbe aromatique aux petites feuilles vertes, au goût poivré, légèrement amer et résineux."
+  },
+  {
     "id": "382cbfa2-2d77-4cd5-ba0d-5c0f8763c2f8",
     "category": "Metal",
     "slug": "argent",
