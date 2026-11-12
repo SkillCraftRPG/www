@@ -11,54 +11,30 @@
       des écoles. Bien que la découverte de ces signes soit très rare, leur usage est souvent interdit, puisqu’ils donnent accès à des pouvoirs peu documentés
       et maîtrisés.
     </p>
-    <table class="table table-striped text-center">
-      <thead>
-        <tr>
-          <th scope="col" class="w-25">Signe</th>
-          <th scope="col" class="w-25">Opposé</th>
-          <th scope="col" class="w-25">Signe</th>
-          <th scope="col" class="w-25">Opposé</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Amphore</td>
-          <td>Berceau</td>
-          <td>Coquillage</td>
-          <td>Sabre</td>
-        </tr>
-        <tr>
-          <td>Archer</td>
-          <td>Vipère</td>
-          <td>Crabe</td>
-          <td>Tortue</td>
-        </tr>
-        <tr>
-          <td>Balance</td>
-          <td>Pieuvre</td>
-          <td>Destrier</td>
-          <td>Lyre</td>
-        </tr>
-        <tr>
-          <td>Capricorne</td>
-          <td>Lotus</td>
-          <td>Lion</td>
-          <td>Serpe</td>
-        </tr>
-        <tr>
-          <td>Chariot</td>
-          <td>Arbre</td>
-          <td>Poisson</td>
-          <td>Aigle</td>
-        </tr>
-        <tr>
-          <td>Coq</td>
-          <td>Échelle</td>
-          <td>Scorpion</td>
-          <td>Caducée</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div v-for="(pair, index) in pairs" :key="index" class="col-xs-12 col-sm-6 col-md-4 mb-4">
+        <TarCard class="h-100">
+          <div class="d-flex justify-content-around align-items-center text-center gap-3">
+            <div v-for="sign in pair" :key="sign">
+              <div class="sign-glyph">
+                <IconSign :sign="sign" />
+              </div>
+              <div>{{ sign }}</div>
+            </div>
+          </div>
+        </TarCard>
+      </div>
+      <div class="col-12 mb-4">
+        <TarCard class="h-100">
+          <div class="text-center">
+            <div class="sign-glyph">
+              <IconSign sign="Lune" />
+            </div>
+            <div>Lune</div>
+          </div>
+        </TarCard>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -71,8 +47,31 @@ const parent: Breadcrumb[] = [
 ];
 const title: string = "Signes astrologiques";
 
+const pairs: [string, string][] = [
+  ["Amphore", "Berceau"],
+  ["Archer", "Vipère"],
+  ["Balance", "Pieuvre"],
+  ["Capricorne", "Lotus"],
+  ["Chariot", "Arbre"],
+  ["Coq", "Échelle"],
+  ["Coquillage", "Sabre"],
+  ["Crabe", "Tortue"],
+  ["Destrier", "Lyre"],
+  ["Lion", "Serpe"],
+  ["Poisson", "Aigle"],
+  ["Scorpion", "Caducée"],
+];
+
 useSeo({
   title,
   description: "Découvrez les signes astrologiques de l’Astromancie : constellations, oppositions et signes secrets guidant les pouvoirs occultes.",
 });
 </script>
+
+<style scoped>
+.sign-glyph {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+</style>

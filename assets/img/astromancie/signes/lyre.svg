@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Glyphe astrologique : Lyre">
+<title>Lyre</title>
+<g fill="none" stroke="currentColor" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M42 82 C31 75 25 63 27 49 Q30 37 25 28 Q20 19 15 24 Q11 29 18 34"/>
+  <path d="M58 82 C69 75 75 63 73 49 Q70 37 75 28 Q80 19 85 24 Q89 29 82 34"/>
+  <path d="M27 40 H73"/>
+  <path d="M42 42 V79 M50 42 V82 M58 42 V79"/>
+  <path d="M39 81 Q50 90 61 81"/>
+
+</g>
+</svg>

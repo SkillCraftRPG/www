@@ -1,7 +1,9 @@
 <template>
   <NuxtLink class="card clickable" :to="to">
     <div class="card-body">
-      <h2 v-if="title" class="card-title h5">{{ title }}</h2>
+      <slot name="title-override">
+        <h2 v-if="title" class="card-title h5">{{ title }}</h2>
+      </slot>
       <slot name="subtitle-override">
         <h3 v-if="subtitle" class="card-subtitle h6 mb-2 text-body-secondary">{{ subtitle }}</h3>
       </slot>

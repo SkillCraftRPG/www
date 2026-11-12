@@ -1,11 +1,18 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <RulesBreadcrumb active="Abjuration" :parent="parent" />
-    <p>
-      Le cercle d’abjuration rassemble les pouvoirs dont la fonction est de protéger, de défendre. Bien que ces pouvoirs ne blessent pas directement, ils
-      peuvent quand même blesser involontairement une créature qui ne respecte pas les interdits.
-    </p>
+    <div class="d-flex flex-column flex-md-row align-items-md-start gap-4">
+      <div class="flex-grow-1">
+        <h1>{{ title }}</h1>
+        <RulesBreadcrumb active="Abjuration" :parent="parent" />
+        <p>
+          Le cercle d’abjuration rassemble les pouvoirs dont la fonction est de protéger, de défendre. Bien que ces pouvoirs ne blessent pas directement, ils
+          peuvent quand même blesser involontairement une créature qui ne respecte pas les interdits.
+        </p>
+      </div>
+      <div class="circle-glyph align-self-center">
+        <IconCircle circle="Abjuration" />
+      </div>
+    </div>
     <!-- Garde partagée (Allégeance) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Garde partagée</h2>
@@ -82,3 +89,10 @@ useSeo({
   description: "Découvrez le cercle d’Abjuration : des pouvoirs d’Astromancie voués à protéger, défendre et résister aux forces magiques.",
 });
 </script>
+
+<style scoped>
+.circle-glyph {
+  font-size: 8rem;
+  line-height: 1;
+}
+</style>

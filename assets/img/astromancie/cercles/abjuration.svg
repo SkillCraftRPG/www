@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Abjuration : combinaison des runes Algiz et Inguz">
+  <title>Abjuration</title>
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter">
+    <!-- Axe commun des deux runes -->
+    <path d="M50 7 V93"/>
+    <!-- Algiz : protection -->
+    <path d="M31.5 7 L50 26 L68.5 7"/>
+    <!-- Inguz : losange fermé de préservation -->
+    <path d="M50 32 L31 51.5 L50 71 L69 51.5 Z"/>
+    <!-- Extrémités entrecroisées -->
+    <path d="M50 71 L32 86 M50 71 L68 86"/>
+  </g>
+</svg>

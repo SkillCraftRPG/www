@@ -1,11 +1,18 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <RulesBreadcrumb active="Envoûtement" :parent="parent" />
-    <p>
-      Ce cercle rassemble les pouvoirs dont la fonction est de tromper, de séduire ou de contrôler la pensée. Leur usage en géopolitique peut être dévastateur,
-      mais il peut également éviter des désastres.
-    </p>
+    <div class="d-flex flex-column flex-md-row align-items-md-start gap-4">
+      <div class="flex-grow-1">
+        <h1>{{ title }}</h1>
+        <RulesBreadcrumb active="Envoûtement" :parent="parent" />
+        <p>
+          Ce cercle rassemble les pouvoirs dont la fonction est de tromper, de séduire ou de contrôler la pensée. Leur usage en géopolitique peut être
+          dévastateur, mais il peut également éviter des désastres.
+        </p>
+      </div>
+      <div class="circle-glyph align-self-center">
+        <IconCircle circle="Envoûtement" />
+      </div>
+    </div>
     <!-- Charme instinctif (Allégeance) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Charme instinctif</h2>
@@ -101,3 +108,10 @@ useSeo({
   description: "Découvrez le cercle d’Envoûtement : des pouvoirs d’Astromancie pour tromper, séduire et contrôler les pensées.",
 });
 </script>
+
+<style scoped>
+.circle-glyph {
+  font-size: 8rem;
+  line-height: 1;
+}
+</style>

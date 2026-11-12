@@ -19,7 +19,11 @@
     </p>
     <div class="row">
       <div v-for="(circle, index) in circles" :key="index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-fifth mb-4">
-        <LinkCard class="d-flex flex-column h-100" :text="circle.description" :title="circle.title" :to="circle.path" />
+        <LinkCard class="d-flex flex-column h-100" :text="circle.description" :to="circle.path">
+          <template #title-override>
+            <h2 class="card-title h5"><IconCircle :circle="circle.title" />&nbsp;{{ circle.title }}</h2>
+          </template>
+        </LinkCard>
       </div>
     </div>
     <SpellList v-if="spells.length" :items="spells" :scope="category" />
@@ -50,7 +54,7 @@ const items: MenuItem[] = [
   {
     path: "/regles/astromancie/pentacle",
     title: "Pentacle",
-    description: "🚧",
+    description: "Symbole reliant Soleil, éléments, cercles et signes astrologiques.",
   },
   {
     path: "/regles/astromancie/ecole",

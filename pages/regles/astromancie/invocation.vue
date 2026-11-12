@@ -1,11 +1,18 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <RulesBreadcrumb active="Invocation" :parent="parent" />
-    <p>
-      Le cercle d’invocation rassemble les pouvoirs manipulant l’énergie autour du magicien. Cette magie peut prendre plusieurs formes : l’espace, le temps, ou
-      encore les éléments, les caractéristiques d’animaux ou de plantes, les astres, la lumière ou les ténèbres.
-    </p>
+    <div class="d-flex flex-column flex-md-row align-items-md-start gap-4">
+      <div class="flex-grow-1">
+        <h1>{{ title }}</h1>
+        <RulesBreadcrumb active="Invocation" :parent="parent" />
+        <p>
+          Le cercle d’invocation rassemble les pouvoirs manipulant l’énergie autour du magicien. Cette magie peut prendre plusieurs formes : l’espace, le temps,
+          ou encore les éléments, les caractéristiques d’animaux ou de plantes, les astres, la lumière ou les ténèbres.
+        </p>
+      </div>
+      <div class="circle-glyph align-self-center">
+        <IconCircle circle="Invocation" />
+      </div>
+    </div>
     <!-- Invocation contrôlée (Allégeance) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Invocation contrôlée</h2>
@@ -94,3 +101,10 @@ useSeo({
   description: "Découvrez le cercle d’Invocation : des pouvoirs d’Astromancie pour manipuler l’énergie, les éléments, les astres, la lumière et les ténèbres.",
 });
 </script>
+
+<style scoped>
+.circle-glyph {
+  font-size: 8rem;
+  line-height: 1;
+}
+</style>

@@ -63,7 +63,7 @@
       considérée comme essentielle à l’accumulation, la préservation et le partage des savoirs.
     </p>
     <figure class="umyd-gaya mb-0">
-      <img :alt="alt" class="img-fluid" src="@/assets/img/umyd-gaya.jpg" />
+      <img :alt="alt" class="img-fluid" src="@/assets/img/astromancie/umyd-gaya.jpg" />
       <figcaption class="mt-2 text-center">{{ alt }} — Carolanne Lévesque, 2024</figcaption>
     </figure>
   </main>

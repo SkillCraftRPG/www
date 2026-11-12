@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Glyphe astrologique : Balance">
+<title>Balance</title>
+<g fill="none" stroke="currentColor" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="50" cy="17" r="5"/>
+  <path d="M50 23 V82 M23 36 H77"/>
+  <path d="M24 37 L18 56 M76 37 L82 56"/>
+  <path d="M9 57 Q20 71 31 57 M69 57 Q80 71 91 57"/>
+  <path d="M33 84 H67"/>
+
+</g>
+</svg>
