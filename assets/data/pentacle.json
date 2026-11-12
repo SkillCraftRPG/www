@@ -1,0 +1,27 @@
+[
+  {
+    "circle": "Abjuration",
+    "elements": ["Eau", "Terre"],
+    "signs": ["Amphore", "Berceau", "Coquillage", "Crabe", "Tortue"]
+  },
+  {
+    "circle": "Divination",
+    "elements": ["Esprit", "Eau"],
+    "signs": ["Aigle", "Balance", "Lotus", "Lune", "Poisson"]
+  },
+  {
+    "circle": "Envoûtement",
+    "elements": ["Air", "Esprit"],
+    "signs": ["Caducée", "Lion", "Lyre", "Pieuvre", "Vipère"]
+  },
+  {
+    "circle": "Invocation",
+    "elements": ["Feu", "Air"],
+    "signs": ["Archer", "Chariot", "Coq", "Destrier", "Sabre"]
+  },
+  {
+    "circle": "Transmutation",
+    "elements": ["Terre", "Feu"],
+    "signs": ["Arbre", "Capricorne", "Scorpion", "Serpe", "Échelle"]
+  }
+]

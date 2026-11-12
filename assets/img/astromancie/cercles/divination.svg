@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-labelledby="title">
+  <title id="title">Divination — œil et symbole du Cristal</title>
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Paupières miroir parfaites : sommet y=28 et bas y=68 -->
+    <path d="M10 48 Q50 8 90 48 Q50 88 10 48 Z"/>
+    <!-- 270 degrés exactement, avec ouverture dans le quadrant supérieur droit -->
+    <path d="M50 28 A20 20 0 1 0 70 48"/>
+    <!-- La tige pénètre de 20 unités dans l’œil de 40 unités de haut : 50 % -->
+    <path d="M50 48 V86"/>
+  </g>
+</svg>

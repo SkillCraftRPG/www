@@ -1,11 +1,18 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <RulesBreadcrumb active="Divination" :parent="parent" />
-    <p>
-      Ce cercle rassemble les pouvoirs tentant de comprendre le passé, le présent ou le futur. Ces pouvoirs sont craints et recherchés par toutes les classes
-      sociales, autant par les nobles désirant augmenter leur richesse que par les paysans désireux d’une bonne récolte.
-    </p>
+    <div class="d-flex flex-column flex-md-row align-items-md-start gap-4">
+      <div class="flex-grow-1">
+        <h1>{{ title }}</h1>
+        <RulesBreadcrumb active="Divination" :parent="parent" />
+        <p>
+          Ce cercle rassemble les pouvoirs tentant de comprendre le passé, le présent ou le futur. Ces pouvoirs sont craints et recherchés par toutes les
+          classes sociales, autant par les nobles désirant augmenter leur richesse que par les paysans désireux d’une bonne récolte.
+        </p>
+      </div>
+      <div class="circle-glyph align-self-center">
+        <IconCircle circle="Divination" />
+      </div>
+    </div>
     <!-- Expert divinateur (Allégeance) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Expert divinateur</h2>
@@ -87,3 +94,10 @@ useSeo({
   description: "Découvrez le cercle de Divination : des pouvoirs d’Astromancie pour comprendre le passé, le présent et l’avenir.",
 });
 </script>
+
+<style scoped>
+.circle-glyph {
+  font-size: 8rem;
+  line-height: 1;
+}
+</style>

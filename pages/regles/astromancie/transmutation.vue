@@ -1,11 +1,18 @@
 <template>
   <main class="container">
-    <h1>{{ title }}</h1>
-    <RulesBreadcrumb active="Transmutation" :parent="parent" />
-    <p>
-      Ce cercle rassemble les pouvoirs dont la fonction est de modifier la réalité, soit l’énergie et la matière. Il permet de muter le monde à sa guise, à
-      petite ou à grande échelle. Ces pouvoirs peuvent créer, détruire, façonner, embellir et défigurer.
-    </p>
+    <div class="d-flex flex-column flex-md-row align-items-md-start gap-4">
+      <div class="flex-grow-1">
+        <h1>{{ title }}</h1>
+        <RulesBreadcrumb active="Transmutation" :parent="parent" />
+        <p>
+          Ce cercle rassemble les pouvoirs dont la fonction est de modifier la réalité, soit l’énergie et la matière. Il permet de muter le monde à sa guise, à
+          petite ou à grande échelle. Ces pouvoirs peuvent créer, détruire, façonner, embellir et défigurer.
+        </p>
+      </div>
+      <div class="circle-glyph align-self-center">
+        <IconCircle circle="Transmutation" />
+      </div>
+    </div>
     <!-- Pierre de transmutateur (Allégeance) -->
     <div class="d-flex align-items-center gap-3">
       <h2 class="h3">Pierre de transmutateur</h2>
@@ -118,3 +125,10 @@ useSeo({
   description: "Découvrez le cercle de Transmutation : des pouvoirs d’Astromancie pour modifier la réalité, l’énergie et la matière.",
 });
 </script>
+
+<style scoped>
+.circle-glyph {
+  font-size: 8rem;
+  line-height: 1;
+}
+</style>
